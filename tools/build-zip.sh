@@ -52,11 +52,30 @@ rm -f "$OUT"
 
 echo
 echo "wrote $OUT"
-unzip -l "$OUT" | tail -3
+
+# Capture the listing once. Piping into `grep -q` under `set -o pipefail` is a
+# trap: grep exits the moment it matches, unzip takes SIGPIPE, and the whole
+# pipeline reports failure even though the zip is fine.
+LISTING="$(unzip -l "$OUT")"
+
+printf '%s\n' "$LISTING" | tail -3
 echo
-if unzip -l "$OUT" | grep -q " $NAME/$NAME.toc$"; then
+
+if grep -q " $NAME/$NAME\.toc\$" <<<"$LISTING"; then
 	echo "ok: $NAME.toc is at the right depth"
 else
 	echo "PROBLEM: $NAME.toc is not where the game expects it" >&2
 	exit 1
 fi
+
+# Nothing from the development side should have crept in.
+STRAYS="$(grep -E "$NAME/(tools|media|\.git)" <<<"$LISTING" || true)"
+if [ -n "$STRAYS" ]; then
+	echo "PROBLEM: development files are in the zip:" >&2
+	printf '%s\n' "$STRAYS" >&2
+	exit 1
+fi
+echo "ok: no tooling, media or dotfiles in the package"
+
+FILES="$(grep -c '^ ' <<<"$LISTING" || true)"
+echo "ok: $(printf '%s' "$FILES") entries packaged"

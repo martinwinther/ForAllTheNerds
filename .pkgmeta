@@ -13,7 +13,6 @@ manual-changelog:
 ignore:
     - tools
     - README.md
-    - INSTALL.md
     - PUBLISHING.md
     - curseforge-description.md
     - media
