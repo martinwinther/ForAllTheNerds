@@ -1,3 +1,5 @@
+<img src="media/logo-256.png" alt="ForAllTheNerds" width="128" align="right">
+
 # ForAllTheNerds
 
 A **World of Warcraft: Forever** addon that tells you the lore and history of

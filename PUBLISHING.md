@@ -39,10 +39,41 @@ and writes `ForAllTheNerds-<version>.zip` with the folder at the right depth.
 | Field | Suggested value |
 |---|---|
 | Name | ForAllTheNerds |
-| Summary | Tells you the lore and history of wherever you are standing: zones, towns, ruins and dungeons. Vanilla-era lore only, no spoilers. |
+| Summary | Tells you the lore and history of wherever you are standing, down to individual towns, ruins and dungeons rather than just zones, with vanilla-era lore only and no spoilers. |
+| Avatar | `media/logo-400.png` (or `logo-512.png`). Square, transparent-free, reads at list size. |
 | Category | Quests & Leveling (secondary: Map & Minimap) |
 | License | MIT (the `LICENSE` file is in the repo) |
 | Description | Paste from `README.md` and trim. Mention the 626 entries, the 1.12 lore cutoff, the no-spoilers rule and the `/ftn` commands. |
+
+### The summary field
+
+CurseForge wants **one English sentence** that captures what the addon is and
+what it does. Use this, which is 173 characters:
+
+> Tells you the lore and history of wherever you are standing, down to
+> individual towns, ruins and dungeons rather than just zones, with vanilla-era
+> lore only and no spoilers.
+
+Two shorter alternatives if you want it tighter:
+
+> Tells you the lore and history of wherever you are standing in Azeroth, down
+> to individual towns, ruins and dungeons rather than just zones.
+
+> Shows a short card when you arrive somewhere new, telling you the lore and
+> history of that exact spot, from whole zones down to a single ruin or inn.
+
+The longer **Description** field is separate; paste from `README.md` and trim.
+
+### Artwork
+
+`media/` holds the project avatar: `logo.svg` is the source, with PNGs rendered
+at 512, 400, 256 and 64. Upload the 400 or the 512. The 64 is there as a check,
+because the avatar is shown very small in CurseForge's lists and a logo that
+only works large is no use.
+
+The mark is an open book under a map pin, on a dark plate with a gold rim, in
+the addon's own palette. It is deliberately a strong two-shape silhouette so it
+survives being shrunk.
 
 ### Upload the file
 
