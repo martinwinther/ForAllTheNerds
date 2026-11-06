@@ -1,0 +1,122 @@
+# tools/places.tsv -- the worklist. Tab separated:
+# kind<TAB>name<TAB>parent<TAB>faction<TAB>levels<TAB>notes
+# kind is zone | sub | instance. For a zone, parent is the continent.
+# 'notes' is what you already know about the place; generate.py feeds it to
+# the model so it works from facts instead of inventing them. Leave it blank
+# if you have nothing, and the prompt will say so.
+#
+# Everything already written up is skipped automatically:
+#   python3 tools/generate.py missing
+#   python3 tools/generate.py prompt --limit 10 > /tmp/batch.md
+
+# --- Eastern Kingdoms: places not yet written -----------------------------
+sub	Thieves Camp	Elwynn Forest	Hostile	8-12	Defias camp in the southwest of Elwynn, on the Westfall border; early sign of the Brotherhood reaching into the capital's home county
+sub	Heroes' Vigil	Elwynn Forest	Alliance		Hilltop monument east of Goldshire commemorating fallen Stormwind soldiers
+sub	Demont's Place	Westfall	Hostile		Abandoned Westfall farmhouse used by a Defias magician
+sub	Longshore	Westfall	Contested		Westfall's northern coastline; murlocs and shipwrecks
+sub	The Dust Plains	Westfall	Contested		The driest part of Westfall, south of Moonbrook; the failed farmland at its worst
+sub	Brightwood Grove	Duskwood	Hostile		Northeastern Duskwood woodland, spiders and worgen
+sub	The Hushed Bank	Duskwood	Contested		Duskwood's river bank facing Westfall across the water
+sub	Stonewatch Falls	Redridge Mountains	Hostile		Waterfall and cave below Stonewatch Keep
+sub	Direforge Hill	Wetlands	Hostile		Dark Iron dwarf position in the Wetlands highlands
+sub	Sundown Marsh	Wetlands	Contested		Western Wetlands marshland near Menethil Harbor
+sub	The Green Belt	Wetlands	Contested		The central band of the Wetlands; raptors and the Explorers' League's fossil beds
+sub	Saltspray Glen	Wetlands	Contested		Northern Wetlands coast, murloc territory
+sub	Circle of East Binding	Arathi Highlands	Contested		One of four ancient stone circles in the Highlands; arcane energy collects there, attracting cultists
+sub	Circle of Outer Binding	Arathi Highlands	Contested		Another of the four Highlands stone circles, predating Arathor
+sub	Circle of West Binding	Arathi Highlands	Contested		The westernmost of the four Highlands circles
+sub	Boulder'gor	Arathi Highlands	Hostile		Boulderfist ogre camp in the western Highlands
+sub	Darrow Hill	Hillsbrad Foothills	Contested		Hill in eastern Hillsbrad near Tarren Mill
+sub	Corrahn's Dagger	Hillsbrad Foothills	Hostile		Hill in the Hillsbrad uplands held by the Syndicate
+sub	The Uplands	Alterac Mountains	Hostile		High eastern Alterac Mountains; Crushridge ogre country
+sub	Hiri'watha	The Hinterlands	Hostile		Vilebranch troll site in the central Hinterlands
+sub	The Overlook Cliffs	The Hinterlands	Contested		Eastern Hinterlands cliffs above the sea, near Revantusk Village
+sub	Shaol'watha	The Hinterlands	Hostile		Abandoned Amani troll ruin in the Hinterlands woods
+sub	The Creeping Ruin	The Hinterlands	Contested		Overgrown troll ruin in the southern Hinterlands
+sub	Tanner Camp	Searing Gorge	Hostile		Dark Iron camp in the Searing Gorge
+sub	Blackrock Stronghold	Burning Steppes	Hostile		Blackrock orc fortification on the Steppes outside the mountain
+sub	Draco'dar	Burning Steppes	Hostile		Black dragonflight ground in the eastern Burning Steppes
+sub	Thondroril River	Western Plaguelands	Contested		The river marking the border between the Plaguelands and the Eastern Plaguelands; crossing it is the usual way in
+sub	Eastwall Tower	Eastern Plaguelands	Contested		One of the four Lordaeron watchtowers ringing the Eastern Plaguelands
+sub	Crown Guard Tower	Eastern Plaguelands	Contested		Another of the four Eastern Plaguelands towers
+sub	The Fungal Vale	Eastern Plaguelands	Hostile		Blighted vale in the western Eastern Plaguelands
+sub	The Infectis Scar	Eastern Plaguelands	Hostile		Scourge-held scar of corrupted ground in the south
+sub	Lake Mereldar	Eastern Plaguelands	Contested		Lake in the southeast near Light's Hope Chapel
+sub	Bal'lal Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in northern Stranglethorn
+sub	Balia'mah Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin held by Bloodscalp trolls
+sub	Ziata'jai Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in the central jungle
+sub	Tkashi Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin near Lake Nazferiti
+sub	Zuuldaia Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin on the southern coast near Booty Bay
+sub	The Vile Reef	Stranglethorn Vale	Hostile		Murlocs living in sunken Gurubashi ruins on a reef off the coast; the naga reading is RPG-only and non-canon
+sub	Crystalvein Mine	Stranglethorn Vale	Hostile		Kurzen-held mine in the jungle interior
+sub	Mirage Flats	Badlands	Contested		Open northern Badlands flats
+sub	Valley of Fangs	Badlands	Hostile		Badlands valley on the route east, scorpid and raptor country
+sub	Dustbelch Grotto	Badlands	Hostile		Ogre cave in the northern Badlands
+sub	The Shifting Mire	Swamp of Sorrows	Contested		Open mire in the northern Swamp of Sorrows
+sub	The Red Reaches	Blasted Lands	Contested		The eastern coast of the Blasted Lands
+
+# --- Kalimdor: places not yet written -------------------------------------
+sub	Burning Blade Coven	Durotar	Hostile		Burning Blade cult cave in Durotar; orcs seeking the old demonic power Thrall outlawed
+sub	Rocktusk Farm	Durotar	Hostile		Razormane quilboar farm in western Durotar
+sub	Scuttle Coast	Durotar	Contested		Durotar's southeastern coast, near the Echo Isles
+sub	Deadeye Shore	Durotar	Contested		Durotar coastline where Kul Tiras marines were wrecked
+sub	The Rolling Plains	Mulgore	Horde		Eastern Mulgore grassland on the route to the Barrens
+sub	Ravaged Caravan	Mulgore	Contested		Destroyed caravan in Mulgore, picked over by gnolls
+sub	Thorn Hill	The Barrens	Horde		Razormane quilboar settlement under Tortusk, on the hilltop between the Crossroads and Durotar
+sub	Boulder Lode Mine	The Barrens	Hostile		Venture Company mine in the northern Barrens
+sub	Blackthorn Ridge	The Barrens	Hostile		Quilboar ridge in the southern Barrens
+sub	The Merchant Coast	The Barrens	Contested		Southeastern Barrens coast, Southsea pirates
+sub	Agama'gor	The Barrens	Contested		Bristleback quilboar settlement north of the road west out of Camp Taurajo
+sub	Shadowthread Cave	Teldrassil	Hostile		Spider cave on Teldrassil
+sub	Wellspring River	Teldrassil	Alliance		River running through Teldrassil's northern slopes
+sub	The Long Wash	Darkshore	Contested		Darkshore's northern beach
+sub	Mist's Edge	Darkshore	Contested		Southern Darkshore shoreline
+sub	Cliffspring River	Darkshore	Contested		River running down Darkshore's northern cliffs
+sub	Nightsong Woods	Ashenvale	Contested		Central Ashenvale old-growth forest
+sub	The Howling Vale	Ashenvale	Hostile		Ashenvale vale with a worgen and furbolg problem
+sub	Greenpaw Village	Ashenvale	Hostile		Furbolg village in southern Ashenvale
+sub	Iris Lake	Ashenvale	Contested		Lake in eastern Ashenvale
+sub	Felfire Hill	Ashenvale	Hostile		Demon-tainted hill in eastern Ashenvale, left from the Third War
+sub	Night Run	Ashenvale	Hostile		Eastern Ashenvale woodland, satyr territory
+sub	The Talon Den	Stonetalon Mountains	Hostile		Cave in the Stonetalon range
+sub	Cragpool Lake	Stonetalon Mountains	Contested		Lake in the northern Stonetalon Mountains
+sub	Camp Aparaje	Stonetalon Mountains	Horde		Small Horde camp in southern Stonetalon
+sub	Weazel's Crater	Thousand Needles	Neutral		Goblin racing crater on the Shimmering Flats
+sub	Kormek's Hut	Desolace	Contested		Lone hut on the Desolace road
+sub	Tethris Aran	Desolace	Hostile		Night elf ruin in Desolace, pre-Sundering
+sub	Ranazjar Isle	Desolace	Hostile		Naga-held island off the Desolace coast
+sub	Wyrmbog	Dustwallow Marsh	Hostile		Southern Dustwallow marsh; black dragonkin country near Onyxia's lair
+sub	The Quagmire	Dustwallow Marsh	Contested		Central Dustwallow bog
+sub	Dreadmurk Shore	Dustwallow Marsh	Hostile		Dustwallow's eastern shore facing Alcaz Island
+sub	Feral Scar Vale	Feralas	Hostile		Yeti vale in central Feralas
+sub	Grimtotem Compound	Feralas	Hostile		Grimtotem tauren camp in Feralas
+sub	Jademir Lake	Feralas	Contested		Lake in northern Feralas near the Dream Bough
+sub	Frayfeather Highlands	Feralas	Hostile		Harpy highlands in eastern Feralas
+sub	Noonshade Ruins	Tanaris	Hostile		One of the unidentified ruin sets in Tanaris, used by Sandfury trolls
+sub	Southmoon Ruins	Tanaris	Hostile		Another of the Tanaris ruin sets
+sub	Waterspring Field	Tanaris	Contested		Rare water source in central Tanaris
+sub	Zalashji's Den	Tanaris	Hostile		Naga den on the Tanaris coast
+sub	Ursolan	Azshara	Hostile		Ruined night elf site in Azshara, furbolg-held
+sub	Bay of Storms	Azshara	Hostile		Naga-held bay on Azshara's coast
+sub	Ravencrest Monument	Azshara	Contested		Monument carrying the Ravencrest name; the link to Kur'talos Ravencrest is wiki speculation, not confirmed
+sub	Hetaera's Clutch	Azshara	Hostile		Drowned temple of Elune in the Bay of Storms, full of hydras
+sub	Morlos'Aran	Felwood	Hostile		Corrupted site in southern Felwood
+sub	Whisperwind Grove	Felwood	Neutral		Grove in northern Felwood the Cenarion Circle is trying to hold
+sub	The Marshlands	Un'Goro Crater	Hostile		Wetland in the northwest of the crater
+sub	Eastern Pylon	Un'Goro Crater	Contested		One of the three titan crystal pylons ringing Un'Goro
+sub	Western Pylon	Un'Goro Crater	Contested		The third titan pylon at Un'Goro's rim
+sub	Frostfire Hot Springs	Winterspring	Contested		Hot springs in southern Winterspring
+sub	Timbermaw Post	Winterspring	Neutral		Timbermaw furbolg outpost in Winterspring
+sub	Staghelm Point	Silithus	Contested		Tower carrying the Staghelm name; whether for Fandral or his son Valstann is speculation
+sub	The Scarab Dais	Silithus	Contested		The dais before the Gates of Ahn'Qiraj, where the Scepter of the Shifting Sands is used
+sub	Ortell's Hideout	Silithus	Hostile		Twilight Hammer cultist hideout in Silithus
+
+# --- Forever's new zones: subzone names still to confirm in game ----------
+# Walk the zone, stand in each named area, and run /ftn where. That prints
+# the exact strings GetZoneText and GetSubZoneText return, which is what a
+# new entry has to match. Add the rows here, then generate.
+
+# TODO Shen'dralas: UNKNOWN -- no subzone names documented yet. Use /ftn where in game to capture them.
+# TODO Zephras Isle: UNKNOWN -- Windshapers, High Order and Al'Aketh are named as groups on the isle, but no subzone strings confirmed.
+# TODO Riverglades: UNKNOWN -- only Powderfuse Port confirmed so far.
+# TODO Mount Hyjal: Hyjal Summit is reported as a 20-player raid. Confirm the exact instance name with /ftn where before adding.

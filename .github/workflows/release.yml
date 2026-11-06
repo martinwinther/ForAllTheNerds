@@ -1,0 +1,49 @@
+# Tag-triggered release to CurseForge (and Wago / WoWInterface if you add those
+# tokens). Push an ANNOTATED tag named for the version and this does the rest:
+#
+#   git tag -a 1.1.0 -m "1.1.0"
+#   git push origin 1.1.0
+#
+# The packager takes the version from the tag name, so the tag must be the
+# version number and nothing else. Lightweight tags are ignored by the
+# packager's changelog generation, hence -a.
+
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write   # required, or the packager cannot create the GitHub release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # full history, so the changelog can be generated
+
+      - name: Validate the addon before shipping it
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lua5.4
+          lua5.4 tools/validate.lua
+
+      - name: Package and upload
+        uses: BigWigsMods/packager@v2
+        env:
+          # The packager's README and its wiki disagree on the name of the
+          # CurseForge token variable, so both are set to the same secret.
+          # Harmless either way, and it works whichever one the action reads.
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_API_TOKEN: ${{ secrets.CF_API_KEY }}
+          # Same situation for the GitHub token, used to attach the release.
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          GH_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional. Leave unset and the packager skips these hosts.
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}

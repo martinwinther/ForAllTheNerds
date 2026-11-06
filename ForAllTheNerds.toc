@@ -1,0 +1,42 @@
+## Interface: 16001, 11509
+## Title: ForAllTheNerds
+## Notes: Tells you the lore and history of wherever you are standing - zones, towns, ruins and dungeons. Vanilla-era lore only, no spoilers.
+## Author: martin
+## Version: 1.1.0
+## SavedVariables: ForAllTheNerdsDB
+## IconTexture: Interface\ICONS\INV_Misc_Book_09
+## DefaultState: enabled
+## X-Category: Quests & Leveling
+# Uncomment and fill in once the CurseForge project exists. The id is on the
+# project's own page, in the About Project box. The packager uploads without it
+# only if you pass -p on the command line instead.
+# ## X-Curse-Project-ID: 000000
+## X-Website: https://github.com/
+## X-License: MIT
+
+# -- Foundation -------------------------------------------------------------
+Util.lua
+Core.lua
+
+# -- Lore database ----------------------------------------------------------
+Data/Schema.lua
+Data/EasternKingdoms.lua
+Data/Kalimdor.lua
+Data/Cities.lua
+Data/Dungeons.lua
+Data/Forever.lua
+Data/Locales.lua
+Data/Index.lua
+
+# -- Engine -----------------------------------------------------------------
+Detect.lua
+
+# -- Interface --------------------------------------------------------------
+UI/Theme.lua
+UI/Toast.lua
+UI/Panel.lua
+UI/Minimap.lua
+UI/Options.lua
+
+# -- Entry points -----------------------------------------------------------
+Commands.lua
