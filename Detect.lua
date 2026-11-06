@@ -186,6 +186,20 @@ function D:Update(force)
 	self.subName    = subName
 	self.inInstance = inInstance
 
+	-- Note anything the client names that has no entry, including the common
+	-- case where a subzone is unwritten and we quietly fell back to the zone.
+	-- Looked up without the spoiler filter, so Forever's hidden entries are not
+	-- reported as missing.
+	if zoneName then
+		if subName then
+			if not (ns.FindSubIn(subName, zoneName) or ns.FindInstance(subName)) then
+				ns.RecordUnknown(zoneName, subName)
+			end
+		elseif not ns.FindZone(zoneName) then
+			ns.RecordUnknown(zoneName, nil)
+		end
+	end
+
 	if entry and (changed or force) then
 		self:Announce(entry, force)
 	end

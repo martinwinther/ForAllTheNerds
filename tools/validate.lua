@@ -736,6 +736,82 @@ mock.onTaxi = false
 ns.Toast:Hide()
 ns.db.suppressOnTaxi = true
 
+section("Gap logging")
+
+-- The database is not exhaustive, so the addon records the names the client
+-- gives for places it has nothing written for. Those strings are then the
+-- worklist, correctly spelled, which is better than a list written by hand.
+ns.db.logUnknown = true
+ns.db.unknown = {}
+ns.db.showForeverContent = false
+
+-- A real Elwynn subzone with no entry.
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Thunder Falls" })
+local list = ns.UnknownList()
+if #list == 1 and list[1].sub == "Thunder Falls" and list[1].zone == "Elwynn Forest" then
+	out("an unwritten subzone is recorded, even though the zone entry was shown instead")
+else
+	fail("an unwritten subzone was not recorded (%d entries)", #list)
+end
+
+-- Revisiting counts rather than duplicating.
+mock.moveTo({ zone = "Duskwood", realzone = "Duskwood", subzone = "Darkshire" })
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Thunder Falls" })
+list = ns.UnknownList()
+if #list == 1 and list[1].count >= 2 then
+	out(string.format("revisits increment the count (now %d) rather than duplicating", list[1].count))
+else
+	fail("revisiting produced %d entries with count %s", #list, list[1] and list[1].count)
+end
+
+-- Places that DO have an entry must never be recorded.
+for _, place in ipairs({ { "Elwynn Forest", "Goldshire" }, { "Westfall", "Sentinel Hill" },
+                         { "The Barrens", "The Crossroads" }, { "Ironforge", "The Great Forge" } }) do
+	mock.moveTo({ zone = place[1], realzone = place[1], subzone = place[2] })
+end
+list = ns.UnknownList()
+if #list == 1 then
+	out("places that do have entries are not recorded as gaps")
+else
+	local names = {}
+	for i = 1, #list do names[#names + 1] = tostring(list[i].sub) end
+	fail("written-up places were logged as gaps: %s", table.concat(names, ", "))
+end
+
+-- A Forever zone hidden by the spoiler setting is not a gap; it has an entry.
+mock.moveTo({ zone = "Mount Hyjal", realzone = "Mount Hyjal", subzone = "" })
+mock.moveTo({ zone = "Riverglades", realzone = "Riverglades", subzone = "Powderfuse Port" })
+list = ns.UnknownList()
+if #list == 1 then
+	out("spoiler-hidden Forever entries are not mistaken for gaps")
+else
+	fail("%d gaps after visiting hidden Forever zones, expected 1", #list)
+end
+
+-- An entirely unknown zone is recorded as a whole-zone gap.
+mock.moveTo({ zone = "Somewhere Unwritten", realzone = "Somewhere Unwritten", subzone = "" })
+local whole = false
+for _, r in ipairs(ns.UnknownList()) do
+	if r.zone == "Somewhere Unwritten" and r.sub == nil then whole = true end
+end
+if whole then
+	out("an unknown zone is recorded with no subzone")
+else
+	fail("an unknown zone was not recorded")
+end
+
+-- The switch has to actually stop it.
+ns.db.logUnknown = false
+ns.db.unknown = {}
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Maclure Vineyards" })
+if #ns.UnknownList() == 0 then
+	out("turning the setting off stops the recording")
+else
+	fail("gaps were recorded with logUnknown off")
+end
+ns.db.logUnknown = true
+ns.db.unknown = {}
+
 section("Source links")
 
 -- Every reference in the database has to produce a usable address.
@@ -835,7 +911,7 @@ if not handler then
 else
 	local commands = {
 		"", "help", "here", "list", "list Kalimdor", "list Eastern Kingdoms",
-		"stats", "where", "card off", "card on", "chat on", "chat off",
+		"stats", "gaps", "gaps clear", "gaps off", "gaps on", "where", "card off", "card on", "chat on", "chat off",
 		"forever on", "forever off", "on", "off", "on",
 		"unlock", "reset", "debug on", "debug off", "forget",
 		"Goldshire", "goldshire", "GOLDSHIRE", "Stratholme", "karazhan",

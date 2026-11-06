@@ -27,6 +27,7 @@ local function showHelp()
 	line("/ftn unlock",         "park a card on screen so you can drag it")
 	line("/ftn reset",          "put the card and panel back in the middle")
 	line("/ftn stats",          "how much you have discovered")
+	line("/ftn gaps",           "places you have been that have no entry yet")
 	line("/ftn where",          "print what the client thinks this place is called")
 	if ns.Index then
 		U.Print(hex(DIM, string.format("%d places written up: %d zones, %d locales, %d instances.",
@@ -145,6 +146,45 @@ local function doWhere()
 	U.Print(hex(DIM, "If a place has no entry, these are the exact strings a new entry needs to match."))
 end
 
+local function doGaps(arg)
+	local db = ns.db
+	if arg == "clear" or arg == "reset" then
+		db.unknown = {}
+		U.Print("gap list cleared.")
+		return
+	end
+	if arg == "off" or arg == "on" then
+		db.logUnknown = (arg == "on")
+		U.Print("recording places with no entry is %s.", arg)
+		return
+	end
+
+	local list = ns.UnknownList()
+	if #list == 0 then
+		U.Print("no gaps recorded. Everywhere you have been has an entry.")
+		if not db.logUnknown then
+			U.Print(hex(DIM, "Recording is switched off. Turn it on with /ftn gaps on."))
+		end
+		return
+	end
+
+	U.Print("%d place%s you have visited with no entry, most-seen first:",
+		#list, #list == 1 and "" or "s")
+	local shown = math.min(#list, 25)
+	for i = 1, shown do
+		local r = list[i]
+		local where = r.sub and (hex(ACCENT, r.sub) .. hex(DIM, "  in " .. r.zone))
+			or hex(ACCENT, r.zone) .. hex(DIM, "  (whole zone)")
+		U.Print("  %s %s", where, hex(DIM, "x" .. r.count))
+	end
+	if #list > shown then
+		U.Print(hex(DIM, string.format("  ...and %d more.", #list - shown)))
+	end
+	U.Print(hex(DIM, "These are the exact strings the client reports. The full list is saved in"))
+	U.Print(hex(DIM, "WTF/Account/<ACCOUNT>/SavedVariables/ForAllTheNerds.lua under 'unknown'."))
+	U.Print(hex(DIM, "/ftn gaps clear empties it."))
+end
+
 local function doStats()
 	local db = ns.db
 	if not db then return end
@@ -156,6 +196,11 @@ local function doStats()
 		hex(GOLD, tostring(found)), hex(GOLD, tostring(total)), pct, hex(GOLD, tostring(read)))
 	if not db.showForeverContent then
 		U.Print(hex(DIM, "Forever's new zones are not counted while they are turned off."))
+	end
+	local gaps = #ns.UnknownList()
+	if gaps > 0 then
+		U.Print(hex(DIM, string.format("%d place%s you have visited has no entry yet. /ftn gaps lists them.",
+			gaps, gaps == 1 and "" or "s")))
 	end
 end
 
@@ -234,6 +279,9 @@ local function handler(msg)
 		ns.db.minimapOffset = 10
 		if ns.Minimap then ns.Minimap:Refresh() end
 		U.Print("positions reset. %s", hex(DIM, "Reload the UI to move frames that are already on screen."))
+
+	elseif cmd == "gaps" or cmd == "missing" then
+		doGaps(string.lower(rest or ""))
 
 	elseif cmd == "stats" then
 		doStats()

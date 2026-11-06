@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.0
+
+**Added**
+
+- The addon now notes places the game names that it has nothing written for,
+  and `/ftn gaps` lists them. The database covers every zone but only part of
+  the smaller places inside them, and the names it was built from were put
+  together by hand. Letting the client report the gaps gives exactly the
+  strings it uses, correctly spelled, for places somebody has actually stood
+  in. Nothing is sent anywhere; the list lives in your saved variables.
+  `/ftn gaps clear` empties it and the setting can be turned off.
+- `/ftn stats` mentions how many gaps have been recorded.
+
 ## 1.1.0
 
 **Fixed**
