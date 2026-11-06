@@ -12,6 +12,18 @@
   in. Nothing is sent anywhere; the list lives in your saved variables.
   `/ftn gaps clear` empties it and the setting can be turned off.
 - `/ftn stats` mentions how many gaps have been recorded.
+- Entries for Forever's nine new dungeons: Hall of Thanes, Ruins of Lordaeron,
+  Excavation Site, City of Dalaran, The Drowned City, Krol'dok Stronghold,
+  Alcaz Prison, Blackmaw Hold and Shaper's Terrace. Background only, like the
+  rest of the Forever material. Community sources disagree about a few of the
+  names, so each is registered with the variants as aliases.
+- Walking into a place whose only entry is hidden by the Forever setting now
+  says so once, rather than showing nothing at all.
+
+**Fixed**
+
+- Entering an instance was recorded as an unknown zone. Instances are
+  registered separately from zones and the gap logger only checked zones.
 
 ## 1.1.0
 

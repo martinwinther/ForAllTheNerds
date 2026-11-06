@@ -93,7 +93,7 @@ SubsOf("Riverglades", {
 })
 
 Instance{
-	name = "Krol'dok Stronghold", continent = "Eastern Kingdoms", faction = "Hostile", levels = "35-45",
+	name = "Krol'dok Stronghold", continent = "Eastern Kingdoms", faction = "Hostile", levels = "40-45",
 	era = "forever", spoiler = true,
 	hook = "A stronghold in Riverglades, in a region hemmed in by orcs, ogres and the Dark Iron.",
 	lore = {
@@ -137,4 +137,121 @@ Zone{
 	},
 	didYouKnow = "Elementals on Azeroth are refugees and invaders from four planes, not natives. Every elemental incursion in the world, the Abyssal Sands in Tanaris, the Charred Vale, Firewatch Ridge, is a place where one of those planes presses close enough to come through.",
 	readMore = { "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords", "Wowpedia: Elemental Plane" },
+}
+
+-- ---------------------------------------------------------------------------
+-- THE NEW DUNGEONS
+--
+-- Nine five-player dungeons. Names, level ranges and entrances come from
+-- community guides quoting Blizzard's announcements, not from anything I could
+-- verify directly, so each is registered with aliases covering the spellings
+-- the sources disagree about. If one of these never fires in game, /ftn where
+-- inside it prints what the client actually calls the place.
+--
+-- Written as background only, like the rest of this file: what the place is
+-- and the older history it sits on. No bosses, no tactics, no plot.
+-- ---------------------------------------------------------------------------
+
+Instance{
+	name = "Hall of Thanes", continent = "Eastern Kingdoms", faction = "Alliance", levels = "13-18",
+	era = "forever", spoiler = true,
+	aliases = { "The Hall of Thanes" },
+	hook = "The tomb of Ironforge's kings, down in Old Ironforge beneath the High Seat.",
+	lore = {
+		"Old Ironforge is the original dwarven city, and it lies directly under the one you walk through. Modern Ironforge was built on top of it. The way in is off the High Seat, which is where Magni Bronzebeard holds court, so the kings of the dwarves have been sitting above their own predecessors' tombs this whole time.",
+		"The Anvilmar name on the dungeon's occupants is the important one. Modimus Anvilmar was High King when the dwarves were still one people under one throne. His death left no settled succession, and the Bronzebeards, the Wildhammers and the Dark Irons went to war over it.",
+		"That war is the hinge every other dwarven grievance turns on. The Bronzebeards kept Ironforge. The Wildhammers went north and founded Aerie Peak. The Dark Irons went south, lost again, and bound themselves to Ragnaros, which is why there is a Searing Gorge and a Blackrock Depths at all.",
+	},
+	didYouKnow = "Old Ironforge has been sealed for most of recorded dwarven history. That a dungeon's worth of it opens under the High Seat means Magni has been holding court on top of something the Bronzebeards chose not to discuss.",
+	readMore = { "Wowpedia: Old Ironforge", "Wowpedia: War of the Three Hammers", "Wowpedia: Modimus Anvilmar" },
+}
+
+Instance{
+	name = "Ruins of Lordaeron", continent = "Eastern Kingdoms", faction = "Horde", levels = "15-20",
+	era = "forever", spoiler = true,
+	hook = "Capital City above the Undercity, where Arthas killed his father on the throne.",
+	lore = {
+		"This was the greatest human city in the world. Lordaeron's king, Terenas Menethil, ruled from here, and the Alliance of Lordaeron that won the Second War was put together inside these walls.",
+		"His son Arthas took up Frostmourne in Northrend and came home a death knight. He killed Terenas on the throne in the room above, and the kingdom died with him. Sylvanas Windrunner's Forsaken later dug their capital out of the crypts and sewers underneath, which is how a dead nation's heirs ended up living in its basement.",
+		"The Scourge never fully left. Holding the ruin matters to the Forsaken for reasons beyond defence: it is the one piece of Lordaeron they can still point at.",
+	},
+	readMore = { "Wowpedia: Ruins of Lordaeron", "Wowpedia: Arthas Menethil", "Wowpedia: Undercity" },
+}
+
+Instance{
+	name = "Excavation Site", continent = "Eastern Kingdoms", faction = "Contested", levels = "24-29",
+	era = "forever", spoiler = true,
+	aliases = { "Excavation Site: Wetlands", "The Excavation Site" },
+	hook = "An Explorers' League dig in the Wetlands that has broken into something titan-built.",
+	lore = {
+		"The Explorers' League has been digging across Khaz Modan since Uldaman, and Whelgar's excavation in the Wetlands is one of its sites. The dwarves came for the enormous bones in the marsh and kept going.",
+		"What they are finding now is construction rather than fossils. After Uldaman, Ironforge knows what titan work looks like: the Discs of Norgannon recorded that the earthen, the dwarves' own ancestors, were shaped from living stone. Every find like this one is read in Ironforge as more of that record.",
+		"Thelgen Rock and Dun Algaz are both close by, and the marsh has a habit of swallowing anything dug into it. The League keeps digging anyway.",
+	},
+	readMore = { "Wowpedia: Whelgar's Excavation Site", "Wowpedia: Uldaman", "Wowpedia: Explorers' League" },
+}
+
+Instance{
+	name = "City of Dalaran", continent = "Eastern Kingdoms", faction = "Contested", levels = "28-33",
+	era = "forever", spoiler = true,
+	aliases = { "Dalaran", "The City of Dalaran" },
+	hook = "Inside the Kirin Tor's ruined city, under the dome that has hidden it since the Third War.",
+	lore = {
+		"Dalaran was the magocracy, and the Violet Citadel at its centre was the finest school of arcane learning in the world. Medivh, Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied here.",
+		"Archimonde destroyed it during the Legion's invasion. The mages threw everything they had into a shield and the demon broke it and crushed the city underneath. What has been visible from the Alterac Mountains ever since is a crater under a magical dome, patrolled by surviving Kirin Tor who keep people out.",
+		"Kel'Thuzad is the name that hangs over the place. He was a Kirin Tor archmage until Dalaran expelled him for studying necromancy, and he went north, found the Lich King, and came back with the plague that killed Lordaeron. The order that threw him out paid for it as much as anyone.",
+	},
+	didYouKnow = "Getting in needs an attunement, and the Alliance and Horde start it from opposite ends of the Hillsbrad war: Southshore for one, Tarren Mill for the other.",
+	readMore = { "Wowpedia: Dalaran", "Wowpedia: Kirin Tor", "Wowpedia: Archimonde" },
+}
+
+Instance{
+	name = "The Drowned City", continent = "Eastern Kingdoms", faction = "Contested", levels = "35-40",
+	era = "forever", spoiler = true,
+	aliases = { "Drowned City" },
+	hook = "A troll city under the water off Stranglethorn, with naga in it.",
+	lore = {
+		"Stranglethorn was the heart of the Gurubashi Empire, and the empire did not stop at the shoreline. A good deal of Gurubashi stonework is underwater along this coast, because the coast moved: the Sundering broke Kalimdor apart and raised the sea over ground that had been dry.",
+		"The Gurubashi came apart from the inside. Their own priests summoned Hakkar the Soulflayer and the empire had to fight a war to contain him, and nothing has been built in the vale since.",
+		"The naga are the other half of it. They were night elves once, highborne of Queen Azshara's court, changed when the Well of Eternity collapsed and Zin-Azshari went under. Ten thousand years later they are coming back up all along this world's coasts, and a sunken city suits them.",
+	},
+	readMore = { "Wowpedia: Gurubashi Empire", "Wowpedia: Naga", "Wowpedia: Great Sundering" },
+}
+
+Instance{
+	name = "Alcaz Prison", continent = "Kalimdor", faction = "Contested", levels = "48-53",
+	era = "forever", spoiler = true,
+	aliases = { "Alcaz Island" },
+	hook = "The island prison off Dustwallow, where the Defias held Stormwind's nobles for ransom.",
+	lore = {
+		"Alcaz Island sits off Dustwallow Marsh's eastern shore, within sight of Theramore and impossible to get onto. The Defias Brotherhood used it to hold kidnapped Stormwind nobility while the ransoms were negotiated, which is a long way from Westfall for a gang of stonemasons.",
+		"The Brotherhood were never only bandits. They were the guild that rebuilt Stormwind after the First War and were refused payment for it, and they kept the organisation, the engineers and the reach that came with the work.",
+		"Naga hold the water around the island now. Both the Horde and the Alliance have noticed that something is being kept there and neither has managed to get onto it in force.",
+	},
+	readMore = { "Wowpedia: Alcaz Island", "Wowpedia: Defias Brotherhood" },
+}
+
+Instance{
+	name = "Blackmaw Hold", continent = "Kalimdor", faction = "Contested", levels = "55-60",
+	era = "forever", spoiler = true,
+	hook = "A furbolg city in Azshara, behind a gate that has been sealed a very long time.",
+	lore = {
+		"Furbolgs were the night elves' oldest neighbours and, for most of ten thousand years, their allies. They are not a monster population and the night elves have never treated them as one.",
+		"Something has been going wrong with them. The Gnarlpine on Teldrassil, the Deadwood and Felpaw in Felwood, the Thistlefur in Ashenvale and the Winterfall in Winterspring have all turned, and the Timbermaw are the one large tribe that has held out. A sealed furbolg city in Azshara is the kind of place that would know why.",
+		"Azshara is the right ground for it. This was Queen Azshara's own country before the Sundering, her palace stood here, and the region is the largest unsurveyed ruin field on the continent.",
+	},
+	readMore = { "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold", "Wowpedia: Azshara" },
+}
+
+Instance{
+	name = "Shaper's Terrace", continent = "Kalimdor", faction = "Contested", levels = "58-60",
+	era = "forever", spoiler = true,
+	aliases = { "The Shaper's Terrace", "Shapers Terrace" },
+	hook = "Structures in Un'Goro's northern hills, of a piece with the crater's unexplained machinery.",
+	lore = {
+		"Un'Goro is walled the whole way round, holds a jungle in the middle of a desert belt, has a live volcano at its centre and three crystal pylons standing on its rim that nobody has ever attributed to a builder. The expedition at Marshal's Refuge has catalogued all of that and explained none of it.",
+		"The pylons react to crystals found across the crater floor and produce something when fed. That is the limit of what anyone has established about them, and a terrace of built structures in the northern hills belongs to the same set of questions.",
+		"The dwarves have an obvious theory, because the Explorers' League has one theory about everything: titan work, as at Uldaman and behind the sealed Gates of Uldum in Tanaris. It is a theory. Nothing in the crater has confirmed it.",
+	},
+	readMore = { "Wowpedia: Un'Goro Crater", "Wowpedia: Uldaman" },
 }

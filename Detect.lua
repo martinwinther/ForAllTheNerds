@@ -174,6 +174,27 @@ end
 -- Event handling
 -- ---------------------------------------------------------------------------
 
+-- Is there an entry for here that the spoiler setting is hiding? Walking into
+-- one of Forever's new dungeons and getting nothing at all looks like the addon
+-- is broken, when in fact it has a write-up and has been told not to show it.
+local hinted = {}
+
+local function hiddenEntryFor(zoneName, subName)
+	local function check(e)
+		if e and e.spoiler and not ns.IsVisible(e) then return e end
+		return nil
+	end
+	if subName then
+		local e = check(ns.FindSubIn(subName, zoneName)) or check(ns.FindInstance(subName))
+		if e then return e end
+	end
+	if zoneName then
+		local e = check(ns.FindInstance(zoneName)) or check(ns.FindZone(zoneName))
+		if e then return e end
+	end
+	return nil
+end
+
 function D:Update(force)
 	local entry, zoneEntry, zoneName, subName = self:Resolve()
 	local inInstance = select(1, readInstance())
@@ -195,8 +216,18 @@ function D:Update(force)
 			if not (ns.FindSubIn(subName, zoneName) or ns.FindInstance(subName)) then
 				ns.RecordUnknown(zoneName, subName)
 			end
-		elseif not ns.FindZone(zoneName) then
+		elseif not (ns.FindZone(zoneName) or ns.FindInstance(zoneName)) then
 			ns.RecordUnknown(zoneName, nil)
+		end
+	end
+
+	-- Nothing to show, but something written: say so once per place per session.
+	if not entry and ns.db and ns.db.enabled then
+		local hidden = hiddenEntryFor(zoneName, subName)
+		if hidden and not hinted[hidden.key] then
+			hinted[hidden.key] = true
+			U.Print("%s has an entry, but it is one of Forever's new places and those are hidden by default. Turn them on with /ftn forever on.",
+				hidden.name)
 		end
 	end
 

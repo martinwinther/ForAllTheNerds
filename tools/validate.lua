@@ -736,6 +736,93 @@ mock.onTaxi = false
 ns.Toast:Hide()
 ns.db.suppressOnTaxi = true
 
+section("Dungeons")
+
+-- Every instance has to resolve from the name the client reports when you are
+-- standing inside it. Walking into a dungeon and getting nothing is the single
+-- most visible way this addon can fail.
+local VANILLA_INSTANCES = {
+	"Ragefire Chasm", "Wailing Caverns", "The Deadmines", "Shadowfang Keep",
+	"Blackfathom Deeps", "The Stockade", "Gnomeregan", "Razorfen Kraul",
+	"Scarlet Monastery", "Razorfen Downs", "Uldaman", "Zul'Farrak", "Maraudon",
+	"The Temple of Atal'Hakkar", "Blackrock Depths", "Blackrock Spire",
+	"Lower Blackrock Spire", "Upper Blackrock Spire", "Dire Maul",
+	"Scholomance", "Stratholme", "Onyxia's Lair", "Molten Core",
+	"Blackwing Lair", "Zul'Gurub", "Ruins of Ahn'Qiraj", "Temple of Ahn'Qiraj",
+	"Naxxramas", "Alterac Valley", "Warsong Gulch", "Arathi Basin",
+}
+
+-- Forever's nine, plus the spelling variants the community sources disagree
+-- about. Each is registered with aliases, so both forms must land somewhere.
+local FOREVER_INSTANCES = {
+	"Hall of Thanes", "The Hall of Thanes", "Ruins of Lordaeron",
+	"Excavation Site", "Excavation Site: Wetlands", "City of Dalaran",
+	"The Drowned City", "Krol'dok Stronghold", "Alcaz Prison",
+	"Blackmaw Hold", "Shaper's Terrace", "The Shaper's Terrace",
+}
+
+local function enter(name)
+	mock.moveTo({ zone = name, realzone = name, subzone = "",
+		inInstance = true, instanceType = "party", instanceName = name })
+	return ns.Detect.entry
+end
+
+ns.db.showForeverContent = false
+local vanillaBad = 0
+for i = 1, #VANILLA_INSTANCES do
+	if not enter(VANILLA_INSTANCES[i]) then
+		vanillaBad = vanillaBad + 1
+		fail("no entry resolves inside %q", VANILLA_INSTANCES[i])
+	end
+end
+out(string.format("%d/%d vanilla instances resolve from inside",
+	#VANILLA_INSTANCES - vanillaBad, #VANILLA_INSTANCES))
+
+ns.db.showForeverContent = true
+local foreverBad = 0
+for i = 1, #FOREVER_INSTANCES do
+	if not enter(FOREVER_INSTANCES[i]) then
+		foreverBad = foreverBad + 1
+		fail("no entry resolves inside %q with Forever content on", FOREVER_INSTANCES[i])
+	end
+end
+out(string.format("%d/%d Forever instance names resolve, aliases included",
+	#FOREVER_INSTANCES - foreverBad, #FOREVER_INSTANCES))
+ns.db.showForeverContent = false
+
+-- A Forever dungeon with the setting off should say so rather than go silent,
+-- and must not be filed as a gap: there IS an entry, it is just hidden.
+ns.db.unknown, ns.db.logUnknown = {}, true
+mock.clearPrinted()
+enter("Hall of Thanes")
+local told = false
+for _, line in ipairs(mock.printed) do
+	if string.find(line, "forever on", 1, true) then told = true end
+end
+if told then
+	out("a hidden Forever dungeon explains itself instead of staying silent")
+else
+	fail("entering a hidden Forever dungeon produced no explanation")
+end
+if next(ns.db.unknown) then
+	local names = {}
+	for k in pairs(ns.db.unknown) do names[#names + 1] = k end
+	fail("a hidden Forever dungeon was logged as a gap: %s", table.concat(names, ", "))
+else
+	out("hidden Forever dungeons are not logged as gaps")
+end
+
+-- An instance registered with ns.Instance is not a zone, so the gap logger has
+-- to check both. This caught a real bug.
+ns.db.unknown = {}
+enter("Molten Core")
+if next(ns.db.unknown) then
+	fail("a written-up instance was logged as an unknown zone")
+else
+	out("written-up instances are not logged as unknown zones")
+end
+ns.db.unknown = {}
+
 section("Gap logging")
 
 -- The database is not exhaustive, so the addon records the names the client
