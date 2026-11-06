@@ -43,6 +43,9 @@ cp -R Data UI "$DEST/"
 cp LICENSE "$DEST/"
 # Install notes ride along so they reach whoever gets the zip directly.
 [ -f INSTALL.md ] && cp INSTALL.md "$DEST/"
+# The packager pulls this in via .pkgmeta's manual-changelog, so include it
+# here too and keep the manual and automated packages identical.
+[ -f CHANGELOG.md ] && cp CHANGELOG.md "$DEST/"
 
 find "$STAGE" -name '.DS_Store' -delete
 
