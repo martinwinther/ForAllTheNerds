@@ -39,7 +39,7 @@ and writes `ForAllTheNerds-<version>.zip` with the folder at the right depth.
 | Field | Suggested value |
 |---|---|
 | Name | ForAllTheNerds |
-| Summary | Tells you the lore and history of wherever you are standing, down to individual towns, ruins and dungeons rather than just zones, with vanilla-era lore only and no spoilers. |
+| Summary | Tells you the history of the places you walk through, from whole zones down to individual towns, ruins and dungeons, with no spoilers. |
 | Avatar | `media/logo-400.png` (or `logo-512.png`). Square, transparent-free, reads at list size. |
 | Category | Quests & Leveling (secondary: Map & Minimap) |
 | License | MIT (the `LICENSE` file is in the repo) |
@@ -47,23 +47,18 @@ and writes `ForAllTheNerds-<version>.zip` with the folder at the right depth.
 
 ### The summary field
 
-CurseForge wants **one English sentence** that captures what the addon is and
-what it does. Use this, which is 173 characters:
+CurseForge wants one English sentence saying what the addon is and does. Use
+this, at 134 characters:
 
-> Tells you the lore and history of wherever you are standing, down to
-> individual towns, ruins and dungeons rather than just zones, with vanilla-era
-> lore only and no spoilers.
+> Tells you the history of the places you walk through, from whole zones down to individual towns, ruins and dungeons, with no spoilers.
 
-Two shorter alternatives if you want it tighter:
+Shorter, if you want it tighter:
 
-> Tells you the lore and history of wherever you are standing in Azeroth, down
-> to individual towns, ruins and dungeons rather than just zones.
-
-> Shows a short card when you arrive somewhere new, telling you the lore and
-> history of that exact spot, from whole zones down to a single ruin or inn.
+> Tells you the history of the places you walk through, down to individual
+> towns, ruins and dungeons.
 
 The longer **Description** field is separate. `curseforge-description.md` is
-written for it and can go in as-is; switch the CurseForge editor to Markdown
+written for it and goes in as-is; switch the CurseForge editor to Markdown
 before pasting, or the formatting arrives as literal asterisks.
 
 ### Artwork
