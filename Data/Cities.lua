@@ -15,14 +15,14 @@ local EK, KA = "Eastern Kingdoms", "Kalimdor"
 
 Zone{
 	name = "Stormwind City", continent = EK, faction = "Alliance", levels = "Capital",
-	hook = "A city burned to the ground and rebuilt by masons it never paid, now run by a regent and a dragon.",
+	hook = "Burned to the ground in the First War, rebuilt by masons it then refused to pay.",
 	lore = {
 		"Stormwind is the capital of the human kingdom once called Azeroth, and the greatest city in the Alliance. It is also a reconstruction. The orcish Horde sacked and burned it in the First War, King Llane Wrynn was murdered in his own keep, and the survivors fled north to Lordaeron.",
 		"The rebuilding was done by the Stonemasons' Guild and it was superb. The nobility then refused to pay for it, and the guild's leader Edwin VanCleef took his masons underground and founded the Defias Brotherhood. Westfall is still burning over that decision.",
-		"The city's politics are worse than they look. King Varian Wrynn is missing, lost at sea, and the throne is held in regency for his young son Anduin by Highlord Bolvar Fordragon. Bolvar's most trusted advisor is the noblewoman Lady Katrana Prestor, who is in fact Onyxia, a daughter of Deathwing, in human form. She has been steering the kingdom's decisions for years, and the Defias dispute was one of them.",
+		"The city's politics are harder to read than its history. King Varian Wrynn is missing, lost at sea, and the throne is held in regency for his young son Anduin by Highlord Bolvar Fordragon. A regency concentrates power in whoever has the regent's ear, and the decisions coming out of this keep have served Westfall, Redridge and Duskwood very badly indeed.",
 	},
-	didYouKnow = "Stormwind's failures in Westfall, Redridge and Duskwood are not incompetence. They are policy, and the policy has been shaped by a black dragon sitting on the regent's council.",
-	readMore = { "Wowpedia: Stormwind City", "Wowpedia: Onyxia", "Wowpedia: Bolvar Fordragon" },
+	didYouKnow = "Stormwind Keep still stands on the spot where King Llane was assassinated during the First War. The city rebuilt around that room rather than move the seat of government anywhere else.",
+	readMore = { "Wowpedia: Stormwind City", "Wowpedia: Bolvar Fordragon", "Wowpedia: Varian Wrynn" },
 }
 
 SubsOf("Stormwind City", {
@@ -68,10 +68,10 @@ SubsOf("Stormwind City", {
 	},
 	{
 		name = "Stormwind Keep", faction = "Alliance",
-		hook = "The throne room where a king was murdered and a dragon now gives advice.",
+		hook = "The throne room where King Llane was murdered, and where the regency sits now.",
 		lore = {
 			"Stormwind Keep is the seat of the kingdom. King Llane Wrynn was assassinated here during the First War, and the keep was burned with the rest of the city.",
-			"It now holds Highlord Bolvar Fordragon as regent, the boy king Anduin Wrynn, and Lady Katrana Prestor. Two of those three are what they appear to be.",
+			"It now holds Highlord Bolvar Fordragon as regent and the boy king Anduin Wrynn, with the court nobility around them. A great deal of the kingdom runs through that room.",
 		},
 	},
 	{

@@ -647,7 +647,7 @@ SubsOf("Dustwallow Marsh", {
 		hook = "The southern marsh, thick with black dragonkin for an obvious reason.",
 		lore = {
 			"Wyrmbog is the least controlled part of Dustwallow and the most heavily patrolled by things with wings. Onyxia's lair opens into this stretch of the marsh.",
-			"Onyxia is a daughter of Deathwing and her choice of ground was not sentimental. She keeps a lair within reach of Theramore, the Alliance's only real city on this continent, while she herself sits on Stormwind's regency council as the noblewoman Lady Katrana Prestor.",
+			"Onyxia is a daughter of Deathwing and her choice of ground was not sentimental. A lair within easy reach of Theramore, the Alliance's only real city on this continent, is deliberate positioning rather than convenience.",
 		},
 	},
 	{

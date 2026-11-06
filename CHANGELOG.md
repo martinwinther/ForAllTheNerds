@@ -22,6 +22,13 @@
 
 **Fixed**
 
+- The Stormwind entries gave away that Lady Katrana Prestor is Onyxia. That is
+  the payoff of a long questline and it was sitting in the capital's write-up
+  where anyone would read it at level ten, in an addon whose whole promise is
+  no spoilers. Removed there and in the seven other places it had spread to.
+  Three more reveals of the same kind went with it: that Rend does not really
+  command Blackrock Spire, Thermaplugg's betrayal stated as fact rather than
+  as the rumour the game treats it as, and the Mor'Ladim questline's ending.
 - Entering an instance was recorded as an unknown zone. Instances are
   registered separately from zones and the gap logger only checked zones.
 

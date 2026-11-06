@@ -23,8 +23,8 @@ Arathor, the War of the Three Hammers, the fall of Lordaeron, the Battle of
 Mount Hyjal.
 
 Nothing from The Burning Crusade onward. It is written in the present tense of
-vanilla: Varian is missing, Dalaran is a crater, Onyxia is still Lady Prestor
-and nobody in Stormwind knows.
+vanilla: Varian is missing, Dalaran is a crater, and Stormwind is being
+governed by a regency that keeps making decisions nobody can account for.
 
 **No spoilers.** Entries explain the standing situation and the history behind
 it, never how a questline resolves or what is at the bottom of the dungeon you

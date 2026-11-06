@@ -225,7 +225,7 @@ SubsOf("Dun Morogh", {
 			"It worked on the troggs. It also irradiated the gnomes. Something like four-fifths of the gnomish population died or was warped into leper gnomes, and Thermaplugg sealed himself inside and took the city for himself. The survivors fled to Ironforge, where the dwarves took them in.",
 			"The gnomes have not given up on retaking it. Mekkatorque is openly recruiting anyone willing to go down into the irradiated levels, and the entrance is crawling with takers.",
 		},
-		didYouKnow = "Thermaplugg had run the numbers and expected to lose about three gnomes in ten, after which he would be the obvious candidate for High Tinker. He lost closer to eight. In Tinker Town it is still spoken of as a rumour. The gnomes would much rather it stayed one.",
+		didYouKnow = "In Tinker Town it is said, carefully and not too loudly, that Thermaplugg knew what the radiation would do before he proposed it. The gnomes would much rather that stayed a rumour.",
 		readMore = { "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
 	},
 	{
@@ -461,7 +461,7 @@ Zone{
 		"The Defias Brotherhood is the zone's real story, and Stormwind brought it on itself. After the First War, the Stonemasons' Guild rebuilt Stormwind City from the ground up. When the bill came due, the nobility refused to pay it. The guild's leader, Edwin VanCleef, took his masons, went underground, and turned a labour dispute into an insurgency.",
 		"They now operate out of the Deadmines beneath Moonbrook, raid the roads, and have the sympathy of a good number of the people they are nominally terrorising. What stands against them is the People's Militia: a volunteer force of farmers out of Sentinel Hill, because Stormwind has not sent an army.",
 	},
-	didYouKnow = "The Defias grievance is entirely legitimate. The masons did the work, Stormwind did not pay, and the noble who argued hardest against paying was Lady Katrana Prestor, who has the young king's regent's ear and is not what she appears to be.",
+	didYouKnow = "The Defias grievance is legitimate. The masons did the work, Stormwind did not pay, and nobody on the council that made that decision has ever had to answer for what came of it.",
 	readMore = { "Wowpedia: Westfall", "Wowpedia: Defias Brotherhood", "Wowpedia: Edwin VanCleef" },
 }
 
@@ -764,7 +764,7 @@ SubsOf("Duskwood", {
 			"Generations of the county's dead are buried here, and in Duskwood that is a liability rather than a memorial. The necromancer Morbent Fel took an interest in the place and the consequences are still walking.",
 			"Among them is Mor'Ladim, who was a father looking for his daughter before he died and has not entirely stopped. The Watch considers him the zone's most dangerous single resident.",
 		},
-		didYouKnow = "Mor'Ladim's daughter is buried in this cemetery. He is still looking for her, and he kills anyone he meets while doing it.",
+		didYouKnow = "Mor'Ladim had a family in Darkshire before he died, which the Night Watch considers the worst thing about him. He kills anyone he meets now, and some of the watch knew him.",
 	},
 	{
 		name = "Twilight Grove", parent = "Duskwood", faction = "Hostile",
@@ -2059,7 +2059,7 @@ SubsOf("Eastern Plaguelands", {
 		lore = {
 			"Stratholme was Lordaeron's second city, a centre of the Church of the Holy Light, and the seat of the Knights of the Silver Hand. When the plagued grain reached it, Arthas ordered the city killed. Uther and Jaina walked away rather than take part; Arthas carried out the purge and then followed Mal'Ganis to Northrend.",
 			"The city is now held by the Scourge under Baron Rivendare, with the Scarlet Crusade fighting for the other half under Grand Crusader Dathrohan. Two of the most fanatical forces in the world are contesting a city that is already dead.",
-			"The Scarlet Crusade's leadership here is not what it claims to be. The crusaders dying in the streets have not been told.",
+			"The Scarlet Crusade's rank and file are told very little by their own command. They are dying in these streets under orders they have no standing to question.",
 		},
 		readMore = { "Wowpedia: Stratholme", "Wowpedia: Culling of Stratholme" },
 	},

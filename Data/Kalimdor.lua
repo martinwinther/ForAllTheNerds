@@ -1037,7 +1037,7 @@ Zone{
 	lore = {
 		"Dustwallow Marsh is the swamp on Kalimdor's eastern coast, and where the Alliance's human presence on this continent lives. Theramore Isle was founded by Jaina Proudmoore with the survivors of the refugee fleet she led out of Lordaeron during the Third War.",
 		"Jaina is the most important moderate in the world. She fought alongside Thrall at Mount Hyjal, she maintains direct contact with him, and when her own father Admiral Daelin Proudmoore sailed to Kalimdor and attacked the Horde against her wishes, she let him lose. He died at Theramore's gates. She has been holding the peace with the Horde ever since at considerable personal cost.",
-		"The swamp also holds Onyxia's Lair. Onyxia is a daughter of Deathwing, and she has spent years in Stormwind in human form as Lady Katrana Prestor, advising the regent and steering the kingdom. Her lair is here, in a cave in the marsh. Nobody in Stormwind knows.",
+		"The swamp also holds Onyxia's Lair. Onyxia is a daughter of Deathwing, and she has denned within easy reach of Theramore. The black dragonflight does not go in for open assault, so a lair placed next to the Alliance's only real city on this continent is worth thinking about.",
 	},
 	didYouKnow = "Theramore exists because Medivh, freed from Sargeras and acting as a prophet, told Jaina to take her people west. The city is the direct result of the warning that also produced the alliance at Mount Hyjal.",
 	readMore = { "Wowpedia: Dustwallow Marsh", "Wowpedia: Theramore Isle", "Wowpedia: Jaina Proudmoore" },
@@ -1064,14 +1064,14 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Onyxia's Lair", parent = "Dustwallow Marsh", faction = "Hostile", levels = "60",
-		hook = "A cave in the marsh holding Deathwing's daughter, who spends her days in Stormwind.",
+		hook = "A cave in the marsh holding Onyxia, a daughter of Deathwing.",
 		lore = {
-			"Onyxia is a black dragon, daughter of Deathwing, and this is her lair. It is also the base from which she runs one of the most successful infiltrations in history.",
-			"In Stormwind she is Lady Katrana Prestor, a noblewoman on the regent's council. From that position she has shaped Stormwind's policy for years: she argued against paying the Stonemasons and so created the Defias, and she has kept the kingdom weak and distracted since.",
-			"Her brother Nefarian is running a parallel operation from Blackrock Spire. The black dragonflight's strategy is not conquest by force; it is placing itself inside the mortal kingdoms' decision-making.",
+			"Onyxia is a black dragon and a daughter of Deathwing, and this is her lair: a cave in Dustwallow Marsh, well hidden and well guarded.",
+			"The black dragonflight does not fight the mortal kingdoms head-on. Deathwing's brood works by placement and patience, and where one of them settles usually says more than what it does once it has settled.",
+			"Her brother Nefarian holds the upper reaches of Blackrock Spire and is running something comparable from there. The two of them are the most active of Deathwing's children, and they work apart.",
 		},
-		didYouKnow = "Nobody in Stormwind suspects Lady Prestor. The young king's regent takes her counsel directly, and the kingdom's failures in Westfall, Redridge and Duskwood all trace back to advice she gave.",
-		readMore = { "Wowpedia: Onyxia", "Wowpedia: Katrana Prestor" },
+		didYouKnow = "Deathwing was Neltharion the Earth-Warder once, one of the five Aspects and the guardian of the world's deep places, before the Old Gods got to him. His children inherited the ruin of that rather than the office.",
+		readMore = { "Wowpedia: Onyxia", "Wowpedia: Deathwing", "Wowpedia: Black dragonflight" },
 	},
 	{
 		name = "Alcaz Island", parent = "Dustwallow Marsh", faction = "Hostile",

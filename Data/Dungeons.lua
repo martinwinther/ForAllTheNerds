@@ -85,7 +85,7 @@ Instance{
 	lore = {
 		"Blackrock Spire is the upper half of Blackrock Mountain. The lower reaches are held by the Dark Horde: orcs under Rend Blackhand, son of the Horde's first warchief, who never accepted the Second War's end and still calls himself warchief.",
 		"The upper Spire belongs to Nefarian, son of Deathwing. He has been running experiments on dragonflight blood up there, attempting to create a new flight that combines the others' strengths.",
-		"Rend believes he is in charge. He is not. Nefarian has been using the Dark Horde as a workforce and a shield, and the orcs fighting and dying in the Spire are serving a black dragon's research programme without knowing it.",
+		"Rend holds the lower halls and Nefarian the upper. Whatever passes between them is their own business, and the orcs doing the fighting further down are not told much about it.",
 	},
 	aliases = { "Lower Blackrock Spire", "Upper Blackrock Spire" },
 	readMore = { "Wowpedia: Blackrock Spire", "Wowpedia: Nefarian", "Wowpedia: Rend Blackhand" },
@@ -97,7 +97,7 @@ Instance{
 	lore = {
 		"Blackwing Lair is Nefarian's own domain at the Spire's summit: a laboratory rather than a lair.",
 		"His project is chromatic dragons: creatures combining the powers of all five dragonflights. To get there he has been collecting eggs and samples from the other flights. Every Aspect still functioning counts him an enemy.",
-		"His sister Onyxia runs the political half of the family operation from Stormwind. Between them, Deathwing's children have infiltrated the Alliance's capital and built an army inside a volcano, and nobody has connected the two.",
+		"His sister Onyxia dens in Dustwallow Marsh, on the other continent. Deathwing's children work separately and to the same pattern: take ground next to something that matters, and take a long time over it.",
 	},
 	readMore = { "Wowpedia: Blackwing Lair", "Wowpedia: Nefarian" },
 }

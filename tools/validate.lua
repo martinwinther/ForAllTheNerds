@@ -736,6 +736,93 @@ mock.onTaxi = false
 ns.Toast:Hide()
 ns.db.suppressOnTaxi = true
 
+-- ---------------------------------------------------------------------------
+-- 3c. Spoiler discipline
+--
+-- The addon promises no spoilers and then shipped the single biggest reveal in
+-- vanilla in its Stormwind entry: that Lady Katrana Prestor, the regent's
+-- advisor, is Onyxia. A player reading the capital's write-up at level ten had
+-- the whole Onyxia chain handed to them.
+--
+-- Two checks. Named reveals are blocked outright. Reveal-shaped constructions
+-- are blocked too, because that sentence pattern is how a spoiler gets written
+-- without anyone noticing they are writing one.
+-- ---------------------------------------------------------------------------
+
+section("Spoiler discipline")
+
+local NAMED_REVEALS = {
+	{ "katrana prestor", "Onyxia's disguise in Stormwind" },
+	{ "lady prestor",    "Onyxia's disguise in Stormwind" },
+	{ "balnazzar",       "who the Scarlet Crusade's leadership actually is" },
+	{ "grand crusader dathrohan is", "who the Scarlet Crusade's leadership actually is" },
+}
+
+-- Phrasings that exist to spring a twist. If a sentence needs one of these,
+-- it is almost certainly telling the reader something the game wants to.
+local REVEAL_SHAPES = {
+	{ "is in fact",      "'X is in fact Y'" },
+	{ "is secretly",     "'is secretly'" },
+	{ "turns out to be", "'turns out to be'" },
+	{ "unbeknownst",     "'unbeknownst to'" },
+	{ "nobody suspects", "'nobody suspects'" },
+	{ "true identity",   "'true identity'" },
+	{ "in human form",   "'in human form' (a disguise reveal)" },
+	{ "in disguise",     "'in disguise'" },
+	{ "what nobody knows", "'what nobody knows'" },
+}
+
+local spoilerHits = 0
+ns.EachEntry(function(e)
+	local parts = { e.hook }
+	for i = 1, #e.lore do parts[#parts + 1] = e.lore[i] end
+	if e.didYouKnow then parts[#parts + 1] = e.didYouKnow end
+	if e.readMore then
+		for i = 1, #e.readMore do parts[#parts + 1] = e.readMore[i] end
+	end
+	local text = string.lower(table.concat(parts, " "))
+
+	for i = 1, #NAMED_REVEALS do
+		local phrase, why = NAMED_REVEALS[i][1], NAMED_REVEALS[i][2]
+		if string.find(text, phrase, 1, true) then
+			spoilerHits = spoilerHits + 1
+			fail("%s gives away %s (contains %q)", e.name, why, phrase)
+		end
+	end
+	for i = 1, #REVEAL_SHAPES do
+		local phrase, why = REVEAL_SHAPES[i][1], REVEAL_SHAPES[i][2]
+		if string.find(text, phrase, 1, true) then
+			spoilerHits = spoilerHits + 1
+			fail("%s uses a reveal construction, %s", e.name, why)
+		end
+	end
+end)
+
+-- The first fix missed the Stormwind hook, which gave the reveal away without
+-- using any blocked phrase: "run by a regent and a dragon". Nothing in
+-- Stormwind should mention a dragon at all, so check that directly.
+local swDragon = 0
+ns.EachEntry(function(e)
+	local inStormwind = (e.name == "Stormwind City") or (e.parent == "Stormwind City")
+	if not inStormwind then return end
+	local parts = { e.hook }
+	for i = 1, #e.lore do parts[#parts + 1] = e.lore[i] end
+	if e.didYouKnow then parts[#parts + 1] = e.didYouKnow end
+	local text = string.lower(table.concat(parts, " "))
+	-- %f[%a] is a frontier pattern: it matches where a letter follows a
+	-- non-letter, so this catches "dragon" and "dragonflight" but not the
+	-- regent's surname, Fordragon.
+	if string.find(text, "%f[%a]dragon") then
+		swDragon = swDragon + 1
+		fail("%s mentions a dragon; nothing in Stormwind should, it gives the reveal away", e.name)
+	end
+end)
+spoilerHits = spoilerHits + swDragon
+
+out(string.format("%d entries checked against %d named reveals and %d reveal constructions (%d hits)",
+	ns.Index.total, #NAMED_REVEALS, #REVEAL_SHAPES, spoilerHits))
+out("Stormwind entries checked for any mention of a dragon: " .. (swDragon == 0 and "none" or tostring(swDragon)))
+
 section("Dungeons")
 
 -- Every instance has to resolve from the name the client reports when you are
