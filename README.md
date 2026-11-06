@@ -10,7 +10,7 @@ Walk into Goldshire and you get Goldshire. Walk into Northshire Abbey and you
 get the brotherhood who first turned the Light into a weapon, and why the
 masonry you are standing on started a rebellion in Westfall.
 
-**626 places written up**: 50 zones, 562 towns and landmarks, 14 dungeons,
+**757 places written up**: 50 zones, 685 towns and landmarks, 22 dungeons,
 raids and battlegrounds.
 
 ---
@@ -336,12 +336,12 @@ stand-in WoW API and then:
 
 - runs every data file and reports which one failed, with the Lua error
 - checks the TOC declares interface 16001 and the saved variables
-- runs quality rules over all 626 entries: hook length, stub paragraphs,
+- runs quality rules over all 757 entries: hook length, stub paragraphs,
   over-long paragraphs, duplicate registrations, subzone parents that are not
   real zones, and that **every** Forever entry is spoiler-gated
 - asserts the spoiler gate actually hides them, and reveals them when opted in
 - walks every single locale, stands in its declared parent zone, and asserts it
-  resolves to itself, 562/562
+  resolves to itself, 685/685
 - renders every entry through both the toast and the panel, which is what
   catches an entry that only breaks when displayed
 - exercises repeat suppression, combat suppression and the release afterwards

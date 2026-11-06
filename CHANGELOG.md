@@ -12,6 +12,9 @@
   in. Nothing is sent anywhere; the list lives in your saved variables.
   `/ftn gaps clear` empties it and the setting can be turned off.
 - `/ftn stats` mentions how many gaps have been recorded.
+- 123 more towns, ruins and landmarks, taking the total from 626 entries to
+  757. Every zone now has at least nine written up except the four Forever
+  zones, whose smaller areas are not documented anywhere yet.
 - Entries for Forever's nine new dungeons: Hall of Thanes, Ruins of Lordaeron,
   Excavation Site, City of Dalaran, The Drowned City, Krol'dok Stronghold,
   Alcaz Prison, Blackmaw Hold and Shaper's Terrace. Background only, like the

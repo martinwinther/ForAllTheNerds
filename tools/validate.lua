@@ -919,10 +919,13 @@ ns.db.logUnknown = true
 ns.db.unknown = {}
 ns.db.showForeverContent = false
 
--- A real Elwynn subzone with no entry.
-mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Thunder Falls" })
+-- A deliberately synthetic subzone name. Using a real unwritten place here
+-- meant the test broke the moment that place got an entry, which is exactly
+-- backwards: writing more lore should never fail the suite.
+local NO_SUCH_PLACE = "Nowhere In Particular"
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = NO_SUCH_PLACE })
 local list = ns.UnknownList()
-if #list == 1 and list[1].sub == "Thunder Falls" and list[1].zone == "Elwynn Forest" then
+if #list == 1 and list[1].sub == NO_SUCH_PLACE and list[1].zone == "Elwynn Forest" then
 	out("an unwritten subzone is recorded, even though the zone entry was shown instead")
 else
 	fail("an unwritten subzone was not recorded (%d entries)", #list)
@@ -930,7 +933,7 @@ end
 
 -- Revisiting counts rather than duplicating.
 mock.moveTo({ zone = "Duskwood", realzone = "Duskwood", subzone = "Darkshire" })
-mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Thunder Falls" })
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = NO_SUCH_PLACE })
 list = ns.UnknownList()
 if #list == 1 and list[1].count >= 2 then
 	out(string.format("revisits increment the count (now %d) rather than duplicating", list[1].count))
@@ -977,7 +980,7 @@ end
 -- The switch has to actually stop it.
 ns.db.logUnknown = false
 ns.db.unknown = {}
-mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Maclure Vineyards" })
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = NO_SUCH_PLACE })
 if #ns.UnknownList() == 0 then
 	out("turning the setting off stops the recording")
 else
