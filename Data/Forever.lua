@@ -160,7 +160,7 @@ Instance{
 	lore = {
 		"Old Ironforge is the original dwarven city, and it lies directly under the one you walk through. Modern Ironforge was built on top of it. The way in is off the High Seat, which is where Magni Bronzebeard holds court, so the kings of the dwarves have been sitting above their own predecessors' tombs this whole time.",
 		"The Anvilmar name on the dungeon's occupants is the important one. Modimus Anvilmar was High King when the dwarves were still one people under one throne. His death left no settled succession, and the Bronzebeards, the Wildhammers and the Dark Irons went to war over it.",
-		"That war is the hinge every other dwarven grievance turns on. The Bronzebeards kept Ironforge. The Wildhammers went north and founded Aerie Peak. The Dark Irons went south, lost again, and bound themselves to Ragnaros, which is why there is a Searing Gorge and a Blackrock Depths at all.",
+		"That war is the hinge every other dwarven grievance turns on. Bronzebeards kept Ironforge. Wildhammers went north and founded Aerie Peak. Dark Irons went south, lost again, and bound themselves to Ragnaros, which is why there is a Searing Gorge and a Blackrock Depths at all.",
 	},
 	didYouKnow = "Old Ironforge has been sealed for most of recorded dwarven history. That a dungeon's worth of it opens under the High Seat means Magni has been holding court on top of something the Bronzebeards chose not to discuss.",
 	readMore = { "Wowpedia: Old Ironforge", "Wowpedia: War of the Three Hammers", "Wowpedia: Modimus Anvilmar" },
