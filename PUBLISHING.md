@@ -5,7 +5,7 @@ platform is CurseForge now, run by Overwolf. There is nothing separate to
 publish to.
 
 CurseForge already carries **Forever as its own flavour**, at game version
-**1.60.1**, which is interface **16001** — the number this addon's `.toc`
+**1.60.1**, which is interface **16001**, the number this addon's `.toc`
 declares. Addons do not appear for Forever users automatically, though: the
 author has to upload a file tagged for that game version. Plenty of addons have
 not yet, which is why some things people expect are missing from Forever.
@@ -43,7 +43,7 @@ and writes `ForAllTheNerds-<version>.zip` with the folder at the right depth.
 | Avatar | `media/logo-400.png` (or `logo-512.png`). Square, transparent-free, reads at list size. |
 | Category | Quests & Leveling (secondary: Map & Minimap) |
 | License | MIT (the `LICENSE` file is in the repo) |
-| Description | Paste from `README.md` and trim. Mention the 626 entries, the 1.12 lore cutoff, the no-spoilers rule and the `/ftn` commands. |
+| Description | Paste `curseforge-description.md` wholesale. Set the editor to Markdown first. |
 
 ### The summary field
 
@@ -62,7 +62,9 @@ Two shorter alternatives if you want it tighter:
 > Shows a short card when you arrive somewhere new, telling you the lore and
 > history of that exact spot, from whole zones down to a single ruin or inn.
 
-The longer **Description** field is separate; paste from `README.md` and trim.
+The longer **Description** field is separate. `curseforge-description.md` is
+written for it and can go in as-is; switch the CurseForge editor to Markdown
+before pasting, or the formatting arrives as literal asterisks.
 
 ### Artwork
 
@@ -148,9 +150,9 @@ current `action.yml`.
 The same workflow uploads to these if you add the tokens as secrets. No other
 changes needed.
 
-- **Wago.io** — `WAGO_API_TOKEN`. Historically the quickest to add new game
+- **Wago.io** uses `WAGO_API_TOKEN`. Historically the quickest to add new game
   flavours, which matters for something this new.
-- **WoWInterface** — `WOWI_API_TOKEN`. Smaller audience, no client app.
+- **WoWInterface** uses `WOWI_API_TOKEN`. Smaller audience, no client app.
 
 ---
 

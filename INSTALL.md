@@ -40,7 +40,7 @@ C:\Program Files (x86)\World of Warcraft\
 ```
 
 Inside it you will see per-version folders. Retail is `_retail_`, Classic Era is
-`_classic_era_`. **I could not verify what Forever's folder is called** — beta
+`_classic_era_`. **I could not verify what Forever's folder is called.** Beta
 builds reported `_classic_beta_` and the live name may differ.
 
 Do not guess. Let the launcher tell you:
@@ -55,7 +55,7 @@ Explorer opens the exact folder for that version. That is the one you want.
 ## 2. Drop the addon in
 
 Inside that game folder, go to `Interface\AddOns`. If `Interface` or `AddOns`
-does not exist yet, create them — a fresh install has no addons and no folders
+does not exist yet, create them. A fresh install has no addons and no folders
 for them.
 
 Extract the zip so you end up with **exactly** this:
@@ -70,7 +70,7 @@ The most common mistake is one folder too deep:
 
 ## 3. Turn it on
 
-The game caches the addon list at launch, so **quit the game completely** if it
+The game caches the addon list at launch, which is why you must **quit completely** if it
 is running, then start it again.
 
 At the character-select screen, click **AddOns** in the bottom-left corner.
@@ -78,7 +78,7 @@ ForAllTheNerds should be listed. Tick it, and make sure the dropdown is set to
 **All** rather than a single character.
 
 If it appears greyed out as out of date, tick **Load out of date AddOns** and
-tell me the interface number the game reports — it means the client wants
+tell me the interface number the game reports. It means the client wants
 something other than the 16001 the addon declares, and that is a one-line fix.
 
 ## 4. Check it works

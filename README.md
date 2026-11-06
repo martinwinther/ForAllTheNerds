@@ -3,7 +3,7 @@
 # ForAllTheNerds
 
 A **World of Warcraft: Forever** addon that tells you the lore and history of
-wherever you are standing — not just the zone, but the town, the ruin, the mine
+wherever you are standing: not just the zone, but the town, the ruin, the mine
 and the dungeon.
 
 Walk into Goldshire and you get Goldshire. Walk into Northshire Abbey and you
@@ -33,7 +33,7 @@ to be" is as far as it goes.
 
 **Forever's new zones are off by default.** Mount Hyjal, Riverglades,
 Shen'dralas and Zephras Isle have entries, but they are gated behind
-`/ftn forever on`, and even then they are background only — where the place
+`/ftn forever on`, and even then they are background only: where the place
 sits, who lives there, and the older history the name reaches back to. Turn
 them on if you want to walk into Hyjal already knowing what Nordrassil was and
 what the night elves spent to kill Archimonde.
@@ -44,13 +44,13 @@ what the night elves spent to kill Archimonde.
 
 1. Quit the game.
 2. Copy the `ForAllTheNerds` folder into your Forever install's
-   `Interface/AddOns` directory, so you end up with
+   `Interface/AddOns` directory. You should end up with
    `.../Interface/AddOns/ForAllTheNerds/ForAllTheNerds.toc`.
 3. Start the game and check ForAllTheNerds is ticked in the character-select
    AddOns list.
 
 > **Which folder?** Forever installs alongside retail and Classic rather than
-> replacing them, so it has its own game folder under your World of Warcraft
+> replacing them, and it has its own game folder under your World of Warcraft
 > directory. Community notes from the beta reported `_classic_beta_`; the live
 > build's folder name is **not something I have been able to verify**. Open your
 > World of Warcraft directory, find the one with a Forever executable in it, and
@@ -85,27 +85,25 @@ about the place. Click it for the full write-up; right-click to dismiss it.
 There is a minimap button too: left-click reads about where you are,
 right-click opens the settings.
 
-`/ftn where` is the one worth knowing about if you want to add entries — see
+`/ftn where` is the one worth knowing about if you want to add entries; see
 below.
 
 ### Settings worth changing
 
-- **Only the first time I ever visit** — off by default. Turn it on and each
+- **Only the first time I ever visit**: off by default. Turn it on and each
   place speaks up once per character, ever, instead of once every 15 minutes.
-- **Stay quiet while I am in combat** — on by default. The card is held back
+- **Stay quiet while I am in combat**: on by default. The card is held back
   and shown when the fight ends.
-- **Open the full panel instead of the card** — for when you are reading rather
+- **Open the full panel instead of the card**: for when you are reading rather
   than levelling.
-- **...for full zones / towns / dungeons** — three separate switches, so you
-  can keep the landmark detail and silence the zone-level entries once you know
+- **...for full zones / towns / dungeons**: three separate switches. Keep the landmark detail and silence the zone-level entries once you know
   them.
-- **Stay quiet on flight paths** — on by default. A taxi route crosses dozens of
+- **Stay quiet on flight paths**: on by default. A taxi route crosses dozens of
   places in minutes; none are announced and, more importantly, none are recorded
   as visited, so a flyover does not spend a place's first visit.
-- **Minimap button position and distance** — two sliders, or just drag the
-  button. The radius is measured from the minimap rather than assumed, so it
-  clears the border at any minimap size.
-- **Link to Wowpedia instead of Warcraft Wiki** — references link to
+- **Minimap button position and distance**: two sliders, or just drag the
+  button. The radius is measured from the minimap rather than assumed, and clears the border at any minimap size.
+- **Link to Wowpedia instead of Warcraft Wiki**: references link to
   warcraft.wiki.gg by default, since that is where the lore was verified.
 
 ---
@@ -167,7 +165,7 @@ actually in, so a name shared between two zones cannot mismatch.
 
 1. If you are inside an instance, the instance entry.
 2. The subzone, if there is an entry whose parent is this zone.
-3. The minimap label, same check — it is sometimes finer-grained than
+3. The minimap label, same check. It is sometimes finer-grained than
    `GetSubZoneText()`.
 4. The zone itself.
 5. Nothing, and `/ftn` offers the containing zone instead.
@@ -208,7 +206,7 @@ Ten claims were wrong or unsupported and have been corrected:
 | The Dark Irons held Grim Batol | They never did. Khardros's Wildhammers founded it; Modgud cursed it during the War of the Three Hammers and they abandoned it as unlivable |
 | Nethergarde Keep was built by the Kirin Tor | Commissioned by Khadgar, funded by the Alliance of Lordaeron, and built by the Stonemasons' Guild under Edwin VanCleef |
 | Magni founded the Explorers' League | He "helped to create" it; Magni and Brann are both named founding members |
-| Un'Goro's pylons are titan work | No source attributes them to anyone. The titan connection to the crater itself is post-vanilla lore, so both are now left unexplained |
+| Un'Goro's pylons are titan work | No source attributes them to anyone. The titan connection to the crater itself is post-vanilla lore; both are now left unexplained |
 | The Scarlet Monastery was the Church's premier training ground | It was a cathedral of the Church and a seminary for paladins, Stromgarde's especially |
 | VanCleef hired Venture Company goblins | The source says only "the goblins" |
 | Thermaplugg's betrayal is an open question | It is established, and he had calculated losing 30%. The actual figure was "nearly eighty percent" |
@@ -227,25 +225,26 @@ stones, and the Vile Reef holds murlocs in sunken Gurubashi ruins (the naga
 reading is RPG-only and non-canon). Hetaera's Clutch turned out to be a drowned
 temple of Elune, which was better than what I had written. The Ravencrest
 Monument's link to Kur'talos Ravencrest and Staghelm Point's to Fandral are both
-wiki speculation rather than established lore, so both entries now say so.
+wiki speculation rather than established lore, and both entries now say so.
 
 **If you use the worklist, check its notes.** The `notes` column is a prompt for
 the writer, not a source. Three of mine were wrong and they propagated straight
 into finished entries.
 
 Where a detail is only established in a later expansion, it is out of scope and
-has been removed rather than kept — the Un'Goro titan material is the main case.
+has been removed rather than kept; the Un'Goro titan material is the main case.
 
 ## Prose
 
-The lore was written, then edited against itself. A first pass measured
+The lore was written, then edited against itself. <!-- lint-prose:off -->
+A first pass measured
 repeated phrasing across all 42,000 words of prose written at that point and
 found the usual
 generated-text tells: 78 uses of ", and it is", 166 sentence-final
 ", which is ..." verdict clauses, and an eight-strong family of "which is a
 fair summary / fair indicator / fair comment of ..." constructions. Those were
 rewritten individually rather than substituted, and the replacements were then
-re-measured to make sure one tic had not simply become another (it had — ", so"
+re-measured to make sure one tic had not simply become another (it had: ", so"
 spiked to 41 and was thinned back to 13).
 
 `tools/validate.lua` now enforces the result, so a later batch of entries cannot
@@ -261,14 +260,22 @@ quietly reintroduce them:
   opening "The ".
 
 `tools/prompt.md` carries the same list, so generated entries are held to it too.
+<!-- lint-prose:on -->
+
+`tools/lint-prose.py` applies the same list to anything else written for the
+project, such as the CurseForge description and release notes:
+
+```bash
+python3 tools/lint-prose.py curseforge-description.md README.md
+```
 
 ## Source links
 
 Each entry's `readMore` list holds strings like `"Wowpedia: Elwynn Forest"`.
-There is no API that will open a browser from inside WoW, so the panel renders
+No API will open a browser from inside WoW. The panel renders
 each reference as a clickable row that pops the full address in a focused edit
 box with the text already selected, ready for Ctrl+C. `U.WikiURL` builds the
-address, percent-encoding the title properly — a good share of these have an
+address, percent-encoding the title properly, since a good share of these have an
 apostrophe in them (`Zul'Gurub` becomes `Zul%27Gurub`). Addresses point at
 warcraft.wiki.gg, which is where the lore was actually checked; a setting
 switches them to wowpedia.fandom.com. The validator asserts that all 210
@@ -280,7 +287,7 @@ The database will never be complete. The workflow is built for growing it.
 
 **1. Get the exact strings.** Stand in the place and run `/ftn where`. It prints
 what `GetZoneText`, `GetSubZoneText` and `GetMinimapZoneText` actually return.
-Those strings are the keys — spelling matters.
+Those strings are the keys. Spelling matters.
 
 **2. Add it to the worklist.** `tools/places.tsv` is tab separated:
 
@@ -334,7 +341,7 @@ stand-in WoW API and then:
   real zones, and that **every** Forever entry is spoiler-gated
 - asserts the spoiler gate actually hides them, and reveals them when opted in
 - walks every single locale, stands in its declared parent zone, and asserts it
-  resolves to itself — 562/562
+  resolves to itself, 562/562
 - renders every entry through both the toast and the panel, which is what
   catches an entry that only breaks when displayed
 - exercises repeat suppression, combat suppression and the release afterwards
@@ -365,7 +372,7 @@ Being straight about this, because it affects what you should check first:
 
 - **It has not been run in the live game.** Every code path is exercised by the
   mock, which is not the same thing. The most likely failure is a zone or
-  subzone string that differs from what I used as a key — `/ftn where` is there
+  subzone string that differs from what I used as a key. `/ftn where` is there
   precisely for that.
 - **The AddOns folder name for live Forever.** See the install note above.
 - **Interface 16001 and the `_Forever.toc` suffix** come from
