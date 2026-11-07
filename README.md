@@ -196,7 +196,10 @@ shaped a few decisions:
 ## Fact-checking
 
 Every lore claim was checked against [Warcraft Wiki](https://warcraft.wiki.gg).
-Ten claims were wrong or unsupported and have been corrected:
+Ten claims were wrong or unsupported and have been corrected. Nine are listed
+below. The tenth is left out on purpose: the text it corrected was removed
+altogether in the spoiler pass, and describing the correction would give away
+what that text gave away.
 
 | Claim | Correction |
 |---|---|
@@ -209,7 +212,6 @@ Ten claims were wrong or unsupported and have been corrected:
 | Un'Goro's pylons are titan work | No source attributes them to anyone. The titan connection to the crater itself is post-vanilla lore; both are now left unexplained |
 | The Scarlet Monastery was the Church's premier training ground | It was a cathedral of the Church and a seminary for paladins, Stromgarde's especially |
 | VanCleef hired Venture Company goblins | The source says only "the goblins" |
-| Thermaplugg's betrayal is an open question | It is established, and he had calculated losing 30%. The actual figure was "nearly eighty percent" |
 
 Two details were added because the check turned them up and they are too good to
 leave out: Nethergarde was built by VanCleef's masons, which is a quiet piece of

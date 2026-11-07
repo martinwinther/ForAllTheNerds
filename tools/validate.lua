@@ -823,6 +823,47 @@ out(string.format("%d entries checked against %d named reveals and %d reveal con
 	ns.Index.total, #NAMED_REVEALS, #REVEAL_SHAPES, spoilerHits))
 out("Stormwind entries checked for any mention of a dragon: " .. (swDragon == 0 and "none" or tostring(swDragon)))
 
+-- The entries were not the only place a reveal could sit. CHANGELOG.md ships
+-- inside the zip, and the changelog, the README and the store description are
+-- all read by people who have not played the content yet. A changelog entry
+-- once described a spoiler removal by restating the spoiler, which defeats the
+-- removal. These are a name and phrase blocklist, not a reading of the text,
+-- so they catch a repeat rather than anything new.
+local DOCS = {
+	"CHANGELOG.md",
+	"README.md",
+	"INSTALL.md",
+	"PUBLISHING.md",
+	"curseforge-description.md",
+}
+
+local docsChecked, docHits = 0, 0
+for i = 1, #DOCS do
+	local fh = io.open(root .. DOCS[i], "r")
+	if fh then
+		local body = string.lower(fh:read("*a") or "")
+		fh:close()
+		docsChecked = docsChecked + 1
+		for j = 1, #NAMED_REVEALS do
+			local phrase, why = NAMED_REVEALS[j][1], NAMED_REVEALS[j][2]
+			if string.find(body, phrase, 1, true) then
+				docHits = docHits + 1
+				fail("%s gives away %s (contains %q). Say a spoiler was removed; do not restate it",
+					DOCS[i], why, phrase)
+			end
+		end
+		for j = 1, #REVEAL_SHAPES do
+			local phrase, why = REVEAL_SHAPES[j][1], REVEAL_SHAPES[j][2]
+			if string.find(body, phrase, 1, true) then
+				docHits = docHits + 1
+				fail("%s uses a reveal construction, %s", DOCS[i], why)
+			end
+		end
+	end
+end
+spoilerHits = spoilerHits + docHits
+out(string.format("%d shipped documents checked for the same reveals (%d hits)", docsChecked, docHits))
+
 section("Dungeons")
 
 -- Every instance has to resolve from the name the client reports when you are
