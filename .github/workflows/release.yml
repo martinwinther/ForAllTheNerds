@@ -46,6 +46,14 @@ jobs:
 
       - name: Package and upload
         uses: BigWigsMods/packager@v2
+        with:
+          # The packager's default label for an uploaded file is
+          # "{project-version}{classic}{nolib}", which has no addon name in it,
+          # so CurseForge showed the first automated upload as a bare "1.2.1".
+          # -n takes "{file name}:{upload label}" and uses the default for
+          # whichever side is left blank, so this fixes the label and leaves
+          # the zip name alone.
+          args: -n ":{package-name}-{project-version}"
         env:
           # The packager's README and its wiki disagree on the name of the
           # CurseForge token variable, so both are set to the same secret.
