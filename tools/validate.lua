@@ -62,6 +62,7 @@ section("Loading")
 
 local tocPath = root .. ADDON_NAME .. ".toc"
 local files, interfaceLine, savedVars = {}, nil, nil
+local tocVersion, curseID, website = nil, nil, nil
 
 for rawLine in io.lines(tocPath) do
 	local line = rawLine:gsub("\r", ""):gsub("^%s+", ""):gsub("%s+$", "")
@@ -69,6 +70,12 @@ for rawLine in io.lines(tocPath) do
 		interfaceLine = line:match("^##%s*Interface:%s*(.+)$")
 	elseif line:match("^##%s*SavedVariables:") then
 		savedVars = line:match("^##%s*SavedVariables:%s*(.+)$")
+	elseif line:match("^##%s*Version:") then
+		tocVersion = line:match("^##%s*Version:%s*(.+)$")
+	elseif line:match("^##%s*X%-Curse%-Project%-ID:") then
+		curseID = line:match("^##%s*X%-Curse%-Project%-ID:%s*(.+)$")
+	elseif line:match("^##%s*X%-Website:") then
+		website = line:match("^##%s*X%-Website:%s*(.+)$")
 	elseif line ~= "" and not line:match("^#") then
 		files[#files + 1] = line
 	end
@@ -84,6 +91,28 @@ end
 if not savedVars or not savedVars:find("ForAllTheNerdsDB", 1, true) then
 	fail("TOC does not declare SavedVariables: ForAllTheNerdsDB")
 end
+
+-- Publishing fields. These only matter when a release is built, and that is
+-- exactly when nobody is looking at them, so a placeholder left in here would
+-- ship. The project id is what tells the packager where to upload; without it
+-- the build succeeds and quietly uploads nowhere.
+if curseID then
+	if not curseID:match("^%d+$") then
+		fail("TOC X-Curse-Project-ID is %q; the packager wants the bare number", curseID)
+	elseif curseID:match("^0+$") then
+		fail("TOC X-Curse-Project-ID is still the %s placeholder", curseID)
+	else
+		out("CurseForge project id: " .. curseID)
+	end
+else
+	warn("TOC has no X-Curse-Project-ID, so a tagged build will not reach CurseForge")
+end
+
+if website and not website:match("^https://[%w%.%-]+/[%w%.%-_/]+") then
+	fail("TOC X-Website is %q, which is a placeholder rather than a page", website)
+end
+
+if tocVersion then out("TOC version: " .. tocVersion) end
 
 local ns = {}
 local loaded = 0

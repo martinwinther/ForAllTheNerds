@@ -7,11 +7,10 @@
 ## IconTexture: Interface\ICONS\INV_Misc_Book_09
 ## DefaultState: enabled
 ## X-Category: Quests & Leveling
-# Uncomment and fill in once the CurseForge project exists. The id is on the
-# project's own page, in the About Project box. The packager uploads without it
-# only if you pass -p on the command line instead.
-# ## X-Curse-Project-ID: 000000
-## X-Website: https://github.com/
+# The packager reads this to know which CurseForge project to upload to. It
+# comes from the project's own page, in the About Project box.
+## X-Curse-Project-ID: 1786890
+## X-Website: https://github.com/martinwinther/ForAllTheNerds
 ## X-License: MIT
 
 # -- Foundation -------------------------------------------------------------
