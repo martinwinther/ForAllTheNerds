@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+**Added**
+
+- `/ftn npcs` notes the characters you target or hover over, together with the
+  zone and the spot they were standing in. It is groundwork for writing up
+  characters: the point is to build the list from who is actually in the world
+  rather than from a list made somewhere else. Only NPCs are recorded, never
+  other players or their pets. Nothing is sent anywhere, `/ftn npcs clear`
+  empties the list, and it can be turned off in the settings.
+
 ## 1.2.1
 
 **Fixed**

@@ -317,9 +317,60 @@ function M.install()
 		return "1.60.1", "70338", "2026-11-04", os.getenv("FTN_TOC") or "16001"
 	end
 
-	-- Secret values exist on the Midnight/Forever API family. Nothing the addon
-	-- reads is actually secret, but the guard has to be callable.
-	_G.issecretvalue = function() return false end
+	-- Secret values exist on the Midnight/Forever API family. Lua has no way to
+	-- make a real one, so a secret is modelled as a unique box table held in a
+	-- registry that issecretvalue knows about. The addon's guards reject it on
+	-- the issecretvalue branch, which is the branch under test; anything the
+	-- harness has not boxed answers false exactly as before.
+	M.secrets = {}
+	function M.secret(v)
+		local box = { boxed = v }
+		M.secrets[box] = true
+		return box
+	end
+	_G.issecretvalue = function(v) return M.secrets[v] == true end
+
+	-- Unit API. M.units["target"] = { name=, isPlayer=, playerControlled=,
+	-- secretName=, identityRestricted= }. Absent means the unit does not exist.
+	M.units = M.units or {}
+
+	local function unitOf(unit) return M.units[unit] end
+
+	_G.UnitExists = function(unit) return unitOf(unit) ~= nil end
+
+	_G.UnitName = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		if u.secretName then return M.secret(u.name) end
+		return u.name
+	end
+
+	if not os.getenv("FTN_NO_UNITISPLAYER") then
+		_G.UnitIsPlayer = function(unit)
+			local u = unitOf(unit)
+			if not u then return nil end
+			if u.secretIsPlayer then return M.secret(false) end
+			return u.isPlayer and true or false
+		end
+	end
+
+	_G.UnitPlayerControlled = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		return u.playerControlled and true or false
+	end
+
+	_G.UNKNOWNOBJECT = "Unknown Entity"
+
+	if not os.getenv("FTN_NO_SECRET_PROBE") then
+		_G.C_Secrets = {
+			ShouldUnitIdentityBeSecret = function(unit)
+				local u = unitOf(unit)
+				if not u then return false end
+				return u.identityRestricted and true or false
+			end,
+		}
+	end
 
 	_G.C_Timer = {
 		After = function(delay, fn)

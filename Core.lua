@@ -7,7 +7,7 @@ local addonName, ns = ...
 local U = ns.U
 
 ns.NAME      = addonName
-ns.VERSION   = "1.2.0"
+ns.VERSION   = "1.2.1"
 ns.TITLE     = "ForAllTheNerds"
 
 -- ---------------------------------------------------------------------------
@@ -46,6 +46,13 @@ ns.has = {
 	secrets      = (type(issecretvalue) == "function") and true or false,
 	addonMeta    = (C_AddOns and type(C_AddOns.GetAddOnMetadata) == "function") and true or false,
 	backdrop     = (type(BackdropTemplateMixin) == "table") and true or false,
+	-- Needed to tell an NPC from a player before anything is written down.
+	-- Without it the roster logger refuses to run at all, rather than risk
+	-- recording the name of somebody's character.
+	unitIsPlayer = (type(UnitIsPlayer) == "function") and true or false,
+	-- C_Secrets.ShouldUnitIdentityBeSecret(unit) says whether a name read for
+	-- that unit would come back secret, so we can decline to ask at all.
+	identityProbe = (C_Secrets and type(C_Secrets.ShouldUnitIdentityBeSecret) == "function") and true or false,
 }
 
 -- ---------------------------------------------------------------------------
@@ -92,6 +99,8 @@ ns.defaults = {
 	-- Gap finding
 	logUnknown       = true,   -- note places the client reports that have no entry
 	unknown          = {},     -- ["Zone|Subzone"] = { zone, sub, count }
+	logNPCs          = true,   -- note the NPCs actually standing in the world
+	npcs             = {},     -- ["name|Zone"] = { name, zone, sub, count }
 
 	-- Per-character state
 	seen             = {},  -- [key] = true, for onlyFirstVisit
@@ -193,6 +202,51 @@ function ns.UnknownList()
 		if a.count ~= b.count then return a.count > b.count end
 		if a.zone ~= b.zone then return a.zone < b.zone end
 		return (a.sub or "") < (b.sub or "")
+	end)
+	return out
+end
+
+-- NPCs the player has actually stood in front of.
+--
+-- The same problem as the place list, one step worse. The character worklist
+-- for 1.3 was built from the wiki, and the wiki cannot answer the two
+-- questions that matter: whether an NPC exists in this client at all, and
+-- which zone it stands in. It lists characters who were added years after
+-- vanilla, and it files Orgrim Doomhammer under Durotar, where he cannot be
+-- targeted because he is dead. The client can answer both, so let it.
+--
+-- What goes in: the name exactly as the client spells it, the zone and subzone
+-- it was seen in, and a count. Nothing else, and nothing about players.
+local NPC_CAP = 1200
+
+function ns.RecordNPC(name, zone, sub)
+	local db = ns.db
+	if not (db and db.logNPCs and name and zone) then return end
+
+	local key = name .. "|" .. zone
+	local rec = db.npcs[key]
+	if rec then
+		rec.count = (rec.count or 0) + 1
+		-- Keep the first subzone seen. A wandering guard reports a different
+		-- one every few steps and the first is as good as any.
+		return
+	end
+
+	local n = 0
+	for _ in pairs(db.npcs) do n = n + 1 end
+	if n >= NPC_CAP then return end
+
+	db.npcs[key] = { name = name, zone = zone, sub = sub, count = 1 }
+end
+
+function ns.NPCList()
+	local out = {}
+	if not (ns.db and ns.db.npcs) then return out end
+	for _, rec in pairs(ns.db.npcs) do out[#out + 1] = rec end
+	table.sort(out, function(a, b)
+		if a.zone ~= b.zone then return a.zone < b.zone end
+		if a.count ~= b.count then return a.count > b.count end
+		return a.name < b.name
 	end)
 	return out
 end
