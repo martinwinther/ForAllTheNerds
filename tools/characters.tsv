@@ -1,0 +1,247 @@
+# Character worklist for 1.3
+#
+# Generated from warcraft.wiki.gg, 234 candidates with at least 100 words
+# of vanilla-era lore left after the post-vanilla sections are cut.
+#
+# EVERY COLUMN IS MACHINE-DERIVED. There is no notes column on purpose:
+# tools/places.tsv had one, three of my notes in it were wrong, and the
+# errors went straight into finished entries. See the README.
+#
+# words   how much vanilla + pre-WoW prose the source has after the cut
+# sections  the wiki headings that survived, so you can see WHAT era it is
+#
+# zone	words	character	sections
+Alterac Mountains	303	Archmage Ansirem Runeweaver	Family and personal life; World of Warcraft; Forever; Authorship
+Arathi Highlands	778	Thoras Trollbane	Before the Second War; The Second War; After the War; The Alliance splinters
+Arathi Highlands	396	Arator Windrunner	Early life
+Arathi Highlands	229	Galen Trollbane	Biography; World of Warcraft
+Arathi Highlands	171	Veronica Nials	World of Warcraft
+Ashenvale	1267	Shandris Feathermoon	War of the Ancients; Curse of the Worgen; The Long Vigil; Third War
+Ashenvale	664	Maiev Shadowsong	War of the Ancients; Formation of the Watchers
+Ashenvale	390	Gnarl	World of Warcraft: Stormrage
+Ashenvale	243	Leyara	History
+Ashenvale	194	Raene Wolfrunner	World of Warcraft
+Ashenvale	151	Sira Moonwarden	Warden of the kaldorei
+Ashenvale	139	Pelturas Whitemoon	World of Warcraft
+Ashenvale	104	Bronze Timekeeper	Solo; Multiplayer; Solo
+Azshara	3021	Malfurion Stormrage	Biography; War of the Ancients; Curse of the Worgen; Creation of the Emerald Nightmare
+Azshara	2218	Cenarius	Birth and children; The tauren; The night elves; The first druid
+Azshara	1188	Kalecgos	Past; Chronormu's visage; The Sunwell; Nexus Point
+Azshara	1033	Magister Umbric	Early life; Exile from Silvermoon; Transformation
+Azshara	540	Huln Highmountain	War of the Ancients
+Azshara	339	Orgrimmar Grunt	History; Gossip
+Azshara	313	Jastor Gallywix	Early years
+Azshara	313	Azuregos	Biography; The Scepter of the Shifting Sands
+Azshara	194	Archmage Xylem	Third War; World of Warcraft; Gossip
+Badlands	193	Baelog	World of Warcraft
+Badlands	178	Theldurin the Lost	World of Warcraft
+Badlands	125	Olaf	World of Warcraft
+Blasted Lands	2079	Khadgar	Apprenticeship with Medivh; The Second War; The Alliance Expedition; Authorship
+Burning Steppes	349	Kurdran Wildhammer	Tides of Darkness; Beyond the Dark Portal; Valley of Heroes monument
+Burning Steppes	119	Addie Fizzlebog	Biography
+Burning Steppes	104	John J. Keeshan	Great Wars; World of Warcraft
+Darkshore	2218	Queen Azshara	Queen Azshara; War of the Ancients; Birth of the naga; World of Warcraft
+Darkshore	1349	Genn Greymane	Early life; Second War and aftermath; The Alliance splinters; Third War
+Darkshore	498	Lorna Crowley	Fall of Gilneas; Gilneas Liberation Front; Relatives
+Darkshore	375	Thundris Windweaver	History
+Darkshore	332	Cerellean Whiteclaw	History
+Darkshore	259	Onu	History
+Darkshore	177	Thisalee Crow	Season of Discovery
+Darkshore	141	Tess Greymane	Childhood; Curse of the Worgen
+Darkshore	116	Tavar	History
+Darnassus	341	Mathrengyl Bearwalker	History; World of Warcraft
+Darnassus	252	Gwen Armstead	Background
+Darnassus	194	Vassandra Stormclaw	History
+Darnassus	170	Astarii Starseeker	History
+Darnassus	148	Belysra Starbreeze	War of the Satyr
+Deadwind Pass	586	Laith Sha'ol	Biography
+Desolace	234	Khan Leh'Prah	Biography
+Dun Morogh	340	Fizzi Tinkerbow	Biography
+Dun Morogh	123	Innkeeper Belm	World of Warcraft; How to Win Friends
+Durotar	6213	Orgrim Doomhammer	Childhood; Blackhand's second-in-command; Rise of the Horde; First War
+Durotar	3326	Garona Halforcen	Birth and early life; Blade of the Shadow Council; Emissary to Medivh; Battle with Medivh
+Durotar	3176	Grommash Hellscream	Early history; Rise of the Horde; Beyond the Dark Portal; Revitalization of the Horde
+Durotar	2417	Alleria Windrunner	Background; Tides of Darkness; Beyond the Dark Portal; A Thousand Years of War
+Durotar	951	Gamon	World of Warcraft; In World of Warcraft
+Durotar	949	Wardruid Loti	Background
+Durotar	935	Mathias Shaw	The Tipping Point; World of Warcraft; The Cataclysm era
+Durotar	660	Draka	A Warrior Made; Rise of the Horde; Death
+Durotar	623	Conqueror Krenna	History; Heart of War
+Durotar	604	Leoroxx	Draenor; Outland
+Durotar	586	Bwonsamdi	Biography; World of Warcraft; Zalazane's Fall; Vol'jin: Shadows of the Horde
+Durotar	506	Monte Gazlowe	Background; The Founding of Durotar; World of Warcraft; Warcraft Adventures: Lord of the Clans
+Durotar	459	Tyrathan Khort	Biography; Pandaria
+Durotar	426	Zen'tabra	Zalazane's Fall
+Durotar	426	Neri Sharpfin	History
+Durotar	418	Master Gadrin	Third War and aftermath; World of Warcraft
+Durotar	376	Anduin Wrynn	Youth
+Durotar	359	Baine Bloodhoof	Biography; Caught; World of Warcraft
+Durotar	354	Ebyssian	Birth; A Mountain Divided
+Durotar	298	Thura	Biography; Parentage
+Durotar	275	Tattersail	History
+Durotar	254	Mankrik	Biography; Clan
+Durotar	239	Innkeeper Grosk	History
+Durotar	234	Gila Crosswires	Fourth War
+Durotar	228	Jeremiah Payson	History
+Durotar	198	Shadow Hunter Rala	History
+Durotar	187	Scalecommander Emberthal	Ancient past
+Durotar	182	Zekhan	Biography; Siege of Lordaeron
+Durotar	144	Tinkmaster Overspark	World of Warcraft
+Durotar	144	Bom'bay	Hexes
+Durotar	125	Silgryn	History
+Duskwood	910	Velinde Starsong	Velinde's cleansing; The worgen; Unforeseen consequences
+Duskwood	371	Ariden	Biography
+Duskwood	235	Tobias Mistmantle	Gilneas; Return to Gilneas
+Duskwood	211	Sarah Ladimore	Biography; World of Warcraft
+Duskwood	173	Vanessa VanCleef	Biography
+Duskwood	151	Althea Ebonlocke	History
+Dustwallow Marsh	817	Thomas Zelling	History; Gossip
+Dustwallow Marsh	442	Pained	History
+Dustwallow Marsh	328	Nat Pagle	World of Warcraft; Old Hillsbrad; The Gods of Zul'Aman
+Dustwallow Marsh	322	Draz'Zilb	The Frozen Throne; World of Warcraft
+Dustwallow Marsh	188	Derek Proudmoore	Second War
+Eastern Plaguelands	826	Leonid Barthalomew	Third War; Forsaken Kingdom; World of Warcraft; In Forever
+Eastern Plaguelands	715	Lord Maxwell Tyrosus	Third War; The Ashbringer; Forsaken Kingdom; World of Warcraft
+Eastern Plaguelands	410	Sally Whitemane	Youth; Forsaken Kingdom; Ashbringer; World of Warcraft
+Eastern Plaguelands	295	Archmage Angela Dosantos	History; World of Warcraft
+Eastern Plaguelands	194	Shadow Hunter Ty'jin	History
+Eastern Plaguelands	176	Korfax	History; World of Warcraft
+Eastern Plaguelands	168	Fiona's Caravan	Vehicle; Zone Buff
+Eastern Plaguelands	140	Rayne	World of Warcraft
+Eastern Plaguelands	136	Rimblat Earthshatter	World of Warcraft; Forever; Gossip
+Eastern Plaguelands	128	Joseph Redpath	World of Warcraft; In Wrath of the Lich King
+Eastern Plaguelands	122	Eligor Dawnbringer	Third War; World of Warcraft
+Eastern Plaguelands	122	Baelin Caldoran	Background
+Eastern Plaguelands	108	Beezil Linkspanner	World of Warcraft; As part of achievement [[Full Caravan]]
+Elwynn Forest	424	Innkeeper Farley	History
+Elwynn Forest	287	Brother Sammuel	History
+Elwynn Forest	160	Theocritus	World of Warcraft; Dark Riders
+Elwynn Forest	150	High Sorcerer Andromath	World of Warcraft
+Elwynn Forest	130	Willem	History
+Felwood	728	Gregory	History
+Felwood	444	Aeonas	Background
+Felwood	175	Arko'narin Starshade	World of Warcraft
+Feralas	325	Witch Doctor Uzer'i	World of Warcraft
+Feralas	268	Hadoken Swiftstrider	World of Warcraft
+Feralas	251	Vestia Moonspear	World of Warcraft; Seeds of Faith
+Feralas	203	Jangdor Swiftstrider	World of Warcraft
+Feralas	112	Ysondre	World of Warcraft
+Hillsbrad Foothills	1018	Drek'Thar	Early history; Lord of the Clans; After the Third War; World of Warcraft
+Hillsbrad Foothills	340	Archmage Modera	After the Second and Third War; Northrend; Forever; Image of Archmage Modera, Stars' Rest
+Hillsbrad Foothills	324	Master Apothecary Lydon	The Third War; World of Warcraft; Edge of Night
+Hillsbrad Foothills	316	Helcular	Background; Conversation with Kel'Thuzad
+Hillsbrad Foothills	270	Lord Jorach Ravenholdt	History; World of Warcraft
+Hillsbrad Foothills	240	Kingslayer Orkus	Overview
+Hillsbrad Foothills	146	Vanndar Stormpike	Background; In ''Hearthstone''
+Hillsbrad Foothills	115	Captain Balinda Stonehearth	World of Warcraft
+Ironforge	714	High Priest Rohan	World of Warcraft; World of Warcraft: The Comic
+Ironforge	522	Ironormu	History; Gossip
+Ironforge	456	Brann Bronzebeard	Biography; Second War; World exploration; World of Warcraft
+Ironforge	447	Ignis the Furnace Master	The Winterskorn War
+Ironforge	446	Advisor Belgrum	History; In Stormrage?
+Ironforge	218	Brandur Ironhammer	History
+Ironforge	210	Tiza Battleforge	History
+Ironforge	166	Greatfather Winter (Ironforge)	I Got What Yule Need
+Ironforge	107	Blue Murloc Egg	Pet Journal; Expiration
+Loch Modan	155	Keegan Firebeard	History; Gossip
+Moonglade	538	Hamuul Runetotem	Druidism; Forsaken and the Horde; World of Warcraft; World of Warcraft: The Comic
+Moonglade	414	Remulos	The sons of Cenarius; The Idol of Remulos; World of Warcraft
+Mount Hyjal	442	Aviana	Early life; War of the Ancients; Emerald Dream
+Mount Hyjal	431	Merithra	War of the Ancients; War of the Shifting Sands; World of Warcraft
+Mount Hyjal	265	Zen'Kiki	History
+Mount Hyjal	228	Argent Confessor Paletress	Biography
+Mount Hyjal	210	Goldmine	History
+Mount Hyjal	195	Fleet Master Seahorn	History
+Mount Hyjal	164	Matoclaw	History; Firelands quests
+Mount Hyjal	151	Ortell	Classic
+Mount Hyjal	148	Tortolla	War of the Ancients
+Orgrimmar	554	Meerah	Biography; Joining the Horde
+Orgrimmar	399	Tarecgosa	Background; Rage of the Firelands
+Orgrimmar	380	Kiro	Biography
+Orgrimmar	349	Nisha	Biography
+Orgrimmar	280	Boss Mida	History; Orgrimmar Embassy; Rustbolt
+Orgrimmar	228	Master Pyreanor	History
+Orgrimmar	216	Lenara	History
+Orgrimmar	207	Nakha	Biography; Orgrimmar
+Orgrimmar	176	Lasan Skyhorn	A Mountain Divided
+Orgrimmar	124	Lord Itharius	Biography; World of Warcraft
+Redridge Mountains	1479	Kleia	Bastion; Soulbind traits; Gossip
+Redridge Mountains	229	Magistrate Solomon	Traveler; World of Warcraft
+Silithus	104	Highlord Demitrian	Thunderfury gossip; Realm of Fury
+Silverpine Forest	1329	Lord Vincent Godfrey	Lord of His Pack; The Fall of Gilneas; Becoming a Forsaken; Shadowfang Keep
+Silverpine Forest	299	Master Apothecary Faranell	History; World of Warcraft; Arthas: Rise of the Lich King
+Silverpine Forest	235	Prince Valanar	Death Knight (manga); Icecrown Citadel
+Silverpine Forest	226	Arthura	Background
+Stonetalon Mountains	104	Overlord Krom'gar	History
+Stormwind City	1955	Terenas Menethil II	Biography; Tides of Darkness; Aftermath of the war; The Alliance Splinters
+Stormwind City	836	Jace Darkweaver	Mission to Mardum; Capture and freedom; Battling the Legion; In ''Hearthstone''
+Stormwind City	773	Renzik "The Shiv"	The Tipping Point; World of Warcraft
+Stormwind City	697	Gavinrad	The First War; The Second War; Scourging of Lordaeron; Forever
+Stormwind City	674	Scalecommander Azurathel	Ancient times; The Forbidden Reach
+Stormwind City	567	Captain Fareeya	Army of the Light; Shadows of Argus
+Stormwind City	424	High Priestess Laurena	History; World of Warcraft
+Stormwind City	404	Lord Grayson Shadowbreaker	Early life; World of Warcraft; Invasion of Outland
+Stormwind City	396	Duthorian Rall	World of Warcraft
+Stormwind City	280	Prince Erazmin	Mechagon
+Stormwind City	267	Baros Alexston	Biography; World of Warcraft
+Stormwind City	255	Elling Trias	History
+Stormwind City	238	Flynn Fairwind	Early life
+Stormwind City	220	Katherine Proudmoore	Second War and aftermath; Reunion
+Stormwind City	197	Ol' Emma	Early life; World of Warcraft
+Stormwind City	181	Farthing	Biography
+Stormwind City	155	Halford Wyrmbane	History
+Stormwind City	132	Fleet Admiral Tethys	History
+Stormwind City	127	Lil Timmy	Route
+Stormwind City	109	Tandred Proudmoore	Background
+Stormwind City	106	Dorian Atwater	Gossip
+Stranglethorn Vale	609	Hemet Nesingwary Jr.	History; Gossip
+Stranglethorn Vale	107	Doren	World of Warcraft
+Swamp of Sorrows	254	Fallen Hero of the Horde	History
+Tanaris	5619	Arthas Menethil	Childhood and early life; Knight of the Silver Hand; Plague of Undeath; Culling of Stratholme
+Tanaris	2774	Alexstrasza	[[Dawn of the Aspects]] (past); The Winterskorn War; War of the Ancients and aftermath; Second War
+Tanaris	1601	Arcanist Valtrois	The Nightfallen; A change of seasons; Insurrection; Suramar restored
+Tanaris	1377	The Prophet Skeram	Season of Mastery; Basics; Raid makeup; Raid placement
+Tanaris	533	Taivan	History
+Tanaris	297	Marin Noggenfogger	Background; World of Warcraft
+Tanaris	295	Grimbooze Thunderbrew	Pearl of Pandaria; Relatives
+Tanaris	293	Sprinkle Noggenfogger	History
+Tanaris	293	Motega Firemane	History
+Tanaris	285	Breanni	Mailed Items; Mails
+Tanaris	279	Soulbinder Tuulani	History
+Tanaris	235	Oglethorpe Obnoticus	History; [[WoW's Anniversary]]
+Tanaris	142	Leryssa	Death Knight
+Tanaris	138	T'paartos	Background
+Teldrassil	299	Krennan Aranas	Fall of Gilneas; Return to Gilneas
+Teldrassil	239	Fanlyr Silverthorn	History
+The Barrens	319	Naralex	Curse of the Worgen; World of Warcraft; In ''Hearthstone''
+The Barrens	285	Muyoh	Escort tactics
+The Barrens	274	General Hawthorne	History
+The Barrens	244	Corporal Teegan	History
+The Barrens	120	Gann Stonespire	World of Warcraft
+The Hinterlands	225	Elder Torntusk	History
+The Hinterlands	193	Primal Torntusk	History
+Thousand Needles	502	Rau Cliffrunner	History
+Thousand Needles	425	Lakota Windsong	History
+Thousand Needles	312	Pao'ka Swiftmountain	History
+Thousand Needles	217	Pozzik	History
+Thousand Needles	125	Arikara	World of Warcraft
+Thunder Bluff	215	Turak Runetotem	History
+Tirisfal Glades	1456	Thoradin	Founding of Arathor; Troll Wars; Later life
+Tirisfal Glades	1146	Alonsus Faol	Biography; Second War; Aftermath; As a champion follower
+Tirisfal Glades	915	Sir Thomas	A Cleansing Fire; World of Warcraft
+Tirisfal Glades	452	Renee Lauer	Crusader's Blood; World of Warcraft
+Tirisfal Glades	232	Gunther Arcanus	Biography
+Tirisfal Glades	190	Aradne	History
+Tirisfal Glades	118	Apothecary Keever	History
+Undercity	542	Parqual Fintallas	Biography; Memorial
+Western Plaguelands	2379	Uther the Lightbringer	Rise to paladinship; Second War and aftermath; Of Blood and Honor; Third War
+Western Plaguelands	812	Eva Sarkhoff	Biography; Gossip
+Western Plaguelands	304	Argent Officer Pureheart	The Ashbringer; World of Warcraft; Legends: The Journey
+Western Plaguelands	226	Calydus	Background
+Western Plaguelands	199	Timolain the Accursed	History
+Westfall	643	Gryan Stoutmantle	Biography; World of Warcraft
+Westfall	413	Glubtok	Background; Adventure Guide; Stage Two: Arcane Power!; Stage 1
+Westfall	325	Admiral Ripsnarl	Background; Adventure Guide; Phase 1; Phase 2
+Westfall	117	Blanchy	Youth; World of Warcraft
+Wetlands	361	Thargas Anvilmar	First War; World of Warcraft: The Comic
+Winterspring	161	Haleh	World of Warcraft; In ''Hearthstone''
