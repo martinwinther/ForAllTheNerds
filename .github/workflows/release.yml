@@ -31,7 +31,18 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq lua5.4
+          # The TOC claims both Forever (16001) and Classic Era (11509), and
+          # the upload lists the addon under both. Check it against both
+          # clients, not just the one it was written for.
+          echo "--- Forever (interface 16001) ---"
           lua5.4 tools/validate.lua
+          echo "--- Classic Era (interface 11509) ---"
+          FTN_PROJECT_ID=2 FTN_TOC=11509 lua5.4 tools/validate.lua
+          # Neither the Settings API nor the UI templates are guaranteed to
+          # exist on every client, and both fallbacks have been broken before
+          # without the default run noticing.
+          echo "--- no Settings API, no UI templates ---"
+          FTN_NO_SETTINGS=1 FTN_NO_TEMPLATES=1 lua5.4 tools/validate.lua
 
       - name: Package and upload
         uses: BigWigsMods/packager@v2
