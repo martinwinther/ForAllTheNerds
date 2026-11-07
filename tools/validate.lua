@@ -1119,6 +1119,54 @@ else
 		.. (mock.settingsRegistered and " (registered with the Settings API)" or ""))
 end
 
+-- The settings page is taller than any client's settings window. A canvas
+-- category is neither scrolled nor clipped for us, so if the controls hang off
+-- the registered panel directly the overflow is drawn across the screen. They
+-- must live in a scroll frame's child instead.
+do
+	local sf = _G.ForAllTheNerdsOptionsScroll
+	if not sf then
+		fail("options page has no scroll frame: tall content will spill onto the screen")
+	elseif sf:GetObjectType() ~= "ScrollFrame" then
+		fail("ForAllTheNerdsOptionsScroll is a %s, not a ScrollFrame", sf:GetObjectType())
+	else
+		local child = sf.__scrollChild
+		if not child then
+			fail("options scroll frame has no scroll child")
+		else
+			local h = child:GetHeight() or 0
+			if h < 400 then
+				fail("options scroll child is only %dpx tall; the content was not built into it", h)
+			end
+
+			-- Every control must be inside the scroll child, not the panel.
+			local strays = 0
+			for i = 1, #(ns.Options.widgets or {}) do
+				local w, inside, hops = ns.Options.widgets[i], false, 0
+				while w and hops < 6 do
+					if w == child then inside = true break end
+					w = w.GetParent and w:GetParent() or nil
+					hops = hops + 1
+				end
+				if not inside then strays = strays + 1 end
+			end
+			if strays > 0 then
+				fail("%d settings control(s) are not inside the scroll child and will overflow", strays)
+			end
+
+			-- The width sync must actually reach the wrapping text and the child.
+			sf:SetWidth(640)
+			ns.Options:SyncWidth()
+			if (child:GetWidth() or 0) ~= 640 then
+				fail("options scroll child width did not follow the window (%s)", tostring(child:GetWidth()))
+			end
+
+			out(string.format("Settings page scrolls: %dpx of content in a clipped scroll frame, %d controls, all inside it",
+				h, #(ns.Options.widgets or {})))
+		end
+	end
+end
+
 -- Minimap button
 local okMini, miniErr = pcall(function()
 	ns.db.minimapButton = true

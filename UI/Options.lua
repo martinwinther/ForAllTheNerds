@@ -11,8 +11,13 @@ local U, T = ns.U, ns.Theme
 local O = {}
 ns.Options = O
 
-local panel, category, standalone
+local panel, category, standalone, scroll, content, hasScrollBar
 local widgets = {}
+-- Font strings that wrap, so their width can follow the window.
+local wrapped = {}
+
+-- Exposed so the offline validator can check what each control is parented to.
+O.widgets = widgets
 
 -- Try several template names, since the checkbox and slider templates have
 -- been renamed across clients. Returns the frame, or a bare frame if no
@@ -29,6 +34,18 @@ end
 -- Widgets
 -- ---------------------------------------------------------------------------
 
+-- A template's label is reached by several different field names depending on
+-- the client, and on a client where the template is missing entirely the field
+-- can be something that is not a font string at all. Only trust it if it looks
+-- like one.
+local function labelOf(frame, ...)
+	for i = 1, select("#", ...) do
+		local v = frame[select(i, ...)]
+		if type(v) == "table" and type(v.SetText) == "function" then return v end
+	end
+	return nil
+end
+
 local function makeCheck(parent, label, tooltip, key, onChange)
 	local cb = tryTemplates("CheckButton", parent, {
 		"InterfaceOptionsCheckButtonTemplate",
@@ -37,7 +54,7 @@ local function makeCheck(parent, label, tooltip, key, onChange)
 	})
 	cb:SetSize(26, 26)
 
-	local text = cb.Text or cb.text
+	local text = labelOf(cb, "Text", "text")
 	if not text then
 		text = T.Text(cb, "OVERLAY", 0, T.color.parchment)
 		text:SetPoint("LEFT", cb, "RIGHT", 4, 0)
@@ -94,9 +111,10 @@ local function makeSlider(parent, label, key, minV, maxV, step, fmt, onChange)
 			if fs and fs.SetText then fs:SetText("") end
 		end
 	end
-	if s.Low then s.Low:SetText("") end
-	if s.High then s.High:SetText("") end
-	if s.Text then s.Text:SetText("") end
+	for _, field in ipairs({ "Low", "High", "Text" }) do
+		local fs = labelOf(s, field)
+		if fs then fs:SetText("") end
+	end
 
 	s:SetScript("OnValueChanged", function(self, value)
 		value = math.floor(value / step + 0.5) * step
@@ -114,6 +132,29 @@ end
 -- Layout
 -- ---------------------------------------------------------------------------
 
+-- The settings page is taller than any client's settings window, and a canvas
+-- category is not scrolled or clipped for us -- the overflow is simply drawn
+-- over the rest of the screen. So the controls live in a scroll frame.
+local function makeScroll(parent)
+	local ok, sf = pcall(CreateFrame, "ScrollFrame", "ForAllTheNerdsOptionsScroll",
+		parent, "UIPanelScrollFrameTemplate")
+	if ok and sf then return sf, true end
+
+	-- No template: a bare ScrollFrame still clips its child, we just have to
+	-- drive it with the wheel ourselves.
+	sf = CreateFrame("ScrollFrame", "ForAllTheNerdsOptionsScroll", parent)
+	sf:EnableMouseWheel(true)
+	sf:SetScript("OnMouseWheel", function(self, dir)
+		local cur = self:GetVerticalScroll() or 0
+		local max = self:GetVerticalScrollRange() or 0
+		local new = cur - (dir or 0) * 40
+		if new < 0 then new = 0 end
+		if new > max then new = max end
+		self:SetVerticalScroll(new)
+	end)
+	return sf, false
+end
+
 local function buildPanel(parent)
 	local header = T.Text(parent, "OVERLAY", 8, T.color.gold)
 	header:SetPoint("TOPLEFT", 16, -16)
@@ -123,6 +164,7 @@ local function buildPanel(parent)
 	sub:SetPoint("TOPLEFT", header, "BOTTOMLEFT", 0, -4)
 	sub:SetWidth(540)
 	sub:SetWordWrap(true)
+	wrapped[#wrapped + 1] = sub
 	sub:SetText("Lore and history for wherever you are standing. Vanilla-era only: nothing after patch 1.12, "
 		.. "and no spoilers for new content.")
 
@@ -194,9 +236,23 @@ local function buildPanel(parent)
 	footer:SetPoint("TOPLEFT", parent, "TOPLEFT", 16, y)
 	footer:SetWidth(540)
 	footer:SetWordWrap(true)
+	wrapped[#wrapped + 1] = footer
 	footer:SetText("Type /ftn for help. /ftn <place name> looks anything up by name.")
 
 	parent.ftnHeight = math.abs(y) + 40
+	return parent.ftnHeight
+end
+
+-- Keep the scroll child and the wrapping text as wide as the window actually
+-- is, whichever client is hosting the page.
+function O:SyncWidth()
+	if not (scroll and content) then return end
+	local w = scroll:GetWidth()
+	if type(w) ~= "number" or w <= 1 then return end
+	content:SetWidth(w)
+	for i = 1, #wrapped do
+		wrapped[i]:SetWidth(math.max(w - 40, 120))
+	end
 end
 
 function O:Refresh()
@@ -220,10 +276,33 @@ end
 local function ensurePanel()
 	if panel then return end
 
-	panel = T.Frame("ForAllTheNerdsOptionsPanel", UIParent)
-	panel.name = "ForAllTheNerds"
-	panel:Hide()
-	buildPanel(panel)
+	-- Build into locals and only publish them once the page is whole. If
+	-- something in here throws, the next call starts over instead of handing
+	-- back a page that is half built and will never be finished.
+	local p = T.Frame("ForAllTheNerdsOptionsPanel", UIParent)
+	p.name = "ForAllTheNerds"
+	p:Hide()
+
+	local sf, bar = makeScroll(p)
+	sf:SetPoint("TOPLEFT", p, "TOPLEFT", 0, 0)
+	sf:SetPoint("BOTTOMRIGHT", p, "BOTTOMRIGHT", bar and -26 or -4, 0)
+
+	local c = CreateFrame("Frame", nil, sf)
+	c:SetSize(560, 10)
+	sf:SetScrollChild(c)
+
+	for i = #widgets, 1, -1 do widgets[i] = nil end
+	for i = #wrapped, 1, -1 do wrapped[i] = nil end
+
+	local height = buildPanel(c)
+	c:SetHeight(math.max(height or 10, 10))
+	p.ftnHeight = height
+
+	panel, scroll, content, hasScrollBar = p, sf, c, bar
+
+	scroll:SetScript("OnSizeChanged", function() O:SyncWidth() end)
+	panel:SetScript("OnSizeChanged", function() O:SyncWidth() end)
+	O:SyncWidth()
 
 	-- 1. Modern Settings API (shared Mainline code, present on Forever).
 	if Settings and type(Settings.RegisterCanvasLayoutCategory) == "function"
@@ -234,21 +313,27 @@ local function ensurePanel()
 			-- Some builds require an explicit ID before registration sticks.
 			if cat.ID == nil then cat.ID = "ForAllTheNerds" end
 			pcall(Settings.RegisterAddOnCategory, cat)
-			panel:SetScript("OnShow", function() O:Refresh() end)
+			panel:SetScript("OnShow", function()
+				O:SyncWidth()
+				O:Refresh()
+			end)
 			return
 		end
 	end
 
 	-- 2. Legacy interface options.
 	if type(InterfaceOptions_AddCategory) == "function" then
-		panel:SetScript("OnShow", function() O:Refresh() end)
+		panel:SetScript("OnShow", function()
+			O:SyncWidth()
+			O:Refresh()
+		end)
 		local ok = pcall(InterfaceOptions_AddCategory, panel)
 		if ok then return end
 	end
 
 	-- 3. Neither: host the panel in our own window.
 	standalone = T.Frame("ForAllTheNerdsOptionsWindow", UIParent, "BackdropTemplate")
-	standalone:SetSize(600, math.min(panel.ftnHeight or 600, 700))
+	standalone:SetSize(620, 560)
 	standalone:SetPoint("CENTER")
 	standalone:SetFrameStrata("DIALOG")
 	T.ApplyBackdrop(standalone, 0.95)
@@ -257,8 +342,12 @@ local function ensurePanel()
 
 	panel:SetParent(standalone)
 	panel:ClearAllPoints()
-	panel:SetAllPoints(standalone)
+	-- Leave room for the close button at the top and a margin at the bottom,
+	-- so neither sits on top of the scrollbar.
+	panel:SetPoint("TOPLEFT", standalone, "TOPLEFT", 4, -26)
+	panel:SetPoint("BOTTOMRIGHT", standalone, "BOTTOMRIGHT", -4, 10)
 	panel:Show()
+	O:SyncWidth()
 
 	local close = CreateFrame("Button", nil, standalone)
 	close:SetSize(24, 24)

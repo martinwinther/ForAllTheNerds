@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased
+
+**Fixed**
+
+- The settings page was taller than the game's settings window and the extra
+  controls were drawn straight over the screen instead of being cut off. The
+  game does not scroll or clip a canvas settings page for you. The controls
+  now sit in a scroll frame. The page scrolls, and nothing can escape the
+  window.
+- On a client where none of the checkbox templates exist, building the settings
+  page stopped at the first checkbox and the page stayed empty for the rest of
+  the session. The template's own label field can be something other than a
+  font string there, which was not checked before. A build that fails is now
+  discarded rather than kept, and the next attempt starts over.
+
 ## 1.2.0
 
 **Added**
