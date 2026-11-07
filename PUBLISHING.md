@@ -15,6 +15,39 @@ automated one is worth setting up once you expect to release more than twice.
 
 ---
 
+## Which branch publishes
+
+Only a **tag** publishes. Pushing to any branch, `main` included, uploads
+nothing: `release.yml` triggers on tags and nothing else.
+
+| | What it is | What happens on a push |
+|---|---|---|
+| `main` | What has been released. Its tip should match the newest version on CurseForge. | Nothing is published. |
+| `dev` | Work in progress. New lore, new characters, anything not ready. | The checks run. Nothing is published. |
+| a tag | A release. The name is the bare version, `1.3.0`. | Validator, zip, upload to CurseForge. |
+
+So day-to-day work goes on `dev`:
+
+```bash
+git switch dev
+```
+
+and a release is a merge into `main` followed by a tag:
+
+```bash
+git switch main && git merge --no-ff dev && git push origin main
+```
+
+Tagging from `dev` by mistake would publish unreleased work, so the release
+workflow refuses to run unless the tagged commit is on `main`. It fails with
+*"is not on main, so it will not be published"* before the packager is reached.
+
+`.github/workflows/ci.yml` runs the validator on every push to `dev` and on
+anything proposed for `main`, in all six client configurations. That check used
+to happen for the first time at tag time, when the tag had already been pushed.
+
+---
+
 ## Route 1: manual upload
 
 ### Build the zip
