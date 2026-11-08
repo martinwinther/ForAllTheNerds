@@ -196,43 +196,109 @@ def get(tok, path, params=None, cache_key=None):
 
 
 def cmd_probe(tok):
+    """Find out what this namespace actually serves, and say so honestly.
+
+    An earlier version called HTTP 200 on the search endpoint a success even
+    when it returned zero rows. A 200 with no results proves nothing: it looks
+    identical whether the document type is unindexed or the filter is wrong.
+    So the checks below are ordered to separate those cases, with a realm
+    search as the control, since the docs say realm IS searchable.
+    """
     print(f"region {REGION}, namespace {NAMESPACE}")
     print()
+    verdict = {}
 
-    # Known-good read, to prove the credentials and namespace work at all.
+    def show(label, code, note=""):
+        print(f"  {label:<26} HTTP {code}  {note}")
+
+    # 1. Credentials and namespace.
     code, data = get(tok, "/data/wow/creature-type/index", cache_key="creature-type-index")
-    if code == 200:
-        n = len(data.get("creature_types", []))
-        print(f"  creature-type index      HTTP 200, {n} types -- credentials work")
-    else:
-        print(f"  creature-type index      HTTP {code}  {str(data)[:160]}")
+    if code != 200:
+        show("creature-type index", code, str(data)[:120])
         print("\n  Stopping: if this fails, nothing else will.")
         return
+    show("creature-type index", 200, f"{len(data.get('creature_types', []))} types -- credentials work")
 
-    # Hogger is 448 in the 1.12 world database. Does Blizzard agree?
-    code, data = get(tok, "/data/wow/creature/448", cache_key="creature-448")
-    if code == 200:
-        name = (data.get("name") or {})
-        name = name.get(LOCALE) if isinstance(name, dict) else name
-        print(f"  creature 448             HTTP 200, name {name!r}")
-        print(f"                           fields: {sorted(data.keys())}")
-        loc = [k for k in data if any(
+    # 2. A single document in this namespace, to separate "no creature data"
+    #    from "single reads do not work here at all".
+    code, data = get(tok, "/data/wow/creature-type/1", cache_key="creature-type-1")
+    show("creature-type/1", code,
+         "single-document reads work" if code == 200 else str(data)[:120])
+
+    # 3. Does ANY creature document resolve? Hogger is 448 in the 1.12 world
+    #    database. Sample a few more of the ids from tools/creature-ids.tsv in
+    #    case Blizzard's coverage is as sparse as Creature.db2's 189 rows.
+    ids = ["448"]
+    f = Path("tools/creature-ids.tsv")
+    if f.exists():
+        for line in f.read_text(encoding="utf8").splitlines():
+            t = line.strip().split("\t")[0]
+            if t.isdigit() and t not in ids:
+                ids.append(t)
+            if len(ids) >= 6:
+                break
+    found = []
+    for cid in ids:
+        code, data = get(tok, f"/data/wow/creature/{cid}")
+        if code == 200:
+            nm = data.get("name")
+            nm = nm.get(LOCALE) if isinstance(nm, dict) else nm
+            found.append((cid, nm, sorted(data.keys())))
+            show(f"creature/{cid}", 200, f"name {nm!r}")
+        else:
+            show(f"creature/{cid}", code, "not found" if code == 404 else str(data)[:90])
+    verdict["byid"] = bool(found)
+    if found:
+        fields = found[0][2]
+        print(f"    fields on a creature:    {fields}")
+        loc = [k for k in fields if any(
             w in k.lower() for w in ("zone", "area", "map", "location", "spawn"))]
-        print(f"  location-ish fields:     {loc or 'none'}")
-    else:
-        print(f"  creature 448             HTTP {code}  {str(data)[:160]}")
+        print(f"    location-ish fields:     {loc or 'NONE -- no placement data, as expected'}")
 
-    # The contradiction in the docs, settled.
-    code, data = get(tok, "/data/wow/search/creature",
-                     params={"name.en_US": "Hogger"})
-    if code == 200:
-        got = data.get("results", [])
-        print(f"  creature search          HTTP 200, {len(got)} results -- SEARCH WORKS")
-        print("                           so 'names' mode can resolve name -> id")
+    # 4. Control. The Classic search guide says realm is supported, so if this
+    #    returns nothing the search machinery itself is the problem.
+    code, data = get(tok, "/data/wow/search/realm", params={"_pageSize": "1"})
+    realms = len(data.get("results", [])) if code == 200 else 0
+    verdict["realm_search"] = realms > 0
+    show("search/realm (control)", code,
+         f"{realms} result(s) -- search machinery works" if realms else
+         (str(data)[:120] if code != 200 else "0 results -- search itself is not working"))
+
+    # 5. Decisive: an UNFILTERED creature search. Zero here means the document
+    #    type is not indexed, whatever the endpoint index claims.
+    code, data = get(tok, "/data/wow/search/creature", params={"_pageSize": "1"})
+    unfiltered = len(data.get("results", [])) if code == 200 else 0
+    verdict["creature_search_any"] = unfiltered > 0
+    show("search/creature (no filter)", code,
+         f"{unfiltered} result(s)" if code == 200 else str(data)[:120])
+
+    # 6. And the filtered case we actually want.
+    code, data = get(tok, "/data/wow/search/creature", params={"name.en_US": "Hogger"})
+    named = len(data.get("results", [])) if code == 200 else 0
+    verdict["creature_search_named"] = named > 0
+    show("search/creature (Hogger)", code,
+         f"{named} result(s)" if code == 200 else str(data)[:120])
+
+    # Conclusion, drawn from the combination rather than from any one status.
+    print()
+    print("  verdict:")
+    if verdict.get("creature_search_named"):
+        print("    Creature search works. Use: blizzard-ids.py names tools/characters.tsv")
+    elif verdict.get("creature_search_any"):
+        print("    Creature documents ARE indexed, but the name filter matched")
+        print("    nothing. The filter syntax is wrong, not the endpoint.")
+    elif verdict.get("byid"):
+        print("    Creature search returns nothing, so there is no name-to-id")
+        print("    resolution. Lookup by id works, so use:")
+        print("      blizzard-ids.py ids tools/creature-ids.tsv")
+    elif verdict.get("realm_search"):
+        print("    Search works for realms and not for creatures, and no creature")
+        print("    id resolved either. This namespace carries no usable creature")
+        print("    data, which matches the Classic search guide over the endpoint")
+        print("    index. This route is a dead end; nothing else to try here.")
     else:
-        print(f"  creature search          HTTP {code}  {str(data)[:200]}")
-        print("                           search is unsupported here, as the")
-        print("                           Classic search guide says. Use 'ids' mode.")
+        print("    Credentials are fine but neither search nor creature lookup")
+        print("    returned anything. Check BLIZZARD_NAMESPACE.")
 
 
 def read_names(path):
