@@ -1076,6 +1076,91 @@ elseif not ns.VERSION then
 	fail("ns.VERSION is not set")
 end
 
+section("Every place the client can name")
+
+-- The gap list waits for the player to walk somewhere. This does not, which is
+-- the only way to reach Forever's new zones: their subzone names are in no
+-- outside source. C_Map.GetAreaInfo has no secret predicate, so the names can
+-- just be read.
+
+if not ns.has.areaInfo then
+	local called = false
+	ns.ScanAreas(100, function(found, err)
+		called = true
+		if found == nil and err then
+			out("without C_Map.GetAreaInfo the scan reports why instead of erroring")
+		else
+			fail("scan on a client with no GetAreaInfo returned %s", tostring(found))
+		end
+	end)
+	if not called then fail("the scan callback never ran on a client with no GetAreaInfo") end
+else
+	local result, scanErr
+	ns.ScanAreas(8000, function(found, err) result, scanErr = found, err end)
+	-- Chunked across frames, so the fake clock has to be run on.
+	for _ = 1, 40 do
+		if result or scanErr then break end
+		mock.advance(0.01)
+	end
+
+	if not result then
+		fail("the area scan never completed (%s)", tostring(scanErr))
+	else
+		out(string.format("the scan walks the id range and finds %d distinct names", #result))
+
+		-- Repeated names must collapse. Goldshire is at two ids in the mock.
+		local golds = 0
+		for i = 1, #result do
+			if U.Key(result[i].name) == U.Key("Goldshire") then golds = golds + 1 end
+		end
+		if golds == 1 then
+			out("a name sitting at several area ids is kept once, not once per id")
+		else
+			fail("Goldshire appeared %d times in the scan", golds)
+		end
+
+		-- The split into known and missing is the point of the whole thing.
+		local known, missing = ns.AreaGaps(result)
+		local missingNames = {}
+		for i = 1, #missing do missingNames[missing[i].name] = true end
+
+		if known > 0 and missingNames["Nowhere The Lore Covers"]
+			and missingNames["Another Unwritten Hollow"] then
+			out(string.format("%d scanned names have entries, %d are reported as missing",
+				known, #missing))
+		else
+			fail("the known/missing split is wrong (%d known, %d missing)", known, #missing)
+		end
+
+		-- Places that ARE written up must not be reported as missing.
+		local wrong = {}
+		for _, name in ipairs({ "Goldshire", "Elwynn Forest", "Stormwind City" }) do
+			if missingNames[name] then wrong[#wrong + 1] = name end
+		end
+		if #wrong == 0 then
+			out("places that do have entries are not reported as missing")
+		else
+			fail("written-up places were reported missing: %s", table.concat(wrong, ", "))
+		end
+	end
+
+	-- A secret name must not reach the list, the same as everywhere else.
+	mock.areaInfoSecret = true
+	local secretResult
+	ns.ScanAreas(2000, function(found) secretResult = found end)
+	for _ = 1, 20 do
+		if secretResult then break end
+		mock.advance(0.01)
+	end
+	mock.areaInfoSecret = false
+	if secretResult and #secretResult == 0 then
+		out("secret area names are skipped rather than stored")
+	else
+		fail("a secret area name reached the scan (%d results)",
+			secretResult and #secretResult or -1)
+	end
+end
+
 section("Who is standing here")
 
 -- The roster logger is the answer to the two things the wiki cannot tell us:

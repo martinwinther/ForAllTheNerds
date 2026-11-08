@@ -87,6 +87,39 @@ substantial part; a copy of `creature_template` is.
 So: keep the dump out of the repository, use it as a check rather than a
 source, and write the prose from facts as the lore files already do.
 
+## Route 3: the game files, and why they are not the answer
+
+Worth writing down, because it looks like the obvious route and is not.
+
+Spawn positions are **not in the client**. They are server-side. That is the
+whole reason emulator projects had to reconstruct them, and that reconstruction
+is what route 2 is. The one thing most wanted from an NPC, where it stands,
+therefore cannot come from an installed copy of the game at any version.
+
+What the client genuinely holds is the area table, and that is reachable through
+the official API without touching a file: `C_Map.GetAreaInfo(areaID)` returns
+the subzone name for an `AreaTable.db2` id. It is present on Forever 1.60.1 and
+on Classic Era from 1.13.2, and its only predicate is `AllowedWhenUntainted`, with
+no secret-value predicate, leaving the names plainly readable. `/ftn areas` walks
+the id range and reports every name the client knows, split into what has an
+entry and what does not.
+
+That is strictly better than reading files for this purpose: no extraction
+tooling, no CASC listfile, nothing to keep out of the repository, and no
+question about the terms of use. It also covers Forever's four new zones, where
+no outside source reaches.
+
+Two things left unestablished, so do not assume either way:
+
+- Whether `Creature.db2` in a modern client carries creature **names**. The
+  wowdev wiki page for it has no schema content at all. In vanilla the names
+  came from the server, not the client.
+- Whether a `GetAreaInfo` loop reaches every area. The wiki documents no id
+  range and no result for an unused id. The scan assumes nothing and skips
+  anything that is not a plain string. MapDumper, a Forever addon
+  published in September 2026, collects names the same way, which says the
+  approach works in practice rather than that it is exhaustive.
+
 ## Reproducing the join
 
 The dump goes in a directory of its own, and the scripts stay out of it, since

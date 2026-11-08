@@ -29,6 +29,7 @@ local function showHelp()
 	line("/ftn stats",          "how much you have discovered")
 	line("/ftn gaps",           "places you have been that have no entry yet")
 	line("/ftn npcs",           "characters you have targeted, and where they stand")
+	line("/ftn areas",          "ask the client for every place name it knows")
 	line("/ftn where",          "print what the client thinks this place is called")
 	if ns.Index then
 		U.Print(hex(DIM, string.format("%d places written up: %d zones, %d locales, %d instances.",
@@ -234,6 +235,48 @@ local function doNPCs(arg)
 	U.Print(hex(DIM, "/ftn npcs clear empties it."))
 end
 
+local function doAreas(arg)
+	if not ns.has.areaInfo then
+		U.Print("this client has no C_Map.GetAreaInfo, so the place names cannot be listed.")
+		return
+	end
+
+	local maxId = tonumber(arg)
+	U.Print("asking the client for every place name it knows. One moment.")
+
+	ns.ScanAreas(maxId, function(found, err)
+		if err or not found then
+			U.Print("could not scan: %s", tostring(err or "no result"))
+			return
+		end
+
+		local known, missing = ns.AreaGaps(found)
+		ns.db.areaScan = { when = time and time() or 0, total = #found, missing = {} }
+		for i = 1, #missing do
+			ns.db.areaScan.missing[i] = { id = missing[i].id, name = missing[i].name }
+		end
+
+		U.Print("the client knows %s distinct place names. %s have an entry here, %s do not.",
+			hex(GOLD, tostring(#found)), hex(GOLD, tostring(known)), hex(GOLD, tostring(#missing)))
+
+		if #missing == 0 then
+			U.Print(hex(DIM, "Nothing missing. Every place the client can name is written up."))
+			return
+		end
+
+		local shown = math.min(#missing, 25)
+		for i = 1, shown do
+			U.Print("  %s %s", hex(ACCENT, missing[i].name), hex(DIM, "#" .. missing[i].id))
+		end
+		if #missing > shown then
+			U.Print(hex(DIM, string.format("  ...and %d more.", #missing - shown)))
+		end
+		U.Print(hex(DIM, "This is the whole world, not just where you have been, so it covers"))
+		U.Print(hex(DIM, "Forever's new zones too. The full list is saved in"))
+		U.Print(hex(DIM, "WTF/Account/<ACCOUNT>/SavedVariables/ForAllTheNerds.lua under 'areaScan'."))
+	end)
+end
+
 local function doStats()
 	local db = ns.db
 	if not db then return end
@@ -339,6 +382,9 @@ local function handler(msg)
 
 	elseif cmd == "npcs" or cmd == "characters" then
 		doNPCs(string.lower(rest or ""))
+
+	elseif cmd == "areas" or cmd == "places" then
+		doAreas(rest)
 
 	elseif cmd == "stats" then
 		doStats()

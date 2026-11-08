@@ -4,6 +4,11 @@
 
 **Added**
 
+- `/ftn areas` asks the game for every place name it knows and says which of
+  them have nothing written for them yet. Unlike `/ftn gaps` it does not wait
+  for you to walk anywhere; it covers the whole world in one go, Forever's new
+  zones included.
+
 - `/ftn npcs` notes the characters you target or hover over, together with the
   zone and the spot they were standing in, and the game's own id number for
   each. It is groundwork for writing up

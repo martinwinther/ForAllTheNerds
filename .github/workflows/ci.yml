@@ -44,6 +44,8 @@ jobs:
             env: 'FTN_NO_SECRET_PROBE=1'
           - name: no UnitIsPlayer
             env: 'FTN_NO_UNITISPLAYER=1'
+          - name: no C_Map.GetAreaInfo
+            env: 'FTN_NO_AREAINFO=1'
     name: ${{ matrix.name }}
     steps:
       - name: Check out

@@ -82,6 +82,7 @@ about the place. Click it for the full write-up; right-click to dismiss it.
 | `/ftn forget` | make everywhere count as new again |
 | `/ftn where` | print the exact strings the client reports for this spot |
 | `/ftn npcs` | the characters you have targeted, and the zone each stands in |
+| `/ftn areas` | ask the client for every place name it knows, and what has no entry |
 
 There is a minimap button too: left-click reads about where you are,
 right-click opens the settings.

@@ -394,10 +394,31 @@ function M.install()
 		end,
 	}
 
+	-- A small stand-in AreaTable. Keys are area ids, values the subzone name the
+	-- client would report. Deliberately mixes places the lore files cover with
+	-- places they do not, and repeats one name under two ids, because the real
+	-- table does that constantly.
+	M.areas = M.areas or {
+		[9]    = "Northshire Valley",
+		[12]   = "Elwynn Forest",
+		[87]   = "Goldshire",
+		[88]   = "Goldshire",
+		[1519] = "Stormwind City",
+		[7777] = "Nowhere The Lore Covers",
+		[7778] = "Another Unwritten Hollow",
+	}
+
 	_G.C_Map = {
 		GetBestMapForUnit = function() return M.location.uiMapID end,
 		GetMapInfo = function(id) return { mapID = id, name = M.location.zone } end,
 	}
+
+	if not os.getenv("FTN_NO_AREAINFO") then
+		C_Map.GetAreaInfo = function(id)
+			if M.areaInfoSecret then return M.secret("Somewhere") end
+			return M.areas[id]
+		end
+	end
 
 	_G.C_AddOns = {
 		GetAddOnMetadata = function(_, field)
