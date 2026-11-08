@@ -8,14 +8,13 @@
   them have nothing written for them yet. Unlike `/ftn gaps` it does not wait
   for you to walk anywhere; it covers the whole world in one go, Forever's new
   zones included.
-
 - `/ftn npcs` notes the characters you target or hover over, together with the
   zone and the spot they were standing in, and the game's own id number for
-  each. It is groundwork for writing up
-  characters: the point is to build the list from who is actually in the world
-  rather than from a list made somewhere else. Only NPCs are recorded, never
-  other players or their pets. Nothing is sent anywhere, `/ftn npcs clear`
-  empties the list, and it can be turned off in the settings.
+  each. It is groundwork for writing characters up: the point is to build the
+  list from who is actually in the world rather than from a list made somewhere
+  else. Only NPCs are recorded, never other players or their pets. Nothing is
+  sent anywhere, `/ftn npcs clear` empties the list, and it can be turned off
+  in the settings.
 
 ## 1.2.1
 
