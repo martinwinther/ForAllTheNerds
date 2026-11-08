@@ -1156,6 +1156,70 @@ else
 		fail("the same NPC in two zones did not produce two records")
 	end
 
+	-- The creature id is what every outside catalogue is keyed on, so it is
+	-- worth more than the name. It comes out of the GUID.
+	ns.db.npcs = {}
+	mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Forest's Edge" })
+	target({ name = "Hogger", id = 448 })
+	rec = rosterHas("Hogger")
+	if rec and rec.id == 448 then
+		out("the creature id is read out of the GUID and stored (Hogger is 448)")
+	else
+		fail("the creature id was not stored (got %s)", rec and tostring(rec.id))
+	end
+
+	-- A GUID this build does not use must not stop the name being recorded.
+	ns.db.npcs = {}
+	target({ name = "Old Format", guid = "0xF13000008C000D4A" })
+	rec = rosterHas("Old Format")
+	if rec and rec.id == nil then
+		out("a vanilla-style hex GUID yields no id, and the name is still kept")
+	else
+		fail("hex GUID handling is wrong (id %s)", rec and tostring(rec.id))
+	end
+
+	-- Anything that is not a creature is not a creature id. The GUID has to be
+	-- the right SHAPE for this to test anything: a short one fails the pattern
+	-- on its own and would pass even with the kind check deleted.
+	ns.db.npcs = {}
+	target({ name = "Not A Creature", guid = "Pet-0-1465-0-2105-448-000043F59F" })
+	rec = rosterHas("Not A Creature")
+	if rec and rec.id == nil then
+		out("a well-formed GUID of the wrong kind still yields no id")
+	else
+		fail("a Pet GUID produced a creature id: %s", rec and tostring(rec.id))
+	end
+	ns.db.npcs = {}
+	target({ name = "Short Guid", guid = "Player-1465-0A2B3C4D" })
+	if rosterHas("Short Guid") and rosterHas("Short Guid").id == nil then
+		out("a GUID that does not parse yields no id")
+	else
+		fail("a short GUID produced an id")
+	end
+
+	-- A secret GUID must not be stored, and must not block the name either.
+	ns.db.npcs = {}
+	target({ name = "Secret Guid", secretGUID = true })
+	rec = rosterHas("Secret Guid")
+	if rec and rec.id == nil then
+		out("a secret GUID yields no id, and the name is still kept")
+	else
+		fail("a secret GUID produced an id: %s", rec and tostring(rec.id))
+	end
+
+	-- First sighting in combat or an instance can give a name but no id, so a
+	-- later sighting has to be able to fill it in.
+	ns.db.npcs = {}
+	target({ name = "Later Id", guid = "0xF13000008C000D4A" })
+	target({ name = "Someone Else" })
+	target({ name = "Later Id", id = 1337 })
+	rec = rosterHas("Later Id")
+	if rec and rec.id == 1337 then
+		out("an id missing on the first sighting is filled in on a later one")
+	else
+		fail("the id was not back-filled (got %s)", rec and tostring(rec.id))
+	end
+
 	-- PRIVACY. A player must never reach the saved variables.
 	ns.db.npcs = {}
 	target({ name = "Somebodyself", isPlayer = true })

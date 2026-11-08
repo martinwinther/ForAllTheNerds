@@ -268,6 +268,26 @@ end
 -- interesting thing this list can report, so it must not be swallowed here.
 local lastLogged
 
+-- The creature id, which is what every outside catalogue of NPCs is keyed on.
+-- Names are ambiguous -- a dozen "Innkeeper" rows, two "Marshal Dughan" if a
+-- later build moves him -- and an id is not. It comes out of the GUID:
+--
+--   Creature-0-1465-0-2105-448-000043F59F
+--                            ^^^ the id, 448, which is Hogger
+--
+-- UnitGUID carries the same SecretWhenUnitIdentityRestricted predicate as
+-- UnitName, so this is only ever called from inside the gate below, and the
+-- read is guarded the same way. Vanilla 1.12 used a different, hex GUID format;
+-- anything that does not match simply yields no id, and the name is still kept.
+local function creatureIdFrom(unit)
+	local guid = U.CallStr(UnitGUID, unit)
+	if not guid then return nil end
+	local kind, id = string.match(guid, "^(%a+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
+	if not id then return nil end
+	if kind ~= "Creature" and kind ~= "Vehicle" then return nil end
+	return tonumber(id)
+end
+
 local function rosterNameOf(unit)
 	-- Without UnitIsPlayer there is no way to be sure this is not somebody's
 	-- character, so decline to look at all.
@@ -290,14 +310,14 @@ local function rosterNameOf(unit)
 	local name = U.CallStr(UnitName, unit)
 	if not name then return nil end
 	if UNKNOWNOBJECT and name == UNKNOWNOBJECT then return nil end
-	return name
+	return name, creatureIdFrom(unit)
 end
 
 function D:NoteUnit(unit)
 	local db = ns.db
 	if not (db and db.logNPCs) then return end
 
-	local name = rosterNameOf(unit)
+	local name, id = rosterNameOf(unit)
 	if not name then return end
 
 	-- Read the location fresh rather than using the resolved zone, which lags
@@ -309,7 +329,7 @@ function D:NoteUnit(unit)
 	if key == lastLogged then return end
 	lastLogged = key
 
-	ns.RecordNPC(name, zone, U.CallStr(GetSubZoneText))
+	ns.RecordNPC(name, zone, U.CallStr(GetSubZoneText), id)
 end
 
 local units = CreateFrame("Frame")

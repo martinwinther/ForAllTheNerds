@@ -221,13 +221,15 @@ local function doNPCs(arg)
 			U.Print(hex(DIM, "  " .. r.zone))
 		end
 		local where = r.sub and hex(DIM, "  in " .. r.sub) or ""
-		U.Print("    %s%s %s", hex(ACCENT, r.name), where, hex(DIM, "x" .. r.count))
+		local id = r.id and hex(DIM, "  #" .. r.id) or ""
+		U.Print("    %s%s%s %s", hex(ACCENT, r.name), id, where, hex(DIM, "x" .. r.count))
 	end
 	if #list > shown then
 		U.Print(hex(DIM, string.format("  ...and %d more.", #list - shown)))
 	end
 	U.Print(hex(DIM, "Spellings are the client's own, and every one of these is a character that"))
-	U.Print(hex(DIM, "exists and can be stood in front of. The full list is saved in"))
+	U.Print(hex(DIM, "exists and can be stood in front of. The #number is the creature id, which"))
+	U.Print(hex(DIM, "is what outside catalogues of NPCs are keyed on. The full list is saved in"))
 	U.Print(hex(DIM, "WTF/Account/<ACCOUNT>/SavedVariables/ForAllTheNerds.lua under 'npcs'."))
 	U.Print(hex(DIM, "/ftn npcs clear empties it."))
 end

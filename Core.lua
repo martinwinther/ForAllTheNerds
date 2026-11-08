@@ -219,7 +219,7 @@ end
 -- it was seen in, and a count. Nothing else, and nothing about players.
 local NPC_CAP = 1200
 
-function ns.RecordNPC(name, zone, sub)
+function ns.RecordNPC(name, zone, sub, id)
 	local db = ns.db
 	if not (db and db.logNPCs and name and zone) then return end
 
@@ -228,7 +228,10 @@ function ns.RecordNPC(name, zone, sub)
 	if rec then
 		rec.count = (rec.count or 0) + 1
 		-- Keep the first subzone seen. A wandering guard reports a different
-		-- one every few steps and the first is as good as any.
+		-- one every few steps and the first is as good as any. The id is worth
+		-- filling in late, though: the first sighting may have been in combat
+		-- or in an instance, where the client would not give one.
+		if id and not rec.id then rec.id = id end
 		return
 	end
 
@@ -236,7 +239,7 @@ function ns.RecordNPC(name, zone, sub)
 	for _ in pairs(db.npcs) do n = n + 1 end
 	if n >= NPC_CAP then return end
 
-	db.npcs[key] = { name = name, zone = zone, sub = sub, count = 1 }
+	db.npcs[key] = { name = name, zone = zone, sub = sub, count = 1, id = id }
 end
 
 function ns.NPCList()

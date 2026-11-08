@@ -354,6 +354,17 @@ function M.install()
 		end
 	end
 
+	-- GUIDs on the modern format. u.guid overrides it outright, so a test can
+	-- hand over a vanilla-style hex GUID or outright rubbish.
+	_G.UnitGUID = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		if u.secretGUID then return M.secret("Creature-0-1465-0-2105-1-0") end
+		if u.guid then return u.guid end
+		if not u.id then return nil end
+		return string.format("Creature-0-1465-0-2105-%d-000043F59F", u.id)
+	end
+
 	_G.UnitPlayerControlled = function(unit)
 		local u = unitOf(unit)
 		if not u then return nil end
