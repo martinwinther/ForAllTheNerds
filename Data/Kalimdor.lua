@@ -1969,3 +1969,133 @@ Zone{
 	didYouKnow = "The wall was built to hold, and it has held for a thousand years. What is behind it has not been idle: the qiraji answer to C'Thun, one of the Old Gods the titans buried rather than killed.",
 	readMore = { "Wowpedia: Gates of Ahn'Qiraj", "Wowpedia: War of the Shifting Sands", "Wowpedia: Scepter of the Shifting Sands", "Wowpedia: Fandral Staghelm" },
 }
+
+-- ---------------------------------------------------------------------------
+-- FROM THE AREA SWEEP
+--
+-- Places the client names that had no entry until tools/area-sweep.md went
+-- looking. Background only; the Shady Rest has a vanilla quest chain attached
+-- and what it uncovers is not given away here.
+-- ---------------------------------------------------------------------------
+
+SubsOf("Azshara", {
+	{
+		name = "Temple of Zin-Malor", parent = "Azshara", faction = "Hostile",
+		hook = "A temple to Elune in the Ruins of Eldarath, held now by naga.",
+		lore = {
+			"The Temple of Zin-Malor stands in the Ruins of Eldarath, and it was built to worship Elune. Its design is close to the nearby Temple of Arkkoran and closer still to the Temple of the Moon in Darnassus, the surviving example of the same architecture.",
+			"Azshara is named for the queen whose capital stood here, and the Highborne were her court. The naga are what became of them: dragged under with the Sundering and changed, and still hers.",
+			"The Spitelash hold this temple now, under Warlord Krellian. A night elf temple to the moon goddess, occupied by the descendants of the night elves who served the queen who broke the world.",
+		},
+		didYouKnow = "The Crystal of Zin-Malor was kept here. It was stolen, and it went to Kel'Theril in Winterspring, another ruin of the same vanished empire.",
+		readMore = { "Wowpedia: Temple of Zin-Malor", "Wowpedia: Eldarath", "Wowpedia: Naga", "Wowpedia: Azshara" },
+	},
+})
+
+SubsOf("The Barrens", {
+	{
+		name = "Bael Modan", parent = "The Barrens", faction = "Alliance",
+		hook = "A dwarven dig in the southern Barrens, sunk into ground the tauren consider theirs.",
+		lore = {
+			"Bael Modan is an Explorers' League excavation, and the League digs for one reason: after Uldaman, Ironforge believes the dwarves were shaped from living stone by the titans, and every site is read as more of that record.",
+			"The difficulty is where this one is. The southern Barrens is tauren country and Horde ground, and a fortified dwarven dig in the middle of it is not read as archaeology by anybody living nearby.",
+			"Both positions are sincere, and that is what makes it intractable. The dwarves are looking for their own origins and the tauren are watching foreigners fortify their land.",
+		},
+		readMore = { "Wowpedia: Bael Modan", "Wowpedia: Explorers' League", "Wowpedia: Uldaman" },
+	},
+})
+
+SubsOf("Dustwallow Marsh", {
+	{
+		name = "Shady Rest Inn", parent = "Dustwallow Marsh", faction = "Contested",
+		hook = "A burnt-out inn that very nearly started a war.",
+		lore = {
+			"The Shady Rest was an inn on the road through Dustwallow, and it was burned with people inside it. That is the whole of what is agreed.",
+			"Everything else about it is contested, and the contest matters because of where it happened. Theramore is Jaina Proudmoore's city and the only human settlement on Kalimdor that has chosen to live alongside the Horde. Orgrimmar is a short way north.",
+			"Jaina and Thrall both have more to lose from a war here than anyone else, and both know it. Finding out what actually happened at the inn is work somebody has to do on the ground.",
+		},
+		readMore = { "Wowpedia: Shady Rest Inn", "Wowpedia: Theramore Isle", "Wowpedia: Jaina Proudmoore" },
+	},
+	{
+		name = "Emberstrife's Den", parent = "Dustwallow Marsh", faction = "Hostile",
+		hook = "A cave in the marsh with a black dragon living in it.",
+		lore = {
+			"Emberstrife is a black dragon, and he keeps this cave in Dustwallow. The marsh has rather a lot of his kin: Onyxia's lair is here too, under Theramore's nose.",
+			"The black dragonflight was Neltharion's, the Aspect of Earth, before Neltharion became Deathwing. The Old Gods got to him during the War of the Ancients and what he did with the Dragon Soul broke the flights' alliance and nearly ended them.",
+			"His brood has spent the time since working as infiltrators rather than as an army. That is the shape of every black dragon problem in the world.",
+		},
+		readMore = { "Wowpedia: Emberstrife", "Wowpedia: Black dragonflight", "Wowpedia: Neltharion" },
+	},
+})
+
+SubsOf("Tanaris", {
+	{
+		name = "Uldum", parent = "Tanaris", faction = "Contested",
+		hook = "A sealed titan city in the southern desert, with nobody inside who will open it.",
+		lore = {
+			"Uldum is one of the titan vaults, and its gate is shut. The other one known in this part of the world is Uldaman, dug into by the Explorers' League, and Uldum is larger.",
+			"What Uldaman held was the Discs of Norgannon and the record of the earthen, the living-stone ancestors the dwarves descend from. A sealed vault on the same pattern is the single most interesting closed door on the continent to anybody in Ironforge.",
+			"It has stayed closed. The constructs outside it are still at their posts, and they were not built to let visitors through.",
+		},
+		readMore = { "Wowpedia: Uldum", "Wowpedia: Uldaman", "Wowpedia: Titan" },
+	},
+})
+
+SubsOf("Feralas", {
+	{
+		name = "Dream Bough", parent = "Feralas", faction = "Neutral",
+		hook = "A way into the Emerald Dream, and the Dream is no place for visitors.",
+		lore = {
+			"The Dream Bough is one of the points where the Emerald Dream touches this world. The Dream is Azeroth as it would have been without any of us: the green dragonflight's charge, and Ysera's.",
+			"Night elf druids sleep there. That is what the barrow dens are for, and Malfurion Stormrage has spent most of recorded history in it rather than awake.",
+			"Ways in are guarded for good reason. Something has been wrong in the Dream for a long while, and the dragons who are meant to watch it have not been forthcoming about what.",
+		},
+		readMore = { "Wowpedia: Emerald Dream", "Wowpedia: Ysera", "Wowpedia: Green dragonflight" },
+	},
+	{
+		name = "The Maul", parent = "Feralas", faction = "Hostile",
+		hook = "The Gordok ogres' arena, inside the city the Highborne sealed themselves into.",
+		lore = {
+			"The Maul is the arena at the centre of Dire Maul, and Dire Maul is Eldre'Thalas: the Highborne city whose scholars refused to give up the arcane after the Sundering and locked themselves in with their library rather than submit.",
+			"The Gordok ogres hold the city around them. Ogre politics are settled by single combat, and the arena is where that happens, so whoever holds the Maul is the ogre king until somebody takes it off him.",
+			"Which leaves the oldest surviving library in the world sitting behind a wall, with the succession of an ogre clan being decided in the courtyard.",
+		},
+		readMore = { "Wowpedia: Dire Maul", "Wowpedia: Gordok", "Wowpedia: Shen'dralar" },
+	},
+})
+
+SubsOf("Desolace", {
+	{
+		name = "Valley of Spears", parent = "Desolace", faction = "Hostile",
+		hook = "The Magram clan's hold, in a war that has outlasted every kingdom.",
+		lore = {
+			"The Valley of Spears belongs to the Magram, one of the centaur clans of Desolace. The Gelkis are the other one that counts here, and the two have been killing each other for longer than any human kingdom has existed.",
+			"The centaur came from Zaetar, Cenarius's son, and Theradras, a princess of the earth elementals. Their children killed their father, and Theradras keeps his remains in Maraudon to this day.",
+			"The tauren have been driven across Kalimdor by centaur raiding for generations. That is a large part of why Thrall found them in the state he did when the Horde landed.",
+		},
+		readMore = { "Wowpedia: Magram", "Wowpedia: Centaur", "Wowpedia: Zaetar", "Wowpedia: Theradras" },
+	},
+	{
+		name = "Kolkar Village", parent = "Desolace", faction = "Hostile",
+		hook = "A Kolkar holding, from the clan that spread furthest.",
+		lore = {
+			"The Kolkar are the centaur clan the rest of Kalimdor meets most often. They are in Desolace, they are across the Barrens, and they are in Durotar. New orcs are sent to deal with them before anything else.",
+			"All five clans trace to the same parents: Zaetar, son of Cenarius, and Theradras of the earth elementals. The clans are named for Zaetar's sons and they have been at war with each other since.",
+			"A village rather than a camp suggests the Kolkar intend to stay in Desolace. The Magram and the Gelkis will have views.",
+		},
+		readMore = { "Wowpedia: Kolkar", "Wowpedia: Centaur" },
+	},
+})
+
+SubsOf("Durotar", {
+	{
+		name = "The Den", parent = "Durotar", faction = "Horde",
+		hook = "The cave new orcs and trolls come out of, in a land Thrall chose on purpose.",
+		lore = {
+			"The Den is where it starts. Durotar is named for Durotan, Thrall's father, chieftain of the Frostwolves and the orc who refused Gul'dan's bargain and was murdered for it.",
+			"Thrall was born in internment. He grew up a slave in Aedelas Blackmoore's household, learned war from the man who meant to use him, escaped, found the Frostwolves and freed the camps. Then he took the Horde across the sea to found a nation somewhere nobody had a prior claim.",
+			"He picked hard ground deliberately. Durotar is dry, thin and defensible, and the point was a homeland the orcs owed nobody for.",
+		},
+		readMore = { "Wowpedia: Durotar", "Wowpedia: Thrall", "Wowpedia: Durotan" },
+	},
+})
