@@ -1223,6 +1223,8 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Dun Algaz", faction = "Hostile",
+		-- The client also reports this pass as "Algaz Gate".
+		aliases = { "Algaz Gate", "The Algaz Gate" },
 		hook = "The tunnel pass between Loch Modan and the Wetlands, and it is not securely held.",
 		lore = {
 			"Dun Algaz is a dwarven-cut pass through the mountains, and it is the land link between Loch Modan and the coast. The dwarves built it, fortified it, and have been fighting over it since.",

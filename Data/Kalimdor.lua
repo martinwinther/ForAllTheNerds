@@ -2683,3 +2683,135 @@ SubsOf("Thunder Bluff", {
 		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Thunder Bluff", "Wowpedia: Forsaken" },
 	},
 })
+
+SubsOf("Silithus", {
+	{
+		name = "Twilight Post", parent = "Silithus", faction = "Hostile",
+		hook = "A Twilight's Hammer camp in the north-west, well away from the Cenarion watch.",
+		lore = {
+			"The Twilight Post sits in north-western Silithus, a long way west of Cenarion Hold. Twilight Lord Everun and Twilight Keeper Mayna are the names attached to it, with geolords and stonecallers under them.",
+			"The Twilight's Hammer are not in Silithus by accident. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans buried rather than killed, and the cult serve the Old Gods directly.",
+			"The Cenarion Circle hold the only real position in this desert and are trying to contain the qiraji. The cult are trying to let them out. Both are camped in the same sand.",
+		},
+		readMore = { "Wowpedia: Twilight Post", "Wowpedia: Twilight's Hammer", "Wowpedia: Cenarion Circle" },
+	},
+	{
+		name = "Twilight's Run", parent = "Silithus", faction = "Hostile",
+		hook = "A cult cave at the foot of Staghelm Point.",
+		lore = {
+			"Twilight's Run is a cave in northern Silithus, under Staghelm Point, and it is full of Twilight's Hammer.",
+			"The point above it is named for Fandral Staghelm, the night elf Archdruid who planted Teldrassil without the dragons' blessing and who lost his son Valstann in the War of the Shifting Sands, fought over this very desert.",
+			"So a cult serving the thing under Ahn'Qiraj has made itself a cave beneath a monument to the man whose grief helped seal it. Silithus is full of arrangements like that.",
+		},
+		readMore = { "Wowpedia: Twilight's Run", "Wowpedia: Fandral Staghelm", "Wowpedia: Twilight's Hammer" },
+	},
+	{
+		name = "Bones of Grakkarond", parent = "Silithus", faction = "Contested",
+		hook = "A bronze dragon's skeleton, kept as a holy site by the things that killed him.",
+		lore = {
+			"Grakkarond was a bronze dragon and he was killed here by Ossirian the Unscarred during the War of the Shifting Sands. His bones are still in the sand in central Silithus and they are enormous.",
+			"The bronze flight fought that war beside the night elves, and it went so badly that the best available ending was the Scarab Wall and a sealed gate. A dragon of Nozdormu's own flight dying in this desert is part of the price of that.",
+			"The Anubisath hold the bones sacred. They are qiraji constructs, stone-made and old, and they treat the skeleton of a dragon their side brought down as a place of reverence.",
+		},
+		readMore = { "Wowpedia: Bones of Grakkarond", "Wowpedia: War of the Shifting Sands", "Wowpedia: Anubisath" },
+	},
+	{
+		name = "The Swarming Pillar", parent = "Silithus", faction = "Hostile",
+		hook = "The biggest silithid hive above ground, a short way from Cenarion Hold.",
+		lore = {
+			"The Swarming Pillar is a peak in the middle of Silithus with a hive in it, and the name comes from the cloud of small silithid that never stops moving around it. It is the largest of them.",
+			"It is also only one. The hives' foundations run under the sand across the whole zone, and there are far too many of them to count, let alone clear.",
+			"That is the Cenarion Circle's problem in one sentence. They can hold a fort and they can kill what comes out of a hive. They cannot do anything about what the hives are connected to.",
+		},
+		readMore = { "Wowpedia: Swarming Pillar", "Wowpedia: Silithid", "Wowpedia: Cenarion Hold" },
+	},
+})
+
+SubsOf("Azshara", {
+	{
+		name = "Scalebeard's Cave", parent = "Azshara", faction = "Neutral",
+		hook = "A cave on an islet in the Bay of Storms, usually with nobody home.",
+		lore = {
+			"The cave is on a tiny island in the western Bay of Storms, and it belongs to Scalebeard, who is a very large and very old turtle.",
+			"He is generally not in it. Scalebeard prefers to be out hunting in the Great Sea, so anyone who comes looking for him mostly finds an empty cave.",
+			"Azshara is full of ruins, satyrs, naga and the wreckage of a drowned empire. It is worth noting that one of its named places is a turtle's address.",
+		},
+		readMore = { "Wowpedia: Scalebeard's Cave", "Wowpedia: Azshara" },
+	},
+})
+
+SubsOf("Durotar", {
+	{
+		name = "Darkspear Strand", parent = "Durotar", faction = "Horde",
+		hook = "The beach the Darkspear trolls came ashore on.",
+		lore = {
+			"This is where the Darkspear landed. They had been driven off the Echo Isles and they came onto this strand with what they could carry; Sen'jin Village, a few yards inland, is where they gathered afterwards.",
+			"Thrall found them on a different island altogether, besieged by murlocs and a sea witch, and took them in. Vol'jin's people have been Horde ever since, and they are the reason the Horde has shadow hunters and a claim on anything south of Durotar.",
+			"A beach is a thin place to start a nation from. The orcs did the same thing a short way north of here.",
+		},
+		readMore = { "Wowpedia: Darkspear Strand", "Wowpedia: Darkspear tribe", "Wowpedia: Vol'jin", "Wowpedia: Sen'jin Village" },
+	},
+	{
+		name = "Spirit Rock", parent = "Durotar", faction = "Horde",
+		hook = "A stone above the Valley of Trials where shaman are sent to listen.",
+		lore = {
+			"Spirit Rock is in the hills over the Valley of Trials, and it is sacred to the Horde's shaman. Getting to it means finding the Hidden Path.",
+			"New shaman came here to drink sapta by the rock and commune with the earth. That is the first lesson rather than a ceremony: not casting anything, but listening to the ground and finding out whether it answers.",
+			"The orcs lost shamanism entirely. Gul'dan traded it away for warlock power and a generation grew up without it; Thrall learned it from Drek'Thar among the Frostwolves and brought it back. Every orc shaman since starts on this hill.",
+		},
+		readMore = { "Wowpedia: Spirit Rock", "Wowpedia: Shaman", "Wowpedia: Drek'Thar" },
+	},
+	{
+		name = "Hidden Path", parent = "Durotar", faction = "Horde",
+		hook = "A route through the mountains that new shaman are told to find for themselves.",
+		lore = {
+			"The Hidden Path goes up through the mountains ringing the Valley of Trials, and the first thing an aspiring shaman is asked to do is find it. Nobody draws them a map.",
+			"It leads to Spirit Rock. From the top of it there is a clear view out over the Barrens, which is the first time most new orcs see how much of this continent there is.",
+			"Setting the search itself as the test is deliberate. A shaman's work is paying attention to the land, and a path that has to be noticed rather than followed is a reasonable way to begin.",
+		},
+		readMore = { "Wowpedia: Hidden Path", "Wowpedia: Valley of Trials", "Wowpedia: Spirit Rock" },
+	},
+	{
+		name = "Jaggedswine Farm", parent = "Durotar", faction = "Horde",
+		hook = "A pig farm outside Orgrimmar's gates, feeding the city.",
+		lore = {
+			"Jaggedswine is one of several pig farms near the front gates of Orgrimmar: a storage house, a large pen, a pond. The swine off these farms are what the Horde eats.",
+			"Durotar is dry, thin, rocky ground and Thrall chose it on purpose, for defensibility and because nobody else had a prior claim on it. Feeding a capital city out of it was always going to be the hard part.",
+			"So the unglamorous answer is pigs, in pens, within sight of the gate. A nation founded by escaped slaves has to solve the ordinary problems as well as the heroic ones.",
+		},
+		readMore = { "Wowpedia: Jaggedswine Farm", "Wowpedia: Orgrimmar", "Wowpedia: Durotar" },
+	},
+	{
+		name = "Razorwind Canyon", parent = "Durotar", faction = "Hostile",
+		hook = "Harpy nesting ground either side of the Orgrimmar road.",
+		lore = {
+			"The Dustwind harpies nest in this canyon, and the canyon is in two parts, east and west of the main road between Razor Hill and Orgrimmar.",
+			"Harpies are one of the stranger things in Kalimdor. The night elves hold them to be descended from Aviana's own servants, twisted long ago, which would make them a ruin of the same War of the Ancients that produced the satyrs.",
+			"Either way they are nesting on both sides of the Horde's main road, a short ride from the capital, and Durotar has not managed to do anything about it.",
+		},
+		readMore = { "Wowpedia: Razorwind Canyon", "Wowpedia: Harpy", "Wowpedia: Razor Hill" },
+	},
+})
+
+SubsOf("Dustwallow Marsh", {
+	{
+		name = "Tidefury Cove", parent = "Dustwallow Marsh", faction = "Neutral",
+		hook = "A reef-choked cove south of Theramore, with two wrecks in the shallows.",
+		lore = {
+			"Tidefury Cove is at the end of Dustwallow Bay, south of Theramore and off the Wyrmbog coast. It is full of small islands and reefs and it is a bad place to bring a ship.",
+			"Two of them did not make it. Both are broken on the shallows with makrura moving through the wreckage.",
+			"Nat Pagle lives out here, on an islet called Nat's Landing. He is the most accomplished fisherman anybody knows of and he has chosen to do it from a rock in a cove full of reefs, which is probably the point.",
+		},
+		readMore = { "Wowpedia: Tidefury Cove", "Wowpedia: Nat Pagle", "Wowpedia: Dustwallow Marsh" },
+	},
+	{
+		name = "Bloodfen Burrow", parent = "Dustwallow Marsh", faction = "Hostile",
+		hook = "A raptor nest in the south-west, with somebody's settlement torn apart outside it.",
+		lore = {
+			"The Bloodfen raptors nest in this cave in concentration, and raptors in numbers are not a thing to walk into.",
+			"Just outside the entrance there is what is left of a settlement. Somebody built here, and the raptors took it apart.",
+			"Part of Cortello's Riddle is in the burrow, which means the pirates who scattered that riddle across the coast came in here too and presumably had the same problem.",
+		},
+		readMore = { "Wowpedia: Bloodfen Burrow", "Wowpedia: Dustwallow Marsh" },
+	},
+})

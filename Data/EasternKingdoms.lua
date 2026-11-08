@@ -2653,7 +2653,7 @@ SubsOf("Redridge Mountains", {
 		hook = "The tower of the Stonewatch stronghold, on the same captured ground.",
 		lore = {
 			"The tower is the other half of Stonewatch, and it fell with the keep when the Blackrock orcs came through for Morganth.",
-			"The position is the whole reason anybody wants it. Stonewatch sits on the pass, and the pass is the way between Redridge and the Burning Steppes, which is Blackrock Mountain's doorstep.",
+			"The position is the whole reason anybody wants it. Stonewatch sits on the pass, and the pass is the way between Redridge and the Burning Steppes, and the Steppes are Blackrock Mountain's doorstep.",
 			"So a human fort built to watch the road to Blackrock is now held by the people it was watching for.",
 		},
 		readMore = { "Wowpedia: Stonewatch", "Wowpedia: Blackrock clan" },
@@ -2774,8 +2774,111 @@ SubsOf("Stormwind City", {
 		lore = {
 			"The harbour is wharfs, dry docks and fortifications in Stormwind's north-western quarter, and it is where the Alliance's warships are built and its fleets put together.",
 			"Stormwind has needed a navy more than once and not always had one. Kul Tiras supplied the ships for the Second War, under Daelin Proudmoore, and the Alliance has been short of hulls ever since that friendship soured.",
-			"Transport ships run out of here as well as warships. A capital that was burned to the ground in the First War and rebuilt by masons it then refused to pay is now a naval power, which is a particular sort of recovery.",
+			"Transport ships run out of here as well as warships. A capital that was burned to the ground in the First War and rebuilt by masons it then refused to pay is now a naval power. That is a particular sort of recovery.",
 		},
 		readMore = { "Wowpedia: Stormwind Harbor", "Wowpedia: Stormwind City", "Wowpedia: Kul Tiras" },
+	},
+})
+
+SubsOf("Searing Gorge", {
+	{
+		name = "Stonewrought Pass", parent = "Searing Gorge", faction = "Contested",
+		hook = "A tunnel out of the gorge to Loch Modan, cut by the dwarf who built the dam.",
+		lore = {
+			"The pass runs from the northern end of Dustfire Valley through the mountains and comes out at the Valley of Kings in Loch Modan. It was gated at both ends, and the gates were kept shut.",
+			"Franclorn Forgewright designed it. He also designed the Stonewrought Dam that holds Loch Modan, and a good deal of the other serious stonework in the Eastern Kingdoms. He was a Dark Iron.",
+			"That is the awkwardness at the centre of dwarven history. The clan that bound itself to Ragnaros produced the architect the other two clans' country still runs on.",
+		},
+		readMore = { "Wowpedia: Stonewrought Pass", "Wowpedia: Franclorn Forgewright", "Wowpedia: Stonewrought Dam" },
+	},
+})
+
+SubsOf("Loch Modan", {
+	{
+		name = "Stoutlager Inn", parent = "Loch Modan", faction = "Alliance",
+		hook = "Thelsamar's inn, and the most popular room in Loch Modan.",
+		lore = {
+			"The Stoutlager is in Thelsamar, with an innkeeper, vendors and people handing out work. It is the place in this zone where everyone ends up.",
+			"Loch Modan earns a comfortable inn. The Stonewrought Dam holds the loch, the dwarves have held this valley since before the Three Hammers, and the troubles here are troggs and the Mo'grosh ogres rather than anything existential.",
+			"It is one of the few zones in the Eastern Kingdoms where the local difficulty is a nuisance instead of a catastrophe, and the inn reflects that.",
+		},
+		readMore = { "Wowpedia: Stoutlager Inn", "Wowpedia: Thelsamar", "Wowpedia: Loch Modan" },
+	},
+})
+
+SubsOf("Duskwood", {
+	{
+		name = "Forlorn Rowe", parent = "Duskwood", faction = "Hostile",
+		hook = "A dark hill over Raven Hill Cemetery, with a necromancer's house on top.",
+		lore = {
+			"The Rowe is a hill on the northern edge of Raven Hill Cemetery, and it is darker than the rest of Duskwood, and that takes some doing.",
+			"Morbent Fel lives on it. He is a necromancer, and the undead throughout these woods answer to him; the graveyard below is his supply.",
+			"He cannot be put down with ordinary weapons, and a detail like that turns a local problem into a campaign. Duskwood has the worgen, the Nightbane pack, the Scythe of Elune and the Dark Riders, and this is the quieter half of its trouble.",
+		},
+		readMore = { "Wowpedia: Forlorn Rowe", "Wowpedia: Morbent Fel", "Wowpedia: Raven Hill Cemetery" },
+	},
+})
+
+SubsOf("Silverpine Forest", {
+	{
+		name = "The Shining Strand", parent = "Silverpine Forest", faction = "Contested",
+		hook = "Silverpine's shore of Lordamere Lake, running up to the old capital.",
+		lore = {
+			"The Shining Strand is the lakeshore, stretching from Lordaeron's capital city in the north down to the hills that divide Silverpine from the Alterac Mountains.",
+			"The Vile Fin murlocs had settlements all along it and made the walk genuinely dangerous. They have since moved out to the Dawning Isles, improving the strand and ruining the islands.",
+			"The capital at the north end is the Ruins of Lordaeron, with the Undercity dug out beneath it. A pleasant name for a shoreline that leads to that.",
+		},
+		readMore = { "Wowpedia: Shining Strand", "Wowpedia: Lordamere Lake", "Wowpedia: Silverpine Forest" },
+	},
+	{
+		name = "The Dawning Isles", parent = "Silverpine Forest", faction = "Hostile",
+		hook = "Low islands in Lordamere Lake that the plague reached and the murlocs took.",
+		lore = {
+			"The Dawning Isles were a set of low keys rising out of Lordamere Lake, and by every account they were lovely.",
+			"Then the Plague of Undeath got into them. The trees turned sickly, bog beasts moved through, and the islands stopped being anywhere anyone went.",
+			"The Vile Fin murlocs now hold them outright, having left the Shining Strand to do it. Their numbers on the isles are considerable, and nothing else is competing for the ground.",
+		},
+		readMore = { "Wowpedia: Dawning Isles", "Wowpedia: Plague of Undeath", "Wowpedia: Vile Fin" },
+	},
+})
+
+SubsOf("Wetlands", {
+	{
+		name = "Deepwater Tavern", parent = "Wetlands", faction = "Alliance",
+		hook = "Menethil Harbour's tavern, and the usual site of the bar fight.",
+		lore = {
+			"The Deepwater is the hub of Menethil Harbour: quests, a first aid trainer, vendors, and everyone passing through on their way to Kalimdor.",
+			"It is also where the fights happen, and a good proportion of them are started by Tapoke \"Slim\" Jahn. He is a known quantity in the harbour and nobody appears to have done anything about him.",
+			"Menethil is the Alliance's western port, named for Lordaeron's royal house, run by dwarves, and jammed with people waiting for a boat. A tavern with a reliable brawl in it is the natural result.",
+		},
+		readMore = { "Wowpedia: Deepwater Tavern", "Wowpedia: Menethil Harbor" },
+	},
+})
+
+SubsOf("Hillsbrad Foothills", {
+	{
+		name = "Hillsbrad", parent = "Hillsbrad Foothills", faction = "Alliance",
+		aliases = { "Hillsbrad Fields" },
+		hook = "The town the foothills are named for, still standing and not expected to.",
+		lore = {
+			"Hillsbrad town sits in the western foothills under Magistrate Burnside, and it is human, Alliance, and holding on. It was Lordaeron's before Lordaeron fell.",
+			"The position is bad. Tarren Mill is a short way north and is Forsaken, Southshore is the other human holding, and the two sides have been grinding against each other across these fields for years with no front line and no resolution.",
+			"These are also the foothills where Thrall was raised. Durnholde Keep is here, Aedelas Blackmoore ran the internment camps from it, and Taretha Foxton died in Hillsbrad for helping Thrall escape.",
+		},
+		readMore = { "Wowpedia: Hillsbrad Fields", "Wowpedia: Durnholde Keep", "Wowpedia: Taretha Foxton" },
+	},
+})
+
+SubsOf("Alterac Mountains", {
+	{
+		name = "Dandred's Fold", parent = "Alterac Mountains", faction = "Hostile",
+		hook = "A manor on the Uplands where the Syndicate's last lord keeps court.",
+		lore = {
+			"Dandred's Fold is a farm and manor on the western edge of the Uplands, with a harbour of its own on Lordamere Lake.",
+			"Lord Aliden Perenolde is here, with his mistress Elysa and a quantity of Syndicate men. He is the last known leader of the Syndicate, and he is the son of Aiden Perenolde, the king of Alterac who sold the Alliance to the Horde during the Second War.",
+			"Alterac was dismantled for that betrayal and its aristocracy turned to organised crime. Aliden holding a manor in the hills with the family name on it is the whole of what the kingdom became.",
+		},
+		didYouKnow = "Aliden also had Taretha Foxton's necklace. Taretha was the human girl who helped Thrall escape Durnholde and was executed for it, and the Horde wanted the necklace back badly enough to send someone for it.",
+		readMore = { "Wowpedia: Dandred's Fold", "Wowpedia: Aliden Perenolde", "Wowpedia: Syndicate", "Wowpedia: Taretha Foxton" },
 	},
 })

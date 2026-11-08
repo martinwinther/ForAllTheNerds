@@ -30,8 +30,12 @@
   Wildhammer Keep, the Harborage, both halves of the Stonefield and Maclure
   feud, the Ruins of Kel'Theril, Aldrassil, the Oracle Glade, the Shrine of the
   Deceiver, Bloodvenom Falls and the Pools of Vision.
-- Walking into Scholomance now works whichever name the game reports. The
-  client calls the inside of it the School of Necromancy.
+- Twenty more, taking the total to 923 places. Among them the Darkspear Strand
+  where the trolls came ashore, Spirit Rock and the Hidden Path above the orc
+  starting valley, Dandred's Fold, Hillsbrad town, the Bones of Grakkarond,
+  Tidefury Cove, Forlorn Rowe, the Stonewrought Pass and the Dawning Isles.
+- Walking into Scholomance or Dun Algaz now works whichever name the game
+  reports. The client calls them the School of Necromancy and the Algaz Gate.
 
 ## 1.2.2
 

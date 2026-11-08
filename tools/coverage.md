@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**849 written, 134 empty, 86% covered.** 38 zones have gaps; 25 are complete.
+**870 written, 113 empty, 88% covered.** 37 zones have gaps; 26 are complete.
 
-134 checklist lines below, 132 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+113 checklist lines below, 111 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -30,40 +30,39 @@ check with the real resolver and is the authority when the two disagree.
 |---|---:|---:|---:|
 | Riverglades | 11 | 9 | 55% |
 | Mulgore | 19 | 7 | 73% |
-| Durotar | 21 | 6 | 77% |
-| Dustwallow Marsh | 21 | 6 | 77% |
-| Alterac Mountains | 18 | 5 | 78% |
 | Ashenvale | 37 | 5 | 88% |
-| Silithus | 16 | 5 | 76% |
-| Silverpine Forest | 19 | 5 | 79% |
 | Stranglethorn Vale | 40 | 5 | 88% |
 | Tirisfal Glades | 25 | 5 | 83% |
+| Alterac Mountains | 19 | 4 | 82% |
 | Arathi Highlands | 20 | 4 | 83% |
-| Azshara | 26 | 4 | 86% |
 | Dun Morogh | 22 | 4 | 84% |
-| Duskwood | 17 | 4 | 80% |
+| Dustwallow Marsh | 23 | 4 | 85% |
 | Mount Hyjal | 7 | 4 | 63% |
 | Stonetalon Mountains | 16 | 4 | 80% |
 | Tanaris | 21 | 4 | 84% |
 | Thousand Needles | 19 | 4 | 82% |
-| Wetlands | 23 | 4 | 85% |
 | Zephras Isle | 24 | 4 | 85% |
+| Azshara | 27 | 3 | 90% |
 | Desolace | 18 | 3 | 85% |
+| Duskwood | 18 | 3 | 85% |
 | Feralas | 31 | 3 | 91% |
-| Loch Modan | 14 | 3 | 82% |
 | Redridge Mountains | 14 | 3 | 82% |
+| Silverpine Forest | 21 | 3 | 87% |
 | Swamp of Sorrows | 12 | 3 | 80% |
 | The Hinterlands | 19 | 3 | 86% |
+| Wetlands | 24 | 3 | 88% |
 | Burning Steppes | 12 | 2 | 85% |
 | Deadwind Pass | 9 | 2 | 81% |
 | Elwynn Forest | 24 | 2 | 92% |
-| Searing Gorge | 11 | 2 | 84% |
 | Un'Goro Crater | 11 | 2 | 84% |
 | Westfall | 17 | 2 | 89% |
 | Badlands | 17 | 1 | 94% |
-| Hillsbrad Foothills | 14 | 1 | 93% |
+| Durotar | 26 | 1 | 96% |
 | Hyjal Crater | 0 | 1 | 0% |
+| Loch Modan | 16 | 1 | 94% |
+| Searing Gorge | 12 | 1 | 92% |
 | Shen'dralas | 6 | 1 | 85% |
+| Silithus | 20 | 1 | 95% |
 | The Barrens | 36 | 1 | 97% |
 | Winterspring | 18 | 1 | 94% |
 | Blackrock Depths | 1 | 0 | 100% |
@@ -76,6 +75,7 @@ check with the real resolver and is the authority when the two disagree.
 | Eastern Plaguelands | 28 | 0 | 100% |
 | Felwood | 19 | 0 | 100% |
 | Gates of Ahn'Qiraj | 1 | 0 | 100% |
+| Hillsbrad Foothills | 15 | 0 | 100% |
 | Ironforge | 1 | 0 | 100% |
 | Lordamere Lake | 1 | 0 | 100% |
 | Moonglade | 6 | 0 | 100% |
@@ -119,32 +119,6 @@ is where the most ground is gained per sitting.
 - [ ] Mantle Rock
 - [ ] Skyline Ridge
 
-### Durotar — 6 empty of 27
-
-- [ ] Darkspear Strand
-- [ ] Dustwind Cave
-- [ ] Hidden Path
-- [ ] Jaggedswine Farm
-- [ ] Razorwind Canyon
-- [ ] Spirit Rock
-
-### Dustwallow Marsh — 6 empty of 27
-
-- [ ] Bloodfen Burrow
-- [ ] Dustwallow Bay
-- [ ] Ironclad Prison
-- [ ] Moggle Point
-- [ ] Tidefury Cove
-- [ ] West Point Tower
-
-### Alterac Mountains — 5 empty of 23
-
-- [ ] Dandred's Fold
-- [ ] Gavin's Naze
-- [ ] The Eventide
-- [ ] The Foothill Caverns
-- [ ] The Headland
-
 ### Ashenvale — 5 empty of 42
 
 - [ ] Falfarren River
@@ -152,22 +126,6 @@ is where the most ground is gained per sitting.
 - [ ] Silverwing Outpost
 - [ ] The Talondeep Path
 - [ ] Warsong Labor Camp
-
-### Silithus — 5 empty of 21
-
-- [ ] Bones of Grakkarond
-- [ ] Ravaged Twilight Camp
-- [ ] The Swarming Pillar
-- [ ] Twilight Post
-- [ ] Twilight's Run
-
-### Silverpine Forest — 5 empty of 24
-
-- [ ] Bucklebree Farm
-- [ ] North Tide's Run
-- [ ] South Tide's Run
-- [ ] The Dawning Isles
-- [ ] The Shining Strand
 
 ### Stranglethorn Vale — 5 empty of 45
 
@@ -185,19 +143,19 @@ is where the most ground is gained per sitting.
 - [ ] Whispering Forest
 - [ ] Whispering Shore
 
+### Alterac Mountains — 4 empty of 23
+
+- [ ] Gavin's Naze
+- [ ] The Eventide
+- [ ] The Foothill Caverns
+- [ ] The Headland
+
 ### Arathi Highlands — 4 empty of 24
 
 - [ ] Blackwater Shipwrecks
 - [ ] O'Breen's Camp
 - [ ] The Drowned Reef
 - [ ] The Sanctum
-
-### Azshara — 4 empty of 30
-
-- [ ] Legashi Stronghold
-- [ ] Scalebeard's Cave
-- [ ] Thalassian Vanguard Camp
-- [ ] Vanndir Encampment
 
 ### Dun Morogh — 4 empty of 26
 
@@ -206,12 +164,12 @@ is where the most ground is gained per sitting.
 - [ ] South Gate Outpost
 - [ ] South Gate Pass
 
-### Duskwood — 4 empty of 21
+### Dustwallow Marsh — 4 empty of 27
 
-- [ ] Forlorn Rowe
-- [ ] The Cemetary
-- [ ] The Whipple Estate
-- [ ] The World Tree
+- [ ] Dustwallow Bay
+- [ ] Ironclad Prison
+- [ ] Moggle Point
+- [ ] West Point Tower
 
 ### Mount Hyjal — 4 empty of 11
 
@@ -241,13 +199,6 @@ is where the most ground is gained per sitting.
 - [ ] The Weathered Nook
 - [ ] Zane's Eye Crater
 
-### Wetlands — 4 empty of 27
-
-- [ ] Baradin Bay
-- [ ] Deepwater Tavern
-- [ ] Dragonmaw Retreat
-- [ ] The Drunken Dwarf
-
 ### Zephras Isle — 4 empty of 28
 
 - [ ] Bandit Hideout
@@ -255,11 +206,23 @@ is where the most ground is gained per sitting.
 - [ ] Rohashi Spires
 - [ ] Ruins of Ban'aethal
 
+### Azshara — 3 empty of 30
+
+- [ ] Legashi Stronghold
+- [ ] Thalassian Vanguard Camp
+- [ ] Vanndir Encampment
+
 ### Desolace — 3 empty of 21
 
 - [ ] Broken Spear Village
 - [ ] Scrabblescrew's Camp
 - [ ] Shadowbreak Ravine
+
+### Duskwood — 3 empty of 21
+
+- [ ] The Cemetary
+- [ ] The Whipple Estate
+- [ ] The World Tree
 
 ### Feralas — 3 empty of 34
 
@@ -267,17 +230,17 @@ is where the most ground is gained per sitting.
 - [ ] Mok'Gordun
 - [ ] Wildwind Lake
 
-### Loch Modan — 3 empty of 17
-
-- [ ] Algaz Gate
-- [ ] South Gate Pass
-- [ ] Stoutlager Inn
-
 ### Redridge Mountains — 3 empty of 17
 
 - [ ] Galardell Valley
 - [ ] Redridge Canyons
 - [ ] Render's Rock
+
+### Silverpine Forest — 3 empty of 24
+
+- [ ] Bucklebree Farm
+- [ ] North Tide's Run
+- [ ] South Tide's Run
 
 ### Swamp of Sorrows — 3 empty of 15
 
@@ -290,6 +253,12 @@ is where the most ground is gained per sitting.
 - [ ] Featherbeard's Hovel
 - [ ] Martsirt
 - [ ] Shindigger's Camp
+
+### Wetlands — 3 empty of 27
+
+- [ ] Baradin Bay
+- [ ] Dragonmaw Retreat
+- [ ] The Drunken Dwarf
 
 ### Burning Steppes — 2 empty of 14
 
@@ -306,11 +275,6 @@ is where the most ground is gained per sitting.
 - [ ] Northshire River
 - [ ] Stormwind Mountains
 
-### Searing Gorge — 2 empty of 13
-
-- [ ] Stonewrought Pass
-- [ ] The Searing Basin
-
 ### Un'Goro Crater — 2 empty of 13
 
 - [ ] Pillar of Assimilation
@@ -325,17 +289,29 @@ is where the most ground is gained per sitting.
 
 - [ ] Camp Wurg
 
-### Hillsbrad Foothills — 1 empty of 15
+### Durotar — 1 empty of 27
 
-- [ ] Hillsbrad
+- [ ] Dustwind Cave
 
 ### Hyjal Crater — 1 empty of 1
 
 - [ ] Hyjal Crater
 
+### Loch Modan — 1 empty of 17
+
+- [ ] South Gate Pass
+
+### Searing Gorge — 1 empty of 13
+
+- [ ] The Searing Basin
+
 ### Shen'dralas — 1 empty of 7
 
 - [ ] Forlorn Gardens
+
+### Silithus — 1 empty of 21
+
+- [ ] Ravaged Twilight Camp
 
 ### The Barrens — 1 empty of 37
 

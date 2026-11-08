@@ -22,6 +22,14 @@ are now separate files.
 | Valley of the Bloodfuries | Stonetalon Mountains | Never left the beta; possibly an early name for the Charred Vale |
 | Dragonmaw Retreat | Wetlands | No article on warcraft.wiki.gg |
 | Ironforge Submarine Facility | Dun Morogh | No article on warcraft.wiki.gg |
+| Moggle Point | Dustwallow Marsh | Never left the World of Warcraft beta |
+| The Whipple Estate | Duskwood | Never left the beta; a house owned by the Whipple family, and nothing more |
+| Bucklebree Farm | Silverpine Forest | Never left the World of Warcraft beta |
+| O'Breen's Camp | Arathi Highlands | Never left the beta; likely Shakes O'Breen's unnamed camp at Faldir's Cove |
+| Pillar of Assimilation | Un'Goro Crater | No article on warcraft.wiki.gg |
+| The Rumble Cage | Tanaris | No article on warcraft.wiki.gg |
+| The Sanctum | Arathi Highlands | No article under that name |
+| The World Tree | Duskwood | No article under that name |
 
 ## Near misses, written anyway
 
@@ -31,6 +39,8 @@ are now separate files.
 | Whispering Forest | The faerie ring and its seven Fey-Drunk Darters could not be dated. If it is Cataclysm content it has no business in a 1.12 addon, so the place is still on the list. |
 | Warsong Labor Camp | Not the same place as the Warsong Lumber Camp, and the wiki warns against exactly that confusion. Still on the list rather than written up wrong. |
 | School of Necromancy | This is Scholomance, which the addon already had. Registered as an alias of it rather than written twice. |
+| Algaz Gate | This is Dun Algaz, already written up in Data/Locales.lua. Registered as an alias. |
+| Gavin's Naze | The Stormpike siege engines on that hill could not be dated and read as Cataclysm. Left on the list rather than written from a source I could not place in 1.12. |
 
 ## Forever
 
