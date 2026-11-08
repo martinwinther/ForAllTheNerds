@@ -3046,3 +3046,29 @@ SubsOf("The Barrens", {
 		readMore = { "Wowpedia: Southern Barrens", "Wowpedia: Razorfen Kraul", "Wowpedia: Northwatch Hold" },
 	},
 })
+
+SubsOf("Thousand Needles", {
+	{
+		name = "The Weathered Nook", parent = "Thousand Needles", faction = "Neutral",
+		hook = "A hidden cave high on the northern wall, with two tauren living in it.",
+		lore = {
+			"The Weathered Nook is small, well concealed, and set into the northern wall of Thousand Needles. Dorn Plainstalker and Prate Cloudseer live up there.",
+			"Thousand Needles is a canyon system of tall stone spires with very little flat ground, so anybody wanting to be left alone has good options. A cave on a cliff face is one of the better ones.",
+			"Tauren who take themselves off to a hidden cave are usually doing it for a reason connected to the spirits rather than to politics. The Needles have the Great Lift at one end and centaur at the other, and the quiet places are up the walls.",
+		},
+		readMore = { "Wowpedia: Weathered Nook", "Wowpedia: Thousand Needles" },
+	},
+})
+
+SubsOf("Ashenvale", {
+	{
+		name = "Moonwell", parent = "Ashenvale", faction = "Neutral",
+		hook = "One of Ashenvale's three moonwells, and a fragment of the Well of Eternity.",
+		lore = {
+			"Ashenvale has three moonwells. The Moonwell of Purity is in the north, east of Iris Lake and west of Raynewood Retreat; the Moonwell of Cleansing lies west of the Silverwing Outpost; and a third carries no further name than the one the client reports.",
+			"A moonwell is not decorative. They are drawn from the waters of the Well of Eternity, which means every one of them is a piece of the thing whose destruction broke this world apart, kept and tended by the people who caused it.",
+			"They heal, and they sustain the forest around them. In a zone being logged from one end and held by satyrs at the other, three of them is a reason the night elves will not give Ashenvale up.",
+		},
+		readMore = { "Wowpedia: Moonwell", "Wowpedia: Well of Eternity", "Wowpedia: Ashenvale" },
+	},
+})

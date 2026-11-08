@@ -42,6 +42,10 @@
   Caverns, the Drowned Reef, both ends of South Gate Pass, the Northshire
   River, Dustwind Cave, the Ravaged Twilight Camp, Windshear Mine, Gunstan's
   Post, the Moon Horror Den and the Southern Barrens.
+- The last seven places in the old world: the North Coast, the Whispering
+  Shore, both Tide's Runs, the Westfall lighthouse, the Weathered Nook and
+  Ashenvale's moonwells. Every place the game names in the old world now has
+  something written for it, unless no source for it exists anywhere.
 - Walking into Scholomance, Dun Algaz or Raven Hill Cemetery now works
   whichever name the game reports. The client calls them the School of
   Necromancy, the Algaz Gate, and simply "The Cemetary".

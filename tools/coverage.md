@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**915 written, 68 empty, 93% covered.** 28 zones have gaps; 35 are complete.
+**922 written, 61 empty, 93% covered.** 28 zones have gaps; 35 are complete.
 
-68 checklist lines below, 68 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+61 checklist lines below, 61 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -31,20 +31,18 @@ check with the real resolver and is the authority when the two disagree.
 | Riverglades | 11 | 9 | 55% |
 | Mulgore | 19 | 7 | 73% |
 | Mount Hyjal | 7 | 4 | 63% |
-| Thousand Needles | 19 | 4 | 82% |
-| Tirisfal Glades | 26 | 4 | 86% |
 | Zephras Isle | 24 | 4 | 85% |
 | Arathi Highlands | 21 | 3 | 87% |
 | Dustwallow Marsh | 24 | 3 | 88% |
-| Silverpine Forest | 21 | 3 | 87% |
+| Thousand Needles | 20 | 3 | 86% |
 | Alterac Mountains | 21 | 2 | 91% |
-| Ashenvale | 40 | 2 | 95% |
 | Duskwood | 19 | 2 | 90% |
 | Stranglethorn Vale | 43 | 2 | 95% |
 | Tanaris | 23 | 2 | 92% |
+| Tirisfal Glades | 28 | 2 | 93% |
 | Un'Goro Crater | 11 | 2 | 84% |
-| Westfall | 17 | 2 | 89% |
 | Wetlands | 25 | 2 | 92% |
+| Ashenvale | 41 | 1 | 97% |
 | Azshara | 29 | 1 | 96% |
 | Burning Steppes | 13 | 1 | 92% |
 | Desolace | 20 | 1 | 95% |
@@ -54,8 +52,10 @@ check with the real resolver and is the authority when the two disagree.
 | Hyjal Crater | 0 | 1 | 0% |
 | Searing Gorge | 12 | 1 | 92% |
 | Shen'dralas | 6 | 1 | 85% |
+| Silverpine Forest | 23 | 1 | 95% |
 | Stonetalon Mountains | 19 | 1 | 95% |
 | The Hinterlands | 21 | 1 | 95% |
+| Westfall | 18 | 1 | 94% |
 | Badlands | 18 | 0 | 100% |
 | Blackrock Depths | 1 | 0 | 100% |
 | Blackrock Mountain | 1 | 0 | 100% |
@@ -126,20 +126,6 @@ is where the most ground is gained per sitting.
 - [ ] Elderwild
 - [ ] Mourning's Rest
 
-### Thousand Needles — 4 empty of 23
-
-- [ ] Gornia
-- [ ] Scalding Ridge
-- [ ] The Weathered Nook
-- [ ] Zane's Eye Crater
-
-### Tirisfal Glades — 4 empty of 30
-
-- [ ] Shadowvale
-- [ ] The North Coast
-- [ ] Whispering Forest
-- [ ] Whispering Shore
-
 ### Zephras Isle — 4 empty of 28
 
 - [ ] Bandit Hideout
@@ -159,21 +145,16 @@ is where the most ground is gained per sitting.
 - [ ] Moggle Point
 - [ ] West Point Tower
 
-### Silverpine Forest — 3 empty of 24
+### Thousand Needles — 3 empty of 23
 
-- [ ] Bucklebree Farm
-- [ ] North Tide's Run
-- [ ] South Tide's Run
+- [ ] Gornia
+- [ ] Scalding Ridge
+- [ ] Zane's Eye Crater
 
 ### Alterac Mountains — 2 empty of 23
 
 - [ ] Gavin's Naze
 - [ ] The Eventide
-
-### Ashenvale — 2 empty of 42
-
-- [ ] Moonwell
-- [ ] Warsong Labor Camp
 
 ### Duskwood — 2 empty of 21
 
@@ -190,20 +171,24 @@ is where the most ground is gained per sitting.
 - [ ] Caverns of Time
 - [ ] The Rumble Cage
 
+### Tirisfal Glades — 2 empty of 30
+
+- [ ] Shadowvale
+- [ ] Whispering Forest
+
 ### Un'Goro Crater — 2 empty of 13
 
 - [ ] Pillar of Assimilation
 - [ ] Stomping Grounds
 
-### Westfall — 2 empty of 19
-
-- [ ] Lighthouse
-- [ ] Not Used Deadmines
-
 ### Wetlands — 2 empty of 27
 
 - [ ] Dragonmaw Retreat
 - [ ] The Drunken Dwarf
+
+### Ashenvale — 1 empty of 42
+
+- [ ] Warsong Labor Camp
 
 ### Azshara — 1 empty of 30
 
@@ -241,6 +226,10 @@ is where the most ground is gained per sitting.
 
 - [ ] Forlorn Gardens
 
+### Silverpine Forest — 1 empty of 24
+
+- [ ] Bucklebree Farm
+
 ### Stonetalon Mountains — 1 empty of 20
 
 - [ ] Valley of the Bloodfuries
@@ -248,6 +237,10 @@ is where the most ground is gained per sitting.
 ### The Hinterlands — 1 empty of 22
 
 - [ ] Martsirt
+
+### Westfall — 1 empty of 19
+
+- [ ] Not Used Deadmines
 
 ## Regenerating
 

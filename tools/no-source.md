@@ -43,6 +43,12 @@ are now separate files.
 | Shell Beach | Stranglethorn Vale | Never left the World of Warcraft beta |
 | Sunken Hollow | Stranglethorn Vale | No article on warcraft.wiki.gg |
 | Not Used Deadmines | Westfall | A development leftover, as the name says |
+| Gloomrise | Mulgore | No article on warcraft.wiki.gg |
+| Scalding Ridge | Thousand Needles | No article on warcraft.wiki.gg |
+| The Eventide | Alterac Mountains | The only Eventide article is the Dalaran plaza, which is Wrath content and a different place |
+| Stomping Grounds | Un'Goro Crater | The only article under that name is a Dragonblight quest |
+| The Drunken Dwarf | Wetlands | No article on warcraft.wiki.gg |
+| Martsirt | The Hinterlands | No article on warcraft.wiki.gg |
 
 ## Near misses, written anyway
 
@@ -55,6 +61,12 @@ are now separate files.
 | Algaz Gate | This is Dun Algaz, already written up in Data/Locales.lua. Registered as an alias. |
 | The Cemetary | This is Raven Hill Cemetery, already written up. Registered as an alias, misspelling included, since that is what the client reports. |
 | Gavin's Naze | The Stormpike siege engines on that hill could not be dated and read as Cataclysm. Left on the list rather than written from a source I could not place in 1.12. |
+
+## Out of era rather than out of sources
+
+| Place | Zone | Why |
+|---|---|---|
+| Caverns of Time | Tanaris | The area is in the client's AreaTable, but the Caverns are Burning Crusade content and everything in them is later still. Out of scope by the same rule that keeps Outland and Gilneas out. |
 
 ## Forever
 

@@ -3182,3 +3182,63 @@ SubsOf("Swamp of Sorrows", {
 		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Swamp of Sorrows", "Wowpedia: Stonard" },
 	},
 })
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "The North Coast", parent = "Tirisfal Glades", faction = "Hostile",
+		hook = "Tirisfal's northern beach, with dead sea creatures rotting on it.",
+		lore = {
+			"The North Coast runs along the top edge of Tirisfal where the glades meet the Great Sea. Murlocs have most of it, along with whatever marine life is still moving.",
+			"The plague reached the water. Since the Plague of Undeath went through this region the coast has gone dark and cold, and there are dead sea creatures lying along the tideline rotting.",
+			"That is the detail worth carrying away from Tirisfal. The Scourge did not only kill the people here; it got into the soil, the lakes and the sea, and the land has not recovered in the years since.",
+		},
+		readMore = { "Wowpedia: North Coast", "Wowpedia: Tirisfal Glades", "Wowpedia: Plague of Undeath" },
+	},
+	{
+		name = "Whispering Shore", parent = "Tirisfal Glades", faction = "Hostile",
+		hook = "A fishing spot north of the Solliden Farmstead, now held by murlocs.",
+		lore = {
+			"The Whispering Shore is a short stretch of coast in western Tirisfal, just up from the Solliden Farmstead. People used to fish here.",
+			"Nobody does now. A band of murlocs under one called Muad has the beach and goes for anyone who comes near, and the water offshore is cold and dark with nothing left in it worth catching.",
+			"The farmstead below is empty too. Tirisfal is full of small pleasant uses of land that stopped when the plague came through, and a fishing beach is one of the plainer ones.",
+		},
+		readMore = { "Wowpedia: Whispering Shore", "Wowpedia: Tirisfal Glades" },
+	},
+})
+
+SubsOf("Silverpine Forest", {
+	{
+		name = "North Tide's Run", parent = "Silverpine Forest", faction = "Contested",
+		hook = "Silverpine's north-western shore, with a half-sunken ship on it.",
+		lore = {
+			"North Tide's Run is the name for the north-western shoreline of Silverpine, the beach and a thin band of the Great Sea beyond it.",
+			"The thing anybody remembers is the ship. It lies partly submerged at the water's edge, and nobody has moved it or explained it.",
+			"Wallace the Blind keeps a small campfire down by the water. Silverpine is Forsaken country with worgen in the woods and the Scarlet Crusade pushing in, so a man sitting alone on a beach beside a wreck is doing better than most.",
+		},
+		readMore = { "Wowpedia: North Tide's Run", "Wowpedia: Silverpine Forest" },
+	},
+	{
+		name = "South Tide's Run", parent = "Silverpine Forest", faction = "Contested",
+		hook = "The matching shore in the south-west, and the quieter of the two.",
+		lore = {
+			"South Tide's Run is the counterpart to the northern one: the south-western coast of Silverpine along the Great Sea.",
+			"The pair of them are the zone's whole seaboard. Silverpine is mostly forest, Forsaken holdings and the road down from Lordaeron's ruin, and the coast is the edge nobody contests.",
+			"Pyrewood Village and the Greymane Wall are further south from here. The wall is the one Gilneas built to shut itself away from the Alliance, and nothing has come through it in years.",
+		},
+		readMore = { "Wowpedia: South Tide's Run", "Wowpedia: Silverpine Forest", "Wowpedia: Greymane Wall" },
+	},
+})
+
+SubsOf("Westfall", {
+	{
+		name = "Lighthouse", parent = "Westfall", faction = "Contested",
+		aliases = { "Westfall Lighthouse", "The Lighthouse" },
+		hook = "A lighthouse on the southern coast, kept now by its own keeper's ghost.",
+		lore = {
+			"The lighthouse stands just off Westfall's far southern shore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
+			"They came back and relit the flame. Old Murk-Eye then put the murlocs onto the lighthouse directly, and that was the end of the family.",
+			"Captain Grayson is still outside it. He is a ghost, he is entirely lucid about what happened, and what he wants is the murlocs along this coast dealt with. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
+		},
+		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Old Murk-Eye", "Wowpedia: Westfall" },
+	},
+})
