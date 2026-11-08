@@ -1947,3 +1947,25 @@ SubsOf("Moonglade", {
 		},
 	},
 })
+
+-- ---------------------------------------------------------------------------
+-- THE GATES OF AHN'QIRAJ
+--
+-- A top-level area in the client's AreaTable, so GetZoneText returns it rather
+-- than Silithus. The addon had Ahn'Qiraj, the Ruins and the Temple, and not
+-- the wall across the front of them.
+-- ---------------------------------------------------------------------------
+
+Zone{
+	name = "Gates of Ahn'Qiraj", continent = KA, faction = "Contested", levels = "60",
+	aliases = { "The Gates of Ahn'Qiraj", "Scarab Wall" },
+	hook = "The wall the night elves and the dragonflights built to seal the qiraji in, and the gong that opens it.",
+	lore = {
+		"About a thousand years before the Dark Portal, the qiraji came out of Ahn'Qiraj in numbers nobody had imagined. That was the War of the Shifting Sands, and it went badly: the night elves were losing until the bronze dragonflight came in beside them, and even then the best available outcome was not victory.",
+		"So they walled it up. The dragons and the night elves raised the Scarab Wall across the entrance and sealed the qiraji behind it, and Anachronos of the bronze flight handed the night elves the Scepter of the Shifting Sands, the key, so that the gates could be opened again if anyone ever needed to go in.",
+		"Fandral Staghelm broke the scepter. His son Valstann had been killed in front of him during the war, and when the dragons offered him the key to a door he had just paid that much to close, he shattered it rather than take it. The pieces were scattered.",
+		"That is why the gates are still shut and why opening them is a project rather than a decision. The Scarab Gong stands at the wall, and ringing it requires the scepter whole again.",
+	},
+	didYouKnow = "The wall was built to hold, and it has held for a thousand years. What is behind it has not been idle: the qiraji answer to C'Thun, one of the Old Gods the titans buried rather than killed.",
+	readMore = { "Wowpedia: Gates of Ahn'Qiraj", "Wowpedia: War of the Shifting Sands", "Wowpedia: Scepter of the Shifting Sands", "Wowpedia: Fandral Staghelm" },
+}

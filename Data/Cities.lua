@@ -443,3 +443,49 @@ SubsOf("Darnassus", {
 		},
 	},
 })
+
+-- ---------------------------------------------------------------------------
+-- BETWEEN THE CAPITALS, AND INSIDE THEM
+--
+-- All three of these are top-level areas in the client's own AreaTable, which
+-- is why they are registered as zones rather than as districts: GetZoneText
+-- returns them. They were missing until a sweep of every top-level area turned
+-- them up, the Tram having been mentioned in six places and written up in none.
+-- ---------------------------------------------------------------------------
+
+Zone{
+	name = "Deeprun Tram", continent = EK, faction = "Alliance", levels = "Transit",
+	aliases = { "The Deeprun Tram" },
+	hook = "A gnome-built railway under the mountains, and the Alliance's most convincing argument for itself.",
+	lore = {
+		"The Deeprun Tram runs between Tinker Town in Ironforge and the Dwarven District in Stormwind, and it is gnomish work. Nothing else in the world quite matches it: a rail tunnel bored through the roots of Khaz Modan so that two capitals can be reached from one another without going outside.",
+		"Treaties are easy to sign. The dwarves and gnomes of Ironforge and the humans of Stormwind built a railway instead, which costs more and says more. It is the Alliance's oldest working proof that its members actually mean it.",
+		"The gnomes who did the engineering no longer have a city. Gnomeregan was lost to the troggs and to Sicco Thermaplugg's decision to flood it with radiation rather than hand it over, and the survivors live in Tinker Town, at this tunnel's northern end.",
+	},
+	didYouKnow = "The tunnel passes through a flooded cavern with glass walls, so the tram runs for a stretch with deep water and whatever lives in it on both sides. Nobody has ever satisfactorily explained what the gnomes were thinking.",
+	readMore = { "Wowpedia: Deeprun Tram", "Wowpedia: Gnomeregan", "Wowpedia: Tinker Town" },
+}
+
+Zone{
+	name = "Champions' Hall", continent = EK, faction = "Alliance", levels = "Capital",
+	aliases = { "Champions Hall", "The Champions' Hall" },
+	hook = "Stormwind's hall for its war heroes, off the Old Town.",
+	lore = {
+		"The Champions' Hall is where Stormwind honours the Alliance's ranking soldiers. Entry depends on rank earned in the war against the Horde, and what is inside is quartermasters and recognition rather than lore.",
+		"The ranks themselves are the interesting part. The Alliance's field hierarchy runs from Private up through Knight and Marshal to Grand Marshal, and the Horde's mirror of it runs from Scout to High Warlord. Those titles were invented for a war that neither side is formally fighting.",
+		"Azeroth is not at war. The Alliance and the Horde have no declared conflict after the Third War, and both maintain a full promotion ladder for killing each other anyway.",
+	},
+	readMore = { "Wowpedia: Champions' Hall", "Wowpedia: Honor system" },
+}
+
+Zone{
+	name = "Hall of Legends", continent = KA, faction = "Horde", levels = "Capital",
+	aliases = { "The Hall of Legends" },
+	hook = "Orgrimmar's answer to the Champions' Hall, and the Horde's record of its own ranks.",
+	lore = {
+		"The Hall of Legends sits in Orgrimmar and does the same work as Stormwind's Champions' Hall: it recognises the Horde's ranking soldiers and supplies them.",
+		"The Horde's ladder runs from Scout through Stone Guard and Champion to High Warlord. Thrall's Horde is built on the idea that the orcs are no longer a conquering army, and it keeps a promotion scheme for conquest regardless.",
+		"The hall is named for legends rather than for champions, which fits the orcs better. The Horde's authority has always run through who the stories are about.",
+	},
+	readMore = { "Wowpedia: Hall of Legends", "Wowpedia: Honor system" },
+}

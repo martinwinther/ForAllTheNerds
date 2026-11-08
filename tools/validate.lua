@@ -1641,12 +1641,27 @@ for i = 1, #cnames do
 end
 
 -- Zones with few or no child locales are the obvious places to expand next.
+--
+-- Four are exempt because the client's own AreaTable gives them no child areas
+-- at all, so there is nothing to write. Checked on 2026-11-09 against
+-- AreaTable for product wowf: areas 2257, 3478, 2918 and 2917 each have zero
+-- rows pointing at them as ParentAreaID. Leaving them in the list made a note
+-- that can never be cleared, and a permanent nag is one nobody reads.
+local SINGLE_AREA_ZONES = {
+	["deeprun tram"] = true,
+	["gates of ahn'qiraj"] = true,
+	["champions' hall"] = true,
+	["hall of legends"] = true,
+}
+
 local thin = {}
 for i = 1, #ns.zoneOrder do
 	local z = ns.zoneOrder[i]
 	local kids = ns.Index.children[z.key]
 	local n = kids and #kids or 0
-	if n < 3 then thin[#thin + 1] = string.format("%s (%d)", z.name, n) end
+	if n < 3 and not SINGLE_AREA_ZONES[z.key] then
+		thin[#thin + 1] = string.format("%s (%d)", z.name, n)
+	end
 end
 if #thin > 0 then
 	note("zones with fewer than 3 locales written up: %s", table.concat(thin, ", "))

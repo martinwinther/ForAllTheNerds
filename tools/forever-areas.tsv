@@ -14,7 +14,8 @@
 # exists but whose parent zone differs would show as having one. /ftn areas
 # inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
 #
-# 68 areas, 49 written up, 19 to go.
+# 68 areas, 49 written up, 19 to go. Counted with aliases; a name-only
+# check had reported four of them wrongly.
 #
 # The 35 still open are not blocked on sources any more. Martin cleared the
 # built-in browser for reading warcraft.wiki.gg, whose robots.txt allows

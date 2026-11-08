@@ -12,6 +12,10 @@
 - The Zephras Isle write-up was wrong and has been redone. The Skyborne are
   exiles from Eldre'Thalas, which is Dire Maul, and the wind spirits who raised
   their island into the sky have since disappeared.
+- Four places that were missing and should not have been: the Deeprun Tram, the
+  Gates of Ahn'Qiraj, Champions' Hall and the Hall of Legends. The Tram was
+  mentioned in six other write-ups and had none of its own, and the addon had
+  Ahn'Qiraj, its Ruins and its Temple but not the wall across the front of them.
 - Every zone in the game now has at least three places written up. Forever's
   four were the last ones short.
 - `/ftn areas` asks the game for every place name it knows and says which of
