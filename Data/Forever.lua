@@ -344,14 +344,14 @@ SubsOf("Shen'dralas", {
 Zone{
 	name = "Zephras Isle", continent = "Elemental Plane", faction = "Neutral", levels = "1-12",
 	era = "forever", spoiler = true,
-	hook = "A failing island in the elemental skies, home of the Skyborne, whose elementals left.",
+	hook = "A flying island of exiles from Dire Maul, raised into Skywall by wind spirits who have since vanished.",
 	lore = {
-		"Zephras Isle is not on Azeroth. It is a flying island held in Skywall, and it is the Skyborne's homeland and their starting ground.",
-		"Skywall is the Elemental Plane of Air, ruled by Al'Akir the Windlord. Al'Akir is one of the four Elemental Lords, with Ragnaros the Firelord, Therazane the Stonemother and Neptulon the Tidehunter. Before the titans came the four of them ruled this world on the Old Gods' behalf, and the titans' campaign against them ended with each Lord banished into a plane of their own.",
-		"The air elementals who shared the island with the Skyborne vanished some years ago, and the magic holding it up has been fading since. Zephras is not the only Skyborne island: Anvilas and Siroccas are out there too, and contact with them was lost when the elementals went. Those islands are coming apart, their people are arriving here as refugees, and this one is beginning to go the same way.",
-		"High Elder Talaanis Shadowsong leads them now. Before her the isle answered to the Shal'nan.",
+		"The Skyborne call themselves the shen'dorei, the hidden people, and they came from Eldre'Thalas. That is Dire Maul: the Highborne city whose people would not give up the arcane after the Sundering. When Prince Tortheldrin began drawing power through crystalline foci from a world in the Twisting Nether, a faction under the Shal'nan rebelled, lost, and ran.",
+		"They sailed west with Tortheldrin's fleet behind them and reached a land held by primordial elemental spirits. Cornered, they struck a bargain: a group of wind spirits tore an enormous landmass into the sky and anchored it in Skywall, the Elemental Plane of Air, which took them off Azeroth entirely. They have been there ever since, for the better part of ten thousand years, building a small self-sufficient civilisation in a corner of somebody else's plane.",
+		"The plane changed them. They grew slender, closer to the high elves who later appeared in Quel'Thalas than to the night elves they left, and recent generations have produced children with vivid blue skin. It changed the wildlife harder: animals that had been earthbound grew beaks, talons and feathers, and a few learned to fly.",
+		"Then the wind spirits went. Nobody knows why, and the Shal'nan went with them. The magic holding the islands up has been failing since: Anvilas and Siroccas are coming apart, their people are arriving here, and Zephras is going the same way. Three orders now disagree about what to do, the High Order descended from the magisters, the Windshapers from the city's ordinary citizens, and the Al'Aketh, who look to Al'Akir.",
 	},
-	didYouKnow = "Elementals on Azeroth are refugees and invaders from four planes, not natives. Every elemental incursion in the world, the Abyssal Sands in Tanaris, the Charred Vale, Firewatch Ridge, is a place where one of those planes presses close enough to come through. Zephras is the reverse case: mortals living inside the plane itself.",
+	didYouKnow = "The wind spirits never let the Skyborne revere Al'Akir. Asked about the Windlord whose plane they were living in, the spirits went evasive, agitated or frightened, and sometimes would not say his name. Some Skyborne grew up doubting he existed at all.",
 	readMore = { "Wowpedia: Zephras Isle", "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords" },
 }
 
@@ -432,6 +432,182 @@ SubsOf("Zephras Isle", {
 			"A people whose island is coming apart under them, with two gangways off it and a choice at the end of each. That is the position the zone puts you in.",
 		},
 		readMore = { "Wowpedia: Valanaar Skydocks", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "East Pylon Watchtower", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "One of the two towers over the pylons that hold the island in the sky.",
+		lore = {
+			"The island does not float on its own. Pylons hold it together, powered by the pact the Shal'nan's rebels made with the wind spirits, and a watchtower over one of them is watching the thing everything else depends on.",
+			"Since the spirits disappeared the pylons have been failing. That is the whole of the isle's predicament in one piece of engineering: the magic was never the Skyborne's, it was lent, and the lenders are gone.",
+			"Anvilas and Siroccas, the other Skyborne islands, are further along the same process. Their people are arriving at Valanaar.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "West Pylon Watchtower", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The western pylon, and the same problem as the eastern one.",
+		lore = {
+			"Two pylons, two watchtowers. Together they carry an island with a civilisation on it, and both have been weakening since the wind spirits went.",
+			"The Skyborne have had thousands of years of this arrangement working perfectly, which is its own difficulty: nobody alive has had to maintain it, because it never needed maintaining.",
+			"What a watch on a failing pylon can actually do about it is the sort of question the isle is full of.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Fairweather Stables", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Where the galestriders are kept.",
+		lore = {
+			"The galestrider is the Skyborne's own mount, and on an island in the Plane of Air that is not a horse.",
+			"Skywall reshaped the animals the exiles brought with them. Creatures that had been earthbound grew beaks, talons and feathers over the millennia, and some of them learned to fly outright. A stable here holds the results.",
+			"\"Fairweather\" is a dry joke for a plane made of weather, and for a people whose weather has recently stopped behaving.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Galestrider" },
+	},
+	{
+		name = "Shadowgale Forest", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Woodland on a flying island, and nothing in it is quite what it started as.",
+		lore = {
+			"A forest growing on a landmass that was torn off Azeroth and hung in the Plane of Air for ten thousand years is not an ordinary forest. The flora changed along with everything else.",
+			"The animals are named for it: Shadowgale shrieklings and Shadowgale ursera both carry the forest in their names, and both are beasts that this plane got hold of and altered.",
+			"The wind spirits' disappearance has been harder on the wildlife than on the people. Without the magic that sustained them, some of these creatures have begun to lose themselves.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Shriekling Den", parent = "Zephras Isle", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A nesting colony of shrieklings, matriarch and all.",
+		lore = {
+			"Shrieklings are beasts of this island, and they nest: there are fledglings, there are shriekers, and there is a matriarch over them.",
+			"They are one of the clearer cases of what Skywall does to living things. Whatever the exiles' ancestors brought up here, ten thousand years in the Plane of Air gave it talons and a voice that carries.",
+			"The den is in or near Shadowgale Forest, which is where the breed takes its name from.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Shen'dar Village", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A village carrying the old word for the people themselves.",
+		lore = {
+			"The Skyborne's own name for themselves is shen'dorei, the hidden people, and this village carries the same root. So does Shen'dralas, back on Kalimdor, and so do the Shen'dralar whose city these exiles came out of.",
+			"All of it goes to Eldre'Thalas. The Highborne who refused to give up the arcane after the Sundering sealed themselves in with their library; one faction of their people later rebelled against Prince Tortheldrin and fled to the sky. Those are the Skyborne, and the ones who stayed are still in Dire Maul.",
+			"Two halves of one argument, separated for ten thousand years, one of them underground in Feralas and the other above the clouds.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Shen'dralar", "Wowpedia: Eldre'Thalas" },
+	},
+	{
+		name = "Shen'dar Highlands", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The high ground above Shen'dar Village.",
+		lore = {
+			"High ground on a flying island means something slightly absurd, and the Skyborne have had ten thousand years to stop finding it odd.",
+			"The highlands have their own wildlife: the Highlands ursera are named for this ground specifically, as the Shadowgale ursera are named for the forest.",
+			"Like the village below, the name reaches back to the shen'dorei and through them to Eldre'Thalas, which is the city every Skyborne line comes out of.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Thendal Grove", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The grove beside the village where the Skyborne begin.",
+		lore = {
+			"Thendal Village, Thendal Grove, Thendal Cave and the Thendal Standing Stones are one cluster in the island's north-west, and the grove is the green part of it.",
+			"The Skyborne kept druids as well as mages, which is the part of their inheritance that came from the city's ordinary citizens rather than its magisters. The Windshapers descend from those citizens and hold to the elemental traditions; the High Order descends from the Highborne and wants the arcane traditions back.",
+			"A grove next to a starting village is where the first of those two gets taught.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Thendal Standing Stones", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Raised stones near the first village, on an island held up by borrowed magic.",
+		lore = {
+			"Standing stones recur across Zephras: this set near Thendal, another above an overlook, another by Windsong Lake.",
+			"The isle's whole existence rests on elemental magic the Skyborne were lent rather than taught. The wind spirits raised the landmass and anchored it, the pylons hold it, and the people who live here have spent ten thousand years inside an arrangement they did not build.",
+			"Stonework of this kind is where a people puts what it cannot afford to forget.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Windsong Lake", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Standing water on a floating island, which should not be straightforward.",
+		lore = {
+			"A lake on a landmass hanging in the Plane of Air is a reminder of how thorough the wind spirits' work was. They did not raise a rock; they raised a piece of country, with its water still in it, and kept it that way for ten thousand years.",
+			"The lesser wind sprites here are not the sentient spirits that made the bargain. They are not fully self-aware, and they react to the moods and intentions of whoever is near them.",
+			"Which makes the quiet places on this island less neutral than they look.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Gustberry Lowlands", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Farmland, because an island in another plane has to feed itself.",
+		lore = {
+			"The Skyborne built a self-sufficient society up here, and that is the unglamorous half of the story: no trade with Azeroth, no reinforcements, nothing coming in. Whatever they ate, they grew.",
+			"The crops are Skywall's versions of whatever the exiles carried out of Eldre'Thalas, after ten thousand years in a plane of air. The gustberry is presumably one of them.",
+			"The Shal'nan abdicated because he judged his people hardy enough to govern themselves. Ground like this is what that judgement was based on.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Windfield Orchard", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Orchard country, and another part of feeding an island alone.",
+		lore = {
+			"Orchards take generations to come good. The Skyborne were not camped in Skywall waiting for Tortheldrin to die, then: they were planting trees.",
+			"The isle grew its own food, kept its own animals and made its own arrangements, cut off from Azeroth by choice and by the plane itself.",
+			"That self-sufficiency is what the failing pylons now threaten. An island that feeds itself still has to keep being an island.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Thendal Cave", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The cave in the Thendal cluster, in rock that was torn off Azeroth.",
+		lore = {
+			"Thendal Village, Grove, Cave and Standing Stones sit together in the island's north-west, and this is the hole in the ground among them.",
+			"The ground itself is the curiosity. This is a piece of Azeroth, cut loose and carried into the Plane of Air by wind spirits ten thousand years ago, so a cave here is a cave in rock that used to be somewhere else entirely.",
+			"Nobody now living remembers where the landmass came from. The Skyborne sailed west from Eldre'Thalas, were cornered, and the spirits lifted whatever was underneath them.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Overlook Standing Stones", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "One of the island's three stone circles, set above a vantage point.",
+		lore = {
+			"Three sets of standing stones are named on Zephras: these, the ones at Thendal and the ones by Windsong Lake. Three circles on one small island is a lot of stonework for a people who arrived with nothing.",
+			"The Skyborne's bargain was with wind spirits who were never fully explained to them. The spirits raised the island, anchored it and sustained it, and went evasive whenever Al'Akir came up.",
+			"Then they left, without a reason given. Stone circles are what remain of a relationship that one side never fully described.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Windsong Standing Stones", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The circle beside Windsong Lake, where the lesser sprites gather.",
+		lore = {
+			"The stones by the lake are the third of the island's circles. The wind sprites around them are not the spirits who made the bargain: the lesser ones were never fully self-aware, and they answer to the mood of whoever is standing nearby.",
+			"When the winds' magic falls out of balance the effect reaches the animals too. Vuldren are ordinarily docile and stop being so.",
+			"Since the spirits vanished the balance has not been kept by anyone. That is the island's background hum.",
+		},
+		readMore = { "Wowpedia: Skyborne" },
+	},
+	{
+		name = "Falaath Village", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "One of the isle's four villages, and one of the places the refugees reach.",
+		lore = {
+			"Zephras has Valanaar for a town and then Thendal, Shen'dar and Falaath for villages. On an island this size that is the whole of Skyborne settlement.",
+			"It is more crowded than it was built for. Anvilas and Siroccas were the other Skyborne islands, contact with them went when the spirits did, and both have been breaking up since; their people have been arriving here.",
+			"A village absorbing refugees while its own ground fails is the ordinary texture of this zone, underneath the argument between the three orders.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
 	},
 })
 

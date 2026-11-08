@@ -4,16 +4,14 @@
 
 **Added**
 
-- 25 more places in Forever's new zones, taking the total from 757 to 782.
-  Mount Hyjal gains the Summit of Eternity, Malorne's Retreat, the Shrine of
-  Aviana, Felblood Scar and the Tainted Foothills. Riverglades gains Sunnyglade,
-  Windstead, Meadowsbrook, Farholde Keep, Twilight's Shroud, Bolder'ok, Rog'mar,
-  the Bristle Hills and the Forbidding Sea. Shen'dralas gains the Magram Front,
-  Bristleback Retreat, Evenshade's Overlook and the Outcast Hideaway. Zephras
-  Isle gains Thendal Village, Valanaar, the Valanaar Skydocks, Skywall, the
-  Sanctum of Storms, the Rise of Spirits and the Shrine of Akir. Background
+- 41 more places in Forever's new zones, taking the total from 757 to 798.
+  Mount Hyjal, Riverglades, Shen'dralas and Zephras Isle all have proper
+  write-ups now instead of a zone entry and a handful of locations. Background
   only, like the rest of the Forever material, and still hidden until you turn
   them on.
+- The Zephras Isle write-up was wrong and has been redone. The Skyborne are
+  exiles from Eldre'Thalas, which is Dire Maul, and the wind spirits who raised
+  their island into the sky have since disappeared.
 - Every zone in the game now has at least three places written up. Forever's
   four were the last ones short.
 - `/ftn areas` asks the game for every place name it knows and says which of

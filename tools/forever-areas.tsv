@@ -14,7 +14,7 @@
 # exists but whose parent zone differs would show as having one. /ftn areas
 # inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
 #
-# 68 areas, 33 written up, 35 to go.
+# 68 areas, 49 written up, 19 to go.
 #
 # The 35 still open are not blocked on sources any more. Martin cleared the
 # built-in browser for reading warcraft.wiki.gg, whose robots.txt allows
@@ -76,30 +76,30 @@ Shen'dralas	16676	Outcast Hideaway	yes
 Shen'dralas	16651	Shen'dralas	yes
 Shen'dralas	2657	Valley of Bones	yes
 Zephras Isle	16674	Bandit Hideout	no
-Zephras Isle	17675	East Pylon Watchtower	no
-Zephras Isle	17684	Fairweather Stables	no
-Zephras Isle	16636	Falaath Village	no
-Zephras Isle	16626	Gustberry Lowlands	no
+Zephras Isle	17675	East Pylon Watchtower	yes
+Zephras Isle	17684	Fairweather Stables	yes
+Zephras Isle	16636	Falaath Village	yes
+Zephras Isle	16626	Gustberry Lowlands	yes
 Zephras Isle	16720	Nightclaw Cavern	no
-Zephras Isle	17677	Overlook Standing Stones	no
+Zephras Isle	17677	Overlook Standing Stones	yes
 Zephras Isle	16988	Rise of Spirits	yes
 Zephras Isle	16630	Rohashi Spires	no
 Zephras Isle	16833	Ruins of Ban'aethal	no
 Zephras Isle	16679	Sanctum of Storms	yes
-Zephras Isle	16631	Shadowgale Forest	no
-Zephras Isle	16623	Shen'dar Highlands	no
-Zephras Isle	16624	Shen'dar Village	no
-Zephras Isle	16672	Shriekling Den	no
+Zephras Isle	16631	Shadowgale Forest	yes
+Zephras Isle	16623	Shen'dar Highlands	yes
+Zephras Isle	16624	Shen'dar Village	yes
+Zephras Isle	16672	Shriekling Den	yes
 Zephras Isle	16629	Shrine of Akir	yes
 Zephras Isle	17221	Skywall	yes
-Zephras Isle	16673	Thendal Cave	no
-Zephras Isle	16622	Thendal Grove	no
-Zephras Isle	17678	Thendal Standing Stones	no
+Zephras Isle	16673	Thendal Cave	yes
+Zephras Isle	16622	Thendal Grove	yes
+Zephras Isle	17678	Thendal Standing Stones	yes
 Zephras Isle	16635	Thendal Village	yes
 Zephras Isle	16638	Valanaar	yes
 Zephras Isle	16628	Valanaar Skydocks	yes
-Zephras Isle	17674	West Pylon Watchtower	no
-Zephras Isle	16663	Windfield Orchard	no
-Zephras Isle	16625	Windsong Lake	no
-Zephras Isle	17676	Windsong Standing Stones	no
+Zephras Isle	17674	West Pylon Watchtower	yes
+Zephras Isle	16663	Windfield Orchard	yes
+Zephras Isle	16625	Windsong Lake	yes
+Zephras Isle	17676	Windsong Standing Stones	yes
 Zephras Isle	16593	Zephras Isle	yes
