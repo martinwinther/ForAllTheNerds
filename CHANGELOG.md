@@ -4,12 +4,18 @@
 
 **Added**
 
-- 13 more places in Forever's new zones: Summit of Eternity, Malorne's Retreat,
-  Shrine of Aviana, Felblood Scar and Tainted Foothills on Mount Hyjal; Bristle
-  Hills and the Forbidding Sea in Riverglades; Magram Front and Bristleback
-  Retreat in Shen'dralas; Skywall, the Sanctum of Storms, the Rise of Spirits
-  and the Shrine of Akir on Zephras Isle. Background only, like the rest of the
-  Forever material, and still hidden until you turn them on.
+- 25 more places in Forever's new zones, taking the total from 757 to 782.
+  Mount Hyjal gains the Summit of Eternity, Malorne's Retreat, the Shrine of
+  Aviana, Felblood Scar and the Tainted Foothills. Riverglades gains Sunnyglade,
+  Windstead, Meadowsbrook, Farholde Keep, Twilight's Shroud, Bolder'ok, Rog'mar,
+  the Bristle Hills and the Forbidding Sea. Shen'dralas gains the Magram Front,
+  Bristleback Retreat, Evenshade's Overlook and the Outcast Hideaway. Zephras
+  Isle gains Thendal Village, Valanaar, the Valanaar Skydocks, Skywall, the
+  Sanctum of Storms, the Rise of Spirits and the Shrine of Akir. Background
+  only, like the rest of the Forever material, and still hidden until you turn
+  them on.
+- Every zone in the game now has at least three places written up. Forever's
+  four were the last ones short.
 - `/ftn areas` asks the game for every place name it knows and says which of
   them have nothing written for them yet. Unlike `/ftn gaps` it does not wait
   for you to walk anywhere; it covers the whole world in one go, Forever's new

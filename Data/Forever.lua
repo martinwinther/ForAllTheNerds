@@ -21,13 +21,18 @@ local addonName, ns = ...
 -- established pre-WoW or vanilla lore: Malorne, Aviana, the Well of Eternity,
 -- the Magram, the Bristleback, Agamaggan, Al'Akir and Skywall.
 --
--- For the other 47 the client ships the name and nothing else. Quest text and
--- NPC dialogue are what describe a place in this game and both are server
--- side, so no amount of reading client data produces a word about them;
--- tools/forever-areas.tsv lists the nine tables that were checked. The lore
--- very likely exists in game and on the wikis. It just has to be read there,
--- by someone, and written up with ns.SubsOf -- the README's "Adding places"
--- section explains how. What must not happen is inventing it.
+-- The zone articles on warcraft.wiki.gg carry real history for these places,
+-- and everything those four pages support is now written: the First War sack
+-- of Sunnyglade and the towns the survivors founded, the Siege of Farholde,
+-- the Twilight's Hammer arriving out of the Tomb of Sargeras, the Skyborne's
+-- vanished elementals and their failing island.
+--
+-- 35 areas are still unwritten. They need the individual subzone articles or
+-- the game itself; tools/forever-areas.tsv lists them. Client data will not
+-- help, whatever effort goes in: quest text and NPC dialogue are what describe
+-- a place in this game and both live on the server.
+--
+-- Nothing here is invented. That is the line.
 -- ===========================================================================
 
 local Zone, SubsOf, Instance = ns.Zone, ns.SubsOf, ns.Instance
@@ -177,6 +182,83 @@ SubsOf("Riverglades", {
 		},
 		readMore = { "Wowpedia: Forbidding Sea", "Wowpedia: Naga", "Wowpedia: Azshara" },
 	},
+	{
+		name = "Sunnyglade", parent = "Riverglades", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A Stormwind town the Old Horde sacked in the First War, and never rebuilt.",
+		lore = {
+			"The Riverglades were Stormwind's, and Sunnyglade was one of its towns. The Old Horde attacked it during the First War and took the survivors away as slaves.",
+			"One detail of that attack says a great deal about the early Horde: they left one of the town's mage towers standing on purpose, to work out how human magic functioned. The tower is still there.",
+			"Warcraft I had Sunnyglade rebuilt after Stormwind's forces freed the captives. The account here is harsher: the rescued never got home, and founded new towns instead. Sunnyglade stayed a ruin, and the Twilight's Hammer hold it now.",
+		},
+		readMore = { "Wowpedia: Sunnyglade", "Wowpedia: First War", "Wowpedia: Twilight's Hammer" },
+	},
+	{
+		name = "Windstead", parent = "Riverglades", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "Founded by the handful of families who got out of Sunnyglade and kept running.",
+		lore = {
+			"When the Old Horde took Sunnyglade, a few families escaped north-east and built here, beside a lake shut in by mountains. Hidden was the point.",
+			"It worked for a long time. It stopped working during the Second War, once Twilight's Hammer skirmishing reached the area and made it plain the cult meant to hold the whole region. The villagers left for Farholde in the south, some along the coast and some by road.",
+			"The ones who took the road did not arrive. That is the sort of detail the Riverglades keeps.",
+		},
+		readMore = { "Wowpedia: Windstead", "Wowpedia: First War" },
+	},
+	{
+		name = "Meadowsbrook", parent = "Riverglades", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "Built by the knights who freed Sunnyglade's captives and then could not get them home.",
+		lore = {
+			"A detachment of Stormwind knights did reach Sunnyglade's prisoners and get them out. The Horde then cut the road behind them, which left a column of freed slaves and their rescuers inside hostile country with nowhere to go.",
+			"Meadowsbrook is what they built instead of going home, and Farholde followed. The Riverglades fell to the Horde regardless, and Stormwind wrote the region off to concentrate on the war nearer the capital.",
+			"So the people here were abandoned by their own kingdom twice over: once when the road closed, and again when Stormwind decided the land was not worth the men.",
+		},
+		readMore = { "Wowpedia: Meadowsbrook", "Wowpedia: First War" },
+	},
+	{
+		name = "Farholde Keep", parent = "Riverglades", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "A fortified island in the south, and the Brotherhood of the Horse's last hold on the region.",
+		lore = {
+			"Farholde was raised on a coastal island by the survivors of Sunnyglade and the knights who freed them. An island was the only ground they could be sure of.",
+			"Near the end of the Second War it was besieged. Twilight's Hammer ogres and Stormreaver orcs had come to the Riverglades fleeing the Tomb of Sargeras, the ogre mound already here took them in, and the Brotherhood of the Horse was pushed back onto Farholde. Horde raiders got around by water and crippled the ships, which left the keep unable to leave or send for help.",
+			"The siege broke because the Brotherhood killed the Horde's commanders in the night and the orcs outside never got their orders. They have been trying to take the rest of the region back ever since.",
+		},
+		readMore = { "Wowpedia: Farholde Keep", "Wowpedia: Brotherhood of the Horse", "Wowpedia: Stormreaver clan" },
+	},
+	{
+		name = "Twilight's Shroud", parent = "Riverglades", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "The Twilight's Hammer's hold in the west of the region.",
+		lore = {
+			"The Twilight's Hammer were a Horde clan in the Second War, led by Cho'gall, and what they became afterwards is worse than what they were. The clan went looking for the Old Gods and found something willing to answer.",
+			"Their presence in the Riverglades dates to the end of that war: survivors of the Tomb of Sargeras came here with Stormreaver orcs, and there were whispers that Cho'gall himself had come to recover after Gul'dan's death. Only whispers.",
+			"A cult that worships the end of the world does not hold ground for ordinary reasons. Whatever the Hammer wants out of this region, it is not the farmland.",
+		},
+		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: Cho'gall", "Wowpedia: Tomb of Sargeras" },
+	},
+	{
+		name = "Bolder'ok", parent = "Riverglades", faction = "Horde",
+		era = "forever", spoiler = true,
+		hook = "An ogre settlement in the north that walked away from the Twilight's Hammer.",
+		lore = {
+			"Ogres in the Eastern Kingdoms are the Old Horde's leavings. Gul'dan brought them through during the Second War and the collapse left them here with no masters and no way home.",
+			"The mound in the Riverglades took in Twilight's Hammer ogres fleeing the Tomb of Sargeras, and for years that was the arrangement. The Bolder'ok ogres have since left the cult and thrown in with the Horde instead.",
+			"Which is a straightforward piece of ogre politics: the cult wanted an apocalypse and the Horde wants soldiers. One of those offers is survivable.",
+		},
+		readMore = { "Wowpedia: Bolder'ok", "Wowpedia: Ogre", "Wowpedia: Twilight's Hammer" },
+	},
+	{
+		name = "Rog'mar", parent = "Riverglades", faction = "Horde",
+		era = "forever", spoiler = true,
+		hook = "The Horde's own town in the Riverglades, and one of its two flight hubs.",
+		lore = {
+			"Rog'mar is the Horde's settlement here, and it carries flight paths, which in this region means it is a place somebody intends to keep.",
+			"The orcs who have been in the Riverglades longest are not Thrall's. They are what the Second War left: Stormreaver remnants, Twilight's Hammer allies, and whoever retreated to Krol'dok Stronghold when the Siege of Farholde failed.",
+			"A town of the modern Horde standing in that company is a complicated thing, and the ogres of Bolder'ok changing sides is part of the same shift.",
+		},
+		readMore = { "Wowpedia: Rog'mar" },
+	},
 })
 
 Instance{
@@ -200,7 +282,7 @@ Zone{
 	era = "forever", spoiler = true,
 	hook = "Night elf country south of Desolace, named for the sect that locked itself in with its library.",
 	lore = {
-		"Shen'dralas lies south of Desolace, past the Valley of Bones, in the gap between Desolace and Mulgore. It is centaur country on the approaches: the Magram and Gelkis clans hold the Desolace side, and their war with each other is older than any human kingdom.",
+		"Shen'dralas lies south-east of Desolace, past the Valley of Bones, in the gap between Feralas and Mulgore. It is centaur country on the approaches: the Magram and Gelkis clans hold the Desolace side, and their war with each other is older than any human kingdom.",
 		"The name is the interesting part. The Shen'dralar were a sect of Highborne night elves, the arcane scholars of Queen Azshara's era, who refused to give up magic when the night elves outlawed it after the Sundering. They sealed themselves inside their city of Eldre'Thalas with their library rather than submit. They are still in there: Dire Maul, in Feralas, with the Gordok ogres holding the city around them.",
 		"So a place carrying that name points back to the oldest unresolved argument in night elf history. The Highborne's pursuit of the arcane is what let Azshara reach Sargeras. That brought on the War of the Ancients, and the War of the Ancients brought the Sundering that broke this continent into the shape you walk on now. Darnassus has spent ten thousand years not talking about the ones who never repented.",
 	},
@@ -231,6 +313,28 @@ SubsOf("Shen'dralas", {
 		},
 		readMore = { "Wowpedia: Bristleback tribe", "Wowpedia: Agamaggan" },
 	},
+	{
+		name = "Evenshade's Overlook", parent = "Shen'dralas", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A Highborne vantage over country that three peoples claim.",
+		lore = {
+			"Shen'dralas is Highborne ground, and the Shen'dralar are the Highborne who never repented. When the night elves outlawed arcane magic after the Sundering, that sect refused and sealed itself into Eldre'Thalas with its library rather than give it up.",
+			"What they are doing with a hold out here rather than inside Dire Maul is the interesting question. Darnassus's official position is that the Highborne are finished and the arcane is forbidden.",
+			"The view from an overlook in this zone takes in Magram centaur on one side and Bristleback quilboar on the other. Whoever watches from here has plenty to watch.",
+		},
+		readMore = { "Wowpedia: Shen'dralar", "Wowpedia: Highborne", "Wowpedia: Eldre'Thalas" },
+	},
+	{
+		name = "Outcast Hideaway", parent = "Shen'dralas", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Shelter for the sort of people a night elf society produces and then disowns.",
+		lore = {
+			"\"Outcast\" in night elf terms is a precise accusation. After the Sundering the survivors banned the arcane outright, and the Highborne who would not stop practising were exiled rather than argued with.",
+			"Ten thousand years of that policy has made a quantity of outcasts: the Shen'dralar sealed in Eldre'Thalas, the satyrs who took Sargeras's bargain, and the plainly unwelcome in between.",
+			"A hideaway in a zone named for the unrepentant sect is where you would expect them to end up.",
+		},
+		readMore = { "Wowpedia: Shen'dralar", "Wowpedia: Highborne" },
+	},
 })
 
 -- ---------------------------------------------------------------------------
@@ -240,15 +344,15 @@ SubsOf("Shen'dralas", {
 Zone{
 	name = "Zephras Isle", continent = "Elemental Plane", faction = "Neutral", levels = "1-12",
 	era = "forever", spoiler = true,
-	hook = "An island anchored in the elemental skies, home of the Skyborne and sheltered by the wind spirits of Skywall.",
+	hook = "A failing island in the elemental skies, home of the Skyborne, whose elementals left.",
 	lore = {
-		"Zephras Isle is not on Azeroth. It is a floating island held in the elemental skies, and the Skyborne's homeland.",
-		"Skywall is the Elemental Plane of Air, ruled by Al'Akir the Windlord. Al'Akir is one of the four Elemental Lords, with Ragnaros the Firelord, Therazane the Stonemother and Neptulon the Tidehunter. Before the titans came, the four of them ruled this world on the Old Gods' behalf, and the titans' campaign against them ended with each Lord banished into his or her own plane.",
-		"That is the backdrop to anything living in Skywall: a plane with an imprisoned Elemental Lord in it, full of wind spirits whose loyalties are their own. The one Elemental Lord anybody has let back out is Ragnaros, who got loose because a Dark Iron emperor summoned him, and he is currently sitting at the bottom of Blackrock Mountain.",
-		"The groups named on the isle, the Windshapers, the High Order and the Al'Aketh, are the Skyborne's own. Their relationship to the Windlord whose plane they live in is the question the zone is built around, and the sort worth arriving with rather than being handed.",
+		"Zephras Isle is not on Azeroth. It is a flying island held in Skywall, and it is the Skyborne's homeland and their starting ground.",
+		"Skywall is the Elemental Plane of Air, ruled by Al'Akir the Windlord. Al'Akir is one of the four Elemental Lords, with Ragnaros the Firelord, Therazane the Stonemother and Neptulon the Tidehunter. Before the titans came the four of them ruled this world on the Old Gods' behalf, and the titans' campaign against them ended with each Lord banished into a plane of their own.",
+		"The air elementals who shared the island with the Skyborne vanished some years ago, and the magic holding it up has been fading since. Zephras is not the only Skyborne island: Anvilas and Siroccas are out there too, and contact with them was lost when the elementals went. Those islands are coming apart, their people are arriving here as refugees, and this one is beginning to go the same way.",
+		"High Elder Talaanis Shadowsong leads them now. Before her the isle answered to the Shal'nan.",
 	},
-	didYouKnow = "Elementals on Azeroth are refugees and invaders from four planes, not natives. Every elemental incursion in the world, the Abyssal Sands in Tanaris, the Charred Vale, Firewatch Ridge, is a place where one of those planes presses close enough to come through.",
-	readMore = { "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords", "Wowpedia: Elemental Plane" },
+	didYouKnow = "Elementals on Azeroth are refugees and invaders from four planes, not natives. Every elemental incursion in the world, the Abyssal Sands in Tanaris, the Charred Vale, Firewatch Ridge, is a place where one of those planes presses close enough to come through. Zephras is the reverse case: mortals living inside the plane itself.",
+	readMore = { "Wowpedia: Zephras Isle", "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords" },
 }
 
 SubsOf("Zephras Isle", {
@@ -295,6 +399,39 @@ SubsOf("Zephras Isle", {
 			"He is a prisoner in it. Worship in Skywall is not a straightforward act.",
 		},
 		readMore = { "Wowpedia: Al'Akir" },
+	},
+	{
+		name = "Thendal Village", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The village in the north-west where every Skyborne begins.",
+		lore = {
+			"Thendal Village is where Skyborne characters start. It sits in the island's north-west, and a grove, a cave and a ring of standing stones carry the same name around it.",
+			"It is an ordinary place in an extraordinary position: a village on a flying island inside the Elemental Plane of Air, kept up by magic that is now failing. The elementals who used to share the island left years ago and took the arrangement with them.",
+			"Starting zones are usually quiet by design. This one is quiet because something has gone and has not come back.",
+		},
+		readMore = { "Wowpedia: Thendal Village", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Valanaar", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The isle's one real settlement, at the southern end.",
+		lore = {
+			"Valanaar is the major settlement on Zephras Isle, and the only one that reads as a town rather than a village. Everything leaving the island leaves from its skydocks.",
+			"It is also where the refugees are arriving. Anvilas and Siroccas are the other Skyborne islands, and both have been breaking up since contact was lost, so their people have been coming here.",
+			"High Elder Talaanis Shadowsong leads the Skyborne, and before her the isle answered to the Shal'nan.",
+		},
+		readMore = { "Wowpedia: Valanaar", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Valanaar Skydocks", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Two airship berths at the island's southern tip, and the only way off it.",
+		lore = {
+			"The skydocks sit at the southern tip of Zephras Isle, and there are two of them. The eastern berth runs to Dalaran in the Alterac Mountains; the western runs to the Skywatcher Plateau in north-western Mulgore.",
+			"Which berth a Skyborne takes decides a great deal, since one lands in Alliance country and the other in Horde country. The airships run both ways, so the isle can be returned to.",
+			"A people whose island is coming apart under them, with two gangways off it and a choice at the end of each. That is the position the zone puts you in.",
+		},
+		readMore = { "Wowpedia: Valanaar Skydocks", "Wowpedia: Zephras Isle" },
 	},
 })
 

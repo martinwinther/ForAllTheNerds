@@ -14,32 +14,23 @@
 # exists but whose parent zone differs would show as having one. /ftn areas
 # inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
 #
-# 68 areas, 21 written up, 47 to go.
+# 68 areas, 33 written up, 35 to go.
 #
-# The 47 have no entry because nothing describes them in any data that can be
-# read from here. Checked on 2026-11-08, all via wago.tools, whose robots.txt
-# permits the CSV routes:
+# The 35 still open are not blocked on sources any more. Martin cleared the
+# built-in browser for reading warcraft.wiki.gg, whose robots.txt allows
+# User-agent: * even though it names this tooling's crawler agents, and the
+# zone articles carry real history. The four zone pages were read on
+# 2026-11-09 and everything they support has been written.
 #
-#   AreaTable          names and parents only, which is where these 47 came from
-#   AreaPOI            372 rows, 150 with a description; 0 of the 47 appear, and
-#                      the descriptions are UI strings like "Alliance Controlled"
-#   Map                no description set for any of the four zones
-#   QuestV2            exists, but carries no text columns at all
-#   QuestDescription   absent
-#   GossipText         absent
-#   NPCText            absent
-#   JournalInstance    absent
-#   Achievement        495 rows; the zones are named, none of the 47 are
+# What is left needs the individual subzone articles, one page each, or the
+# game. Client data will never supply it: quest text and NPC dialogue are what
+# describe a place and both live on the server. Nine DB2 tables were checked
+# through wago.tools and none of them carry a word of it, AreaPOI's 150
+# descriptions being UI strings like "Alliance Controlled".
 #
-# The pattern is consistent and it explains itself: what describes a place in
-# this game is quest text and NPC dialogue, and both live on the server. The
-# client ships the names and not the words.
-#
-# That is NOT the same as "no lore exists". warcraft.wiki.gg has Forever
-# coverage, 259 pages tagged "Added in patch 1.60.1" when last counted, and
-# Wowhead has a /forever/ section. Both disallow this tooling's user agents, so
-# a person with a browser can read what this cannot. The game itself is the
-# other source, and the better one.
+# Note the spellings can differ. The wiki calls it Evenshade Overlook; the
+# client's AreaTable says Evenshade's Overlook, and the client wins, because
+# GetSubZoneText is what the addon matches on.
 #
 # /ftn areas does the has_entry check from inside the game, for the whole world
 # rather than just these zones.
@@ -57,31 +48,31 @@ Mount Hyjal	16867	Shrine of Aviana	yes
 Mount Hyjal	16849	Summit of Eternity	yes
 Mount Hyjal	16853	Tainted Foothills	yes
 Riverglades	17808	Ashwood's Fall	no
-Riverglades	16726	Bolder'ok	no
+Riverglades	16726	Bolder'ok	yes
 Riverglades	16737	Bristle Hills	yes
 Riverglades	16728	Eastwind Shore	no
 Riverglades	16734	Elbrim's Farm	no
-Riverglades	16724	Farholde Keep	no
+Riverglades	16724	Farholde Keep	yes
 Riverglades	17809	Forlorn Pit	no
 Riverglades	17780	Krol'dok Stronghold	yes
-Riverglades	16735	Meadowsbrook	no
+Riverglades	16735	Meadowsbrook	yes
 Riverglades	16727	Powderfuse Port	yes
 Riverglades	16591	Riverglades	yes
-Riverglades	16743	Rog'mar	no
+Riverglades	16743	Rog'mar	yes
 Riverglades	16744	Southern Watch	no
-Riverglades	16723	Sunnyglade	no
+Riverglades	16723	Sunnyglade	yes
 Riverglades	16729	Terral's Watch	no
 Riverglades	16820	The Forbidding Sea	yes
 Riverglades	16736	Turner's Logging Camp	no
 Riverglades	17847	Twilight Hollow	no
-Riverglades	16685	Twilight's Shroud	no
+Riverglades	16685	Twilight's Shroud	yes
 Riverglades	16725	Wheeler's Grange	no
-Riverglades	16731	Windstead	no
+Riverglades	16731	Windstead	yes
 Shen'dralas	16677	Bristleback Retreat	yes
-Shen'dralas	16678	Evenshade's Overlook	no
+Shen'dralas	16678	Evenshade's Overlook	yes
 Shen'dralas	16742	Forlorn Gardens	no
 Shen'dralas	16675	Magram Front	yes
-Shen'dralas	16676	Outcast Hideaway	no
+Shen'dralas	16676	Outcast Hideaway	yes
 Shen'dralas	16651	Shen'dralas	yes
 Shen'dralas	2657	Valley of Bones	yes
 Zephras Isle	16674	Bandit Hideout	no
@@ -104,9 +95,9 @@ Zephras Isle	17221	Skywall	yes
 Zephras Isle	16673	Thendal Cave	no
 Zephras Isle	16622	Thendal Grove	no
 Zephras Isle	17678	Thendal Standing Stones	no
-Zephras Isle	16635	Thendal Village	no
-Zephras Isle	16638	Valanaar	no
-Zephras Isle	16628	Valanaar Skydocks	no
+Zephras Isle	16635	Thendal Village	yes
+Zephras Isle	16638	Valanaar	yes
+Zephras Isle	16628	Valanaar Skydocks	yes
 Zephras Isle	17674	West Pylon Watchtower	no
 Zephras Isle	16663	Windfield Orchard	no
 Zephras Isle	16625	Windsong Lake	no
