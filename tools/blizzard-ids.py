@@ -21,14 +21,21 @@ Read tools/npc-ids.md before assuming this will help. Three limits matter:
      are supported. Which is true cannot be settled without credentials, so
      this script probes it and says which.
 
-Credentials come from the environment and nowhere else:
+Credentials come from a .env file, or from the environment. Make the pair at
+https://develop.battle.net under API Access, then:
 
-    export BLIZZARD_CLIENT_ID=...
-    export BLIZZARD_CLIENT_SECRET=...
+    cp .env.example .env
+    chmod 600 .env          # and put the two values in it
 
-Make them at the Battle.net developer portal. Do not paste them into a file in
-this repository, and do not paste them into a chat window. This script never
-prints or logs them.
+.env is gitignored, so it is never committed. Environment variables take
+priority over the file, which makes a one-off override easy:
+
+    BLIZZARD_CLIENT_ID=... BLIZZARD_CLIENT_SECRET=... python3 -I tools/blizzard-ids.py probe
+
+Point BLIZZARD_ENV_FILE elsewhere to keep the file outside the repository
+altogether. Do not paste either value into a chat window. This script never
+prints or logs them, and a failed token request deliberately does not echo the
+request that carried the secret.
 
 Usage:
 
@@ -50,11 +57,7 @@ from base64 import b64encode
 from pathlib import Path
 
 TOKEN_URL = "https://oauth.battle.net/token"
-REGION = os.environ.get("BLIZZARD_REGION", "us")
-HOST = f"https://{REGION}.api.blizzard.com"
-NAMESPACE = os.environ.get("BLIZZARD_NAMESPACE", f"static-classic1x-{REGION}")
 LOCALE = "en_US"
-CACHE = Path(os.environ.get("BLIZZARD_CACHE", ".blizzard-cache"))
 PAUSE = 0.12  # polite; Blizzard's published ceiling is far above this
 UA = "ForAllTheNerds-dev/1.0 (WoW addon development)"
 
@@ -64,14 +67,85 @@ def die(msg):
     raise SystemExit(2)
 
 
+def load_env_file(path):
+    """Read KEY=VALUE pairs out of a .env file. Missing file is not an error.
+
+    Tolerates blank lines, # comments, a leading `export `, and one layer of
+    matching quotes, because those are what people actually write in these.
+    """
+    if not path.exists():
+        return {}
+    try:
+        text = path.read_text(encoding="utf8")
+    except OSError as e:
+        die(f"cannot read {path}: {e}")
+
+    out = {}
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):].lstrip()
+        if "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        k, v = k.strip(), v.strip()
+        if len(v) >= 2 and v[0] == v[-1] and v[0] in "\"'":
+            v = v[1:-1]
+        if k:
+            out[k] = v
+    return out
+
+
+def warn_if_exposed(path):
+    """A secret in a file other accounts can read is not much of a secret."""
+    try:
+        mode = path.stat().st_mode
+    except OSError:
+        return
+    if mode & 0o077:
+        print(f"warning: {path} is readable by other accounts on this machine.\n"
+              f"         chmod 600 {path}", file=sys.stderr)
+
+
+# The file is read before anything else is settled, because it supplies the
+# region and namespace as well as the credentials. .env.example advertises all
+# four, and an earlier version only honoured the two credentials from the file,
+# silently ignoring the rest.
+ENV_FILE = Path(os.environ.get("BLIZZARD_ENV_FILE", ".env"))
+_FILE_ENV = load_env_file(ENV_FILE)
+if _FILE_ENV:
+    warn_if_exposed(ENV_FILE)
+    # Real environment variables win, so a one-off override needs no edit.
+    for _k, _v in _FILE_ENV.items():
+        os.environ.setdefault(_k, _v)
+
+REGION = os.environ.get("BLIZZARD_REGION", "us")
+HOST = f"https://{REGION}.api.blizzard.com"
+NAMESPACE = os.environ.get("BLIZZARD_NAMESPACE", f"static-classic1x-{REGION}")
+CACHE = Path(os.environ.get("BLIZZARD_CACHE", ".blizzard-cache"))
+
+
 def token():
+    # .env has already been merged in at import time.
     cid = os.environ.get("BLIZZARD_CLIENT_ID")
     secret = os.environ.get("BLIZZARD_CLIENT_SECRET")
     if not cid or not secret:
         die(
-            "Set BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET in the environment.\n"
-            "Make them at the Battle.net developer portal. Nothing is read from a\n"
-            "file and nothing should be pasted into this repository."
+            f"No credentials found. Copy .env.example to {ENV_FILE} and fill it in:\n"
+            "\n"
+            f"    cp .env.example {ENV_FILE}\n"
+            f"    chmod 600 {ENV_FILE}\n"
+            "\n"
+            "then put the two values from https://develop.battle.net (API Access)\n"
+            "into it. The file is gitignored and never committed.\n"
+            "\n"
+            "Environment variables work too and take priority:\n"
+            "\n"
+            "    export BLIZZARD_CLIENT_ID=... BLIZZARD_CLIENT_SECRET=...\n"
+            "\n"
+            "Do not paste either value into a chat window."
         )
     body = urllib.parse.urlencode({"grant_type": "client_credentials"}).encode()
     basic = b64encode(f"{cid}:{secret}".encode()).decode()
@@ -85,7 +159,8 @@ def token():
             tok = json.load(r).get("access_token")
     except urllib.error.HTTPError as e:
         # Deliberately does not echo the request: it carries the secret.
-        die(f"token request failed: HTTP {e.code}. Check the two variables.")
+        die(f"token request failed: HTTP {e.code}.\n"
+            f"Check the id and secret in {ENV_FILE}, or in the environment.")
     if not tok:
         die("token request returned no access_token")
     return tok

@@ -7,5 +7,15 @@
 # local scratch
 *.zip
 
+# Python bytecode. A .pyc was committed once by a blanket `git add -A`
+# straight after running py_compile.
+__pycache__/
+*.pyc
+
+# Blizzard API credentials. .env.example is committed; .env never is.
+.env
+.env.*
+!.env.example
+
 # cached Blizzard API responses, written by tools/blizzard-ids.py
 .blizzard-cache/

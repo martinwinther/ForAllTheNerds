@@ -156,11 +156,17 @@ creatures. `robots.txt` never mentions an API and carries no `Allow` line.
 Classic Era. It needs OAuth client credentials from the Battle.net developer
 portal, so it cannot be tried from here without an account.
 
-`tools/blizzard-ids.py` drives it. Credentials come from
-`BLIZZARD_CLIENT_ID` and `BLIZZARD_CLIENT_SECRET` in the environment and from
-nowhere else. The script never prints them, and `.blizzard-cache/` is ignored
-by git. Start with `probe`, which reports what actually works before anything
-else is attempted.
+`tools/blizzard-ids.py` drives it. Credentials go in a `.env` file:
+
+    cp .env.example .env
+    chmod 600 .env
+
+`.env` is gitignored and `.env.example`, which holds no values, is the only one
+of the pair that is committed. Environment variables override the file, so a
+one-off run needs no edit. `BLIZZARD_ENV_FILE` moves the file outside the
+repository entirely. The script warns if the file is readable by other accounts,
+never prints the values, and `.blizzard-cache/` is ignored too. Start with
+`probe`, which reports what actually works before anything else is attempted.
 
 Read from the rendered documentation on 2026-11-08, since the portal is a
 JavaScript app whose plain fetch returns only its shell:
