@@ -17,6 +17,13 @@
   Twin Colossals, Oneiros, the Writhing Deep, Woodpaw Den and Shalzaru's Lair;
   the Foothold Citadel and Swamplight Manor; the Ruined Reaches, Rethress
   Sanctum and the Legashi Encampment; and the Shrine of the Dormant Flame.
+- Eleven more in the Barrens, Thousand Needles and Tirisfal Glades: the
+  Mor'shan Rampart and Base Camp, the Gold Road, Fray Island, the Raptor
+  Grounds and Honor's Stand; Splithoof Hold, the Tahonda Ruins and the Rustmaul
+  Dig Site; and Stillwater Pond. The Barrens has one place left unwritten.
+- Bandarion Keep in Tirisfal Glades, which is Forever's own addition to an old
+  zone, so it is hidden with the rest of the Forever material until you turn
+  that on.
 
 ## 1.2.2
 

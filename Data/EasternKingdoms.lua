@@ -2535,3 +2535,28 @@ SubsOf("Stranglethorn Vale", {
 		readMore = { "Wowpedia: Venture Co. Operations Center", "Wowpedia: Venture Company", "Wowpedia: Steamwheedle Cartel" },
 	},
 })
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "Stillwater Pond", parent = "Tirisfal Glades", faction = "Contested",
+		hook = "Where the children of the glades used to swim, before the plague.",
+		lore = {
+			"Stillwater Pond is a small lake west of Brill, and before the Plague of Undeath it was where people came to picnic. It was also where children swam, being shallow enough for the ones not yet ready for Brightwater Lake.",
+			"It is grey now and nobody comes. Wandering undead pass it and wild beasts drink from it. Under the surface the fish skeletons are still swimming.",
+			"The darkhound Bayne works the banks. Tirisfal is full of places like this, but most of them were farms or mills; this one was simply somewhere pleasant, and it is the ordinariness that makes it hard to look at.",
+		},
+		readMore = { "Wowpedia: Stillwater Pond", "Wowpedia: Brill", "Wowpedia: Plague of Undeath" },
+	},
+	{
+		name = "Bandarion Keep", parent = "Tirisfal Glades", faction = "Horde",
+		era = "forever", spoiler = true,
+		hook = "A Forsaken keep that was Dawn's Watch, and still keeps the Light.",
+		lore = {
+			"Bandarion Keep stands in western Tirisfal near the Whispering Forest, and it was called Dawn's Watch before. It belonged to the Kingdom of Lordaeron, then the Lordaeron army, then the Argent Dawn.",
+			"Danitha Morr holds it for the Forsaken now, and the keep still keeps the Light. That combination is the whole of it: undead who were raised by the Scourge, freed by Sylvanas, and have not given up the faith they held when they were alive.",
+			"The Scarlet Crusade would kill them for being corpses and the Church of the Holy Light will not have them. Holding a chapel in Tirisfal regardless is not a small decision.",
+		},
+		didYouKnow = "The Argent Dawn is the one organisation in these lands that takes Forsaken members, on the reasoning that anyone willing to fight the Scourge is worth having. A keep that went from Argent Dawn to Forsaken hands is that reasoning carried to its conclusion.",
+		readMore = { "Wowpedia: Bandarion Keep", "Wowpedia: Argent Dawn", "Wowpedia: Forsaken" },
+	},
+})

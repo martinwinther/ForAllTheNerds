@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**809 written, 174 empty, 82% covered.** 45 zones have gaps; 18 are complete.
+**820 written, 163 empty, 83% covered.** 45 zones have gaps; 18 are complete.
 
-174 checklist lines below, 172 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+163 checklist lines below, 161 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -30,9 +30,6 @@ check with the real resolver and is the authority when the two disagree.
 |---|---:|---:|---:|
 | Riverglades | 11 | 9 | 55% |
 | Mulgore | 19 | 7 | 73% |
-| The Barrens | 30 | 7 | 81% |
-| Thousand Needles | 16 | 7 | 69% |
-| Tirisfal Glades | 23 | 7 | 76% |
 | Dun Morogh | 20 | 6 | 76% |
 | Durotar | 21 | 6 | 77% |
 | Dustwallow Marsh | 21 | 6 | 77% |
@@ -45,6 +42,7 @@ check with the real resolver and is the authority when the two disagree.
 | Silithus | 16 | 5 | 76% |
 | Silverpine Forest | 19 | 5 | 79% |
 | Stranglethorn Vale | 40 | 5 | 88% |
+| Tirisfal Glades | 25 | 5 | 83% |
 | Arathi Highlands | 20 | 4 | 83% |
 | Azshara | 26 | 4 | 86% |
 | Elwynn Forest | 22 | 4 | 84% |
@@ -52,6 +50,7 @@ check with the real resolver and is the authority when the two disagree.
 | Swamp of Sorrows | 11 | 4 | 73% |
 | Tanaris | 21 | 4 | 84% |
 | The Hinterlands | 18 | 4 | 81% |
+| Thousand Needles | 19 | 4 | 82% |
 | Wetlands | 23 | 4 | 85% |
 | Zephras Isle | 24 | 4 | 85% |
 | Desolace | 18 | 3 | 85% |
@@ -72,6 +71,7 @@ check with the real resolver and is the authority when the two disagree.
 | Hyjal Crater | 0 | 1 | 0% |
 | Shen'dralas | 6 | 1 | 85% |
 | Stormwind City | 2 | 1 | 66% |
+| The Barrens | 36 | 1 | 97% |
 | Thunder Bluff | 4 | 1 | 80% |
 | Blackrock Depths | 1 | 0 | 100% |
 | Blackrock Mountain | 1 | 0 | 100% |
@@ -118,36 +118,6 @@ is where the most ground is gained per sitting.
 - [ ] Gloomrise
 - [ ] Mantle Rock
 - [ ] Skyline Ridge
-
-### The Barrens — 7 empty of 37
-
-- [ ] Fray Island
-- [ ] Gold Road
-- [ ] Honor's Stand
-- [ ] Mor'shan Base Camp
-- [ ] Raptor Grounds
-- [ ] Southern Barrens
-- [ ] The Mor'shan Rampart
-
-### Thousand Needles — 7 empty of 23
-
-- [ ] Gornia
-- [ ] Scalding Ridge
-- [ ] Splithoof Hold
-- [ ] Tahonda Ruins
-- [ ] The Rustmaul Dig Site
-- [ ] The Weathered Nook
-- [ ] Zane's Eye Crater
-
-### Tirisfal Glades — 7 empty of 30
-
-- [ ] Bandarion Keep
-- [ ] Brill Town Hall
-- [ ] Shadowvale
-- [ ] Stillwater Pond
-- [ ] The North Coast
-- [ ] Whispering Forest
-- [ ] Whispering Shore
 
 ### Dun Morogh — 6 empty of 26
 
@@ -249,6 +219,14 @@ is where the most ground is gained per sitting.
 - [ ] Sunken Hollow
 - [ ] The Crystal Shore
 
+### Tirisfal Glades — 5 empty of 30
+
+- [ ] Brill Town Hall
+- [ ] Shadowvale
+- [ ] The North Coast
+- [ ] Whispering Forest
+- [ ] Whispering Shore
+
 ### Arathi Highlands — 4 empty of 24
 
 - [ ] Blackwater Shipwrecks
@@ -297,6 +275,13 @@ is where the most ground is gained per sitting.
 - [ ] Martsirt
 - [ ] Shindigger's Camp
 - [ ] Wildhammer Keep
+
+### Thousand Needles — 4 empty of 23
+
+- [ ] Gornia
+- [ ] Scalding Ridge
+- [ ] The Weathered Nook
+- [ ] Zane's Eye Crater
 
 ### Wetlands — 4 empty of 27
 
@@ -401,6 +386,10 @@ is where the most ground is gained per sitting.
 ### Stormwind City — 1 empty of 3
 
 - [ ] Stormwind Harbor
+
+### The Barrens — 1 empty of 37
+
+- [ ] Southern Barrens
 
 ### Thunder Bluff — 1 empty of 5
 

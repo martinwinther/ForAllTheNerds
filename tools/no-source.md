@@ -17,6 +17,8 @@ are now separate files.
 | Shadowvale | Tirisfal Glades | No article on warcraft.wiki.gg |
 | Mok'Gordun | Feralas | Never left the beta; likely an early name for the Gordunni Outpost |
 | Ironclad Prison | Dustwallow Marsh | Never left the beta; named only in the non-canon RPG |
+| Zane's Eye Crater | Thousand Needles | Never left the World of Warcraft beta |
+| Gornia | Thousand Needles | Never left the beta; the wiki only speculates it was an ogre settlement |
 
 ## Near misses, written anyway
 

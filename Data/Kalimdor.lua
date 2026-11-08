@@ -2466,3 +2466,101 @@ SubsOf("Durotar", {
 		readMore = { "Wowpedia: Shrine of the Dormant Flame", "Wowpedia: Shaman", "Wowpedia: Thrall" },
 	},
 })
+
+-- The Barrens and Thousand Needles, continuing down tools/coverage.md.
+SubsOf("The Barrens", {
+	{
+		name = "The Mor'shan Rampart", parent = "The Barrens", faction = "Horde",
+		hook = "The Horde's wall at the top of the Gold Road, facing Ashenvale.",
+		lore = {
+			"The rampart sits at the northern end of the Gold Road, where the Barrens runs into Ashenvale, and it was thrown up to stop the Alliance coming south. It is makeshift and it is meant to be.",
+			"It does not only defend. The towers here are also where raids on Astranaar start from, Astranaar being the night elf town on the other side of the border.",
+			"The Warsong clan want Ashenvale's timber and Darnassus will not give it up, so this is where the two positions meet. A wall that is also a staging post is an honest description of the whole quarrel.",
+		},
+		readMore = { "Wowpedia: Mor'shan Rampart", "Wowpedia: Warsong clan", "Wowpedia: Astranaar" },
+	},
+	{
+		name = "Mor'shan Base Camp", parent = "The Barrens", faction = "Horde",
+		hook = "The camp behind the rampart, at the head of the Gold Road.",
+		lore = {
+			"The base camp sits with the rampart at the northern terminus of the Gold Road. The rampart is the wall; this is what keeps the wall supplied.",
+			"The Gold Road is the Barrens' spine. It runs north to south from here, crosses the east-west road at the Crossroads, and carries everything the Horde moves between Orgrimmar and the south.",
+			"Which makes the top of it the most sensitive point on the whole road. Lose the rampart and Ashenvale's war comes down the highway into the Barrens.",
+		},
+		readMore = { "Wowpedia: Mor'shan Rampart", "Wowpedia: Gold Road" },
+	},
+	{
+		name = "Gold Road", parent = "The Barrens", faction = "Contested",
+		hook = "The Barrens' north-south highway, and the reason the Crossroads matters.",
+		lore = {
+			"The Gold Road runs the length of the Barrens, from the Mor'shan Rampart in the north down to the Great Divide, with a bridge carrying it over into the southern half.",
+			"Where it crosses the east-west road is the Crossroads, and that is the whole reason the Crossroads exists: it is not a town that happens to have roads, it is a junction that acquired a town.",
+			"Everything the Horde does on this continent moves along this line. Orgrimmar to Ashenvale, Orgrimmar to Thousand Needles, Orgrimmar to Ratchet and the sea. The Barrens looks empty and is actually the Horde's circulatory system.",
+		},
+		readMore = { "Wowpedia: Gold Road", "Wowpedia: The Crossroads" },
+	},
+	{
+		name = "Fray Island", parent = "The Barrens", faction = "Neutral",
+		hook = "An island off the coast south of Ratchet where warriors go to fight each other.",
+		lore = {
+			"Fray Island is small, dry and off the Barrens' eastern shore. What it is for is fighting: warriors come here to test themselves against each other, and have done under one management or another for years.",
+			"Klannoc Macleod runs the challenges now. Before that the Southsea Freebooters had the place under Cap'n Garvey, which gives an idea of how the island changes hands.",
+			"Humans, trolls, ogres, dwarves, goblins, orcs and night elves have all fought here. On an island with no faction and no authority, the only question anybody asks is whether you can.",
+		},
+		didYouKnow = "Ratchet is a short way north and is Steamwheedle neutral ground, where fighting is forbidden on the premises. The goblins appear to have solved that by letting the fighting happen on an island just offshore.",
+		readMore = { "Wowpedia: Fray Island", "Wowpedia: Ratchet" },
+	},
+	{
+		name = "Raptor Grounds", parent = "The Barrens", faction = "Hostile",
+		hook = "A valley of raptors that build their own huts and tools.",
+		lore = {
+			"The Sunscale raptors hold this small valley west of Northwatch Hold, and they are not like other raptors. They show an intelligence their kind is not supposed to have: they make crude tools, and they build huts.",
+			"They also collect. Anything bright or out of the ordinary attracts them, and a good deal of it has been taken out of Horde settlements nearby, which is how the valley came to anybody's attention.",
+			"Nobody has explained the intelligence. Azeroth has a long record of creatures turning out to be more than they look, and it usually means something older has had a hand in them.",
+		},
+		readMore = { "Wowpedia: Raptor Grounds", "Wowpedia: Raptor" },
+	},
+	{
+		name = "Honor's Stand", parent = "The Barrens", faction = "Horde",
+		hook = "A Horde post of burrows and towers on the western road.",
+		lore = {
+			"Honor's Stand guards the west road between Sun Rock Retreat in Stonetalon and the Crossroads. It is burrows and watchtowers rather than a fort, and some of the burrows have been knocked about.",
+			"The western approach matters because Stonetalon does. The Venture Company are cutting that range apart, the Grimtotem tauren are in it, and the road through is the Horde's link to everything west.",
+			"The name is the sort the Horde gives a position it does not intend to leave.",
+		},
+		readMore = { "Wowpedia: Honor's Stand", "Wowpedia: The Barrens" },
+	},
+})
+
+SubsOf("Thousand Needles", {
+	{
+		name = "Splithoof Hold", parent = "Thousand Needles", faction = "Hostile",
+		hook = "A Galak centaur stronghold in a cave, with a flame in it that does not go out.",
+		lore = {
+			"The Galak are the centaur clan of Thousand Needles, and they took this cave in Splithoof Crag and made a stronghold of it.",
+			"Inside is the Ancient Brazier and the Sacred Flame, and the flame burns without stopping. The centaur guard it. Whatever it was before they arrived, they have kept it alight.",
+			"All five centaur clans descend from Zaetar, Cenarius's son, and Theradras of the earth elementals, and they killed their father between them. A clan keeping an eternal flame is a strange note in that family history.",
+		},
+		readMore = { "Wowpedia: Splithoof Hold", "Wowpedia: Galak", "Wowpedia: Centaur" },
+	},
+	{
+		name = "Tahonda Ruins", parent = "Thousand Needles", faction = "Neutral",
+		hook = "A tauren village that went under the sands of the Shimmering Flats, with claw marks on it.",
+		lore = {
+			"Tahonda was a tauren village. It came to ruin a long time ago and the Shimmering Flats have been taking it ever since; most of it is under the salt.",
+			"Almost nothing is recorded about it, so the ruin has to speak for itself. Saltstone basilisks live in it now and may be the reason it was abandoned.",
+			"There is other evidence. On the leather of one of the buildings there are two sets of three parallel tears. Something with claws came through here, and whatever happened to Tahonda, the tauren did not write it down.",
+		},
+		readMore = { "Wowpedia: Tahonda Ruins", "Wowpedia: Shimmering Flats", "Wowpedia: Tauren" },
+	},
+	{
+		name = "The Rustmaul Dig Site", parent = "Thousand Needles", faction = "Hostile",
+		hook = "A dwarven dig where the diggers were killed, and then the killers were driven off.",
+		lore = {
+			"The Explorers' League were uncovering ruins out on the Shimmering Flats when a Horde war party under Moktar Krin came down on them and killed every one of them.",
+			"The fighting opened something. There was a silithid nest in a cave at the dig, and the swarm that came out of it drove the already battered war party off the site entirely. The survivors fell back to Ironstone Camp.",
+			"So the dig stands abandoned twice over, and what is in it now is neither dwarves nor orcs. Silithid are the qiraji's creatures, and Ahn'Qiraj is not far south of here.",
+		},
+		readMore = { "Wowpedia: Rustmaul Dig Site", "Wowpedia: Explorers' League", "Wowpedia: Silithid" },
+	},
+})
