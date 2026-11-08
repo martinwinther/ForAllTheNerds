@@ -156,13 +156,46 @@ creatures. `robots.txt` never mentions an API and carries no `Allow` line.
 Classic Era. It needs OAuth client credentials from the Battle.net developer
 portal, so it cannot be tried from here without an account.
 
-Worth knowing before spending an evening on it: it is a name-and-identity
-service, not a placement one. It returns the name, type, family and display
-ids, and **no zone** -- the same server-side reason `Creature.db2` has none.
-Its terms also restrict redistributing what comes back. So it would confirm the
-name-to-id mapping that route 2 already produced, from Blizzard rather than
-from a reconstruction, and add nothing about where anything stands. Whether a
-Forever namespace is exposed at all is unverified.
+`tools/blizzard-ids.py` drives it. Credentials come from
+`BLIZZARD_CLIENT_ID` and `BLIZZARD_CLIENT_SECRET` in the environment and from
+nowhere else. The script never prints them, and `.blizzard-cache/` is ignored
+by git. Start with `probe`, which reports what actually works before anything
+else is attempted.
+
+Read from the rendered documentation on 2026-11-08, since the portal is a
+JavaScript app whose plain fetch returns only its shell:
+
+- Hosts are `{region}.api.blizzard.com` for `us`, `eu`, `kr`, `tw`, and
+  `gateway.battlenet.com.cn` for China.
+- The namespace goes in either a `Battlenet-Namespace:` header or a
+  `?namespace=` parameter.
+- Creature routes are `/data/wow/creature/{creatureId}`,
+  `/data/wow/search/creature`, `/data/wow/creature-family/{id}` and
+  `/data/wow/creature-type/{id}`.
+
+Three limits, and they are what decide whether this is worth an evening:
+
+**There is no Forever namespace.** The documented table has exactly three game
+versions: Classic Era as `static-classic1x-{region}`, Mists Progression as
+`static-classic-{region}`, and Burning Crusade Anniversary as
+`static-classicann-{region}`. Nothing for 1.60.1. This can speak for Classic
+Era, the addon's other declared interface, and not for Forever.
+
+**There is no area or zone endpoint anywhere in the Classic index.** Auction
+house, connected realm, creature, guild crest, item, media, playable class,
+playable race, power type, PvP, realm, region, token. No zones. Same
+server-side reason `Creature.db2` has none.
+
+**The docs contradict themselves on creature search.** The game data index
+lists `/data/wow/search/creature`, while the Classic search guide says plainly
+that only the realm and connected-realm document types are supported. If the
+guide is right then name-to-id resolution is not available and only lookup by
+an id already in hand is, which makes this a way to check route 2's ids rather
+than a way to discover any. Settling it needs credentials. The script's `probe`
+does exactly that and says which way it fell.
+
+Blizzard's API terms also restrict redistributing what comes back. Treat the
+output as something to check against rather than something to commit.
 
 **wago.tools: yes, and it invites it.** Its `robots.txt` blocks the HTML DB2
 browser and then opens `/api/` and `/db2/{table}/csv` explicitly, with a

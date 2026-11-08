@@ -6,3 +6,6 @@
 
 # local scratch
 *.zip
+
+# cached Blizzard API responses, written by tools/blizzard-ids.py
+.blizzard-cache/
