@@ -2459,3 +2459,79 @@ SubsOf("Stranglethorn Vale", {
 		readMore = { "Wowpedia: Gurubashi", "Wowpedia: Hakkar the Soulflayer", "Wowpedia: Atal'ai" },
 	},
 })
+
+-- Stranglethorn Vale, continuing down tools/coverage.md.
+SubsOf("Stranglethorn Vale", {
+	{
+		name = "Yojamba Isle", parent = "Stranglethorn Vale", faction = "Neutral",
+		hook = "The Zandalar Tribe's camp, and the only reason anyone is being warned about Zul'Gurub.",
+		lore = {
+			"Yojamba Isle is a scatter of small islands off Stranglethorn's north-western corner, and the Zandalar Tribe came here deliberately. They are the oldest troll civilisation, the one the Gurubashi and the Amani and the rest all split off from, and they do not normally involve themselves in anyone else's affairs.",
+			"They are involved now because of what is happening at Zul'Gurub. The Gurubashi have brought Hakkar the Soulflayer back, and the Zandalari judge a blood god loose in the world to be everybody's problem, including the Alliance's and the Horde's.",
+			"So the isle is a recruiting station run by trolls, offering help to two factions that are at war with each other, against other trolls. The Zandalari are taking the longer view.",
+		},
+		didYouKnow = "The Gurubashi tore their own empire apart over Hakkar once before. The Atal'ai priesthood wanted him summoned bodily into the world, the empire split over it, and the priests were exiled. Zul'Gurub is them finishing the argument.",
+		readMore = { "Wowpedia: Yojamba Isle", "Wowpedia: Zandalar tribe", "Wowpedia: Hakkar the Soulflayer", "Wowpedia: Zul'Gurub" },
+	},
+	{
+		name = "Battle Ring", parent = "Stranglethorn Vale", faction = "Contested",
+		hook = "The floor of the Gurubashi Arena, where the sand used to be muddy with troll blood.",
+		lore = {
+			"The Battle Ring is the arena floor itself, inside the Gurubashi Arena north of Booty Bay. The arena is Gurubashi work, left from the empire that held most of the southern Eastern Kingdoms.",
+			"In its own time the fights here were to the death, and the accounts describe the sand as muddy with it. Once a generation the best troll fighters from across the world came to this ring to settle who they were.",
+			"What happens in it now is run by a goblin called Short John Mithril and is a good deal less lethal. An empire's proving ground is a prize-fighting pit with an entry fee.",
+		},
+		didYouKnow = "The arena has a story attached: find a blood-red amulet here at midnight and a demon will have eaten your soul by sunrise. Nobody at Booty Bay discourages the telling of it.",
+		readMore = { "Wowpedia: Gurubashi Arena", "Wowpedia: Gurubashi" },
+	},
+	{
+		name = "Wild Shore", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "The southernmost beach in the Eastern Kingdoms, and the Bloodsail fleet is moored on it.",
+		lore = {
+			"This is where the continent stops. South of the Wild Shore is open water, and the Bloodsail Buccaneers keep their ships here because it is the last anchorage before that.",
+			"The Bloodsail are at war with Booty Bay, which is a goblin port a short way up the coast on the other side of a rocky point. A neutral town that sells to everyone and a pirate fleet that takes from everyone cannot both be right about this stretch of water.",
+			"Gorlash walks this beach. He is a giant, and he is not with the pirates; he is simply also here, and that is Stranglethorn's general arrangement.",
+		},
+		readMore = { "Wowpedia: Wild Shore", "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Booty Bay" },
+	},
+	{
+		name = "The Crimson Veil", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "One of three Bloodsail frigates moored off the Wild Shore.",
+		lore = {
+			"The Bloodsail Buccaneers keep three frigates at the Wild Shore, and this is one of them. The others are the Damsel's Luck and the Riptide.",
+			"Three ships is a fleet by the standards of this coast, and that is what makes the Bloodsail a political problem rather than a nuisance. Booty Bay can police a jungle road. It cannot police the sea.",
+			"The goblins' answer has been to make the Bloodsail unwelcome in the one port worth visiting. That has pushed the pirates further into taking what they need rather than buying it.",
+		},
+		readMore = { "Wowpedia: Bloodsail Buccaneers" },
+	},
+	{
+		name = "The Damsel's Luck", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "The easternmost of the Bloodsail frigates, with a crew aboard worth knowing about.",
+		lore = {
+			"The Damsel's Luck lies furthest east of the three Bloodsail ships at the Wild Shore. Captain Stillwater has her, and the Brashtide Crew are aboard.",
+			"Pirate outfits on this coast are not a single organisation. The Bloodsail and the Blackwater Raiders are both here and they loathe each other considerably more than either troubles about a passing traveller.",
+			"That is the reason piracy persists in Stranglethorn rather than being settled one way or the other. There is nobody to negotiate with.",
+		},
+		readMore = { "Wowpedia: The Damsel's Luck", "Wowpedia: Bloodsail Buccaneers" },
+	},
+	{
+		name = "The Riptide", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "The third Bloodsail frigate, on the last stretch of coast before the open sea.",
+		lore = {
+			"The Riptide is moored with the Crimson Veil and the Damsel's Luck off the Wild Shore, at the bottom end of the Eastern Kingdoms.",
+			"The position is the point. Everything sailing between Kalimdor and the Eastern Kingdoms passes this cape, and Booty Bay exists because the goblins worked that out first. The Bloodsail worked it out second and arrived with hulls instead of a harbour.",
+			"Stranglethorn was Gurubashi country, then Stormwind's southern frontier, and now it is neither. Three pirate frigates on the southern beach is what the absence of a government looks like.",
+		},
+		readMore = { "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Stranglethorn Vale" },
+	},
+	{
+		name = "Venture Co. Operations Center", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "A goblin oil platform on a jungle lake, run by the cartel that does not pretend to be neutral.",
+		lore = {
+			"The Venture Company put an oil platform on a lake in northern Stranglethorn, and they have it staffed with mechanics and geologists rather than soldiers. They are prospecting.",
+			"The Venture Company is the goblin cartel that broke the pattern. Steamwheedle, who run Booty Bay and Ratchet and Gadgetzan, make their money by being neutral and useful to both sides. The Venture Company decided extraction was more profitable than arbitration.",
+			"So they are the one goblin outfit that gets treated as an enemy by everybody, and they are in Stranglethorn, Mulgore, the Barrens and Desolace doing the same thing in each.",
+		},
+		readMore = { "Wowpedia: Venture Co. Operations Center", "Wowpedia: Venture Company", "Wowpedia: Steamwheedle Cartel" },
+	},
+})

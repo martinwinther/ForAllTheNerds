@@ -7,9 +7,9 @@ post-vanilla maps and the Wrath death-knight areas inside Eastern
 Plaguelands are all excluded; `tools/area-sweep.md` lists what was dropped
 and why.
 
-**784 written, 199 empty, 79% covered.** 45 zones have gaps; 18 are complete.
+**791 written, 192 empty, 80% covered.** 45 zones have gaps; 18 are complete.
 
-199 checklist lines below, 197 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+192 checklist lines below, 190 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -23,7 +23,6 @@ check with the real resolver and is the authority when the two disagree.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Stranglethorn Vale | 33 | 12 | 73% |
 | Mulgore | 16 | 10 | 61% |
 | Tirisfal Glades | 20 | 10 | 66% |
 | Feralas | 25 | 9 | 73% |
@@ -42,6 +41,7 @@ check with the real resolver and is the authority when the two disagree.
 | Redridge Mountains | 12 | 5 | 70% |
 | Silithus | 16 | 5 | 76% |
 | Silverpine Forest | 19 | 5 | 79% |
+| Stranglethorn Vale | 40 | 5 | 88% |
 | Arathi Highlands | 20 | 4 | 83% |
 | Elwynn Forest | 22 | 4 | 84% |
 | Mount Hyjal | 7 | 4 | 63% |
@@ -91,21 +91,6 @@ check with the real resolver and is the authority when the two disagree.
 
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
-
-### Stranglethorn Vale — 12 empty of 45
-
-- [ ] Battle Ring
-- [ ] Shell Beach
-- [ ] Southern Savage Coast
-- [ ] Spirit Den
-- [ ] Sunken Hollow
-- [ ] The Crimson Veil
-- [ ] The Crystal Shore
-- [ ] The Damsel's Luck
-- [ ] The Riptide
-- [ ] Venture Co. Operations Center
-- [ ] Wild Shore
-- [ ] Yojamba Isle
 
 ### Mulgore — 10 empty of 26
 
@@ -281,6 +266,14 @@ is where the most ground is gained per sitting.
 - [ ] South Tide's Run
 - [ ] The Dawning Isles
 - [ ] The Shining Strand
+
+### Stranglethorn Vale — 5 empty of 45
+
+- [ ] Shell Beach
+- [ ] Southern Savage Coast
+- [ ] Spirit Den
+- [ ] Sunken Hollow
+- [ ] The Crystal Shore
 
 ### Arathi Highlands — 4 empty of 24
 

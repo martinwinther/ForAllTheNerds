@@ -7,6 +7,9 @@
 - Eight more places in Ashenvale: Xavian, the Zoram Strand, Kargathia Keep, the
   Ruins of Ordil'Aran, Bloodtooth Camp, Silverwind Refuge, Forest Song and the
   Shady Nook. Ashenvale was the emptiest zone in the game and now has five left.
+- Seven more in Stranglethorn Vale: Yojamba Isle, the Battle Ring, the Wild
+  Shore, the three Bloodsail frigates moored off it, and the Venture Co.
+  Operations Center.
 
 ## 1.2.2
 
