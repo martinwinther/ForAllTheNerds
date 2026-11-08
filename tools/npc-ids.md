@@ -124,11 +124,45 @@ Two things left unestablished, so do not assume either way:
 
 Two of them, with opposite answers. Check before fetching.
 
-**Wowhead: no.** Its `robots.txt` carries a single `Disallow: /` block naming
-`ClaudeBot`, `anthropic-ai`, `Claude-Web`, `GPTBot`, `CCBot`, `Scrapy`,
-`Bytespider`, `Diffbot` and about twenty more. The whole site is off limits to
-automated clients of that kind, this one included. That is their stated policy
-and it settles the question; nothing here scrapes it.
+**Wowhead: no, though the rule is narrower than it first looks.** Its
+`robots.txt` opens with one `Disallow: /` block naming 28 agents, `ClaudeBot`,
+`anthropic-ai`, `Claude-Web`, `GPTBot`, `CCBot`, `Scrapy`, `Bytespider` and
+`Diffbot` among them. The tooling used here answers to those names, which is
+why nothing here fetches it.
+
+Three details are worth being accurate about, because "Wowhead blocks bots" is
+not what the file says:
+
+- There is **no `User-agent: *` section at all**, so the file is silent about
+  clients it does not name rather than blocking them.
+- `Claude-SearchBot` is treated as a different thing entirely: `Crawl-delay: 1`
+  and 3,198 `Disallow` lines that contain **no** bare `Disallow: /`. Folded
+  across its 92 language and flavour prefixes those come to 13 path shapes:
+  `/account`, `/error-static-cdn`, `/list`, `/random`, `/search` and
+  `/site-achievement/*`. Account pages and dynamic query pages are closed;
+  ordinary content pages are not. So the distinction being drawn is bulk
+  harvesting against search-time retrieval, not pages against machines.
+- `robots.txt` governs fetching, not what may be done with what was fetched.
+  Wowhead's terms are a separate matter, and bulk extraction for
+  redistribution is a different question from reading one page.
+
+None of which gets us anywhere, because **Wowhead has no public API to block**.
+What it once offered was an undocumented, item-only endpoint, with nothing for
+creatures. `robots.txt` never mentions an API and carries no `Allow` line.
+
+**Blizzard's own API is the sanctioned one**, and it does have creature routes:
+`/data/wow/creature/{creatureId}` and `/data/wow/search/creature` with a
+`name.en_US` parameter, under the `static-classic1x-{region}` namespace for
+Classic Era. It needs OAuth client credentials from the Battle.net developer
+portal, so it cannot be tried from here without an account.
+
+Worth knowing before spending an evening on it: it is a name-and-identity
+service, not a placement one. It returns the name, type, family and display
+ids, and **no zone** -- the same server-side reason `Creature.db2` has none.
+Its terms also restrict redistributing what comes back. So it would confirm the
+name-to-id mapping that route 2 already produced, from Blizzard rather than
+from a reconstruction, and add nothing about where anything stands. Whether a
+Forever namespace is exposed at all is unverified.
 
 **wago.tools: yes, and it invites it.** Its `robots.txt` blocks the HTML DB2
 browser and then opens `/api/` and `/db2/{table}/csv` explicitly, with a
