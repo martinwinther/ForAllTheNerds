@@ -13,6 +13,10 @@
 - Six more in Mulgore and Tirisfal Glades: the Bael'dun Digsite, Kodo Rock and
   the Skywatcher Plateau; Gunther's Retreat, the Gallows' End Tavern and the
   Crusader Outpost.
+- Twelve more across Feralas, Dustwallow Marsh, Azshara and Durotar: both of the
+  Twin Colossals, Oneiros, the Writhing Deep, Woodpaw Den and Shalzaru's Lair;
+  the Foothold Citadel and Swamplight Manor; the Ruined Reaches, Rethress
+  Sanctum and the Legashi Encampment; and the Shrine of the Dormant Flame.
 
 ## 1.2.2
 

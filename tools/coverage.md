@@ -7,9 +7,14 @@ post-vanilla maps and the Wrath death-knight areas inside Eastern
 Plaguelands are all excluded; `tools/area-sweep.md` lists what was dropped
 and why.
 
-**797 written, 186 empty, 81% covered.** 45 zones have gaps; 18 are complete.
+Some names on the checklist have no source at all and cannot be written
+without inventing lore. Those are listed in `tools/no-source.md`, along with
+three near misses that were written from adjacent sources instead. The
+checklist will not reach zero.
 
-186 checklist lines below, 184 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+**809 written, 174 empty, 82% covered.** 45 zones have gaps; 18 are complete.
+
+174 checklist lines below, 172 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -23,16 +28,14 @@ check with the real resolver and is the authority when the two disagree.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Feralas | 25 | 9 | 73% |
 | Riverglades | 11 | 9 | 55% |
-| Dustwallow Marsh | 19 | 8 | 70% |
-| Azshara | 23 | 7 | 76% |
-| Durotar | 20 | 7 | 74% |
 | Mulgore | 19 | 7 | 73% |
 | The Barrens | 30 | 7 | 81% |
 | Thousand Needles | 16 | 7 | 69% |
 | Tirisfal Glades | 23 | 7 | 76% |
 | Dun Morogh | 20 | 6 | 76% |
+| Durotar | 21 | 6 | 77% |
+| Dustwallow Marsh | 21 | 6 | 77% |
 | Stonetalon Mountains | 14 | 6 | 70% |
 | Alterac Mountains | 18 | 5 | 78% |
 | Ashenvale | 37 | 5 | 88% |
@@ -43,6 +46,7 @@ check with the real resolver and is the authority when the two disagree.
 | Silverpine Forest | 19 | 5 | 79% |
 | Stranglethorn Vale | 40 | 5 | 88% |
 | Arathi Highlands | 20 | 4 | 83% |
+| Azshara | 26 | 4 | 86% |
 | Elwynn Forest | 22 | 4 | 84% |
 | Mount Hyjal | 7 | 4 | 63% |
 | Swamp of Sorrows | 11 | 4 | 73% |
@@ -52,6 +56,7 @@ check with the real resolver and is the authority when the two disagree.
 | Zephras Isle | 24 | 4 | 85% |
 | Desolace | 18 | 3 | 85% |
 | Felwood | 16 | 3 | 84% |
+| Feralas | 31 | 3 | 91% |
 | Loch Modan | 14 | 3 | 82% |
 | Western Plaguelands | 15 | 3 | 83% |
 | Westfall | 16 | 3 | 84% |
@@ -87,38 +92,10 @@ check with the real resolver and is the authority when the two disagree.
 | Undercity | 1 | 0 | 100% |
 | Whelgar's Excavation Site | 1 | 0 | 100% |
 
-## Places with no source
-
-Checked and found to have nothing behind them. They stay on the checklist
-because the client names them, but do not go looking again without a new
-source:
-
-| Place | Zone | Why |
-|---|---|---|
-| Mantle Rock | Mulgore | Never left the World of Warcraft beta |
-| Camp Gev'rek | Mulgore | No article on warcraft.wiki.gg |
-| Galak Camp | Mulgore | No article on warcraft.wiki.gg |
-| Shadowvale | Tirisfal Glades | No article on warcraft.wiki.gg |
-
-Forever's own 19 are the same situation at larger scale, and
-`tools/forever-areas.tsv` records which nine DB2 tables were checked for them.
-
 ## The checklist
 
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
-
-### Feralas — 9 empty of 34
-
-- [ ] East Pillar
-- [ ] High Wilderness
-- [ ] Mok'Gordun
-- [ ] Oneiros
-- [ ] Shalzaru's Lair
-- [ ] The Writhing Deep
-- [ ] West Pillar
-- [ ] Wildwind Lake
-- [ ] Woodpaw Den
 
 ### Riverglades — 9 empty of 20
 
@@ -131,37 +108,6 @@ is where the most ground is gained per sitting.
 - [ ] Turner's Logging Camp
 - [ ] Twilight Hollow
 - [ ] Wheeler's Grange
-
-### Dustwallow Marsh — 8 empty of 27
-
-- [ ] Bloodfen Burrow
-- [ ] Dustwallow Bay
-- [ ] Foothold Citadel
-- [ ] Ironclad Prison
-- [ ] Moggle Point
-- [ ] Swamplight Manor
-- [ ] Tidefury Cove
-- [ ] West Point Tower
-
-### Azshara — 7 empty of 30
-
-- [ ] Legashi Encampment
-- [ ] Legashi Stronghold
-- [ ] Rethress Sanctum
-- [ ] Scalebeard's Cave
-- [ ] Thalassian Vanguard Camp
-- [ ] The Ruined Reaches
-- [ ] Vanndir Encampment
-
-### Durotar — 7 empty of 27
-
-- [ ] Darkspear Strand
-- [ ] Dustwind Cave
-- [ ] Hidden Path
-- [ ] Jaggedswine Farm
-- [ ] Razorwind Canyon
-- [ ] Shrine of the Dormant Flame
-- [ ] Spirit Rock
 
 ### Mulgore — 7 empty of 26
 
@@ -211,6 +157,24 @@ is where the most ground is gained per sitting.
 - [ ] South Gate Outpost
 - [ ] South Gate Pass
 - [ ] Steelgrill's Depot
+
+### Durotar — 6 empty of 27
+
+- [ ] Darkspear Strand
+- [ ] Dustwind Cave
+- [ ] Hidden Path
+- [ ] Jaggedswine Farm
+- [ ] Razorwind Canyon
+- [ ] Spirit Rock
+
+### Dustwallow Marsh — 6 empty of 27
+
+- [ ] Bloodfen Burrow
+- [ ] Dustwallow Bay
+- [ ] Ironclad Prison
+- [ ] Moggle Point
+- [ ] Tidefury Cove
+- [ ] West Point Tower
 
 ### Stonetalon Mountains — 6 empty of 20
 
@@ -292,6 +256,13 @@ is where the most ground is gained per sitting.
 - [ ] The Drowned Reef
 - [ ] The Sanctum
 
+### Azshara — 4 empty of 30
+
+- [ ] Legashi Stronghold
+- [ ] Scalebeard's Cave
+- [ ] Thalassian Vanguard Camp
+- [ ] Vanndir Encampment
+
 ### Elwynn Forest — 4 empty of 26
 
 - [ ] Northshire River
@@ -352,6 +323,12 @@ is where the most ground is gained per sitting.
 - [ ] Bloodvenom Falls
 - [ ] Jadefire Glen
 - [ ] Shrine of the Deceiver
+
+### Feralas — 3 empty of 34
+
+- [ ] High Wilderness
+- [ ] Mok'Gordun
+- [ ] Wildwind Lake
 
 ### Loch Modan — 3 empty of 17
 

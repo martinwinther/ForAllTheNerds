@@ -2214,7 +2214,7 @@ SubsOf("Ashenvale", {
 		lore = {
 			"Very little of Ordil'Aran is left. It was a night elf city once, north of Maestra's Post, and what survives is enough stonework to shelter in.",
 			"The Cult of the Dark Strand made a base of it. They are Shadow Council work: night elves and others turned to the service of things that should not be served, operating inside Darnassus's own territory, and the Tower of Althalaxx further up the coast is the other end of the same problem.",
-			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, which gives a reasonable idea of how that went.",
+			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, and they give a reasonable idea of how that went.",
 		},
 		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Dark Strand", "Wowpedia: Thistlefur" },
 	},
@@ -2222,9 +2222,9 @@ SubsOf("Ashenvale", {
 		name = "Bloodtooth Camp", parent = "Ashenvale", faction = "Hostile",
 		hook = "A furbolg camp west of the Falfarren, and the tribe in it has been got at.",
 		lore = {
-			"Ran Bloodtooth leads the furbolgs here, and they are corrupted. Every one of them is hostile, which is not how furbolgs are supposed to be.",
+			"Ran Bloodtooth leads the furbolgs here, and they are corrupted. Every one of them is hostile, and that is not how furbolgs are supposed to be.",
 			"The furbolgs were the night elves' oldest allies on this continent, and the collapse of that friendship is one of the quieter tragedies in Kalimdor. Tribe after tribe has been turned, and the night elves have gone from treating them as neighbours to treating them as a problem.",
-			"Not all of them. The Timbermaw in the north are uncorrupted and still dealing with outsiders, which is the measure of what the rest have lost.",
+			"Not all of them. The Timbermaw in the north are uncorrupted and still dealing with outsiders. They show what the rest have lost.",
 		},
 		readMore = { "Wowpedia: Bloodtooth Camp", "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold" },
 	},
@@ -2326,5 +2326,143 @@ SubsOf("Tirisfal Glades", {
 			"They are not wrong that the Forsaken are walking corpses. They are wrong about almost everything that follows from it, and the Monastery behind this tower is where that went furthest.",
 		},
 		readMore = { "Wowpedia: Crusader Outpost", "Wowpedia: Scarlet Crusade", "Wowpedia: Scarlet Monastery" },
+	},
+})
+
+-- Feralas, continuing down tools/coverage.md.
+SubsOf("Feralas", {
+	{
+		name = "East Pillar", parent = "Feralas", faction = "Neutral",
+		hook = "The eastern of the Twin Colossals, the highest ground in Feralas.",
+		lore = {
+			"The Twin Colossals are two sheer mountains on Feralas's western side, and they are the tallest thing in the zone by a long way. The road from Feralas into Desolace runs between them.",
+			"Getting up the eastern one is not a walk. It was reached by arrangement rather than by climbing, and that says enough about how sheer these are.",
+			"There is a pond at the top with a giant makura in it called Diamond Head. Gregan Brewspewer watched the thing claw its own way up the mountain, and is now up there with it.",
+		},
+		readMore = { "Wowpedia: Twin Colossals", "Wowpedia: Feralas" },
+	},
+	{
+		name = "West Pillar", parent = "Feralas", faction = "Neutral",
+		hook = "The western Colossal, with the road to Desolace running past its foot.",
+		lore = {
+			"The western of the two Colossals stands over the Feralas-Desolace road. Marli Wishrunner keeps to the base of this one.",
+			"Feralas is a wet, overgrown, warm forest and Desolace is grey rubble with centaur fighting over it. The change happens in the gap between these two mountains, over a few hundred yards of road.",
+			"The night elves held all of this once. What is in Feralas now is Gordunni ogres, Woodpaw gnolls, Grimtotem tauren, Hatecrest naga and the Shen'dralar sealed in Dire Maul, with Feathermoon Stronghold holding what it can off the coast.",
+		},
+		readMore = { "Wowpedia: Twin Colossals", "Wowpedia: Feralas" },
+	},
+	{
+		name = "Oneiros", parent = "Feralas", faction = "Hostile",
+		hook = "Night elf ruins in the north guarded by green dragonspawn, named for the Greek gods of dreams.",
+		lore = {
+			"Oneiros lies south of Jademir Lake, and it is night elf ruins with green dragonspawn patrolling them. The green flight is Ysera's, and Ysera's charge is the Emerald Dream.",
+			"The name is not Darnassian. The Oneiroi were the sons of Hypnos in Greek myth, the personifications of dreams, and Morpheus was the greatest of them. Somebody chose that deliberately for a place where the Dream presses against the waking world.",
+			"There is a small night elf camp inside the ruins called Dreamer's Rest. Druids sleep for centuries in this world while they walk in the other one, and a dragon-guarded ruin is a reasonable place to do it.",
+		},
+		readMore = { "Wowpedia: Oneiros", "Wowpedia: Emerald Dream", "Wowpedia: Green dragonflight" },
+	},
+	{
+		name = "The Writhing Deep", parent = "Feralas", faction = "Hostile",
+		hook = "A silithid hive in the south-east, and the gnolls around it have gone frantic.",
+		lore = {
+			"Hive Zukk'ash is in the ground here, and it is silithid. They are the qiraji's creatures: insectoid, numberless, and answering ultimately to C'Thun under Ahn'Qiraj.",
+			"The hive is driving the local gnolls out of their minds. They are pushing north in a state and running into Camp Mojache, which means the tauren there are fighting gnolls because of something neither of them started.",
+			"That is how silithid work as a problem. Clearing the ones on the surface does nothing to the eggs, and no hive was ever the real problem; each is an outpost of something much older, still buried in Silithus.",
+		},
+		readMore = { "Wowpedia: Writhing Deep", "Wowpedia: Silithid", "Wowpedia: C'Thun" },
+	},
+	{
+		name = "Woodpaw Den", parent = "Feralas", faction = "Hostile",
+		hook = "The Woodpaw gnolls' den, and they have been pushed into it from two directions.",
+		lore = {
+			"The Woodpaw hold this den, and their alphas are here. The Darkmist Ruins lie south of it.",
+			"They have been squeezed. The Gordunni ogres deforested the Woodpaws' old home, and the Feral Scar yetis came through it as well, so the gnolls moved east and built again.",
+			"Feralas has a great many claimants and no authority. The ogres push the gnolls, the gnolls push the tauren at Camp Mojache, the naga work the coast, and Feathermoon Stronghold holds an island and watches.",
+		},
+		readMore = { "Wowpedia: Woodpaw Den", "Wowpedia: Gordunni", "Wowpedia: Feralas" },
+	},
+	{
+		name = "Shalzaru's Lair", parent = "Feralas", faction = "Hostile",
+		hook = "A flooded naga cave on the Isle of Dread, with the Hatecrest's master at the back of it.",
+		lore = {
+			"The lair is a large twisting cave at the northern end of the Isle of Dread, south of Feathermoon Stronghold's island. Two chambers joined by a waterway, full of Hatecrest sorceresses and serpent guards, with Shalzaru himself deep inside.",
+			"The Hatecrest are one of the naga clans working Kalimdor's western coast. The naga are the Highborne who went under at the Sundering and were changed rather than drowned, and they have been Azshara's ever since.",
+			"Ten thousand years later they are coming back up, all along this coastline. Feathermoon Stronghold exists because of it.",
+		},
+		readMore = { "Wowpedia: Shalzaru's Lair", "Wowpedia: Naga", "Wowpedia: Feathermoon Stronghold" },
+	},
+})
+
+-- Dustwallow Marsh.
+SubsOf("Dustwallow Marsh", {
+	{
+		name = "Foothold Citadel", parent = "Dustwallow Marsh", faction = "Alliance",
+		hook = "Theramore's barracks, and the room where Jaina's father died.",
+		lore = {
+			"The Foothold Citadel is the keep inside Theramore Isle and the headquarters of the Theramore Guard.",
+			"Daelin Proudmoore died in it. He was Lord Admiral of Kul Tiras and Jaina's father, and he came to Kalimdor to finish the orcs off, on the straightforward Second War logic that the only safe orc is a dead one. Jaina had spent the Third War learning otherwise, at Hyjal, beside Thrall.",
+			"She would not fight her father and she would not help him. Thrall's forces stormed Theramore and killed him in this keep, and she let it happen because the alternative was the war her father wanted.",
+		},
+		didYouKnow = "Theramore is the only human settlement on Kalimdor that chose to live alongside the Horde, and the price of that choice was paid in this building. Jaina has been the Alliance's most committed advocate of peace with Orgrimmar ever since, and the reason is upstairs.",
+		readMore = { "Wowpedia: Foothold Citadel", "Wowpedia: Daelin Proudmoore", "Wowpedia: Jaina Proudmoore", "Wowpedia: Theramore Isle" },
+	},
+	{
+		name = "Swamplight Manor", parent = "Dustwallow Marsh", faction = "Neutral",
+		hook = "A hermit's house at Witch Hill, with a buried spy report in the garden.",
+		lore = {
+			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook.",
+			"In the garden there is a pile of dirt with an orcish spy's report buried in it. Both sides want it. Theramore's guard captain will take it, and so will the Horde at Brackenwall.",
+			"That is Dustwallow entirely. A hermit, a good cook, a murdered spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
+		},
+		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Dustwallow Marsh" },
+	},
+})
+
+-- Azshara.
+SubsOf("Azshara", {
+	{
+		name = "The Ruined Reaches", parent = "Azshara", faction = "Neutral",
+		hook = "The broken coast of the queen's own province, with nothing much left standing.",
+		lore = {
+			"Azshara was the heart of the night elf empire and Zin-Azshari, the queen's capital, stood in it. The Sundering took most of that and put it under water.",
+			"The Ruined Reaches are the part of the coastline where the wreckage shows worst. Ravencrest Monument is close by, and Rethress Sanctum is in here somewhere, empty.",
+			"Ten thousand years of nothing being rebuilt. The naga are offshore, the satyrs are inland, and the zone still carries the name of the queen who caused all of it.",
+		},
+		readMore = { "Wowpedia: Azshara", "Wowpedia: Zin-Azshari", "Wowpedia: Great Sundering" },
+	},
+	{
+		name = "Rethress Sanctum", parent = "Azshara", faction = "Neutral",
+		hook = "A ruined shrine in the Reaches with nobody in it but stray murlocs.",
+		lore = {
+			"Rethress Sanctum is a shrine south-west of Ravencrest Monument, and it is a ruin. Nothing lives there. Murlocs and makrura wander through it.",
+			"That is unusual for Azshara, where almost everything is held by somebody: Legashi and Haldarr satyrs inland, naga along the coast, blue dragonkin at the pinnacle.",
+			"An empty shrine in the middle of that is a reminder of the scale of what was lost. There was enough night elf civilisation here that some of its holy places are not worth anybody's trouble to occupy.",
+		},
+		readMore = { "Wowpedia: Rethress Sanctum", "Wowpedia: Azshara" },
+	},
+	{
+		name = "Legashi Encampment", parent = "Azshara", faction = "Hostile",
+		hook = "Satyr ground in Azshara, held by one of the two clans working this coast.",
+		lore = {
+			"The Legashi are satyrs, and Azshara has them and the Haldarr both. A satyr is a night elf who took Sargeras's bargain during the War of the Ancients and was remade for it.",
+			"Their presence here is pointed. This was Azshara's own province, and the queen's court were the ones who opened the portal; Xavius, the first satyr of all, was her counsellor. The satyrs are in the ruins of the civilisation they helped destroy.",
+			"They have had ten thousand years and have not gone anywhere. Satyr camps are scattered through every forest the night elves once held, in Azshara, Ashenvale, Felwood and Desolace.",
+		},
+		readMore = { "Wowpedia: Satyr", "Wowpedia: Xavius", "Wowpedia: Azshara" },
+	},
+})
+
+-- Durotar.
+SubsOf("Durotar", {
+	{
+		name = "Shrine of the Dormant Flame", parent = "Durotar", faction = "Horde",
+		hook = "The holiest place the Horde's shaman have, up a hidden path above the Valley of Trials.",
+		lore = {
+			"The shrine sits on top of the tallest mountain north-west of the Valley of Trials, reached by a path that spirals up and is not obvious; it starts down by the Southfury River.",
+			"Telf Joolam keeps it, alone. His work was guiding new shaman in the taming of fire, and the brazier at the summit was lit by them as part of that.",
+			"Shamanism is the whole of what Thrall's Horde claims to be. The orcs had it, Gul'dan took it from them and gave them warlocks instead, and Thrall got it back from Drek'Thar and the Frostwolves. A quiet shrine above the orc starting valley is where that recovery is taught.",
+		},
+		didYouKnow = "The view from the summit is the best in Durotar. Jumping off is not advised, and the accounts felt the need to specify it.",
+		readMore = { "Wowpedia: Shrine of the Dormant Flame", "Wowpedia: Shaman", "Wowpedia: Thrall" },
 	},
 })
