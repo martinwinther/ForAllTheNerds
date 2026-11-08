@@ -32,6 +32,17 @@ are now separate files.
 | The World Tree | Duskwood | No article under that name |
 | Broken Spear Village | Desolace | Never left the World of Warcraft beta |
 | Poacher's Den | Burning Steppes | The only article under that name is a Season of Discovery quest, not this place |
+| Blackwater Shipwrecks | Arathi Highlands | Never left the beta; probably the water around two wrecks on the Drowned Reef |
+| Vanndir Encampment | Azshara | Never left the World of Warcraft beta |
+| West Point Tower | Dustwallow Marsh | Never left the beta; likely Lost Point, Theramore's westernmost tower |
+| Stormwind Mountains | Elwynn Forest | Never left the World of Warcraft beta |
+| Brave Wind Mesa | Mulgore | Never left the World of Warcraft beta |
+| Fire Stone Mesa | Mulgore | Never left the World of Warcraft beta |
+| Skyline Ridge | Mulgore | Never left the World of Warcraft beta |
+| The Searing Basin | Searing Gorge | A test-only instance, never part of the live game |
+| Shell Beach | Stranglethorn Vale | Never left the World of Warcraft beta |
+| Sunken Hollow | Stranglethorn Vale | No article on warcraft.wiki.gg |
+| Not Used Deadmines | Westfall | A development leftover, as the name says |
 
 ## Near misses, written anyway
 
@@ -42,6 +53,7 @@ are now separate files.
 | Warsong Labor Camp | Not the same place as the Warsong Lumber Camp, and the wiki warns against exactly that confusion. Still on the list rather than written up wrong. |
 | School of Necromancy | This is Scholomance, which the addon already had. Registered as an alias of it rather than written twice. |
 | Algaz Gate | This is Dun Algaz, already written up in Data/Locales.lua. Registered as an alias. |
+| The Cemetary | This is Raven Hill Cemetery, already written up. Registered as an alias, misspelling included, since that is what the client reports. |
 | Gavin's Naze | The Stormpike siege engines on that hill could not be dated and read as Cataclysm. Left on the list rather than written from a source I could not place in 1.12. |
 
 ## Forever

@@ -38,8 +38,13 @@
   Render's Rock, Galardell Valley, the Silverwing Outpost, the Falfarren River,
   both ends of the Talondeep Path, Slither Rock, Baradin Bay, the Brill Town
   Hall and the Misty Reed Post.
-- Walking into Scholomance or Dun Algaz now works whichever name the game
-  reports. The client calls them the School of Necromancy and the Algaz Gate.
+- Twenty-five more, taking the total to 967 places. Among them the Foothill
+  Caverns, the Drowned Reef, both ends of South Gate Pass, the Northshire
+  River, Dustwind Cave, the Ravaged Twilight Camp, Windshear Mine, Gunstan's
+  Post, the Moon Horror Den and the Southern Barrens.
+- Walking into Scholomance, Dun Algaz or Raven Hill Cemetery now works
+  whichever name the game reports. The client calls them the School of
+  Necromancy, the Algaz Gate, and simply "The Cemetary".
 
 ## 1.2.2
 

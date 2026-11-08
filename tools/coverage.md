@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**889 written, 94 empty, 90% covered.** 35 zones have gaps; 28 are complete.
+**915 written, 68 empty, 93% covered.** 28 zones have gaps; 35 are complete.
 
-94 checklist lines below, 93 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+68 checklist lines below, 68 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -30,39 +30,33 @@ check with the real resolver and is the authority when the two disagree.
 |---|---:|---:|---:|
 | Riverglades | 11 | 9 | 55% |
 | Mulgore | 19 | 7 | 73% |
-| Alterac Mountains | 19 | 4 | 82% |
-| Arathi Highlands | 20 | 4 | 83% |
-| Dun Morogh | 22 | 4 | 84% |
-| Dustwallow Marsh | 23 | 4 | 85% |
 | Mount Hyjal | 7 | 4 | 63% |
-| Tanaris | 21 | 4 | 84% |
 | Thousand Needles | 19 | 4 | 82% |
 | Tirisfal Glades | 26 | 4 | 86% |
 | Zephras Isle | 24 | 4 | 85% |
-| Azshara | 27 | 3 | 90% |
-| Duskwood | 18 | 3 | 85% |
-| Feralas | 31 | 3 | 91% |
+| Arathi Highlands | 21 | 3 | 87% |
+| Dustwallow Marsh | 24 | 3 | 88% |
 | Silverpine Forest | 21 | 3 | 87% |
-| Stonetalon Mountains | 17 | 3 | 85% |
-| Stranglethorn Vale | 42 | 3 | 93% |
+| Alterac Mountains | 21 | 2 | 91% |
 | Ashenvale | 40 | 2 | 95% |
-| Desolace | 19 | 2 | 90% |
-| Elwynn Forest | 24 | 2 | 92% |
+| Duskwood | 19 | 2 | 90% |
+| Stranglethorn Vale | 43 | 2 | 95% |
+| Tanaris | 23 | 2 | 92% |
 | Un'Goro Crater | 11 | 2 | 84% |
 | Westfall | 17 | 2 | 89% |
 | Wetlands | 25 | 2 | 92% |
-| Badlands | 17 | 1 | 94% |
+| Azshara | 29 | 1 | 96% |
 | Burning Steppes | 13 | 1 | 92% |
-| Durotar | 26 | 1 | 96% |
+| Desolace | 20 | 1 | 95% |
+| Dun Morogh | 25 | 1 | 96% |
+| Elwynn Forest | 25 | 1 | 96% |
+| Feralas | 33 | 1 | 97% |
 | Hyjal Crater | 0 | 1 | 0% |
-| Loch Modan | 16 | 1 | 94% |
 | Searing Gorge | 12 | 1 | 92% |
 | Shen'dralas | 6 | 1 | 85% |
-| Silithus | 20 | 1 | 95% |
-| Swamp of Sorrows | 14 | 1 | 93% |
-| The Barrens | 36 | 1 | 97% |
+| Stonetalon Mountains | 19 | 1 | 95% |
 | The Hinterlands | 21 | 1 | 95% |
-| Winterspring | 18 | 1 | 94% |
+| Badlands | 18 | 0 | 100% |
 | Blackrock Depths | 1 | 0 | 100% |
 | Blackrock Mountain | 1 | 0 | 100% |
 | Blackrock Spire | 1 | 0 | 100% |
@@ -71,26 +65,32 @@ check with the real resolver and is the authority when the two disagree.
 | Darnassus | 6 | 0 | 100% |
 | Deadwind Pass | 11 | 0 | 100% |
 | Dun Algaz | 1 | 0 | 100% |
+| Durotar | 27 | 0 | 100% |
 | Eastern Plaguelands | 28 | 0 | 100% |
 | Felwood | 19 | 0 | 100% |
 | Gates of Ahn'Qiraj | 1 | 0 | 100% |
 | Hillsbrad Foothills | 15 | 0 | 100% |
 | Ironforge | 1 | 0 | 100% |
+| Loch Modan | 17 | 0 | 100% |
 | Lordamere Lake | 1 | 0 | 100% |
 | Moonglade | 6 | 0 | 100% |
 | Onyxia's Lair | 1 | 0 | 100% |
 | Orgrimmar | 1 | 0 | 100% |
 | Redridge Mountains | 17 | 0 | 100% |
+| Silithus | 21 | 0 | 100% |
 | Southfury River | 1 | 0 | 100% |
 | Stormwind City | 3 | 0 | 100% |
+| Swamp of Sorrows | 15 | 0 | 100% |
 | Teldrassil | 17 | 0 | 100% |
 | Thandol Span | 1 | 0 | 100% |
+| The Barrens | 37 | 0 | 100% |
 | The Temple of Atal'Hakkar | 1 | 0 | 100% |
 | Thoradin's Wall | 1 | 0 | 100% |
 | Thunder Bluff | 5 | 0 | 100% |
 | Undercity | 1 | 0 | 100% |
 | Western Plaguelands | 18 | 0 | 100% |
 | Whelgar's Excavation Site | 1 | 0 | 100% |
+| Winterspring | 19 | 0 | 100% |
 
 ## The checklist
 
@@ -119,47 +119,12 @@ is where the most ground is gained per sitting.
 - [ ] Mantle Rock
 - [ ] Skyline Ridge
 
-### Alterac Mountains — 4 empty of 23
-
-- [ ] Gavin's Naze
-- [ ] The Eventide
-- [ ] The Foothill Caverns
-- [ ] The Headland
-
-### Arathi Highlands — 4 empty of 24
-
-- [ ] Blackwater Shipwrecks
-- [ ] O'Breen's Camp
-- [ ] The Drowned Reef
-- [ ] The Sanctum
-
-### Dun Morogh — 4 empty of 26
-
-- [ ] Ironforge Submarine Facility
-- [ ] North Gate Outpost
-- [ ] South Gate Outpost
-- [ ] South Gate Pass
-
-### Dustwallow Marsh — 4 empty of 27
-
-- [ ] Dustwallow Bay
-- [ ] Ironclad Prison
-- [ ] Moggle Point
-- [ ] West Point Tower
-
 ### Mount Hyjal — 4 empty of 11
 
 - [ ] Cradle of Tranquility
 - [ ] Dae'gun
 - [ ] Elderwild
 - [ ] Mourning's Rest
-
-### Tanaris — 4 empty of 25
-
-- [ ] Caverns of Time
-- [ ] Gunstan's Post
-- [ ] Southbreak Shore
-- [ ] The Rumble Cage
 
 ### Thousand Needles — 4 empty of 23
 
@@ -182,23 +147,17 @@ is where the most ground is gained per sitting.
 - [ ] Rohashi Spires
 - [ ] Ruins of Ban'aethal
 
-### Azshara — 3 empty of 30
+### Arathi Highlands — 3 empty of 24
 
-- [ ] Legashi Stronghold
-- [ ] Thalassian Vanguard Camp
-- [ ] Vanndir Encampment
+- [ ] Blackwater Shipwrecks
+- [ ] O'Breen's Camp
+- [ ] The Sanctum
 
-### Duskwood — 3 empty of 21
+### Dustwallow Marsh — 3 empty of 27
 
-- [ ] The Cemetary
-- [ ] The Whipple Estate
-- [ ] The World Tree
-
-### Feralas — 3 empty of 34
-
-- [ ] High Wilderness
-- [ ] Mok'Gordun
-- [ ] Wildwind Lake
+- [ ] Ironclad Prison
+- [ ] Moggle Point
+- [ ] West Point Tower
 
 ### Silverpine Forest — 3 empty of 24
 
@@ -206,32 +165,30 @@ is where the most ground is gained per sitting.
 - [ ] North Tide's Run
 - [ ] South Tide's Run
 
-### Stonetalon Mountains — 3 empty of 20
+### Alterac Mountains — 2 empty of 23
 
-- [ ] Greatwood Vale
-- [ ] Valley of the Bloodfuries
-- [ ] Windshear Mine
-
-### Stranglethorn Vale — 3 empty of 45
-
-- [ ] Shell Beach
-- [ ] Sunken Hollow
-- [ ] The Crystal Shore
+- [ ] Gavin's Naze
+- [ ] The Eventide
 
 ### Ashenvale — 2 empty of 42
 
 - [ ] Moonwell
 - [ ] Warsong Labor Camp
 
-### Desolace — 2 empty of 21
+### Duskwood — 2 empty of 21
 
-- [ ] Broken Spear Village
-- [ ] Scrabblescrew's Camp
+- [ ] The Whipple Estate
+- [ ] The World Tree
 
-### Elwynn Forest — 2 empty of 26
+### Stranglethorn Vale — 2 empty of 45
 
-- [ ] Northshire River
-- [ ] Stormwind Mountains
+- [ ] Shell Beach
+- [ ] Sunken Hollow
+
+### Tanaris — 2 empty of 25
+
+- [ ] Caverns of Time
+- [ ] The Rumble Cage
 
 ### Un'Goro Crater — 2 empty of 13
 
@@ -248,25 +205,33 @@ is where the most ground is gained per sitting.
 - [ ] Dragonmaw Retreat
 - [ ] The Drunken Dwarf
 
-### Badlands — 1 empty of 18
+### Azshara — 1 empty of 30
 
-- [ ] Camp Wurg
+- [ ] Vanndir Encampment
 
 ### Burning Steppes — 1 empty of 14
 
 - [ ] Poacher's Den
 
-### Durotar — 1 empty of 27
+### Desolace — 1 empty of 21
 
-- [ ] Dustwind Cave
+- [ ] Broken Spear Village
+
+### Dun Morogh — 1 empty of 26
+
+- [ ] Ironforge Submarine Facility
+
+### Elwynn Forest — 1 empty of 26
+
+- [ ] Stormwind Mountains
+
+### Feralas — 1 empty of 34
+
+- [ ] Mok'Gordun
 
 ### Hyjal Crater — 1 empty of 1
 
 - [ ] Hyjal Crater
-
-### Loch Modan — 1 empty of 17
-
-- [ ] South Gate Pass
 
 ### Searing Gorge — 1 empty of 13
 
@@ -276,25 +241,13 @@ is where the most ground is gained per sitting.
 
 - [ ] Forlorn Gardens
 
-### Silithus — 1 empty of 21
+### Stonetalon Mountains — 1 empty of 20
 
-- [ ] Ravaged Twilight Camp
-
-### Swamp of Sorrows — 1 empty of 15
-
-- [ ] Misty Reed Strand
-
-### The Barrens — 1 empty of 37
-
-- [ ] Southern Barrens
+- [ ] Valley of the Bloodfuries
 
 ### The Hinterlands — 1 empty of 22
 
 - [ ] Martsirt
-
-### Winterspring — 1 empty of 19
-
-- [ ] Moon Horror Den
 
 ## Regenerating
 

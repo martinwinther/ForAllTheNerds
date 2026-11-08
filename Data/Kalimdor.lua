@@ -2874,3 +2874,175 @@ SubsOf("Desolace", {
 		readMore = { "Wowpedia: Shadowbreak Ravine", "Wowpedia: Burning Blade clan", "Wowpedia: Desolace" },
 	},
 })
+
+SubsOf("Azshara", {
+	{
+		name = "Legashi Stronghold", parent = "Azshara", faction = "Hostile",
+		hook = "The larger of the two Legashi satyr positions in the north.",
+		lore = {
+			"The Legashi hold northern Azshara in strength, with an encampment and this stronghold. East of Ursolan, north of the Thalassian camp, the satyrs have the high ground.",
+			"Archmage Xylem found a grimoire in their camp, so they are keeping written work rather than simply raiding. Satyrs were Highborne once and the scholarship did not leave them when the rest did.",
+			"Azshara was the queen's own province and her court opened the portal. The satyrs are the ones who took Sargeras's bargain during that war, and they have been camped in the ruins of their own civilisation for ten thousand years.",
+		},
+		readMore = { "Wowpedia: Legash Encampment", "Wowpedia: Satyr", "Wowpedia: Azshara" },
+	},
+	{
+		name = "Thalassian Vanguard Camp", parent = "Azshara", faction = "Hostile",
+		aliases = { "Thalassian Base Camp" },
+		hook = "A Thalassian camp in northern Azshara under Magus Rimtori.",
+		lore = {
+			"Magus Rimtori runs this camp in northern Azshara, south of the Legashi. The elves here speak Thalassian and answer to nobody but themselves.",
+			"Thalassian is Quel'Thalas's tongue. The high elves of that kingdom were nearly destroyed when Arthas came north for the Sunwell, and what survived has been split ever since between those who kept the old name and those who took a new one under Kael'thas.",
+			"A camp of them this deep in night elf country, digging into Azshara's ruins, is not a refugee arrangement. They came here for what is buried.",
+		},
+		readMore = { "Wowpedia: Thalassian Base Camp", "Wowpedia: Quel'Thalas", "Wowpedia: Azshara" },
+	},
+})
+
+SubsOf("Desolace", {
+	{
+		name = "Scrabblescrew's Camp", parent = "Desolace", faction = "Neutral",
+		hook = "A goblin and his kodo caravan, near the graveyard where kodos go to die.",
+		lore = {
+			"Smeed Scrabblescrew keeps this small camp not far from the Kodo Graveyard and runs a kodo caravan out of it.",
+			"The graveyard is the thing worth knowing about. Old kodos walk to it to die; the tauren treat that as natural and sacred, and the goblins treat it as an opportunity.",
+			"Desolace is grey, broken, centaur-ridden country with almost nothing in it worth having. A goblin has found a business anyway, because that is what goblins do.",
+		},
+		readMore = { "Wowpedia: Scrabblescrew's Camp", "Wowpedia: Kodo Graveyard", "Wowpedia: Desolace" },
+	},
+})
+
+SubsOf("Durotar", {
+	{
+		name = "Dustwind Cave", parent = "Durotar", faction = "Hostile",
+		hook = "Where the Burning Blade train their new recruits, within sight of Razor Hill.",
+		lore = {
+			"Dustwind Cave sits on the cliffs above Razorwind Canyon, north-east of Razor Hill, and it is small. What happens inside is training: Burning Blade cultists bringing on neophytes and thugs.",
+			"The Burning Blade are orcs who kept the demonic bargain when Thrall renounced it. Gul'dan traded the orcs' shamanism for warlock power and the Legion's favour, and this clan never gave the second part back.",
+			"So the new Horde's starting zone contains a school for the thing the new Horde exists to have stopped being. Thrall's problem in Durotar is not the centaur.",
+		},
+		readMore = { "Wowpedia: Dustwind Cave", "Wowpedia: Burning Blade clan", "Wowpedia: Razor Hill" },
+	},
+})
+
+SubsOf("Dustwallow Marsh", {
+	{
+		name = "Dustwallow Bay", parent = "Dustwallow Marsh", faction = "Neutral",
+		hook = "The water off the marsh's eastern coast, with Theramore on it.",
+		lore = {
+			"Dustwallow Bay is the stretch of the Great Sea along the marsh's eastern side. Theramore Isle sits in it, with Tidefury Cove at the southern end.",
+			"Theramore being on an island in this bay is the whole of its position. Jaina Proudmoore put a human city on Kalimdor's coast with Orgrimmar a short way north, and the water is what makes that survivable.",
+			"Nat Pagle fishes out of an islet in the cove. The most accomplished fisherman anybody knows of has set up in the bay beside the most politically delicate city on the continent.",
+		},
+		readMore = { "Wowpedia: Dustwallow Bay", "Wowpedia: Theramore Isle", "Wowpedia: Nat Pagle" },
+	},
+})
+
+SubsOf("Feralas", {
+	{
+		name = "High Wilderness", parent = "Feralas", faction = "Neutral",
+		hook = "The great forest of western Feralas, from the coast to the Verdantis.",
+		lore = {
+			"The High Wilderness is the forest itself, running from the Forgotten Coast across to the Verdantis River. It is the largest single thing in Feralas.",
+			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods.",
+			"Feralas is the wettest, greenest, least ruined part of Kalimdor, and the night elves held all of it once. The wilderness is what the zone looks like where nobody has arrived to argue about it yet.",
+		},
+		readMore = { "Wowpedia: High Wilderness", "Wowpedia: Feralas" },
+	},
+	{
+		name = "Wildwind Lake", parent = "Feralas", faction = "Neutral",
+		hook = "Open water near Camp Mojache.",
+		lore = {
+			"Wildwind Lake lies near Camp Mojache in central Feralas, and there is not a great deal more on record about it.",
+			"Camp Mojache is the Horde's hold in this zone, Grimtotem tauren rather than Thrall's being the complication there, and the lake is the water the camp sits beside.",
+			"Not every named place carries a war. Feralas has gnolls, ogres, naga, satyrs and a sealed Highborne city in it, and it also has a lake.",
+		},
+		readMore = { "Wowpedia: Wildwind Lake", "Wowpedia: Camp Mojache" },
+	},
+})
+
+SubsOf("Silithus", {
+	{
+		name = "Ravaged Twilight Camp", parent = "Silithus", faction = "Neutral",
+		hook = "A cult camp in the Crystal Vale that something took apart.",
+		lore = {
+			"The camp is in the Crystal Vale in north-western Silithus, and it has been ruined. The Twilight's Hammer built it and no longer hold it.",
+			"Highlord Demitrian is there now, among the wreckage. He is the one who knows what to do with the shards of an elemental blade, so a destroyed cult camp is a more important address than it looks.",
+			"The cult's own records mention the place. State of the Cult runs to at least a hundred and twenty-seven volumes, so the Twilight's Hammer document themselves very thoroughly indeed.",
+		},
+		readMore = { "Wowpedia: Ravaged Twilight Camp", "Wowpedia: Twilight's Hammer", "Wowpedia: Silithus" },
+	},
+})
+
+SubsOf("Stonetalon Mountains", {
+	{
+		name = "Greatwood Vale", parent = "Stonetalon Mountains", faction = "Contested",
+		hook = "A forested valley in the foothills, reached by the Webwinder Path.",
+		lore = {
+			"The Greatwood Vale is one of the green parts of Stonetalon, down in the foothills, and the way in is along the Webwinder Path.",
+			"Malaka'jin lies south of it. That is a troll holding, and trolls in Stonetalon are a reminder that the Darkspear are not the only ones on this continent.",
+			"Stonetalon has woods worth the name and the Venture Company are cutting them. A vale called Greatwood is the sort of place that gets noticed by a logging concern.",
+		},
+		readMore = { "Wowpedia: Greatwood Vale", "Wowpedia: Stonetalon Mountains" },
+	},
+	{
+		name = "Windshear Mine", parent = "Stonetalon Mountains", faction = "Horde",
+		hook = "A tin mine the Horde took over after the goblins walked away from it.",
+		lore = {
+			"Windshear Mine sits at the end of the Blackwolf River in Windshear Crag. It produces tin, claimed by the Horde once the Venture Company had abandoned the ground.",
+			"While the cartel had it, they worked it with kobolds. That is their method everywhere: find something worth extracting, employ whatever will dig for least, and leave when the seam stops paying.",
+			"So a working Horde mine in Stonetalon is a goblin leftover. The crag is full of them, and the Venture Company are still cutting the rest of the range.",
+		},
+		readMore = { "Wowpedia: Windshear Mine", "Wowpedia: Venture Company", "Wowpedia: Windshear Crag" },
+	},
+})
+
+SubsOf("Tanaris", {
+	{
+		name = "Gunstan's Post", parent = "Tanaris", faction = "Alliance",
+		aliases = { "Gunstan's Dig" },
+		hook = "A small Explorers' League dig south of the Southmoon Ruins.",
+		lore = {
+			"Prospector Gunstan runs this camp in southern Tanaris, below the Southmoon Ruins: a handful of dwarves and a dig.",
+			"The Explorers' League work desert sites for the same reason they work everywhere else. Uldaman gave Ironforge the Discs of Norgannon and the record of the earthen, and every site since has been read as more of that story.",
+			"Tanaris has rather a lot to find. Uldum's sealed gate is in this desert, the Caverns of Time are in it, and the Gadgetzan goblins have been digging here for profit since long before the dwarves arrived.",
+		},
+		readMore = { "Wowpedia: Gunstan's Dig", "Wowpedia: Explorers' League", "Wowpedia: Uldaman" },
+	},
+	{
+		name = "Southbreak Shore", parent = "Tanaris", faction = "Hostile",
+		hook = "Flat empty beach below Lost Rigger Cove, apart from the pirates on it.",
+		lore = {
+			"Southbreak Shore runs south from Lost Rigger Cove: a wide flat beach with almost nothing happening on it, except at the northern end.",
+			"The Southsea Freebooters have that end. Captain Dreadbeard is the name attached, and Lost Rigger Cove above is their proper anchorage.",
+			"Tanaris is a desert with a goblin port on it and pirates on the coast, which is the arrangement everywhere the Steamwheedle set up. Gadgetzan sells to everybody and polices nothing past its own walls.",
+		},
+		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Freebooters", "Wowpedia: Gadgetzan" },
+	},
+})
+
+SubsOf("Winterspring", {
+	{
+		name = "Moon Horror Den", parent = "Winterspring", faction = "Hostile",
+		hook = "An owlbeast cave a short walk from Everlook's gates.",
+		lore = {
+			"The Moon Horror Den is a small cave north-east of Everlook, close enough to the goblin town's gates to walk. Raging owlbeasts live in it.",
+			"Owlbeasts are a night elf problem that got out. They were made, or shaped, in the service of Elune's own and they have not stayed where they were put; Winterspring is full of them.",
+			"Winterfall Village looks close on a map and is not, because the mountain is in the way. Winterspring is a zone where everything is a long ride from everything else, and Everlook is the only place to buy anything.",
+		},
+		readMore = { "Wowpedia: Moon Horror Den", "Wowpedia: Everlook", "Wowpedia: Owlbeast" },
+	},
+})
+
+SubsOf("The Barrens", {
+	{
+		name = "Southern Barrens", parent = "The Barrens", faction = "Contested",
+		hook = "The lower half of the Barrens, past the Great Divide.",
+		lore = {
+			"The Barrens runs a long way, and south of the Great Divide it gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
+			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the Bristleback have fought the tauren across this country since before the Horde landed.",
+			"Northwatch Hold is the other difficulty: a human fort on the coast of what the Horde regards as its own continent, dug in and not leaving. The south Barrens is where the two factions actually touch.",
+		},
+		readMore = { "Wowpedia: Southern Barrens", "Wowpedia: Razorfen Kraul", "Wowpedia: Northwatch Hold" },
+	},
+})

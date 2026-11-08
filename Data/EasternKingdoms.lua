@@ -759,6 +759,8 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Raven Hill Cemetery", parent = "Duskwood", faction = "Hostile",
+		-- The client reports this one simply as "The Cemetary", misspelling included.
+		aliases = { "The Cemetary", "The Cemetery" },
 		hook = "Duskwood's largest graveyard, and the reason the Night Watch exists.",
 		lore = {
 			"Generations of the county's dead are buried here, and in Duskwood that is a liability rather than a memorial. The necromancer Morbent Fel took an interest in the place and the consequences are still walking.",
@@ -3044,5 +3046,139 @@ SubsOf("Wetlands", {
 			"Their wrecks are still down there. The friendship did not survive Daelin's death at Theramore, and the Alliance has been short of hulls on this coast ever since.",
 		},
 		readMore = { "Wowpedia: Baradin Bay", "Wowpedia: Kul Tiras", "Wowpedia: Daelin Proudmoore" },
+	},
+})
+
+SubsOf("Alterac Mountains", {
+	{
+		name = "The Headland", parent = "Alterac Mountains", faction = "Alliance",
+		hook = "A Stormpike training camp on the third of Hillsbrad's four fingers.",
+		lore = {
+			"The Headland is one of the ridges running down out of the mountains above Hillsbrad, and the Stormpike dwarves have put a training camp on it: instructors, a drill sergeant, and recruits being taught their trade.",
+			"The Alliance way into Alterac Valley is close by, and the camp is there because of it. The Stormpike Guard are digging in the valley north of here and the Frostwolf orcs want them out, and both sides have been feeding soldiers into it for years.",
+			"Alterac Valley is not a war either faction declared. It is a mining dispute that has acquired generals.",
+		},
+		readMore = { "Wowpedia: Headland", "Wowpedia: Stormpike Guard", "Wowpedia: Alterac Valley" },
+	},
+	{
+		name = "The Foothill Caverns", parent = "Alterac Mountains", faction = "Hostile",
+		hook = "The cave where Helcular made himself a lich after a mob had killed him.",
+		lore = {
+			"The Foothill Caverns lie in Darrow Hill, and Helcular used them. He was working on turning himself into a lich, and he had a ritual site up in the hills until a human lynch mob found it and beat him to death.",
+			"Dying did not stop the project. He finished it in this cave instead, which is the sort of outcome a lynch mob does not plan for.",
+			"The Flame of Azel and the Flame of Veraz were kept down here too. Hillsbrad looks like farmland with a feud in it, and a good deal of what is actually going on is underground.",
+		},
+		readMore = { "Wowpedia: Foothill Caverns", "Wowpedia: Helcular", "Wowpedia: Lich" },
+	},
+})
+
+SubsOf("Arathi Highlands", {
+	{
+		name = "The Drowned Reef", parent = "Arathi Highlands", faction = "Hostile",
+		hook = "A reef off the southern shore with a sunken elven city under it.",
+		lore = {
+			"The Drowned Reef has taken a great many ships. The Maiden's Folly and the Spirit of Silverpine are both down there, and they are the ones anybody remembers the names of.",
+			"Underneath the water there is a city. It is elven, it is ancient, and it is ruined, and the Daggerspine naga live in it now.",
+			"Which puts the Arathi Highlands in the same story as half of Kalimdor. The Sundering drowned coastline everywhere, the naga are the Highborne who went down with it, and they are coming back up wherever there is a ruin to occupy.",
+		},
+		readMore = { "Wowpedia: Drowned Reef", "Wowpedia: Daggerspine", "Wowpedia: Naga" },
+	},
+})
+
+SubsOf("Badlands", {
+	{
+		name = "Camp Wurg", parent = "Badlands", faction = "Hostile",
+		hook = "One of four Dustbelcher ogre camps, with a boss who visited all of them.",
+		lore = {
+			"Camp Wurg is Dustbelcher ogre ground, one of four: Wurg, Cagg, Boff and Kosh, spread across the Badlands.",
+			"Boss Tho'grun did not sit in any of them. He patrolled between the four, which is more organisation than ogres are usually credited with.",
+			"Ogres in the Eastern Kingdoms are the Old Horde's leavings, brought through the Dark Portal by Gul'dan and abandoned when the Second War collapsed. Four camps and a circuit-riding chieftain is what they have made of that.",
+		},
+		readMore = { "Wowpedia: Camp Wurg", "Wowpedia: Dustbelcher", "Wowpedia: Ogre" },
+	},
+})
+
+SubsOf("Dun Morogh", {
+	{
+		name = "North Gate Outpost", parent = "Dun Morogh", faction = "Alliance",
+		hook = "The dwarves' furthest north-east post, sitting in the pass to Loch Modan.",
+		lore = {
+			"North Gate Outpost is the north-easternmost dwarven settlement in Dun Morogh, planted in the middle of North Gate Pass, which links this zone with Loch Modan.",
+			"The mountaineers there are not fighting an enemy army. They are keeping the wildlife out of the pass, and some of their own have gone missing in the mountains looking for the larger beasts.",
+			"Young dwarves and gnomes get sent out this way to learn their trade on something that bites back. It is the gentlest frontier in the Eastern Kingdoms and it still costs them people.",
+		},
+		readMore = { "Wowpedia: North Gate Outpost", "Wowpedia: Dun Morogh" },
+	},
+	{
+		name = "South Gate Outpost", parent = "Dun Morogh", faction = "Alliance",
+		hook = "The guard station in South Gate Pass.",
+		lore = {
+			"South Gate Outpost is the post that watches South Gate Pass, the lower of the two routes between Dun Morogh and Loch Modan.",
+			"Two gates, two passes, two outposts. The dwarves hold Khaz Modan by holding the ways through it, and have done since long before the War of the Three Hammers split them.",
+			"This is the busier of the pair, because it is the one closest to Thelsamar, and most traffic between the two zones comes through here.",
+		},
+		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Dun Morogh" },
+	},
+	{
+		name = "South Gate Pass", parent = "Dun Morogh", faction = "Contested",
+		hook = "The Dun Morogh end of the lower pass into Loch Modan.",
+		lore = {
+			"South Gate Pass runs from Dun Morogh's high mountains east into the lower hills of Loch Modan, and this is the western mouth of it.",
+			"It is the pass most travellers use, because it comes out nearest Thelsamar. The South Gate Outpost sits in it, keeping an eye on who goes through.",
+			"Khaz Modan is a mountain range with dwarves in it, and almost every named place here is a way through, a way in, or a post watching one.",
+		},
+		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Thelsamar" },
+	},
+})
+
+SubsOf("Loch Modan", {
+	{
+		name = "South Gate Pass", parent = "Loch Modan", faction = "Contested",
+		hook = "The Loch Modan end of the same pass, nearest Thelsamar.",
+		lore = {
+			"This is the eastern mouth of South Gate Pass, coming out in Loch Modan's lower hills. The other end is up in Dun Morogh.",
+			"Thelsamar is the closest town, which makes this the route most people take between the two zones rather than the higher North Gate Pass.",
+			"Loch Modan is held by the Stonewrought Dam and by these passes. Both are dwarven engineering, and both were designed by Franclorn Forgewright, who was a Dark Iron.",
+		},
+		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Loch Modan", "Wowpedia: Franclorn Forgewright" },
+	},
+})
+
+SubsOf("Elwynn Forest", {
+	{
+		name = "Northshire River", parent = "Elwynn Forest", faction = "Alliance",
+		hook = "The river out of the mountains that becomes Crystal Lake.",
+		lore = {
+			"The Northshire River comes down out of the mountains east of Stormwind, runs through Northshire Valley past the Abbey, and empties into Crystal Lake.",
+			"Every human the Alliance fields from this kingdom starts beside it. Northshire Abbey is where new recruits are taught, the valley is the first ground they walk, and the river is the thing running through all of it.",
+			"The falls near the Abbey are the pleasant part of a zone that also contains the Defias, kobolds in the mines and Hogger. Elwynn is a working forest, not an idyll, but it does have this.",
+		},
+		readMore = { "Wowpedia: Northshire River", "Wowpedia: Northshire Abbey", "Wowpedia: Crystal Lake" },
+	},
+})
+
+SubsOf("Stranglethorn Vale", {
+	{
+		name = "The Crystal Shore", parent = "Stranglethorn Vale", faction = "Contested",
+		hook = "Sandy coast on the cape's south-east, cut off from inland by cliffs.",
+		lore = {
+			"The Crystal Shore follows the cape's south-eastern side, from the Wild Shore up to the cliffs where the cape meets northern Stranglethorn. The South Seas wash against it, and against the eastern beaches of Jaguero Isle across the strait.",
+			"A steep rise separates most of it from the jungle behind, so the beach is its own place rather than an edge of the forest.",
+			"That isolation is why the coast is worth anything to the people using it. Pirates, naga and goblins all want shoreline that the inland cannot easily reach.",
+		},
+		readMore = { "Wowpedia: Crystal Shore", "Wowpedia: Jaguero Isle", "Wowpedia: Stranglethorn Vale" },
+	},
+})
+
+SubsOf("Swamp of Sorrows", {
+	{
+		name = "Misty Reed Strand", parent = "Swamp of Sorrows", faction = "Contested",
+		hook = "The swamp's coastline, and there is almost nothing on it.",
+		lore = {
+			"The Misty Reed Strand is the beach along the Swamp of Sorrows: a long stretch of very little, with driftwood, debris, crocolisks, crabs and murlocs.",
+			"The gloom is the swamp's own. This was good country before the Dark Portal opened inland and the land turned, and the coast went with the rest of it.",
+			"Stonard keeps a picket out towards the southern end at the Misty Reed Post, hoping for a tower. Nothing else is competing for the shoreline.",
+		},
+		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Swamp of Sorrows", "Wowpedia: Stonard" },
 	},
 })
