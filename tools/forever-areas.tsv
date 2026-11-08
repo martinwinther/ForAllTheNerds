@@ -14,11 +14,35 @@
 # exists but whose parent zone differs would show as having one. /ftn areas
 # inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
 #
-# 68 areas, 21 written up, 47 to go. The 47 are NOT written because no source
-# covers them: the names are Forever's own and warcraft.wiki.gg disallows this
-# tooling's user agents, so there is nothing to write from without inventing
-# lore. See the note at the end of tools/npc-ids.md. /ftn areas does this check
-# from inside the game for the whole world, not just these zones.
+# 68 areas, 21 written up, 47 to go.
+#
+# The 47 have no entry because nothing describes them in any data that can be
+# read from here. Checked on 2026-11-08, all via wago.tools, whose robots.txt
+# permits the CSV routes:
+#
+#   AreaTable          names and parents only, which is where these 47 came from
+#   AreaPOI            372 rows, 150 with a description; 0 of the 47 appear, and
+#                      the descriptions are UI strings like "Alliance Controlled"
+#   Map                no description set for any of the four zones
+#   QuestV2            exists, but carries no text columns at all
+#   QuestDescription   absent
+#   GossipText         absent
+#   NPCText            absent
+#   JournalInstance    absent
+#   Achievement        495 rows; the zones are named, none of the 47 are
+#
+# The pattern is consistent and it explains itself: what describes a place in
+# this game is quest text and NPC dialogue, and both live on the server. The
+# client ships the names and not the words.
+#
+# That is NOT the same as "no lore exists". warcraft.wiki.gg has Forever
+# coverage, 259 pages tagged "Added in patch 1.60.1" when last counted, and
+# Wowhead has a /forever/ section. Both disallow this tooling's user agents, so
+# a person with a browser can read what this cannot. The game itself is the
+# other source, and the better one.
+#
+# /ftn areas does the has_entry check from inside the game, for the whole world
+# rather than just these zones.
 zone	area_id	name	has_entry
 Hyjal Crater	17852	Hyjal Crater	no
 Mount Hyjal	17145	Cradle of Tranquility	no

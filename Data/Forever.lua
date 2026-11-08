@@ -19,11 +19,15 @@ local addonName, ns = ...
 --
 -- The SOURCES are. Only the entries below have a name that reaches back to
 -- established pre-WoW or vanilla lore: Malorne, Aviana, the Well of Eternity,
--- the Magram, the Bristleback, Agamaggan, Al'Akir and Skywall. The other 47
--- are Forever's own inventions, and nothing here is written for them, because
--- writing it would mean making it up. That is the one thing this addon cannot
--- afford to do. Fill them in from the game or from a source, with ns.SubsOf --
--- the README's "Adding places" section explains how.
+-- the Magram, the Bristleback, Agamaggan, Al'Akir and Skywall.
+--
+-- For the other 47 the client ships the name and nothing else. Quest text and
+-- NPC dialogue are what describe a place in this game and both are server
+-- side, so no amount of reading client data produces a word about them;
+-- tools/forever-areas.tsv lists the nine tables that were checked. The lore
+-- very likely exists in game and on the wikis. It just has to be read there,
+-- by someone, and written up with ns.SubsOf -- the README's "Adding places"
+-- section explains how. What must not happen is inventing it.
 -- ===========================================================================
 
 local Zone, SubsOf, Instance = ns.Zone, ns.SubsOf, ns.Instance
