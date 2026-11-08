@@ -18,7 +18,7 @@
 # No notes column. tools/places.tsv had one, three of its notes were wrong, and
 # those errors reached finished lore.
 #
-# 214 places still open. 231 when the list was made on 2026-11-09;
+# 202 places still open. 231 when the list was made on 2026-11-09;
 # 17 have been written up since.
 #
 # parent	area_id	name	continent
@@ -31,7 +31,6 @@ Arathi Highlands	322	Blackwater Shipwrecks	Eastern Kingdoms
 Arathi Highlands	323	O'Breen's Camp	Eastern Kingdoms
 Arathi Highlands	328	The Drowned Reef	Eastern Kingdoms
 Arathi Highlands	326	The Sanctum	Eastern Kingdoms
-Arathi Highlands	325	The Tower of Arathor	Eastern Kingdoms
 Badlands	343	Camp Wurg	Eastern Kingdoms
 Badlands	1897	The Maker's Terrace	Eastern Kingdoms
 Burning Steppes	16739	Poacher's Den	Eastern Kingdoms
@@ -54,7 +53,6 @@ Duskwood	32	The Cemetary	Eastern Kingdoms
 Duskwood	244	The Whipple Estate	Eastern Kingdoms
 Duskwood	13	The World Tree	Eastern Kingdoms
 Eastern Plaguelands	2272	Northdale	Eastern Kingdoms
-Eastern Plaguelands	2626	Terrorweb Tunnel	Eastern Kingdoms
 Elwynn Forest	23	Northshire River	Eastern Kingdoms
 Elwynn Forest	80	Stormwind Mountains	Eastern Kingdoms
 Elwynn Forest	64	The Maclure Vineyards	Eastern Kingdoms
@@ -86,8 +84,6 @@ Silverpine Forest	232	The Dawning Isles	Eastern Kingdoms
 Silverpine Forest	927	The Shining Strand	Eastern Kingdoms
 Stormwind City	17203	Stormwind Harbor	Eastern Kingdoms
 Stranglethorn Vale	2177	Battle Ring	Eastern Kingdoms
-Stranglethorn Vale	7	Blackwater Cove	Eastern Kingdoms
-Stranglethorn Vale	477	Ruins of Jubuwal	Eastern Kingdoms
 Stranglethorn Vale	303	Shell Beach	Eastern Kingdoms
 Stranglethorn Vale	1578	Southern Savage Coast	Eastern Kingdoms
 Stranglethorn Vale	1742	Spirit Den	Eastern Kingdoms
@@ -107,13 +103,11 @@ The Hinterlands	1880	Featherbeard's Hovel	Eastern Kingdoms
 The Hinterlands	16740	Martsirt	Eastern Kingdoms
 The Hinterlands	1881	Shindigger's Camp	Eastern Kingdoms
 The Hinterlands	349	Wildhammer Keep	Eastern Kingdoms
-Tirisfal Glades	158	Agamand Family Crypt	Eastern Kingdoms
 Tirisfal Glades	16602	Bandarion Keep	Eastern Kingdoms
 Tirisfal Glades	2118	Brill Town Hall	Eastern Kingdoms
 Tirisfal Glades	167	Crusader Outpost	Eastern Kingdoms
 Tirisfal Glades	2119	Gallows' End Tavern	Eastern Kingdoms
 Tirisfal Glades	163	Gunther's Retreat	Eastern Kingdoms
-Tirisfal Glades	2117	Shadow Grave	Eastern Kingdoms
 Tirisfal Glades	16881	Shadowvale	Eastern Kingdoms
 Tirisfal Glades	810	Stillwater Pond	Eastern Kingdoms
 Tirisfal Glades	168	The North Coast	Eastern Kingdoms
@@ -130,14 +124,12 @@ Wetlands	2104	Deepwater Tavern	Eastern Kingdoms
 Wetlands	17716	Dragonmaw Retreat	Eastern Kingdoms
 Wetlands	17738	The Drunken Dwarf	Eastern Kingdoms
 Ashenvale	2357	Bloodtooth Camp	Kalimdor
-Ashenvale	436	Demon Fall Ridge	Kalimdor
 Ashenvale	433	Falfarren River	Kalimdor
 Ashenvale	2358	Forest Song	Kalimdor
 Ashenvale	2637	Kargathia Keep	Kalimdor
 Ashenvale	425	Moonwell	Kalimdor
 Ashenvale	420	Silverwind Refuge	Kalimdor
 Ashenvale	2360	Silverwing Outpost	Kalimdor
-Ashenvale	432	The Dor'Danil Barrow Den	Kalimdor
 Ashenvale	412	The Ruins of Ordil'Aran	Kalimdor
 Ashenvale	427	The Shady Nook	Kalimdor
 Ashenvale	1276	The Talondeep Path	Kalimdor
@@ -153,14 +145,12 @@ Azshara	1256	The Ruined Reaches	Kalimdor
 Azshara	1217	Vanndir Encampment	Kalimdor
 Darkshore	2078	Twilight Shore	Kalimdor
 Desolace	2217	Broken Spear Village	Kalimdor
-Desolace	597	Ghost Walker Post	Kalimdor
 Desolace	2617	Scrabblescrew's Camp	Kalimdor
 Desolace	2198	Shadowbreak Ravine	Kalimdor
 Durotar	393	Darkspear Strand	Kalimdor
 Durotar	371	Dustwind Cave	Kalimdor
 Durotar	638	Hidden Path	Kalimdor
 Durotar	1297	Jaggedswine Farm	Kalimdor
-Durotar	2337	Razor Hill Barracks	Kalimdor
 Durotar	410	Razorwind Canyon	Kalimdor
 Durotar	640	Shrine of the Dormant Flame	Kalimdor
 Durotar	639	Spirit Rock	Kalimdor
@@ -202,7 +192,6 @@ Shen'dralas	16742	Forlorn Gardens	Kalimdor
 Silithus	3257	Bones of Grakkarond	Kalimdor
 Silithus	3100	Ravaged Twilight Camp	Kalimdor
 Silithus	3097	The Swarming Pillar	Kalimdor
-Silithus	3099	Twilight Outpost	Kalimdor
 Silithus	3098	Twilight Post	Kalimdor
 Silithus	3446	Twilight's Run	Kalimdor
 Stonetalon Mountains	3157	Boulderslide Cavern	Kalimdor
@@ -222,7 +211,6 @@ The Barrens	458	Gold Road	Kalimdor
 The Barrens	1702	Honor's Stand	Kalimdor
 The Barrens	1599	Mor'shan Base Camp	Kalimdor
 The Barrens	1697	Raptor Grounds	Kalimdor
-The Barrens	2757	Shrine of the Fallen Warrior	Kalimdor
 The Barrens	1156	Southern Barrens	Kalimdor
 The Barrens	1703	The Mor'shan Rampart	Kalimdor
 Thousand Needles	2238	Gornia	Kalimdor

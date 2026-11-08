@@ -2387,3 +2387,75 @@ SubsOf("Wetlands", {
 		readMore = { "Wowpedia: Menethil Harbor", "Wowpedia: Terenas Menethil II", "Wowpedia: Arthas Menethil" },
 	},
 })
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "Shadow Grave", parent = "Tirisfal Glades", faction = "Horde",
+		hook = "The crypt in the Deathknell graves where the Forsaken wake up.",
+		lore = {
+			"Shadow Grave sits at the top of a slope in the graves above Deathknell, with a path running down into the village. New Forsaken wake in here.",
+			"That is the whole of the Forsaken condition in one room. They were buried as Lordaeron's dead, raised by the Scourge as its property, and then freed when Sylvanas Windrunner broke the Lich King's hold on a part of his own army.",
+			"Free is a strained word for it. They remember who they were, their families are alive and want nothing to do with them, and the Church of the Holy Light considers them an abomination. Waking in a crypt is the gentlest part of the arrangement.",
+		},
+		readMore = { "Wowpedia: Deathknell", "Wowpedia: Forsaken", "Wowpedia: Sylvanas Windrunner" },
+	},
+	{
+		name = "Agamand Family Crypt", parent = "Tirisfal Glades", faction = "Hostile",
+		hook = "A farming family's tomb, with the family still in it and still moving.",
+		lore = {
+			"The Agamands held the mills north of Brill for generations, and the crypt is where they buried their own. The Scourge came through Tirisfal and raised the lot of them.",
+			"They are hostile to the Forsaken, which is the detail worth knowing. Not every corpse the Scourge raised was freed when Sylvanas broke away, and the ones still under the Lich King's will treat the Forsaken as traitors.",
+			"So the first enemies most Forsaken fight are their own neighbours' dead.",
+		},
+		readMore = { "Wowpedia: Agamand Mills", "Wowpedia: Scourge" },
+	},
+})
+
+SubsOf("Eastern Plaguelands", {
+	{
+		name = "Terrorweb Tunnel", parent = "Eastern Plaguelands", faction = "Hostile",
+		hook = "A tunnel full of nerubians, running under the mountain from Terrordale to the river.",
+		lore = {
+			"The tunnel runs through the mountain north-west of Terrordale and comes out south at the Thondroril River. What is inside it is crypt fiends, which is to say nerubians.",
+			"The nerubians are not Lordaeron's dead. They were a civilisation of their own in Northrend, old and organised, with a subterranean empire called Azjol-Nerub. The Lich King made war on them and won, and the ones in this tunnel are what he turned them into.",
+			"Their presence this far south says something about how far the Scourge reaches. Naxxramas hangs over these lands, and the army under it was assembled from more than one conquered people.",
+		},
+		readMore = { "Wowpedia: Terrorweb Tunnel", "Wowpedia: Nerubian", "Wowpedia: Azjol-Nerub" },
+	},
+})
+
+SubsOf("Arathi Highlands", {
+	{
+		name = "The Tower of Arathor", parent = "Arathi Highlands", faction = "Alliance",
+		hook = "A tower named for the empire every human kingdom broke off from.",
+		lore = {
+			"Arathor was the first human nation, founded at Strom when the scattered tribes united under the Arathi. Every human kingdom since is a piece of it: Stormwind, Lordaeron, Alterac, Gilneas, Kul Tiras and Dalaran were all Arathorian colonies that outgrew the parent.",
+			"Strom became Stromgarde, and Stromgarde is a ruin in these highlands held in three parts by its own army, the Syndicate and the Boulderfist ogres. The kingdom that invented human unity could not hold its own capital.",
+			"Arathor's other legacy is the magi. The Arathi taught high elves' magic to a hundred selected humans and founded Dalaran on the result, and that bargain is behind a great deal of what followed.",
+		},
+		readMore = { "Wowpedia: Arathor", "Wowpedia: Stromgarde", "Wowpedia: Strom" },
+	},
+})
+
+SubsOf("Stranglethorn Vale", {
+	{
+		name = "Blackwater Cove", parent = "Stranglethorn Vale", faction = "Hostile",
+		hook = "A pirate anchorage on a coast where every other power has already failed.",
+		lore = {
+			"The Blackwater Raiders work this coast, and Stranglethorn suits them: dense jungle, no government, and a neutral goblin port at Booty Bay buying whatever comes in without asking.",
+			"Piracy here is a symptom. Stranglethorn was Gurubashi troll empire, then it was Stormwind's southern frontier, and now it is neither. Nobody's writ runs in the jungle, so everybody's does.",
+			"The Raiders are not even the only pirates. The Bloodsail Buccaneers are also on this coast and the two outfits hate each other considerably more than either hates a traveller.",
+		},
+		readMore = { "Wowpedia: Blackwater Raiders", "Wowpedia: Stranglethorn Vale" },
+	},
+	{
+		name = "Ruins of Jubuwal", parent = "Stranglethorn Vale", faction = "Contested",
+		hook = "Gurubashi stonework on the coast, from an empire that covered this whole jungle.",
+		lore = {
+			"The Gurubashi were the great troll empire of the south, and Stranglethorn was the heart of it. The ruins scattered through this jungle are all theirs, and there are a great many of them.",
+			"What broke the empire was internal. The Gurubashi split in a war over the worship of Hakkar the Soulflayer, a blood god the Atal'ai priesthood wanted to summon bodily into the world. The empire tore itself apart over it and the Atal'ai were exiled.",
+			"They did not give up. The Temple of Atal'Hakkar in the Swamp of Sorrows was their attempt at finishing the job, and Zul'Gurub is where the argument was finally won by the wrong side.",
+		},
+		readMore = { "Wowpedia: Gurubashi", "Wowpedia: Hakkar the Soulflayer", "Wowpedia: Atal'ai" },
+	},
+})

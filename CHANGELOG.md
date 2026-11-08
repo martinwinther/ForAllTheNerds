@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.2
 
 **Added**
 
@@ -12,12 +12,16 @@
 - The Zephras Isle write-up was wrong and has been redone. The Skyborne are
   exiles from Eldre'Thalas, which is Dire Maul, and the wind spirits who raised
   their island into the sky have since disappeared.
-- 17 more places across the old world, found by checking every area name the
+- 29 more places across the old world, found by checking every area name the
   game knows against what was written: Darrowshire, Faol's Rest, Fenris Keep,
   Anvilmar, Ravenholdt Manor, the Old Dalaran Ruins and Menethil Keep in the
   Eastern Kingdoms; the Temple of Zin-Malor, Bael Modan, the Shady Rest Inn,
   Emberstrife's Den, Uldum, the Dream Bough, the Maul, the Valley of Spears,
-  Kolkar Village and the Den in Kalimdor.
+  Kolkar Village and the Den in Kalimdor. Then Shadow Grave, the Agamand Family
+  Crypt, the Terrorweb Tunnel, the Tower of Arathor, Blackwater Cove and the
+  Ruins of Jubuwal; and Demon Fall Ridge, the Dor'Danil Barrow Den, the Shrine
+  of the Fallen Warrior, the Twilight Outpost, Ghost Walker Post and the Razor
+  Hill Barracks.
 - Four places that were missing and should not have been: the Deeprun Tram, the
   Gates of Ahn'Qiraj, Champions' Hall and the Hall of Legends. The Tram was
   mentioned in six other write-ups and had none of its own, and the addon had

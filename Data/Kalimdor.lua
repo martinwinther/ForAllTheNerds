@@ -2099,3 +2099,78 @@ SubsOf("Durotar", {
 		readMore = { "Wowpedia: Durotar", "Wowpedia: Thrall", "Wowpedia: Durotan" },
 	},
 })
+
+SubsOf("Ashenvale", {
+	{
+		name = "Demon Fall Ridge", parent = "Ashenvale", faction = "Hostile",
+		hook = "Demon-held ground above Demon Fall Canyon, with a dreadlord at the bottom of a barrow den.",
+		lore = {
+			"The ridge sits west and above Demon Fall Canyon, and it is held by lesser demons, outside on the slopes and inside an abandoned barrow den cut into the side of it. Diathorus the Seeker is down in the deepest part: a dreadlord, and the one the demons in Ashenvale answer to.",
+			"Dreadlords are nathrezim, and they do not fight wars so much as arrange them. They were the Legion's agents inside the Scourge, and Tichondrius was the one riding Arthas.",
+			"A barrow den is the worst possible place to find them. Those are druidic, dug for sleeping in, and something has made itself at home in one.",
+		},
+		readMore = { "Wowpedia: Demon Fall Ridge", "Wowpedia: Nathrezim", "Wowpedia: Barrow Dens" },
+	},
+	{
+		name = "The Dor'Danil Barrow Den", parent = "Ashenvale", faction = "Hostile",
+		hook = "A barrow den where the sleepers did not wake well.",
+		lore = {
+			"Barrow dens are where night elf druids sleep, and sleeping is not a figure of speech for them: the body stays in the den for years or centuries while the druid walks the Emerald Dream.",
+			"That is the arrangement Malfurion Stormrage made and the reason he has been absent from his own people's history for most of it. The dens were built on the assumption that someone would be awake to guard the ones who were not.",
+			"Something has gone wrong in the Dream. The sleepers in these dens have been disturbed by it, and Dor'Danil is one of the places where that shows.",
+		},
+		readMore = { "Wowpedia: Dor'Danil Barrow Den", "Wowpedia: Emerald Dream", "Wowpedia: Malfurion Stormrage" },
+	},
+})
+
+SubsOf("The Barrens", {
+	{
+		name = "Shrine of the Fallen Warrior", parent = "The Barrens", faction = "Neutral",
+		hook = "A memorial on a hill west of the Crossroads, and the only one here that is not fiction.",
+		lore = {
+			"This one is not lore. The Shrine of the Fallen Warrior is a real memorial, raised in the game for Michel Koiter, an artist who worked on World of Warcraft and died before it was released.",
+			"The orc figure on the hill is his own beta character, copied exactly, and the initials MK are cut into the base of the obelisk. A spirit healer named Koiter stands in front of it.",
+			"Everything else this addon has to say about the Barrens is made up by somebody. This is the one place in the zone where the grief is real, and it seemed worth saying so rather than inventing a story for it.",
+		},
+		readMore = { "Wowpedia: Shrine of the Fallen Warrior" },
+	},
+})
+
+SubsOf("Silithus", {
+	{
+		name = "Twilight Outpost", parent = "Silithus", faction = "Hostile",
+		hook = "A Twilight's Hammer camp in the desert, dug in over something they want let out.",
+		lore = {
+			"The Twilight's Hammer began as a Horde clan under Cho'gall in the Second War. What they are now is a doomsday cult that serves the Old Gods, and Silithus is where they have concentrated.",
+			"The reason is underneath. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans could not kill and settled for burying, and the qiraji are its army. The cult is not here to fight the qiraji.",
+			"Their presence is the strongest argument anybody has for reopening the gates deliberately rather than waiting to see what comes through them. It is not a comfortable argument.",
+		},
+		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: C'Thun", "Wowpedia: Ahn'Qiraj" },
+	},
+})
+
+SubsOf("Desolace", {
+	{
+		name = "Ghost Walker Post", parent = "Desolace", faction = "Horde",
+		hook = "A tauren camp in the worst country on the continent.",
+		lore = {
+			"Desolace earns the name. It is grey, broken, mostly dead ground, fought over by centaur clans who have been killing each other since their founding.",
+			"The tauren are here anyway, and the reason is partly that the centaur are. Generations of centaur raiding drove the tauren across Kalimdor, and a camp in Desolace is a people who have decided to stop retreating.",
+			"The Burning Blade and the Kolkar both hold ground within reach of the post, and neither is a problem that gets solved so much as held at arm's length.",
+		},
+		readMore = { "Wowpedia: Ghost Walker Post", "Wowpedia: Tauren", "Wowpedia: Centaur" },
+	},
+})
+
+SubsOf("Durotar", {
+	{
+		name = "Razor Hill Barracks", parent = "Durotar", faction = "Horde",
+		hook = "Where Durotar's defence is organised, which in this zone is not ceremonial.",
+		lore = {
+			"Razor Hill is the first real town new orcs reach, and the barracks is the part of it that matters. Durotar is bordered by the Kolkar centaur, harassed by the Burning Blade, and sits across a strait from a human city.",
+			"The Burning Blade is the serious problem. They are orcs who kept the demonic bargain after Thrall renounced it, and a clan that still drinks from the Legion's cup inside his own borders is a direct challenge to what the new Horde claims to be.",
+			"Thrall's whole case is that the orcs are no longer what Gul'dan made them. Durotar contains the counterexample.",
+		},
+		readMore = { "Wowpedia: Razor Hill", "Wowpedia: Burning Blade clan", "Wowpedia: Thrall" },
+	},
+})
