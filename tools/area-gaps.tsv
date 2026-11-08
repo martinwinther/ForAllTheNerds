@@ -1,0 +1,254 @@
+# Vanilla places the client names that this addon has nothing for.
+#
+# From AreaTable (product wowf, build 1.60.1.70862, read 2026-11-09 via
+# wago.tools) matched against every name the addon answers to, aliases
+# included. These are CHILD areas: subzones, which GetSubZoneText returns.
+# tools/area-sweep.md covers the top-level ones and says what was excluded.
+#
+# Excluded from this list and counted in area-sweep.md: dungeon and instance
+# interiors, battleground internals, open water, post-vanilla maps such as
+# Gilneas, and the Wrath death-knight content sitting inside Eastern
+# Plaguelands. What is left is the vanilla overworld on both continents.
+#
+# Some of these will be spelling variants of entries that already exist --
+# "The Cemetary" against Raven Hill Cemetery, say -- so treat the count as an
+# upper bound until each is checked. /ftn areas in game uses the real resolver
+# and is the authority.
+#
+# No notes column. tools/places.tsv had one, three of its notes were wrong, and
+# those errors reached finished lore.
+#
+# 231 places, under 44 parent zones.
+#
+# parent	area_id	name	continent
+Alterac Mountains	1682	Dandred's Fold	Eastern Kingdoms
+Alterac Mountains	1677	Gavin's Naze	Eastern Kingdoms
+Alterac Mountains	17707	Old Dalaran Ruins	Eastern Kingdoms
+Alterac Mountains	3486	Ravenholdt Manor	Eastern Kingdoms
+Alterac Mountains	277	The Foothill Caverns	Eastern Kingdoms
+Alterac Mountains	1680	The Headland	Eastern Kingdoms
+Arathi Highlands	322	Blackwater Shipwrecks	Eastern Kingdoms
+Arathi Highlands	323	O'Breen's Camp	Eastern Kingdoms
+Arathi Highlands	328	The Drowned Reef	Eastern Kingdoms
+Arathi Highlands	326	The Sanctum	Eastern Kingdoms
+Arathi Highlands	325	The Tower of Arathor	Eastern Kingdoms
+Badlands	343	Camp Wurg	Eastern Kingdoms
+Badlands	1897	The Maker's Terrace	Eastern Kingdoms
+Burning Steppes	16739	Poacher's Den	Eastern Kingdoms
+Burning Steppes	2419	Slither Rock	Eastern Kingdoms
+Dalaran	17824	The Eventide	Eastern Kingdoms
+Deadwind Pass	2560	Ariden's Camp	Eastern Kingdoms
+Deadwind Pass	2697	Deadman's Crossing	Eastern Kingdoms
+Deadwind Pass	2937	Grosh'gok Compound	Eastern Kingdoms
+Deadwind Pass	2938	Sleeping Gorge	Eastern Kingdoms
+Deadwind Pass	2837	The Master's Cellar	Eastern Kingdoms
+Dun Morogh	77	Anvilmar	Eastern Kingdoms
+Dun Morogh	716	Ironband's Compound	Eastern Kingdoms
+Dun Morogh	16741	Ironforge Submarine Facility	Eastern Kingdoms
+Dun Morogh	808	North Gate Outpost	Eastern Kingdoms
+Dun Morogh	806	South Gate Outpost	Eastern Kingdoms
+Dun Morogh	805	South Gate Pass	Eastern Kingdoms
+Dun Morogh	189	Steelgrill's Depot	Eastern Kingdoms
+Duskwood	243	Forlorn Rowe	Eastern Kingdoms
+Duskwood	2161	Roland's Doom	Eastern Kingdoms
+Duskwood	32	The Cemetary	Eastern Kingdoms
+Duskwood	244	The Whipple Estate	Eastern Kingdoms
+Duskwood	13	The World Tree	Eastern Kingdoms
+Eastern Plaguelands	2262	Darrowshire	Eastern Kingdoms
+Eastern Plaguelands	2272	Northdale	Eastern Kingdoms
+Eastern Plaguelands	2626	Terrorweb Tunnel	Eastern Kingdoms
+Elwynn Forest	23	Northshire River	Eastern Kingdoms
+Elwynn Forest	80	Stormwind Mountains	Eastern Kingdoms
+Elwynn Forest	64	The Maclure Vineyards	Eastern Kingdoms
+Elwynn Forest	63	The Stonefield Farm	Eastern Kingdoms
+Hillsbrad Foothills	287	Hillsbrad	Eastern Kingdoms
+Loch Modan	145	Algaz Gate	Eastern Kingdoms
+Loch Modan	839	South Gate Pass	Eastern Kingdoms
+Loch Modan	2101	Stoutlager Inn	Eastern Kingdoms
+Redridge Mountains	1000	Galardell Valley	Eastern Kingdoms
+Redridge Mountains	95	Redridge Canyons	Eastern Kingdoms
+Redridge Mountains	998	Render's Rock	Eastern Kingdoms
+Redridge Mountains	2099	Stonewatch Keep	Eastern Kingdoms
+Redridge Mountains	999	Stonewatch Tower	Eastern Kingdoms
+Riverglades	17808	Ashwood's Fall	Eastern Kingdoms
+Riverglades	16728	Eastwind Shore	Eastern Kingdoms
+Riverglades	16734	Elbrim's Farm	Eastern Kingdoms
+Riverglades	17809	Forlorn Pit	Eastern Kingdoms
+Riverglades	16744	Southern Watch	Eastern Kingdoms
+Riverglades	16729	Terral's Watch	Eastern Kingdoms
+Riverglades	16736	Turner's Logging Camp	Eastern Kingdoms
+Riverglades	17847	Twilight Hollow	Eastern Kingdoms
+Riverglades	16725	Wheeler's Grange	Eastern Kingdoms
+Searing Gorge	2838	Stonewrought Pass	Eastern Kingdoms
+Searing Gorge	15159	The Searing Basin	Eastern Kingdoms
+Silverpine Forest	926	Bucklebree Farm	Eastern Kingdoms
+Silverpine Forest	235	Fenris Keep	Eastern Kingdoms
+Silverpine Forest	305	North Tide's Run	Eastern Kingdoms
+Silverpine Forest	306	South Tide's Run	Eastern Kingdoms
+Silverpine Forest	232	The Dawning Isles	Eastern Kingdoms
+Silverpine Forest	927	The Shining Strand	Eastern Kingdoms
+Stormwind City	17203	Stormwind Harbor	Eastern Kingdoms
+Stranglethorn Vale	2177	Battle Ring	Eastern Kingdoms
+Stranglethorn Vale	7	Blackwater Cove	Eastern Kingdoms
+Stranglethorn Vale	477	Ruins of Jubuwal	Eastern Kingdoms
+Stranglethorn Vale	303	Shell Beach	Eastern Kingdoms
+Stranglethorn Vale	1578	Southern Savage Coast	Eastern Kingdoms
+Stranglethorn Vale	1742	Spirit Den	Eastern Kingdoms
+Stranglethorn Vale	17853	Sunken Hollow	Eastern Kingdoms
+Stranglethorn Vale	1757	The Crimson Veil	Eastern Kingdoms
+Stranglethorn Vale	302	The Crystal Shore	Eastern Kingdoms
+Stranglethorn Vale	1759	The Damsel's Luck	Eastern Kingdoms
+Stranglethorn Vale	1758	The Riptide	Eastern Kingdoms
+Stranglethorn Vale	1760	Venture Co. Operations Center	Eastern Kingdoms
+Stranglethorn Vale	43	Wild Shore	Eastern Kingdoms
+Stranglethorn Vale	3357	Yojamba Isle	Eastern Kingdoms
+Swamp of Sorrows	1978	Misty Reed Post	Eastern Kingdoms
+Swamp of Sorrows	300	Misty Reed Strand	Eastern Kingdoms
+Swamp of Sorrows	1817	Stagalbog Cave	Eastern Kingdoms
+Swamp of Sorrows	657	The Harborage	Eastern Kingdoms
+The Hinterlands	1880	Featherbeard's Hovel	Eastern Kingdoms
+The Hinterlands	16740	Martsirt	Eastern Kingdoms
+The Hinterlands	1881	Shindigger's Camp	Eastern Kingdoms
+The Hinterlands	349	Wildhammer Keep	Eastern Kingdoms
+Tirisfal Glades	158	Agamand Family Crypt	Eastern Kingdoms
+Tirisfal Glades	16602	Bandarion Keep	Eastern Kingdoms
+Tirisfal Glades	2118	Brill Town Hall	Eastern Kingdoms
+Tirisfal Glades	167	Crusader Outpost	Eastern Kingdoms
+Tirisfal Glades	173	Faol's Rest	Eastern Kingdoms
+Tirisfal Glades	2119	Gallows' End Tavern	Eastern Kingdoms
+Tirisfal Glades	163	Gunther's Retreat	Eastern Kingdoms
+Tirisfal Glades	2117	Shadow Grave	Eastern Kingdoms
+Tirisfal Glades	16881	Shadowvale	Eastern Kingdoms
+Tirisfal Glades	810	Stillwater Pond	Eastern Kingdoms
+Tirisfal Glades	168	The North Coast	Eastern Kingdoms
+Tirisfal Glades	16616	Whispering Forest	Eastern Kingdoms
+Tirisfal Glades	169	Whispering Shore	Eastern Kingdoms
+Western Plaguelands	3197	Chillwind Camp	Eastern Kingdoms
+Western Plaguelands	193	Ruins of Andorhal	Eastern Kingdoms
+Western Plaguelands	195	School of Necromancy	Eastern Kingdoms
+Westfall	26	Lighthouse	Eastern Kingdoms
+Westfall	1518	Not Used Deadmines	Eastern Kingdoms
+Westfall	919	Stendel's Pond	Eastern Kingdoms
+Wetlands	298	Baradin Bay	Eastern Kingdoms
+Wetlands	2104	Deepwater Tavern	Eastern Kingdoms
+Wetlands	17716	Dragonmaw Retreat	Eastern Kingdoms
+Wetlands	2103	Menethil Keep	Eastern Kingdoms
+Wetlands	17738	The Drunken Dwarf	Eastern Kingdoms
+Ashenvale	2357	Bloodtooth Camp	Kalimdor
+Ashenvale	436	Demon Fall Ridge	Kalimdor
+Ashenvale	433	Falfarren River	Kalimdor
+Ashenvale	2358	Forest Song	Kalimdor
+Ashenvale	2637	Kargathia Keep	Kalimdor
+Ashenvale	425	Moonwell	Kalimdor
+Ashenvale	420	Silverwind Refuge	Kalimdor
+Ashenvale	2360	Silverwing Outpost	Kalimdor
+Ashenvale	432	The Dor'Danil Barrow Den	Kalimdor
+Ashenvale	412	The Ruins of Ordil'Aran	Kalimdor
+Ashenvale	427	The Shady Nook	Kalimdor
+Ashenvale	1276	The Talondeep Path	Kalimdor
+Ashenvale	414	The Zoram Strand	Kalimdor
+Ashenvale	3177	Warsong Labor Camp	Kalimdor
+Ashenvale	429	Xavian	Kalimdor
+Azshara	1219	Legashi Encampment	Kalimdor
+Azshara	16234	Legashi Stronghold	Kalimdor
+Azshara	3138	Rethress Sanctum	Kalimdor
+Azshara	3140	Scalebeard's Cave	Kalimdor
+Azshara	1223	Temple of Zin-Malor	Kalimdor
+Azshara	16577	Thalassian Vanguard Camp	Kalimdor
+Azshara	1256	The Ruined Reaches	Kalimdor
+Azshara	1217	Vanndir Encampment	Kalimdor
+Darkshore	2078	Twilight Shore	Kalimdor
+Desolace	2217	Broken Spear Village	Kalimdor
+Desolace	597	Ghost Walker Post	Kalimdor
+Desolace	609	Kolkar Village	Kalimdor
+Desolace	2617	Scrabblescrew's Camp	Kalimdor
+Desolace	2198	Shadowbreak Ravine	Kalimdor
+Desolace	607	Valley of Spears	Kalimdor
+Durotar	393	Darkspear Strand	Kalimdor
+Durotar	371	Dustwind Cave	Kalimdor
+Durotar	638	Hidden Path	Kalimdor
+Durotar	1297	Jaggedswine Farm	Kalimdor
+Durotar	2337	Razor Hill Barracks	Kalimdor
+Durotar	410	Razorwind Canyon	Kalimdor
+Durotar	640	Shrine of the Dormant Flame	Kalimdor
+Durotar	639	Spirit Rock	Kalimdor
+Durotar	364	The Den	Kalimdor
+Dustwallow Marsh	498	Bloodfen Burrow	Kalimdor
+Dustwallow Marsh	516	Dustwallow Bay	Kalimdor
+Dustwallow Marsh	2158	Emberstrife's Den	Kalimdor
+Dustwallow Marsh	514	Foothold Citadel	Kalimdor
+Dustwallow Marsh	515	Ironclad Prison	Kalimdor
+Dustwallow Marsh	500	Moggle Point	Kalimdor
+Dustwallow Marsh	403	Shady Rest Inn	Kalimdor
+Dustwallow Marsh	497	Swamplight Manor	Kalimdor
+Dustwallow Marsh	517	Tidefury Cove	Kalimdor
+Dustwallow Marsh	505	West Point Tower	Kalimdor
+Felwood	1765	Bloodvenom Falls	Kalimdor
+Felwood	2480	Jadefire Glen	Kalimdor
+Felwood	1771	Shrine of the Deceiver	Kalimdor
+Feralas	1111	Dream Bough	Kalimdor
+Feralas	1109	East Pillar	Kalimdor
+Feralas	1136	High Wilderness	Kalimdor
+Feralas	1104	Mok'Gordun	Kalimdor
+Feralas	1113	Oneiros	Kalimdor
+Feralas	3117	Shalzaru's Lair	Kalimdor
+Feralas	3217	The Maul	Kalimdor
+Feralas	1101	The Writhing Deep	Kalimdor
+Feralas	1110	West Pillar	Kalimdor
+Feralas	1102	Wildwind Lake	Kalimdor
+Feralas	2520	Woodpaw Den	Kalimdor
+Mount Hyjal	17145	Cradle of Tranquility	Kalimdor
+Mount Hyjal	16866	Dae'gun	Kalimdor
+Mount Hyjal	16848	Elderwild	Kalimdor
+Mount Hyjal	16868	Mourning's Rest	Kalimdor
+Mulgore	404	Bael'dun Digsite	Kalimdor
+Mulgore	471	Brave Wind Mesa	Kalimdor
+Mulgore	17223	Camp Gev'rek	Kalimdor
+Mulgore	472	Fire Stone Mesa	Kalimdor
+Mulgore	474	Galak Camp	Kalimdor
+Mulgore	17044	Gloomrise	Kalimdor
+Mulgore	637	Kodo Rock	Kalimdor
+Mulgore	473	Mantle Rock	Kalimdor
+Mulgore	399	Skyline Ridge	Kalimdor
+Mulgore	17045	Skywatcher Plateau	Kalimdor
+Shen'dralas	16742	Forlorn Gardens	Kalimdor
+Silithus	3257	Bones of Grakkarond	Kalimdor
+Silithus	3100	Ravaged Twilight Camp	Kalimdor
+Silithus	3097	The Swarming Pillar	Kalimdor
+Silithus	3099	Twilight Outpost	Kalimdor
+Silithus	3098	Twilight Post	Kalimdor
+Silithus	3446	Twilight's Run	Kalimdor
+Stonetalon Mountains	3157	Boulderslide Cavern	Kalimdor
+Stonetalon Mountains	469	Greatwood Vale	Kalimdor
+Stonetalon Mountains	2541	Sishir Canyon	Kalimdor
+Stonetalon Mountains	1277	The Talondeep Path	Kalimdor
+Stonetalon Mountains	466	Valley of the Bloodfuries	Kalimdor
+Stonetalon Mountains	2160	Windshear Mine	Kalimdor
+Tanaris	2300	Caverns of Time	Kalimdor
+Tanaris	991	Gunstan's Post	Kalimdor
+Tanaris	1940	Southbreak Shore	Kalimdor
+Tanaris	2857	The Rumble Cage	Kalimdor
+Tanaris	989	Uldum	Kalimdor
+Teldrassil	256	Aldrassil	Kalimdor
+Teldrassil	264	The Oracle Glade	Kalimdor
+The Barrens	359	Bael Modan	Kalimdor
+The Barrens	720	Fray Island	Kalimdor
+The Barrens	458	Gold Road	Kalimdor
+The Barrens	1702	Honor's Stand	Kalimdor
+The Barrens	1599	Mor'shan Base Camp	Kalimdor
+The Barrens	1697	Raptor Grounds	Kalimdor
+The Barrens	2757	Shrine of the Fallen Warrior	Kalimdor
+The Barrens	1156	Southern Barrens	Kalimdor
+The Barrens	1703	The Mor'shan Rampart	Kalimdor
+Thousand Needles	2238	Gornia	Kalimdor
+Thousand Needles	17052	Scalding Ridge	Kalimdor
+Thousand Needles	1557	Splithoof Hold	Kalimdor
+Thousand Needles	3039	Tahonda Ruins	Kalimdor
+Thousand Needles	479	The Rustmaul Dig Site	Kalimdor
+Thousand Needles	488	The Weathered Nook	Kalimdor
+Thousand Needles	2239	Zane's Eye Crater	Kalimdor
+Thunder Bluff	2197	The Pools of Vision	Kalimdor
+Un'Goro Crater	16986	Pillar of Assimilation	Kalimdor
+Un'Goro Crater	16637	Stomping Grounds	Kalimdor
+Winterspring	3139	Moon Horror Den	Kalimdor
+Winterspring	2252	The Ruins of Kel'Theril	Kalimdor

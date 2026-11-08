@@ -64,6 +64,40 @@ None of the four has a child area in `AreaTable`: nothing points at 2257, 3478,
 exemption is by name and narrow, and the check still fires for a zone that is
 genuinely thin.
 
+## The subzones, which the first sweep did not cover
+
+The sweep above only looked at the 189 top-level areas. That was too narrow to
+answer "is anything missing", because 1,215 of the 1,404 named areas are
+children, and `GetSubZoneText` returns those.
+
+Swept on the same data: **396 child areas have no entry**, after dev leftovers.
+Accounted for as:
+
+| | Count |
+|---|---|
+| Inside a dungeon or instance | 78 |
+| Battleground internals (Alterac Valley, Arathi Basin, Warsong Gulch) | 37 |
+| On a post-vanilla map (Gilneas, Scarlet Enclave, Caverns of Time) | 26 |
+| Open water | 18 |
+| Wrath death-knight content inside Eastern Plaguelands | 6 |
+| **In scope: the vanilla overworld, both continents** | **231** |
+
+The 231 are in `tools/area-gaps.tsv`, under 44 parent zones. Ashenvale has 15,
+Stranglethorn Vale 14, Tirisfal Glades 13.
+
+They are not building interiors. A sample of what is in there: Darrowshire,
+Ravenholdt Manor, the Old Dalaran Ruins, the Shady Rest Inn, Uldum, the Temple
+of Zin-Malor, the Shrine of the Fallen Warrior, Bael Modan, The Maul, Fenris
+Keep, Stonewatch Keep, the Tower of Arathor, Menethil Keep, Anvilmar, the
+Agamand Family Crypt, Faol's Rest, Emberstrife's Den, Forest Song, Dream Bough
+and Oneiros. Several of those carry more vanilla lore than places already
+written up.
+
+Treat 231 as an upper bound. Some will be spelling variants of entries that
+exist, and a name match cannot tell: "The Cemetary" in Duskwood against Raven
+Hill Cemetery, for instance. `/ftn areas` in game uses the real resolver and
+settles each one properly.
+
 ## Re-running it
 
 The addon dump needs aliases or the answer is wrong. Load the addon against
