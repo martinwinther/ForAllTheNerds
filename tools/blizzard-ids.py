@@ -195,110 +195,121 @@ def get(tok, path, params=None, cache_key=None):
     return 200, data
 
 
-def cmd_probe(tok):
-    """Find out what this namespace actually serves, and say so honestly.
+def search_total(data):
+    """Total matches for a search response, not just the rows on this page.
 
-    An earlier version called HTTP 200 on the search endpoint a success even
-    when it returned zero rows. A 200 with no results proves nothing: it looks
-    identical whether the document type is unindexed or the filter is wrong.
-    So the checks below are ordered to separate those cases, with a realm
-    search as the control, since the docs say realm IS searchable.
+    A search result carries page metadata. Counting len(results) after asking
+    for a one-row page reports 1 whether there is one match or ten thousand,
+    which is exactly the mistake the first two probes made.
+    """
+    if not isinstance(data, dict):
+        return None, {}
+    meta = {k: data.get(k) for k in
+            ("page", "pageSize", "maxPageSize", "pageCount", "resultCountCapped")
+            if k in data}
+    for key in ("resultCount", "totalResults", "total"):
+        if isinstance(data.get(key), int):
+            return data[key], meta
+    # No explicit total. pageCount with a known pageSize still bounds it.
+    rows = len(data.get("results") or [])
+    if isinstance(meta.get("pageCount"), int) and isinstance(meta.get("pageSize"), int):
+        if meta["pageCount"] <= 1:
+            return rows, meta
+        return None, meta  # more than one page, exact total unstated
+    return rows, meta
+
+
+def cmd_probe(tok):
+    """Report what this namespace serves, without guessing.
+
+    Two corrections are baked in. Realms are DYNAMIC data, so the control used
+    to run against the static namespace and came back empty, which said nothing
+    about search. And asking for a one-row page then counting the rows reports
+    1 regardless of the real total.
     """
     print(f"region {REGION}, namespace {NAMESPACE}")
     print()
-    verdict = {}
 
     def show(label, code, note=""):
-        print(f"  {label:<26} HTTP {code}  {note}")
+        print(f"  {label:<30} HTTP {code}  {note}")
 
-    # 1. Credentials and namespace.
     code, data = get(tok, "/data/wow/creature-type/index", cache_key="creature-type-index")
     if code != 200:
-        show("creature-type index", code, str(data)[:120])
+        show("creature-type index", code, str(data)[:110])
         print("\n  Stopping: if this fails, nothing else will.")
         return
-    show("creature-type index", 200, f"{len(data.get('creature_types', []))} types -- credentials work")
+    show("creature-type index", 200,
+         f"{len(data.get('creature_types', []))} types -- credentials work")
 
-    # 2. A single document in this namespace, to separate "no creature data"
-    #    from "single reads do not work here at all".
     code, data = get(tok, "/data/wow/creature-type/1", cache_key="creature-type-1")
     show("creature-type/1", code,
-         "single-document reads work" if code == 200 else str(data)[:120])
+         "single-document reads work" if code == 200 else str(data)[:110])
 
-    # 3. Does ANY creature document resolve? Hogger is 448 in the 1.12 world
-    #    database. Sample a few more of the ids from tools/creature-ids.tsv in
-    #    case Blizzard's coverage is as sparse as Creature.db2's 189 rows.
-    ids = ["448"]
-    f = Path("tools/creature-ids.tsv")
-    if f.exists():
-        for line in f.read_text(encoding="utf8").splitlines():
-            t = line.strip().split("\t")[0]
-            if t.isdigit() and t not in ids:
-                ids.append(t)
-            if len(ids) >= 6:
-                break
-    found = []
-    for cid in ids:
-        code, data = get(tok, f"/data/wow/creature/{cid}")
-        if code == 200:
-            nm = data.get("name")
-            nm = nm.get(LOCALE) if isinstance(nm, dict) else nm
-            found.append((cid, nm, sorted(data.keys())))
-            show(f"creature/{cid}", 200, f"name {nm!r}")
-        else:
-            show(f"creature/{cid}", code, "not found" if code == 404 else str(data)[:90])
-    verdict["byid"] = bool(found)
-    if found:
-        fields = found[0][2]
-        print(f"    fields on a creature:    {fields}")
-        loc = [k for k in fields if any(
-            w in k.lower() for w in ("zone", "area", "map", "location", "spawn"))]
-        print(f"    location-ish fields:     {loc or 'NONE -- no placement data, as expected'}")
+    # Control, in the DYNAMIC namespace where realms actually live.
+    dyn = NAMESPACE.replace("static-", "dynamic-", 1)
+    code, data = get(tok, "/data/wow/search/realm", params={"namespace": dyn})
+    total, meta = search_total(data) if code == 200 else (None, {})
+    show(f"search/realm in {dyn}", code,
+         f"total {total}, meta {meta}" if code == 200 else str(data)[:110])
+    control_ok = bool(total)
 
-    # 4. Control. The Classic search guide says realm is supported, so if this
-    #    returns nothing the search machinery itself is the problem.
-    code, data = get(tok, "/data/wow/search/realm", params={"_pageSize": "1"})
-    realms = len(data.get("results", [])) if code == 200 else 0
-    verdict["realm_search"] = realms > 0
-    show("search/realm (control)", code,
-         f"{realms} result(s) -- search machinery works" if realms else
-         (str(data)[:120] if code != 200 else "0 results -- search itself is not working"))
-
-    # 5. Decisive: an UNFILTERED creature search. Zero here means the document
-    #    type is not indexed, whatever the endpoint index claims.
-    code, data = get(tok, "/data/wow/search/creature", params={"_pageSize": "1"})
-    unfiltered = len(data.get("results", [])) if code == 200 else 0
-    verdict["creature_search_any"] = unfiltered > 0
+    # The real question, with no page-size games.
+    code, data = get(tok, "/data/wow/search/creature")
+    ctotal, cmeta = search_total(data) if code == 200 else (None, {})
+    rows = (data.get("results") or []) if code == 200 else []
     show("search/creature (no filter)", code,
-         f"{unfiltered} result(s)" if code == 200 else str(data)[:120])
+         f"total {ctotal}, rows here {len(rows)}, meta {cmeta}"
+         if code == 200 else str(data)[:110])
 
-    # 6. And the filtered case we actually want.
-    code, data = get(tok, "/data/wow/search/creature", params={"name.en_US": "Hogger"})
-    named = len(data.get("results", [])) if code == 200 else 0
-    verdict["creature_search_named"] = named > 0
-    show("search/creature (Hogger)", code,
-         f"{named} result(s)" if code == 200 else str(data)[:120])
+    # What IS that document? If search returns creatures, take an id straight
+    # from it and try fetching it, which settles whether by-id is broken or
+    # whether those six ids simply are not in this dataset.
+    sample_id = None
+    if rows:
+        d = rows[0].get("data") or {}
+        sample_id = d.get("id")
+        nm = d.get("name")
+        nm = nm.get(LOCALE) if isinstance(nm, dict) else nm
+        print(f"    first indexed creature:     id {sample_id}, name {nm!r}")
+        print(f"    its fields:                 {sorted(d.keys())}")
+        if sample_id is not None:
+            code2, data2 = get(tok, f"/data/wow/creature/{sample_id}")
+            show(f"creature/{sample_id} (from search)", code2,
+                 "by-id works for an id that IS in this dataset" if code2 == 200
+                 else "by-id 404s even for an id search just returned")
 
-    # Conclusion, drawn from the combination rather than from any one status.
+    # Six ids from the 1.12 database, for contrast.
+    missing = 0
+    for cid in ["448", "234", "239"]:
+        code3, _ = get(tok, f"/data/wow/creature/{cid}")
+        if code3 != 200:
+            missing += 1
+    show("creature/448,234,239 (cmangos)", "---", f"{missing} of 3 not found")
+
+    # Filter syntax, several forms, since the field name is the open question.
+    print()
+    print("  name filter forms:")
+    for params in ({"name.en_US": "Hogger"}, {"name.en_us": "Hogger"},
+                   {"name": "Hogger"}, {"name.en_US": "hogger"}):
+        code4, data4 = get(tok, "/data/wow/search/creature", params=params)
+        t4, _ = search_total(data4) if code4 == 200 else (None, {})
+        key = list(params)[0] + "=" + list(params.values())[0]
+        print(f"    {key:<26} HTTP {code4}  total {t4}")
+
     print()
     print("  verdict:")
-    if verdict.get("creature_search_named"):
-        print("    Creature search works. Use: blizzard-ids.py names tools/characters.tsv")
-    elif verdict.get("creature_search_any"):
-        print("    Creature documents ARE indexed, but the name filter matched")
-        print("    nothing. The filter syntax is wrong, not the endpoint.")
-    elif verdict.get("byid"):
-        print("    Creature search returns nothing, so there is no name-to-id")
-        print("    resolution. Lookup by id works, so use:")
-        print("      blizzard-ids.py ids tools/creature-ids.tsv")
-    elif verdict.get("realm_search"):
-        print("    Search works for realms and not for creatures, and no creature")
-        print("    id resolved either. This namespace carries no usable creature")
-        print("    data, which matches the Classic search guide over the endpoint")
-        print("    index. This route is a dead end; nothing else to try here.")
+    if not control_ok:
+        print("    The control still returns nothing, so read the rest with care:")
+        print("    something broader than creatures may be wrong.")
+    if ctotal in (None, 0):
+        print("    No creature documents are indexed in this namespace.")
+    elif ctotal and ctotal < 100:
+        print(f"    Only {ctotal} creature document(s) exist here. The addon needs")
+        print("    thousands, so this dataset cannot serve as a roster whatever")
+        print("    the filter syntax turns out to be. Dead end.")
     else:
-        print("    Credentials are fine but neither search nor creature lookup")
-        print("    returned anything. Check BLIZZARD_NAMESPACE.")
+        print(f"    {ctotal} creature documents are indexed. If a name form above")
+        print("    returned a total, names mode can use it.")
 
 
 def read_names(path):
