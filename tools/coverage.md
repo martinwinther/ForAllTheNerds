@@ -7,28 +7,22 @@ post-vanilla maps and the Wrath death-knight areas inside Eastern
 Plaguelands are all excluded; `tools/area-sweep.md` lists what was dropped
 and why.
 
-**776 written, 207 empty, 78% covered.** 45 zones have gaps; 18 are complete.
+**784 written, 199 empty, 79% covered.** 45 zones have gaps; 18 are complete.
 
-207 checklist lines below, 205 distinct names: South Gate Pass and The
-Talondeep Path each sit in two zones, and each needs its own entry, because the
-resolver matches a subzone against its declared parent.
+199 checklist lines below, 197 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
-list of vanilla subzones only, 200 of these. This file is the superset: it adds
-Forever's remaining areas and the top-level ones, which is where Hyjal Crater,
-the Ruins of Ban'aethal, Rohashi Spires, Nightclaw Cavern and the Bandit
-Hideout come from. `tools/forever-areas.tsv` covers Forever's four zones on
-their own.
+list of vanilla subzones only. This file is the superset: it adds Forever's
+remaining areas and the top-level ones. `tools/forever-areas.tsv` covers
+Forever's four zones on their own.
 
-Regenerate this with the recipe at the end. `/ftn areas` in game does the
-same check with the real resolver, across every area rather than the ones
-this table could reach, and it is the authority when the two disagree.
+Regenerate with the recipe at the end. `/ftn areas` in game does the same
+check with the real resolver and is the authority when the two disagree.
 
 ## Where the gaps are
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Ashenvale | 29 | 13 | 69% |
 | Stranglethorn Vale | 33 | 12 | 73% |
 | Mulgore | 16 | 10 | 61% |
 | Tirisfal Glades | 20 | 10 | 66% |
@@ -42,6 +36,7 @@ this table could reach, and it is the authority when the two disagree.
 | Dun Morogh | 20 | 6 | 76% |
 | Stonetalon Mountains | 14 | 6 | 70% |
 | Alterac Mountains | 18 | 5 | 78% |
+| Ashenvale | 37 | 5 | 88% |
 | Deadwind Pass | 6 | 5 | 54% |
 | Duskwood | 16 | 5 | 76% |
 | Redridge Mountains | 12 | 5 | 70% |
@@ -94,24 +89,8 @@ this table could reach, and it is the authority when the two disagree.
 
 ## The checklist
 
-Tick as they go in. Ordered by how many a zone needs, so the top of the
-list is where the most ground is gained per sitting.
-
-### Ashenvale — 13 empty of 42
-
-- [ ] Bloodtooth Camp
-- [ ] Falfarren River
-- [ ] Forest Song
-- [ ] Kargathia Keep
-- [ ] Moonwell
-- [ ] Silverwind Refuge
-- [ ] Silverwing Outpost
-- [ ] The Ruins of Ordil'Aran
-- [ ] The Shady Nook
-- [ ] The Talondeep Path
-- [ ] The Zoram Strand
-- [ ] Warsong Labor Camp
-- [ ] Xavian
+Tick as they go in. Ordered by how many a zone needs, so the top of the list
+is where the most ground is gained per sitting.
 
 ### Stranglethorn Vale — 12 empty of 45
 
@@ -254,6 +233,14 @@ list is where the most ground is gained per sitting.
 - [ ] The Eventide
 - [ ] The Foothill Caverns
 - [ ] The Headland
+
+### Ashenvale — 5 empty of 42
+
+- [ ] Falfarren River
+- [ ] Moonwell
+- [ ] Silverwing Outpost
+- [ ] The Talondeep Path
+- [ ] Warsong Labor Camp
 
 ### Deadwind Pass — 5 empty of 11
 

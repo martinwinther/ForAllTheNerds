@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+**Added**
+
+- Eight more places in Ashenvale: Xavian, the Zoram Strand, Kargathia Keep, the
+  Ruins of Ordil'Aran, Bloodtooth Camp, Silverwind Refuge, Forest Song and the
+  Shady Nook. Ashenvale was the emptiest zone in the game and now has five left.
+
 ## 1.2.2
 
 **Added**

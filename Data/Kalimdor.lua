@@ -2174,3 +2174,88 @@ SubsOf("Durotar", {
 		readMore = { "Wowpedia: Razor Hill", "Wowpedia: Burning Blade clan", "Wowpedia: Thrall" },
 	},
 })
+
+-- Ashenvale, working down tools/coverage.md from the top.
+SubsOf("Ashenvale", {
+	{
+		name = "Xavian", parent = "Ashenvale", faction = "Hostile",
+		hook = "Satyr ground in an old night elf temple, named for the first satyr of all.",
+		lore = {
+			"Xavius was a night elf and one of Queen Azshara's counsellors, and he is the reason there is a Burning Legion in this world's history at all: he worked the portal at Zin-Azshari that let Sargeras's army through the Well of Eternity.",
+			"Sargeras grew dissatisfied with him and made him into something else. Xavius became the first satyr, and every satyr since is descended from that act. They are night elves who took the bargain, and ten thousand years later they are still here.",
+			"Xavian is one of three satyr holdings in Ashenvale, with Satyrnaar and Night Run, and it is the one where their leadership sits. The ruins they have made themselves at home in were a night elf temple.",
+		},
+		didYouKnow = "The satyrs are not invaders. They are the descendants of the night elves who went over during the War of the Ancients, which is why they are still in Kalimdor's forests arguing with the people they used to be.",
+		readMore = { "Wowpedia: Xavian", "Wowpedia: Xavius", "Wowpedia: Satyr", "Wowpedia: War of the Ancients" },
+	},
+	{
+		name = "The Zoram Strand", parent = "Ashenvale", faction = "Hostile",
+		hook = "A beach in the north-west that used to be a city, until the Sundering put it under the sea.",
+		lore = {
+			"There was a night elf city here called Zoram. The Great Sundering destroyed it and most of it went down beneath the Veiled Sea, and what is left is a strip of beach with the coastline rearranged around it.",
+			"The naga hold it now, and the wreckage along the shore is the evidence: ships broken up and sea creatures beached. The naga are the Highborne who went under with the Sundering and did not die, so their presence on the ruins of a drowned night elf city is a homecoming of a sort.",
+			"Blackfathom Deeps opens off this strand, which was a temple of Elune before the water took it.",
+		},
+		readMore = { "Wowpedia: Zoram Strand", "Wowpedia: Great Sundering", "Wowpedia: Naga" },
+	},
+	{
+		name = "Kargathia Keep", parent = "Ashenvale", faction = "Horde",
+		hook = "The Warsong officers' stronghold, placed where Orgrimmar can reinforce it.",
+		lore = {
+			"Kargathia Keep sits in the eastern part of the Warsong lumber operation, near the Southfury River, and it is where the clan's officers work. The position is chosen: if Ashenvale turns into a proper war, reinforcements come up from Orgrimmar along this line.",
+			"The name is Kargath Bladefist's. He was chieftain of the Shattered Hand, the orc who cut off his own shackled hand and replaced it with a blade, and the Old Horde treated him as a figure to live up to. Kargath in the Badlands and Bladefist Bay in Durotar carry the name too.",
+			"Which is a particular choice for a logging camp in night elf country. The clan cutting Ashenvale down has named its command post after an orc famous for mutilating himself to get free.",
+		},
+		readMore = { "Wowpedia: Kargathia Keep", "Wowpedia: Kargath Bladefist", "Wowpedia: Warsong clan" },
+	},
+	{
+		name = "The Ruins of Ordil'Aran", parent = "Ashenvale", faction = "Hostile",
+		hook = "An old city in the north-west, fought over by a cult and then by furbolgs.",
+		lore = {
+			"Very little of Ordil'Aran is left. It was a night elf city once, north of Maestra's Post, and what survives is enough stonework to shelter in.",
+			"The Cult of the Dark Strand made a base of it. They are Shadow Council work: night elves and others turned to the service of things that should not be served, operating inside Darnassus's own territory, and the Tower of Althalaxx further up the coast is the other end of the same problem.",
+			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, which gives a reasonable idea of how that went.",
+		},
+		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Dark Strand", "Wowpedia: Thistlefur" },
+	},
+	{
+		name = "Bloodtooth Camp", parent = "Ashenvale", faction = "Hostile",
+		hook = "A furbolg camp west of the Falfarren, and the tribe in it has been got at.",
+		lore = {
+			"Ran Bloodtooth leads the furbolgs here, and they are corrupted. Every one of them is hostile, which is not how furbolgs are supposed to be.",
+			"The furbolgs were the night elves' oldest allies on this continent, and the collapse of that friendship is one of the quieter tragedies in Kalimdor. Tribe after tribe has been turned, and the night elves have gone from treating them as neighbours to treating them as a problem.",
+			"Not all of them. The Timbermaw in the north are uncorrupted and still dealing with outsiders, which is the measure of what the rest have lost.",
+		},
+		readMore = { "Wowpedia: Bloodtooth Camp", "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold" },
+	},
+	{
+		name = "Silverwind Refuge", parent = "Ashenvale", faction = "Horde",
+		hook = "A night elf settlement that is a Horde outpost now, with the former residents still on the ground.",
+		lore = {
+			"Silverwind Refuge was night elf, in south-central Ashenvale north of Mystral Lake. It is a Horde outpost today, with an inn, a flight master and the usual run of a working camp.",
+			"The corpses of the people who lived here before have not been cleared away. They are lying around the outside of it.",
+			"That is Ashenvale as plainly as it can be put. The Warsong clan needs the timber, Darnassus will not sell it, and the two of them are settling the question a clearing at a time.",
+		},
+		readMore = { "Wowpedia: Silverwind Refuge", "Wowpedia: Ashenvale", "Wowpedia: Warsong clan" },
+	},
+	{
+		name = "Forest Song", parent = "Ashenvale", faction = "Neutral",
+		hook = "An ancient night elf ruin in the north-east, and nearly empty.",
+		lore = {
+			"Forest Song is old night elf stonework in the north-east of Ashenvale, out past Satyrnaar and short of Bough Shadow. Hardly anybody is there.",
+			"That corner of the forest is the worst of it. Satyrnaar and Xavian are both close, Bough Shadow has its own troubles, and the Warsong lumber operation is to the south. A ruin standing empty in the middle of that is not an accident.",
+			"The Silverwing Sentinels hold what they can of Ashenvale, and what they can hold does not currently extend out here.",
+		},
+		readMore = { "Wowpedia: Forest Song", "Wowpedia: Ashenvale" },
+	},
+	{
+		name = "The Shady Nook", parent = "Ashenvale", faction = "Neutral",
+		hook = "A small valley with a family of bears in it, and nothing else going on.",
+		lore = {
+			"The Shady Nook is a hollow south of Raynewood Retreat with a cave in it and a few bears living there. That is the whole of it.",
+			"Which is worth saying out loud. Ashenvale is a zone where nearly every named place is a front line, a cult site, a satyr holding or something that used to be a city, and this one is a dell with animals in it.",
+			"The whole forest was like this once, before the Warsong came for the timber and the satyrs came out of the ruins. A hollow with bears in it is what Ashenvale is defending.",
+		},
+		readMore = { "Wowpedia: Shady Nook" },
+	},
+})
