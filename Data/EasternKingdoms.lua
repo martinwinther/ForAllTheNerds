@@ -2882,3 +2882,167 @@ SubsOf("Alterac Mountains", {
 		readMore = { "Wowpedia: Dandred's Fold", "Wowpedia: Aliden Perenolde", "Wowpedia: Syndicate", "Wowpedia: Taretha Foxton" },
 	},
 })
+
+SubsOf("Stranglethorn Vale", {
+	{
+		name = "Southern Savage Coast", parent = "Stranglethorn Vale", faction = "Contested",
+		hook = "The western beaches of the cape, from Booty Bay up to the Vile Reef.",
+		lore = {
+			"The Southern Savage Coast is the shallow water and beach along the cape's western side, where the South Seas come in. It runs from the Wild Shore past Booty Bay and Janeiro's Point and stops at the Vile Reef, which separates it from the Savage Coast proper further north.",
+			"Naga work this whole shoreline. So do the Bloodsail, from their anchorage at the southern end, and the goblins out of Booty Bay, who sell to everybody and police nothing beyond their own harbour wall.",
+			"The reef is the reason the coast has two names. It is also the reason a great many ships have not made it past.",
+		},
+		readMore = { "Wowpedia: Southern Savage Coast", "Wowpedia: Booty Bay", "Wowpedia: Naga" },
+	},
+	{
+		name = "Spirit Den", parent = "Stranglethorn Vale", faction = "Neutral",
+		hook = "A hidden cave in Mistvale Valley with a witch doctor in it.",
+		lore = {
+			"The Spirit Den is tucked into the northern end of Mistvale Valley on the cape, and it takes finding.",
+			"Witch Doctor Unbagwa works out of it. Troll witch doctors deal in the loa and in the older practice the Gurubashi empire ran on. That puts him in a different line of business from the priests at Zul'Gurub.",
+			"People come to him about Stranglethorn fever, among other things. In this jungle a hidden cave with a practitioner in it is a more reliable arrangement than a surgery on a road.",
+		},
+		readMore = { "Wowpedia: Spirit Den", "Wowpedia: Witch doctor", "Wowpedia: Gurubashi" },
+	},
+})
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "Brill Town Hall", parent = "Tirisfal Glades", faction = "Horde",
+		hook = "Brill's town hall, where a magistrate hands out work to the dead.",
+		lore = {
+			"The town hall is the most prominent building in Brill, and Magistrate Sevren runs the place from a podium inside it, giving out orders and errands to any Forsaken willing to take them.",
+			"It is one of only two town halls the Forsaken are known to operate anywhere. The other is the Defiler's Den.",
+			"That is the shape of Sylvanas's project. The Forsaken do not want to be a horde of wandering dead; they want a state, with magistrates and paperwork and a hall to do it in, and Brill is where they practise.",
+		},
+		readMore = { "Wowpedia: Brill Town Hall", "Wowpedia: Brill", "Wowpedia: Forsaken" },
+	},
+})
+
+SubsOf("Swamp of Sorrows", {
+	{
+		name = "Stagalbog Cave", parent = "Swamp of Sorrows", faction = "Hostile",
+		hook = "A large cave in the eastern bog, held by murlocs under a Swamp Talker.",
+		lore = {
+			"Stagalbog Cave sits in the Stagalbog in the east of the swamp, and the Marsh tribe murlocs have it, with their leader the Swamp Talker inside.",
+			"Murlocs are easy to dismiss and consistently should not be. They have tribes, leaders, titles and ritual, and \"Swamp Talker\" is a role rather than a name.",
+			"The Swamp of Sorrows was not always a swamp. This was fertile country before the Dark Portal opened in it and the land went wrong, and everything living here now arrived after that.",
+		},
+		readMore = { "Wowpedia: Stagalbog Cave", "Wowpedia: Murloc", "Wowpedia: Swamp of Sorrows" },
+	},
+	{
+		name = "Misty Reed Post", parent = "Swamp of Sorrows", faction = "Horde",
+		hook = "A small Horde picket off Stonard, with ambitions.",
+		lore = {
+			"Misty Reed Post belongs to Stonard and sits between the Stagalbog and the southern reaches of the Misty Reed Strand. Tok'Kar has it, with Katar, a handful of Stonard hunters and a shaman.",
+			"There is no flight path and there is not much of a post. Tok'Kar's stated hope is that one day it might get a burrow, or failing that a tower.",
+			"Stonard is the Horde's hold in this swamp and it was an Old Horde site before Thrall's Horde reoccupied it. A picket out in the reeds hoping for a tower is what the far end of that supply line looks like.",
+		},
+		readMore = { "Wowpedia: Misty Reed Post", "Wowpedia: Stonard" },
+	},
+})
+
+SubsOf("Deadwind Pass", {
+	{
+		name = "Ariden's Camp", parent = "Deadwind Pass", faction = "Hostile",
+		hook = "The deserted camp of the man who led the Dark Riders, before the curse took him.",
+		lore = {
+			"Ariden set this camp up just north of the road through the pass, and it is empty now. What he was doing from it was selling forged Medivh artefacts.",
+			"Then he was cursed, and he became the leader of the Dark Riders. They are the horsemen who ride out of Deadwind Pass, and it was their arrival in Duskwood, after the Scythe of Elune changed hands at Roland's Doom, that helped put that forest under permanent dark.",
+			"So the camp is where a fraudster set up shop next to Karazhan and got exactly what selling Medivh's name in Medivh's shadow had always been going to get him.",
+		},
+		readMore = { "Wowpedia: Ariden's Camp", "Wowpedia: Dark Riders", "Wowpedia: Karazhan", "Wowpedia: Medivh" },
+	},
+	{
+		name = "Sleeping Gorge", parent = "Deadwind Pass", faction = "Contested",
+		hook = "A small chasm on one of the paths to Karazhan.",
+		lore = {
+			"The Sleeping Gorge is a short chasm in the east of the pass. One of the ways south towards Karazhan runs along it before turning east into the Vice.",
+			"Deadwind Pass is mostly geography with a tower in it. The roads here do not go to settlements, because there are none; they go to Karazhan, to an ogre mound, or back out.",
+			"The name is the sort the pass collects. Nothing in Deadwind is called anything encouraging.",
+		},
+		readMore = { "Wowpedia: Sleeping Gorge", "Wowpedia: Deadwind Pass" },
+	},
+})
+
+SubsOf("Redridge Mountains", {
+	{
+		name = "Render's Rock", parent = "Redridge Mountains", faction = "Hostile",
+		hook = "A Blackrock cave in the north-west, named for Rend Blackhand.",
+		lore = {
+			"Render's Rock is a large cave near where Redridge meets the Burning Steppes, and it is full of Blackrock orcs.",
+			"\"Render\" is Rend Blackhand, son of Blackhand, who was warchief of the Old Horde before Orgrim Doomhammer killed him. Rend never accepted the Second War's end, holds Blackrock Spire with his brother's old clan, and calls his people the true Horde.",
+			"Corporal Keeshan is in that cave too, in a bad way, and needs getting back to Lakeshire. Redridge's problems all come down the pass from this direction.",
+		},
+		readMore = { "Wowpedia: Render's Rock", "Wowpedia: Rend Blackhand", "Wowpedia: Dark Horde" },
+	},
+	{
+		name = "Galardell Valley", parent = "Redridge Mountains", faction = "Hostile",
+		hook = "The valley with the Tower of Ilgalar in it, where Morganth lives.",
+		lore = {
+			"Galardell Valley is in Redridge's north-east, and the Tower of Ilgalar stands in it. Morganth is in the tower.",
+			"He is the warlock who brought the Blackrock orcs into Redridge to take Stonewatch and then turned on them once the keep was his. A tower in a gnoll-infested valley is where that leaves him.",
+			"The gnolls are a problem in their own right, and Lieutenant Fangore among them will call every one within earshot. Lakeshire is dealing with orcs on one side and this on the other.",
+		},
+		readMore = { "Wowpedia: Galardell Valley", "Wowpedia: Morganth", "Wowpedia: Tower of Ilgalar" },
+	},
+	{
+		name = "Redridge Canyons", parent = "Redridge Mountains", faction = "Hostile",
+		hook = "Gnoll country in the north-west, with Yowler's den at the back of it.",
+		lore = {
+			"The canyons run through north-western Redridge and the local gnolls hold them. Yowler leads them and his den is in here.",
+			"Gnolls are everywhere in the Eastern Kingdoms and are generally treated as a nuisance rather than a threat. Redridge is one of the places where that reading looks optimistic: they have numbers, they have ground, and nobody has the men to clear them.",
+			"Lakeshire is the only real settlement in the zone and it is asking Stormwind for soldiers. Stormwind has other priorities, and the canyons are the result.",
+		},
+		readMore = { "Wowpedia: Redridge Canyons", "Wowpedia: Gnoll", "Wowpedia: Lakeshire" },
+	},
+})
+
+SubsOf("The Hinterlands", {
+	{
+		name = "Shindigger's Camp", parent = "The Hinterlands", faction = "Alliance",
+		hook = "A dwarf and a high elf sharing a camp, and that is rarer than it sounds.",
+		lore = {
+			"Rhapsody Shindigger keeps this small camp in the Hinterlands, and he is drunk. Gilveradin Sunchaser is there with him, and he is a high elf.",
+			"The high elves are the quiet tragedy of the Alliance. When the blood elves took their new name and followed Kael'thas, a minority refused and kept the old one, and they have no kingdom, no city and very little standing anywhere.",
+			"Quel'Danil Lodge is further into the zone and is theirs. A high elf camped out with a cheerful Wildhammer drunk is about as settled as their position gets.",
+		},
+		readMore = { "Wowpedia: Shindigger's Camp", "Wowpedia: High elf", "Wowpedia: Quel'Danil Lodge" },
+	},
+	{
+		name = "Featherbeard's Hovel", parent = "The Hinterlands", faction = "Alliance",
+		hook = "A house beside Aerie Peak that was somebody's and now is not.",
+		lore = {
+			"The hovel sits next to Aerie Peak and it was Featherbeard's home. That is the whole of the record.",
+			"Wildhammer names run to this sort of thing, and the dwarves of Aerie Peak keep gryphons rather than rams and answer to themselves rather than Ironforge. A hovel on the slope below the keep is the ordinary housing of that arrangement.",
+			"Whatever Featherbeard did, it is finished, and the place is just a house now. Not everything in these mountains has a war in it.",
+		},
+		readMore = { "Wowpedia: Featherbeard's Hovel", "Wowpedia: Aerie Peak" },
+	},
+})
+
+SubsOf("Burning Steppes", {
+	{
+		name = "Slither Rock", parent = "Burning Steppes", faction = "Neutral",
+		hook = "A cave in the far north-east that had a sarcastic black dragonspawn living in it.",
+		lore = {
+			"Slither Rock is small, hidden beyond the Terror Wing Path in the Burning Steppes' far corner, and for a long time one creature lived in it: Cyrus Therepentous, a black dragonspawn.",
+			"He would help. That is the remarkable part. Against a shared enemy Cyrus would side with whoever turned up, and he did it while being thoroughly rude about them throughout.",
+			"The black dragonflight is Deathwing's and works by infiltration rather than open war, so a black dragonspawn who simply tells you what he thinks and then assists is not behaving to type at all.",
+		},
+		readMore = { "Wowpedia: Slither Rock", "Wowpedia: Black dragonflight", "Wowpedia: Burning Steppes" },
+	},
+})
+
+SubsOf("Wetlands", {
+	{
+		name = "Baradin Bay", parent = "Wetlands", faction = "Neutral",
+		hook = "The stretch of the Great Sea off the continent's west coast, patrolled once by Kul Tiras.",
+		lore = {
+			"Baradin Bay is the water off the western side of the central Eastern Kingdoms, reaching from Dun Morogh's north-west down the coast. Menethil Harbour is on it, and so are Stromgarde Keep and Southshore.",
+			"The Kul Tiran armada patrolled this bay during the Second War and after it. Kul Tiras supplied the Alliance's entire navy in that war, under Daelin Proudmoore, and the bay was effectively theirs to keep.",
+			"Their wrecks are still down there. The friendship did not survive Daelin's death at Theramore, and the Alliance has been short of hulls on this coast ever since.",
+		},
+		readMore = { "Wowpedia: Baradin Bay", "Wowpedia: Kul Tiras", "Wowpedia: Daelin Proudmoore" },
+	},
+})

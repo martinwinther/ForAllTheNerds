@@ -30,6 +30,8 @@ are now separate files.
 | The Rumble Cage | Tanaris | No article on warcraft.wiki.gg |
 | The Sanctum | Arathi Highlands | No article under that name |
 | The World Tree | Duskwood | No article under that name |
+| Broken Spear Village | Desolace | Never left the World of Warcraft beta |
+| Poacher's Den | Burning Steppes | The only article under that name is a Season of Discovery quest, not this place |
 
 ## Near misses, written anyway
 

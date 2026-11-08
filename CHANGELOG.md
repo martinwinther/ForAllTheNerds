@@ -34,6 +34,10 @@
   where the trolls came ashore, Spirit Rock and the Hidden Path above the orc
   starting valley, Dandred's Fold, Hillsbrad town, the Bones of Grakkarond,
   Tidefury Cove, Forlorn Rowe, the Stonewrought Pass and the Dawning Isles.
+- Nineteen more, taking the total to 942 places. Among them Ariden's Camp,
+  Render's Rock, Galardell Valley, the Silverwing Outpost, the Falfarren River,
+  both ends of the Talondeep Path, Slither Rock, Baradin Bay, the Brill Town
+  Hall and the Misty Reed Post.
 - Walking into Scholomance or Dun Algaz now works whichever name the game
   reports. The client calls them the School of Necromancy and the Algaz Gate.
 

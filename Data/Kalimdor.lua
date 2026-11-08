@@ -2810,8 +2810,67 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"The Bloodfen raptors nest in this cave in concentration, and raptors in numbers are not a thing to walk into.",
 			"Just outside the entrance there is what is left of a settlement. Somebody built here, and the raptors took it apart.",
-			"Part of Cortello's Riddle is in the burrow, which means the pirates who scattered that riddle across the coast came in here too and presumably had the same problem.",
+			"Part of Cortello's Riddle is in the burrow, so the pirates who scattered that riddle across the coast came in here too and presumably had the same problem.",
 		},
 		readMore = { "Wowpedia: Bloodfen Burrow", "Wowpedia: Dustwallow Marsh" },
+	},
+})
+
+SubsOf("Ashenvale", {
+	{
+		name = "Silverwing Outpost", parent = "Ashenvale", faction = "Alliance",
+		hook = "A Sentinel post on the wrong side of the river, holding anyway.",
+		lore = {
+			"Silverwing Outpost is in south-central Ashenvale, near the Barrens border and south-west of Splintertree Post. Duriel Moonfire has it.",
+			"The position is the point: it is on the Horde's side of the Falfarren River. The Silverwing Sentinels put a post east of the line on purpose and the orcs have been trying to remove it ever since, without pause.",
+			"Splintertree is close enough to make that a daily matter. Holding ground across a river from an enemy camp is a statement rather than a strategy, and Darnassus is making it.",
+		},
+		readMore = { "Wowpedia: Silverwing Outpost", "Wowpedia: Silverwing Sentinels", "Wowpedia: Splintertree Post" },
+	},
+	{
+		name = "Falfarren River", parent = "Ashenvale", faction = "Contested",
+		hook = "The river that is roughly where the night elves stop and the orcs start.",
+		lore = {
+			"The Falfarren runs north-east to south-west across Ashenvale, and it is the nearest thing this zone has to a border: night elf country under Astranaar to the west, orc country under Splintertree Post to the east.",
+			"It is not much of a river. Not deep, not wide, and it swells after rain. Nobody could hold it as a line even if both sides agreed it was one.",
+			"Bog beasts move under the surface near Felfire Hill, and they are the other reason to use the bridges. A frontier that can be waded is the most honest description of the war in Ashenvale.",
+		},
+		readMore = { "Wowpedia: Falfarren River", "Wowpedia: Astranaar", "Wowpedia: Ashenvale" },
+	},
+	{
+		name = "The Talondeep Path", parent = "Ashenvale", faction = "Contested",
+		hook = "The Ashenvale mouth of the tunnel through to Stonetalon.",
+		lore = {
+			"The Talondeep Path is a tunnel through the mountains joining Ashenvale to the Stonetalon Mountains. This end of it opens just west of Mystral Lake.",
+			"Inside there is nothing. No camps, nobody waiting, no creatures: a winding passage with dead ends and odd hollows in the walls and no inhabitants at all. In Kalimdor that is close to remarkable.",
+			"What it is for is moving between two zones without going round. Both sides of the Ashenvale war have obvious uses for a tunnel that nobody is watching.",
+		},
+		readMore = { "Wowpedia: Talondeep Path", "Wowpedia: Ashenvale", "Wowpedia: Stonetalon Mountains" },
+	},
+})
+
+SubsOf("Stonetalon Mountains", {
+	{
+		name = "The Talondeep Path", parent = "Stonetalon Mountains", faction = "Contested",
+		hook = "The Stonetalon mouth of the same tunnel, in Windshear Crag.",
+		lore = {
+			"This is the other end of the Talondeep Path, opening in the north-west of Windshear Crag. The far end comes out in Ashenvale near Mystral Lake.",
+			"Windshear Crag is Venture Company ground. They are the goblin cartel that chose extraction over neutrality, and they are cutting and mining Stonetalon with no interest in who objects.",
+			"So the tunnel runs from a logging war at one end to a mining operation at the other. Stonetalon and Ashenvale are being taken apart for the same reason, by different people, and the path joins them up.",
+		},
+		readMore = { "Wowpedia: Talondeep Path", "Wowpedia: Venture Company", "Wowpedia: Windshear Crag" },
+	},
+})
+
+SubsOf("Desolace", {
+	{
+		name = "Shadowbreak Ravine", parent = "Desolace", faction = "Hostile",
+		hook = "A hidden Burning Blade haven with a summoning circle in it.",
+		lore = {
+			"Shadowbreak Ravine is tucked into the mountains in Desolace's south-east and it is well enough hidden to be missed. The Burning Blade are in it.",
+			"What they have built is the part that matters: structures, giant mushrooms, and a summoning circle with heavy chains set into it. Chains on a summoning circle mean they expected to bring through something that would need holding down.",
+			"The Burning Blade are orcs who kept the demonic bargain after Thrall renounced it. A clan still working the Legion's craft, in a ravine in the worst country on the continent, is the Horde's own unfinished business.",
+		},
+		readMore = { "Wowpedia: Shadowbreak Ravine", "Wowpedia: Burning Blade clan", "Wowpedia: Desolace" },
 	},
 })
