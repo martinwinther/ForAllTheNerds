@@ -19,6 +19,9 @@ are now separate files.
 | Ironclad Prison | Dustwallow Marsh | Never left the beta; named only in the non-canon RPG |
 | Zane's Eye Crater | Thousand Needles | Never left the World of Warcraft beta |
 | Gornia | Thousand Needles | Never left the beta; the wiki only speculates it was an ogre settlement |
+| Valley of the Bloodfuries | Stonetalon Mountains | Never left the beta; possibly an early name for the Charred Vale |
+| Dragonmaw Retreat | Wetlands | No article on warcraft.wiki.gg |
+| Ironforge Submarine Facility | Dun Morogh | No article on warcraft.wiki.gg |
 
 ## Near misses, written anyway
 
@@ -27,6 +30,7 @@ are now separate files.
 | Legashi Encampment | The wiki spells it Legash. Written from the established satyr lore rather than from a page for that exact name. |
 | Whispering Forest | The faerie ring and its seven Fey-Drunk Darters could not be dated. If it is Cataclysm content it has no business in a 1.12 addon, so the place is still on the list. |
 | Warsong Labor Camp | Not the same place as the Warsong Lumber Camp, and the wiki warns against exactly that confusion. Still on the list rather than written up wrong. |
+| School of Necromancy | This is Scholomance, which the addon already had. Registered as an alias of it rather than written twice. |
 
 ## Forever
 

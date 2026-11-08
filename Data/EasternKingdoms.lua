@@ -2560,3 +2560,222 @@ SubsOf("Tirisfal Glades", {
 		readMore = { "Wowpedia: Bandarion Keep", "Wowpedia: Argent Dawn", "Wowpedia: Forsaken" },
 	},
 })
+
+SubsOf("Western Plaguelands", {
+	{
+		name = "Ruins of Andorhal", parent = "Western Plaguelands", faction = "Hostile",
+		hook = "The town where the plague was handed out, held now by the lich who kept it.",
+		lore = {
+			"Andorhal was a working Lordaeron town and the kingdom's granary for this region. That is why it was chosen. Kel'Thuzad's Cult of the Damned seeded the grain stored here with the plague of undeath and let Lordaeron's own distribution network carry it to every village that bought bread.",
+			"It worked perfectly. By the time anybody understood what the grain was doing, the north was already dying, and Arthas was riding from town to town finding the dead getting up.",
+			"Araj the Summoner holds the ruins now, with ghouls, banshees and abominations around him. The town that poisoned a kingdom is a Scourge garrison and has been since.",
+		},
+		didYouKnow = "Andorhal is the single most consequential building site in recent history. Everything that follows, Arthas taking Frostmourne, Lordaeron's fall, the Forsaken, the Plaguelands themselves, runs back through a grain store.",
+		readMore = { "Wowpedia: Andorhal", "Wowpedia: Kel'Thuzad", "Wowpedia: Cult of the Damned", "Wowpedia: Plague of Undeath" },
+	},
+	{
+		name = "Chillwind Camp", parent = "Western Plaguelands", faction = "Alliance",
+		hook = "The Alliance's foothold in the Plaguelands, and the last clean ground going north.",
+		lore = {
+			"Chillwind Camp sits in the south of the Western Plaguelands, and Commander Ashlam Valorfist has it. It is a camp rather than a fort because nobody is pretending this is a frontier that can be held.",
+			"What it guards is the road. North of here is Andorhal, the Scourge, and the dead; south is Hillsbrad and country that still has living people in it.",
+			"The Argent Dawn work out of this region too, and they are the one organisation that treats the Plaguelands as a problem to be solved rather than a border to be watched. Chillwind is where the Alliance's version of that effort starts.",
+		},
+		readMore = { "Wowpedia: Chillwind Camp", "Wowpedia: Argent Dawn" },
+	},
+})
+
+SubsOf("Eastern Plaguelands", {
+	{
+		name = "Northdale", parent = "Eastern Plaguelands", faction = "Hostile",
+		hook = "A destroyed town where a paladin gave up the Silver Hand.",
+		lore = {
+			"Northdale lies north of Light's Hope Chapel, below the way into Quel'Thalas, and it is wreckage. Banshees hold it, with eyeless watchers that cannot be seen, and the lake beside it has corrupted elementals in it.",
+			"Taelan Fordring renounced the Order of the Silver Hand here and went to the Scarlet Crusade. He was Tirion Fordring's son, and Tirion had already been stripped of his own title and exiled for sparing the life of an orc.",
+			"So a father disgraced for showing mercy, and a son who decided mercy was the problem. The Scarlet Crusade is full of people who made that calculation while looking at ground like this.",
+		},
+		readMore = { "Wowpedia: Northdale", "Wowpedia: Taelan Fordring", "Wowpedia: Tirion Fordring", "Wowpedia: Scarlet Crusade" },
+	},
+})
+
+SubsOf("The Hinterlands", {
+	{
+		name = "Wildhammer Keep", parent = "The Hinterlands", faction = "Alliance",
+		hook = "The Wildhammer seat inside Aerie Peak, with an anvil and no forge.",
+		lore = {
+			"Aerie Peak is the Wildhammer dwarves' home, and this keep is the heart of it. It doubles as an inn, and there is an anvil in it but nothing to heat the metal.",
+			"The Wildhammers are here because of the War of the Three Hammers. When Modimus Anvilmar died with no settled succession, the Bronzebeards, Wildhammers and Dark Irons fought over the throne. The Bronzebeards kept Ironforge, the Wildhammers came north to this peak, and the Dark Irons went south and bound themselves to Ragnaros.",
+			"They keep gryphons rather than rams and they answer to themselves rather than to Ironforge. Three thousand years on, the dwarves are still three peoples.",
+		},
+		readMore = { "Wowpedia: Aerie Peak", "Wowpedia: Wildhammer clan", "Wowpedia: War of the Three Hammers" },
+	},
+})
+
+SubsOf("Swamp of Sorrows", {
+	{
+		name = "The Harborage", parent = "Swamp of Sorrows", faction = "Neutral",
+		hook = "A camp of refugees who came through the Dark Portal and kept their minds.",
+		lore = {
+			"The Harborage is in the northern marsh, and the people in it came from the other side of the Dark Portal. They call themselves the Lost Ones and they are not orcs.",
+			"Most of their kind in this swamp have gone feral, and the Swamp of Sorrows is full of them. The ones here did not. Magtoor leads those who stayed sane, they hold to the Holy Light, and they are trying to make something of a camp in a marsh nobody else wants.",
+			"They are the other casualty of the First War. The orcs came through that portal as an army; these came through as refugees from the same ruined world, and nothing in the Alliance or the Horde has a place for them.",
+		},
+		readMore = { "Wowpedia: Harborage", "Wowpedia: Lost One", "Wowpedia: Dark Portal" },
+	},
+})
+
+SubsOf("Badlands", {
+	{
+		name = "The Maker's Terrace", parent = "Badlands", faction = "Hostile",
+		hook = "The excavation outside Uldaman's door, patrolled by Dark Irons.",
+		lore = {
+			"The Terrace is the dig outside the entrance to Uldaman, and for anyone coming into the Badlands from Loch Modan it is the first thing on the road.",
+			"\"The Maker\" is the titans. Uldaman is one of their vaults, and what the Explorers' League found inside it was the Discs of Norgannon and the record of the earthen: living stone, shaped by the titans, and the dwarves' own ancestors. Ironforge has not been the same since reading it.",
+			"The Dark Iron patrol the Terrace now. They are dwarves too, and the same record is theirs, which does not appear to have made them any friendlier about who gets to read it.",
+		},
+		readMore = { "Wowpedia: Maker's Terrace", "Wowpedia: Uldaman", "Wowpedia: Titan", "Wowpedia: Earthen" },
+	},
+})
+
+SubsOf("Redridge Mountains", {
+	{
+		name = "Stonewatch Keep", parent = "Redridge Mountains", faction = "Hostile",
+		hook = "Lakeshire's own keep, taken by orcs for a warlock who then turned on them.",
+		lore = {
+			"Stonewatch belonged to the humans of Lakeshire and guarded the pass. The warlock Morganth made an arrangement with the Blackrock orcs under Gath'Ilzogg, and between them they came into Redridge and took it.",
+			"Then Morganth turned on the orcs he had just won it with. That is the ordinary end of a warlock's alliance, and the orcs who did the fighting appear not to have seen it coming.",
+			"Lakeshire is still down the road, still smaller than its own keep, and still asking Stormwind for help that does not arrive. Redridge is one of the places where the regency's record looks worst.",
+		},
+		readMore = { "Wowpedia: Stonewatch Keep", "Wowpedia: Morganth", "Wowpedia: Blackrock clan" },
+	},
+	{
+		name = "Stonewatch Tower", parent = "Redridge Mountains", faction = "Hostile",
+		hook = "The tower of the Stonewatch stronghold, on the same captured ground.",
+		lore = {
+			"The tower is the other half of Stonewatch, and it fell with the keep when the Blackrock orcs came through for Morganth.",
+			"The position is the whole reason anybody wants it. Stonewatch sits on the pass, and the pass is the way between Redridge and the Burning Steppes, which is Blackrock Mountain's doorstep.",
+			"So a human fort built to watch the road to Blackrock is now held by the people it was watching for.",
+		},
+		readMore = { "Wowpedia: Stonewatch", "Wowpedia: Blackrock clan" },
+	},
+})
+
+SubsOf("Deadwind Pass", {
+	{
+		name = "The Master's Cellar", parent = "Deadwind Pass", faction = "Hostile",
+		hook = "The servants' cellars below Karazhan, and nobody down there has left.",
+		lore = {
+			"At the southern end of Deadwind Pass, under the ruins of a small village, there is a cellar system full of ghosts. The village was most likely where Karazhan's servants lived, and the tower is just north.",
+			"One entrance opens into an enormous wine cellar. What is in it answers to names like Unliving Resident and Unliving Caretaker, along with damned souls and wailing spectres, and the lower section goes further down.",
+			"Karazhan was Medivh's tower. Medivh was the last Guardian of Tirisfal and Sargeras was inside him from before his birth; he opened the Dark Portal and let the Horde into this world. Whatever happened to the household did not happen to them for any fault of their own.",
+		},
+		readMore = { "Wowpedia: Master's Cellar", "Wowpedia: Karazhan", "Wowpedia: Medivh" },
+	},
+	{
+		name = "Deadman's Crossing", parent = "Deadwind Pass", faction = "Contested",
+		hook = "A crossroads with a hanging tree and a sign telling you to turn back.",
+		lore = {
+			"Three roads meet here: west into Duskwood, east towards the Swamp of Sorrows, and south towards Karazhan.",
+			"The junction is marked with a hangman's tree that still has a pair of corpses in it, and a signpost. The signpost says \"Turn Back!\" and, underneath, \"Abandon hope, all ye who enter here.\"",
+			"Somebody went to the trouble of putting that up, and it is pointing south. Deadwind Pass is the emptiest inhabited-looking place in the Eastern Kingdoms, and the warning is the only thing in it that was written for travellers.",
+		},
+		readMore = { "Wowpedia: Deadman's Crossing", "Wowpedia: Deadwind Pass" },
+	},
+	{
+		name = "Grosh'gok Compound", parent = "Deadwind Pass", faction = "Hostile",
+		hook = "The largest of the Vice's caves, held by the Deadwind ogres.",
+		lore = {
+			"The Vice is a run of caves in Deadwind Pass, and the Grosh'gok Compound is the southernmost and the biggest. Ogres hold it.",
+			"Ogres in the Eastern Kingdoms are what the Old Horde left behind. Gul'dan brought them through the Dark Portal during the Second War and the collapse abandoned them here with no masters and no way home.",
+			"A pass with Karazhan at one end and an ogre mound at the other, and almost nobody living in between. Nothing has been resolved in Deadwind Pass; it has simply been left.",
+		},
+		readMore = { "Wowpedia: Grosh'gok Compound", "Wowpedia: Ogre", "Wowpedia: Deadwind Pass" },
+	},
+})
+
+SubsOf("Dun Morogh", {
+	{
+		name = "Ironband's Compound", parent = "Dun Morogh", faction = "Hostile",
+		hook = "A dig south of Helm's Bed Lake that the Dark Iron have taken over.",
+		lore = {
+			"Sturgy Ironband had this compound in eastern Dun Morogh, and it is Dark Iron ground now. They attack anyone who comes close.",
+			"Dark Irons this far into Bronzebeard country is not a raid, it is a presence, and Ironforge wants evidence of it. That is the sort of errand the city hands to whoever is willing.",
+			"The Dark Iron are the third clan from the War of the Three Hammers, the one that lost twice: beaten for the throne, then bound to Ragnaros by their own emperor's summoning. They have spent the time since trying to get back into the mountain.",
+		},
+		readMore = { "Wowpedia: Ironband's Compound", "Wowpedia: Dark Iron clan", "Wowpedia: War of the Three Hammers" },
+	},
+	{
+		name = "Steelgrill's Depot", parent = "Dun Morogh", faction = "Alliance",
+		hook = "Miners and engineers east of Kharanos, with Gnomeregan on their minds.",
+		lore = {
+			"Steelgrill's Depot is a small working settlement just outside Kharanos: trainers, vendors, and the sort of machinery dwarven and gnomish engineering produces when nobody is stopping it.",
+			"Gnomeregan is the thing hanging over it. The gnomes' city was lost to the troggs, and Sicco Thermaplugg's answer was to flood it with radiation rather than surrender it, killing most of his own people.",
+			"The survivors live in Ironforge's Tinker Town now, and retaking the city is an ongoing project rather than an abandoned one. A depot full of engineers near the mountain is part of that.",
+		},
+		readMore = { "Wowpedia: Steelgrill's Depot", "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
+	},
+})
+
+SubsOf("Elwynn Forest", {
+	{
+		name = "The Stonefield Farm", parent = "Elwynn Forest", faction = "Alliance",
+		hook = "One half of a farming feud, with a child in love with the other half.",
+		lore = {
+			"The Stonefields farm in southern Elwynn, and they loathe the Maclures next door. Nobody involved seems able to say exactly when it started or what it was about.",
+			"It has gone the way these things do. A Stonefield child and a Maclure child have fallen in love, and the two families are the last to work it out.",
+			"Elwynn is the quietest zone in the Eastern Kingdoms and its largest ongoing dispute is between two farms over nothing. That is worth appreciating, given what the rest of the continent is dealing with.",
+		},
+		didYouKnow = "The feud is a nod to the Hatfields and the McCoys, and the romance to Romeo and Juliet. Elwynn's writers were having a good day.",
+		readMore = { "Wowpedia: Stonefield Farm", "Wowpedia: Elwynn Forest" },
+	},
+	{
+		name = "The Maclure Vineyards", parent = "Elwynn Forest", faction = "Alliance",
+		hook = "The other half of the feud, and the one with the grapes.",
+		lore = {
+			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms.",
+			"The quarrel is inherited rather than reasoned, and both households are entirely committed to it. Meanwhile their children have made other arrangements.",
+			"Elwynn does have real problems: the Defias are in the hills, kobolds are in the mines, and Hogger is in the woods. The vineyard feud is not one of them, and it is the one the neighbours talk about.",
+		},
+		readMore = { "Wowpedia: Maclure Vineyards", "Wowpedia: Elwynn Forest" },
+	},
+})
+
+SubsOf("Duskwood", {
+	{
+		name = "Roland's Doom", parent = "Duskwood", faction = "Hostile",
+		hook = "A mine in the south-east where the Scythe of Elune changed hands.",
+		lore = {
+			"Velinde Starsong died in this mine. She was a night elf priestess of Elune and she had the Scythe of Elune, an artefact she had been using to set worgen loose in these woods against the Scourge and worse.",
+			"She lost control of it, and then she lost her life here. The Scythe was found afterwards by a man named Jitters, and the finding of it brought more worgen, and in time the Dark Riders, down on Duskwood and Darkshire.",
+			"The permanent dark over this zone is not weather. Gutspill and Nefaru of the Nightbane pack work out of the mine now, and the Rotting Orchard is next door.",
+		},
+		readMore = { "Wowpedia: Roland's Doom", "Wowpedia: Scythe of Elune", "Wowpedia: Velinde Starsong", "Wowpedia: Worgen" },
+	},
+})
+
+SubsOf("Westfall", {
+	{
+		name = "Stendel's Pond", parent = "Westfall", faction = "Contested",
+		hook = "A pond with gnolls round it, two graves beside it, and bones in the shallows.",
+		lore = {
+			"Stendel's Pond sits south-west of Sentinel Hill. There are gnolls around it, scattered remains, and two graves.",
+			"The water is probably not drinkable. Nobody has posted a notice; the graves are the notice.",
+			"Westfall was Stormwind's breadbasket and is now the place the kingdom forgot. The farms are empty, the Defias have the mill country, and a poisoned pond with two burials beside it does not rate as news here.",
+		},
+		readMore = { "Wowpedia: Stendel's Pond", "Wowpedia: Westfall" },
+	},
+})
+
+SubsOf("Stormwind City", {
+	{
+		name = "Stormwind Harbor", parent = "Stormwind City", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "A working port and shipyard in the north-west of the city.",
+		lore = {
+			"The harbour is wharfs, dry docks and fortifications in Stormwind's north-western quarter, and it is where the Alliance's warships are built and its fleets put together.",
+			"Stormwind has needed a navy more than once and not always had one. Kul Tiras supplied the ships for the Second War, under Daelin Proudmoore, and the Alliance has been short of hulls ever since that friendship soured.",
+			"Transport ships run out of here as well as warships. A capital that was burned to the ground in the First War and rebuilt by masons it then refused to pay is now a naval power, which is a particular sort of recovery.",
+		},
+		readMore = { "Wowpedia: Stormwind Harbor", "Wowpedia: Stormwind City", "Wowpedia: Kul Tiras" },
+	},
+})

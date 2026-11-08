@@ -24,6 +24,14 @@
 - Bandarion Keep in Tirisfal Glades, which is Forever's own addition to an old
   zone, so it is hidden with the rest of the Forever material until you turn
   that on.
+- Twenty-eight more across eighteen zones, taking the total to 903 places.
+  Among them the Ruins of Andorhal, Northdale, Roland's Doom, the Master's
+  Cellar, Deadman's Crossing, the Maker's Terrace, Stonewatch Keep and Tower,
+  Wildhammer Keep, the Harborage, both halves of the Stonefield and Maclure
+  feud, the Ruins of Kel'Theril, Aldrassil, the Oracle Glade, the Shrine of the
+  Deceiver, Bloodvenom Falls and the Pools of Vision.
+- Walking into Scholomance now works whichever name the game reports. The
+  client calls the inside of it the School of Necromancy.
 
 ## 1.2.2
 

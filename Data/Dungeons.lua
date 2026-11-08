@@ -42,6 +42,8 @@ Instance{
 
 Instance{
 	name = "Scholomance", continent = "Eastern Kingdoms", faction = "Hostile", levels = "58-60",
+	-- The client reports the inside of it as "School of Necromancy".
+	aliases = { "School of Necromancy", "The School of Necromancy" },
 	hook = "A noble family's crypt turned into the Scourge's school of necromancy.",
 	lore = {
 		"Scholomance is on Caer Darrow, the island estate of the Barov family in Darrowmere Lake. The Barovs were wealthy, respectable Lordaeron nobility.",

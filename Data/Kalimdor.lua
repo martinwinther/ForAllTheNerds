@@ -2564,3 +2564,122 @@ SubsOf("Thousand Needles", {
 		readMore = { "Wowpedia: Rustmaul Dig Site", "Wowpedia: Explorers' League", "Wowpedia: Silithid" },
 	},
 })
+
+SubsOf("Winterspring", {
+	{
+		name = "The Ruins of Kel'Theril", parent = "Winterspring", faction = "Hostile",
+		hook = "A night elf city the Sundering took, with its Highborne still grieving in it.",
+		lore = {
+			"Kel'Theril was a great night elf city and the Great Sundering destroyed it. What is left is on the shores of the lake that carries its name, in the middle of Winterspring.",
+			"The Highborne who did not survive are still here. They did not move on, and the ruins are haunted by them: not a curse laid on the place by somebody else, but the dead of the city refusing to leave it.",
+			"The Highborne were Azshara's arcane nobility, and the Sundering was the direct result of what their queen and her court did with the Well of Eternity. Spirits tormented on the ruins of their own city is as exact a judgement as the world has handed down.",
+		},
+		didYouKnow = "The Crystal of Zin-Malor was taken from the Temple of Zin-Malor in Azshara and brought to Kel'Theril. Two ruins of the same vanished empire, with one of its relics moved between them.",
+		readMore = { "Wowpedia: Ruins of Kel'Theril", "Wowpedia: Highborne", "Wowpedia: Great Sundering" },
+	},
+})
+
+SubsOf("Teldrassil", {
+	{
+		name = "Aldrassil", parent = "Teldrassil", faction = "Alliance",
+		hook = "The great tree at the centre of Shadowglen, where night elves start.",
+		lore = {
+			"Aldrassil is both a tree and a village: the night elves have built into it, and Tenaron Stormgrip leads Shadowglen from a room at the very top.",
+			"It stands on Teldrassil, and Teldrassil is a difficulty. Fandral Staghelm pushed for a second World Tree after Nordrassil was spent killing Archimonde, and he planted it without the dragon Aspects' blessing, which Nordrassil had.",
+			"Malfurion Stormrage opposed it. Ysera withheld her blessing. The tree went up anyway, and there is already something wrong in its roots. New night elves begin their lives in a tree that their own Archdruid thinks should not exist.",
+		},
+		readMore = { "Wowpedia: Aldrassil", "Wowpedia: Teldrassil", "Wowpedia: Fandral Staghelm", "Wowpedia: Nordrassil" },
+	},
+	{
+		name = "The Oracle Glade", parent = "Teldrassil", faction = "Alliance",
+		hook = "Teldrassil's first and strongest moonwell, under a tree shaped like an eagle on a bear.",
+		lore = {
+			"The Oracle Glade is in Teldrassil's north-west, and the moonwell here is the first and the most powerful on the tree. Moonwells are drawn from the Well of Eternity's remaining waters, so every one of them is a fragment of the thing whose destruction broke the world.",
+			"The Oracle Tree stands over it, with a wide trunk and boughs grown into the shape of a great eagle perched on a bear. It is said to have been raised by nature magic rather than planted, and it has watched Teldrassil grow alongside the druids.",
+			"Malfurion Stormrage comes here to meditate. Bloodfeather harpies have nested nearby and are a threat to the tree, and a small group of Sentinels has been sent to push them back.",
+		},
+		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Malfurion Stormrage" },
+	},
+})
+
+SubsOf("Felwood", {
+	{
+		name = "Shrine of the Deceiver", parent = "Felwood", faction = "Hostile",
+		hook = "A barrow den at Jaedenar, turned into a shrine to Kil'jaeden.",
+		lore = {
+			"This was a barrow den, which means druids slept in it. It is now a shrine, and the Deceiver it is named for is Kil'jaeden, who leads the Burning Legion in Sargeras's absence.",
+			"The Shadow Council run it, and the warlocks in it are not amateurs. Jaedenar as a whole is theirs: a cult site named for their master, built inside a druidic holy place in a forest the Legion already poisoned.",
+			"Kil'jaeden is the one who found Ner'zhul and made the Lich King out of him, which means the Scourge on the other continent and the corruption in this forest come from the same hand.",
+		},
+		readMore = { "Wowpedia: Shrine of the Deceiver", "Wowpedia: Kil'jaeden", "Wowpedia: Shadow Council", "Wowpedia: Jaedenar" },
+	},
+	{
+		name = "Jadefire Glen", parent = "Felwood", faction = "Hostile",
+		hook = "A satyr camp in the south, speaking the Legion's own language.",
+		lore = {
+			"Xavathras holds the Jadefire Glen in southern Felwood, and the satyrs here answer to the Burning Legion directly rather than to themselves.",
+			"The detail worth noticing is the language. The satyrs of the Jadefire speak Eredun, the Legion's tongue, not Darnassian. They were night elves once, and they have given up even that.",
+			"Felwood is the forest the Legion ruined and the night elves could not clean. Most of the zone's work is killing satyrs, and there are always more.",
+		},
+		readMore = { "Wowpedia: Jadefire Glen", "Wowpedia: Satyr", "Wowpedia: Eredun" },
+	},
+	{
+		name = "Bloodvenom Falls", parent = "Felwood", faction = "Hostile",
+		hook = "A poisoned waterfall, and the head of a river that carries the poison out of the zone.",
+		lore = {
+			"The falls are high in Felwood and they are corrupted. They are also the source of the Bloodvenom River, which is the problem with them.",
+			"The corruption does not stay here. The river comes down off these mountains and becomes the Wildbend River in Darkshore, carrying Felwood's poison into a zone that had nothing to do with it.",
+			"That is the argument for Felwood mattering to anyone outside it. The Legion's damage to this forest is not contained by the forest, and it runs downhill.",
+		},
+		readMore = { "Wowpedia: Bloodvenom Falls", "Wowpedia: Felwood", "Wowpedia: Darkshore" },
+	},
+})
+
+SubsOf("Darkshore", {
+	{
+		name = "Twilight Shore", parent = "Darkshore", faction = "Neutral",
+		hook = "The roughest stretch of Darkshore's coast, running down to Ashenvale.",
+		lore = {
+			"The Twilight Shore is southern Darkshore's coastline, starting below the Long Wash and running all the way down to the Ashenvale border. It is the most broken part of the coast, and the beaches are grey.",
+			"Darkshore is a drowned shoreline. The Sundering rearranged this whole edge of Kalimdor, and the night elf ruins along it, Ameth'Aran and Bashal'Aran among them, are what was above water when the sea finished moving.",
+			"The Wildbend River comes out near here, carrying Felwood's corruption down from the mountains. Darkshore gets other people's damage from both directions.",
+		},
+		readMore = { "Wowpedia: Twilight Shore", "Wowpedia: Darkshore", "Wowpedia: Great Sundering" },
+	},
+})
+
+SubsOf("Stonetalon Mountains", {
+	{
+		name = "Boulderslide Cavern", parent = "Stonetalon Mountains", faction = "Hostile",
+		hook = "A kobold mine chasing a purple crystal with titan magic in it.",
+		lore = {
+			"The Boulderslide kobolds nest at the end of Boulderslide Ravine, and they are mining. What they are after is resonite: a rare glowing purple crystal, and they guard it with everything they have.",
+			"The crystal carries a trace of earthen magic. The earthen were the titans' work, living stone shaped before there were dwarves, and anything with their magic in it means something titan-built is close.",
+			"Kobolds are the least regarded creatures on this world and are generally treated as vermin with candles. They have found something in this cavern that nobody else noticed.",
+		},
+		readMore = { "Wowpedia: Boulderslide Cavern", "Wowpedia: Kobold", "Wowpedia: Earthen" },
+	},
+	{
+		name = "Sishir Canyon", parent = "Stonetalon Mountains", faction = "Hostile",
+		hook = "A spider canyon on the road to the Ruins of Eldre'thar.",
+		lore = {
+			"Sishir Canyon runs off the main Stonetalon road towards the Ruins of Eldre'thar, and the Deepmoss spiders have it. Their eggs and webbing cover the whole of it.",
+			"Besseleth is the largest of them and she is deep inside. Giant spiders in Kalimdor are not unusual; a canyon so thoroughly taken that the road through it is effectively closed is.",
+			"Stonetalon is being pulled apart from several directions at once. The Venture Company are logging and mining it, the Grimtotem tauren hold ground in it, harpies are in the Charred Vale, and the one road through has this in the middle.",
+		},
+		readMore = { "Wowpedia: Sishir Canyon", "Wowpedia: Stonetalon Mountains" },
+	},
+})
+
+SubsOf("Thunder Bluff", {
+	{
+		name = "The Pools of Vision", parent = "Thunder Bluff", faction = "Horde",
+		hook = "A tunnel under Spirit Rise, and the Forsaken's quarters in Thunder Bluff.",
+		lore = {
+			"The Pools of Vision are in a tunnel system just below the cap of Spirit Rise, reached from the bridge up from Lower Rise. They are also where the Forsaken keep their business in Thunder Bluff.",
+			"That arrangement is worth sitting with. Thunder Bluff is the most spiritually serious city in the Horde, the tauren read the land as the Earth Mother, and their allies in this building are walking corpses raised by the Scourge.",
+			"Cairne Bloodhoof accepted them because Thrall did, and Thrall accepted them because Sylvanas brought an army. The Forsaken quarter being in a cave under the spirit rise rather than out on the mesa is about as diplomatic as that compromise gets.",
+		},
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Thunder Bluff", "Wowpedia: Forsaken" },
+	},
+})
