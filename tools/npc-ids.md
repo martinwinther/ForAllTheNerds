@@ -3,7 +3,7 @@
 `tools/characters.tsv` was built from the wiki, and the wiki cannot answer the
 two questions that decide whether a candidate is worth writing up: does this
 NPC exist in the game, and where does it stand. There are two automatic ways to
-answer, and they answer different things, so both are worth having.
+answer. They answer different things, and both are worth having.
 
 ## Route 1: the client itself
 
@@ -15,11 +15,11 @@ of `UnitGUID`:
 
 What this is good for: it is the only thing that can say what exists **in
 Forever**, how Forever spells it, and which zone it really stands in. No
-outside database covers Forever's own zones at all, so Shen'dralas, Zephras
-Isle, Riverglades and Mount Hyjal can only be answered this way.
+outside database covers Forever's own zones at all. Shen'dralas, Zephras Isle,
+Riverglades and Mount Hyjal can only be answered this way.
 
 What it costs: you have to walk past them. It also yields no id where the
-client makes unit identity secret, which is why a later sighting back-fills it.
+client makes unit identity secret. A later sighting back-fills it.
 
 ## Route 2: the 1.12.1 world database
 
@@ -75,14 +75,13 @@ follow:
   Reading the dump on your own machine to check a list against it, or to look
   up an id, carries no obligation.
 - **Do not commit the dump or a bulk extract, and do not ship either.**
-  `tools/` is excluded from the zip by `.pkgmeta`, so nothing here reaches
-  players, but this repository is public and that is still distribution. A
-  wholesale table copied into an MIT repository is the thing to avoid.
+  `tools/` is excluded from the zip by `.pkgmeta`, and nothing here reaches
+  players. This repository is public, though, and that is still distribution.
+  A wholesale table copied into an MIT repository is the thing to avoid.
 
 There is a second restriction worth knowing about, separate from the GPL. The
 EU grants databases a *sui generis* right against extracting a substantial part
-of their contents, and that applies to factual data which copyright would not
-protect. Denmark is in scope. A handful of ids checked one at a time is not a
+of their contents. It applies to factual data that copyright would not protect. Denmark is in scope. A handful of ids checked one at a time is not a
 substantial part; a copy of `creature_template` is.
 
 So: keep the dump out of the repository, use it as a check rather than a
@@ -91,7 +90,7 @@ source, and write the prose from facts as the lore files already do.
 ## Reproducing the join
 
 The dump goes in a directory of its own, and the scripts stay out of it, since
-it is downloaded data:
+the download is untrusted:
 
 ```bash
 curl -sLo "$D/classicdb.sql.gz" https://raw.githubusercontent.com/cmangos/classic-db/master/Full_DB/ClassicDB_1_12_1_z2815.sql.gz
@@ -101,5 +100,5 @@ The two parsers used for the numbers above read `INSERT INTO creature_template`
 and `INSERT INTO creature` straight out of the gzip stream, splitting the
 `VALUES` tuples with quote and escape handling rather than a regex. Column
 positions come from the `CREATE TABLE` in the same file; line N of that
-statement is index N-2, and getting that off by one silently reports
-`HealthMultiplier` as `Rank`, which looks like a rank of 500.
+statement is index N-2. Getting that off by one silently reports
+`HealthMultiplier` in place of `Rank`, and a rank of 500 is the symptom.
