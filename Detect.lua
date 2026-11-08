@@ -240,6 +240,109 @@ function D:Update(force)
 	end
 end
 
+-- ---------------------------------------------------------------------------
+-- Who is standing here
+--
+-- Same purpose as the place gap list: let the client tell us what exists,
+-- instead of trusting a list written somewhere else. The wiki cannot say
+-- whether an NPC is in this build or which zone it stands in; targeting one
+-- settles both, and gives the spelling the client actually uses.
+--
+-- Three things this must not do:
+--
+--  1. Record a player. Names of other people's characters are nobody's
+--     business and have no place in a saved variables file. UnitIsPlayer is
+--     the gate, and anything it cannot answer is treated as a player.
+--  2. Touch a secret value. Creature names are secret under some conditions
+--     on the Forever and Midnight API family -- the wiki marks UnitName
+--     SecretWhenUnitNameIdentityRestricted without saying when that applies,
+--     so no assumption is made about combat or instances. Ask
+--     C_Secrets.ShouldUnitIdentityBeSecret first where it exists, and run the
+--     read through U.CallStr, which returns nil for a secret either way.
+--  3. Record UNKNOWNOBJECT, the placeholder the client returns for a unit it
+--     has not finished loading.
+-- ---------------------------------------------------------------------------
+
+-- Skips the work of re-reading a unit we just read. Keyed on name AND zone,
+-- never name alone: the same NPC seen in a second zone is the single most
+-- interesting thing this list can report, so it must not be swallowed here.
+local lastLogged
+
+-- The creature id, which is what every outside catalogue of NPCs is keyed on.
+-- Names are ambiguous -- a dozen "Innkeeper" rows, two "Marshal Dughan" if a
+-- later build moves him -- and an id is not. It comes out of the GUID:
+--
+--   Creature-0-1465-0-2105-448-000043F59F
+--                            ^^^ the id, 448, which is Hogger
+--
+-- UnitGUID carries the same SecretWhenUnitIdentityRestricted predicate as
+-- UnitName, so this is only ever called from inside the gate below, and the
+-- read is guarded the same way. Vanilla 1.12 used a different, hex GUID format;
+-- anything that does not match simply yields no id, and the name is still kept.
+local function creatureIdFrom(unit)
+	local guid = U.CallStr(UnitGUID, unit)
+	if not guid then return nil end
+	local kind, id = string.match(guid, "^(%a+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
+	if not id then return nil end
+	if kind ~= "Creature" and kind ~= "Vehicle" then return nil end
+	return tonumber(id)
+end
+
+local function rosterNameOf(unit)
+	-- Without UnitIsPlayer there is no way to be sure this is not somebody's
+	-- character, so decline to look at all.
+	if not ns.has.unitIsPlayer then return nil end
+
+	if U.CallBool(UnitExists, unit) ~= true then return nil end
+
+	-- Not false means either "is a player" or "cannot tell". Both are a no.
+	if U.CallBool(UnitIsPlayer, unit) ~= false then return nil end
+	-- Pets, totems and guardians carry their owner's name around with them.
+	if U.CallBool(UnitPlayerControlled, unit) == true then return nil end
+
+	-- Decline to create a secret value in the first place where we can.
+	if ns.has.identityProbe then
+		local ok, restricted = pcall(C_Secrets.ShouldUnitIdentityBeSecret, unit)
+		if not ok then return nil end
+		if U.SafeBool(restricted) ~= false then return nil end
+	end
+
+	local name = U.CallStr(UnitName, unit)
+	if not name then return nil end
+	if UNKNOWNOBJECT and name == UNKNOWNOBJECT then return nil end
+	return name, creatureIdFrom(unit)
+end
+
+function D:NoteUnit(unit)
+	local db = ns.db
+	if not (db and db.logNPCs) then return end
+
+	local name, id = rosterNameOf(unit)
+	if not name then return end
+
+	-- Read the location fresh rather than using the resolved zone, which lags
+	-- a zone change by up to two seconds. Attribution is the whole point here.
+	local zone = U.CallStr(GetZoneText) or U.CallStr(GetRealZoneText)
+	if not zone then return end
+
+	local key = name .. "|" .. zone
+	if key == lastLogged then return end
+	lastLogged = key
+
+	ns.RecordNPC(name, zone, U.CallStr(GetSubZoneText), id)
+end
+
+local units = CreateFrame("Frame")
+units:RegisterEvent("PLAYER_TARGET_CHANGED")
+units:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
+
+units:SetScript("OnEvent", function(_, event)
+	if not ns.db then return end
+	local unit = (event == "PLAYER_TARGET_CHANGED") and "target" or "mouseover"
+	local ok, err = pcall(function() D:NoteUnit(unit) end)
+	if not ok then U.Debug("unit note failed: %s", tostring(err)) end
+end)
+
 -- Zone events fire in bursts: crossing a subzone boundary can produce
 -- ZONE_CHANGED and ZONE_CHANGED_INDOORS together, and the client's zone
 -- strings are briefly stale right after a load screen. Coalesce into one

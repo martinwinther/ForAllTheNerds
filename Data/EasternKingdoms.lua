@@ -2290,3 +2290,100 @@ SubsOf("Blasted Lands", {
 		},
 	},
 })
+
+-- ---------------------------------------------------------------------------
+-- FROM THE AREA SWEEP
+--
+-- Places the client names that had no entry until tools/area-sweep.md went
+-- looking. Written as background, and deliberately NOT as questline summaries:
+-- Darrowshire and the Shady Rest both have vanilla quest chains attached whose
+-- turns are not given away here.
+-- ---------------------------------------------------------------------------
+
+SubsOf("Eastern Plaguelands", {
+	{
+		name = "Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
+		hook = "A village the Scourge destroyed, with its dead still standing in it.",
+		lore = {
+			"Darrowshire was an ordinary village in what was then Lordaeron's eastern countryside. When the Scourge came through during the Third War it was destroyed, and the militia that stood to meet it was killed to the last.",
+			"What is left is foundations, and the dead. The Plaguelands are full of places like this; Darrowshire is the one the living still argue about, because enough of the story survived for people to want it settled.",
+			"That argument is a thing to walk into rather than be told. The village is quiet now, and it is not empty.",
+		},
+		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Eastern Plaguelands" },
+	},
+})
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "Faol's Rest", parent = "Tirisfal Glades", faction = "Contested",
+		hook = "The grave of the archbishop who founded the Silver Hand, now untended.",
+		lore = {
+			"Alonsus Faol was Archbishop of the Church of the Holy Light and the man who answered the Second War by inventing an answer to it. With Uther at his side he founded the Knights of the Silver Hand, the first paladins, and trained the generation who fought the orcs to a standstill.",
+			"He died before the Scourge came and was spared the sight of what his own best student became: Arthas Menethil was raised in that tradition, and took up Frostmourne regardless.",
+			"The grave sits in eastern Tirisfal, a short way from the Scarlet Monastery. It was a place of pilgrimage once. Nobody tends it now, and the ground around it belongs to the Forsaken and the Scarlet Crusade, neither of whom have any use for a shrine to the other side's saint.",
+		},
+		readMore = { "Wowpedia: Alonsus Faol", "Wowpedia: Knights of the Silver Hand" },
+	},
+})
+
+SubsOf("Silverpine Forest", {
+	{
+		name = "Fenris Keep", parent = "Silverpine Forest", faction = "Hostile",
+		hook = "A keep on an island in Lordamere Lake, taken by a Kirin Tor mage who went over to the Scourge.",
+		lore = {
+			"Fenris Keep stands on Fenris Isle, out in Lordamere Lake, and it mattered: a sizeable part of Lordaeron's standing military was quartered here.",
+			"It fell in the Third War, and not to an army. Thule Ravenclaw was a young and ambitious mage of the Kirin Tor who threw in with the Scourge, took the keep, and made himself master of the local gnolls. The Rot Hide are his doing.",
+			"An ambitious apprentice deciding the Scourge was the better offer was not unusual. Kel'Thuzad made the same calculation at the top of the Kirin Tor, and Dalaran is a ruin inside a dome because of it.",
+		},
+		readMore = { "Wowpedia: Fenris Keep", "Wowpedia: Thule Ravenclaw", "Wowpedia: Rot Hide" },
+	},
+})
+
+SubsOf("Dun Morogh", {
+	{
+		name = "Anvilmar", parent = "Dun Morogh", faction = "Alliance",
+		hook = "The hall the dwarves lived in before Ironforge, and the name of their last High King.",
+		lore = {
+			"Anvilmar is where the dwarves were before they were three peoples. Modimus Anvilmar was High King when they were still one, ruling from a hall rather than from a mountain, and the clans answered to him together.",
+			"His death ended that. There was no settled succession, and the Bronzebeards, the Wildhammers and the Dark Irons went to war over the throne. That is the War of the Three Hammers, and every dwarven grievance since turns on it.",
+			"The hall is a quiet place for new dwarves to start out from, and that is a mild irony. Everything that divided their people began with the question of who got to sit in it.",
+		},
+		readMore = { "Wowpedia: Anvilmar", "Wowpedia: Modimus Anvilmar", "Wowpedia: War of the Three Hammers" },
+	},
+})
+
+SubsOf("Alterac Mountains", {
+	{
+		name = "Ravenholdt Manor", parent = "Alterac Mountains", faction = "Hostile",
+		hook = "A manor house that is the closest thing the world's rogues have to an address.",
+		lore = {
+			"Ravenholdt is run by Lord Jorach Ravenholdt, and what it runs is a network rather than an estate. Rogues who want work, training or protection come here, and the house asks about competence rather than allegiance.",
+			"Its standing enemy is the Syndicate, the criminal remnant of Alterac's nobility. When Alterac betrayed the Alliance during the Second War the kingdom was dismantled, and the aristocracy that lost everything turned to organised crime rather than to honest work.",
+			"So two outfits of thieves hold the same mountains, and the older one is the one with the pedigree.",
+		},
+		readMore = { "Wowpedia: Ravenholdt", "Wowpedia: Syndicate", "Wowpedia: Alterac" },
+	},
+	{
+		name = "Old Dalaran Ruins", parent = "Alterac Mountains", faction = "Contested",
+		hook = "What is left outside the dome, where the magocracy used to stand.",
+		lore = {
+			"Dalaran was the greatest school of arcane learning in the world, and Archimonde destroyed it in an afternoon at the end of the Third War. He broke the city to get at what the Kirin Tor had been keeping and then marched on Hyjal, where he died.",
+			"The surviving magi raised a dome over the worst of it. These ruins are the ground outside that, left uncovered.",
+			"The city brought a great deal of this on itself. Kel'Thuzad was one of its own, the Cult of the Damned was founded by a member of the Council of Six, and the Kirin Tor's habit of studying things it should have destroyed is the thread running through all of it.",
+		},
+		readMore = { "Wowpedia: Dalaran", "Wowpedia: Archimonde", "Wowpedia: Kel'Thuzad" },
+	},
+})
+
+SubsOf("Wetlands", {
+	{
+		name = "Menethil Keep", parent = "Wetlands", faction = "Alliance",
+		hook = "The keep over Menethil Harbour, named for a royal line that no longer exists.",
+		lore = {
+			"Menethil Harbour is the Alliance's western port and the keep is what holds it. Both carry the name of Lordaeron's royal house: Terenas Menethil was the king who assembled the Alliance of Lordaeron and won the Second War.",
+			"His son finished the house. Arthas Menethil took up Frostmourne, came home a death knight, and killed his father on the throne in Capital City.",
+			"So a working harbour in dwarf country keeps the name of a dynasty whose last act was to destroy its own kingdom. Nobody has suggested changing it.",
+		},
+		readMore = { "Wowpedia: Menethil Harbor", "Wowpedia: Terenas Menethil II", "Wowpedia: Arthas Menethil" },
+	},
+})

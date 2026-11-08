@@ -7,7 +7,7 @@ local addonName, ns = ...
 local U = ns.U
 
 ns.NAME      = addonName
-ns.VERSION   = "1.2.0"
+ns.VERSION   = "1.3.0-dev"
 ns.TITLE     = "ForAllTheNerds"
 
 -- ---------------------------------------------------------------------------
@@ -46,6 +46,17 @@ ns.has = {
 	secrets      = (type(issecretvalue) == "function") and true or false,
 	addonMeta    = (C_AddOns and type(C_AddOns.GetAddOnMetadata) == "function") and true or false,
 	backdrop     = (type(BackdropTemplateMixin) == "table") and true or false,
+	-- Needed to tell an NPC from a player before anything is written down.
+	-- Without it the roster logger refuses to run at all, rather than risk
+	-- recording the name of somebody's character.
+	unitIsPlayer = (type(UnitIsPlayer) == "function") and true or false,
+	-- C_Secrets.ShouldUnitIdentityBeSecret(unit) says whether a name read for
+	-- that unit would come back secret, so we can decline to ask at all.
+	identityProbe = (C_Secrets and type(C_Secrets.ShouldUnitIdentityBeSecret) == "function") and true or false,
+	-- C_Map.GetAreaInfo(areaID) hands back the client's own subzone name for an
+	-- AreaTable id. Present on Forever 1.60.1 and on Classic Era, and it has no
+	-- secret-value predicate, so the names can simply be read.
+	areaInfo     = (C_Map and type(C_Map.GetAreaInfo) == "function") and true or false,
 }
 
 -- ---------------------------------------------------------------------------
@@ -92,6 +103,9 @@ ns.defaults = {
 	-- Gap finding
 	logUnknown       = true,   -- note places the client reports that have no entry
 	unknown          = {},     -- ["Zone|Subzone"] = { zone, sub, count }
+	logNPCs          = true,   -- note the NPCs actually standing in the world
+	npcs             = {},     -- ["name|Zone"] = { name, zone, sub, count, id }
+	areaScan         = {},     -- the last /ftn areas result: { when, total, missing }
 
 	-- Per-character state
 	seen             = {},  -- [key] = true, for onlyFirstVisit
@@ -195,6 +209,120 @@ function ns.UnknownList()
 		return (a.sub or "") < (b.sub or "")
 	end)
 	return out
+end
+
+-- NPCs the player has actually stood in front of.
+--
+-- The same problem as the place list, one step worse. The character worklist
+-- for 1.3 was built from the wiki, and the wiki cannot answer the two
+-- questions that matter: whether an NPC exists in this client at all, and
+-- which zone it stands in. It lists characters who were added years after
+-- vanilla, and it files Orgrim Doomhammer under Durotar, where he cannot be
+-- targeted because he is dead. The client can answer both, so let it.
+--
+-- What goes in: the name exactly as the client spells it, the zone and subzone
+-- it was seen in, and a count. Nothing else, and nothing about players.
+local NPC_CAP = 1200
+
+function ns.RecordNPC(name, zone, sub, id)
+	local db = ns.db
+	if not (db and db.logNPCs and name and zone) then return end
+
+	local key = name .. "|" .. zone
+	local rec = db.npcs[key]
+	if rec then
+		rec.count = (rec.count or 0) + 1
+		-- Keep the first subzone seen. A wandering guard reports a different
+		-- one every few steps and the first is as good as any. The id is worth
+		-- filling in late, though: the first sighting may have been in combat
+		-- or in an instance, where the client would not give one.
+		if id and not rec.id then rec.id = id end
+		return
+	end
+
+	local n = 0
+	for _ in pairs(db.npcs) do n = n + 1 end
+	if n >= NPC_CAP then return end
+
+	db.npcs[key] = { name = name, zone = zone, sub = sub, count = 1, id = id }
+end
+
+function ns.NPCList()
+	local out = {}
+	if not (ns.db and ns.db.npcs) then return out end
+	for _, rec in pairs(ns.db.npcs) do out[#out + 1] = rec end
+	table.sort(out, function(a, b)
+		if a.zone ~= b.zone then return a.zone < b.zone end
+		if a.count ~= b.count then return a.count > b.count end
+		return a.name < b.name
+	end)
+	return out
+end
+
+-- Every place the client has a name for.
+--
+-- The gap list and the roster both wait for the player to walk somewhere. This
+-- does not: C_Map.GetAreaInfo turns an AreaTable id into the subzone name the
+-- client would report for it, so walking the ids walks the whole world from a
+-- standing start. That is the only way to get at Forever's new zones, whose
+-- subzone names appear in no outside source at all.
+--
+-- The wiki documents no id range and no behaviour for an unused id, so this
+-- assumes nothing: U.CallStr turns anything that is not a plain string into
+-- nil, and nil ids are simply skipped. Chunked across frames because twenty
+-- thousand lookups in one go would be felt as a freeze.
+local AREA_SCAN_MAX = 20000
+local AREA_CHUNK = 400
+
+function ns.ScanAreas(maxId, onDone)
+	if type(maxId) ~= "number" or maxId < 1 then maxId = AREA_SCAN_MAX end
+	if not ns.has.areaInfo then
+		if onDone then onDone(nil, "this client has no C_Map.GetAreaInfo") end
+		return
+	end
+
+	local found, seen = {}, {}
+	local id = 1
+
+	local function step()
+		local stop = id + AREA_CHUNK - 1
+		if stop > maxId then stop = maxId end
+		for i = id, stop do
+			local name = U.CallStr(C_Map.GetAreaInfo, i)
+			-- Many ids share a name. Keep the first and count the rest.
+			if name then
+				local key = U.Key(name)
+				if key and not seen[key] then
+					seen[key] = true
+					found[#found + 1] = { id = i, name = name }
+				end
+			end
+		end
+		id = stop + 1
+		if id > maxId then
+			if onDone then onDone(found, nil) end
+		else
+			U.After(0, step)
+		end
+	end
+
+	step()
+end
+
+-- Split a scan into what the database already covers and what it does not.
+-- The misses are the worklist: real place names, spelled the way the client
+-- spells them, with nothing written for them yet.
+function ns.AreaGaps(found)
+	local known, missing = 0, {}
+	for i = 1, #(found or {}) do
+		local a = found[i]
+		if ns.FindZone(a.name) or ns.FindSub(a.name) or ns.FindInstance(a.name) then
+			known = known + 1
+		else
+			missing[#missing + 1] = a
+		end
+	end
+	return known, missing
 end
 
 function ns.MarkSeen(key)

@@ -1059,6 +1059,372 @@ end
 ns.db.logUnknown = true
 ns.db.unknown = {}
 
+section("Version")
+
+-- Core.lua carries its own version string and the TOC carries another. They
+-- drifted once already: the TOC said 1.2.1 while ns.VERSION still said 1.2.0,
+-- and nothing noticed, because nothing compared them. ns.VERSION is written
+-- into the saved variables, so a stale one misreports which build wrote a
+-- player's settings file.
+if tocVersion and ns.VERSION then
+	if tocVersion == ns.VERSION then
+		out("TOC version and ns.VERSION agree: " .. ns.VERSION)
+	else
+		fail("version drift: the TOC says %s, Core.lua says %s", tocVersion, ns.VERSION)
+	end
+elseif not ns.VERSION then
+	fail("ns.VERSION is not set")
+end
+
+section("Every place the client can name")
+
+-- The gap list waits for the player to walk somewhere. This does not, which is
+-- the only way to reach Forever's new zones: their subzone names are in no
+-- outside source. C_Map.GetAreaInfo has no secret predicate, so the names can
+-- just be read.
+
+if not ns.has.areaInfo then
+	local called = false
+	ns.ScanAreas(100, function(found, err)
+		called = true
+		if found == nil and err then
+			out("without C_Map.GetAreaInfo the scan reports why instead of erroring")
+		else
+			fail("scan on a client with no GetAreaInfo returned %s", tostring(found))
+		end
+	end)
+	if not called then fail("the scan callback never ran on a client with no GetAreaInfo") end
+else
+	local result, scanErr
+	ns.ScanAreas(8000, function(found, err) result, scanErr = found, err end)
+	-- Chunked across frames, so the fake clock has to be run on.
+	for _ = 1, 40 do
+		if result or scanErr then break end
+		mock.advance(0.01)
+	end
+
+	if not result then
+		fail("the area scan never completed (%s)", tostring(scanErr))
+	else
+		out(string.format("the scan walks the id range and finds %d distinct names", #result))
+
+		-- Repeated names must collapse. Goldshire is at two ids in the mock.
+		local golds = 0
+		for i = 1, #result do
+			if U.Key(result[i].name) == U.Key("Goldshire") then golds = golds + 1 end
+		end
+		if golds == 1 then
+			out("a name sitting at several area ids is kept once, not once per id")
+		else
+			fail("Goldshire appeared %d times in the scan", golds)
+		end
+
+		-- The split into known and missing is the point of the whole thing.
+		local known, missing = ns.AreaGaps(result)
+		local missingNames = {}
+		for i = 1, #missing do missingNames[missing[i].name] = true end
+
+		if known > 0 and missingNames["Nowhere The Lore Covers"]
+			and missingNames["Another Unwritten Hollow"] then
+			out(string.format("%d scanned names have entries, %d are reported as missing",
+				known, #missing))
+		else
+			fail("the known/missing split is wrong (%d known, %d missing)", known, #missing)
+		end
+
+		-- Places that ARE written up must not be reported as missing.
+		local wrong = {}
+		for _, name in ipairs({ "Goldshire", "Elwynn Forest", "Stormwind City" }) do
+			if missingNames[name] then wrong[#wrong + 1] = name end
+		end
+		if #wrong == 0 then
+			out("places that do have entries are not reported as missing")
+		else
+			fail("written-up places were reported missing: %s", table.concat(wrong, ", "))
+		end
+	end
+
+	-- A secret name must not reach the list, the same as everywhere else.
+	mock.areaInfoSecret = true
+	local secretResult
+	ns.ScanAreas(2000, function(found) secretResult = found end)
+	for _ = 1, 20 do
+		if secretResult then break end
+		mock.advance(0.01)
+	end
+	mock.areaInfoSecret = false
+	if secretResult and #secretResult == 0 then
+		out("secret area names are skipped rather than stored")
+	else
+		fail("a secret area name reached the scan (%d results)",
+			secretResult and #secretResult or -1)
+	end
+end
+
+section("Who is standing here")
+
+-- The roster logger is the answer to the two things the wiki cannot tell us:
+-- whether an NPC exists in this build, and which zone it stands in. The
+-- dangerous part is what it must refuse to write down, so most of this block
+-- is about refusals.
+
+local function target(spec)
+	mock.units.target = spec
+	mock.fire("PLAYER_TARGET_CHANGED")
+end
+
+local function rosterHas(name)
+	for _, r in ipairs(ns.NPCList()) do
+		if r.name == name then return r end
+	end
+	return nil
+end
+
+-- Without UnitIsPlayer there is no way to tell an NPC from somebody's
+-- character, so the logger is required to refuse outright rather than guess.
+if not ns.has.unitIsPlayer then
+	ns.db.logNPCs = true
+	ns.db.npcs = {}
+	mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Goldshire" })
+	target({ name = "Marshal Dughan" })
+	mock.units.mouseover = { name = "Innkeeper Farley" }
+	mock.fire("UPDATE_MOUSEOVER_UNIT")
+	if #ns.NPCList() == 0 then
+		out("no UnitIsPlayer on this client, so the roster refuses to record at all")
+	else
+		fail("recorded %d character(s) on a client with no UnitIsPlayer", #ns.NPCList())
+	end
+else
+	ns.db.logNPCs = true
+	ns.db.npcs = {}
+	mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Goldshire" })
+
+	target({ name = "Marshal Dughan" })
+	local rec = rosterHas("Marshal Dughan")
+	if rec and rec.zone == "Elwynn Forest" and rec.sub == "Goldshire" then
+		out("a targeted NPC is recorded with the zone and subzone it was standing in")
+	else
+		fail("targeting an NPC did not record it properly (%s)", rec and
+			(tostring(rec.zone) .. "/" .. tostring(rec.sub)) or "nothing recorded")
+	end
+
+	-- Hovering has to work too, or sweeping a town means clicking every guard.
+	mock.units.mouseover = { name = "Innkeeper Farley" }
+	mock.fire("UPDATE_MOUSEOVER_UNIT")
+	if rosterHas("Innkeeper Farley") then
+		out("a moused-over NPC is recorded as well as a targeted one")
+	else
+		fail("UPDATE_MOUSEOVER_UNIT recorded nothing")
+	end
+
+	-- Re-targeting the same NPC counts rather than duplicating.
+	target({ name = "Some Other Guard" })
+	target({ name = "Marshal Dughan" })
+	rec = rosterHas("Marshal Dughan")
+	if rec and rec.count >= 2 then
+		out(string.format("re-targeting increments the count (now %d)", rec.count))
+	else
+		fail("re-targeting gave count %s", rec and rec.count)
+	end
+
+	-- The same name in a different zone is a separate record, because which zone
+	-- an NPC stands in is the thing being measured.
+	mock.moveTo({ zone = "Westfall", realzone = "Westfall", subzone = "Sentinel Hill" })
+	target({ name = "Marshal Dughan" })
+	local zones = {}
+	for _, r in ipairs(ns.NPCList()) do
+		if r.name == "Marshal Dughan" then zones[r.zone] = true end
+	end
+	if zones["Elwynn Forest"] and zones["Westfall"] then
+		out("the same name in two zones is kept as two records, not merged")
+	else
+		fail("the same NPC in two zones did not produce two records")
+	end
+
+	-- The creature id is what every outside catalogue is keyed on, so it is
+	-- worth more than the name. It comes out of the GUID.
+	ns.db.npcs = {}
+	mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "Forest's Edge" })
+	target({ name = "Hogger", id = 448 })
+	rec = rosterHas("Hogger")
+	if rec and rec.id == 448 then
+		out("the creature id is read out of the GUID and stored (Hogger is 448)")
+	else
+		fail("the creature id was not stored (got %s)", rec and tostring(rec.id))
+	end
+
+	-- A GUID this build does not use must not stop the name being recorded.
+	ns.db.npcs = {}
+	target({ name = "Old Format", guid = "0xF13000008C000D4A" })
+	rec = rosterHas("Old Format")
+	if rec and rec.id == nil then
+		out("a vanilla-style hex GUID yields no id, and the name is still kept")
+	else
+		fail("hex GUID handling is wrong (id %s)", rec and tostring(rec.id))
+	end
+
+	-- Anything that is not a creature is not a creature id. The GUID has to be
+	-- the right SHAPE for this to test anything: a short one fails the pattern
+	-- on its own and would pass even with the kind check deleted.
+	ns.db.npcs = {}
+	target({ name = "Not A Creature", guid = "Pet-0-1465-0-2105-448-000043F59F" })
+	rec = rosterHas("Not A Creature")
+	if rec and rec.id == nil then
+		out("a well-formed GUID of the wrong kind still yields no id")
+	else
+		fail("a Pet GUID produced a creature id: %s", rec and tostring(rec.id))
+	end
+	ns.db.npcs = {}
+	target({ name = "Short Guid", guid = "Player-1465-0A2B3C4D" })
+	if rosterHas("Short Guid") and rosterHas("Short Guid").id == nil then
+		out("a GUID that does not parse yields no id")
+	else
+		fail("a short GUID produced an id")
+	end
+
+	-- A secret GUID must not be stored, and must not block the name either.
+	ns.db.npcs = {}
+	target({ name = "Secret Guid", secretGUID = true })
+	rec = rosterHas("Secret Guid")
+	if rec and rec.id == nil then
+		out("a secret GUID yields no id, and the name is still kept")
+	else
+		fail("a secret GUID produced an id: %s", rec and tostring(rec.id))
+	end
+
+	-- First sighting in combat or an instance can give a name but no id, so a
+	-- later sighting has to be able to fill it in.
+	ns.db.npcs = {}
+	target({ name = "Later Id", guid = "0xF13000008C000D4A" })
+	target({ name = "Someone Else" })
+	target({ name = "Later Id", id = 1337 })
+	rec = rosterHas("Later Id")
+	if rec and rec.id == 1337 then
+		out("an id missing on the first sighting is filled in on a later one")
+	else
+		fail("the id was not back-filled (got %s)", rec and tostring(rec.id))
+	end
+
+	-- PRIVACY. A player must never reach the saved variables.
+	ns.db.npcs = {}
+	target({ name = "Somebodyself", isPlayer = true })
+	if #ns.NPCList() == 0 then
+		out("a targeted player is not recorded")
+	else
+		fail("a PLAYER NAME was written to the roster: %s", ns.NPCList()[1].name)
+	end
+
+	-- A pet or totem carries its owner's name, so player-controlled is out too.
+	ns.db.npcs = {}
+	target({ name = "Somebodyself's Voidwalker", playerControlled = true })
+	if #ns.NPCList() == 0 then
+		out("a player-controlled pet is not recorded")
+	else
+		fail("a player-controlled unit was recorded: %s", ns.NPCList()[1].name)
+	end
+
+	-- If UnitIsPlayer cannot be read, we cannot tell, so nothing is recorded.
+	ns.db.npcs = {}
+	target({ name = "Could Be Anybody", secretIsPlayer = true })
+	if #ns.NPCList() == 0 then
+		out("an unreadable UnitIsPlayer is treated as a player and skipped")
+	else
+		fail("a unit whose UnitIsPlayer was secret got recorded")
+	end
+
+	-- SECRET VALUES. A secret name must not be stored, in any form.
+	ns.db.npcs = {}
+	target({ name = "Edwin VanCleef", secretName = true })
+	if #ns.NPCList() == 0 then
+		out("a secret unit name is not recorded")
+	else
+		fail("a secret name reached the roster: %s", tostring(ns.NPCList()[1].name))
+	end
+
+	-- Where the client offers to say so in advance, we do not even ask for a name.
+	-- Not every client has C_Secrets, so this only applies where the probe exists.
+	if ns.has.identityProbe then
+		ns.db.npcs = {}
+		local asked = false
+		local realProbe = C_Secrets.ShouldUnitIdentityBeSecret
+		local realUnitName = UnitName
+		C_Secrets.ShouldUnitIdentityBeSecret = function() return true end
+		UnitName = function(...) asked = true return realUnitName(...) end
+		target({ name = "Ragnaros" })
+		C_Secrets.ShouldUnitIdentityBeSecret = realProbe
+		UnitName = realUnitName
+		if #ns.NPCList() == 0 and not asked then
+			out("ShouldUnitIdentityBeSecret is believed, and the name is never read")
+		elseif #ns.NPCList() == 0 then
+			fail("identity-restricted unit was not recorded, but UnitName was called anyway")
+		else
+			fail("an identity-restricted unit was recorded")
+		end
+	else
+		-- No advance warning available. The U.CallStr guard is then the only
+		-- defence, and the secret-name test above is what holds it.
+		out("this client has no C_Secrets probe; the secret-name guard covers it")
+	end
+
+	-- The not-yet-loaded placeholder is not a character.
+	ns.db.npcs = {}
+	target({ name = UNKNOWNOBJECT })
+	if #ns.NPCList() == 0 then
+		out("UNKNOWNOBJECT is not recorded as a character")
+	else
+		fail("the UNKNOWNOBJECT placeholder was recorded")
+	end
+
+	-- Targeting nothing at all must not error or record.
+	ns.db.npcs = {}
+	mock.units.target = nil
+	mock.fire("PLAYER_TARGET_CHANGED")
+	if #ns.NPCList() == 0 then
+		out("clearing the target records nothing and does not error")
+	else
+		fail("clearing the target recorded something")
+	end
+
+	-- The switch has to actually stop it. Both the event path and the recorder
+	-- check it, so test the whole path and then the recorder on its own. Note
+	-- that removing the event-path gate alone changes no behaviour, because the
+	-- recorder still refuses: that gate is there to skip the unit API calls, not
+	-- to keep records out. The recorder's gate is the one that matters, and the
+	-- second test is what holds it.
+	ns.db.logNPCs = false
+	ns.db.npcs = {}
+	target({ name = "Hogger" })
+	if #ns.NPCList() == 0 then
+		out("turning the setting off stops recording, end to end")
+	else
+		fail("NPCs were recorded with logNPCs off")
+	end
+	ns.db.npcs = {}
+	ns.RecordNPC("Hogger", "Elwynn Forest", "Forest's Edge")
+	if #ns.NPCList() == 0 then
+		out("turning the setting off stops the recorder itself")
+	else
+		fail("ns.RecordNPC wrote a record with logNPCs off")
+	end
+	ns.db.logNPCs = true
+
+	-- The cap holds, so a long session cannot grow the saved file without limit.
+	ns.db.npcs = {}
+	for i = 1, 1400 do
+		ns.RecordNPC("Filler " .. i, "Elwynn Forest", nil)
+	end
+	local capped = #ns.NPCList()
+	if capped <= 1200 then
+		out(string.format("the roster is capped (%d records after 1400 attempts)", capped))
+	else
+		fail("the roster grew to %d records, past the cap", capped)
+	end
+end
+
+ns.db.npcs = {}
+mock.units.target = nil
+mock.units.mouseover = nil
+
 section("Source links")
 
 -- Every reference in the database has to produce a usable address.
@@ -1159,6 +1525,7 @@ else
 	local commands = {
 		"", "help", "here", "list", "list Kalimdor", "list Eastern Kingdoms",
 		"stats", "gaps", "gaps clear", "gaps off", "gaps on", "where", "card off", "card on", "chat on", "chat off",
+		"npcs", "npcs clear", "npcs off", "npcs on", "characters",
 		"forever on", "forever off", "on", "off", "on",
 		"unlock", "reset", "debug on", "debug off", "forget",
 		"Goldshire", "goldshire", "GOLDSHIRE", "Stratholme", "karazhan",
@@ -1274,12 +1641,27 @@ for i = 1, #cnames do
 end
 
 -- Zones with few or no child locales are the obvious places to expand next.
+--
+-- Four are exempt because the client's own AreaTable gives them no child areas
+-- at all, so there is nothing to write. Checked on 2026-11-09 against
+-- AreaTable for product wowf: areas 2257, 3478, 2918 and 2917 each have zero
+-- rows pointing at them as ParentAreaID. Leaving them in the list made a note
+-- that can never be cleared, and a permanent nag is one nobody reads.
+local SINGLE_AREA_ZONES = {
+	["deeprun tram"] = true,
+	["gates of ahn'qiraj"] = true,
+	["champions' hall"] = true,
+	["hall of legends"] = true,
+}
+
 local thin = {}
 for i = 1, #ns.zoneOrder do
 	local z = ns.zoneOrder[i]
 	local kids = ns.Index.children[z.key]
 	local n = kids and #kids or 0
-	if n < 3 then thin[#thin + 1] = string.format("%s (%d)", z.name, n) end
+	if n < 3 and not SINGLE_AREA_ZONES[z.key] then
+		thin[#thin + 1] = string.format("%s (%d)", z.name, n)
+	end
 end
 if #thin > 0 then
 	note("zones with fewer than 3 locales written up: %s", table.concat(thin, ", "))

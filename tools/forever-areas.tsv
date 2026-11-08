@@ -1,0 +1,106 @@
+# Forever's own areas, and which of them have an entry.
+#
+# Every column here comes from the game's own AreaTable, fetched as CSV from
+# wago.tools, whose robots.txt permits exactly that route and blocks the HTML
+# browser. Product "wowf", build 1.60.1.70862, read on 2026-11-08. The names
+# are the client's own spelling, which is what Data/Schema.lua keys on.
+#
+# No notes column, for the same reason tools/characters.tsv has none: the one
+# in places.tsv held three wrong notes and those errors reached finished lore.
+#
+# has_entry was produced by loading the addon against tools/mock_wow.lua,
+# dumping every registered entry name through ns.EachEntry, and matching on a
+# normalised name. That is a name match, not the resolver: a place whose entry
+# exists but whose parent zone differs would show as having one. /ftn areas
+# inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
+#
+# 68 areas, 49 written up, 19 to go. Counted with aliases; a name-only
+# check had reported four of them wrongly.
+#
+# The 35 still open are not blocked on sources any more. Martin cleared the
+# built-in browser for reading warcraft.wiki.gg, whose robots.txt allows
+# User-agent: * even though it names this tooling's crawler agents, and the
+# zone articles carry real history. The four zone pages were read on
+# 2026-11-09 and everything they support has been written.
+#
+# What is left needs the individual subzone articles, one page each, or the
+# game. Client data will never supply it: quest text and NPC dialogue are what
+# describe a place and both live on the server. Nine DB2 tables were checked
+# through wago.tools and none of them carry a word of it, AreaPOI's 150
+# descriptions being UI strings like "Alliance Controlled".
+#
+# Note the spellings can differ. The wiki calls it Evenshade Overlook; the
+# client's AreaTable says Evenshade's Overlook, and the client wins, because
+# GetSubZoneText is what the addon matches on.
+#
+# /ftn areas does the has_entry check from inside the game, for the whole world
+# rather than just these zones.
+zone	area_id	name	has_entry
+Hyjal Crater	17852	Hyjal Crater	no
+Mount Hyjal	17145	Cradle of Tranquility	no
+Mount Hyjal	16866	Dae'gun	no
+Mount Hyjal	16848	Elderwild	no
+Mount Hyjal	17050	Felblood Scar	yes
+Mount Hyjal	17144	Malorne's Retreat	yes
+Mount Hyjal	616	Mount Hyjal	yes
+Mount Hyjal	16004	Mount Hyjal	yes
+Mount Hyjal	16868	Mourning's Rest	no
+Mount Hyjal	16867	Shrine of Aviana	yes
+Mount Hyjal	16849	Summit of Eternity	yes
+Mount Hyjal	16853	Tainted Foothills	yes
+Riverglades	17808	Ashwood's Fall	no
+Riverglades	16726	Bolder'ok	yes
+Riverglades	16737	Bristle Hills	yes
+Riverglades	16728	Eastwind Shore	no
+Riverglades	16734	Elbrim's Farm	no
+Riverglades	16724	Farholde Keep	yes
+Riverglades	17809	Forlorn Pit	no
+Riverglades	17780	Krol'dok Stronghold	yes
+Riverglades	16735	Meadowsbrook	yes
+Riverglades	16727	Powderfuse Port	yes
+Riverglades	16591	Riverglades	yes
+Riverglades	16743	Rog'mar	yes
+Riverglades	16744	Southern Watch	no
+Riverglades	16723	Sunnyglade	yes
+Riverglades	16729	Terral's Watch	no
+Riverglades	16820	The Forbidding Sea	yes
+Riverglades	16736	Turner's Logging Camp	no
+Riverglades	17847	Twilight Hollow	no
+Riverglades	16685	Twilight's Shroud	yes
+Riverglades	16725	Wheeler's Grange	no
+Riverglades	16731	Windstead	yes
+Shen'dralas	16677	Bristleback Retreat	yes
+Shen'dralas	16678	Evenshade's Overlook	yes
+Shen'dralas	16742	Forlorn Gardens	no
+Shen'dralas	16675	Magram Front	yes
+Shen'dralas	16676	Outcast Hideaway	yes
+Shen'dralas	16651	Shen'dralas	yes
+Shen'dralas	2657	Valley of Bones	yes
+Zephras Isle	16674	Bandit Hideout	no
+Zephras Isle	17675	East Pylon Watchtower	yes
+Zephras Isle	17684	Fairweather Stables	yes
+Zephras Isle	16636	Falaath Village	yes
+Zephras Isle	16626	Gustberry Lowlands	yes
+Zephras Isle	16720	Nightclaw Cavern	no
+Zephras Isle	17677	Overlook Standing Stones	yes
+Zephras Isle	16988	Rise of Spirits	yes
+Zephras Isle	16630	Rohashi Spires	no
+Zephras Isle	16833	Ruins of Ban'aethal	no
+Zephras Isle	16679	Sanctum of Storms	yes
+Zephras Isle	16631	Shadowgale Forest	yes
+Zephras Isle	16623	Shen'dar Highlands	yes
+Zephras Isle	16624	Shen'dar Village	yes
+Zephras Isle	16672	Shriekling Den	yes
+Zephras Isle	16629	Shrine of Akir	yes
+Zephras Isle	17221	Skywall	yes
+Zephras Isle	16673	Thendal Cave	yes
+Zephras Isle	16622	Thendal Grove	yes
+Zephras Isle	17678	Thendal Standing Stones	yes
+Zephras Isle	16635	Thendal Village	yes
+Zephras Isle	16638	Valanaar	yes
+Zephras Isle	16628	Valanaar Skydocks	yes
+Zephras Isle	17674	West Pylon Watchtower	yes
+Zephras Isle	16663	Windfield Orchard	yes
+Zephras Isle	16625	Windsong Lake	yes
+Zephras Isle	17676	Windsong Standing Stones	yes
+Zephras Isle	16593	Zephras Isle	yes

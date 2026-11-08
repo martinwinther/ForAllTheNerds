@@ -28,6 +28,8 @@ local function showHelp()
 	line("/ftn reset",          "put the card and panel back in the middle")
 	line("/ftn stats",          "how much you have discovered")
 	line("/ftn gaps",           "places you have been that have no entry yet")
+	line("/ftn npcs",           "characters you have targeted, and where they stand")
+	line("/ftn areas",          "ask the client for every place name it knows")
 	line("/ftn where",          "print what the client thinks this place is called")
 	if ns.Index then
 		U.Print(hex(DIM, string.format("%d places written up: %d zones, %d locales, %d instances.",
@@ -185,6 +187,96 @@ local function doGaps(arg)
 	U.Print(hex(DIM, "/ftn gaps clear empties it."))
 end
 
+local function doNPCs(arg)
+	local db = ns.db
+	if arg == "clear" or arg == "reset" then
+		db.npcs = {}
+		U.Print("character list cleared.")
+		return
+	end
+	if arg == "off" or arg == "on" then
+		db.logNPCs = (arg == "on")
+		U.Print("recording the characters you target is %s.", arg)
+		return
+	end
+
+	local list = ns.NPCList()
+	if #list == 0 then
+		U.Print("no characters recorded yet. Target or hover over someone.")
+		if not db.logNPCs then
+			U.Print(hex(DIM, "Recording is switched off. Turn it on with /ftn npcs on."))
+		elseif not ns.has.unitIsPlayer then
+			U.Print(hex(DIM, "This client has no UnitIsPlayer, so recording is disabled: there"))
+			U.Print(hex(DIM, "would be no way to tell an NPC from another player."))
+		end
+		return
+	end
+
+	U.Print("%d character%s recorded, grouped by zone:", #list, #list == 1 and "" or "s")
+	local shown = math.min(#list, 25)
+	local lastZone
+	for i = 1, shown do
+		local r = list[i]
+		if r.zone ~= lastZone then
+			lastZone = r.zone
+			U.Print(hex(DIM, "  " .. r.zone))
+		end
+		local where = r.sub and hex(DIM, "  in " .. r.sub) or ""
+		local id = r.id and hex(DIM, "  #" .. r.id) or ""
+		U.Print("    %s%s%s %s", hex(ACCENT, r.name), id, where, hex(DIM, "x" .. r.count))
+	end
+	if #list > shown then
+		U.Print(hex(DIM, string.format("  ...and %d more.", #list - shown)))
+	end
+	U.Print(hex(DIM, "Spellings are the client's own, and every one of these is a character that"))
+	U.Print(hex(DIM, "exists and can be stood in front of. The #number is the creature id, which"))
+	U.Print(hex(DIM, "is what outside catalogues of NPCs are keyed on. The full list is saved in"))
+	U.Print(hex(DIM, "WTF/Account/<ACCOUNT>/SavedVariables/ForAllTheNerds.lua under 'npcs'."))
+	U.Print(hex(DIM, "/ftn npcs clear empties it."))
+end
+
+local function doAreas(arg)
+	if not ns.has.areaInfo then
+		U.Print("this client has no C_Map.GetAreaInfo, so the place names cannot be listed.")
+		return
+	end
+
+	local maxId = tonumber(arg)
+	U.Print("asking the client for every place name it knows. One moment.")
+
+	ns.ScanAreas(maxId, function(found, err)
+		if err or not found then
+			U.Print("could not scan: %s", tostring(err or "no result"))
+			return
+		end
+
+		local known, missing = ns.AreaGaps(found)
+		ns.db.areaScan = { when = time and time() or 0, total = #found, missing = {} }
+		for i = 1, #missing do
+			ns.db.areaScan.missing[i] = { id = missing[i].id, name = missing[i].name }
+		end
+
+		U.Print("the client knows %s distinct place names. %s have an entry here, %s do not.",
+			hex(GOLD, tostring(#found)), hex(GOLD, tostring(known)), hex(GOLD, tostring(#missing)))
+
+		if #missing == 0 then
+			U.Print(hex(DIM, "Nothing missing. Every place the client can name is written up."))
+			return
+		end
+
+		local shown = math.min(#missing, 25)
+		for i = 1, shown do
+			U.Print("  %s %s", hex(ACCENT, missing[i].name), hex(DIM, "#" .. missing[i].id))
+		end
+		if #missing > shown then
+			U.Print(hex(DIM, string.format("  ...and %d more.", #missing - shown)))
+		end
+		U.Print(hex(DIM, "This is the whole world, not just where you have been, so it covers"))
+		U.Print(hex(DIM, "Forever's new zones too. The full list is saved in"))
+		U.Print(hex(DIM, "WTF/Account/<ACCOUNT>/SavedVariables/ForAllTheNerds.lua under 'areaScan'."))
+	end)
+end
+
 local function doStats()
 	local db = ns.db
 	if not db then return end
@@ -201,6 +293,11 @@ local function doStats()
 	if gaps > 0 then
 		U.Print(hex(DIM, string.format("%d place%s you have visited has no entry yet. /ftn gaps lists them.",
 			gaps, gaps == 1 and "" or "s")))
+	end
+	local npcs = #ns.NPCList()
+	if npcs > 0 then
+		U.Print(hex(DIM, string.format("%d character%s noted. /ftn npcs lists them.",
+			npcs, npcs == 1 and "" or "s")))
 	end
 end
 
@@ -282,6 +379,12 @@ local function handler(msg)
 
 	elseif cmd == "gaps" or cmd == "missing" then
 		doGaps(string.lower(rest or ""))
+
+	elseif cmd == "npcs" or cmd == "characters" then
+		doNPCs(string.lower(rest or ""))
+
+	elseif cmd == "areas" or cmd == "places" then
+		doAreas(rest)
 
 	elseif cmd == "stats" then
 		doStats()

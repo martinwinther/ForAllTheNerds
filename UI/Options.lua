@@ -221,6 +221,12 @@ local function buildPanel(parent)
 		"Records the names the game gives for places this addon has nothing written for, so the "
 		.. "gaps can be filled in later. Nothing is sent anywhere; /ftn gaps shows the list.",
 		"logUnknown"))
+	place(makeCheck(parent, "Note the characters you target",
+		"Records the name of any character you target or hover over, with the zone it was "
+		.. "standing in, so write-ups can be based on who is really there rather than on a "
+		.. "list made elsewhere. Players are never recorded, only NPCs. Nothing is sent "
+		.. "anywhere; /ftn npcs shows the list.",
+		"logNPCs"))
 	place(makeCheck(parent, "Show the 'Worth knowing' curiosity", nil, "showDidYouKnow"))
 	place(makeCheck(parent, "Show source links", "The 'if you want to go deeper' list at the bottom of a write-up. Click one for a copyable web address.", "showReadMore"))
 	place(makeCheck(parent, "Link to Wowpedia instead of Warcraft Wiki",

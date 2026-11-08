@@ -1,0 +1,104 @@
+# Creature ids to check against Blizzard's own Classic Era data.
+#
+# One line per candidate from tools/characters.tsv that has a spawned creature
+# in the 1.12.1 world database. The id and the name after it come from that
+# database, which is a community reconstruction, not Blizzard: checking them is
+# the whole point of the file. Feed it to
+#
+#     python3 -I tools/blizzard-ids.py ids tools/creature-ids.tsv
+#
+# THIS DOES NOT WORK, as of 2026-11-08. Blizzard's Classic Era creature data
+# is 601-700 documents and they are the tameable-beast set for the hunter pet
+# UI. None of the ids below resolve: 448, 234 and 239 were tried and all
+# returned 404. There is nothing there to check them against.
+#
+# The file is kept because the ids themselves are still the best available
+# answer to "which of the worklist exist in 1.12", and because /ftn npcs
+# records the same ids from the live client, which these can be compared with.
+# Their source is the cmangos reconstruction. See tools/npc-ids.md.
+#
+# id	cmangos_name	wiki_zone
+234	Gryan Stoutmantle	Westfall
+239	Grimbooze Thunderbrew	Tanaris
+295	Innkeeper Farley	Elwynn Forest
+313	Theocritus	Elwynn Forest
+344	Magistrate Solomon	Redridge Mountains
+376	High Priestess Laurena	Stormwind City
+482	Elling Trias	Stormwind City
+925	Brother Sammuel	Elwynn Forest
+928	Lord Grayson Shadowbreaker	Stormwind City
+1247	Innkeeper Belm	Dun Morogh
+1497	Gunther Arcanus	Tirisfal Glades
+1646	Baros Alexston	Stormwind City
+1747	Anduin Wrynn	Durotar
+2055	Master Apothecary Faranell	Silverpine Forest
+2487	Fleet Master Seahorn	Mount Hyjal
+2543	Archmage Ansirem Runeweaver	Alterac Mountains
+2785	Theldurin the Lost	Badlands
+2918	Advisor Belgrum	Ironforge
+2993	Baine Bloodhoof	Durotar
+3033	Turak Runetotem	Thunder Bluff
+3188	Master Gadrin	Durotar
+3296	Orgrimmar Grunt	Azshara
+3341	Gann Stonespire	The Barrens
+3359	Kiro	Orgrimmar
+3432	Mankrik	Durotar
+3520	Ol' Emma	Stormwind City
+3616	Onu	Darkshore
+3644	Cerellean Whiteclaw	Darkshore
+3649	Thundris Windweaver	Darkshore
+3679	Naralex	The Barrens
+3691	Raene Wolfrunner	Ashenvale
+3894	Pelturas Whitemoon	Ashenvale
+3936	Shandris Feathermoon	Ashenvale
+4090	Astarii Starseeker	Darnassus
+4217	Mathrengyl Bearwalker	Darnassus
+4488	Parqual Fintallas	Undercity
+4501	Draz'Zilb	Dustwallow Marsh
+4630	Pozzik	Thousand Needles
+4722	Rau Cliffrunner	Thousand Needles
+4965	Pained	Dustwallow Marsh
+5149	Brandur Ironhammer	Ironforge
+5694	High Sorcerer Andromath	Elwynn Forest
+5734	Apothecary Keever	Tirisfal Glades
+6109	Azuregos	Azshara
+6171	Duthorian Rall	Stormwind City
+6179	Tiza Battleforge	Ironforge
+6466	Gamon	Durotar
+6768	Lord Jorach Ravenholdt	Hillsbrad Foothills
+6906	Baelog	Badlands
+6908	Olaf	Badlands
+6928	Innkeeper Grosk	Durotar
+6946	Renzik "The Shiv"	Stormwind City
+7406	Oglethorpe Obnoticus	Tanaris
+7564	Marin Noggenfogger	Tanaris
+7572	Fallen Hero of the Horde	Swamp of Sorrows
+7854	Jangdor Swiftstrider	Feralas
+7875	Hadoken Swiftstrider	Feralas
+7878	Vestia Moonspear	Feralas
+7944	Tinkmaster Overspark	Durotar
+8115	Witch Doctor Uzer'i	Feralas
+8379	Archmage Xylem	Azshara
+8403	Jeremiah Payson	Durotar
+8666	Lil Timmy	Stormwind City
+10427	Pao'ka Swiftmountain	Thousand Needles
+10428	Motega Firemane	Tanaris
+10578	Bom'bay	Durotar
+10646	Lakota Windsong	Thousand Needles
+10840	Argent Officer Pureheart	Western Plaguelands
+10929	Haleh	Winterspring
+11034	Lord Maxwell Tyrosus	Eastern Plaguelands
+11216	Eva Sarkhoff	Western Plaguelands
+11406	High Priest Rohan	Ironforge
+11946	Drek'Thar	Hillsbrad Foothills
+11948	Vanndar Stormpike	Hillsbrad Foothills
+11949	Captain Balinda Stonehearth	Hillsbrad Foothills
+12121	Draka	Durotar
+12919	Nat Pagle	Dustwallow Marsh
+14347	Highlord Demitrian	Silithus
+14736	Primal Torntusk	The Hinterlands
+14757	Elder Torntusk	The Hinterlands
+15263	The Prophet Skeram	Tanaris
+16116	Archmage Angela Dosantos	Eastern Plaguelands
+16134	Rimblat Earthshatter	Eastern Plaguelands
+16135	Rayne	Eastern Plaguelands

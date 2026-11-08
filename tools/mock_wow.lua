@@ -317,9 +317,71 @@ function M.install()
 		return "1.60.1", "70338", "2026-11-04", os.getenv("FTN_TOC") or "16001"
 	end
 
-	-- Secret values exist on the Midnight/Forever API family. Nothing the addon
-	-- reads is actually secret, but the guard has to be callable.
-	_G.issecretvalue = function() return false end
+	-- Secret values exist on the Midnight/Forever API family. Lua has no way to
+	-- make a real one, so a secret is modelled as a unique box table held in a
+	-- registry that issecretvalue knows about. The addon's guards reject it on
+	-- the issecretvalue branch, which is the branch under test; anything the
+	-- harness has not boxed answers false exactly as before.
+	M.secrets = {}
+	function M.secret(v)
+		local box = { boxed = v }
+		M.secrets[box] = true
+		return box
+	end
+	_G.issecretvalue = function(v) return M.secrets[v] == true end
+
+	-- Unit API. M.units["target"] = { name=, isPlayer=, playerControlled=,
+	-- secretName=, identityRestricted= }. Absent means the unit does not exist.
+	M.units = M.units or {}
+
+	local function unitOf(unit) return M.units[unit] end
+
+	_G.UnitExists = function(unit) return unitOf(unit) ~= nil end
+
+	_G.UnitName = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		if u.secretName then return M.secret(u.name) end
+		return u.name
+	end
+
+	if not os.getenv("FTN_NO_UNITISPLAYER") then
+		_G.UnitIsPlayer = function(unit)
+			local u = unitOf(unit)
+			if not u then return nil end
+			if u.secretIsPlayer then return M.secret(false) end
+			return u.isPlayer and true or false
+		end
+	end
+
+	-- GUIDs on the modern format. u.guid overrides it outright, so a test can
+	-- hand over a vanilla-style hex GUID or outright rubbish.
+	_G.UnitGUID = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		if u.secretGUID then return M.secret("Creature-0-1465-0-2105-1-0") end
+		if u.guid then return u.guid end
+		if not u.id then return nil end
+		return string.format("Creature-0-1465-0-2105-%d-000043F59F", u.id)
+	end
+
+	_G.UnitPlayerControlled = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		return u.playerControlled and true or false
+	end
+
+	_G.UNKNOWNOBJECT = "Unknown Entity"
+
+	if not os.getenv("FTN_NO_SECRET_PROBE") then
+		_G.C_Secrets = {
+			ShouldUnitIdentityBeSecret = function(unit)
+				local u = unitOf(unit)
+				if not u then return false end
+				return u.identityRestricted and true or false
+			end,
+		}
+	end
 
 	_G.C_Timer = {
 		After = function(delay, fn)
@@ -332,10 +394,31 @@ function M.install()
 		end,
 	}
 
+	-- A small stand-in AreaTable. Keys are area ids, values the subzone name the
+	-- client would report. Deliberately mixes places the lore files cover with
+	-- places they do not, and repeats one name under two ids, because the real
+	-- table does that constantly.
+	M.areas = M.areas or {
+		[9]    = "Northshire Valley",
+		[12]   = "Elwynn Forest",
+		[87]   = "Goldshire",
+		[88]   = "Goldshire",
+		[1519] = "Stormwind City",
+		[7777] = "Nowhere The Lore Covers",
+		[7778] = "Another Unwritten Hollow",
+	}
+
 	_G.C_Map = {
 		GetBestMapForUnit = function() return M.location.uiMapID end,
 		GetMapInfo = function(id) return { mapID = id, name = M.location.zone } end,
 	}
+
+	if not os.getenv("FTN_NO_AREAINFO") then
+		C_Map.GetAreaInfo = function(id)
+			if M.areaInfoSecret then return M.secret("Somewhere") end
+			return M.areas[id]
+		end
+	end
 
 	_G.C_AddOns = {
 		GetAddOnMetadata = function(_, field)

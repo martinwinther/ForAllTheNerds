@@ -40,6 +40,16 @@ function U.SafeNum(v)
 	return v
 end
 
+-- SafeBool(v) -> true, false or nil. nil means "could not be read": either the
+-- value was secret or it was not a boolean. Callers that are deciding whether
+-- something is safe to record must treat nil as "no", never as false.
+function U.SafeBool(v)
+	if v == nil then return nil end
+	if issecretvalue and issecretvalue(v) then return nil end
+	if type(v) ~= "boolean" then return nil end
+	return v
+end
+
 -- Call a possibly-absent API and guard the first return value as a string.
 -- U.CallStr(GetSubZoneText) -> string or nil
 function U.CallStr(fn, ...)
@@ -54,6 +64,16 @@ function U.CallNum(fn, ...)
 	local ok, result = pcall(fn, ...)
 	if not ok then return nil end
 	return U.SafeNum(result)
+end
+
+-- U.CallBool(UnitIsPlayer, "target") -> true, false or nil.
+-- nil covers every way the answer can be unavailable: the function is missing,
+-- the call errored, the return was secret, or it was not a boolean.
+function U.CallBool(fn, ...)
+	if type(fn) ~= "function" then return nil end
+	local ok, result = pcall(fn, ...)
+	if not ok then return nil end
+	return U.SafeBool(result)
 end
 
 -- ---------------------------------------------------------------------------
