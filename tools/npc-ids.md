@@ -120,6 +120,62 @@ Two things left unestablished, so do not assume either way:
   published in September 2026, collects names the same way, which says the
   approach works in practice rather than that it is exhaustive.
 
+## Route 4: the data sites
+
+Two of them, with opposite answers. Check before fetching.
+
+**Wowhead: no.** Its `robots.txt` carries a single `Disallow: /` block naming
+`ClaudeBot`, `anthropic-ai`, `Claude-Web`, `GPTBot`, `CCBot`, `Scrapy`,
+`Bytespider`, `Diffbot` and about twenty more. The whole site is off limits to
+automated clients of that kind, this one included. That is their stated policy
+and it settles the question; nothing here scrapes it.
+
+**wago.tools: yes, and it invites it.** Its `robots.txt` blocks the HTML DB2
+browser and then opens `/api/` and `/db2/{table}/csv` explicitly, with a
+`/llms.txt` written for automated readers that says to use those routes instead
+of pages. It serves the game's own DB2 tables per build.
+
+`/api/builds` lists 15 products. The two that matter:
+
+| Product | Build |
+|---|---|
+| `wowf` | 1.60.1.70862 -- Forever |
+| `wow_classic_era` | 1.15.9.70576 |
+
+Read on 2026-11-08. `/db2/{table}/csv?product=wowf` then returns that table.
+
+### What this settles
+
+**`Creature.db2` is not an NPC source, and now we know why.** It does carry
+`Name_lang` and `Title_lang`, which closes the earlier open question. It holds
+**189 rows**. Against roughly ten thousand creatures in the 1.12 world database,
+the client clearly ships names for a tiny handful and gets the rest from the
+server. Client-side data cannot give the roster at any version.
+
+**`AreaTable` is the prize instead.** For `wowf` it has 1,404 named areas.
+Matched against the addon's 759 entries by name, 868 rows already have one and
+536 do not. Narrowed to Forever's own zones it is 68 areas, 8 written up and 60
+missing:
+
+| Zone | Missing |
+|---|---|
+| Zephras Isle | 27 |
+| Riverglades | 18 |
+| Mount Hyjal | 9 |
+| Shen'dralas | 5 |
+| Hyjal Crater | 1 |
+
+Those 60 are in `tools/forever-areas.tsv` with their area ids. The highest area
+id in the table is 17853, which is why `/ftn areas` defaults to a 20,000
+ceiling.
+
+### Keeping it the right side of the line
+
+The CSV is Blizzard's client data, served by a route whose owner permits it.
+The same discipline as route 2 applies: the download stays out of the
+repository. What is committed is the derived worklist, the place names this
+addon sets out to write about and will print on screen anyway.
+
 ## Reproducing the join
 
 The dump goes in a directory of its own, and the scripts stay out of it, since
