@@ -14,24 +14,27 @@
 # exists but whose parent zone differs would show as having one. /ftn areas
 # inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
 #
-# 68 areas, 8 written up, 60 to go. /ftn areas does this from inside the game
-# for the whole world, not just these zones.
+# 68 areas, 21 written up, 47 to go. The 47 are NOT written because no source
+# covers them: the names are Forever's own and warcraft.wiki.gg disallows this
+# tooling's user agents, so there is nothing to write from without inventing
+# lore. See the note at the end of tools/npc-ids.md. /ftn areas does this check
+# from inside the game for the whole world, not just these zones.
 zone	area_id	name	has_entry
 Hyjal Crater	17852	Hyjal Crater	no
 Mount Hyjal	17145	Cradle of Tranquility	no
 Mount Hyjal	16866	Dae'gun	no
 Mount Hyjal	16848	Elderwild	no
-Mount Hyjal	17050	Felblood Scar	no
-Mount Hyjal	17144	Malorne's Retreat	no
+Mount Hyjal	17050	Felblood Scar	yes
+Mount Hyjal	17144	Malorne's Retreat	yes
 Mount Hyjal	616	Mount Hyjal	yes
 Mount Hyjal	16004	Mount Hyjal	yes
 Mount Hyjal	16868	Mourning's Rest	no
-Mount Hyjal	16867	Shrine of Aviana	no
-Mount Hyjal	16849	Summit of Eternity	no
-Mount Hyjal	16853	Tainted Foothills	no
+Mount Hyjal	16867	Shrine of Aviana	yes
+Mount Hyjal	16849	Summit of Eternity	yes
+Mount Hyjal	16853	Tainted Foothills	yes
 Riverglades	17808	Ashwood's Fall	no
 Riverglades	16726	Bolder'ok	no
-Riverglades	16737	Bristle Hills	no
+Riverglades	16737	Bristle Hills	yes
 Riverglades	16728	Eastwind Shore	no
 Riverglades	16734	Elbrim's Farm	no
 Riverglades	16724	Farholde Keep	no
@@ -44,16 +47,16 @@ Riverglades	16743	Rog'mar	no
 Riverglades	16744	Southern Watch	no
 Riverglades	16723	Sunnyglade	no
 Riverglades	16729	Terral's Watch	no
-Riverglades	16820	The Forbidding Sea	no
+Riverglades	16820	The Forbidding Sea	yes
 Riverglades	16736	Turner's Logging Camp	no
 Riverglades	17847	Twilight Hollow	no
 Riverglades	16685	Twilight's Shroud	no
 Riverglades	16725	Wheeler's Grange	no
 Riverglades	16731	Windstead	no
-Shen'dralas	16677	Bristleback Retreat	no
+Shen'dralas	16677	Bristleback Retreat	yes
 Shen'dralas	16678	Evenshade's Overlook	no
 Shen'dralas	16742	Forlorn Gardens	no
-Shen'dralas	16675	Magram Front	no
+Shen'dralas	16675	Magram Front	yes
 Shen'dralas	16676	Outcast Hideaway	no
 Shen'dralas	16651	Shen'dralas	yes
 Shen'dralas	2657	Valley of Bones	yes
@@ -64,16 +67,16 @@ Zephras Isle	16636	Falaath Village	no
 Zephras Isle	16626	Gustberry Lowlands	no
 Zephras Isle	16720	Nightclaw Cavern	no
 Zephras Isle	17677	Overlook Standing Stones	no
-Zephras Isle	16988	Rise of Spirits	no
+Zephras Isle	16988	Rise of Spirits	yes
 Zephras Isle	16630	Rohashi Spires	no
 Zephras Isle	16833	Ruins of Ban'aethal	no
-Zephras Isle	16679	Sanctum of Storms	no
+Zephras Isle	16679	Sanctum of Storms	yes
 Zephras Isle	16631	Shadowgale Forest	no
 Zephras Isle	16623	Shen'dar Highlands	no
 Zephras Isle	16624	Shen'dar Village	no
 Zephras Isle	16672	Shriekling Den	no
-Zephras Isle	16629	Shrine of Akir	no
-Zephras Isle	17221	Skywall	no
+Zephras Isle	16629	Shrine of Akir	yes
+Zephras Isle	17221	Skywall	yes
 Zephras Isle	16673	Thendal Cave	no
 Zephras Isle	16622	Thendal Grove	no
 Zephras Isle	17678	Thendal Standing Stones	no

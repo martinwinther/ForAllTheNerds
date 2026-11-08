@@ -12,9 +12,17 @@ local addonName, ns = ...
 -- zone understanding what it is standing on, not to be told what happens.
 --
 -- The four zones are Zephras Isle, Riverglades, Shen'dralas and Mount Hyjal.
--- Subzone names beyond the ones below are not yet reliably documented, so this
--- file stays deliberately thin rather than guessing at spellings that would
--- never match GetSubZoneText(). Add them with ns.SubsOf as you find them --
+--
+-- The SPELLINGS are no longer the problem. Forever's AreaTable gives 68 named
+-- areas across these zones, and tools/forever-areas.tsv lists all of them with
+-- the client's own spelling and their area ids.
+--
+-- The SOURCES are. Only the entries below have a name that reaches back to
+-- established pre-WoW or vanilla lore: Malorne, Aviana, the Well of Eternity,
+-- the Magram, the Bristleback, Agamaggan, Al'Akir and Skywall. The other 47
+-- are Forever's own inventions, and nothing here is written for them, because
+-- writing it would mean making it up. That is the one thing this addon cannot
+-- afford to do. Fill them in from the game or from a source, with ns.SubsOf --
 -- the README's "Adding places" section explains how.
 -- ===========================================================================
 
@@ -60,6 +68,59 @@ SubsOf("Mount Hyjal", {
 		},
 		readMore = { "Wowpedia: Nordrassil", "Wowpedia: Well of Eternity" },
 	},
+	{
+		name = "Summit of Eternity", parent = "Mount Hyjal", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The peak itself, where the Well's remnant was hidden and Nordrassil planted over it.",
+		lore = {
+			"After the Sundering the dragon Aspects hid what was left of the Well of Eternity at Hyjal's summit, and planted Nordrassil over it. The word in the name is the Well's own: the Well of Eternity was the font of arcane power that drew Sargeras's attention and broke the world apart.",
+			"That makes this the most closely guarded ground in Kalimdor, and it has been for ten thousand years. It is also where Archimonde was destroyed at the end of the Third War, at the tree's roots.",
+			"Almost everything that matters about this mountain happened inside a few hundred yards of here.",
+		},
+		readMore = { "Wowpedia: Well of Eternity", "Wowpedia: Nordrassil" },
+	},
+	{
+		name = "Malorne's Retreat", parent = "Mount Hyjal", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Named for the white stag who fathered Cenarius and died fighting the Legion.",
+		lore = {
+			"Malorne was an Ancient, a great white stag, and the one the other Ancients deferred to. His son by Elune was Cenarius, the demigod who taught Malfurion Stormrage what druidism is and who led the Ancients when the Legion first came.",
+			"Malorne died in that war, and the accounts have him facing Archimonde when he fell. Ten thousand years later Archimonde came to this mountain himself and was destroyed on it.",
+			"So Hyjal holds both halves of one argument. Malorne lost to Archimonde in the first war against the Legion; Archimonde lost here in the second.",
+		},
+		readMore = { "Wowpedia: Malorne", "Wowpedia: Cenarius", "Wowpedia: Archimonde" },
+	},
+	{
+		name = "Shrine of Aviana", parent = "Mount Hyjal", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A shrine to the Ancient who was patron of all birds, killed in the War of the Ancients.",
+		lore = {
+			"Aviana was one of the Ancients, the demigods of Kalimdor who fought beside Cenarius against the Burning Legion ten thousand years ago. She was the patron of birds.",
+			"She did not survive it. The Ancients took appalling losses in that war: Aviana died, Malorne died, Agamaggan died, and Cenarius himself would be killed on this mountain's slopes in the Third War.",
+			"A shrine here is the druids keeping the account. Both of the night elves' great wars against the Legion came to a head on Hyjal, and the Ancients paid for each of them.",
+		},
+		readMore = { "Wowpedia: Aviana", "Wowpedia: Ancients", "Wowpedia: War of the Ancients" },
+	},
+	{
+		name = "Felblood Scar", parent = "Mount Hyjal", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "Ground the Legion fouled on its way up the mountain, never cleaned since.",
+		lore = {
+			"When the Burning Legion marched on Hyjal at the end of the Third War it came up these slopes. Archimonde was destroyed at the summit; the army he brought with him was not.",
+			"Darkwhisper Gorge on the Winterspring side is the best-known pocket of what was left behind. This is another. Fel corruption does not lift on its own and the druids have had other priorities.",
+			"The battle is remembered as a clean victory. The ground says otherwise.",
+		},
+	},
+	{
+		name = "Tainted Foothills", parent = "Mount Hyjal", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "The lower slopes, where the forest never came back.",
+		lore = {
+			"Hyjal's foothills took the Legion's march twice: once as the army climbed, and again as what survived scattered back down.",
+			"Ashenvale and Winterspring recovered, slowly and in patches. The ground immediately under the mountain did not.",
+			"Night elf policy on Hyjal has been to seal the mountain rather than clear it. That keeps people away from the corrupted ground. It also leaves the corrupted ground exactly where it is.",
+		},
+	},
 })
 
 -- ---------------------------------------------------------------------------
@@ -89,6 +150,28 @@ SubsOf("Riverglades", {
 			"This is the cartel's standard play. Ratchet, Booty Bay, Gadgetzan and Everlook all work the same way: find the chokepoint, build a neutral town on it, sell to both factions and forbid fighting on the premises.",
 			"The 'Powderfuse' name suggests the goblin approach to geology: explosives first.",
 		},
+	},
+	{
+		name = "Bristle Hills", parent = "Riverglades", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "Quilboar hills, in a region already crowded with claimants.",
+		lore = {
+			"\"Bristle\" in this part of the world means quilboar. The Bristleback are the best known of their tribes, holding Razorfen Kraul and Razorfen Downs and fighting the tauren across the Barrens for as long as either side has counted.",
+			"Quilboar trace themselves to Agamaggan, the Ancient called the Boar God, who died fighting the Burning Legion in the War of the Ancients. Thorns grew where his blood fell, and the quilboar hold those thornbrakes sacred.",
+			"Riverglades is already pressed by the Dark Horde out of Blackrock Mountain and by ogres left behind when the Second War collapsed. Quilboar in the hills is one more claim on the same ground.",
+		},
+		readMore = { "Wowpedia: Quilboar", "Wowpedia: Agamaggan", "Wowpedia: Bristleback tribe" },
+	},
+	{
+		name = "The Forbidding Sea", parent = "Riverglades", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Open ocean off the Eastern Kingdoms, and the only open door into Riverglades.",
+		lore = {
+			"The Forbidding Sea is one of the oceans named on Azeroth's charts, lying off the Eastern Kingdoms' coast. For a region with its land passes blocked it is not scenery; it is the way in, which is why the goblins built Powderfuse Port and why a ship from Tanaris matters.",
+			"Azeroth's water belongs in large part to the naga. They are the Highborne who went under with the Sundering and did not die: Queen Azshara and her court were dragged to the bottom and changed into something that has served her for ten thousand years since.",
+			"So the sea is the open flank. It is open in both directions.",
+		},
+		readMore = { "Wowpedia: Forbidding Sea", "Wowpedia: Naga", "Wowpedia: Azshara" },
 	},
 })
 
@@ -121,6 +204,31 @@ Zone{
 	readMore = { "Wowpedia: Shen'dralar", "Wowpedia: Eldre'Thalas", "Wowpedia: Highborne", "Wowpedia: Great Sundering" },
 }
 
+SubsOf("Shen'dralas", {
+	{
+		name = "Magram Front", parent = "Shen'dralas", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "Where the Magram centaur press on night elf ground from the Desolace side.",
+		lore = {
+			"The Magram are one of the centaur clans of Desolace, and the Gelkis are the other one that counts. Their war with each other is older than any human kingdom and neither clan has ever come close to ending it.",
+			"Centaur origins are a grievance in two directions. Zaetar, Cenarius's son, fathered the first of them on Theradras, a princess of the earth elementals, and they killed him for it. The tauren have been driven around Kalimdor by centaur raiders ever since, which is a large part of why Thrall found them in the state he did.",
+			"A front named for the Magram means that war has grown a new edge, and that this edge points at night elf country rather than at the Gelkis.",
+		},
+		readMore = { "Wowpedia: Magram", "Wowpedia: Centaur", "Wowpedia: Zaetar" },
+	},
+	{
+		name = "Bristleback Retreat", parent = "Shen'dralas", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A quilboar holding, named for the tribe that has fought the tauren the longest.",
+		lore = {
+			"The Bristleback are the quilboar tribe whose name the Barrens knows best. Razorfen Kraul and Razorfen Downs are theirs, and they were fighting the tauren over that country long before Thrall's Horde landed on this continent.",
+			"Quilboar descend from Agamaggan, the Ancient called the Boar God, killed fighting the Legion in the War of the Ancients. Where his blood fell thorns grew, and those thornbrakes are sacred ground to his children.",
+			"Which puts two Ancients' legacies against each other here: Agamaggan's children camped on country named for the night elves' own oldest schism.",
+		},
+		readMore = { "Wowpedia: Bristleback tribe", "Wowpedia: Agamaggan" },
+	},
+})
+
 -- ---------------------------------------------------------------------------
 -- ZEPHRAS ISLE
 -- ---------------------------------------------------------------------------
@@ -138,6 +246,53 @@ Zone{
 	didYouKnow = "Elementals on Azeroth are refugees and invaders from four planes, not natives. Every elemental incursion in the world, the Abyssal Sands in Tanaris, the Charred Vale, Firewatch Ridge, is a place where one of those planes presses close enough to come through.",
 	readMore = { "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords", "Wowpedia: Elemental Plane" },
 }
+
+SubsOf("Zephras Isle", {
+	{
+		name = "Skywall", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "The Elemental Plane of Air itself, and the prison of the Lord who rules it.",
+		lore = {
+			"Skywall is one of the four Elemental Planes and the domain of air. Al'Akir the Windlord rules it, and he is also confined to it: the titans banished each of the four Elemental Lords into a plane of their own at the end of their campaign against the Old Gods' servants.",
+			"Zephras Isle hangs inside it. Living here means living in a Lord's prison, among wind spirits who answer to him, to themselves, or to nothing at all.",
+			"One Elemental Lord has been let out since. A Dark Iron emperor summoned Ragnaros, and the Firelord is now at the bottom of Blackrock Mountain with a city built around him. That is the precedent for deciding a bound Lord would be useful.",
+		},
+		readMore = { "Wowpedia: Skywall", "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords" },
+	},
+	{
+		name = "Sanctum of Storms", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A hall given to the storm, on a plane where the storm has an owner.",
+		lore = {
+			"Al'Akir is not weather. He is a bound Elemental Lord with a will of his own, and anything raised on Zephras Isle in the storm's honour is raised in his sight.",
+			"Before the titans came, the four Elemental Lords ruled this world on the Old Gods' behalf. Reverence for an element in a place like this is never only reverence for the element.",
+			"The Skyborne groups the isle names, the Windshapers, the High Order and the Al'Aketh, are the ones a hall like this belongs to. What they ask of the air, and whose voice answers, is the question the zone is built on.",
+		},
+		readMore = { "Wowpedia: Al'Akir", "Wowpedia: Elemental Lords" },
+	},
+	{
+		name = "Rise of Spirits", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "High ground left to the wind spirits, whose loyalties are their own.",
+		lore = {
+			"Skywall's elementals are not one army. They run from the small and mindless to the old and deliberate, and the ones with minds have politics that do not necessarily pass through Al'Akir at all.",
+			"For people living on a floating island in their plane that distinction is practical. Standing with the local spirits is a different account from standing with the Windlord.",
+			"On Azeroth the elementals are the intruders, pressing through from four planes into a world that is not theirs. Here it runs the other way: the mortals are the newcomers.",
+		},
+		readMore = { "Wowpedia: Elemental", "Wowpedia: Skywall" },
+	},
+	{
+		name = "Shrine of Akir", parent = "Zephras Isle", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A shrine whose name sits one syllable off the Windlord's.",
+		lore = {
+			"Al'Akir is the Windlord, and \"Al'\" is the honorific the elemental tongues put in front of a Lord's name. The isle's own factions use the same shape: the Al'Aketh are built the same way.",
+			"A shrine called Akir may be reaching for the Lord himself, or for whatever older thing his name was assembled from. The resemblance is as far as the name can be read without guessing, and either reading points at the ruler of the plane.",
+			"He is a prisoner in it. Worship in Skywall is not a straightforward act.",
+		},
+		readMore = { "Wowpedia: Al'Akir" },
+	},
+})
 
 -- ---------------------------------------------------------------------------
 -- THE NEW DUNGEONS
