@@ -7,12 +7,15 @@
 #
 #     python3 -I tools/blizzard-ids.py ids tools/creature-ids.tsv
 #
-# which prints Blizzard's name for each id so the two can be compared. Only
-# needed if probe reports that creature SEARCH does not work; with search
-# available, resolve the names directly and ignore this.
+# THIS DOES NOT WORK, as of 2026-11-08. Blizzard's Classic Era creature data
+# is 601-700 documents and they are the tameable-beast set for the hunter pet
+# UI. None of the ids below resolve: 448, 234 and 239 were tried and all
+# returned 404. There is nothing there to check them against.
 #
-# Blizzard has no Forever namespace, so this speaks for Classic Era only.
-# See tools/npc-ids.md.
+# The file is kept because the ids themselves are still the best available
+# answer to "which of the worklist exist in 1.12", and because /ftn npcs
+# records the same ids from the live client, which these can be compared with.
+# Their source is the cmangos reconstruction. See tools/npc-ids.md.
 #
 # id	cmangos_name	wiki_zone
 234	Gryan Stoutmantle	Westfall

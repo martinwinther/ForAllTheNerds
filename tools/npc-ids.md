@@ -193,15 +193,54 @@ playable race, power type, PvP, realm, region, token. No zones. Same
 server-side reason `Creature.db2` has none.
 
 **The docs contradict themselves on creature search.** The game data index
-lists `/data/wow/search/creature`, while the Classic search guide says plainly
-that only the realm and connected-realm document types are supported. If the
-guide is right then name-to-id resolution is not available and only lookup by
-an id already in hand is, which makes this a way to check route 2's ids rather
-than a way to discover any. Settling it needs credentials. The script's `probe`
-does exactly that and says which way it fell.
+lists `/data/wow/search/creature`, while the Classic search guide says only the
+realm and connected-realm document types are supported. `probe` settles it.
 
 Blizzard's API terms also restrict redistributing what comes back. Treat the
 output as something to check against rather than something to commit.
+
+### What the probe found, 2026-11-08
+
+Run against `static-classic1x-us` with real credentials. This route is closed,
+and here is the evidence rather than the inference:
+
+    search/realm in dynamic-classic1x-us   total 66, pageCount 1
+    search/creature (no filter)            pageCount 7, pageSize 100
+    first indexed creature                 id 5288, 'Rabid Longtooth'
+    its fields    creature_displays, family, id, is_tameable, name, type
+    creature/5288                          HTTP 200
+    creature/448, 234, 239                 all HTTP 404
+    name.en_US=Hogger and three variants   total 0 every time
+
+Reading it:
+
+- **The search machinery works.** The realm control returns 66 realms once it
+  is asked in the dynamic namespace, where realms live. So an empty creature
+  result is a fact about creatures, not about search.
+- **Creature search IS available**, contrary to the Classic search guide, which
+  settles the contradiction in favour of the endpoint index.
+- **The dataset is 601 to 700 documents**, from seven pages of at most a
+  hundred. The addon needs on the order of ten thousand.
+- **It is the hunter pet set.** `is_tameable` and `family` are the fields, and
+  the first document is a beast called Rabid Longtooth. That is why a quest
+  giver is absent: Hogger is not tameable. All four spellings of the name
+  filter return zero because he is not in the data, not because the filter is
+  wrong.
+- **By-id works, for ids that are in the set.** 5288 resolves, and 448, 234 and
+  239 do not. So the 84 ids in `tools/creature-ids.tsv` cannot be checked this
+  way either, and `ids` mode has nothing to check them against.
+- **There is no location field.** The field list is the whole of it:
+  `creature_displays, family, id, is_tameable, name, type`. This was previously
+  an inference from `Creature.db2`; it is now measured.
+
+`inventory` pages through all seven and reports the breakdown by creature type
+and family, for anyone who wants the set characterised rather than sampled.
+
+So four routes have now been tried for NPC placement and all four fail for the
+same underlying reason: spawns live on the server. The client does not have
+them, Blizzard's API does not expose them, and the data sites either forbid
+automated access or have no API. `/ftn npcs` targeting things in the world
+remains the only thing that answers it.
 
 **wago.tools: yes, and it invites it.** Its `robots.txt` blocks the HTML DB2
 browser and then opens `/api/` and `/db2/{table}/csv` explicitly, with a

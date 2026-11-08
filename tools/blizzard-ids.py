@@ -210,12 +210,16 @@ def search_total(data):
     for key in ("resultCount", "totalResults", "total"):
         if isinstance(data.get(key), int):
             return data[key], meta
-    # No explicit total. pageCount with a known pageSize still bounds it.
+    # No explicit total. pageCount and pageSize still bound it, and a bound is
+    # worth far more than None: returning None here let the verdict treat
+    # "seven pages of results" as "nothing found".
     rows = len(data.get("results") or [])
-    if isinstance(meta.get("pageCount"), int) and isinstance(meta.get("pageSize"), int):
-        if meta["pageCount"] <= 1:
+    pc, ps = meta.get("pageCount"), meta.get("pageSize")
+    if isinstance(pc, int) and isinstance(ps, int) and ps > 0:
+        if pc <= 1:
             return rows, meta
-        return None, meta  # more than one page, exact total unstated
+        meta["estimated"] = f"{(pc - 1) * ps + 1}-{pc * ps}"
+        return (pc - 1) * ps + 1, meta  # lower bound, never None
     return rows, meta
 
 
@@ -299,17 +303,69 @@ def cmd_probe(tok):
     print()
     print("  verdict:")
     if not control_ok:
-        print("    The control still returns nothing, so read the rest with care:")
+        print("    The control returns nothing, so read the rest with care:")
         print("    something broader than creatures may be wrong.")
-    if ctotal in (None, 0):
+    if ctotal is None:
+        print("    Could not determine how many creature documents exist.")
+    elif ctotal == 0:
         print("    No creature documents are indexed in this namespace.")
-    elif ctotal and ctotal < 100:
-        print(f"    Only {ctotal} creature document(s) exist here. The addon needs")
-        print("    thousands, so this dataset cannot serve as a roster whatever")
-        print("    the filter syntax turns out to be. Dead end.")
+    elif ctotal < 3000:
+        est = cmeta.get("estimated", str(ctotal))
+        print(f"    About {est} creature documents exist here. The addon needs")
+        print("    roughly ten thousand, and Hogger is not among these, so this")
+        print("    dataset is not a roster however the filter is spelled.")
+        print("    Run `inventory` to see what the set actually is. Dead end.")
     else:
-        print(f"    {ctotal} creature documents are indexed. If a name form above")
-        print("    returned a total, names mode can use it.")
+        print(f"    At least {ctotal} creature documents are indexed. If a name")
+        print("    form above returned a total, names mode can use it.")
+
+
+def cmd_inventory(tok):
+    """Page through every creature document and say what the set actually is.
+
+    The probe establishes that the set is small and that Hogger is not in it.
+    This says what IS, which is the difference between "the API is useless" and
+    "the API covers one specific thing".
+    """
+    from collections import Counter
+    types, families, tameable, total = Counter(), Counter(), 0, 0
+    page, pages = 1, None
+    while True:
+        code, data = get(tok, "/data/wow/search/creature",
+                         params={"_page": str(page), "_pageSize": "100"},
+                         cache_key=f"search-creature-page-{page}")
+        if code != 200:
+            print(f"page {page}: HTTP {code}", file=sys.stderr)
+            break
+        rows = data.get("results") or []
+        if pages is None:
+            pages = data.get("pageCount") or 1
+            print(f"{pages} page(s) of creature documents in {NAMESPACE}\n")
+        for r in rows:
+            d = r.get("data") or {}
+            total += 1
+            t = (d.get("type") or {}).get("name")
+            t = t.get(LOCALE) if isinstance(t, dict) else t
+            types[t or "?"] += 1
+            fam = (d.get("family") or {}).get("name")
+            fam = fam.get(LOCALE) if isinstance(fam, dict) else fam
+            families[fam or "-"] += 1
+            if d.get("is_tameable"):
+                tameable += 1
+        if page >= (pages or 1):
+            break
+        page += 1
+
+    print(f"{total} creature documents, {tameable} of them tameable "
+          f"({(100 * tameable // total) if total else 0}%)\n")
+    print("by creature type:")
+    for t, n in types.most_common():
+        print(f"  {str(t):<22} {n}")
+    print("\ntop families:")
+    for f, n in families.most_common(12):
+        print(f"  {str(f):<22} {n}")
+    print("\nIf this is overwhelmingly tameable beasts, the dataset exists for")
+    print("the hunter pet UI, which is why a quest giver like Hogger is absent.")
 
 
 def read_names(path):
@@ -374,8 +430,8 @@ def main():
 
     # Check the arguments BEFORE authenticating, or a mistyped command comes
     # back as a credentials error and sends you looking in the wrong place.
-    if cmd not in ("probe", "names", "ids"):
-        die(f"unknown command {cmd!r}. One of: probe, names, ids.")
+    if cmd not in ("probe", "names", "ids", "inventory"):
+        die(f"unknown command {cmd!r}. One of: probe, inventory, names, ids.")
     if cmd in ("names", "ids"):
         if len(sys.argv) < 3:
             die(f"usage: blizzard-ids.py {cmd} <file>")
@@ -385,6 +441,8 @@ def main():
     tok = token()
     if cmd == "probe":
         cmd_probe(tok)
+    elif cmd == "inventory":
+        cmd_inventory(tok)
     elif cmd == "names":
         cmd_names(tok, sys.argv[2])
     else:
