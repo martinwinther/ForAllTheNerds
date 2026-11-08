@@ -10,6 +10,9 @@
 - Seven more in Stranglethorn Vale: Yojamba Isle, the Battle Ring, the Wild
   Shore, the three Bloodsail frigates moored off it, and the Venture Co.
   Operations Center.
+- Six more in Mulgore and Tirisfal Glades: the Bael'dun Digsite, Kodo Rock and
+  the Skywatcher Plateau; Gunther's Retreat, the Gallows' End Tavern and the
+  Crusader Outpost.
 
 ## 1.2.2
 

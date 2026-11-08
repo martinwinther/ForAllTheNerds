@@ -7,9 +7,9 @@ post-vanilla maps and the Wrath death-knight areas inside Eastern
 Plaguelands are all excluded; `tools/area-sweep.md` lists what was dropped
 and why.
 
-**791 written, 192 empty, 80% covered.** 45 zones have gaps; 18 are complete.
+**797 written, 186 empty, 81% covered.** 45 zones have gaps; 18 are complete.
 
-192 checklist lines below, 190 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+186 checklist lines below, 184 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -23,15 +23,15 @@ check with the real resolver and is the authority when the two disagree.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Mulgore | 16 | 10 | 61% |
-| Tirisfal Glades | 20 | 10 | 66% |
 | Feralas | 25 | 9 | 73% |
 | Riverglades | 11 | 9 | 55% |
 | Dustwallow Marsh | 19 | 8 | 70% |
 | Azshara | 23 | 7 | 76% |
 | Durotar | 20 | 7 | 74% |
+| Mulgore | 19 | 7 | 73% |
 | The Barrens | 30 | 7 | 81% |
 | Thousand Needles | 16 | 7 | 69% |
+| Tirisfal Glades | 23 | 7 | 76% |
 | Dun Morogh | 20 | 6 | 76% |
 | Stonetalon Mountains | 14 | 6 | 70% |
 | Alterac Mountains | 18 | 5 | 78% |
@@ -87,36 +87,26 @@ check with the real resolver and is the authority when the two disagree.
 | Undercity | 1 | 0 | 100% |
 | Whelgar's Excavation Site | 1 | 0 | 100% |
 
+## Places with no source
+
+Checked and found to have nothing behind them. They stay on the checklist
+because the client names them, but do not go looking again without a new
+source:
+
+| Place | Zone | Why |
+|---|---|---|
+| Mantle Rock | Mulgore | Never left the World of Warcraft beta |
+| Camp Gev'rek | Mulgore | No article on warcraft.wiki.gg |
+| Galak Camp | Mulgore | No article on warcraft.wiki.gg |
+| Shadowvale | Tirisfal Glades | No article on warcraft.wiki.gg |
+
+Forever's own 19 are the same situation at larger scale, and
+`tools/forever-areas.tsv` records which nine DB2 tables were checked for them.
+
 ## The checklist
 
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
-
-### Mulgore — 10 empty of 26
-
-- [ ] Bael'dun Digsite
-- [ ] Brave Wind Mesa
-- [ ] Camp Gev'rek
-- [ ] Fire Stone Mesa
-- [ ] Galak Camp
-- [ ] Gloomrise
-- [ ] Kodo Rock
-- [ ] Mantle Rock
-- [ ] Skyline Ridge
-- [ ] Skywatcher Plateau
-
-### Tirisfal Glades — 10 empty of 30
-
-- [ ] Bandarion Keep
-- [ ] Brill Town Hall
-- [ ] Crusader Outpost
-- [ ] Gallows' End Tavern
-- [ ] Gunther's Retreat
-- [ ] Shadowvale
-- [ ] Stillwater Pond
-- [ ] The North Coast
-- [ ] Whispering Forest
-- [ ] Whispering Shore
 
 ### Feralas — 9 empty of 34
 
@@ -173,6 +163,16 @@ is where the most ground is gained per sitting.
 - [ ] Shrine of the Dormant Flame
 - [ ] Spirit Rock
 
+### Mulgore — 7 empty of 26
+
+- [ ] Brave Wind Mesa
+- [ ] Camp Gev'rek
+- [ ] Fire Stone Mesa
+- [ ] Galak Camp
+- [ ] Gloomrise
+- [ ] Mantle Rock
+- [ ] Skyline Ridge
+
 ### The Barrens — 7 empty of 37
 
 - [ ] Fray Island
@@ -192,6 +192,16 @@ is where the most ground is gained per sitting.
 - [ ] The Rustmaul Dig Site
 - [ ] The Weathered Nook
 - [ ] Zane's Eye Crater
+
+### Tirisfal Glades — 7 empty of 30
+
+- [ ] Bandarion Keep
+- [ ] Brill Town Hall
+- [ ] Shadowvale
+- [ ] Stillwater Pond
+- [ ] The North Coast
+- [ ] Whispering Forest
+- [ ] Whispering Shore
 
 ### Dun Morogh — 6 empty of 26
 

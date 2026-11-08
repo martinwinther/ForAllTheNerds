@@ -2259,3 +2259,72 @@ SubsOf("Ashenvale", {
 		readMore = { "Wowpedia: Shady Nook" },
 	},
 })
+
+-- Mulgore, continuing down tools/coverage.md.
+SubsOf("Mulgore", {
+	{
+		name = "Bael'dun Digsite", parent = "Mulgore", faction = "Hostile",
+		hook = "A dwarven quarry cut into Mulgore, against every warning the tauren gave.",
+		lore = {
+			"This is the Bael Modan expedition digging on the western edge of Mulgore, and it is a large quarry rather than a trial trench. The Explorers' League does not dig idly: since Uldaman, Ironforge has believed the dwarves were shaped from living stone by the titans, and every site is read as more of that record.",
+			"Baine Bloodhoof warned them off. To the tauren the land is the Earth Mother, and cutting a quarry into her is not a property dispute but a desecration. Diplomacy was tried and it failed.",
+			"So the Bloodhoof tribe settled on taking the diggers' pickaxes and breaking them, which is a restrained answer by the standards of this continent. The dwarves kept digging.",
+		},
+		didYouKnow = "Both sides are entirely sincere. The dwarves are looking for the origin of their own species and the tauren are watching foreigners tear open sacred ground. Neither reading leaves room for the other.",
+		readMore = { "Wowpedia: Bael'dun Digsite", "Wowpedia: Bael Modan", "Wowpedia: Explorers' League" },
+	},
+	{
+		name = "Kodo Rock", parent = "Mulgore", faction = "Horde",
+		hook = "A stone near Camp Narache that tauren shaman are sent to find.",
+		lore = {
+			"Kodo Rock is a natural monument out between Camp Narache and the Brambleblade Ravine, and it is easy to walk past: it only shows itself from close up.",
+			"Young tauren shaman are sent here as part of their training, and the obscurity is deliberate. Shamanism among the tauren is not scholarship but a relationship with the land and the elements, and the first lesson is to go out and attend to one particular stone until you can find it.",
+			"The tauren are the oldest shamanic tradition on this continent, and Thrall learned the orcs' own from Drek'Thar and then from them. A rock in Mulgore is where that teaching starts.",
+		},
+		readMore = { "Wowpedia: Kodo Rock", "Wowpedia: Camp Narache", "Wowpedia: Shaman" },
+	},
+	{
+		name = "Skywatcher Plateau", parent = "Mulgore", faction = "Horde",
+		hook = "The Horde's airship landing for Zephras Isle, in north-western Mulgore.",
+		lore = {
+			"Skywatcher Plateau is where the Skyborne arrive. Their flying island hangs in Skywall, the Elemental Plane of Air, and the airships off its Valanaar skydocks come down here for anyone joining the Horde; the Alliance berth lands at Dalaran instead.",
+			"The Skyborne are high elves descended from Eldre'Thalas, which is Dire Maul. Their ancestors fled Prince Tortheldrin, bargained with wind spirits, and have spent ten thousand years off this world entirely.",
+			"Mulgore is a strange place to come back to. The tauren built nothing like an airship and wanted nothing like one, and the plateau is now the point where the oldest shamanic people on Kalimdor meet a people who have been living inside an elemental plane.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle", "Wowpedia: Mulgore" },
+	},
+})
+
+SubsOf("Tirisfal Glades", {
+	{
+		name = "Gunther's Retreat", parent = "Tirisfal Glades", faction = "Hostile",
+		hook = "An island in Brightwater Lake with a lich on it who thinks the Forsaken are still slaves.",
+		lore = {
+			"Gunther Arcanus holds the island in Brightwater Lake, with his zombies around him. He is a lich, and he is free-willed: Sylvanas's break from the Lich King took him with it.",
+			"He does not accept that it took anybody else. His position is that every other undead in these glades is still a Scourge thrall, and he has his minions attack anyone who comes near on that basis.",
+			"Which makes him a problem the Forsaken cannot argue their way out of. Being free is exactly what he denies them, and the only evidence he would accept is the sort nobody can produce.",
+		},
+		readMore = { "Wowpedia: Gunther's Retreat", "Wowpedia: Gunther Arcanus", "Wowpedia: Lich" },
+	},
+	{
+		name = "Gallows' End Tavern", parent = "Tirisfal Glades", faction = "Horde",
+		hook = "Brill's inn, and the only working tavern the Forsaken run.",
+		lore = {
+			"The Gallows' End is in Brill, and it does everything an inn should: trainers for most of the classes, an innkeeper, vendors. It is also, as far as anybody knows, the only fully functioning tavern the Forsaken operate anywhere.",
+			"That is worth sitting with. The Forsaken do not eat, do not drink and do not sleep, and they have built and staffed a public house regardless, with a name that makes a joke of the hanging they were spared and did not escape.",
+			"There is a Scarlet zealot and a dwarven mountaineer in the cellars. Not drinking.",
+		},
+		didYouKnow = "A people with no appetite keeping a tavern open is the most human thing in Tirisfal. They are holding on to the shape of a life they no longer have any use for.",
+		readMore = { "Wowpedia: Gallows' End Tavern", "Wowpedia: Brill", "Wowpedia: Forsaken" },
+	},
+	{
+		name = "Crusader Outpost", parent = "Tirisfal Glades", faction = "Hostile",
+		hook = "A Scarlet Crusade watchtower over the glades road, covering the Monastery's flank.",
+		lore = {
+			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades and can come down on the flank of anyone moving against the Scarlet Monastery.",
+			"The Scarlet Crusade began as the remnant of the Silver Hand and the Church, the people who stayed when Lordaeron fell. What they became is a movement that cannot tell the difference between the undead and the living any more, and kills both.",
+			"They are not wrong that the Forsaken are walking corpses. They are wrong about almost everything that follows from it, and the Monastery behind this tower is where that went furthest.",
+		},
+		readMore = { "Wowpedia: Crusader Outpost", "Wowpedia: Scarlet Crusade", "Wowpedia: Scarlet Monastery" },
+	},
+})
