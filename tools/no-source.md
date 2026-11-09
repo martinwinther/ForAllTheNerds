@@ -68,6 +68,17 @@ are now separate files.
 |---|---|---|
 | Caverns of Time | Tanaris | The area is in the client's AreaTable, but the Caverns are Burning Crusade content and everything in them is later still. Out of scope by the same rule that keeps Outland and Gilneas out. |
 
+## Worth re-checking
+
+The wiki is five days old on Forever's content and it is being written as we
+go. On 2026-11-09 a re-check found a new `Category:Riverglades subzones` with
+ten pages, three of them not there before: Ashwood's Fall, Terral's Watch and
+Wheeler's Grange, all now written up.
+
+So the Forever rows below are not permanent. Checking the four zone categories
+again takes one browser call each and has already paid off once. The beta
+leftovers above it will never change.
+
 ## Forever
 
 Forever's remaining areas are the same problem at larger scale: the subzone

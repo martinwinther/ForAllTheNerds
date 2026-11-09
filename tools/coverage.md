@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**922 written, 61 empty, 93% covered.** 28 zones have gaps; 35 are complete.
+**925 written, 58 empty, 94% covered.** 28 zones have gaps; 35 are complete.
 
-61 checklist lines below, 61 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+58 checklist lines below, 58 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -28,8 +28,8 @@ check with the real resolver and is the authority when the two disagree.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Riverglades | 11 | 9 | 55% |
 | Mulgore | 19 | 7 | 73% |
+| Riverglades | 14 | 6 | 70% |
 | Mount Hyjal | 7 | 4 | 63% |
 | Zephras Isle | 24 | 4 | 85% |
 | Arathi Highlands | 21 | 3 | 87% |
@@ -97,18 +97,6 @@ check with the real resolver and is the authority when the two disagree.
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
 
-### Riverglades — 9 empty of 20
-
-- [ ] Ashwood's Fall
-- [ ] Eastwind Shore
-- [ ] Elbrim's Farm
-- [ ] Forlorn Pit
-- [ ] Southern Watch
-- [ ] Terral's Watch
-- [ ] Turner's Logging Camp
-- [ ] Twilight Hollow
-- [ ] Wheeler's Grange
-
 ### Mulgore — 7 empty of 26
 
 - [ ] Brave Wind Mesa
@@ -118,6 +106,15 @@ is where the most ground is gained per sitting.
 - [ ] Gloomrise
 - [ ] Mantle Rock
 - [ ] Skyline Ridge
+
+### Riverglades — 6 empty of 20
+
+- [ ] Eastwind Shore
+- [ ] Elbrim's Farm
+- [ ] Forlorn Pit
+- [ ] Southern Watch
+- [ ] Turner's Logging Camp
+- [ ] Twilight Hollow
 
 ### Mount Hyjal — 4 empty of 11
 

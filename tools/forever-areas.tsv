@@ -17,6 +17,15 @@
 # 68 areas, 49 written up, 19 to go. Counted with aliases; a name-only
 # check had reported four of them wrongly.
 #
+# RE-CHECKED 2026-11-09, five days after the patch. The wiki has grown a
+# Category:Riverglades subzones with ten pages in it, three of which were new:
+# Ashwood's Fall, Terral's Watch and Wheeler's Grange. All three are now
+# written up. Shen'dralas subzones still holds only the Valley of Bones, and
+# Category:Zephras Isle still holds four pages. Mount Hyjal's subzone category
+# is the retail zone's, full of Firelands and Molten Front material rather than
+# Forever's. So the wiki IS filling in, zone by zone, and this is worth
+# re-running every so often rather than treating as settled.
+#
 # The 35 still open are not blocked on sources any more. Martin cleared the
 # built-in browser for reading warcraft.wiki.gg, whose robots.txt allows
 # User-agent: * even though it names this tooling's crawler agents, and the

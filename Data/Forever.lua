@@ -259,6 +259,39 @@ SubsOf("Riverglades", {
 		},
 		readMore = { "Wowpedia: Rog'mar" },
 	},
+	{
+		name = "Ashwood's Fall", parent = "Riverglades", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A ruined watchtower with wrecked wagons around it, and probably where the Windstead road ended.",
+		lore = {
+			"What is here is a broken watchtower: walls down, rubble and wooden barricades inside, and wrecked wagons standing outside it.",
+			"The wagons are the part that matters. When Windstead was evacuated during the Second War, Rosalind Ashwood warned the village and led a column south towards Farholde; some families went along the coast and the rest loaded wagons and took the road. The ones on the road were caught by the Horde and not one of them survived.",
+			"Her name is on the site and their wagons are standing outside it, so the ambush was here. A Wartorn Land and The Brotherhood both tell the story without naming the tower, so this stays an inference rather than a fact.",
+		},
+		readMore = { "Wowpedia: Ashwood's Fall", "Wowpedia: Windstead", "Wowpedia: Brotherhood of the Horse" },
+	},
+	{
+		name = "Terral's Watch", parent = "Riverglades", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "A damaged tower with a horse banner over a barred door, and the lamps still lit.",
+		lore = {
+			"Terral's Watch is stone, and its upper walls have partly come down. A broad stairway leads up to the entrance, with a lamp burning on either side.",
+			"The door is barred. Above it hangs a banner carrying a horse. In the Riverglades that means the Brotherhood of the Horse: the Alliance order that has held this region since the Siege of Farholde and is still trying to take the rest of it back.",
+			"A half-ruined tower with the lamps kept lit and the door shut says most of what there is to say about their position. They have not left and they are not comfortable.",
+		},
+		readMore = { "Wowpedia: Terral's Watch", "Wowpedia: Brotherhood of the Horse" },
+	},
+	{
+		name = "Wheeler's Grange", parent = "Riverglades", faction = "Contested",
+		era = "forever", spoiler = true,
+		hook = "A farm near Farholde where the harvest equipment has turned on the fields.",
+		lore = {
+			"The Grange sits close to Farholde Keep, and Benjy Wheeler is outside the farmhouse. The fields are held by harvest reapers, and they are hostile.",
+			"Animated harvest machinery turning on the farm it was built for is not new in the Eastern Kingdoms. Westfall has the same problem: the golems there were left running once the people who owned them could no longer pay anyone to switch them off.",
+			"A working farm this close to the Brotherhood's keep is worth something to Farholde, which has been under siege or close to it for years. Reapers in the wheat are a problem somebody will have to deal with.",
+		},
+		readMore = { "Wowpedia: Wheeler's Grange", "Wowpedia: Farholde Keep" },
+	},
 })
 
 Instance{

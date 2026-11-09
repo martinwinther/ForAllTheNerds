@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+**Added**
+
+- Three more places in Riverglades: Ashwood's Fall, Terral's Watch and
+  Wheeler's Grange. Background only, like the rest of the Forever material, and
+  hidden until you turn it on. These three had nothing written about them
+  anywhere when the Forever zones were first filled in, and the wiki has since
+  covered them, so the gap closed on its own.
+
 ## 1.2.3
 
 **Added**
