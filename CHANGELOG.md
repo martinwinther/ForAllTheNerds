@@ -1,5 +1,26 @@
 # Changelog
 
+## Unreleased
+
+**Fixed**
+
+- The Southern Barrens and the Gold Road both described the Great Divide, the
+  lava chasm that splits the Barrens. It is not there yet in this period: what
+  divides the two halves is a dried-up riverbed, and the Gold Road crosses it
+  on a bridge and becomes the Southern Gold Road on the far side.
+- The Headland was written up as a Stormpike training camp with instructors and
+  a drill sergeant on it. The dwarves are not there yet either. It is a ridge
+  with mountain lions on it, and now says so.
+- Southbreak Shore credited the pirates to Captain Dreadbeard, who is from a
+  later version of that beach. The Southsea Freebooters hold the north end, and
+  there are sea giants in the surf.
+- Gavin's Naze named the wrong four ridges above Hillsbrad. The four are
+  Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze, in that
+  order, and only three of them are named after people.
+- Shandris Feathermoon was called General. She commands Feathermoon Stronghold
+  and the rank came later.
+
+
 ## 1.2.4
 
 **Added**

@@ -1147,9 +1147,9 @@ SubsOf("Alterac Mountains", {
 		name = "Gavin's Naze", parent = "Alterac Mountains", faction = "Contested",
 		hook = "The last of the four named fingers of high ground above Hillsbrad, and the one nobody took.",
 		lore = {
-			"Four ridges run down out of these mountains and stand out over Hillsbrad: Sofera's Naze, Corrahn's Dagger, Dandred's Fold and this one. A naze is a headland, and the word is being used here for exactly what it means.",
-			"Every one of the four carries a person's name and not one of those people is recorded anywhere. Alterac was dissolved after the Second War and its archives went with it, so four hills are named after four nobodies and nothing explains them.",
-			"The Syndicate took Sofera's Naze, the Crushridge ogres took the holds further east, and this one is the most defensible of the four. Nothing is on it. The mountain lions have it.",
+			"Four ridges run down out of these mountains and stand out over Hillsbrad, and the game counts them in order: Sofera's Naze, Corrahn's Dagger, the Headland, and this one last. A naze is a headland, so two of the four are named for what all four are.",
+			"Three of them carry a person's name and not one of those people is recorded anywhere. Alterac was dissolved after the Second War and its archives went with it, so the hills keep the names of Sofera, Corrahn and Gavin and nothing explains any of them.",
+			"The Syndicate took Sofera's Naze and Corrahn's Dagger, the Crushridge ogres took the holds further east, and this one is the most defensible of the four. Nothing is on it. The mountain lions have it.",
 		},
 		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She wanders the length of Hillsbrad and surfaces about once a day. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
 		readMore = { "Wowpedia: Gavin's Naze", "Wowpedia: Alterac Mountains" },
@@ -3119,14 +3119,14 @@ SubsOf("Wetlands", {
 
 SubsOf("Alterac Mountains", {
 	{
-		name = "The Headland", parent = "Alterac Mountains", faction = "Alliance",
-		hook = "A Stormpike training camp on the third of Hillsbrad's four fingers.",
+		name = "The Headland", parent = "Alterac Mountains", faction = "Contested",
+		hook = "The third of the four ridges above Hillsbrad, held by nothing but mountain lions.",
 		lore = {
-			"The Headland is one of the ridges running down out of the mountains above Hillsbrad, and the Stormpike dwarves have put a training camp on it: instructors, a drill sergeant, and recruits being taught their trade.",
-			"The Alliance way into Alterac Valley is close by, and the camp is there because of it. The Stormpike Guard are digging in the valley north of here and the Frostwolf orcs want them out, and both sides have been feeding soldiers into it for years.",
-			"Alterac Valley is not a war either faction declared. It is a mining dispute that has acquired generals.",
+			"Four ridges run down out of these mountains and stand out over Hillsbrad. Sofera's Naze is the first of them, Corrahn's Dagger the second, this one the third and Gavin's Naze the last.",
+			"Nobody is on it. Mountain lions keep the cliffside here, and the rare cat that ranges across all four of these ridges is as much of an event as the Headland offers.",
+			"The Alliance road into Alterac Valley runs north of here. The Stormpike Guard are digging in that valley and the Frostwolf orcs want them out, and both sides have been feeding soldiers into the argument for years. None of it has reached this ridge.",
 		},
-		readMore = { "Wowpedia: Headland", "Wowpedia: Stormpike Guard", "Wowpedia: Alterac Valley" },
+		readMore = { "Wowpedia: Headland", "Wowpedia: Alterac Mountains", "Wowpedia: Alterac Valley" },
 	},
 	{
 		name = "The Foothill Caverns", parent = "Alterac Mountains", faction = "Hostile",

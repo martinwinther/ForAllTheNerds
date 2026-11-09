@@ -1864,7 +1864,7 @@ SubsOf("Feralas", {
 		name = "Sardor Isle", faction = "Contested",
 		hook = "The island Feathermoon Stronghold is built on, off the western coast.",
 		lore = {
-			"Sardor lies off Feralas' western shore and carries the Sentinels' main base in the south. General Shandris Feathermoon commands from it.",
+			"Sardor lies off Feralas' western shore and carries the Sentinels' main base in the south. Shandris Feathermoon commands from it.",
 			"Shandris was Tyrande Whisperwind's ward, orphaned in the War of the Ancients, and she is the Sentinel army's most capable field commander. Posting her here says what Darnassus thinks of this zone.",
 		},
 	},

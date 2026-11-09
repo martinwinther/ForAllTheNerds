@@ -434,6 +434,93 @@ end)
 out(string.format("sentence-opening runs: %d paragraphs with 3+ consecutive 'The '", runOffenders))
 
 -- ---------------------------------------------------------------------------
+-- 3c. Era scope
+--
+-- This addon covers patch 1.12 and earlier, plus Forever's own content, and
+-- nothing in between or after. The failure this check exists for is a real one:
+-- the Southern Barrens and Gold Road entries both described the Great Divide,
+-- a lava chasm the Cataclysm opened years after the period covered here. It got
+-- in because the entries were written from a retail wiki page, where every
+-- expansion's version of a place sits on one page under separate headings, and
+-- nothing in the build caught it.
+--
+-- Entry names are exempt and only the prose is read. An entry may legitimately
+-- be called the Southern Barrens, because the 1.12 client has an area by that
+-- name; it may not tell the player about the chasm that is not there yet.
+-- ---------------------------------------------------------------------------
+
+section("Era scope")
+
+-- { term, why, caseSensitive }. Plain substrings. Lower-cased and matched
+-- case-insensitively by default; with the third field set the term is matched
+-- exactly as written, which is how a proper noun is told apart from the same
+-- words used as ordinary English. "Northern Barrens" is a zone the Cataclysm
+-- created; "the northern Barrens" is a direction and has always been fine.
+--
+-- Keep this list to things that cannot be right in any context. A term with a
+-- legitimate pre-1.12 use, such as Draenor or the Dark Portal, does not belong
+-- here at all.
+local OUT_OF_ERA = {
+	{ "great divide",         "the chasm the Cataclysm opened. In 1.12 the Barrens is divided by a dried-up riverbed" },
+	{ "Northern Barrens",     "the Barrens was cut in two by the Cataclysm. In 1.12 it is one zone", true },
+	{ "cataclysm",            "the event and the expansion both postdate 1.12. For the breaking of Kalimdor, say the Sundering" },
+	{ "the shattering",       "Cataclysm" },
+	{ "deathwing's return",   "Cataclysm. Deathwing's earlier history is in scope, his return is not" },
+	{ "the great gate",       "the gate across the Mulgore pass is Cataclysm" },
+	{ "ruins of taurajo",     "Camp Taurajo is standing in 1.12 and is burned in Cataclysm" },
+	{ "desolation hold",      "Cataclysm, Southern Barrens" },
+	{ "fort triumph",         "Cataclysm, Southern Barrens" },
+	{ "hunter's hill",        "Cataclysm, Southern Barrens" },
+	{ "vendetta point",       "Cataclysm, Southern Barrens" },
+	{ "garrosh",              "arrives in Nagrand in The Burning Crusade" },
+	{ "warchief vol'jin",     "Vol'jin leads the Darkspear in 1.12 and is not Warchief until Mists of Pandaria" },
+	{ "high chieftain baine", "Baine is a quest giver at Bloodhoof Village in 1.12 and succeeds Cairne in Cataclysm" },
+	{ "fourth war",           "Battle for Azeroth" },
+	{ "wrathgate",            "Wrath of the Lich King" },
+	{ "icecrown citadel",     "Wrath of the Lich King" },
+	{ "ebon blade",           "Wrath of the Lich King" },
+	{ "argent crusade",       "Wrath of the Lich King. The Argent Dawn is the 1.12 organisation" },
+	{ "scarlet onslaught",    "Wrath of the Lich King" },
+	{ "broken isles",         "Legion" },
+	{ "azerite",              "Battle for Azeroth" },
+	{ "n'zoth",               "Battle for Azeroth" },
+	{ "shadowlands",          "Shadowlands" },
+	{ "dragon isles",         "Dragonflight" },
+	{ "pandaria",             "Mists of Pandaria" },
+}
+
+local function countPlain(haystack, needle)
+	local n, from = 0, 1
+	while true do
+		local i = string.find(haystack, needle, from, true)
+		if not i then return n end
+		n = n + 1
+		from = i + 1
+	end
+end
+
+local eraChecked, eraHits = 0, 0
+ns.EachEntry(function(e)
+	eraChecked = eraChecked + 1
+	local parts = { e.hook }
+	for i = 1, #e.lore do parts[#parts + 1] = e.lore[i] end
+	if e.didYouKnow then parts[#parts + 1] = e.didYouKnow end
+	local raw = table.concat(parts, " ")
+	local text = string.lower(raw)
+	for i = 1, #OUT_OF_ERA do
+		local term, why, cased = OUT_OF_ERA[i][1], OUT_OF_ERA[i][2], OUT_OF_ERA[i][3]
+		local n = countPlain(cased and raw or text, cased and term or string.lower(term))
+		if n > 0 then
+			eraHits = eraHits + n
+			fail("%s mentions %q %d time(s): %s", e.name, term, n, why)
+		end
+	end
+end)
+
+out(string.format("%d entries checked against %d out-of-era terms (%d hits)",
+	eraChecked, #OUT_OF_ERA, eraHits))
+
+-- ---------------------------------------------------------------------------
 -- 4. Location resolution
 -- ---------------------------------------------------------------------------
 

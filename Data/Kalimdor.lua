@@ -427,7 +427,7 @@ Zone{
 	name = "The Barrens", continent = KA, faction = "Horde", levels = "10-25",
 	hook = "A vast dry savannah that used to be forest, and the Horde's main road through Kalimdor.",
 	lore = {
-		"The Barrens are the great dry middle of Kalimdor, and the name is accurate now but was not always. Before the Sundering this was lush country. The cataclysm that broke the continent took the water with it, and what remains is savannah, scrub and a handful of oases.",
+		"The Barrens are the great dry middle of Kalimdor, and the name is accurate now but was not always. Before the Sundering this was lush country. The breaking of the continent took the water with it, and what remains is savannah, scrub and a handful of oases.",
 		"The Horde runs through it. The Crossroads sits at the junction of every road that matters, Camp Taurajo supplies the south, and the Mor'shan Rampart holds the northern border against the night elves in Ashenvale. For most Horde players the Barrens are the spine of the world.",
 		"It is crowded with other claims. Quilboar hold Razorfen Kraul and Razorfen Downs, Kolkar centaur raid the central roads, the Venture Company is stripping the Sludge Fen, dwarves are digging at Bael'dun without permission, the Alliance holds Northwatch Hold on the coast, and Ratchet is a goblin free port where nobody is allowed to fight.",
 	},
@@ -1170,7 +1170,7 @@ SubsOf("Feralas", {
 		name = "Feathermoon Stronghold", faction = "Alliance", levels = "40-50",
 		hook = "A Sentinel fortress on an island, commanding the night elves' southern reach.",
 		lore = {
-			"Feathermoon Stronghold sits on Sardor Isle off Feralas' western coast and is the Sentinels' main base in the south. General Shandris Feathermoon commands it.",
+			"Feathermoon Stronghold sits on Sardor Isle off Feralas' western coast and is the Sentinels' main base in the south. Shandris Feathermoon commands it, and Tyrande Whisperwind raised her.",
 			"Shandris was Tyrande Whisperwind's ward, orphaned in the War of the Ancients, and she is the Sentinel army's most capable field commander. Her presence here marks how seriously Darnassus takes Feralas.",
 		},
 	},
@@ -2536,7 +2536,7 @@ SubsOf("The Barrens", {
 		name = "Gold Road", parent = "The Barrens", faction = "Contested",
 		hook = "The Barrens' north-south highway, and the reason the Crossroads matters.",
 		lore = {
-			"The Gold Road runs the length of the Barrens, from the Mor'shan Rampart in the north down to the Great Divide, with a bridge carrying it over into the southern half.",
+			"The Gold Road runs the length of the Barrens, from the Mor'shan Rampart in the north down past the Crossroads and Wailing Caverns to the dried-up riverbed that divides the zone, where a bridge carries it across. South of the bridge the same road is called the Southern Gold Road.",
 			"Where it crosses the east-west road is the Crossroads, and that is the whole reason the Crossroads exists: it is not a town that happens to have roads, it is a junction that acquired a town.",
 			"Everything the Horde does on this continent moves along this line. Orgrimmar to Ashenvale, Orgrimmar to Thousand Needles, Orgrimmar to Ratchet and the sea. The Barrens looks empty and is actually the Horde's circulatory system.",
 		},
@@ -3057,7 +3057,7 @@ SubsOf("Tanaris", {
 		hook = "Flat empty beach below Lost Rigger Cove, apart from the pirates on it.",
 		lore = {
 			"Southbreak Shore runs south from Lost Rigger Cove: a wide flat beach with almost nothing happening on it, except at the northern end.",
-			"The Southsea Freebooters have that end. Captain Dreadbeard is the name attached, and Lost Rigger Cove above is their proper anchorage.",
+			"The Southsea Freebooters have that end, and Lost Rigger Cove above is their proper anchorage. Sea giants work the surf along this stretch as well, which is its own reason to stay off the sand.",
 			"Tanaris is a desert with a goblin port on it and pirates on the coast, which is the arrangement everywhere the Steamwheedle set up. Gadgetzan sells to everybody and polices nothing past its own walls.",
 		},
 		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Freebooters", "Wowpedia: Gadgetzan" },
@@ -3080,9 +3080,9 @@ SubsOf("Winterspring", {
 SubsOf("The Barrens", {
 	{
 		name = "Southern Barrens", parent = "The Barrens", faction = "Contested",
-		hook = "The lower half of the Barrens, past the Great Divide.",
+		hook = "The lower half of the Barrens, past the dry riverbed that splits the zone.",
 		lore = {
-			"The Barrens runs a long way, and south of the Great Divide it gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
+			"The Barrens runs a long way. A dried-up riverbed crosses it about halfway down and the ground south of that gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
 			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the Bristleback have fought the tauren across this country since before the Horde landed.",
 			"Northwatch Hold is the other difficulty: a human fort on the coast of what the Horde regards as its own continent, dug in and not leaving. The south Barrens is where the two factions actually touch.",
 		},
