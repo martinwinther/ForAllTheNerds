@@ -9,6 +9,17 @@
   hidden until you turn it on. These three had nothing written about them
   anywhere when the Forever zones were first filled in, and the wiki has since
   covered them, so the gap closed on its own.
+- Whispering Forest and Shadowvale in Tirisfal Glades, both of them Forever's
+  own additions and hidden with the rest of that material. The forest has the
+  mushroom ring and the knight who cannot leave it; Shadowvale is the dead
+  village below, held by paladins who came back from the grave still convinced
+  the undead should be put down.
+- Gavin's Naze in the Alterac Mountains, the last of the four named ridges over
+  Hillsbrad and the only one nobody ever took.
+- Warsong Labor Camp in Ashenvale, which is not the Warsong Lumber Camp and had
+  been left out for fear of writing up the wrong one.
+- Ashenvale and Tirisfal Glades now have every place in them written up.
+  Thirty-seven of the sixty-three zones are complete.
 
 ## 1.2.3
 

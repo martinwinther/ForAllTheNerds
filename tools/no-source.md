@@ -14,7 +14,6 @@ are now separate files.
 | Mantle Rock | Mulgore | Never left the World of Warcraft beta |
 | Camp Gev'rek | Mulgore | No article on warcraft.wiki.gg |
 | Galak Camp | Mulgore | No article on warcraft.wiki.gg |
-| Shadowvale | Tirisfal Glades | No article on warcraft.wiki.gg |
 | Mok'Gordun | Feralas | Never left the beta; likely an early name for the Gordunni Outpost |
 | Ironclad Prison | Dustwallow Marsh | Never left the beta; named only in the non-canon RPG |
 | Zane's Eye Crater | Thousand Needles | Never left the World of Warcraft beta |
@@ -55,12 +54,9 @@ are now separate files.
 | Place | What happened |
 |---|---|
 | Legashi Encampment | The wiki spells it Legash. Written from the established satyr lore rather than from a page for that exact name. |
-| Whispering Forest | The faerie ring and its seven Fey-Drunk Darters could not be dated. If it is Cataclysm content it has no business in a 1.12 addon, so the place is still on the list. |
-| Warsong Labor Camp | Not the same place as the Warsong Lumber Camp, and the wiki warns against exactly that confusion. Still on the list rather than written up wrong. |
 | School of Necromancy | This is Scholomance, which the addon already had. Registered as an alias of it rather than written twice. |
 | Algaz Gate | This is Dun Algaz, already written up in Data/Locales.lua. Registered as an alias. |
 | The Cemetary | This is Raven Hill Cemetery, already written up. Registered as an alias, misspelling included, since that is what the client reports. |
-| Gavin's Naze | The Stormpike siege engines on that hill could not be dated and read as Cataclysm. Left on the list rather than written from a source I could not place in 1.12. |
 
 ## Out of era rather than out of sources
 

@@ -718,6 +718,16 @@ SubsOf("Ashenvale", {
 		},
 	},
 	{
+		name = "Warsong Labor Camp", parent = "Ashenvale", faction = "Hostile",
+		hook = "The Warsong's other logging camp, out in the southeast where nobody is watching.",
+		lore = {
+			"This is not the Warsong Lumber Camp. That is the main operation; this is a smaller one in the southeast of the forest, east of Fallen Sky Lake, where loggers and harvesters work under a handful of orcish guards.",
+			"Two camps instead of one is the part worth noticing. The Horde's timber operation in Ashenvale is not a single site the Sentinels could close down and be finished with. It spreads, and this is where it has spread to.",
+			"It stands a short walk from the Dor'Danil Barrow Den, where night elf druids were laid down to sleep in the earth. Nobody at the camp seems to have been told that, or to have asked.",
+		},
+		readMore = { "Wowpedia: Warsong Labor Camp", "Wowpedia: Ashenvale" },
+	},
+	{
 		name = "Demon Fall Canyon", parent = "Ashenvale", faction = "Hostile",
 		hook = "The canyon where Grom Hellscream killed Mannoroth and freed his race.",
 		lore = {

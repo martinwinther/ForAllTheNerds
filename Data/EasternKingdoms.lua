@@ -1122,6 +1122,17 @@ SubsOf("Alterac Mountains", {
 		},
 	},
 	{
+		name = "Gavin's Naze", parent = "Alterac Mountains", faction = "Contested",
+		hook = "The last of the four named fingers of high ground above Hillsbrad, and the one nobody took.",
+		lore = {
+			"Four ridges run down out of these mountains and stand out over Hillsbrad: Sofera's Naze, Corrahn's Dagger, Dandred's Fold and this one. A naze is a headland, and the word is being used here for exactly what it means.",
+			"Every one of the four carries a person's name and not one of those people is recorded anywhere. Alterac was dissolved after the Second War and its archives went with it, so four hills are named after four nobodies and nothing explains them.",
+			"The Syndicate took Sofera's Naze, the Crushridge ogres took the holds further east, and this one is the most defensible of the four. Nothing is on it. The mountain lions have it.",
+		},
+		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She wanders the length of Hillsbrad and surfaces about once a day. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
+		readMore = { "Wowpedia: Gavin's Naze", "Wowpedia: Alterac Mountains" },
+	},
+	{
 		name = "Chillwind Point", parent = "Alterac Mountains", faction = "Contested",
 		hook = "A high pass on the Plaguelands border, watched by whoever can spare the men.",
 		lore = {
@@ -2560,6 +2571,30 @@ SubsOf("Tirisfal Glades", {
 		},
 		didYouKnow = "The Argent Dawn is the one organisation in these lands that takes Forsaken members, on the reasoning that anyone willing to fight the Scourge is worth having. A keep that went from Argent Dawn to Forsaken hands is that reasoning carried to its conclusion.",
 		readMore = { "Wowpedia: Bandarion Keep", "Wowpedia: Argent Dawn", "Wowpedia: Forsaken" },
+	},
+	{
+		name = "Whispering Forest", parent = "Tirisfal Glades", faction = "Contested",
+		era = "forever", spoiler = true,
+		hook = "Woodland under the cliff, with a ring of mushrooms at its heart and a knight who cannot leave it.",
+		lore = {
+			"The Whispering Forest fills a bowl in the mountains of western Tirisfal, west of Deathknell, under the cliff that carries Bandarion Keep. From the road above it is the one part of the glades that still reads as forest rather than as a plague site.",
+			"Close up it is not. The stags and does here are diseased like everything else in Tirisfal, and they exist nowhere else; whatever took this place took its animals with it and then kept them.",
+			"A ring of giant mushrooms stands at the centre, glowing, with mist sitting over it. A human ghost in a knight's armour walks that ring and will tell you an oath holds him there. He does not say what the oath was or who took it from him.",
+			"The murlocs had been spawning inside the keep until the paladins above drove them out of it, so the Vile Fin went down to the lake and the bluffs instead. Something larger is in that water: an undead threshadon, and the Forsaken have got as far as naming it Blightsculler.",
+		},
+		readMore = { "Wowpedia: Whispering Forest", "Wowpedia: Bandarion Keep", "Wowpedia: Tirisfal Glades" },
+	},
+	{
+		name = "Shadowvale", parent = "Tirisfal Glades", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A dead village held by risen paladins who still think the undead should be put down.",
+		lore = {
+			"Shadowvale is a ruined village southwest of the lake in the Whispering Forest. The roofs are down, one farmhouse is still standing, and mindless undead are among the people in it.",
+			"The rest call themselves the Tarnished, and they are paladins. They died, they were raised, they got their minds back, and they came out of it holding the same view of the undead that they held when they were alive. They act on it, and the people they act on are other Forsaken.",
+			"A number of them served the Scarlet Crusade before they died. That is the shortest way to understand the problem. The Crusade kills the undead for being undead. Becoming undead has not altered that reasoning for these ones; it has only given them a nearer supply.",
+			"That is what the order at Bandarion Keep is up against. Any Forsaken who distrusts a paladin can point down the valley at Shadowvale, and is not wrong about what is going on there.",
+		},
+		readMore = { "Wowpedia: Whispering Forest", "Wowpedia: Bandarion Keep", "Wowpedia: Forsaken" },
 	},
 })
 

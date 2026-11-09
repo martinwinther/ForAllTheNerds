@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**925 written, 58 empty, 94% covered.** 28 zones have gaps; 35 are complete.
+**929 written, 54 empty, 94% covered.** 26 zones have gaps; 37 are complete.
 
-58 checklist lines below, 58 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+54 checklist lines below, 54 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -35,14 +35,12 @@ check with the real resolver and is the authority when the two disagree.
 | Arathi Highlands | 21 | 3 | 87% |
 | Dustwallow Marsh | 24 | 3 | 88% |
 | Thousand Needles | 20 | 3 | 86% |
-| Alterac Mountains | 21 | 2 | 91% |
 | Duskwood | 19 | 2 | 90% |
 | Stranglethorn Vale | 43 | 2 | 95% |
 | Tanaris | 23 | 2 | 92% |
-| Tirisfal Glades | 28 | 2 | 93% |
 | Un'Goro Crater | 11 | 2 | 84% |
 | Wetlands | 25 | 2 | 92% |
-| Ashenvale | 41 | 1 | 97% |
+| Alterac Mountains | 22 | 1 | 95% |
 | Azshara | 29 | 1 | 96% |
 | Burning Steppes | 13 | 1 | 92% |
 | Desolace | 20 | 1 | 95% |
@@ -56,6 +54,7 @@ check with the real resolver and is the authority when the two disagree.
 | Stonetalon Mountains | 19 | 1 | 95% |
 | The Hinterlands | 21 | 1 | 95% |
 | Westfall | 18 | 1 | 94% |
+| Ashenvale | 42 | 0 | 100% |
 | Badlands | 18 | 0 | 100% |
 | Blackrock Depths | 1 | 0 | 100% |
 | Blackrock Mountain | 1 | 0 | 100% |
@@ -87,6 +86,7 @@ check with the real resolver and is the authority when the two disagree.
 | The Temple of Atal'Hakkar | 1 | 0 | 100% |
 | Thoradin's Wall | 1 | 0 | 100% |
 | Thunder Bluff | 5 | 0 | 100% |
+| Tirisfal Glades | 30 | 0 | 100% |
 | Undercity | 1 | 0 | 100% |
 | Western Plaguelands | 18 | 0 | 100% |
 | Whelgar's Excavation Site | 1 | 0 | 100% |
@@ -148,11 +148,6 @@ is where the most ground is gained per sitting.
 - [ ] Scalding Ridge
 - [ ] Zane's Eye Crater
 
-### Alterac Mountains — 2 empty of 23
-
-- [ ] Gavin's Naze
-- [ ] The Eventide
-
 ### Duskwood — 2 empty of 21
 
 - [ ] The Whipple Estate
@@ -168,11 +163,6 @@ is where the most ground is gained per sitting.
 - [ ] Caverns of Time
 - [ ] The Rumble Cage
 
-### Tirisfal Glades — 2 empty of 30
-
-- [ ] Shadowvale
-- [ ] Whispering Forest
-
 ### Un'Goro Crater — 2 empty of 13
 
 - [ ] Pillar of Assimilation
@@ -183,9 +173,9 @@ is where the most ground is gained per sitting.
 - [ ] Dragonmaw Retreat
 - [ ] The Drunken Dwarf
 
-### Ashenvale — 1 empty of 42
+### Alterac Mountains — 1 empty of 23
 
-- [ ] Warsong Labor Camp
+- [ ] The Eventide
 
 ### Azshara — 1 empty of 30
 
