@@ -1,44 +1,41 @@
 # Changelog
 
-## Unreleased
+## 1.2.4
 
 **Added**
 
-- Three more places in Riverglades: Ashwood's Fall, Terral's Watch and
-  Wheeler's Grange. Background only, like the rest of the Forever material, and
-  hidden until you turn it on. These three had nothing written about them
-  anywhere when the Forever zones were first filled in, and the wiki has since
-  covered them, so the gap closed on its own.
-- Whispering Forest and Shadowvale in Tirisfal Glades, both of them Forever's
-  own additions and hidden with the rest of that material. The forest has the
-  mushroom ring and the knight who cannot leave it; Shadowvale is the dead
-  village below, held by paladins who came back from the grave still convinced
-  the undead should be put down.
-- Gavin's Naze in the Alterac Mountains, the last of the four named ridges over
-  Hillsbrad and the only one nobody ever took.
-- Warsong Labor Camp in Ashenvale, which is not the Warsong Lumber Camp and had
-  been left out for fear of writing up the wrong one.
-- Five more that turned up on a second look: Camp Gev'rek and the Gloomrise in
-  Mulgore and Dragonmaw Retreat and the Drunken Dwarf in the Wetlands, all four
-  of them Forever's own and hidden with the rest of it, plus the Galak Camp in
-  Mulgore, where centaur are sitting on tauren ground for no reason anybody has
-  given.
-- The Sanctum in Stromgarde Keep: the chapel Prince Galen Trollbane keeps to,
-  and the stair down to the crypt his family is in.
-- Five more of Forever's, hidden with the rest of that material. On Mount Hyjal,
-  the Cradle of Tranquility, where a dread raven Wild God has settled, and
-  Mourning's Rest, where a vulture Wild God is losing patience with the dead for
-  walking about. On Zephras Isle, the Ruins of Ban'aethal, a smiths' town that
-  fell into the sky and was emptied in one night; the Bandit Hideout, where the
-  island's thieves keep the windstones they take; and the Rohashi Spires, which
-  stand in open air above the shrine and carry the name of one of Al'Akir's own.
-- Ashenvale, Tirisfal Glades and the Wetlands now have every place in them
-  written up. Thirty-eight of the sixty-three zones are complete, and 940 places
-  have something to read.
-- Every place still left blank now has a reason recorded for it. Most of them
-  were cut before the game was released and were never anywhere a player could
-  stand; the rest are Forever's, and nothing has been written about them yet
-  anywhere we can read.
+- Eighteen more places, taking the total to 940. Ashenvale, Tirisfal Glades and
+  the Wetlands now have every place in them written up, and thirty-eight of the
+  sixty-three zones are complete.
+- Four in the old world: the Sanctum in Stromgarde Keep, the chapel Prince Galen
+  Trollbane keeps to with the stair down to his family's crypt; Gavin's Naze in
+  the Alterac Mountains, last of the four named ridges over Hillsbrad and the
+  only one nobody ever took; the Galak Camp in Mulgore, where centaur are
+  sitting on tauren ground for no reason anybody has given; and the Warsong
+  Labor Camp in Ashenvale, which is not the Warsong Lumber Camp and had been
+  left out for fear of writing up the wrong one.
+- Fourteen of Forever's, background only and hidden until you turn that on.
+  Three in Riverglades: Ashwood's Fall, Terral's Watch and Wheeler's Grange.
+  Two in Tirisfal Glades: the Whispering Forest, with its ring of mushrooms and
+  the knight who cannot leave it, and Shadowvale below, held by paladins who
+  came back from the grave still convinced the undead should be put down. Two in
+  Mulgore: Camp Gev'rek, where the Earthen Ring brought the Windshapers into the
+  Horde, and the Gloomrise, where the dead are talking. Two in the Wetlands:
+  Dragonmaw Retreat and the Drunken Dwarf, a watchtower turned into a pub. Two
+  on Mount Hyjal: the Cradle of Tranquility, where a dread raven Wild God has
+  settled, and Mourning's Rest, where a vulture Wild God is losing patience with
+  the dead for walking about. Three on Zephras Isle: the Ruins of Ban'aethal, a
+  smiths' town that fell into the sky and emptied in a night; the Bandit
+  Hideout, where the island's thieves keep the windstones they take; and the
+  Rohashi Spires, standing in open air above the shrine and carrying the name of
+  one of Al'Akir's own.
+- Most of these had nothing written about them anywhere when the Forever zones
+  were first filled in. The wiki has been catching up since, and looking again
+  found them.
+- Every place still left blank now has a reason recorded for it. Most were cut
+  before the game was released and were never anywhere a player could stand. The
+  rest are Forever's, and nothing has been written about them yet anywhere we
+  can read.
 
 ## 1.2.3
 
