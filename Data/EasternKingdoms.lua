@@ -1207,6 +1207,17 @@ SubsOf("Arathi Highlands", {
 		},
 	},
 	{
+		name = "The Sanctum", parent = "Arathi Highlands", faction = "Alliance",
+		aliases = { "Sanctum" },
+		hook = "The chapel inside Stromgarde Keep, and the stair down to the Trollbane crypt.",
+		lore = {
+			"Past the Church of the Holy Light's chapel in Stromgarde there is an inner room, and under it the Trollbane family crypt. A graveyard lies alongside the church. Stromgarde Soldiers hold this part of the city.",
+			"Prince Galen Trollbane keeps to the chapel. He is what remains of the royal line: his father Thoras is dead, the kingdom came apart, and Galen holds a church and the ground immediately around it while the Syndicate and the Boulderfist ogres divide up the rest.",
+			"Thoras was the last king here. He put Stromgarde into the Alliance of Lordaeron and then took it back out again when Lordaeron would not act on the internment camps, and he carried a line that ran to Thoradin and the founding of Arathor. The crypt under this floor is where that family is kept.",
+		},
+		readMore = { "Wowpedia: Stromgarde Keep", "Wowpedia: Thoras Trollbane", "Wowpedia: Arathor" },
+	},
+	{
 		name = "Refuge Pointe", faction = "Alliance", levels = "30-40",
 		hook = "The Alliance's last outpost in the Highlands, propping up a kingdom it cannot save.",
 		lore = {

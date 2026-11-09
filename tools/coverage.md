@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**934 written, 49 empty, 95% covered.** 25 zones have gaps; 38 are complete.
+**940 written, 43 empty, 95% covered.** 25 zones have gaps; 38 are complete.
 
-49 checklist lines below, 49 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+43 checklist lines below, 43 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -29,13 +29,12 @@ check with the real resolver and is the authority when the two disagree.
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
 | Riverglades | 14 | 6 | 70% |
-| Mount Hyjal | 7 | 4 | 63% |
 | Mulgore | 22 | 4 | 84% |
-| Zephras Isle | 24 | 4 | 85% |
-| Arathi Highlands | 21 | 3 | 87% |
 | Dustwallow Marsh | 24 | 3 | 88% |
 | Thousand Needles | 20 | 3 | 86% |
+| Arathi Highlands | 22 | 2 | 91% |
 | Duskwood | 19 | 2 | 90% |
+| Mount Hyjal | 9 | 2 | 81% |
 | Stranglethorn Vale | 43 | 2 | 95% |
 | Tanaris | 23 | 2 | 92% |
 | Un'Goro Crater | 11 | 2 | 84% |
@@ -53,6 +52,7 @@ check with the real resolver and is the authority when the two disagree.
 | Stonetalon Mountains | 19 | 1 | 95% |
 | The Hinterlands | 21 | 1 | 95% |
 | Westfall | 18 | 1 | 94% |
+| Zephras Isle | 27 | 1 | 96% |
 | Ashenvale | 42 | 0 | 100% |
 | Badlands | 18 | 0 | 100% |
 | Blackrock Depths | 1 | 0 | 100% |
@@ -106,32 +106,12 @@ is where the most ground is gained per sitting.
 - [ ] Turner's Logging Camp
 - [ ] Twilight Hollow
 
-### Mount Hyjal — 4 empty of 11
-
-- [ ] Cradle of Tranquility
-- [ ] Dae'gun
-- [ ] Elderwild
-- [ ] Mourning's Rest
-
 ### Mulgore — 4 empty of 26
 
 - [ ] Brave Wind Mesa
 - [ ] Fire Stone Mesa
 - [ ] Mantle Rock
 - [ ] Skyline Ridge
-
-### Zephras Isle — 4 empty of 28
-
-- [ ] Bandit Hideout
-- [ ] Nightclaw Cavern
-- [ ] Rohashi Spires
-- [ ] Ruins of Ban'aethal
-
-### Arathi Highlands — 3 empty of 24
-
-- [ ] Blackwater Shipwrecks
-- [ ] O'Breen's Camp
-- [ ] The Sanctum
 
 ### Dustwallow Marsh — 3 empty of 27
 
@@ -145,10 +125,20 @@ is where the most ground is gained per sitting.
 - [ ] Scalding Ridge
 - [ ] Zane's Eye Crater
 
+### Arathi Highlands — 2 empty of 24
+
+- [ ] Blackwater Shipwrecks
+- [ ] O'Breen's Camp
+
 ### Duskwood — 2 empty of 21
 
 - [ ] The Whipple Estate
 - [ ] The World Tree
+
+### Mount Hyjal — 2 empty of 11
+
+- [ ] Dae'gun
+- [ ] Elderwild
 
 ### Stranglethorn Vale — 2 empty of 45
 
@@ -220,6 +210,10 @@ is where the most ground is gained per sitting.
 ### Westfall — 1 empty of 19
 
 - [ ] Not Used Deadmines
+
+### Zephras Isle — 1 empty of 28
+
+- [ ] Nightclaw Cavern
 
 ## Regenerating
 

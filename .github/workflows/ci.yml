@@ -58,3 +58,16 @@ jobs:
 
       - name: Validate
         run: env ${{ matrix.env }} lua5.4 tools/validate.lua
+
+  docs:
+    runs-on: ubuntu-latest
+    name: Gap docs agree
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      # tools/coverage.md is generated and tools/no-source.md is written by
+      # hand. This fails if a place has been written up and its reason was
+      # left behind, or if a gap has no reason at all.
+      - name: Check the gap docs against each other
+        run: python3 -I tools/check-gaps.py

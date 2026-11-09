@@ -23,9 +23,22 @@
   of them Forever's own and hidden with the rest of it, plus the Galak Camp in
   Mulgore, where centaur are sitting on tauren ground for no reason anybody has
   given.
+- The Sanctum in Stromgarde Keep: the chapel Prince Galen Trollbane keeps to,
+  and the stair down to the crypt his family is in.
+- Five more of Forever's, hidden with the rest of that material. On Mount Hyjal,
+  the Cradle of Tranquility, where a dread raven Wild God has settled, and
+  Mourning's Rest, where a vulture Wild God is losing patience with the dead for
+  walking about. On Zephras Isle, the Ruins of Ban'aethal, a smiths' town that
+  fell into the sky and was emptied in one night; the Bandit Hideout, where the
+  island's thieves keep the windstones they take; and the Rohashi Spires, which
+  stand in open air above the shrine and carry the name of one of Al'Akir's own.
 - Ashenvale, Tirisfal Glades and the Wetlands now have every place in them
-  written up. Thirty-eight of the sixty-three zones are complete, and 934 places
+  written up. Thirty-eight of the sixty-three zones are complete, and 940 places
   have something to read.
+- Every place still left blank now has a reason recorded for it. Most of them
+  were cut before the game was released and were never anywhere a player could
+  stand; the rest are Forever's, and nothing has been written about them yet
+  anywhere we can read.
 
 ## 1.2.3
 

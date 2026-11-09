@@ -130,6 +130,28 @@ SubsOf("Mount Hyjal", {
 			"Night elf policy on Hyjal has been to seal the mountain rather than clear it. That keeps people away from the corrupted ground. It also leaves the corrupted ground exactly where it is.",
 		},
 	},
+	{
+		name = "Cradle of Tranquility", parent = "Mount Hyjal", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "A quiet grove on the mountain with a dread raven Wild God sitting in it.",
+		lore = {
+			"Hyjal belonged to the Wild Gods before it belonged to anyone. The ancient animal demigods of Kalimdor were gathered here, and the night elves left the peak untouched through ten thousand years of empire because of what lived on it.",
+			"One of them is in this grove. Jereman is a dread raven and a Wild God both, and he has settled in the stillest corner of a zone that recently had Archimonde pulled down on top of it.",
+			"The name is making an argument. Nordrassil is burned, the slopes are full of what the Legion and the Scourge left, and somebody has called one grove on this mountain tranquil. That says what the place is for rather than what the neighbourhood is like.",
+		},
+		readMore = { "Wowpedia: Wild God", "Wowpedia: Mount Hyjal" },
+	},
+	{
+		name = "Mourning's Rest", parent = "Mount Hyjal", faction = "Neutral",
+		era = "forever", spoiler = true,
+		hook = "Where Hyjal's dead are, and a vulture Wild God who cannot get them to lie still.",
+		lore = {
+			"The Battle of Mount Hyjal left its dead on this mountain and not all of them have stayed down. Mourning's Rest is one of the places that shows, and the name is doing the work of hoping.",
+			"Marrosis holds the ground: a vulture, and a Wild God, and willing to discuss the problem with anyone who comes up. Undead on the mountain are a blight on the cycle of nature as far as he is concerned, and he would like them put to rest so that healing and rebirth can get started.",
+			"His second objection is less philosophical. He is a vulture. He is unaccustomed to his food walking off, and he is not in the habit of chasing a meal down.",
+		},
+		readMore = { "Wowpedia: Wild God", "Wowpedia: Battle of Mount Hyjal" },
+	},
 })
 
 -- ---------------------------------------------------------------------------
@@ -641,6 +663,40 @@ SubsOf("Zephras Isle", {
 			"A village absorbing refugees while its own ground fails is the ordinary texture of this zone, underneath the argument between the three orders.",
 		},
 		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Ruins of Ban'aethal", parent = "Zephras Isle", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A settlement of magesmiths that fell into the sky, emptied overnight with everything still in it.",
+		lore = {
+			"Ban'aethal was a smiths' town and its magesmiths were reckoned the finest artisans in the Skyborne Isles. Then the magic holding the ground up gave way. The people went out in the dark as the settlement began to fall into the sky, and most of what they owned is still standing where they left it.",
+			"So this is a ruin with somebody's furniture in it. Den'dralass works the ground between here and Shadowgale Forest, an ursera the Skyborne call the Great Mother, and nobody argues with her over salvage.",
+			"The craft outlived the town. The Nightclaw Druids went in afterwards and carried the crafting plans out, and the smiths working from them learned the trade from Ban'aethal's own masters. On islands coming apart one at a time, a recovered set of plans is the difference between a living tradition and a story about one.",
+		},
+		didYouKnow = "Ban'aethal and Shadowgale Forest may both have been tied to the North Wind. The naming and the standing stones point that way and nothing on the island states it outright, so it is an inference rather than a fact.",
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Bandit Hideout", parent = "Zephras Isle", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "The cave where the island's thieves keep what they take, and what they take is windstones.",
+		lore = {
+			"Zephras runs on windstones. They hold concentrated elemental energy, they serve as both the power supply and the money, and since the wind spirits left and the magic under the island started to fade they are the only currency that counts.",
+			"Crime on Zephras follows from that. The hideout is a cave of Skyborne who have taken to robbing other Skyborne of windstones, under a leader they call Badwind Bennic, and they are not delicate about the robbing.",
+			"The Peacekeepers are the island's own militia and they treat the offence as capital. One bandit they took had killed a peacekeeper over a load of stones, his family was already dead, and he was facing execution for it. Stealing the power supply of a failing sky island is not filed under property crime.",
+		},
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Rohashi Spires", parent = "Zephras Isle", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "Spires standing in open air above the shrine, carrying the name of one of Al'Akir's own.",
+		lore = {
+			"The spires hang in the sky over the Shrine of Akir, and the name on them is Rohash, who serves Al'Akir. That is the Windlord the Al'Aketh look to, rather than the wind spirits the rest of the island dealt with for ten thousand years.",
+			"Nothing up here is friendly. Malevolent storms hold the spires along with a duke called Anvillaxx. Duke is the rank an elemental lord hands his lieutenants, the way Duke Hydraxis holds the Bay of Storms in Azshara for Neptulon, so the title says whose service he is in.",
+			"The arrangement of it is the uncomfortable part. The shrine below is where the orders meet and the wards are kept, and the spires sit directly above it in open air. On a flying island there is no higher ground than this.",
+		},
+		readMore = { "Wowpedia: Al'Akir", "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
 	},
 })
 
