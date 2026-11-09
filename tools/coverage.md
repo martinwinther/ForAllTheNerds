@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**929 written, 54 empty, 94% covered.** 26 zones have gaps; 37 are complete.
+**934 written, 49 empty, 95% covered.** 25 zones have gaps; 38 are complete.
 
-54 checklist lines below, 54 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+49 checklist lines below, 49 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -28,9 +28,9 @@ check with the real resolver and is the authority when the two disagree.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Mulgore | 19 | 7 | 73% |
 | Riverglades | 14 | 6 | 70% |
 | Mount Hyjal | 7 | 4 | 63% |
+| Mulgore | 22 | 4 | 84% |
 | Zephras Isle | 24 | 4 | 85% |
 | Arathi Highlands | 21 | 3 | 87% |
 | Dustwallow Marsh | 24 | 3 | 88% |
@@ -39,7 +39,6 @@ check with the real resolver and is the authority when the two disagree.
 | Stranglethorn Vale | 43 | 2 | 95% |
 | Tanaris | 23 | 2 | 92% |
 | Un'Goro Crater | 11 | 2 | 84% |
-| Wetlands | 25 | 2 | 92% |
 | Alterac Mountains | 22 | 1 | 95% |
 | Azshara | 29 | 1 | 96% |
 | Burning Steppes | 13 | 1 | 92% |
@@ -89,6 +88,7 @@ check with the real resolver and is the authority when the two disagree.
 | Tirisfal Glades | 30 | 0 | 100% |
 | Undercity | 1 | 0 | 100% |
 | Western Plaguelands | 18 | 0 | 100% |
+| Wetlands | 27 | 0 | 100% |
 | Whelgar's Excavation Site | 1 | 0 | 100% |
 | Winterspring | 19 | 0 | 100% |
 
@@ -96,16 +96,6 @@ check with the real resolver and is the authority when the two disagree.
 
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
-
-### Mulgore — 7 empty of 26
-
-- [ ] Brave Wind Mesa
-- [ ] Camp Gev'rek
-- [ ] Fire Stone Mesa
-- [ ] Galak Camp
-- [ ] Gloomrise
-- [ ] Mantle Rock
-- [ ] Skyline Ridge
 
 ### Riverglades — 6 empty of 20
 
@@ -122,6 +112,13 @@ is where the most ground is gained per sitting.
 - [ ] Dae'gun
 - [ ] Elderwild
 - [ ] Mourning's Rest
+
+### Mulgore — 4 empty of 26
+
+- [ ] Brave Wind Mesa
+- [ ] Fire Stone Mesa
+- [ ] Mantle Rock
+- [ ] Skyline Ridge
 
 ### Zephras Isle — 4 empty of 28
 
@@ -167,11 +164,6 @@ is where the most ground is gained per sitting.
 
 - [ ] Pillar of Assimilation
 - [ ] Stomping Grounds
-
-### Wetlands — 2 empty of 27
-
-- [ ] Dragonmaw Retreat
-- [ ] The Drunken Dwarf
 
 ### Alterac Mountains — 1 empty of 23
 

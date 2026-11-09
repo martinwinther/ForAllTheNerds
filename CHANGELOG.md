@@ -18,8 +18,14 @@
   Hillsbrad and the only one nobody ever took.
 - Warsong Labor Camp in Ashenvale, which is not the Warsong Lumber Camp and had
   been left out for fear of writing up the wrong one.
-- Ashenvale and Tirisfal Glades now have every place in them written up.
-  Thirty-seven of the sixty-three zones are complete.
+- Five more that turned up on a second look: Camp Gev'rek and the Gloomrise in
+  Mulgore and Dragonmaw Retreat and the Drunken Dwarf in the Wetlands, all four
+  of them Forever's own and hidden with the rest of it, plus the Galak Camp in
+  Mulgore, where centaur are sitting on tauren ground for no reason anybody has
+  given.
+- Ashenvale, Tirisfal Glades and the Wetlands now have every place in them
+  written up. Thirty-eight of the sixty-three zones are complete, and 934 places
+  have something to read.
 
 ## 1.2.3
 

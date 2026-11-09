@@ -887,6 +887,28 @@ SubsOf("Wetlands", {
 		},
 	},
 	{
+		name = "Dragonmaw Retreat", parent = "Wetlands", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "A Dragonmaw camp sitting on the road rather than up in the hills.",
+		lore = {
+			"The clan's other ground in this zone is a gate and a war camp in the highlands. This one is different: it straddles the road, where the traffic is, and the orcs on it are posted along the verges.",
+			"Half of them are warlocks. Soulbinders throw corruption and call succubi up to stand with them, and the fighters beside them net you before they close. A clan that held a Dragon Queen with the Demon Soul still keeps people whose whole trade is binding things that do not want to be bound.",
+			"The rest call themselves reclaimers and carry the clan's war banners down a public road. The Dragonmaw were broken after the Second War and the red flight collected on the debt. Nobody here has accepted that the clan is finished.",
+		},
+		readMore = { "Wowpedia: Dragonmaw clan", "Wowpedia: Grim Batol", "Wowpedia: Wetlands" },
+	},
+	{
+		name = "The Drunken Dwarf", parent = "Wetlands", faction = "Alliance",
+		era = "forever", spoiler = true,
+		hook = "A watchtower on the Wetlands road that the Firebrews turned into a pub.",
+		lore = {
+			"Somebody's kingdom built an outlook here and then got tired of paying to keep anyone in it. The Firebrews took the building over, put a bar in the bottom of it, and have been running the place for a year or so.",
+			"Agriel Firebrew holds it now and is clear that the coin was never the point. Word has got around regardless. Traders keep arriving who want their brew on her shelf or their jerky on her plates, and she is in no hurry about any of them.",
+			"Read the neighbourhood before you judge the decision. This is the Wetlands: the road here runs between Dragonmaw camps and dwarven garrisons, and the Firebrews have taken a fortified tower off that road and left the door open to whoever walks up it.",
+		},
+		readMore = { "Wowpedia: Wetlands", "Wowpedia: Menethil Harbor" },
+	},
+	{
 		name = "Angerfang Encampment", parent = "Wetlands", faction = "Hostile",
 		hook = "A Dragonmaw war camp pressing west toward Menethil.",
 		lore = {

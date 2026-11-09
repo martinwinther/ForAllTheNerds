@@ -2303,6 +2303,39 @@ SubsOf("Mulgore", {
 		},
 		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle", "Wowpedia: Mulgore" },
 	},
+	{
+		name = "Camp Gev'rek", parent = "Mulgore", faction = "Horde",
+		era = "forever", spoiler = true,
+		hook = "The Earthen Ring's camp on top of the plateau, and where the Windshapers came into the Horde.",
+		lore = {
+			"Camp Gev'rek stands on Skywatcher Plateau, above the berth where the Skyborne airships come down. The Earthen Ring holds it: shaman who deal with the elements directly rather than through any temple, Rimblat Earthshatter among them.",
+			"They are here for the Windshapers. Of the three Skyborne orders that one descends from Eldre'Thalas' ordinary citizens instead of its magisters, and it is the order that has thrown in with the Horde. The Earthen Ring brought them in.",
+			"Put the two together and the pairing explains itself. One side has spent its existence listening to elementals on this world. The other spent ten thousand years inside the Plane of Air, asking wind spirits for the magic that held their islands up, and has now watched those spirits leave.",
+		},
+		didYouKnow = "This is less an alliance than a landing. Anvilas and Siroccas are already breaking up and Zephras is going the same way, so the Windshapers are not negotiating from strength. What they have to offer is ten thousand years of knowing how to talk to air.",
+		readMore = { "Wowpedia: Earthen Ring", "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
+	},
+	{
+		name = "Gloomrise", parent = "Mulgore", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "High ground in northern Mulgore where the spiders have crystal in them and the tauren dead are talking.",
+		lore = {
+			"The spiders own the Gloomrise. Hatchlings and soldiers are ordinary enough for Mulgore, and the spinners are not: whatever has got into them has left crystal behind.",
+			"Tauren dead walk the rise alongside them, and they are not silent. What comes out of them is not threat or challenge. It is pleading, and the words they have left come to roughly this: that what is happening to them is not right.",
+			"They are not wrong. Tauren give their dead back to the Earth Mother and Mulgore is the one place where the ground is supposed to be safe to lie in. Something here is undoing that, the corpses carry a toxin, and somebody has started collecting samples of it.",
+		},
+		readMore = { "Wowpedia: Mulgore", "Wowpedia: Tauren" },
+	},
+	{
+		name = "Galak Camp", parent = "Mulgore", faction = "Hostile",
+		hook = "Galak centaur camped on the Mulgore plains, a long way from any ground of theirs.",
+		lore = {
+			"The Galak are a Thousand Needles tribe. Thousand Needles is on the other side of the Barrens, and yet here they are on the grass in Mulgore with a camp pitched.",
+			"Nobody has explained it. The force is small and behaves like a scouting party rather than a raid: moving over open ground, not holding any.",
+			"The tauren will take it badly either way. Centaur are the reason their people spent generations as nomads, driven across Kalimdor tribe by tribe, and Mulgore was only made safe when Cairne's Bloodhoof drove them back with orcish help. A centaur camp inside this valley is the exact thing the settlement was built to prevent.",
+		},
+		readMore = { "Wowpedia: Galak", "Wowpedia: Centaur", "Wowpedia: Mulgore" },
+	},
 })
 
 SubsOf("Tirisfal Glades", {
