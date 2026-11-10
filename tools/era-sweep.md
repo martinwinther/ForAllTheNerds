@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P0, the Auberdine boat line.
+IN PROGRESS. Next: P1, the term ledger.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -30,11 +30,10 @@ before the build passes, and a new one fails until somebody files it.
 
 One status line each. Do one item per run, verify it, commit it, stop.
 
-**P0. The Auberdine boat line. NOT STARTED.**
-`Data/Kalimdor.lua:334` gives Auberdine boats to Rut'theran Village, Menethil
-Harbor and "the Azuremyst route north". The Azuremyst run arrives in patch
-2.0.1. At 1.12 Auberdine has two boats, Rut'theran Village and Menethil Harbor.
-Cut the third and cite the Classic source in `readMore`.
+**P0. The Auberdine boat line. DONE 2026-11-10.**
+The entry claimed boats to Rut'theran Village, Menethil Harbor and "the
+Azuremyst route north". The third arrives in patch 2.0.1. It now names the two
+boats the 1.12 game has, and cites the Classic articles. See the log.
 
 **P1. The term ledger, `tools/era-terms.tsv`. NOT STARTED.**
 One row per proper noun our own prose uses, with columns `term`, `verdict`,
@@ -128,3 +127,50 @@ configs in the CI matrix, `python3 -I tools/check-gaps.py` passes, and the
 prose linter is clean on this file.
 
 Next: P0, the Auberdine boat line.
+
+### 2026-11-10, P0
+
+Fixed the Auberdine entry in `Data/Kalimdor.lua`. Its first lore paragraph
+claimed boats to Rut'theran Village, Menethil Harbor "and the Azuremyst route
+north". It now names the two boats that exist at 1.12 and carries a `readMore`,
+which it had none of before.
+
+Two oracles were checked independently and they agree:
+
+- The `transports` table of the 1.12.1 world database lists every moving
+  transport in the game, nine rows in all. Two of them touch Auberdine: 176244
+  `Moonspray`, "Teldrassil and Auberdine", and 176310 `Serenity's Shore`,
+  "Menethil Harbor and Auberdine". Nothing sails to Azuremyst.
+- The wiki's `Auberdine` article carries `{{Classic only|patch=4.0.3a}}`. No
+  `Auberdine (Classic)` article exists, which makes the bare title the right
+  source here. It names `The Bravery` to Menethil Harbor and `The Moonspray` to
+  Rut'theran Village, and puts `Elune's Blessing` to Azuremyst Isle in the
+  Burning Crusade section.
+
+Cited `Wowpedia: Auberdine` and `Wowpedia: Moonspray`. Both lead with the
+pre-Cataclysm state. `The Bravery` was deliberately left out: its article is
+era-tagged, but its lead describes the Stormwind Harbor route the ship was
+moved to in patch 3.0.2, and handing the player a retail lead is the trap this
+sweep exists to close.
+
+**One assumption P1 must not inherit.** The plan said any proper noun in the
+cmangos corpus is vanilla by definition. That does not hold for the whole dump.
+`npc_text` and `page_text` carry rows that are not in the 1.12 game: a draenei
+celebration line naming Azuremyst and Bloodmyst, and several more naming the
+Exodar. Treat `creature_template`, `gameobject_template`, `quest_template`,
+`creature_ai_texts` and `questgiver_greeting` as authoritative. A hit in
+`npc_text` or `page_text` proves nothing by itself.
+
+Noted for P3: `tools/validate.lua` already has a "Flight paths" section at line
+792. The transport check has somewhere to live and does not need a new one.
+
+The rest of `Data/` was swept for the same family of names. One hit, and it is
+right: Sylvanas was Ranger-General of Silvermoon before Arthas killed her,
+which is Third War history and in scope.
+
+Gates: the validator passes on all nine configs, `check-gaps.py` passes, and
+`lint-prose.py` on `Data/Kalimdor.lua` holds at the same eight pre-existing
+RHYTHM findings as the previous commit. No new check was added, so nothing
+needed breaking deliberately.
+
+Next: P1, the term ledger.

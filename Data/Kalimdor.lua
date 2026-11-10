@@ -331,9 +331,10 @@ SubsOf("Darkshore", {
 		name = "Auberdine", faction = "Alliance", levels = "10-20",
 		hook = "The night elves' port on the ruined coast, and the Alliance's ferry hub in the north.",
 		lore = {
-			"Auberdine is a working port with boats to Rut'theran Village, Menethil Harbor in the Wetlands and the Azuremyst route north. For Alliance players it is the main crossing between Kalimdor and the Eastern Kingdoms.",
+			"Auberdine is a working port with two boats: one to Rut'theran Village at the foot of Teldrassil, the other to Menethil Harbor in the Wetlands. For Alliance players it is the main crossing between Kalimdor and the Eastern Kingdoms.",
 			"It is also the night elves' administrative centre for Darkshore, coordinating responses to naga, cultists and a coastline full of things washing ashore.",
 		},
+		readMore = { "Wowpedia: Auberdine", "Wowpedia: Moonspray" },
 	},
 	{
 		name = "Ruins of Mathystra", parent = "Darkshore", faction = "Hostile",
