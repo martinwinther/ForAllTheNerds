@@ -432,8 +432,10 @@ Trollbane" for two releases because P1's rule marks a term vanilla when *every
 capitalised part of it* is vanilla, and Commander and Trollbane both are. That
 rule will pass any invented title or name built out of real words, which is a
 narrower version of the blacklist problem the ledger was meant to fix. The row
-is deleted, and no prose uses the term now. There are 49 other rows reading
-"every part named in 1.12 sources" and they deserve a pass of their own.
+is deleted, and no prose uses the term now. There are 99 other rows resting on
+that rule, which `awk -F'\t' '$3=="every part named in 1.12 sources"'` counts,
+and they deserve a pass of their own. The commit that landed this run said 49,
+which was a guess written before the count was run. The number is 99.
 
 **Broken deliberately.** Deleting a row only helps if the gate then fails on the
 term, so "Commander Trollbane held it before." was injected into Arathi
