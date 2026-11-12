@@ -2296,6 +2296,7 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Skywatcher Plateau", parent = "Mulgore", faction = "Horde",
+		era = "forever", spoiler = true,
 		hook = "The Horde's airship landing for Zephras Isle, in north-western Mulgore.",
 		lore = {
 			"Skywatcher Plateau is where the Skyborne arrive. Their flying island hangs in Skywall, the Elemental Plane of Air, and the airships off its Valanaar skydocks come down here for anyone joining the Horde; the Alliance berth lands at Dalaran instead.",
@@ -2548,7 +2549,7 @@ SubsOf("The Barrens", {
 		hook = "An island off the coast south of Ratchet where warriors go to fight each other.",
 		lore = {
 			"Fray Island is small, dry and off the Barrens' eastern shore. What it is for is fighting: warriors come here to test themselves against each other, and have done under one management or another for years.",
-			"Klannoc Macleod runs the challenges now. Before that the Southsea Freebooters had the place under Cap'n Garvey, which gives an idea of how the island changes hands.",
+			"Klannoc Macleod runs the challenges. The test he sets is called the Affray, offered to warriors who turn up believing they are already tough.",
 			"Humans, trolls, ogres, dwarves, goblins, orcs and night elves have all fought here. On an island with no faction and no authority, the only question anybody asks is whether you can.",
 		},
 		didYouKnow = "Ratchet is a short way north and is Steamwheedle neutral ground, where fighting is forbidden on the premises. The goblins appear to have solved that by letting the fighting happen on an island just offshore.",
@@ -2705,11 +2706,11 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Sishir Canyon", parent = "Stonetalon Mountains", faction = "Hostile",
-		hook = "A spider canyon on the road to the Ruins of Eldre'thar.",
+		hook = "A spider canyon off the main Stonetalon road.",
 		lore = {
-			"Sishir Canyon runs off the main Stonetalon road towards the Ruins of Eldre'thar, and the Deepmoss spiders have it. Their eggs and webbing cover the whole of it.",
-			"Besseleth is the largest of them and she is deep inside. Giant spiders in Kalimdor are not unusual; a canyon so thoroughly taken that the road through it is effectively closed is.",
-			"Stonetalon is being pulled apart from several directions at once. The Venture Company are logging and mining it, the Grimtotem tauren hold ground in it, harpies are in the Charred Vale, and the one road through has this in the middle.",
+			"Sishir Canyon runs off the main Stonetalon road, and the Deepmoss spiders have it. Their eggs and webbing cover the whole of it.",
+			"Besseleth is the largest of them and she is deep inside. Giant spiders in Kalimdor are not unusual; a canyon taken so thoroughly that nothing else is left in it is.",
+			"Stonetalon is being pulled apart from several directions at once. The Venture Company are logging and mining it, the Grimtotem tauren hold ground in it, harpies are in the Charred Vale, and the one road through runs past this.",
 		},
 		readMore = { "Wowpedia: Sishir Canyon", "Wowpedia: Stonetalon Mountains" },
 	},

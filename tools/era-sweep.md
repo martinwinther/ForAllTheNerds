@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P1, the term ledger.
+IN PROGRESS. Next: P2, gating validate.lua on the ledger.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -35,15 +35,14 @@ The entry claimed boats to Rut'theran Village, Menethil Harbor and "the
 Azuremyst route north". The third arrives in patch 2.0.1. It now names the two
 boats the 1.12 game has, and cites the Classic articles. See the log.
 
-**P1. The term ledger, `tools/era-terms.tsv`. NOT STARTED.**
-One row per proper noun our own prose uses, with columns `term`, `verdict`,
-`evidence`, `source`. The verdicts are `vanilla`, `forever`, `out-of-era`,
-`history` (real before WoW, absent from in-game text and still in scope) and
-`fragment` (capitalised but not a proper noun). A few hundred rows, filled from
-the oracles below, cheapest first. This file is our own analysis of the terms
-our own prose uses, and it is committed.
+**P1. The term ledger, `tools/era-terms.tsv`. DONE 2026-11-12.**
+1,615 rows: 1,485 `vanilla`, 58 `forever`, 39 `out-of-era`, 21 `history` (real
+before WoW, absent from in-game text and still in scope) and 12 `fragment`
+(capitalised but not a proper noun). The 39 out-of-era rows carry the 26 terms
+the hand-written blacklist held. P2 can retire it. See the log for the
+extraction rule and for the six errors the pass turned up.
 
-**P2. Gate validate.lua on the ledger. NOT STARTED.**
+**P2. Gate validate.lua on the ledger. NEXT.**
 Fail when entry prose holds a term missing from the ledger, or one whose
 verdict is `out-of-era`. Read `hook`, `lore` and `didYouKnow` only. Entry names
 and `readMore` stay exempt, because the 1.12 client really does have an area
@@ -174,3 +173,66 @@ RHYTHM findings as the previous commit. No new check was added, so nothing
 needed breaking deliberately.
 
 Next: P1, the term ledger.
+
+### 2026-11-12, P1
+
+Built `tools/era-terms.tsv`, 1,615 rows, and fixed the six era errors the
+building of it turned up.
+
+**How the terms were taken.** A term is a run of capitalised words joined by
+single spaces, optionally crossing "of" or "of the". Any punctuation between
+two words ends the run, which is what keeps a comma-separated list of names
+from becoming one long term. A leading article is dropped and so is a trailing
+possessive. A word capitalised only because a sentence began with it is thrown
+out, unless the same word appears capitalised mid-sentence somewhere in the
+corpus. Two mistakes are worth remembering: joining runs across a bare "the"
+welded separate names together, and matching the dump without undoing
+mysqldump's backslash escapes failed on every name with an apostrophe, which is
+a large share of them.
+
+**How the verdicts were reached.** A term is `vanilla` if it appears in the
+1.12 game text, or as a whole word in a `wow_classic_era` AreaTable name, or as
+the singular of either, or if every capitalised part of it does. That settled
+1,485 of them without a judgement call. 92 were left: the 58 used only by
+Forever entries are `forever`, and the remaining 34 were decided one at a time
+against the wiki and written into the ledger with their evidence.
+
+**The six errors.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| The Damsel's Luck | The Brashtide Crew are aboard | Captain Stillwater has her and the crew are Bloodsail. The Brashtide are worgen pirates of a later expansion |
+| Sishir Canyon | On the road to the Ruins of Eldre'thar | Those ruins were added in patch 4.0.3a. The canyon runs off the Stonetalon road and leads nowhere named |
+| Fray Island | The Southsea held it under Cap'n Garvey before Klannoc Macleod | Garvey is patch 4.0.3a. At 1.12 the island is Klannoc's and the test is the Affray |
+| Thorn Hill | The Razormane hold it under a quilboar named Tortusk | Tortusk is patch 4.0.3a. The hill is a 1.12 area with no named leader in the game's text |
+| Gnomeregan, Deeprun Tram, Steelgrill's Depot | Sicco Thermaplugg | At 1.12 he is Mekgineer Thermaplugg, with no given name anywhere in the game's text |
+| The Sludgewerks | A whole entry for a Venture Company works | A Bilgewater base in northern Stonetalon, in neither the Classic Era nor the Forever client. The entry is deleted |
+
+Four of the six are the same mistake as the Headland and Captain Dreadbeard: a
+character or crew from a later expansion standing in a place that does exist at
+1.12. The wiki leads that produced them all describe the Northern Barrens,
+which is itself a blacklisted term.
+
+**Two other things the pass found.** `Skywatcher Plateau` is entirely Forever
+content, the Skyborne arriving from Zephras Isle, but it carried no `era` tag,
+and `Data/Schema.lua` defaults a missing one to `vanilla`. It is the only one of
+the 74 Forever entries that was missing `era = "forever", spoiler = true`. And
+our prose spelled Menethil Harbor the British way five times against eleven the
+game's way. The five were normalised.
+
+**Open for P2.** The ledger has the four columns the plan asked for and no
+case-sensitivity column. The intended rule is that every ledger term is matched
+case-sensitively, which gives "the northern Barrens" passing and "the Northern
+Barrens" failing without a fifth column. That does mean the out-of-era rows are
+stricter than the blacklist they replace, which matched case-insensitively. P2
+should decide whether a lower-cased "great divide" still needs to fail.
+
+**One check that did not work.** Every vanilla entry name was matched against
+the AreaTable of both clients, looking for more entries like the Sludgewerks.
+It returned 45, but most are plainly vanilla city districts such as the Mage
+Quarter, Grommash Hold and Tinker Town, which simply are not AreaTable rows
+under those names. The check cannot tell a phantom entry from a district.
+Nothing was concluded from it. `/ftn areas` uses the real resolver and is the
+way to answer that question.
+
+Next: P2.

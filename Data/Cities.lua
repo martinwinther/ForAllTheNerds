@@ -460,7 +460,7 @@ Zone{
 	lore = {
 		"The Deeprun Tram runs between Tinker Town in Ironforge and the Dwarven District in Stormwind, and it is gnomish work. Nothing else in the world quite matches it: a rail tunnel bored through the roots of Khaz Modan so that two capitals can be reached from one another without going outside.",
 		"Treaties are easy to sign. The dwarves and gnomes of Ironforge and the humans of Stormwind built a railway instead, which costs more and says more. It is the Alliance's oldest working proof that its members actually mean it.",
-		"The gnomes who did the engineering no longer have a city. Gnomeregan was lost to the troggs and to Sicco Thermaplugg's decision to flood it with radiation rather than hand it over, and the survivors live in Tinker Town, at this tunnel's northern end.",
+		"The gnomes who did the engineering no longer have a city. Gnomeregan was lost to the troggs and to Mekgineer Thermaplugg's decision to flood it with radiation rather than hand it over, and the survivors live in Tinker Town, at this tunnel's northern end.",
 	},
 	didYouKnow = "The tunnel passes through a flooded cavern with glass walls, so the tram runs for a stretch with deep water and whatever lives in it on both sides. Nobody has ever satisfactorily explained what the gnomes were thinking.",
 	readMore = { "Wowpedia: Deeprun Tram", "Wowpedia: Gnomeregan", "Wowpedia: Tinker Town" },

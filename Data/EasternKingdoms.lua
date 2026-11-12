@@ -221,7 +221,7 @@ SubsOf("Dun Morogh", {
 		name = "Gnomeregan", parent = "Dun Morogh", faction = "Hostile", levels = "24-34",
 		hook = "The gnomish capital, flooded with radiation by its own leader to kill the troggs invading it.",
 		lore = {
-			"Gnomeregan was the technological wonder of the Alliance: a vertical city of machinery dug into the mountain, built and run by gnomes. When troggs broke into the lower levels, High Tinker Mekkatorque's advisor Sicco Thermaplugg proposed flooding the city with radiation to purge them.",
+			"Gnomeregan was the technological wonder of the Alliance: a vertical city of machinery dug into the mountain, built and run by gnomes. When troggs broke into the lower levels, Mekgineer Thermaplugg, an advisor to High Tinker Mekkatorque, proposed flooding the city with radiation to purge them.",
 			"It worked on the troggs. It also irradiated the gnomes. Something like four-fifths of the gnomish population died or was warped into leper gnomes, and Thermaplugg sealed himself inside and took the city for himself. The survivors fled to Ironforge, where the dwarves took them in.",
 			"The gnomes have not given up on retaking it. Mekkatorque is openly recruiting anyone willing to go down into the irradiated levels, and the entrance is crawling with takers.",
 		},
@@ -2424,9 +2424,9 @@ SubsOf("Alterac Mountains", {
 SubsOf("Wetlands", {
 	{
 		name = "Menethil Keep", parent = "Wetlands", faction = "Alliance",
-		hook = "The keep over Menethil Harbour, named for a royal line that no longer exists.",
+		hook = "The keep over Menethil Harbor, named for a royal line that no longer exists.",
 		lore = {
-			"Menethil Harbour is the Alliance's western port and the keep is what holds it. Both carry the name of Lordaeron's royal house: Terenas Menethil was the king who assembled the Alliance of Lordaeron and won the Second War.",
+			"Menethil Harbor is the Alliance's western port and the keep is what holds it. Both carry the name of Lordaeron's royal house: Terenas Menethil was the king who assembled the Alliance of Lordaeron and won the Second War.",
 			"His son finished the house. Arthas Menethil took up Frostmourne, came home a death knight, and killed his father on the throne in Capital City.",
 			"So a working harbour in dwarf country keeps the name of a dynasty whose last act was to destroy its own kingdom. Nobody has suggested changing it.",
 		},
@@ -2552,9 +2552,9 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Damsel's Luck", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "The easternmost of the Bloodsail frigates, with a crew aboard worth knowing about.",
+		hook = "The easternmost of the Bloodsail frigates, under Captain Stillwater.",
 		lore = {
-			"The Damsel's Luck lies furthest east of the three Bloodsail ships at the Wild Shore. Captain Stillwater has her, and the Brashtide Crew are aboard.",
+			"The Damsel's Luck lies furthest east of the three Bloodsail ships at the Wild Shore. Captain Stillwater has her, and the crew are Bloodsail like the other two.",
 			"Pirate outfits on this coast are not a single organisation. The Bloodsail and the Blackwater Raiders are both here and they loathe each other considerably more than either troubles about a passing traveller.",
 			"That is the reason piracy persists in Stranglethorn rather than being settled one way or the other. There is nobody to negotiate with.",
 		},
@@ -2779,7 +2779,7 @@ SubsOf("Dun Morogh", {
 		hook = "Miners and engineers east of Kharanos, with Gnomeregan on their minds.",
 		lore = {
 			"Steelgrill's Depot is a small working settlement just outside Kharanos: trainers, vendors, and the sort of machinery dwarven and gnomish engineering produces when nobody is stopping it.",
-			"Gnomeregan is the thing hanging over it. The gnomes' city was lost to the troggs, and Sicco Thermaplugg's answer was to flood it with radiation rather than surrender it, killing most of his own people.",
+			"Gnomeregan is the thing hanging over it. The gnomes' city was lost to the troggs, and Mekgineer Thermaplugg's answer was to flood it with radiation rather than surrender it, killing most of his own people.",
 			"The survivors live in Ironforge's Tinker Town now, and retaking the city is an ongoing project rather than an abandoned one. A depot full of engineers near the mountain is part of that.",
 		},
 		readMore = { "Wowpedia: Steelgrill's Depot", "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
@@ -2915,9 +2915,9 @@ SubsOf("Silverpine Forest", {
 SubsOf("Wetlands", {
 	{
 		name = "Deepwater Tavern", parent = "Wetlands", faction = "Alliance",
-		hook = "Menethil Harbour's tavern, and the usual site of the bar fight.",
+		hook = "Menethil Harbor's tavern, and the usual site of the bar fight.",
 		lore = {
-			"The Deepwater is the hub of Menethil Harbour: quests, a first aid trainer, vendors, and everyone passing through on their way to Kalimdor.",
+			"The Deepwater is the hub of Menethil Harbor: quests, a first aid trainer, vendors, and everyone passing through on their way to Kalimdor.",
 			"It is also where the fights happen, and a good proportion of them are started by Tapoke \"Slim\" Jahn. He is a known quantity in the harbour and nobody appears to have done anything about him.",
 			"Menethil is the Alliance's western port, named for Lordaeron's royal house, run by dwarves, and jammed with people waiting for a boat. A tavern with a reliable brawl in it is the natural result.",
 		},
@@ -3109,7 +3109,7 @@ SubsOf("Wetlands", {
 		name = "Baradin Bay", parent = "Wetlands", faction = "Neutral",
 		hook = "The stretch of the Great Sea off the continent's west coast, patrolled once by Kul Tiras.",
 		lore = {
-			"Baradin Bay is the water off the western side of the central Eastern Kingdoms, reaching from Dun Morogh's north-west down the coast. Menethil Harbour is on it, and so are Stromgarde Keep and Southshore.",
+			"Baradin Bay is the water off the western side of the central Eastern Kingdoms, reaching from Dun Morogh's north-west down the coast. Menethil Harbor is on it, and so are Stromgarde Keep and Southshore.",
 			"The Kul Tiran armada patrolled this bay during the Second War and after it. Kul Tiras supplied the Alliance's entire navy in that war, under Daelin Proudmoore, and the bay was effectively theirs to keep.",
 			"Their wrecks are still down there. The friendship did not survive Daelin's death at Theramore, and the Alliance has been short of hulls on this coast ever since.",
 		},

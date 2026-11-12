@@ -843,7 +843,7 @@ SubsOf("The Barrens", {
 		name = "Thorn Hill", faction = "Hostile",
 		hook = "A Razormane quilboar settlement on the hilltop between the Crossroads and Durotar.",
 		lore = {
-			"Thorn Hill is a settlement of some size, set on the north face of a hilltop on the road between the Crossroads and Durotar. The Razormane hold it in numbers, under a quilboar named Tortusk.",
+			"Thorn Hill is a settlement of some size, set on the north face of a hilltop on the road between the Crossroads and Durotar. The Razormane hold it in numbers.",
 			"Its position is the whole problem. That road is the main link between Orgrimmar and the Barrens' interior, and the Horde does not control the ground beside it. Quilboar were in this country long before the orcs crossed the sea and have never recognised the claim.",
 		},
 	},
@@ -1661,14 +1661,6 @@ SubsOf("The Barrens", {
 })
 
 SubsOf("Stonetalon Mountains", {
-	{
-		name = "The Sludgewerks", faction = "Hostile",
-		hook = "A Venture Company works in the eastern mountains, poisoning what is downhill.",
-		lore = {
-			"The Sludgewerks are goblin industry at its least restrained: extraction at the top, waste going wherever gravity takes it.",
-			"The Venture Company works without any pretence of neutrality. The same firm is tearing up Mulgore, the Barrens and Stranglethorn, and there is no central authority anybody can pressure about it.",
-		},
-	},
 	{
 		name = "Blackwolf River", faction = "Contested",
 		hook = "The river through the southern range, running past the logging.",
