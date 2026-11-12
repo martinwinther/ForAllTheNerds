@@ -2,7 +2,7 @@
 ## Title: ForAllTheNerds
 ## Notes: Tells you the lore and history of wherever you are standing - zones, towns, ruins and dungeons. Vanilla-era lore only, no spoilers.
 ## Author: martin
-## Version: 1.2.5
+## Version: 1.2.6
 ## SavedVariables: ForAllTheNerdsDB
 ## IconTexture: Interface\ICONS\INV_Misc_Book_09
 ## DefaultState: enabled
