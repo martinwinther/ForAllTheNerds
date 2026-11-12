@@ -263,7 +263,7 @@ SubsOf("Orgrimmar", {
 		name = "Valley of Strength", faction = "Horde",
 		hook = "Orgrimmar's main entrance and market, the busiest ground in the Horde.",
 		lore = {
-			"The Valley of Strength is the first part of Orgrimmar anyone sees: the bank, the auction house, the zeppelin towers and the bulk of the city's trade.",
+			"The Valley of Strength is the first part of Orgrimmar anyone sees: the bank, the auction house and the bulk of the city's trade. The zeppelin towers stand outside the gates, out in Durotar.",
 			"It serves the Horde as the Trade District serves Stormwind. It is also where the Horde's three founding peoples visibly mix.",
 		},
 	},
@@ -277,9 +277,9 @@ SubsOf("Orgrimmar", {
 	},
 	{
 		name = "Valley of Honor", faction = "Horde",
-		hook = "The warriors' quarter, with the arena and the forges.",
+		hook = "The warriors' quarter, with the training halls and the forges.",
 		lore = {
-			"The Valley of Honor trains Orgrimmar's warriors and hunters, holds the city's forges, and contains the Ring of Valor where orcs settle things.",
+			"The Valley of Honor trains Orgrimmar's warriors and hunters out of the Hall of the Brave and the Hunter's Hall, and it holds the city's forges and anvils.",
 			"Honour in Thrall's Horde is a live concept rather than a slogan. It is the standard by which the new Horde distinguishes itself from the old one.",
 		},
 	},

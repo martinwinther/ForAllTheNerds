@@ -1,5 +1,101 @@
 # Changelog
 
+## 1.2.7
+
+The vanilla-era sweep continued. Every fix below is the same mistake: a place
+was written up from an article whose opening paragraph describes a later
+expansion, so the entry named something that is not there yet in this period.
+
+**Fixed**
+
+- Silverwind Refuge was a Horde outpost with an inn and a flight master, with
+  night elf dead outside it. The Alliance hold it in this period, under Sentinel
+  Velene Starstrike, and the entry was coloured for the wrong faction in game as
+  well as wrong in its text.
+- The Valley of Strength was given Orgrimmar's zeppelin towers. The towers stand
+  outside the gates, in Durotar.
+- Booty Bay ran boats to Ratchet "and ships further afield". There is one
+  passenger route out of the bay, and it goes to Ratchet.
+- Rut'theran Village had boats to Auberdine. It has one ship, the Moonspray.
+- Jaguero Isle could be reached by swimming or by boat. No boat goes there.
+- Southshore sat on the southern coast of Lordamere Lake. It is a port on
+  Baradin Bay, which is what this addon's own Baradin Bay entry already said.
+- Andorhal was a four-cornered battlefield of Scourge, Forsaken, Scarlet Crusade
+  and Argent Dawn. The Scourge hold the town, the lich Araj the Summoner runs it
+  and the plague cauldrons answer to him, and the Scarlet Crusade works the roads
+  north out of Hearthglen. The Western Plaguelands entry said the same thing and
+  has been corrected with it.
+- Darkshire had Lord Ello Ebonlocke commanding the Night Watch. He is the Mayor
+  of Darkshire. Commander Althea Ebonlocke leads the Night Watch.
+- Dun Modr was held by Dark Iron and Syndicate forces together. The Syndicate is
+  not there.
+- Sandsorrow Watch was a Horde post. It is a neutral camp in a tower, with
+  Sandfury trolls holding the ground around it.
+- Wavestrider Beach had naga on it and a paragraph about their highborne descent.
+  There are no naga on that coast in this period. There are steeljaw snappers.
+- Bolgan's Hole was a cave held by whoever reached it first, in a zone said to
+  have only two settlements. It is inside Gelkis Village and holds the Gelkis
+  khan, Khan Shaka, and Desolace has Ghost Walker Post as well.
+- Teldrassil had Malfurion Stormrage opposing the planting of the tree. He was
+  missing, and that is why Fandral Staghelm was able to do it. The dragons are
+  who refused: Nozdormu would not give his blessing and chided Staghelm for his
+  arrogance, and Alexstrasza refused with him. The tree was also described as a
+  few decades old, when it was grown after the Third War.
+- Feathermoon Stronghold was built on Sardor Isle. The stronghold has its own
+  island, and Sardor Isle lies further out with Hatecrest naga on it. The Sardor
+  Isle entry claimed the stronghold in return and now describes the naga.
+- Marshal's Refuge in Un'Goro Crater was a joint expedition of dwarves and
+  gnomes. It is a mixed camp under Williden Marshal, who is human.
+- Mulgore said the tauren's druids were trained by Cenarius himself. Tauren
+  druidism is recent: the Cenarion Circle took them in after the Third War, and
+  the night elves there still call them young in the ways of Cenarius.
+- Tirisfal Glades gave the region's name a meaning no source in this period
+  supports. The entry now keeps what is sourced, which is that the Guardians of
+  Tirisfal took their name from the place their founders met in.
+- Stromgarde's surviving garrison answered to "Commander Trollbane's heirs". No
+  such rank exists. Thoras Trollbane is dead and his son Prince Galen Trollbane
+  holds a few districts of the city.
+- Shadowfang Keep had Baron Silverlaine offering his castle to the Dalaran mages.
+  Arugal was sent to hold Silverpine, his worgen turned on the wizards, and they
+  besieged the keep.
+- The Wetlands had Khardros Wildhammer killing Modgud for the curse she laid on
+  Grim Batol. She laid it as she died, after he struck her down, which is why the
+  Wildhammers won the battle and still could not live there.
+- Tanaris counted three titan installations while naming two. Uldum and Uldaman
+  are the two this period knows about.
+- Darkshore and the Tower of Althalaxx called the tower the Shadow Council's. The
+  warlocks in it are the Cult of the Dark Strand under Athrikus Narassin, and the
+  Sentinels watching them say plainly that they have never heard of the group.
+  A journal taken off the cultists is what ties them to the Shadow Council.
+- The Valley of Honor held the Ring of Valor. That arena arrives in a later
+  expansion. The quarter trains Orgrimmar's warriors and hunters out of the Hall
+  of the Brave and the Hunter's Hall, and holds the city's forges.
+- Emberstrife's Den called Deathwing's artefact the Dragon Soul. That is the name
+  a later expansion gives it. Here it is the Demon Soul, which this addon's
+  Wetlands entry already called it.
+- Brambleblade Ravine was a warren in the southern hills. It is east of Camp
+  Narache in Mulgore, under Chief Sharptusk Thornmantle, and it is where young
+  tauren are sent for the Rite of Strength.
+- Winterspring put Mazthoril beneath Frostsaber Rock. Mazthoril is the deep icy
+  cavern in the middle of the zone, near Lake Kel'Theril. Frostsaber Rock is out
+  west, and the frostsaber pride is what is there.
+- Nesingwary's Expedition said Hemet had made a career of big-game hunting across
+  the world. Stranglethorn is the only camp he has in this period. Ajeck Rouack
+  and Barnil Stonepot hunt with him.
+- Deadwind Pass said almost nothing lives in it. Ogres hold the canyon and mean
+  to clear out everyone else, with harpies in the gullies above them.
+- Loch Modan gave the Explorers' League dig sites all over the valley. There is
+  one, Ironband's Excavation Site in the east, and Prospector Ironband is
+  recruiting for Uldaman out of it.
+
+**Changed**
+
+- The check that keeps the lore inside this period used to be a list of terms
+  somebody had already found to be wrong, which could only ever catch a repeat.
+  It is now a ledger of every proper noun the entries use, each with the source
+  that proves it belongs here, and a name that is not in it fails the build. That
+  is how most of the fixes above were found.
+
 ## 1.2.6
 
 **Fixed**

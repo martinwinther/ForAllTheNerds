@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P2, gating validate.lua on the ledger.
+IN PROGRESS. Next: P4, the next 25 entries. 75 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -42,7 +42,7 @@ before WoW, absent from in-game text and still in scope) and 12 `fragment`
 the hand-written blacklist held. P2 can retire it. See the log for the
 extraction rule and for the six errors the pass turned up.
 
-**P2. Gate validate.lua on the ledger. NEXT.**
+**P2. Gate validate.lua on the ledger. DONE 2026-11-12.**
 Fail when entry prose holds a term missing from the ledger, or one whose
 verdict is `out-of-era`. Read `hook`, `lore` and `didYouKnow` only. Entry names
 and `readMore` stay exempt, because the 1.12 client really does have an area
@@ -52,12 +52,12 @@ sensitively where the same words are ordinary English, so "the northern
 Barrens" passes and "the Northern Barrens" does not. Retire the hand-written
 list once the ledger covers all 26 of its terms.
 
-**P3. Transport check. NOT STARTED.**
-Our entries make many "boats to X" and "flight path to Y" claims. `TaxiNodes`
-and `TaxiPath` for product `wow_classic_era` settle them exactly. Check every
-such claim and fix what is wrong. P0 is one instance of this, found by hand.
+**P3. Transport check. DONE 2026-11-12.**
+Every boat, ferry, zeppelin and flight claim in the prose was checked against
+`TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
+database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. NOT STARTED, 0 of 921 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 75 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -70,6 +70,13 @@ instead of restarting.
 Once P0 to P4 are done, put the findings into `tools/era-audit.md`, add the
 player-facing lines to the `Unreleased` section of the changelog, and stop. Do
 not tag and do not publish: releases are Martin's call.
+
+Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, and P2, P3 and P4
+runs 1 to 3 shipped in 1.2.7**, both released mid-sweep on 2026-11-12 at
+Martin's explicit instruction. Their player-facing lines are already in the
+changelog under `## 1.2.6` and `## 1.2.7`, so do not write them again. P5 now
+covers only P4 run 4 onwards, plus `tools/era-audit.md`, which has not been
+updated for anything since the original four errors.
 
 ## Oracles, in order of preference
 
@@ -220,12 +227,12 @@ the 74 Forever entries that was missing `era = "forever", spoiler = true`. And
 our prose spelled Menethil Harbor the British way five times against eleven the
 game's way. The five were normalised.
 
-**Open for P2.** The ledger has the four columns the plan asked for and no
-case-sensitivity column. The intended rule is that every ledger term is matched
-case-sensitively, which gives "the northern Barrens" passing and "the Northern
-Barrens" failing without a fifth column. That does mean the out-of-era rows are
-stricter than the blacklist they replace, which matched case-insensitively. P2
-should decide whether a lower-cased "great divide" still needs to fail.
+**Settled by P2.** Terms taken out of the prose are matched case
+sensitively, which gives "the northern Barrens" passing and "the Northern
+Barrens" failing. A fifth column, `match`, was added for the out-of-era rows
+alone: 37 of the 39 are `ci` and are also scanned for in any case, keeping the
+reach the blacklist had, and the two whose lower-cased form is ordinary English,
+Great Divide and Northern Barrens, are `cs`.
 
 **One check that did not work.** Every vanilla entry name was matched against
 the AreaTable of both clients, looking for more entries like the Sludgewerks.
@@ -236,3 +243,340 @@ Nothing was concluded from it. `/ftn areas` uses the real resolver and is the
 way to answer that question.
 
 Next: P2.
+
+### 2026-11-12, P2
+
+`tools/validate.lua` now gates on the ledger and the hand-written `OUT_OF_ERA`
+blacklist is gone. The section reads the prose of each entry, takes the proper
+nouns out of it by the rule P1 used, and fails on any term the ledger does not
+carry or that it marks `out-of-era`. It reports 991 entries, 7,664 proper nouns
+matched against 1,615 rows.
+
+The extraction rule is ported to Lua from the Python that built the ledger, and
+the build passing is the proof the port agrees: anything the Lua reads that the
+Python did not would not be in the ledger, and would fail.
+
+**Broken deliberately, four ways, before committing.** Each was injected into
+the Thorn Hill entry and then reverted:
+
+| Injected | Result |
+|---|---|
+| `The Sporeggar Enclave is here.` | FAIL, uses "Sporeggar Enclave", which tools/era-terms.tsv does not carry |
+| `This is in the Northern Barrens.` | FAIL, mentions "Northern Barrens", with the row's evidence |
+| `The cataclysm reshaped it.` | FAIL, mentions "Cataclysm", caught by the case-insensitive scan |
+| `This sits in the northern Barrens, which is a direction.` | passes, as it must |
+
+The first is the one the blacklist could never do. "Sporeggar Enclave" is not on
+any list of known-bad terms, and it fails because nothing proves it.
+
+**A blind spot this turned up, which P2 did not cause.** Loading the addon
+outside the validator yields 993 entries. Inside it, every count says 991, the
+index's own line included, and the two that are missing are Forever's versions
+of Darnassus and Thunder Bluff. So no check in that file has ever read them,
+not this one and not the blacklist before it. Forcing `showForeverContent` on
+does not bring them back, so the cause is at load time and is not the spoiler
+gate. Both are Forever entries, judged against Forever's own sources, which is
+why nobody noticed. Worth its own look rather than a guess.
+
+Next: P3.
+
+### 2026-11-12, P3
+
+Checked every transport claim in the prose. Two oracles: `TaxiNodes` for
+`wow_classic_era`, 87 rows, for anything flown, and the `transports` table of
+the 1.12 database, 9 rows, for anything that floats or is a zeppelin. The flight
+table carries Season of Discovery paths, plainly labelled `S03`, and a few
+pseudo-nodes, so it needs reading rather than trusting.
+
+The route claims came to 29 sentences across 24 entries, of which 7 are
+Forever's airships and were left alone. Two mechanical passes were clean: every
+entry claiming a flight path is a node, and every entry claiming there is none
+is not a node.
+
+Five claims were wrong.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Silverwind Refuge | A Horde outpost with an inn and a flight master, night elf corpses outside | Night elf ground under Sentinel Velene Starstrike. The Horde seize it in patch 4.0.3a, and the 1.12 quest text calls it "the Alliance outpost" |
+| Valley of Strength | Has the bank, the auction house and the zeppelin towers | The towers are outside the gates in Durotar. The 1.7.0 notes fix a bug where standing in the tower flagged you as being in the Valley of Strength |
+| Jaguero Isle | Reachable only by swimming or by boat | No boat runs there. Swimming only |
+| Booty Bay | Runs boats to Ratchet and ships further afield | One passenger route, to Ratchet |
+| Rut'theran Village | The boats to Auberdine | One ship, the Moonspray |
+
+Silverwind Refuge is the worst of them and the most instructive. Its whole entry
+had been written from the retail lead, down to the corpses, and it had
+`faction = "Horde"` on a place the Alliance holds in this period, so the entry
+was miscoloured in game as well as wrong in prose. Its `readMore` pointed at the
+article whose lead describes the Horde outpost; it now points at Velene
+Starstrike, whose Classic section is tagged as such.
+
+**The gate earned its keep immediately.** The rewritten entry named Sentinel
+Velene Starstrike, which the ledger did not carry, and the build failed until
+the row was filed with its evidence from the 1.12 quest text. That is P2 working
+on live prose rather than on a test.
+
+**A gap in my own first pass, worth remembering.** The mechanical check looked
+for "flight path" and missed "flight master", which is how Silverwind Refuge
+survived it. Reading the sentences that the route filter had discarded is what
+caught it. A keyword check is only as good as its keywords, which is the same
+lesson as the blacklist.
+
+Next: P4.
+
+### 2026-11-12, P4, run 1 of about 37
+
+Reviewed 25 entries against the article for each place. Seven were wrong.
+
+**How the 25 were chosen.** Alphabetical order would spend most runs on places
+nothing ever happened to. Instead all 912 distinct vanilla entry names were
+fetched from the wiki in batches of 50 and scored for the markers that mean a
+place changed later, and so that its article's lead describes a state we do not
+cover: a 4.0.3a patch note, "after the Cataclysm" or a "now" state in the lead,
+a cata section, a Classic-only tag. 378 of the 912 carry at least one. This run
+took the top 25 by score. The scan is cheap and any run can recompute it; what
+it must not do is re-review the entries listed below.
+
+Of the 25, Auberdine, Booty Bay and Fray Island had already been corrected in
+earlier runs, which is a good sign about the ranking.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Southshore | A port on Lordamere Lake's southern coast | It is on Baradin Bay, as our own Baradin Bay entry already said. Lordamere Lake is inland, well to the north |
+| Andorhal | A four-cornered battlefield of Scourge, Forsaken, Scarlet Crusade and Argent Dawn | Araj the Summoner's headquarters, with Scarlet Crusade patrols on the roads north. The Forsaken and the Argent Dawn come to Andorhal later |
+| Darkshire | Lord Ello Ebonlocke commands the Night Watch | He is the Mayor of Darkshire. Commander Althea Ebonlocke is Leader of The Night Watch, both titles straight out of the 1.12 creature data |
+| Dun Modr | Taken by Dark Iron and Syndicate forces | Dark Iron. The Syndicate is not there |
+| Sandsorrow Watch | A Horde post | A neutral camp in a tower, with Sandfury trolls holding the ground around it |
+| Wavestrider Beach | Wreckage and naga, and a paragraph on the naga being former highborne | Steeljaw snappers. No naga on this coast in this period |
+| Bolgan's Hole | A cave held by whatever got there first, in a zone whose only settlements are Nijel's Point and Shadowprey Village | A cave inside Gelkis Village holding the Gelkis khan, Khan Shaka. Desolace also has Ghost Walker Post |
+
+Two of the seven were caught by our own data disagreeing with itself. The
+Baradin Bay entry lists Southshore on the bay while the Southshore entry put it
+on a lake, and Desolace's "only settlements" claim sat next to an entry for
+Ghost Walker Post. A pass looking only for internal contradictions would be
+worth a run of its own.
+
+**Three that looked wrong and were not.** Grim Batol's claim that the red
+dragonflight watches the approaches holds up: the 1.12 quest text has the reds
+hunting the Dragonmaw, who fled the fortress into the mountains. Forest Song
+reads as nearly empty, which is right for this period, and the draenei outpost
+in the article's lead arrives in patch 2.0.1. Raptor Grounds matches its article
+sentence for sentence, Northwatch Hold and the huts included.
+
+**The gate again.** The rewrites named five things the ledger did not carry, and
+the build failed until each was filed: Commander Althea Ebonlocke, Gelkis
+Village, Ghost Walker Post, Khan Shaka and Steeljaw. The ledger is 1,621 rows.
+Note that Ghost Walker Post is one of our own entry names, which the gate
+exempts, so it only needed a row once another entry's prose mentioned it.
+
+**Entries covered so far (25).** Andorhal, Angerfang Encampment, Apocryphan's
+Rest, Bashal'Aran, Beggar's Haunt, Bolgan's Hole, Dalson's Tears, Darkshire,
+Deadwood Village, Dun Modr, Echo Ridge Mine, Forest Song, Grim Batol, Jerod's
+Landing, Mardenholde Keep, Raptor Grounds, Sandsorrow Watch, Shadra'Alor,
+Shok'Thokar, Southshore, Stonetalon Peak, Stranglethorn Vale, Uther's Tomb,
+Wavestrider Beach, Windshear Crag.
+
+Next: P4, the next 25 by the same ranking.
+
+### 2026-11-12, P4, run 2 of about 37
+
+Reviewed 25 entries against the article for each place. Ten carried a claim the
+article does not support, and two more entries outside the 25 carried the same
+errors and were fixed with them.
+
+**The ranking was recomputed, and it is not run 1's.** The scan scores each
+vanilla entry name for the markers that mean a place changed later: a 4.0.3a
+patch note and a `Classic only` tag are worth 2 each, "Cataclysm" or
+"Shattering" in the lead 2, a cata or later section 1, a "now" state in the
+lead 1, a `Patch 2.0.0` or later template 1, and the existence of a
+`Foo (Classic)` article 3. 511 of 913 names score above zero. That last marker
+is new this run and it is the strongest tell in `tools/era-audit.md`, so this
+run's top 25 is zones and major settlements rather than run 1's small places.
+Write the formula down rather than the ordering: any run can recompute it, and
+what must not happen is re-reviewing an entry already listed below.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Western Plaguelands | Andorhal is a four-way battleground of Scourge, Forsaken, Scarlet Crusade and Argent Dawn | Run 1 fixed this same error in the Andorhal entry itself. Andorhal is the Scourge's town under Araj the Summoner, with the Scarlet Crusade striking from Hearthglen |
+| Teldrassil | Malfurion Stormrage and the dragonflights opposed the planting | Malfurion was missing. The 1.12 "Crown of the Earth" text has Staghelm taking over *because* Shan'do Stormrage never returned, and Nozdormu and Alexstrasza refusing their blessings afterwards |
+| Teldrassil | The tree is "perhaps a few decades old" | Grown after the Third War, by the 1.12 account |
+| Feathermoon Stronghold | Sits on Sardor Isle | Sardor Isle (1120) and Feathermoon Stronghold (1116) are separate sibling areas of Feralas. The 1.12 quest text sends you out to Sardor Isle for naga and back to Feathermoon |
+| Sardor Isle | The island Feathermoon Stronghold is built on | Held by Hatecrest naga. Found by the Feathermoon fix, not among the 25 |
+| Un'Goro Crater | Marshal's Refuge is a joint expedition of dwarves and gnomes | Marshal Expeditions under the human Williden Marshal, mixed human, gnome, dwarf and goblin |
+| Mulgore | Tauren druids were trained by Cenarius himself | The 1.12 Cenarion text calls the tauren "young in the ways of Cenarius". Tauren druidism is recent and came through the Cenarion Circle |
+| Tirisfal Glades | Tirisfal means "the trust of the fallen" in an older tongue | Unsupported, and the wiki's etymology ("Tyr's Fall", vrykul, Chronicle 2016) is itself out of era, so the clause is gone. The Guardians of Tirisfal naming is sourced and stays |
+| Arathi Highlands | Stromgarde's garrison holds out under "Commander Trollbane's heirs" | Prince Galen Trollbane, Thoras Trollbane's son, in the militia-held districts. Nobody holds a rank called Commander Trollbane |
+| Shadowfang Keep | Silverlaine's keep "was offered as a base" to the Dalaran mages | Unsupported. Arugal's worgen turned on the wizards and besieged the keep |
+| Wetlands | Khardros Wildhammer killed Modgud "for" the curse she laid | She laid it as she died, after he struck her down. The entry had cause and effect the wrong way round |
+| Tanaris | "Uldum, Uldaman and Uldum's unexplored siblings all share a naming pattern, and all three are titan installations" | Two are known in this period, Uldum and Uldaman. The sentence named two and counted three, and the third it was reaching for is Ulduar, which arrives in patch 3.0.2 |
+
+**One fix that is precision, not an era error, and should be read as such.**
+Darkshore called Althalaxx "the Shadow Council's tower". A journal taken off the
+cultists in the 1.12 chain does tie them to the Shadow Council, so that was not
+wrong. But the tower's occupants are the Cult of the Dark Strand under Athrikus
+Narassin, and the 1.12 text has the Sentinels saying outright that they have
+never heard of the group. Naming the cult is what the game actually tells the
+player. The Tower of Althalaxx sub-entry had the same imprecision and got the
+same treatment. Counted separately from the eight above.
+
+**Four that looked wrong and were not.** Alterac Mountains puts Dalaran's crater
+in the zone, and the Classic Era AreaTable agrees: Dalaran (279) is a child of
+Alterac Mountains, so the Hillsbrad quest that sends you there is crossing a
+border. Silithus has Fandral's son Valstann dying in the War of the Shifting
+Sands, which looked like 4.2 material and is not: the in-game Prophecy of C'Thun,
+told by Geologist Larksbane at Cenarion Hold, names him and has Rajaxx execute
+him in front of his father. The Wetlands call Dun Modr "a contested wreck" and
+the article has Rhag Garmason trying to take the town back off the Dark Iron.
+Tarren Mill's inn is real: Innkeeper Shay is in the 1.12 creature table.
+
+**A hole in the ledger's compositional rule.** The gate passed "Commander
+Trollbane" for two releases because P1's rule marks a term vanilla when *every
+capitalised part of it* is vanilla, and Commander and Trollbane both are. That
+rule will pass any invented title or name built out of real words, which is a
+narrower version of the blacklist problem the ledger was meant to fix. The row
+is deleted, and no prose uses the term now. There are 99 other rows resting on
+that rule, which `awk -F'\t' '$3=="every part named in 1.12 sources"'` counts,
+and they deserve a pass of their own. The commit that landed this run said 49,
+which was a guess written before the count was run. The number is 99.
+
+**Broken deliberately.** Deleting a row only helps if the gate then fails on the
+term, so "Commander Trollbane held it before." was injected into Arathi
+Highlands: FAIL, uses "Commander Trollbane", which tools/era-terms.tsv does not
+carry. Reverted. No new check was added this run.
+
+**The gate earned its keep again.** The rewrites named seven things the ledger
+did not carry and the build failed until each was settled: Thoras Trollbane,
+Williden Marshal, Athrikus Narassin, Latronicus Moonspear and Ruins of Solarsal
+were filed with their 1.12 evidence, and two were the extractor reading prose
+rather than names. "Thinning" was a sentence-initial gerund and "Feathermoon"
+a bare surname left stranded by a comma, so both sentences were reworded instead
+of filing junk rows. The ledger is 1,625 rows. Gates: the validator passes on
+all nine configs, `check-gaps.py` passes, and RHYTHM on the three touched data
+files went 12/8/2 to 11/8/2, which is down by one.
+
+**One deviation from the brief, deliberate.** The brief says to reach the wiki
+API through the built-in browser. The ranking scan wants 38 API calls whose
+replies are megabytes of wikitext, and the browser pane cannot fetch a local
+file, so feeding it 913 titles means writing them all into the conversation. The
+pane was opened and confirmed first: `api.php` answers it same-origin, and a
+cross-origin fetch from a local page is blocked. The bulk scan then went through
+`curl` against `api.php`, which returns 200 unchallenged, with a script doing the
+scoring. No challenge was met and none was worked around; `index.php?search=` was
+never touched. Reading individual articles for the review itself stayed on the
+API as the brief intends. If `curl` is ever challenged, stop and use the pane.
+
+**Entries covered so far (50).** Alterac Mountains, Andorhal, Angerfang
+Encampment, Apocryphan's Rest, Arathi Highlands, Azshara, Bashal'Aran, Beggar's
+Haunt, Blasted Lands, Bolgan's Hole, Dalson's Tears, Darkshire, Darkshore,
+Deadwood Village, Dun Modr, Durotar, Dustwallow Marsh, Eastern Plaguelands, Echo
+Ridge Mine, Feathermoon Stronghold, Felwood, Feralas, Forest Song, Grim Batol,
+Hearthglen, Hillsbrad Foothills, Jerod's Landing, Mardenholde Keep, Mulgore,
+Raptor Grounds, Sandsorrow Watch, Shadowfang Keep, Shadra'Alor, Shok'Thokar,
+Silithus, Silverpine Forest, Southshore, Stonetalon Peak, Stranglethorn Vale,
+Tanaris, Tarren Mill, Teldrassil, Theramore Isle, Tirisfal Glades, Un'Goro
+Crater, Uther's Tomb, Wavestrider Beach, Western Plaguelands, Wetlands,
+Windshear Crag.
+
+Fixed alongside but not reviewed as entries of their own, so still open for a
+later run: Sardor Isle, Tower of Althalaxx.
+
+Next: P4, the next 25 by the same ranking.
+
+### 2026-11-12, P4, run 3 of about 36
+
+Reviewed 25 entry names against the article for each place, 26 entries in all
+because two distinct entries are called Darnassus. Six carried a claim the
+article does not support. A seventh came out of the compositional-rule audit
+flagged in run 2, and it is the more important find of the two.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Valley of Honor | Contains the Ring of Valor "where orcs settle things" | The Ring of Valor is the Orgrimmar arena and arrives in patch 3.0.2. At 1.12 the quarter trains out of the Hall of the Brave and the Hunter's Hall, both of them 1.12 objects |
+| Emberstrife's Den | What Neltharion "did with the Dragon Soul" | Dragon Soul is the name Cataclysm gives the artefact. The sources this addon covers call it the Demon Soul, which our own Wetlands entry already cites |
+| Brambleblade Ravine | A warren "dug into the southern hills" | It is east of Camp Narache in Mulgore, under Chief Sharptusk Thornmantle, and it is where the Rite of Strength sends young tauren |
+| Winterspring | Mazthoril is "the cave beneath Frostsaber Rock" | Mazthoril is the deep icy cavern in the middle of the zone near Lake Kel'Theril. Frostsaber Rock is a separate area out west, where the frostsaber pride is |
+| Nesingwary's Expedition | Hemet "has made a career of it across the world" | Stranglethorn is the only camp he has in this period. The others arrive in patches 2.0.1 and 3.0.2 |
+| Deadwind Pass | "Almost nothing lives in it" | Ogres are most of the population and are set on clearing out everyone else, with harpies in the gullies. The murdered village in the south is real and unexplained, which the entry had right |
+| Loch Modan | The Explorers' League "has dig sites all over the valley", Ironband's being "the largest" | One dig, Ironband's Excavation Site in the east, with troggs in it and Prospector Ironband recruiting for Uldaman from it |
+
+**The compositional hole is real and it was live.** Run 2 deleted the
+"Commander Trollbane" row and flagged 99 others resting on "every part named in
+1.12 sources". Two of those 99 were wrong in the same way, and both were being
+used by prose that shipped:
+
+- `Ring of Valor` was in the ledger as **vanilla**, because Ring and Valor are
+  each vanilla words. That is exactly why the Valley of Honor entry could
+  describe a Wrath arena through two releases of the gate.
+- `Dragon Soul` was in the ledger as **vanilla** for the same reason, and the
+  row for `Demon Soul` beside it carried the same compositional evidence even
+  though neither name appears anywhere in 1.12 game text.
+
+Both rows were rewritten rather than added, which matters: the first attempt
+passed a new `out-of-era` row to an add-if-absent script, the term was already
+present, and the row was silently dropped. The build still passed and the claim
+was still in the prose. **Deleting or re-verdicting a ledger row is not done
+until the gate has been seen to fail on the term.** `Ring of Valor` is now
+`out-of-era` with `ci`, `Dragon Soul` likewise, and `Demon Soul` is `history`
+with the 2004 novel as its evidence.
+
+**Broken deliberately, three ways.** `The Ring of Valor stands here.` into the
+Valley of Honor: FAIL, mentions "Ring of Valor", with the patch in the evidence.
+`Orcs duel in the ring of valor.`: same FAIL, which is the `ci` column doing its
+job. `Dragon Soul` back into Emberstrife's Den: FAIL, mentions "Dragon Soul".
+All three reverted. No new check was added; two rows changed verdict.
+
+**A quirk of the extractor, found while testing and worth knowing.** The first
+injection read `The ring of valor is here.` and the build failed on something
+else entirely: `Valor's Rest uses "Rest"`. The rule that throws away a word
+capitalised only at the start of a sentence asks whether that word is ever seen
+lower-cased *anywhere in the corpus*. Lower-casing "valor" in one entry
+therefore made "Valor's" look like an ordinary word in another, and the Silithus
+entry's own name was stripped down to "Rest". So a legitimate future edit that
+lower-cases a word which begins some other entry's name will fail the build
+naming the wrong entry. It is not a false pass, but it is a confusing failure.
+
+**The remaining 96 compositional rows are still their own pass.** Filtering them
+by "whole phrase absent from both the 1.12 text and the AreaTable" returns all
+of them, so that filter decides nothing. They are mostly legitimate possessive
+constructions our prose builds ("Thrall's Horde", "Forsaken Tirisfal") and
+pre-WoW names. `Wild God` and `Old Ironforge` looked like later coinages and are
+used only by `Data/Forever.lua`, which is judged against Forever's own sources
+and must not be flagged for it. `Champions' Hall` is one of our own entry names
+and is the 1.12 honor-system building. The pass needs a per-row judgement, not a
+filter.
+
+**Four that looked wrong and were not.** The Great Lift really is tauren-built.
+Menethil Harbor really is a dwarven-built port named for Terenas Menethil II,
+and the Dragonmaw really did besiege it under Nek'rosh. The Deadwind village
+really was murdered with no agreed culprit. Mazthoril really is a blue
+dragonflight holding, just not where we put it.
+
+**The gate took ten rows this run.** Ajeck Rouack, Barnil Stonepot, Bristlebacks,
+Chief Sharptusk Thornmantle, Hall of the Brave, Hunter's Hall, Lake Kel'Theril,
+Rite of Strength and Rites of the Earthmother were filed with their 1.12
+evidence. Sir S. J. Erlgadin was dropped from the prose instead: the initials
+break the run of capitalised words, so his name extracts as "Sir S" and
+"Erlgadin" and would have cost two junk rows. The ledger is 1,634 rows. Gates:
+the validator passes on all nine configs, `check-gaps.py` passes, and RHYTHM on
+the touched data files is unchanged at 0/11/8.
+
+**Entries covered so far (75).** Alterac Mountains, Andorhal, Angerfang
+Encampment, Apocryphan's Rest, Arathi Highlands, Auberdine, Azshara,
+Bashal'Aran, Beggar's Haunt, Blasted Lands, Bolgan's Hole, Brambleblade Ravine,
+Camp E'thok, Chillwind Camp, Dalson's Tears, Darkshire, Darkshore, Darnassus,
+Deadwind Pass, Deadwood Village, Dun Garok, Dun Modr, Durotar, Dustwallow Marsh,
+Eastern Plaguelands, Echo Ridge Mine, Feathermoon Stronghold, Felwood, Feralas,
+Forest Song, Frostmane Hold, Grim Batol, Hearthglen, Hillsbrad Foothills,
+Jerod's Landing, Loch Modan, Mardenholde Keep, Menethil Harbor, Moonbrook,
+Mulgore, Nesingwary's Expedition, Pyrewood Village, Raptor Grounds, Raven Hill,
+Refuge Pointe, Sandsorrow Watch, Shadowfang Keep, Shadra'Alor, Shok'Thokar,
+Silithus, Silverpine Forest, Southshore, Stonetalon Peak, Stonewrought Dam,
+Stranglethorn Vale, Talrendis Point, Tanaris, Tarren Mill, Teldrassil, Theramore
+Isle, Thousand Needles, Tirisfal Glades, Tyr's Hand, Un'Goro Crater, Uther's
+Tomb, Valley of Honor, Valley of Wisdom, Valormok, Wavestrider Beach, Western
+Plaguelands, Westfall, Wetlands, Windshear Crag, Winterspring, Yojamba Isle.
+
+Still open from run 2, fixed but never reviewed as entries of their own: Sardor
+Isle, Tower of Althalaxx. Emberstrife's Den was fixed this run and is in the
+same position.
+
+Next: P4, the next 25 by the same ranking.

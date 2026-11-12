@@ -258,7 +258,7 @@ Zone{
 		"Then the plague of undeath came. Kel'Thuzad's Cult of the Damned seeded infected grain through the countryside, and Terenas' son Arthas Menethil, trying to stop it, followed the trail to Northrend, took up the runeblade Frostmourne and came home as a death knight. He killed his father on the throne and raised Lordaeron's dead as the Scourge.",
 		"The Forsaken are what happened next. When the Lich King's attention was dragged away during the Legion's invasion, Sylvanas Windrunner broke his hold on her mind and freed a large number of other undead with her. They took the ruins of Capital City, dug the Undercity out beneath it, and declared themselves a nation. They are not alive, they are not the Scourge, and they have joined the Horde because nobody else would have them.",
 	},
-	didYouKnow = "Tirisfal means roughly 'the trust of the fallen' in an older tongue, and the region gave its name to the Guardians of Tirisfal, the order of mages that produced Medivh.",
+	didYouKnow = "The region gave its name to the Guardians of Tirisfal, the order of mages that produced Medivh. The human and high elven magi who founded it met here, and took the name of the place they met in.",
 	readMore = { "Wowpedia: Tirisfal Glades", "Wowpedia: Forsaken", "Wowpedia: Arthas Menethil" },
 }
 
@@ -393,8 +393,8 @@ SubsOf("Silverpine Forest", {
 		name = "Shadowfang Keep", parent = "Silverpine Forest", faction = "Hostile", levels = "22-30",
 		hook = "Baron Silverlaine's castle, taken by the worgen its own guest summoned.",
 		lore = {
-			"The keep belonged to Baron Silverlaine, a Lordaeron noble, and was offered as a base to the Dalaran mages sent to hold Silverpine. Archmage Arugal was among them. When the Scourge pressed in, Arugal reached into another world and pulled worgen through to fight for him.",
-			"They turned on the keep first. Silverlaine and his household were killed or cursed, and Arugal, broken by what he had done and by what the worgen had made of him, took up residence as their mad patron. The castle has been theirs since.",
+			"The keep belonged to Baron Silverlaine, a Lordaeron noble. Archmage Arugal was one of the Dalaran mages sent to hold Silverpine against the Scourge, and when the Scourge pressed in he reached into another world and pulled worgen through to fight for him.",
+			"They killed the Scourge and then turned on the wizards, and they besieged Silverlaine's keep. Silverlaine died there, and Arugal, driven mad by guilt, took the worgen for his own and settled in among them. The castle has been theirs since, and Silverlaine's ghost is still in it.",
 		},
 		didYouKnow = "Arugal's worgen were not native to this world at all. He summoned them. Where they came from, and whether anything else can come through the same way, nobody has answered.",
 		readMore = { "Wowpedia: Archmage Arugal" },
@@ -559,7 +559,7 @@ Zone{
 	hook = "A dwarven lake valley where the Explorers' League digs for proof of who made them.",
 	lore = {
 		"Loch Modan is the green valley east of Dun Morogh, built around a great lake held in place by the Stonewrought Dam. The dam is one of the finest pieces of dwarven engineering in the world and the zone's economy runs on it.",
-		"The real work here is archaeology. After Uldaman, Ironforge became convinced that the titans left records across these mountains, and the Explorers' League has dig sites all over the valley. Ironband's Excavation Site is the largest. The League's premise is that dwarves were made rather than born, and every artefact supporting it lands in Ironforge as a theological event.",
+		"The real work here is archaeology. After Uldaman, Ironforge became convinced that the titans left records across these mountains, and the Explorers' League dug in at Ironband's Excavation Site in the east. Prospector Ironband has troggs in his dig and is recruiting for Uldaman from it. The League's premise is that dwarves were made rather than born, and every artefact supporting it lands in Ironforge as a theological event.",
 		"The valley is not quiet. The Mo'grosh ogres hold the northeastern hills, troggs come up from below, and Dark Iron agents have taken an unhealthy interest in the dam.",
 	},
 	didYouKnow = "If the Stonewrought Dam ever failed, it would empty the loch into the Wetlands below. The dwarves consider this unthinkable. The Dark Irons consider it a plan.",
@@ -746,7 +746,7 @@ SubsOf("Duskwood", {
 		hook = "Grand Hamlet renamed for what became of it, held by lantern-light and stubbornness.",
 		lore = {
 			"This was Grand Hamlet, a prosperous market town. When the darkness settled and the dead started walking, the survivors renamed it Darkshire. No town in the kingdom has rebranded itself more bleakly.",
-			"The town is run by the Night Watch and a town council with a deep suspicion of outsiders, magic and anything that happens after dark. They have earned all three. Lord Ello Ebonlocke commands the Watch, and his authority here outweighs anything Stormwind sends.",
+			"The town is run by the Night Watch and a town council with a deep suspicion of outsiders, magic and anything that happens after dark. They have earned all three. Lord Ello Ebonlocke is the mayor and Commander Althea Ebonlocke runs the Night Watch, and between them their authority here outweighs anything Stormwind sends.",
 		},
 	},
 	{
@@ -845,7 +845,7 @@ Zone{
 	lore = {
 		"The Wetlands are what happens downhill from the Stonewrought Dam: a sprawl of marsh, mangrove and flooded lowland on Khaz Modan's western coast. Menethil Harbor at the river mouth is the Alliance's main port on this side of the world, named for Lordaeron's royal house.",
 		"The zone's two powers are the Dragonmaw orcs and the dwarves who want them gone. The Dragonmaw clan holds the eastern highlands out of Dragonmaw Gates and Angerfang Encampment, and Dun Modr to the north is a contested wreck.",
-		"Above it all sits Grim Batol. The Wildhammer dwarves founded it and then lost it to a curse rather than to an army: during the War of the Three Hammers the Dark Iron sorceress Modgud laid one on the fortress, and although Khardros Wildhammer killed her for it the curse outlived her. The Wildhammers came back, found the place unlivable, and went north to Aerie Peak instead.",
+		"Above it all sits Grim Batol. The Wildhammer dwarves founded it and then lost it to a curse rather than to an army. During the War of the Three Hammers the Dark Iron sorceress Modgud led the assault on the fortress, Khardros Wildhammer struck her down, and she laid the curse on the place as she died. The Wildhammers won the battle and could not live in what they had held. They went north to Aerie Peak instead.",
 	},
 	didYouKnow = "Nobody has gone into Grim Batol and come back with a useful report. The dwarves abandoned it, the Dark Irons abandoned it, and the Dragonmaw who used it are now scattered. Whatever is still in there has been left alone on purpose.",
 	readMore = { "Wowpedia: Wetlands", "Wowpedia: Grim Batol", "Wowpedia: Demon Soul" },
@@ -862,7 +862,7 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Dun Modr", parent = "Wetlands", faction = "Hostile",
-		hook = "A dwarven town at the Thandol Span, taken by Dark Iron and Syndicate forces.",
+		hook = "A dwarven town at the Thandol Span, taken by the Dark Iron.",
 		lore = {
 			"Dun Modr guards the southern end of the Thandol Span, the great bridge linking Khaz Modan to the Arathi Highlands. Holding it means holding the only land route north.",
 			"The dwarves lost it. Dark Iron dwarves hold the town now, and the Alliance's inability to retake a bridgehead this important says a great deal about how thinly stretched it is.",
@@ -995,7 +995,7 @@ SubsOf("Hillsbrad Foothills", {
 		name = "Southshore", faction = "Alliance", levels = "20-30",
 		hook = "The Alliance's fishing town on the bay, permanently at war with the village up the road.",
 		lore = {
-			"Southshore is a working port on Lordamere Lake's southern coast and the Alliance's anchor in Hillsbrad. It has an inn, a dock and a garrison that exists because of Tarren Mill.",
+			"Southshore is a working port on Baradin Bay and the Alliance's anchor in Hillsbrad. It has an inn, a dock and a garrison that exists because of Tarren Mill.",
 			"The fighting between the two settlements is close to permanent. It is not a campaign with objectives so much as a grudge with infrastructure.",
 		},
 	},
@@ -1189,7 +1189,7 @@ Zone{
 	hook = "Where human civilisation began, now a windswept ruin fought over by ogres, bandits and the Horde.",
 	lore = {
 		"Every human kingdom in the world traces back to this ground. Thoradin united the scattered human tribes here and founded Arathor, with its capital at Strom. Arathor fought the Amani trolls to a standstill with high elven help, raised Thoradin's Wall, and then broke apart as its people spread out and founded the seven kingdoms.",
-		"Strom became Stromgarde, and Stromgarde held on longer than most. It has now collapsed too. The city is a three-way battlefield between the Syndicate, the Boulderfist ogres, and the remnant of its own garrison under Commander Trollbane's heirs. The Alliance holds a single outpost at Refuge Pointe and little else.",
+		"Strom became Stromgarde, and Stromgarde held on longer than most. It has now collapsed too. The city is a three-way battlefield between the Syndicate, the Boulderfist ogres, and the remnant of its own garrison, which holds a few districts around Prince Galen Trollbane. Thoras Trollbane is dead and Galen is his son. The Alliance holds a single outpost at Refuge Pointe and little else.",
 		"The Horde is here too, at Hammerfall in the east. Those are orcs freed from the internment camps who settled where Orgrim Doomhammer, the Horde's second warchief, was killed. They have made it a permanent holding.",
 	},
 	didYouKnow = "The Trollbane line gave the Alliance one of its great Second War commanders, Danath Trollbane, who went through the Dark Portal with the Alliance Expedition and never came back. Stromgarde has been running out of Trollbanes ever since.",
@@ -1331,7 +1331,7 @@ SubsOf("Stranglethorn Vale", {
 		lore = {
 			"Booty Bay is built into the cliffs at the southern tip of Stranglethorn and run by Baron Revilgaz and the Blackwater Raiders. It is neutral ground, enforced by bruisers who will throw anyone who starts something off the dock.",
 			"The neutrality is commercial, not principled. Goblins discovered long ago that selling to both sides of a war is more profitable than joining one, and the Steamwheedle Cartel has built a small empire on that insight.",
-			"The port runs boats to Ratchet in the Barrens and ships further afield. In few other places is cross-faction travel just a ticket purchase.",
+			"The port runs a boat to Ratchet in the Barrens. In few other places is cross-faction travel just a ticket purchase.",
 		},
 		didYouKnow = "The Steamwheedle Cartel's neutrality is backed by force. Cartel ports have been known to turn on customers who threatened the business, and Booty Bay's bruisers are not for show.",
 	},
@@ -1383,7 +1383,7 @@ SubsOf("Stranglethorn Vale", {
 		hook = "A dwarf's hunting camp, dedicated to shooting the largest animals in the jungle.",
 		lore = {
 			"Hemet Nesingwary is a dwarven big-game hunter of some renown, and his Stranglethorn expedition is after the jungle's tigers, panthers and raptors.",
-			"He is not here for lore, conservation or the Alliance. He is here because the animals are big, and he has made a career of it across the world.",
+			"He is not here for lore, conservation or the Alliance. He is here because the animals are big. Ajeck Rouack and Barnil Stonepot hunt alongside him, and each of them wants a different trophy off the same jungle.",
 		},
 	},
 	{
@@ -1422,7 +1422,7 @@ SubsOf("Stranglethorn Vale", {
 		name = "Jaguero Isle", parent = "Stranglethorn Vale", faction = "Contested",
 		hook = "An island off the southern coast, with a stranded noblewoman and a very large ape.",
 		lore = {
-			"Jaguero is a small island south of Booty Bay, reachable only by swimming or by boat. It is isolated enough to have its own ecology and its own problems.",
+			"Jaguero is a small island south of Booty Bay, reachable only by swimming. It is isolated enough to have its own ecology and its own problems.",
 			"A shipwrecked Stormwind noblewoman is stuck there, and the island's dominant resident is an enormous gorilla that stands between her and the shore.",
 		},
 	},
@@ -1967,7 +1967,7 @@ Zone{
 	lore = {
 		"This was Lordaeron's granary. It is now blighted ground where the soil itself is wrong, and where the Third War began in earnest.",
 		"Kel'Thuzad's Cult of the Damned distributed plagued grain through these villages from Andorhal. People ate it, died, and rose. Prince Arthas and the paladin Uther the Lightbringer came to stop it, and the investigation led Arthas north to Northrend, to Frostmourne, and to everything that followed.",
-		"Uther is buried here, at a tomb near Sorrow Hill. Andorhal is a four-way battleground between the Scourge, the Forsaken, the Scarlet Crusade and the Argent Dawn. Hearthglen in the north is held by the Scarlet Crusade under Highlord Taelan Fordring, whose father Tirion was stripped of his knighthood for showing mercy to an orc.",
+		"Uther is buried here, at a tomb near Sorrow Hill. Andorhal is the Scourge's own town, run by the lich Araj the Summoner, and the plague cauldrons standing in the fields around it answer to him. Hearthglen in the north is held by the Scarlet Crusade under Highlord Taelan Fordring, whose father Tirion was stripped of his knighthood for showing mercy to an orc.",
 	},
 	didYouKnow = "Caer Darrow, the island in Darrowmere Lake, was the Barov family's estate. Kel'Thuzad took it, killed the family and turned their manor into Scholomance, a school of necromancy. The Barovs are still there in a sense.",
 	readMore = { "Wowpedia: Western Plaguelands", "Wowpedia: Andorhal", "Wowpedia: Uther the Lightbringer" },
@@ -1976,10 +1976,10 @@ Zone{
 SubsOf("Western Plaguelands", {
 	{
 		name = "Andorhal", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "The town where the plague was distributed, now fought over by four separate factions.",
+		hook = "The town where the plague was distributed, and the Scourge's hold on the Western Plaguelands.",
 		lore = {
 			"Andorhal was Lordaeron's main granary town, and the Cult of the Damned chose it for exactly that reason. The plagued grain went out from these warehouses to the whole region.",
-			"The town is now a four-cornered battlefield: Scourge forces under Araj the Summoner, Forsaken agents, the Scarlet Crusade, and the Argent Dawn all have a presence and none of them will leave.",
+			"The town is the lich Araj the Summoner's headquarters, and the plague cauldrons standing around the zone answer to him. Scarlet Crusade patrols work the roads north out of it, sent down from Hearthglen.",
 		},
 	},
 	{
@@ -2207,7 +2207,7 @@ Zone{
 	name = "Deadwind Pass", continent = EK, faction = "Contested", levels = "55-60",
 	hook = "An emptied canyon road under Karazhan, the tower of the Guardian who betrayed the world.",
 	lore = {
-		"Deadwind Pass is the canyon between Duskwood and the Swamp of Sorrows, and almost nothing lives in it. There was a village here once. There is not now, and the records on why are thin.",
+		"Deadwind Pass is the canyon between Duskwood and the Swamp of Sorrows, and hardly anyone passes through it. What population it has is ogres, who hold the canyon and are set on clearing out anyone else, with harpies in the gullies above them. There was a village in the south of the chasm once. Its people were killed, and the records on who did it are thin.",
 		"The reason to come here is Karazhan. The tower was the seat of Medivh, the last Guardian of Tirisfal, an order of mages charged with defending this world from the Burning Legion. Medivh was the most powerful mortal spellcaster alive and the Legion got to him before he was born: the spirit of the demon lord Sargeras had been bound into him in the womb.",
 		"Medivh opened the Dark Portal. He brought the orcish Horde to this world and let the First War happen, and he did it from this tower. His apprentice Khadgar and the knight Anduin Lothar eventually killed him here. The tower has been sealed and uninhabited since, and it has not stopped radiating whatever Medivh left in it.",
 	},

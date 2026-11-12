@@ -1760,10 +1760,10 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Bolgan's Hole", faction = "Hostile",
-		hook = "A cave in the eastern hills, held by whatever got there first.",
+		hook = "A cave in Gelkis Village, where the Gelkis keep their khan.",
 		lore = {
-			"Bolgan's Hole is one of the caves in Desolace's eastern rise, between the centaur clans' territory and the road north.",
-			"The zone supports very little. Nijel's Point in the north and Shadowprey Village on the coast are the only settlements, and there is almost nothing between them.",
+			"Bolgan's Hole is a cave inside Gelkis Village, in Desolace's eastern rise, and the most senior of the Gelkis centaur are in it. Khan Shaka holds that seat.",
+			"The zone supports very little. Nijel's Point in the north, Ghost Walker Post in the centre and Shadowprey Village on the coast are the settlements, and there is almost nothing between them.",
 		},
 	},
 	{
@@ -1854,10 +1854,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Sardor Isle", faction = "Contested",
-		hook = "The island Feathermoon Stronghold is built on, off the western coast.",
+		hook = "A small island off Feralas' western coast, and the naga have it.",
 		lore = {
-			"Sardor lies off Feralas' western shore and carries the Sentinels' main base in the south. Shandris Feathermoon commands from it.",
-			"Shandris was Tyrande Whisperwind's ward, orphaned in the War of the Ancients, and she is the Sentinel army's most capable field commander. Posting her here says what Darnassus thinks of this zone.",
+			"Sardor Isle lies out past Feathermoon Stronghold, and the Sentinels do not hold it. The Hatecrest naga do, in numbers.",
+			"The Sentinels send people out to thin them. Latronicus Moonspear hands that errand to most of the new arrivals at Feathermoon Stronghold, on the reasoning that a weakened naga presence on Sardor plays to the night elves' advantage. The same naga have occupied the Ruins of Solarsal down the coast, and the Sentinels are less sure what that is about.",
 		},
 	},
 })
@@ -1865,10 +1865,10 @@ SubsOf("Feralas", {
 SubsOf("Tanaris", {
 	{
 		name = "Wavestrider Beach", faction = "Contested",
-		hook = "A beach on the eastern coast, with wreckage and naga on it.",
+		hook = "A beach on the eastern shore, between the goblin port and the pirate cove.",
 		lore = {
-			"The beach runs along Tanaris' eastern shore. Naga have come up on this coast as they have on most others.",
-			"They were night elves once, highborne of Queen Azshara's court, changed when the Well of Eternity collapsed and Zin-Azshari went under. Ten thousand years later they are coming back up.",
+			"The beach runs down Tanaris' eastern shore, from Steamwheedle Port at the top to Lost Rigger Cove at the bottom. Steeljaw snappers work the sand, and there is wreckage along it.",
+			"The two ends of it explain the middle. Steamwheedle Port is cartel business and Lost Rigger Cove is pirates, and the beach between them is where things come ashore.",
 		},
 	},
 	{
@@ -1881,9 +1881,9 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Sandsorrow Watch", faction = "Horde",
-		hook = "A Horde post in the northern desert, watching the road.",
+		hook = "A tower west of Gadgetzan, with Sandfury trolls on the ground around it.",
 		lore = {
-			"Sandsorrow sits on the northern route into Tanaris, where traffic comes down from Thousand Needles and the Barrens.",
+			"Sandsorrow sits west of Gadgetzan on the northern route into Tanaris, where traffic comes down from Thousand Needles and the Barrens. Sandfury trolls hold the ground around it, and the tower itself is a neutral camp.",
 			"The desert is a goblin zone in practice. Gadgetzan and Steamwheedle Port are both cartel operations, and the cartel sells to everyone and forbids fighting on the premises.",
 		},
 	},
