@@ -263,7 +263,7 @@ SubsOf("Orgrimmar", {
 		name = "Valley of Strength", faction = "Horde",
 		hook = "Orgrimmar's main entrance and market, the busiest ground in the Horde.",
 		lore = {
-			"The Valley of Strength is the first part of Orgrimmar anyone sees: the bank, the auction house, the zeppelin towers and the bulk of the city's trade.",
+			"The Valley of Strength is the first part of Orgrimmar anyone sees: the bank, the auction house and the bulk of the city's trade. The zeppelin towers stand outside the gates, out in Durotar.",
 			"It serves the Horde as the Trade District serves Stormwind. It is also where the Horde's three founding peoples visibly mix.",
 		},
 	},

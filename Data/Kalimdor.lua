@@ -296,7 +296,7 @@ SubsOf("Teldrassil", {
 		name = "Rut'theran Village", parent = "Teldrassil", faction = "Alliance",
 		hook = "The harbour at the tree's base, and the only way in or out by sea.",
 		lore = {
-			"Rut'theran sits at Teldrassil's roots, at sea level, with the portal up to Darnassus and the boats to Auberdine in Darkshore.",
+			"Rut'theran sits at Teldrassil's roots, at sea level, with the portal up to Darnassus and the boat to Auberdine in Darkshore.",
 			"It is the Alliance's gateway to the night elves. Before Teldrassil the night elves had no port and wanted none; their alliance with the humans, dwarves and gnomes is recent and was forced on them by the Third War.",
 		},
 	},
@@ -2240,14 +2240,14 @@ SubsOf("Ashenvale", {
 		readMore = { "Wowpedia: Bloodtooth Camp", "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold" },
 	},
 	{
-		name = "Silverwind Refuge", parent = "Ashenvale", faction = "Horde",
-		hook = "A night elf settlement that is a Horde outpost now, with the former residents still on the ground.",
+		name = "Silverwind Refuge", parent = "Ashenvale", faction = "Alliance",
+		hook = "A night elf position in south-central Ashenvale, north of Mystral Lake.",
 		lore = {
-			"Silverwind Refuge was night elf, in south-central Ashenvale north of Mystral Lake. It is a Horde outpost today, with an inn, a flight master and the usual run of a working camp.",
-			"The corpses of the people who lived here before have not been cleared away. They are lying around the outside of it.",
+			"Silverwind Refuge stands in south-central Ashenvale, north of Mystral Lake. It is night elf ground, and Sentinel Velene Starstrike holds it.",
+			"The Warsong are close on both sides of it. Horde scouts watch the refuge from across the lake, which makes this a forward position rather than a safe one.",
 			"That is Ashenvale as plainly as it can be put. The Warsong clan needs the timber, Darnassus will not sell it, and the two of them are settling the question a clearing at a time.",
 		},
-		readMore = { "Wowpedia: Silverwind Refuge", "Wowpedia: Ashenvale", "Wowpedia: Warsong clan" },
+		readMore = { "Wowpedia: Velene Starstrike", "Wowpedia: Ashenvale", "Wowpedia: Warsong clan" },
 	},
 	{
 		name = "Forest Song", parent = "Ashenvale", faction = "Neutral",

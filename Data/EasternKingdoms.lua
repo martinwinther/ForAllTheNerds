@@ -1331,7 +1331,7 @@ SubsOf("Stranglethorn Vale", {
 		lore = {
 			"Booty Bay is built into the cliffs at the southern tip of Stranglethorn and run by Baron Revilgaz and the Blackwater Raiders. It is neutral ground, enforced by bruisers who will throw anyone who starts something off the dock.",
 			"The neutrality is commercial, not principled. Goblins discovered long ago that selling to both sides of a war is more profitable than joining one, and the Steamwheedle Cartel has built a small empire on that insight.",
-			"The port runs boats to Ratchet in the Barrens and ships further afield. In few other places is cross-faction travel just a ticket purchase.",
+			"The port runs a boat to Ratchet in the Barrens. In few other places is cross-faction travel just a ticket purchase.",
 		},
 		didYouKnow = "The Steamwheedle Cartel's neutrality is backed by force. Cartel ports have been known to turn on customers who threatened the business, and Booty Bay's bruisers are not for show.",
 	},
@@ -1422,7 +1422,7 @@ SubsOf("Stranglethorn Vale", {
 		name = "Jaguero Isle", parent = "Stranglethorn Vale", faction = "Contested",
 		hook = "An island off the southern coast, with a stranded noblewoman and a very large ape.",
 		lore = {
-			"Jaguero is a small island south of Booty Bay, reachable only by swimming or by boat. It is isolated enough to have its own ecology and its own problems.",
+			"Jaguero is a small island south of Booty Bay, reachable only by swimming. It is isolated enough to have its own ecology and its own problems.",
 			"A shipwrecked Stormwind noblewoman is stuck there, and the island's dominant resident is an enormous gorilla that stands between her and the shore.",
 		},
 	},

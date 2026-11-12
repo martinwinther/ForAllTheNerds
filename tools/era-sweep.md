@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P3, the transport check.
+IN PROGRESS. Next: P4, claim review, 25 entries per run.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -52,12 +52,12 @@ sensitively where the same words are ordinary English, so "the northern
 Barrens" passes and "the Northern Barrens" does not. Retire the hand-written
 list once the ledger covers all 26 of its terms.
 
-**P3. Transport check. NOT STARTED.**
-Our entries make many "boats to X" and "flight path to Y" claims. `TaxiNodes`
-and `TaxiPath` for product `wow_classic_era` settle them exactly. Check every
-such claim and fix what is wrong. P0 is one instance of this, found by hand.
+**P3. Transport check. DONE 2026-11-12.**
+Every boat, ferry, zeppelin and flight claim in the prose was checked against
+`TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
+database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. NOT STARTED, 0 of 921 covered.**
+**P4. Claim review, 25 entries per run. NEXT, 0 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -278,3 +278,46 @@ gate. Both are Forever entries, judged against Forever's own sources, which is
 why nobody noticed. Worth its own look rather than a guess.
 
 Next: P3.
+
+### 2026-11-12, P3
+
+Checked every transport claim in the prose. Two oracles: `TaxiNodes` for
+`wow_classic_era`, 87 rows, for anything flown, and the `transports` table of
+the 1.12 database, 9 rows, for anything that floats or is a zeppelin. The flight
+table carries Season of Discovery paths, plainly labelled `S03`, and a few
+pseudo-nodes, so it needs reading rather than trusting.
+
+The route claims came to 29 sentences across 24 entries, of which 7 are
+Forever's airships and were left alone. Two mechanical passes were clean: every
+entry claiming a flight path is a node, and every entry claiming there is none
+is not a node.
+
+Five claims were wrong.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Silverwind Refuge | A Horde outpost with an inn and a flight master, night elf corpses outside | Night elf ground under Sentinel Velene Starstrike. The Horde seize it in patch 4.0.3a, and the 1.12 quest text calls it "the Alliance outpost" |
+| Valley of Strength | Has the bank, the auction house and the zeppelin towers | The towers are outside the gates in Durotar. The 1.7.0 notes fix a bug where standing in the tower flagged you as being in the Valley of Strength |
+| Jaguero Isle | Reachable only by swimming or by boat | No boat runs there. Swimming only |
+| Booty Bay | Runs boats to Ratchet and ships further afield | One passenger route, to Ratchet |
+| Rut'theran Village | The boats to Auberdine | One ship, the Moonspray |
+
+Silverwind Refuge is the worst of them and the most instructive. Its whole entry
+had been written from the retail lead, down to the corpses, and it had
+`faction = "Horde"` on a place the Alliance holds in this period, so the entry
+was miscoloured in game as well as wrong in prose. Its `readMore` pointed at the
+article whose lead describes the Horde outpost; it now points at Velene
+Starstrike, whose Classic section is tagged as such.
+
+**The gate earned its keep immediately.** The rewritten entry named Sentinel
+Velene Starstrike, which the ledger did not carry, and the build failed until
+the row was filed with its evidence from the 1.12 quest text. That is P2 working
+on live prose rather than on a test.
+
+**A gap in my own first pass, worth remembering.** The mechanical check looked
+for "flight path" and missed "flight master", which is how Silverwind Refuge
+survived it. Reading the sentences that the route filter had discarded is what
+caught it. A keyword check is only as good as its keywords, which is the same
+lesson as the blacklist.
+
+Next: P4.
