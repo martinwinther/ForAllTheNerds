@@ -258,7 +258,7 @@ Zone{
 		"Then the plague of undeath came. Kel'Thuzad's Cult of the Damned seeded infected grain through the countryside, and Terenas' son Arthas Menethil, trying to stop it, followed the trail to Northrend, took up the runeblade Frostmourne and came home as a death knight. He killed his father on the throne and raised Lordaeron's dead as the Scourge.",
 		"The Forsaken are what happened next. When the Lich King's attention was dragged away during the Legion's invasion, Sylvanas Windrunner broke his hold on her mind and freed a large number of other undead with her. They took the ruins of Capital City, dug the Undercity out beneath it, and declared themselves a nation. They are not alive, they are not the Scourge, and they have joined the Horde because nobody else would have them.",
 	},
-	didYouKnow = "Tirisfal means roughly 'the trust of the fallen' in an older tongue, and the region gave its name to the Guardians of Tirisfal, the order of mages that produced Medivh.",
+	didYouKnow = "The region gave its name to the Guardians of Tirisfal, the order of mages that produced Medivh. The human and high elven magi who founded it met here, and took the name of the place they met in.",
 	readMore = { "Wowpedia: Tirisfal Glades", "Wowpedia: Forsaken", "Wowpedia: Arthas Menethil" },
 }
 
@@ -393,8 +393,8 @@ SubsOf("Silverpine Forest", {
 		name = "Shadowfang Keep", parent = "Silverpine Forest", faction = "Hostile", levels = "22-30",
 		hook = "Baron Silverlaine's castle, taken by the worgen its own guest summoned.",
 		lore = {
-			"The keep belonged to Baron Silverlaine, a Lordaeron noble, and was offered as a base to the Dalaran mages sent to hold Silverpine. Archmage Arugal was among them. When the Scourge pressed in, Arugal reached into another world and pulled worgen through to fight for him.",
-			"They turned on the keep first. Silverlaine and his household were killed or cursed, and Arugal, broken by what he had done and by what the worgen had made of him, took up residence as their mad patron. The castle has been theirs since.",
+			"The keep belonged to Baron Silverlaine, a Lordaeron noble. Archmage Arugal was one of the Dalaran mages sent to hold Silverpine against the Scourge, and when the Scourge pressed in he reached into another world and pulled worgen through to fight for him.",
+			"They killed the Scourge and then turned on the wizards, and they besieged Silverlaine's keep. Silverlaine died there, and Arugal, driven mad by guilt, took the worgen for his own and settled in among them. The castle has been theirs since, and Silverlaine's ghost is still in it.",
 		},
 		didYouKnow = "Arugal's worgen were not native to this world at all. He summoned them. Where they came from, and whether anything else can come through the same way, nobody has answered.",
 		readMore = { "Wowpedia: Archmage Arugal" },
@@ -845,7 +845,7 @@ Zone{
 	lore = {
 		"The Wetlands are what happens downhill from the Stonewrought Dam: a sprawl of marsh, mangrove and flooded lowland on Khaz Modan's western coast. Menethil Harbor at the river mouth is the Alliance's main port on this side of the world, named for Lordaeron's royal house.",
 		"The zone's two powers are the Dragonmaw orcs and the dwarves who want them gone. The Dragonmaw clan holds the eastern highlands out of Dragonmaw Gates and Angerfang Encampment, and Dun Modr to the north is a contested wreck.",
-		"Above it all sits Grim Batol. The Wildhammer dwarves founded it and then lost it to a curse rather than to an army: during the War of the Three Hammers the Dark Iron sorceress Modgud laid one on the fortress, and although Khardros Wildhammer killed her for it the curse outlived her. The Wildhammers came back, found the place unlivable, and went north to Aerie Peak instead.",
+		"Above it all sits Grim Batol. The Wildhammer dwarves founded it and then lost it to a curse rather than to an army. During the War of the Three Hammers the Dark Iron sorceress Modgud led the assault on the fortress, Khardros Wildhammer struck her down, and she laid the curse on the place as she died. The Wildhammers won the battle and could not live in what they had held. They went north to Aerie Peak instead.",
 	},
 	didYouKnow = "Nobody has gone into Grim Batol and come back with a useful report. The dwarves abandoned it, the Dark Irons abandoned it, and the Dragonmaw who used it are now scattered. Whatever is still in there has been left alone on purpose.",
 	readMore = { "Wowpedia: Wetlands", "Wowpedia: Grim Batol", "Wowpedia: Demon Soul" },
@@ -1189,7 +1189,7 @@ Zone{
 	hook = "Where human civilisation began, now a windswept ruin fought over by ogres, bandits and the Horde.",
 	lore = {
 		"Every human kingdom in the world traces back to this ground. Thoradin united the scattered human tribes here and founded Arathor, with its capital at Strom. Arathor fought the Amani trolls to a standstill with high elven help, raised Thoradin's Wall, and then broke apart as its people spread out and founded the seven kingdoms.",
-		"Strom became Stromgarde, and Stromgarde held on longer than most. It has now collapsed too. The city is a three-way battlefield between the Syndicate, the Boulderfist ogres, and the remnant of its own garrison under Commander Trollbane's heirs. The Alliance holds a single outpost at Refuge Pointe and little else.",
+		"Strom became Stromgarde, and Stromgarde held on longer than most. It has now collapsed too. The city is a three-way battlefield between the Syndicate, the Boulderfist ogres, and the remnant of its own garrison, which holds a few districts around Prince Galen Trollbane. Thoras Trollbane is dead and Galen is his son. The Alliance holds a single outpost at Refuge Pointe and little else.",
 		"The Horde is here too, at Hammerfall in the east. Those are orcs freed from the internment camps who settled where Orgrim Doomhammer, the Horde's second warchief, was killed. They have made it a permanent holding.",
 	},
 	didYouKnow = "The Trollbane line gave the Alliance one of its great Second War commanders, Danath Trollbane, who went through the Dark Portal with the Alliance Expedition and never came back. Stromgarde has been running out of Trollbanes ever since.",
@@ -1967,7 +1967,7 @@ Zone{
 	lore = {
 		"This was Lordaeron's granary. It is now blighted ground where the soil itself is wrong, and where the Third War began in earnest.",
 		"Kel'Thuzad's Cult of the Damned distributed plagued grain through these villages from Andorhal. People ate it, died, and rose. Prince Arthas and the paladin Uther the Lightbringer came to stop it, and the investigation led Arthas north to Northrend, to Frostmourne, and to everything that followed.",
-		"Uther is buried here, at a tomb near Sorrow Hill. Andorhal is a four-way battleground between the Scourge, the Forsaken, the Scarlet Crusade and the Argent Dawn. Hearthglen in the north is held by the Scarlet Crusade under Highlord Taelan Fordring, whose father Tirion was stripped of his knighthood for showing mercy to an orc.",
+		"Uther is buried here, at a tomb near Sorrow Hill. Andorhal is the Scourge's own town, run by the lich Araj the Summoner, and the plague cauldrons standing in the fields around it answer to him. Hearthglen in the north is held by the Scarlet Crusade under Highlord Taelan Fordring, whose father Tirion was stripped of his knighthood for showing mercy to an orc.",
 	},
 	didYouKnow = "Caer Darrow, the island in Darrowmere Lake, was the Barov family's estate. Kel'Thuzad took it, killed the family and turned their manor into Scholomance, a school of necromancy. The Barovs are still there in a sense.",
 	readMore = { "Wowpedia: Western Plaguelands", "Wowpedia: Andorhal", "Wowpedia: Uther the Lightbringer" },

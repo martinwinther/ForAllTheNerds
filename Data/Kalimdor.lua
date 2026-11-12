@@ -110,7 +110,7 @@ Zone{
 	lore = {
 		"Mulgore is the tauren homeland, and it has only been that for a few years. The tauren were nomads, following the kodo herds across Kalimdor and fighting a losing war against the centaur, who had hunted them for generations.",
 		"Thrall's Horde changed that. The orcs arrived in Kalimdor, met Cairne Bloodhoof's people, and helped them break the centaur. In return the tauren joined the Horde, and with the pressure off they settled Mulgore and raised Thunder Bluff on the mesas at its northern end. It is the first permanent tauren city in their history.",
-		"The tauren are the Horde's conscience. They are shamanistic, they keep the Earthmother's teachings, and their druids were trained by Cenarius himself. When Orgrimmar does something ugly, it is usually a tauren who says so out loud.",
+		"The tauren are the Horde's conscience. They are shamanistic, they keep the Earthmother's teachings, and their druids are a new thing: the Cenarion Circle took them in after the Third War, and the night elves there still call them young in the ways of Cenarius. When Orgrimmar does something ugly, it is usually a tauren who says so out loud.",
 	},
 	didYouKnow = "Not all tauren agree. The Grimtotem tribe under Magatha Grimtotem rejected the alliance with the orcs and operates across Kalimdor on its own account. They are not friendly.",
 	readMore = { "Wowpedia: Mulgore", "Wowpedia: Cairne Bloodhoof", "Wowpedia: Tauren" },
@@ -217,9 +217,9 @@ Zone{
 	name = "Teldrassil", continent = KA, faction = "Alliance", levels = "1-10",
 	hook = "A World Tree grown to win back a lost immortality, already going wrong.",
 	lore = {
-		"Teldrassil is a World Tree, grown off Kalimdor's northern coast, and the night elves live in and on it. Darnassus is built in its branches. It is perhaps a few decades old. For a tree of this kind that is infancy.",
+		"Teldrassil is a World Tree, grown off Kalimdor's northern coast, and the night elves live in and on it. Darnassus is built in its branches. It was grown after the Third War. For a tree of this kind that is infancy.",
 		"It exists because of what happened at Mount Hyjal. The night elves' immortality came from Nordrassil, the first World Tree, which was rooted in the Well of Eternity's waters. At the Battle of Mount Hyjal they used Nordrassil to destroy Archimonde, and the tree's power, and their immortality with it, was spent. Teldrassil was Fandral Staghelm's answer: plant a new World Tree and get it back.",
-		"Malfurion Stormrage and the dragonflights opposed it. A World Tree needs the Aspects' blessings, and Teldrassil was planted without them. It is sick. The Gnarlpine furbolgs nearby have been driven mad by the corruption, the Ban'ethil barrow dens are troubled, and the night elves who argued against this are being proved right.",
+		"Malfurion Stormrage was not there to argue. He never came back from the Emerald Dream, and with him missing the druids went along with Staghelm. The dragons did not. Nozdormu refused his blessing and chided Staghelm for his arrogance, and Alexstrasza refused with him. A World Tree needs the Aspects' blessings and Teldrassil has none, so its growth has been flawed from the start. It is sick. The Gnarlpine furbolgs nearby have been driven mad by the corruption and the Ban'ethil barrow dens are troubled.",
 	},
 	didYouKnow = "Night elves are not naturally mortal and have not adjusted well. The generation that remembers being immortal is still alive, and it colours everything in Darnassus.",
 	readMore = { "Wowpedia: Teldrassil", "Wowpedia: Nordrassil", "Wowpedia: Fandral Staghelm" },
@@ -320,7 +320,7 @@ Zone{
 	lore = {
 		"Darkshore is the coastline south of Teldrassil, and a ruin field from end to end. Ten thousand years ago this was inland territory of the night elf empire. Then came the War of the Ancients and the Sundering: the Well of Eternity collapsed, the single continent of Kalimdor was blown apart, and the sea came in.",
 		"What is left along this coast are the drowned and broken remains of night elf cities. Ameth'Aran, Bashal'Aran and Mathystra were real places with real populations, and the night elves walk past them daily.",
-		"The zone's live problems are the Twilight Hammer cultists at the Master's Glaive, the naga coming out of the water, the Shadow Council's tower at Althalaxx, and a dwarven archaeologist digging up things he does not understand. Auberdine is the Alliance's port and the only organised settlement on the coast.",
+		"The zone's live problems are the Twilight Hammer cultists at the Master's Glaive, the naga coming out of the water, the warlocks of the Cult of the Dark Strand in the Tower of Althalaxx, and a dwarven archaeologist digging up things he does not understand. Auberdine is the Alliance's port and the only organised settlement on the coast.",
 	},
 	didYouKnow = "The Master's Glaive is an enormous blade driven into the ground, and the Twilight Hammer cult gathers there because something very old is buried beneath it. The cult worships the Old Gods, and on the question of one being down there somewhere they may well be right.",
 	readMore = { "Wowpedia: Darkshore", "Wowpedia: Great Sundering" },
@@ -372,10 +372,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Tower of Althalaxx", parent = "Darkshore", faction = "Hostile",
-		hook = "A night elf tower taken over by the Shadow Council.",
+		hook = "A night elf tower taken over by a cult nobody in Darnassus recognises.",
 		lore = {
-			"Althalaxx is an old night elf structure now occupied by warlocks of the Shadow Council, the demonic cabal that ran the Old Horde from behind Gul'dan.",
-			"The Shadow Council was supposed to have been destroyed. Its continued operation on this coast is exactly the kind of thing the night elves came out of their forests to prevent.",
+			"Althalaxx is an old night elf structure, and a group of warlocks has taken up residence around it and inside it. They are the Cult of the Dark Strand, and Athrikus Narassin, a highborne of great power, leads them. The Sentinels watching the tower from Auberdine say plainly that they have never heard of the group and know nothing of its history.",
+			"A journal taken off the cultists ties them to the Shadow Council, the demonic cabal that ran the Old Horde from behind Gul'dan. The Shadow Council was supposed to have been destroyed. Night elves serving it on this coast is exactly the kind of thing the night elves came out of their forests to prevent.",
 		},
 	},
 	{
@@ -1171,7 +1171,7 @@ SubsOf("Feralas", {
 		name = "Feathermoon Stronghold", faction = "Alliance", levels = "40-50",
 		hook = "A Sentinel fortress on an island, commanding the night elves' southern reach.",
 		lore = {
-			"Feathermoon Stronghold sits on Sardor Isle off Feralas' western coast and is the Sentinels' main base in the south. Shandris Feathermoon commands it, and Tyrande Whisperwind raised her.",
+			"Feathermoon Stronghold sits on its own island off Feralas' western coast and is the Sentinels' main base in the south. Sardor Isle lies further out, and the Hatecrest naga on it are the stronghold's nearest problem. Shandris Feathermoon commands here, and Tyrande Whisperwind raised her.",
 			"Shandris was Tyrande Whisperwind's ward, orphaned in the War of the Ancients, and she is the Sentinel army's most capable field commander. Her presence here marks how seriously Darnassus takes Feralas.",
 		},
 	},
@@ -1287,7 +1287,7 @@ Zone{
 		"The desert's older business is troll and titan. Zul'Farrak in the west is a Sandfury troll city, built around a stepped pyramid, and the Sandfury are desert trolls with their own gods and no interest in either faction. The ruins scattered across the sands, Eastmoon, Southmoon and Noonshade, are older still.",
 		"At the southeastern edge stand the Gates of Uldum, an enormous titan structure sealed shut. Nobody has opened it. The Explorers' League would like to, and whatever the titans put behind those doors has been sitting there since before there were mortals on this world to wonder about it.",
 	},
-	didYouKnow = "Uldum, Uldaman and Uldum's unexplored siblings all share a naming pattern, and all three are titan installations. The dwarves' discovery at Uldaman suggests the titans left records of everything they built here. Uldum is still closed.",
+	didYouKnow = "Uldum and Uldaman share a naming pattern, and both are titan installations. The dwarves' discovery at Uldaman suggests the titans left records of everything they built here. Uldum is still closed.",
 	readMore = { "Wowpedia: Tanaris", "Wowpedia: Uldum", "Wowpedia: Zul'Farrak" },
 }
 
@@ -1618,7 +1618,7 @@ Zone{
 	lore = {
 		"Un'Goro Crater is a vast depression in southern Kalimdor, walled all the way around, holding a jungle ecology that exists nowhere else. The crater has devilsaurs, pterrordax and tar pits: an isolated pocket of something much older than the desert around it.",
 		"Three crystal pylons stand on rises at the crater's northern, eastern and western edges. Nobody knows who put them there. They respond to the crystals that turn up all over the crater floor, they do something when fed, and that is the full extent of what anyone has established about them.",
-		"Marshal's Refuge, a joint expedition of dwarves and gnomes, is camped inside trying to work out what the pylons do. The Slithering Scar in the south is a silithid hive connecting toward Silithus. Whatever is in Silithus has a way in here.",
+		"Marshal's Refuge is camped inside, a mixed expedition of explorers and biologists under Williden Marshal, trying to work out what the pylons do. The Slithering Scar in the south is a silithid hive connecting toward Silithus. Whatever is in Silithus has a way in here.",
 	},
 	didYouKnow = "Un'Goro is walled all the way round and holds plants and animals found nowhere else on the continent. Whether the crater produced them or preserved them from something older is the question the expedition would most like answered.",
 	readMore = { "Wowpedia: Un'Goro Crater" },

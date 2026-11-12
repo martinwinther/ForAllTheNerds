@@ -92,6 +92,7 @@ Aspect of Earth	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Aspects	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Astranaar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Atal'ai	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Athrikus Narassin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Auberdine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Aviana	history	demigod of the War of the Ancients, long dead by this period	warcraft.wiki.gg	cs
 Azerite	out-of-era	Battle for Azeroth	tools/validate.lua, 1.2.5	ci
@@ -261,7 +262,6 @@ Colossal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Colossals	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Commander Althea Ebonlocke	vanilla	named in 1.12 creature data as Leader of The Night Watch	cmangos 1.12.1	cs
 Commander Ashlam Valorfist	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Commander Trollbane	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Commons	vanilla	plural of a 1.12 name (Common)	cmangos 1.12.1	cs
 Constellas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Construct	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -785,6 +785,7 @@ Lakkari Tar Pits	vanilla	AreaTable row	wow_classic_era	cs
 Land	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Land's End Beach	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lariss Pavilion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Latronicus Moonspear	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Laying	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 League	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 League of Arathor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1099,6 +1100,7 @@ Ruins	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ruins of Eldarath	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ruins of Eldre'thar	out-of-era	added in patch 4.0.3a. Sishir Canyon leads nowhere named at 1.12	warcraft.wiki.gg	ci
 Ruins of Lordaeron	vanilla	AreaTable row	wow_classic_era	cs
+Ruins of Solarsal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ruins of Taurajo	out-of-era	Camp Taurajo is standing in 1.12 and is burned in Cataclysm	tools/validate.lua, 1.2.5	ci
 Ruins of Thaurissan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rut'theran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1402,6 +1404,7 @@ Thondroril River	vanilla	AreaTable row	wow_classic_era	cs
 Thoradin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thoradin's Wall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thoras	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Thoras Trollbane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thorium Brotherhood	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thorium Point	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thorn Hill	vanilla	AreaTable row	wow_classic_era	cs
@@ -1568,6 +1571,7 @@ Wildhammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wildhammers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wildmane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wildwind Lake	vanilla	AreaTable row	wow_classic_era	cs
+Williden Marshal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Windbreak	vanilla	AreaTable row	wow_classic_era	cs
 Windfury Ridge	vanilla	AreaTable row	wow_classic_era	cs
 Windlord	history	title of Al'Akir, not named in 1.12 game text	warcraft.wiki.gg	cs

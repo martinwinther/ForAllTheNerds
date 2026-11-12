@@ -1854,10 +1854,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Sardor Isle", faction = "Contested",
-		hook = "The island Feathermoon Stronghold is built on, off the western coast.",
+		hook = "A small island off Feralas' western coast, and the naga have it.",
 		lore = {
-			"Sardor lies off Feralas' western shore and carries the Sentinels' main base in the south. Shandris Feathermoon commands from it.",
-			"Shandris was Tyrande Whisperwind's ward, orphaned in the War of the Ancients, and she is the Sentinel army's most capable field commander. Posting her here says what Darnassus thinks of this zone.",
+			"Sardor Isle lies out past Feathermoon Stronghold, and the Sentinels do not hold it. The Hatecrest naga do, in numbers.",
+			"The Sentinels send people out to thin them. Latronicus Moonspear hands that errand to most of the new arrivals at Feathermoon Stronghold, on the reasoning that a weakened naga presence on Sardor plays to the night elves' advantage. The same naga have occupied the Ruins of Solarsal down the coast, and the Sentinels are less sure what that is about.",
 		},
 	},
 })
