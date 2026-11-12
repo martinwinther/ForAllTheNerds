@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, claim review, 25 entries per run.
+IN PROGRESS. Next: P4, the next 25 entries. 25 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. NEXT, 0 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 25 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -321,3 +321,57 @@ caught it. A keyword check is only as good as its keywords, which is the same
 lesson as the blacklist.
 
 Next: P4.
+
+### 2026-11-12, P4, run 1 of about 37
+
+Reviewed 25 entries against the article for each place. Seven were wrong.
+
+**How the 25 were chosen.** Alphabetical order would spend most runs on places
+nothing ever happened to. Instead all 912 distinct vanilla entry names were
+fetched from the wiki in batches of 50 and scored for the markers that mean a
+place changed later, and so that its article's lead describes a state we do not
+cover: a 4.0.3a patch note, "after the Cataclysm" or a "now" state in the lead,
+a cata section, a Classic-only tag. 378 of the 912 carry at least one. This run
+took the top 25 by score. The scan is cheap and any run can recompute it; what
+it must not do is re-review the entries listed below.
+
+Of the 25, Auberdine, Booty Bay and Fray Island had already been corrected in
+earlier runs, which is a good sign about the ranking.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Southshore | A port on Lordamere Lake's southern coast | It is on Baradin Bay, as our own Baradin Bay entry already said. Lordamere Lake is inland, well to the north |
+| Andorhal | A four-cornered battlefield of Scourge, Forsaken, Scarlet Crusade and Argent Dawn | Araj the Summoner's headquarters, with Scarlet Crusade patrols on the roads north. The Forsaken and the Argent Dawn come to Andorhal later |
+| Darkshire | Lord Ello Ebonlocke commands the Night Watch | He is the Mayor of Darkshire. Commander Althea Ebonlocke is Leader of The Night Watch, both titles straight out of the 1.12 creature data |
+| Dun Modr | Taken by Dark Iron and Syndicate forces | Dark Iron. The Syndicate is not there |
+| Sandsorrow Watch | A Horde post | A neutral camp in a tower, with Sandfury trolls holding the ground around it |
+| Wavestrider Beach | Wreckage and naga, and a paragraph on the naga being former highborne | Steeljaw snappers. No naga on this coast in this period |
+| Bolgan's Hole | A cave held by whatever got there first, in a zone whose only settlements are Nijel's Point and Shadowprey Village | A cave inside Gelkis Village holding the Gelkis khan, Khan Shaka. Desolace also has Ghost Walker Post |
+
+Two of the seven were caught by our own data disagreeing with itself. The
+Baradin Bay entry lists Southshore on the bay while the Southshore entry put it
+on a lake, and Desolace's "only settlements" claim sat next to an entry for
+Ghost Walker Post. A pass looking only for internal contradictions would be
+worth a run of its own.
+
+**Three that looked wrong and were not.** Grim Batol's claim that the red
+dragonflight watches the approaches holds up: the 1.12 quest text has the reds
+hunting the Dragonmaw, who fled the fortress into the mountains. Forest Song
+reads as nearly empty, which is right for this period, and the draenei outpost
+in the article's lead arrives in patch 2.0.1. Raptor Grounds matches its article
+sentence for sentence, Northwatch Hold and the huts included.
+
+**The gate again.** The rewrites named five things the ledger did not carry, and
+the build failed until each was filed: Commander Althea Ebonlocke, Gelkis
+Village, Ghost Walker Post, Khan Shaka and Steeljaw. The ledger is 1,621 rows.
+Note that Ghost Walker Post is one of our own entry names, which the gate
+exempts, so it only needed a row once another entry's prose mentioned it.
+
+**Entries covered so far (25).** Andorhal, Angerfang Encampment, Apocryphan's
+Rest, Bashal'Aran, Beggar's Haunt, Bolgan's Hole, Dalson's Tears, Darkshire,
+Deadwood Village, Dun Modr, Echo Ridge Mine, Forest Song, Grim Batol, Jerod's
+Landing, Mardenholde Keep, Raptor Grounds, Sandsorrow Watch, Shadra'Alor,
+Shok'Thokar, Southshore, Stonetalon Peak, Stranglethorn Vale, Uther's Tomb,
+Wavestrider Beach, Windshear Crag.
+
+Next: P4, the next 25 by the same ranking.

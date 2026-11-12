@@ -746,7 +746,7 @@ SubsOf("Duskwood", {
 		hook = "Grand Hamlet renamed for what became of it, held by lantern-light and stubbornness.",
 		lore = {
 			"This was Grand Hamlet, a prosperous market town. When the darkness settled and the dead started walking, the survivors renamed it Darkshire. No town in the kingdom has rebranded itself more bleakly.",
-			"The town is run by the Night Watch and a town council with a deep suspicion of outsiders, magic and anything that happens after dark. They have earned all three. Lord Ello Ebonlocke commands the Watch, and his authority here outweighs anything Stormwind sends.",
+			"The town is run by the Night Watch and a town council with a deep suspicion of outsiders, magic and anything that happens after dark. They have earned all three. Lord Ello Ebonlocke is the mayor and Commander Althea Ebonlocke runs the Night Watch, and between them their authority here outweighs anything Stormwind sends.",
 		},
 	},
 	{
@@ -862,7 +862,7 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Dun Modr", parent = "Wetlands", faction = "Hostile",
-		hook = "A dwarven town at the Thandol Span, taken by Dark Iron and Syndicate forces.",
+		hook = "A dwarven town at the Thandol Span, taken by the Dark Iron.",
 		lore = {
 			"Dun Modr guards the southern end of the Thandol Span, the great bridge linking Khaz Modan to the Arathi Highlands. Holding it means holding the only land route north.",
 			"The dwarves lost it. Dark Iron dwarves hold the town now, and the Alliance's inability to retake a bridgehead this important says a great deal about how thinly stretched it is.",
@@ -995,7 +995,7 @@ SubsOf("Hillsbrad Foothills", {
 		name = "Southshore", faction = "Alliance", levels = "20-30",
 		hook = "The Alliance's fishing town on the bay, permanently at war with the village up the road.",
 		lore = {
-			"Southshore is a working port on Lordamere Lake's southern coast and the Alliance's anchor in Hillsbrad. It has an inn, a dock and a garrison that exists because of Tarren Mill.",
+			"Southshore is a working port on Baradin Bay and the Alliance's anchor in Hillsbrad. It has an inn, a dock and a garrison that exists because of Tarren Mill.",
 			"The fighting between the two settlements is close to permanent. It is not a campaign with objectives so much as a grudge with infrastructure.",
 		},
 	},
@@ -1976,10 +1976,10 @@ Zone{
 SubsOf("Western Plaguelands", {
 	{
 		name = "Andorhal", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "The town where the plague was distributed, now fought over by four separate factions.",
+		hook = "The town where the plague was distributed, and the Scourge's hold on the Western Plaguelands.",
 		lore = {
 			"Andorhal was Lordaeron's main granary town, and the Cult of the Damned chose it for exactly that reason. The plagued grain went out from these warehouses to the whole region.",
-			"The town is now a four-cornered battlefield: Scourge forces under Araj the Summoner, Forsaken agents, the Scarlet Crusade, and the Argent Dawn all have a presence and none of them will leave.",
+			"The town is the lich Araj the Summoner's headquarters, and the plague cauldrons standing around the zone answer to him. Scarlet Crusade patrols work the roads north out of it, sent down from Hearthglen.",
 		},
 	},
 	{
