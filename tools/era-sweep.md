@@ -71,11 +71,12 @@ Once P0 to P4 are done, put the findings into `tools/era-audit.md`, add the
 player-facing lines to the `Unreleased` section of the changelog, and stop. Do
 not tag and do not publish: releases are Martin's call.
 
-Note for whoever reaches P5: **P0 and P1 already shipped in 1.2.6**, released on
-2026-11-12 at Martin's explicit instruction, mid-sweep. Their player-facing
-lines are in the changelog under `## 1.2.6`, so do not write them again. P5
-covers what P2 to P4 turn up, and `tools/era-audit.md` has not been updated for
-any of it yet.
+Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, and P2, P3 and P4
+runs 1 to 3 shipped in 1.2.7**, both released mid-sweep on 2026-11-12 at
+Martin's explicit instruction. Their player-facing lines are already in the
+changelog under `## 1.2.6` and `## 1.2.7`, so do not write them again. P5 now
+covers only P4 run 4 onwards, plus `tools/era-audit.md`, which has not been
+updated for anything since the original four errors.
 
 ## Oracles, in order of preference
 
