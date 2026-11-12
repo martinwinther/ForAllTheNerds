@@ -444,81 +444,264 @@ out(string.format("sentence-opening runs: %d paragraphs with 3+ consecutive 'The
 -- expansion's version of a place sits on one page under separate headings, and
 -- nothing in the build caught it.
 --
--- Entry names are exempt and only the prose is read. An entry may legitimately
--- be called the Southern Barrens, because the 1.12 client has an area by that
--- name; it may not tell the player about the chasm that is not there yet.
+-- This was a blacklist of terms somebody had thought of, and a blacklist can
+-- only fail on what is already known to be wrong. That is why Auberdine kept a
+-- boat on "the Azuremyst route" through several releases: nothing in the list
+-- said Azuremyst. It is now a whitelist, tools/era-terms.tsv, with a row for
+-- every proper noun the prose uses, each carrying a verdict and the evidence
+-- for it. A proper noun the ledger does not carry fails the build, so anything
+-- new is rejected until somebody files it.
+--
+-- Entry names and readMore are exempt, and only hook, lore and didYouKnow are
+-- read. An entry may legitimately be called the Southern Barrens, because the
+-- 1.12 client has an area by that name; it may not tell the player about the
+-- chasm that is not there yet. readMore is exempt because the right article to
+-- link is sometimes titled for the later state of a place.
 -- ---------------------------------------------------------------------------
 
 section("Era scope")
 
--- { term, why, caseSensitive }. Plain substrings. Lower-cased and matched
--- case-insensitively by default; with the third field set the term is matched
--- exactly as written, which is how a proper noun is told apart from the same
--- words used as ordinary English. "Northern Barrens" is a zone the Cataclysm
--- created; "the northern Barrens" is a direction and has always been fine.
+-- The ledger: term, verdict, evidence, source, match. Verdicts are vanilla,
+-- forever, history (real before WoW, absent from the game's own text and still
+-- in scope), fragment (capitalised without being a name) and out-of-era.
 --
--- Keep this list to things that cannot be right in any context. A term with a
--- legitimate pre-1.12 use, such as Draenor or the Dark Portal, does not belong
--- here at all.
-local OUT_OF_ERA = {
-	{ "great divide",         "the chasm the Cataclysm opened. In 1.12 the Barrens is divided by a dried-up riverbed" },
-	{ "Northern Barrens",     "the Barrens was cut in two by the Cataclysm. In 1.12 it is one zone", true },
-	{ "cataclysm",            "the event and the expansion both postdate 1.12. For the breaking of Kalimdor, say the Sundering" },
-	{ "the shattering",       "Cataclysm" },
-	{ "deathwing's return",   "Cataclysm. Deathwing's earlier history is in scope, his return is not" },
-	{ "the great gate",       "the gate across the Mulgore pass is Cataclysm" },
-	{ "ruins of taurajo",     "Camp Taurajo is standing in 1.12 and is burned in Cataclysm" },
-	{ "desolation hold",      "Cataclysm, Southern Barrens" },
-	{ "fort triumph",         "Cataclysm, Southern Barrens" },
-	{ "hunter's hill",        "Cataclysm, Southern Barrens" },
-	{ "vendetta point",       "Cataclysm, Southern Barrens" },
-	{ "garrosh",              "arrives in Nagrand in The Burning Crusade" },
-	{ "warchief vol'jin",     "Vol'jin leads the Darkspear in 1.12 and is not Warchief until Mists of Pandaria" },
-	{ "high chieftain baine", "Baine is a quest giver at Bloodhoof Village in 1.12 and succeeds Cairne in Cataclysm" },
-	{ "fourth war",           "Battle for Azeroth" },
-	{ "wrathgate",            "Wrath of the Lich King" },
-	{ "icecrown citadel",     "Wrath of the Lich King" },
-	{ "ebon blade",           "Wrath of the Lich King" },
-	{ "argent crusade",       "Wrath of the Lich King. The Argent Dawn is the 1.12 organisation" },
-	{ "scarlet onslaught",    "Wrath of the Lich King" },
-	{ "broken isles",         "Legion" },
-	{ "azerite",              "Battle for Azeroth" },
-	{ "n'zoth",               "Battle for Azeroth" },
-	{ "shadowlands",          "Shadowlands" },
-	{ "dragon isles",         "Dragonflight" },
-	{ "pandaria",             "Mists of Pandaria" },
-}
-
-local function countPlain(haystack, needle)
-	local n, from = 0, 1
-	while true do
-		local i = string.find(haystack, needle, from, true)
-		if not i then return n end
-		n = n + 1
-		from = i + 1
+-- Terms taken out of the prose are matched case sensitively, which is what
+-- separates a proper noun from the same words as ordinary English: "the
+-- northern Barrens" is a direction and passes, "the Northern Barrens" is a
+-- zone the Cataclysm made and does not. The `match` column exists for the
+-- out-of-era rows alone, where a lower-cased mention is usually just as wrong:
+-- "ci" scans the prose for the term in any case, and "cs" is for the two whose
+-- lower-cased form is ordinary English.
+local LEDGER, OOE_CI, ledgerRows = {}, {}, 0
+do
+	local path = root .. "tools/era-terms.tsv"
+	local fh = io.open(path, "r")
+	if not fh then
+		fail("cannot open %s, which the era check reads", path)
+	else
+		local lineNo = 0
+		for line in fh:lines() do
+			lineNo = lineNo + 1
+			if lineNo > 1 and line ~= "" then
+				local col = {}
+				for field in (line .. "\t"):gmatch("([^\t]*)\t") do col[#col + 1] = field end
+				local term, verdict = col[1] or "", col[2] or ""
+				local evidence, match = col[3] or "", col[5] or "cs"
+				if term == "" or verdict == "" then
+					fail("tools/era-terms.tsv line %d has no term or no verdict", lineNo)
+				elseif LEDGER[term] then
+					fail("tools/era-terms.tsv carries %q twice", term)
+				else
+					ledgerRows = ledgerRows + 1
+					LEDGER[term] = { verdict = verdict, evidence = evidence }
+					if verdict == "out-of-era" and match == "ci" then
+						OOE_CI[#OOE_CI + 1] = { term = term, evidence = evidence }
+					end
+				end
+			end
+		end
+		fh:close()
 	end
 end
 
-local eraChecked, eraHits = 0, 0
-ns.EachEntry(function(e)
-	eraChecked = eraChecked + 1
+-- Taking the proper nouns out of a paragraph.
+--
+-- A term is a run of capitalised words joined by single spaces, and it may
+-- cross "of" or "of the" so that the Valley of Heroes stays one term. Any
+-- punctuation between two words ends the run, which is what stops a
+-- comma-separated list of names becoming one long term. A leading article is
+-- dropped and so is a trailing possessive.
+--
+-- A word is only evidence of a name if it is capitalised somewhere other than
+-- the start of a sentence. "Nobody knows who put them there" opens with a
+-- capital and names nothing, so a word that is never capitalised mid-sentence
+-- anywhere in the addon, and is seen lower-cased somewhere, is thrown out.
+local ALWAYS_CAPS = { ["I"] = true, ["I'm"] = true, ["I'll"] = true, ["I've"] = true }
+local ARTICLES = { ["the"] = true, ["a"] = true, ["an"] = true }
+local CONNECTORS = { ["of"] = true, ["the"] = true }
+
+local function tokenize(text)
+	local toks = {}
+	local pos, lastEnd, initial = 1, 1, true
+	while true do
+		local s, e = string.find(text, "[A-Za-z][A-Za-z']*", pos)
+		if not s then break end
+		toks[#toks + 1] = {
+			word = string.sub(text, s, e),
+			initial = initial,
+			gap = string.sub(text, lastEnd, s - 1),
+		}
+		initial = false
+		lastEnd = e + 1
+		pos = e + 1
+		local nxt = string.find(text, "[A-Za-z]", pos)
+		local between = nxt and string.sub(text, pos, nxt - 1) or string.sub(text, pos)
+		if string.find(between, "[%.!%?:]") then initial = true end
+	end
+	return toks
+end
+
+local function isCap(w)
+	return not ALWAYS_CAPS[w] and string.match(w, "^%u") ~= nil
+end
+
+local function stripPossessive(w)
+	return (string.gsub(w, "'s?$", ""))
+end
+
+local function cleanTerm(parts)
+	local first = 1
+	while parts[first] and ARTICLES[string.lower(parts[first])] do first = first + 1 end
+	local kept = {}
+	for i = first, #parts do kept[#kept + 1] = parts[i] end
+	if #kept == 0 then return nil end
+	kept[#kept] = stripPossessive(kept[#kept])
+	while #kept > 0 do
+		local last = string.lower(kept[#kept])
+		if CONNECTORS[last] or ARTICLES[last] then table.remove(kept) else break end
+	end
+	if #kept == 0 then return nil end
+	return table.concat(kept, " ")
+end
+
+local function phrases(text)
+	local toks = tokenize(text)
+	local found = {}
+	local i = 1
+	while i <= #toks do
+		if not isCap(toks[i].word) then
+			i = i + 1
+		else
+			local parts = { toks[i].word }
+			local startsSentence = toks[i].initial
+			local j = i + 1
+			while j <= #toks do
+				local t = toks[j]
+				if t.gap ~= " " then break end
+				if isCap(t.word) then
+					parts[#parts + 1] = t.word
+					j = j + 1
+				elseif string.lower(t.word) == "of" then
+					-- "of X" or "of the X". Only a run starting with "of" may
+					-- join: a bare "the" would weld two separate names together.
+					local run, k = { t.word }, j + 1
+					while toks[k] and toks[k].gap == " "
+						and CONNECTORS[string.lower(toks[k].word)] do
+						run[#run + 1] = toks[k].word
+						k = k + 1
+					end
+					if toks[k] and toks[k].gap == " " and isCap(toks[k].word) then
+						for m = 1, #run do parts[#parts + 1] = string.lower(run[m]) end
+						parts[#parts + 1] = toks[k].word
+						j = k + 1
+					else
+						break
+					end
+				else
+					break
+				end
+			end
+			found[#found + 1] = { parts = parts, startsSentence = startsSentence }
+			i = j
+		end
+	end
+	return found
+end
+
+local function proseOf(e)
 	local parts = { e.hook }
 	for i = 1, #e.lore do parts[#parts + 1] = e.lore[i] end
 	if e.didYouKnow then parts[#parts + 1] = e.didYouKnow end
-	local raw = table.concat(parts, " ")
-	local text = string.lower(raw)
-	for i = 1, #OUT_OF_ERA do
-		local term, why, cased = OUT_OF_ERA[i][1], OUT_OF_ERA[i][2], OUT_OF_ERA[i][3]
-		local n = countPlain(cased and raw or text, cased and term or string.lower(term))
-		if n > 0 then
-			eraHits = eraHits + n
-			fail("%s mentions %q %d time(s): %s", e.name, term, n, why)
+	return table.concat(parts, " ")
+end
+
+-- First pass: which words are ever lower-cased, and which are capitalised away
+-- from the start of a sentence.
+--
+-- This reads the 991 entries ns.EachEntry yields here. Loading the addon
+-- outside the validator yields 993: Forever's own versions of Darnassus and
+-- Thunder Bluff are reachable there and are not here. Every count in this file
+-- says 991, the index's own included, so the two have never been read by any
+-- check. Forcing showForeverContent on does not bring them back, so the cause
+-- is at load time and is still open. Both are Forever entries, judged against
+-- Forever's sources, which is why it has gone unnoticed.
+local lowerSeen, capMid, corpus = {}, {}, {}
+ns.EachEntry(function(e)
+	local text = proseOf(e)
+	corpus[#corpus + 1] = { name = e.name, text = text }
+	local toks = tokenize(text)
+	for i = 1, #toks do
+		local w = toks[i].word
+		if string.match(w, "^%l") then
+			lowerSeen[string.lower(w)] = true
+		elseif not toks[i].initial then
+			capMid[string.lower(w)] = true
 		end
 	end
 end)
 
-out(string.format("%d entries checked against %d out-of-era terms (%d hits)",
-	eraChecked, #OUT_OF_ERA, eraHits))
+local function ordinary(w)
+	local bare = string.lower(stripPossessive(w))
+	return lowerSeen[bare] and not capMid[bare]
+end
+
+-- Second pass: every term in every entry, against the ledger.
+local eraChecked, eraTerms, unknownHits, outOfEraHits = 0, 0, 0, 0
+local reported = {}
+
+local function report(name, term, fmt, ...)
+	local key = name .. "|" .. term
+	if reported[key] then return false end
+	reported[key] = true
+	fail(fmt, ...)
+	return true
+end
+
+for c = 1, #corpus do
+	local name, text = corpus[c].name, corpus[c].text
+	eraChecked = eraChecked + 1
+	local found = phrases(text)
+	for p = 1, #found do
+		local parts = found[p].parts
+		if found[p].startsSentence then
+			while parts[1] and ordinary(parts[1]) do table.remove(parts, 1) end
+		end
+		local term = cleanTerm(parts)
+		if term and #term >= 3
+			and not (not string.find(term, " ", 1, true) and ordinary(term)) then
+			eraTerms = eraTerms + 1
+			local row = LEDGER[term]
+			if not row then
+				if report(name, term,
+					"%s uses %q, which tools/era-terms.tsv does not carry. Prove it from a "
+					.. "1.12 source and add a row, or take it out of the prose",
+					name, term) then
+					unknownHits = unknownHits + 1
+				end
+			elseif row.verdict == "out-of-era" then
+				if report(name, term, "%s mentions %q: %s", name, term, row.evidence) then
+					outOfEraHits = outOfEraHits + 1
+				end
+			end
+		end
+	end
+	-- The lower-cased reach the old blacklist had. A term written in lower case
+	-- is not picked up as a proper noun above, and for most of these a
+	-- lower-cased mention is just as wrong.
+	local lower = string.lower(text)
+	for q = 1, #OOE_CI do
+		if string.find(lower, string.lower(OOE_CI[q].term), 1, true) then
+			if report(name, OOE_CI[q].term, "%s mentions %q: %s",
+				name, OOE_CI[q].term, OOE_CI[q].evidence) then
+				outOfEraHits = outOfEraHits + 1
+			end
+		end
+	end
+end
+
+out(string.format("%d entries read, %d proper nouns matched against %d ledger rows",
+	eraChecked, eraTerms, ledgerRows))
+out(string.format("%d unproven, %d out of era", unknownHits, outOfEraHits))
 
 -- ---------------------------------------------------------------------------
 -- 4. Location resolution

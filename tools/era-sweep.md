@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P2, gating validate.lua on the ledger.
+IN PROGRESS. Next: P3, the transport check.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -42,7 +42,7 @@ before WoW, absent from in-game text and still in scope) and 12 `fragment`
 the hand-written blacklist held. P2 can retire it. See the log for the
 extraction rule and for the six errors the pass turned up.
 
-**P2. Gate validate.lua on the ledger. NEXT.**
+**P2. Gate validate.lua on the ledger. DONE 2026-11-12.**
 Fail when entry prose holds a term missing from the ledger, or one whose
 verdict is `out-of-era`. Read `hook`, `lore` and `didYouKnow` only. Entry names
 and `readMore` stay exempt, because the 1.12 client really does have an area
@@ -226,12 +226,12 @@ the 74 Forever entries that was missing `era = "forever", spoiler = true`. And
 our prose spelled Menethil Harbor the British way five times against eleven the
 game's way. The five were normalised.
 
-**Open for P2.** The ledger has the four columns the plan asked for and no
-case-sensitivity column. The intended rule is that every ledger term is matched
-case-sensitively, which gives "the northern Barrens" passing and "the Northern
-Barrens" failing without a fifth column. That does mean the out-of-era rows are
-stricter than the blacklist they replace, which matched case-insensitively. P2
-should decide whether a lower-cased "great divide" still needs to fail.
+**Settled by P2.** Terms taken out of the prose are matched case
+sensitively, which gives "the northern Barrens" passing and "the Northern
+Barrens" failing. A fifth column, `match`, was added for the out-of-era rows
+alone: 37 of the 39 are `ci` and are also scanned for in any case, keeping the
+reach the blacklist had, and the two whose lower-cased form is ordinary English,
+Great Divide and Northern Barrens, are `cs`.
 
 **One check that did not work.** Every vanilla entry name was matched against
 the AreaTable of both clients, looking for more entries like the Sludgewerks.
@@ -242,3 +242,39 @@ Nothing was concluded from it. `/ftn areas` uses the real resolver and is the
 way to answer that question.
 
 Next: P2.
+
+### 2026-11-12, P2
+
+`tools/validate.lua` now gates on the ledger and the hand-written `OUT_OF_ERA`
+blacklist is gone. The section reads the prose of each entry, takes the proper
+nouns out of it by the rule P1 used, and fails on any term the ledger does not
+carry or that it marks `out-of-era`. It reports 991 entries, 7,664 proper nouns
+matched against 1,615 rows.
+
+The extraction rule is ported to Lua from the Python that built the ledger, and
+the build passing is the proof the port agrees: anything the Lua reads that the
+Python did not would not be in the ledger, and would fail.
+
+**Broken deliberately, four ways, before committing.** Each was injected into
+the Thorn Hill entry and then reverted:
+
+| Injected | Result |
+|---|---|
+| `The Sporeggar Enclave is here.` | FAIL, uses "Sporeggar Enclave", which tools/era-terms.tsv does not carry |
+| `This is in the Northern Barrens.` | FAIL, mentions "Northern Barrens", with the row's evidence |
+| `The cataclysm reshaped it.` | FAIL, mentions "Cataclysm", caught by the case-insensitive scan |
+| `This sits in the northern Barrens, which is a direction.` | passes, as it must |
+
+The first is the one the blacklist could never do. "Sporeggar Enclave" is not on
+any list of known-bad terms, and it fails because nothing proves it.
+
+**A blind spot this turned up, which P2 did not cause.** Loading the addon
+outside the validator yields 993 entries. Inside it, every count says 991, the
+index's own line included, and the two that are missing are Forever's versions
+of Darnassus and Thunder Bluff. So no check in that file has ever read them,
+not this one and not the blacklist before it. Forcing `showForeverContent` on
+does not bring them back, so the cause is at load time and is not the spoiler
+gate. Both are Forever entries, judged against Forever's own sources, which is
+why nobody noticed. Worth its own look rather than a guess.
+
+Next: P3.
