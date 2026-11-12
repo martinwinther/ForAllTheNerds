@@ -1,5 +1,37 @@
 # Changelog
 
+## 1.2.6
+
+**Fixed**
+
+- Auberdine listed a third boat, on "the Azuremyst route north". That crossing
+  does not open until a later expansion. The port has two boats in this period:
+  Rut'theran Village at the foot of Teldrassil, and Menethil Harbor in the
+  Wetlands.
+- The Damsel's Luck credited her crew to the Brashtide Crew, who belong to a
+  later expansion. Captain Stillwater has her, and the crew are Bloodsail like
+  the other two ships off the Wild Shore.
+- Sishir Canyon was described as the road to the Ruins of Eldre'thar. Those
+  ruins are not there yet. The canyon runs off the main Stonetalon road, and the
+  Deepmoss spiders have it.
+- Fray Island had the Southsea Freebooters holding the place under Cap'n Garvey
+  before Klannoc Macleod. Garvey arrives later, so the order was backwards too.
+  Klannoc runs the challenges and the test he sets is the Affray.
+- Thorn Hill named Tortusk as the quilboar leading the Razormane there. He
+  arrives later as well. The settlement has no named leader in this period.
+- Gnomeregan, the Deeprun Tram and Steelgrill's Depot all called the gnome who
+  flooded the city Sicco Thermaplugg. Here he is Mekgineer Thermaplugg, which is
+  the only name the game gives him.
+- Skywatcher Plateau is Forever content but was not flagged as such, so it
+  appeared even with Forever lore switched off, which is the default.
+- Menethil Harbor was spelled Menethil Harbour in five places.
+
+**Removed**
+
+- The Sludgewerks. It is a goblin base from a later expansion and is in neither
+  of the clients this addon runs on, so the entry could never have come up.
+
+
 ## 1.2.5
 
 **Fixed**
