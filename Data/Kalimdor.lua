@@ -177,9 +177,10 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Brambleblade Ravine", parent = "Mulgore", faction = "Hostile",
-		hook = "A Bristleback quilboar warren dug into the southern hills.",
+		hook = "A Bristleback quilboar warren east of Camp Narache, at war with the tauren.",
 		lore = {
-			"Brambleblade is one of the Bristleback tribe's warrens, and quilboar warrens are built around a thorny central growth the tribe tends almost religiously.",
+			"Brambleblade is one of the Bristleback tribe's warrens, dug into the hills east of Camp Narache, and quilboar warrens are built around a thorny central growth the tribe tends almost religiously.",
+			"The Bristlebacks here raid tauren hunting parties under Chief Sharptusk Thornmantle, which is why the ravine is where young tauren are sent for the Rite of Strength. It is the first of the Rites of the Earthmother, and most tauren meet their first enemy in this ravine.",
 			"The quilboar's connection to Agamaggan, the boar demigod, runs through those thorns. Destroying a warren is not just a military act to them.",
 		},
 	},
@@ -1709,7 +1710,7 @@ Zone{
 	lore = {
 		"Winterspring is the snow country in Kalimdor's far north, reachable through the Timbermaw tunnels or the long way around. It is cold, high and thinly populated, and most of it belongs to the wildlife: frostsabers, yeti, chimaera and owlbeasts.",
 		"Everlook is the only town, a Steamwheedle Cartel operation like Gadgetzan and Ratchet. Neutral, commercial, and improbably busy for a place this remote.",
-		"The zone's deeper business is draconic and elven. Mazthoril, the cave beneath Frostsaber Rock, holds blue dragons, and the blue dragonflight is the flight of magic, led by Malygos the Spell-Weaver, who has not been coherent since Deathwing's betrayal of the Aspects. The night elves maintain Starfall Village, and the frostsaber pride in the west is tied to the night elves' own history with the great cats.",
+		"The zone's deeper business is draconic and elven. Mazthoril, the deep icy cavern in the middle of the zone near Lake Kel'Theril, holds blue dragons, and the blue dragonflight is the flight of magic, led by Malygos the Spell-Weaver, who has not been coherent since Deathwing's betrayal of the Aspects. The night elves maintain Starfall Village, and the frostsaber pride out at Frostsaber Rock in the west is tied to the night elves' own history with the great cats.",
 	},
 	didYouKnow = "Night elves ride frostsabers, and the relationship is not domestication. The frostsaber pride in Winterspring has to be earned, cat by cat, by anyone who wants to ride one.",
 	readMore = { "Wowpedia: Winterspring", "Wowpedia: Malygos" },
@@ -2032,7 +2033,7 @@ SubsOf("Dustwallow Marsh", {
 		hook = "A cave in the marsh with a black dragon living in it.",
 		lore = {
 			"Emberstrife is a black dragon, and he keeps this cave in Dustwallow. The marsh has rather a lot of his kin: Onyxia's lair is here too, under Theramore's nose.",
-			"The black dragonflight was Neltharion's, the Aspect of Earth, before Neltharion became Deathwing. The Old Gods got to him during the War of the Ancients and what he did with the Dragon Soul broke the flights' alliance and nearly ended them.",
+			"The black dragonflight was Neltharion's, the Aspect of Earth, before Neltharion became Deathwing. The Old Gods got to him during the War of the Ancients and what he did with the Demon Soul broke the flights' alliance and nearly ended them.",
 			"His brood has spent the time since working as infiltrators rather than as an army. That is the shape of every black dragon problem in the world.",
 		},
 		readMore = { "Wowpedia: Emberstrife", "Wowpedia: Black dragonflight", "Wowpedia: Neltharion" },

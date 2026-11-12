@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 50 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 75 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 50 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 75 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -477,5 +477,105 @@ Windshear Crag.
 
 Fixed alongside but not reviewed as entries of their own, so still open for a
 later run: Sardor Isle, Tower of Althalaxx.
+
+Next: P4, the next 25 by the same ranking.
+
+### 2026-11-12, P4, run 3 of about 36
+
+Reviewed 25 entry names against the article for each place, 26 entries in all
+because two distinct entries are called Darnassus. Six carried a claim the
+article does not support. A seventh came out of the compositional-rule audit
+flagged in run 2, and it is the more important find of the two.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Valley of Honor | Contains the Ring of Valor "where orcs settle things" | The Ring of Valor is the Orgrimmar arena and arrives in patch 3.0.2. At 1.12 the quarter trains out of the Hall of the Brave and the Hunter's Hall, both of them 1.12 objects |
+| Emberstrife's Den | What Neltharion "did with the Dragon Soul" | Dragon Soul is the name Cataclysm gives the artefact. The sources this addon covers call it the Demon Soul, which our own Wetlands entry already cites |
+| Brambleblade Ravine | A warren "dug into the southern hills" | It is east of Camp Narache in Mulgore, under Chief Sharptusk Thornmantle, and it is where the Rite of Strength sends young tauren |
+| Winterspring | Mazthoril is "the cave beneath Frostsaber Rock" | Mazthoril is the deep icy cavern in the middle of the zone near Lake Kel'Theril. Frostsaber Rock is a separate area out west, where the frostsaber pride is |
+| Nesingwary's Expedition | Hemet "has made a career of it across the world" | Stranglethorn is the only camp he has in this period. The others arrive in patches 2.0.1 and 3.0.2 |
+| Deadwind Pass | "Almost nothing lives in it" | Ogres are most of the population and are set on clearing out everyone else, with harpies in the gullies. The murdered village in the south is real and unexplained, which the entry had right |
+| Loch Modan | The Explorers' League "has dig sites all over the valley", Ironband's being "the largest" | One dig, Ironband's Excavation Site in the east, with troggs in it and Prospector Ironband recruiting for Uldaman from it |
+
+**The compositional hole is real and it was live.** Run 2 deleted the
+"Commander Trollbane" row and flagged 99 others resting on "every part named in
+1.12 sources". Two of those 99 were wrong in the same way, and both were being
+used by prose that shipped:
+
+- `Ring of Valor` was in the ledger as **vanilla**, because Ring and Valor are
+  each vanilla words. That is exactly why the Valley of Honor entry could
+  describe a Wrath arena through two releases of the gate.
+- `Dragon Soul` was in the ledger as **vanilla** for the same reason, and the
+  row for `Demon Soul` beside it carried the same compositional evidence even
+  though neither name appears anywhere in 1.12 game text.
+
+Both rows were rewritten rather than added, which matters: the first attempt
+passed a new `out-of-era` row to an add-if-absent script, the term was already
+present, and the row was silently dropped. The build still passed and the claim
+was still in the prose. **Deleting or re-verdicting a ledger row is not done
+until the gate has been seen to fail on the term.** `Ring of Valor` is now
+`out-of-era` with `ci`, `Dragon Soul` likewise, and `Demon Soul` is `history`
+with the 2004 novel as its evidence.
+
+**Broken deliberately, three ways.** `The Ring of Valor stands here.` into the
+Valley of Honor: FAIL, mentions "Ring of Valor", with the patch in the evidence.
+`Orcs duel in the ring of valor.`: same FAIL, which is the `ci` column doing its
+job. `Dragon Soul` back into Emberstrife's Den: FAIL, mentions "Dragon Soul".
+All three reverted. No new check was added; two rows changed verdict.
+
+**A quirk of the extractor, found while testing and worth knowing.** The first
+injection read `The ring of valor is here.` and the build failed on something
+else entirely: `Valor's Rest uses "Rest"`. The rule that throws away a word
+capitalised only at the start of a sentence asks whether that word is ever seen
+lower-cased *anywhere in the corpus*. Lower-casing "valor" in one entry
+therefore made "Valor's" look like an ordinary word in another, and the Silithus
+entry's own name was stripped down to "Rest". So a legitimate future edit that
+lower-cases a word which begins some other entry's name will fail the build
+naming the wrong entry. It is not a false pass, but it is a confusing failure.
+
+**The remaining 96 compositional rows are still their own pass.** Filtering them
+by "whole phrase absent from both the 1.12 text and the AreaTable" returns all
+of them, so that filter decides nothing. They are mostly legitimate possessive
+constructions our prose builds ("Thrall's Horde", "Forsaken Tirisfal") and
+pre-WoW names. `Wild God` and `Old Ironforge` looked like later coinages and are
+used only by `Data/Forever.lua`, which is judged against Forever's own sources
+and must not be flagged for it. `Champions' Hall` is one of our own entry names
+and is the 1.12 honor-system building. The pass needs a per-row judgement, not a
+filter.
+
+**Four that looked wrong and were not.** The Great Lift really is tauren-built.
+Menethil Harbor really is a dwarven-built port named for Terenas Menethil II,
+and the Dragonmaw really did besiege it under Nek'rosh. The Deadwind village
+really was murdered with no agreed culprit. Mazthoril really is a blue
+dragonflight holding, just not where we put it.
+
+**The gate took ten rows this run.** Ajeck Rouack, Barnil Stonepot, Bristlebacks,
+Chief Sharptusk Thornmantle, Hall of the Brave, Hunter's Hall, Lake Kel'Theril,
+Rite of Strength and Rites of the Earthmother were filed with their 1.12
+evidence. Sir S. J. Erlgadin was dropped from the prose instead: the initials
+break the run of capitalised words, so his name extracts as "Sir S" and
+"Erlgadin" and would have cost two junk rows. The ledger is 1,634 rows. Gates:
+the validator passes on all nine configs, `check-gaps.py` passes, and RHYTHM on
+the touched data files is unchanged at 0/11/8.
+
+**Entries covered so far (75).** Alterac Mountains, Andorhal, Angerfang
+Encampment, Apocryphan's Rest, Arathi Highlands, Auberdine, Azshara,
+Bashal'Aran, Beggar's Haunt, Blasted Lands, Bolgan's Hole, Brambleblade Ravine,
+Camp E'thok, Chillwind Camp, Dalson's Tears, Darkshire, Darkshore, Darnassus,
+Deadwind Pass, Deadwood Village, Dun Garok, Dun Modr, Durotar, Dustwallow Marsh,
+Eastern Plaguelands, Echo Ridge Mine, Feathermoon Stronghold, Felwood, Feralas,
+Forest Song, Frostmane Hold, Grim Batol, Hearthglen, Hillsbrad Foothills,
+Jerod's Landing, Loch Modan, Mardenholde Keep, Menethil Harbor, Moonbrook,
+Mulgore, Nesingwary's Expedition, Pyrewood Village, Raptor Grounds, Raven Hill,
+Refuge Pointe, Sandsorrow Watch, Shadowfang Keep, Shadra'Alor, Shok'Thokar,
+Silithus, Silverpine Forest, Southshore, Stonetalon Peak, Stonewrought Dam,
+Stranglethorn Vale, Talrendis Point, Tanaris, Tarren Mill, Teldrassil, Theramore
+Isle, Thousand Needles, Tirisfal Glades, Tyr's Hand, Un'Goro Crater, Uther's
+Tomb, Valley of Honor, Valley of Wisdom, Valormok, Wavestrider Beach, Western
+Plaguelands, Westfall, Wetlands, Windshear Crag, Winterspring, Yojamba Isle.
+
+Still open from run 2, fixed but never reviewed as entries of their own: Sardor
+Isle, Tower of Althalaxx. Emberstrife's Den was fixed this run and is in the
+same position.
 
 Next: P4, the next 25 by the same ranking.

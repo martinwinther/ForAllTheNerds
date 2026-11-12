@@ -277,9 +277,9 @@ SubsOf("Orgrimmar", {
 	},
 	{
 		name = "Valley of Honor", faction = "Horde",
-		hook = "The warriors' quarter, with the arena and the forges.",
+		hook = "The warriors' quarter, with the training halls and the forges.",
 		lore = {
-			"The Valley of Honor trains Orgrimmar's warriors and hunters, holds the city's forges, and contains the Ring of Valor where orcs settle things.",
+			"The Valley of Honor trains Orgrimmar's warriors and hunters out of the Hall of the Brave and the Hunter's Hall, and it holds the city's forges and anvils.",
 			"Honour in Thrall's Horde is a live concept rather than a slogan. It is the standard by which the new Horde distinguishes itself from the old one.",
 		},
 	},

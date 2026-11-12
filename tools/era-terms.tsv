@@ -20,6 +20,7 @@ Agol'watha	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Agriel Firebrew	forever	used only by Forever entries	Forever	cs
 Ahn'Qiraj	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Aiden Perenolde	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Ajeck Rouack	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Akir	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Al'Aketh	forever	used only by Forever entries	Forever	cs
 Al'Akir	history	Elemental Lord of air, banished by the titans; the other three Lords are named in 1.12 game text, he is not	warcraft.wiki.gg	cs
@@ -118,6 +119,7 @@ Ban'ethil Barrow Den	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bandarion Keep	forever	used only by Forever entries	Forever	cs
 Banshee Queen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Baradin Bay	vanilla	AreaTable row	wow_classic_era	cs
+Barnil Stonepot	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Baron Revilgaz	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Baron Rivendare	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Baron Silverlaine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -197,6 +199,7 @@ Brightwood	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Brill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristleback	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Bristlebacks	vanilla	plural of a 1.12 name (Bristleback)	cmangos 1.12.1	cs
 Broken Isles	out-of-era	Legion	tools/validate.lua, 1.2.5	ci
 Bronzebeard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bronzebeards	vanilla	plural of a 1.12 name (Bronzebeard)	cmangos 1.12.1	cs
@@ -243,6 +246,7 @@ Cenarius	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champions' Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Charred Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Chief Sharptusk Thornmantle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chill Breeze	vanilla	AreaTable row	wow_classic_era	cs
 Chillwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chillwind Camp	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -350,7 +354,7 @@ Defiler's Den	vanilla	AreaTable row	wow_classic_era	cs
 Defilers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Demon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Demon Fall Canyon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Demon Soul	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Demon Soul	history	Deathwing's artefact of the War of the Ancients, named the Demon Soul in the 2004 novel of that name; not named in 1.12 game text	warcraft.wiki.gg	cs
 Demont	vanilla	AreaTable row	wow_classic_era	cs
 Den	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Den of Flame	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -376,7 +380,7 @@ Draenor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Drag	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dragon Isles	out-of-era	Dragonflight	tools/validate.lua, 1.2.5	ci
 Dragon Queen	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
-Dragon Soul	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Dragon Soul	out-of-era	the name Cataclysm gives Deathwing's artefact. In the sources this addon covers it is the Demon Soul	warcraft.wiki.gg	ci
 Dragonmaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dragonmaw Gates	vanilla	AreaTable row	wow_classic_era	cs
 Dragonmurk	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -629,6 +633,7 @@ Haldarr	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hall of Explorers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hall of Legends	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Hall of the Brave	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hammerfall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hammertoe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -682,6 +687,7 @@ Horde's Splintertree Post	vanilla	every part named in 1.12 sources	cmangos 1.12.
 Hot	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Howling Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hunter Rise	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Hunter's Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hunter's Hill	out-of-era	Cataclysm, Southern Barrens	tools/validate.lua, 1.2.5	ci
 Hyjal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hypnos	fragment	Greek myth, cited for the origin of the name Oneiros	our prose	cs
@@ -778,6 +784,7 @@ Kurzen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lady of Theramore	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Lake Elune'ara	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lake Everstill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Lake Kel'Theril	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lake Mennar	vanilla	AreaTable row	wow_classic_era	cs
 Lake Nazferiti	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lakeshire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1078,8 +1085,10 @@ Rhapsody Shindigger	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rhonin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ridgepoint	vanilla	AreaTable row	wow_classic_era	cs
 Rimblat Earthshatter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Ring of Valor	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Ring of Valor	out-of-era	the Orgrimmar arena, added in Wrath of the Lich King (patch 3.0.2). The Valley of Honor trains out of the Hall of the Brave and the Hunter's Hall at 1.12	warcraft.wiki.gg	ci
 Riptide	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Rite of Strength	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Rites of the Earthmother	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Riverglades	forever	used only by Forever entries	Forever	cs
 Riverpaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rog'mar	forever	used only by Forever entries	Forever	cs

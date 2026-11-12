@@ -559,7 +559,7 @@ Zone{
 	hook = "A dwarven lake valley where the Explorers' League digs for proof of who made them.",
 	lore = {
 		"Loch Modan is the green valley east of Dun Morogh, built around a great lake held in place by the Stonewrought Dam. The dam is one of the finest pieces of dwarven engineering in the world and the zone's economy runs on it.",
-		"The real work here is archaeology. After Uldaman, Ironforge became convinced that the titans left records across these mountains, and the Explorers' League has dig sites all over the valley. Ironband's Excavation Site is the largest. The League's premise is that dwarves were made rather than born, and every artefact supporting it lands in Ironforge as a theological event.",
+		"The real work here is archaeology. After Uldaman, Ironforge became convinced that the titans left records across these mountains, and the Explorers' League dug in at Ironband's Excavation Site in the east. Prospector Ironband has troggs in his dig and is recruiting for Uldaman from it. The League's premise is that dwarves were made rather than born, and every artefact supporting it lands in Ironforge as a theological event.",
 		"The valley is not quiet. The Mo'grosh ogres hold the northeastern hills, troggs come up from below, and Dark Iron agents have taken an unhealthy interest in the dam.",
 	},
 	didYouKnow = "If the Stonewrought Dam ever failed, it would empty the loch into the Wetlands below. The dwarves consider this unthinkable. The Dark Irons consider it a plan.",
@@ -1383,7 +1383,7 @@ SubsOf("Stranglethorn Vale", {
 		hook = "A dwarf's hunting camp, dedicated to shooting the largest animals in the jungle.",
 		lore = {
 			"Hemet Nesingwary is a dwarven big-game hunter of some renown, and his Stranglethorn expedition is after the jungle's tigers, panthers and raptors.",
-			"He is not here for lore, conservation or the Alliance. He is here because the animals are big, and he has made a career of it across the world.",
+			"He is not here for lore, conservation or the Alliance. He is here because the animals are big. Ajeck Rouack and Barnil Stonepot hunt alongside him, and each of them wants a different trophy off the same jungle.",
 		},
 	},
 	{
@@ -2207,7 +2207,7 @@ Zone{
 	name = "Deadwind Pass", continent = EK, faction = "Contested", levels = "55-60",
 	hook = "An emptied canyon road under Karazhan, the tower of the Guardian who betrayed the world.",
 	lore = {
-		"Deadwind Pass is the canyon between Duskwood and the Swamp of Sorrows, and almost nothing lives in it. There was a village here once. There is not now, and the records on why are thin.",
+		"Deadwind Pass is the canyon between Duskwood and the Swamp of Sorrows, and hardly anyone passes through it. What population it has is ogres, who hold the canyon and are set on clearing out anyone else, with harpies in the gullies above them. There was a village in the south of the chasm once. Its people were killed, and the records on who did it are thin.",
 		"The reason to come here is Karazhan. The tower was the seat of Medivh, the last Guardian of Tirisfal, an order of mages charged with defending this world from the Burning Legion. Medivh was the most powerful mortal spellcaster alive and the Legion got to him before he was born: the spirit of the demon lord Sargeras had been bound into him in the womb.",
 		"Medivh opened the Dark Portal. He brought the orcish Horde to this world and let the First War happen, and he did it from this tower. His apprentice Khadgar and the knight Anduin Lothar eventually killed him here. The tower has been sealed and uninhabited since, and it has not stopped radiating whatever Medivh left in it.",
 	},
