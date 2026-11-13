@@ -758,6 +758,25 @@ Wetlands, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
 Still open, fixed in an earlier run but never reviewed as entries of their own:
 Sardor Isle, Tower of Althalaxx, Emberstrife's Den, Silverpine Forest.
 
+**Correction, same day, from Martin.** The Mor'Ladim fix above said he "lies at
+Forlorn Rowe", which replaced one wrong claim with another. He is a roaming elite
+and there is a quest to put him down, both of which the 1.12 text is explicit
+about: "Mor'Ladim wanders throughout Duskwood, following a strange and meandering
+path through the cemetery", he is "attacking Watchmen on patrol and killing
+people", "some of our strongest Watchers have been lost to Mor'Ladim", and the
+objective reads "Kill Mor'Ladim, then return his skull to Commander Althea
+Ebonlocke". Forlorn Rowe is where the Watch *buried* him, "out past the house on
+the hill", not where he is. The entry now says he walks the circuit and that the
+grave is empty.
+
+The lesson is narrower than it looks. It came from reading the wiki infobox's
+`location` field as a statement about where a creature stands, when for a roamer
+it names a spawn area or, here, a grave. Plain words in the 1.12 quest text had
+the answer, and that text was read for the backstory only. When an entry is about
+a creature rather than a place, read what the game says the creature *does*, not
+just who it was. One row filed for it, `Watchmen`, which is in the 1.12 line
+quoted above.
+
 Next: P4, the next 25 by the corrected ranking.
 
 ### 2026-11-13, P4, run 6 of about 33
@@ -774,7 +793,7 @@ specific and specifically wrong, which is easier to catch and worse to ship.
 | High Rise | The residential and trade mesa: dwellings, traders, craftspeople | That is the lower and middle rise. The High Rise is the top of the central mesa, and the 1.12 text is plain: Cairne Bloodhoof "dwells atop the highest mesa in Thunder Bluff", and a tauren finishing the Rites is sent up to him |
 | Shadowsong Shrine | Highborne-era work "in Azshara's interior", unremarkable | A ruin-covered hill in **western** Azshara, haunted by Highborne Apparitions and Highborne Lichlings that range over the ground around it, in those words, from the 1.12 quest for the place |
 | Northwatch Hold | "A Kul Tiras and Stormwind position" | Theramore and Kul Tiras. Stormwind is not in it, and the entry's own next sentence is about Theramore |
-| Raven Hill Cemetery | Mor'Ladim "was a father looking for his daughter before he died and has not entirely stopped" | Morgan Ladimore went to fight in Lordaeron, came home to a wasted county and no family to find, went mad, killed innocents, and took his own life when he understood. The body was raised afterwards. He lies at Forlorn Rowe |
+| Raven Hill Cemetery | Mor'Ladim "was a father looking for his daughter before he died and has not entirely stopped" | Morgan Ladimore went to fight in Lordaeron, came home to a wasted county and no family to find, went mad, killed innocents, and took his own life when he understood. The body was raised afterwards, and it walks: see the correction below |
 
 **A phantom entry that turned out not to be one.** `High Rise` is absent from
 the 1.12 game text and absent from the Classic Era AreaTable, where Thunder

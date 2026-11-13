@@ -764,7 +764,7 @@ SubsOf("Duskwood", {
 		hook = "Duskwood's largest graveyard, and the reason the Night Watch exists.",
 		lore = {
 			"Generations of the county's dead are buried here, and in Duskwood that is a liability rather than a memorial. The necromancer Morbent Fel took an interest in the place and the consequences are still walking.",
-			"Among them is Mor'Ladim, who lies at Forlorn Rowe. The Watch considers him the zone's most dangerous single resident, and Commander Althea Ebonlocke handles him personally.",
+			"Among them is Mor'Ladim, and he does not stay put. He walks a strange meandering circuit through the cemetery and out into the woods beyond it, attacking Watchmen on patrol and killing whoever else he meets. His grave is at Forlorn Rowe, out past the house on the hill, and he has not been in it for a long time. Commander Althea Ebonlocke has the job of dealing with him, and some of the Night Watch's strongest have been lost to him already.",
 		},
 		didYouKnow = "Mor'Ladim was Morgan Ladimore, a soldier of Grand Hamlet who went off to fight in Lordaeron and came home to a wasted county and no family left to find. He went mad, killed innocents, and when he understood what he had done he took his own life. The body did not stay down.",
 	},
