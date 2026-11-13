@@ -866,10 +866,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "The Shimmering Flats", parent = "Thousand Needles", faction = "Neutral",
-		hook = "A salt pan that was a sea before the world broke.",
+		hook = "A dried lake bed with a racetrack on it and a dig nobody got to keep.",
 		lore = {
-			"The Flats are the dried bed of a body of water that the Sundering drained. The salt crust goes down a long way and the sun off it is blinding.",
-			"The goblins race on it. The Explorers' League would rather dig in it, and there is an ongoing low-grade argument about who has the right.",
+			"The Flats are a dried lake bed. The wrecked sailing ship lying in the north is the evidence, and the salt crust goes down a long way with the sun off it blinding.",
+			"The goblins and gnomes race on it, because flat ground is what a rocket car wants. Dwarven archaeologists would rather dig, and they had the Rustmaul Dig Site in the south-west until a Horde raiding party under Moktar Krin came at them. In the end neither side held it: the dwarves dug into a silithid hive and everybody left.",
 		},
 	},
 	{
@@ -2888,8 +2888,8 @@ SubsOf("Ashenvale", {
 		hook = "The Ashenvale mouth of the tunnel through to Stonetalon.",
 		lore = {
 			"The Talondeep Path is a tunnel through the mountains joining Ashenvale to the Stonetalon Mountains. This end of it opens just west of Mystral Lake.",
-			"Inside there is nothing. No camps, nobody waiting, no creatures: a winding passage with dead ends and odd hollows in the walls and no inhabitants at all. In Kalimdor that is close to remarkable.",
-			"What it is for is moving between two zones without going round. Both sides of the Ashenvale war have obvious uses for a tunnel that nobody is watching.",
+			"The tunnel itself is empty: a winding passage with dead ends and odd hollows in the walls and nobody living in it. In Kalimdor that is close to remarkable.",
+			"The trouble is at this end. Mystral Lake has come alive, and its water elementals go for anything that gets near, and that means anyone on the path. Traffic between Ashenvale and Stonetalon is at a standstill because of it, and Splintertree Post is sending people out to put the lake down.",
 		},
 		readMore = { "Wowpedia: Talondeep Path", "Wowpedia: Ashenvale", "Wowpedia: Stonetalon Mountains" },
 	},
@@ -3086,7 +3086,7 @@ SubsOf("The Barrens", {
 		hook = "The lower half of the Barrens, past the dry riverbed that splits the zone.",
 		lore = {
 			"The Barrens runs a long way. A dried-up riverbed crosses it about halfway down and the ground south of that gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
-			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the Bristleback have fought the tauren across this country since before the Horde landed.",
+			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the crone Charlga Razorflank is mustering an army inside the Kraul. The tauren lived in the southern Barrens for decades and held the land holy before they were driven off it, and Thunder Bluff's elders want Razorflank dead rather than merely contained.",
 			"Northwatch Hold is the other difficulty: a human fort on the coast of what the Horde regards as its own continent, dug in and not leaving. The south Barrens is where the two factions actually touch.",
 		},
 		readMore = { "Wowpedia: Southern Barrens", "Wowpedia: Razorfen Kraul", "Wowpedia: Northwatch Hold" },

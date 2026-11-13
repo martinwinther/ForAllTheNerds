@@ -368,7 +368,7 @@ Zone{
 		"Its defining disaster is Shadowfang Keep. The archmage Arugal, sent by Dalaran to help hold the line against the Scourge, summoned worgen out of another world as weapons. They did not stay under control. They overran Pyrewood Village and the keep itself, Arugal lost his mind, and the curse has been spreading through the forest ever since.",
 		"The Forsaken now claim Silverpine and hold it loosely from the Sepulcher. They are contesting Dalaran's remaining mages at Ambermill, watching the Greymane Wall, and trying to work out what to do about a forest full of wolves that used to be people.",
 	},
-	didYouKnow = "Gilneas sealed itself behind the Greymane Wall rather than help fight the Second War. Nobody outside has heard anything reliable from behind it since.",
+	didYouKnow = "Gilneas fought the Second War and then walked out of the Alliance over what the peace cost, sealing itself behind the Greymane Wall. Nobody outside has heard anything reliable from behind it since.",
 	readMore = { "Wowpedia: Silverpine Forest", "Wowpedia: Shadowfang Keep" },
 }
 
@@ -411,7 +411,7 @@ SubsOf("Silverpine Forest", {
 		name = "The Greymane Wall", parent = "Silverpine Forest", faction = "Contested",
 		hook = "Gilneas' enormous wall, sealed from the inside, with nobody answering.",
 		lore = {
-			"King Genn Greymane had the wall built across the isthmus and withdrew Gilneas from the Alliance rather than commit to the Second War. It is a serious piece of engineering and it has held shut for years.",
+			"King Genn Greymane had the wall built across the isthmus and took Gilneas out of the Alliance of Lordaeron after the Second War was won. The quarrel was the bill: taxes raised in Gilneas were paying to feed orcs in the internment camps and to raise Nethergarde Keep, and the king did not see why they should. It is a serious piece of engineering and it has held shut for years.",
 			"What is going on behind it is a genuine unknown. The Forsaken have probed it, the worgen curse has spread near it, and nothing has come out.",
 		},
 	},
@@ -1788,13 +1788,13 @@ SubsOf("The Hinterlands", {
 
 Zone{
 	name = "Searing Gorge", continent = EK, faction = "Contested", levels = "43-50",
-	hook = "A strip-mined furnace of a valley, torn open when a Dark Iron emperor summoned a fire god.",
+	hook = "A strip-mined furnace of a valley, torn open when a Dark Iron thane reached for a fire god.",
 	lore = {
-		"The Searing Gorge and the Burning Steppes next door were made by a single catastrophe. Emperor Dagran Thaurissan of the Dark Iron dwarves, losing a war on two fronts, summoned Ragnaros the Firelord to fight for him. Ragnaros arrived, the summoning tore the mountain apart, and the blast created both zones and sank Thaurissan's capital into the molten depths as Blackrock Depths.",
+		"The Searing Gorge and the Burning Steppes next door were made by a single catastrophe. The Dark Iron thane Thaurissan, losing the War of the Three Hammers and his wife with it, reached for power enough to save his kingdom and brought up Ragnaros the Firelord instead. He did not mean to. The summoning tore the mountain apart, made both of these zones out of what had been part of the Redridge Mountains, and destroyed the Dark Irons' own capital, a city that carried his name.",
 		"The Dark Irons survived as Ragnaros' servants rather than his masters. They now work the Gorge for ore and metal under the Firelord's shadow, running the Cauldron and the Grimesilt digs. Nobody here outweighs them.",
 		"Not all of them accept it. The Thorium Brotherhood broke away from Ragnaros' service and set up at Thorium Point, where they trade with Alliance and Horde alike. They are the only Dark Iron faction anyone outside will deal with.",
 	},
-	didYouKnow = "Thaurissan's summoning is the single most destructive act of magic in dwarven history, and the Dark Irons have been paying for it ever since. His own wife, Moira Bronzebeard, is King Magni's daughter, and she is in Blackrock Depths.",
+	didYouKnow = "Thaurissan's summoning is the single most destructive act of magic in dwarven history, and the Dark Irons have been paying for it ever since. His line is still in charge: Emperor Dagran Thaurissan holds their seat inside Blackrock Mountain, and his wife Moira Bronzebeard is King Magni's own daughter.",
 	readMore = { "Wowpedia: Searing Gorge", "Wowpedia: Dark Iron clan", "Wowpedia: Ragnaros" },
 }
 
@@ -2487,13 +2487,13 @@ SubsOf("Arathi Highlands", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "Blackwater Cove", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A pirate anchorage on a coast where every other power has already failed.",
+		hook = "The water Booty Bay sits in, and the far end of the Ratchet crossing.",
 		lore = {
-			"The Blackwater Raiders work this coast, and Stranglethorn suits them: dense jungle, no government, and a neutral goblin port at Booty Bay buying whatever comes in without asking.",
-			"Piracy here is a symptom. Stranglethorn was Gurubashi troll empire, then it was Stormwind's southern frontier, and now it is neither. Nobody's writ runs in the jungle, so everybody's does.",
-			"The Raiders are not even the only pirates. The Bloodsail Buccaneers are also on this coast and the two outfits hate each other considerably more than either hates a traveller.",
+			"Blackwater Cove is the inlet at Stranglethorn's southern tip, and Booty Bay is built into the cliffs around it. The Blackwater Raiders are Baron Revilgaz's people and they run the port, so the cove carries their name rather than a pirate's.",
+			"The cove is where the Ratchet boat ties up. A crate handed to the wharfmaster in the Barrens comes ashore here, and so does anyone crossing between the continents on goblin business.",
+			"Pirates are on this coast, but they are not in the cove. The Bloodsail Buccaneers work the water further out, and the bay's bruisers are the reason they stay there.",
 		},
-		readMore = { "Wowpedia: Blackwater Raiders", "Wowpedia: Stranglethorn Vale" },
+		readMore = { "Wowpedia: Blackwater Cove", "Wowpedia: Booty Bay", "Wowpedia: Blackwater Raiders" },
 	},
 	{
 		name = "Ruins of Jubuwal", parent = "Stranglethorn Vale", faction = "Contested",
@@ -2688,7 +2688,7 @@ SubsOf("Swamp of Sorrows", {
 		hook = "A camp of refugees who came through the Dark Portal and kept their minds.",
 		lore = {
 			"The Harborage is in the northern marsh, and the people in it came from the other side of the Dark Portal. They call themselves the Lost Ones and they are not orcs.",
-			"Most of their kind in this swamp have gone feral, and the Swamp of Sorrows is full of them. The ones here did not. Magtoor leads those who stayed sane, they hold to the Holy Light, and they are trying to make something of a camp in a marsh nobody else wants.",
+			"Most of their kind in this swamp have gone feral, and the Swamp of Sorrows is full of them. The ones here did not. Magtoor leads those who stayed sane, and what keeps them that way is draenethyst: crystals sacred to them, which the feral ones stole away into the Fallow Sanctuary. Magtoor says plainly that without the crystals his people may lose their way too, and that he has not the force to go and take them back.",
 			"They are the other casualty of the First War. The orcs came through that portal as an army; these came through as refugees from the same ruined world, and nothing in the Alliance or the Horde has a place for them.",
 		},
 		readMore = { "Wowpedia: Harborage", "Wowpedia: Lost One", "Wowpedia: Dark Portal" },

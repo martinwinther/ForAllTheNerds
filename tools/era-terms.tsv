@@ -151,6 +151,7 @@ Blackrock Mountain	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackrock Pass	vanilla	AreaTable row	wow_classic_era	cs
 Blackrock Spire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackthorn Ridge	vanilla	AreaTable row	wow_classic_era	cs
+Blackwater Cove	vanilla	AreaTable row, and the Ratchet boat's destination in 1.12 game text	wow_classic_era	cs
 Blackwater Raiders	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackwing Lair	vanilla	AreaTable row	wow_classic_era	cs
 Blackwolf	vanilla	AreaTable row	wow_classic_era	cs
@@ -247,6 +248,7 @@ Cenarion Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cenarius	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champions' Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Charlga Razorflank	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Charred Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chief Sharptusk Thornmantle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chill Breeze	vanilla	AreaTable row	wow_classic_era	cs
@@ -483,6 +485,7 @@ Faldir's Cove	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falfarren	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falfarren River	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fallen Sky Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Fallow Sanctuary	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falstad Wildhammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fandral	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fandral Staghelm	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1067,6 +1070,7 @@ Razor Hill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen Downs	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen Kraul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Razorflank	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razormane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorwind Canyon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Reaches	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1120,6 +1124,7 @@ Ruins of Lordaeron	vanilla	AreaTable row	wow_classic_era	cs
 Ruins of Solarsal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ruins of Taurajo	out-of-era	Camp Taurajo is standing in 1.12 and is burned in Cataclysm	tools/validate.lua, 1.2.5	ci
 Ruins of Thaurissan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Rustmaul Dig Site	vanilla	AreaTable row (The Rustmaul Dig Site)	wow_classic_era	cs
 Rut'theran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rut'theran Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sacred	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

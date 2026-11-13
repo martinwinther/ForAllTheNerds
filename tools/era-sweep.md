@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 100 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 125 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 100 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 125 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -663,3 +663,99 @@ Still open, fixed in an earlier run but never reviewed as entries of their own:
 Sardor Isle, Tower of Althalaxx, Emberstrife's Den.
 
 Next: P4, the next 25 by the same ranking, with redirects resolved first.
+
+### 2026-11-13, P4, run 5 of about 34
+
+Fixed the ranking first, as run 4 asked. It was worse than run 4 thought, and it
+had been hiding 137 entries from every run so far. Then reviewed 25 entries and
+found seven bad claims.
+
+**The ranking bug, in full, because it cost four runs.** The scan passed
+`redirects=0` to the wiki API meaning "do not follow redirects". A MediaWiki API
+boolean is true whenever the parameter is **present**, whatever its value, so
+that switched redirect following *on*. The API then returns the target page keyed
+under the target's title, so looking the result up by the title we asked for
+found nothing and the entry scored `-1 MISSING`. **137 of our 913 vanilla entry
+names are redirects on the wiki**, so 137 entries sat at the bottom of the
+ranking and could never be selected. Removing the parameter is what turns
+following off, and then the API hands back the redirect page itself, which is the
+only way to tell "has its own Classic article" from "redirects to the retail
+one". The scan now omits the parameter and classifies by content:
+
+| | before | after |
+|---|---|---|
+| entries scoring above zero | 511 | 589 |
+| real `(Classic)` articles | 59 | 55 |
+| `(Classic)` titles that are only redirects | counted as articles, +3 each | 4, scoring nothing |
+| entry names that are redirects | 137, all scored MISSING | 137, scored on their target |
+
+Eight of this run's 25 were entries the old ranking could not reach. Among them
+were the Greymane Wall and the Harborage, which carried two of the seven errors.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Searing Gorge | Emperor Dagran Thaurissan summoned Ragnaros "to fight for him", and the blast sank his capital into the depths as Blackrock Depths | The thane Thaurissan did it by accident, reaching for power to save a kingdom he was losing, and it destroyed the capital rather than sinking it. Dagran is the emperor holding the seat inside the mountain now, and Moira is his wife, not the summoner's |
+| Blackwater Cove | A pirate anchorage worked by the Blackwater Raiders | It is the inlet Booty Bay is built around and the far end of the Ratchet boat. The Blackwater Raiders are Baron Revilgaz's people and run the port, as our own Booty Bay entry says |
+| The Greymane Wall | Genn Greymane withdrew Gilneas "rather than commit to the Second War" | Gilneas fought that war and left the Alliance after it, over taxes paying for the orc internment camps and Nethergarde Keep. The Silverpine Forest entry said the same thing and is fixed with it |
+| The Harborage | Magtoor's Lost Ones "hold to the Holy Light" | Unsupported for this period. What keeps them from going feral is draenethyst, crystals sacred to them that the feral ones stole into the Fallow Sanctuary, and Magtoor says he has not the force to take them back |
+| Southern Barrens | "The Bristleback have fought the tauren across this country" | The Bristleback are Mulgore's, at Brambleblade Ravine, as our own entry has said since run 4. The Kraul is Charlga Razorflank's, and the 1.12 text has the tauren driven off land they held holy |
+| The Shimmering Flats | A bed "the Sundering drained", with a "low-grade argument" over digging rights | A dried lake bed with a wrecked ship in it as the evidence, no Sundering in any source. The dwarves held the Rustmaul Dig Site until a Horde party under Moktar Krin came at them, and then everyone was driven out by a silithid hive |
+| The Talondeep Path | "A tunnel that nobody is watching", with nobody waiting | The tunnel is empty, but Mystral Lake at the Ashenvale end has come alive and its elementals attack anyone on the path. Traffic between the zones is at a standstill and Splintertree Post is sending people to deal with it |
+
+**Three of the seven contradicted our own data,** which is becoming the most
+reliable smell in this sweep: Blackwater Cove against Booty Bay, Southern Barrens
+against Brambleblade Ravine, and Searing Gorge against the Burning Steppes fix
+made last run. A pass that only looks for entries disagreeing with each other is
+still worth a run of its own, and it would now have three more hits to its name.
+
+**Five rows filed:** Blackwater Cove, Charlga Razorflank, Fallow Sanctuary,
+Razorflank and Rustmaul Dig Site. Two terms the rewrites wanted are in no 1.12
+source at all, `Gilnean` and a bare `Greymane`, so those sentences were reworded
+instead of given rows. Note that an entry's own name is exempt only from being
+read as the entry's title: Blackwater Cove's prose naming Blackwater Cove still
+needed the row. The filing script asserts no term is already present, so a row
+cannot be silently dropped the way `Ring of Valor` was in run 3. The ledger is
+1,648 rows.
+
+**One warning worth recording.** The rewrites pushed `, which` to 108 uses
+against a budget of 12 per 10,000 words and the validator called it a tic. Four
+of the new sentences were reworded to get back under. The prose budgets are doing
+real work on this sweep's output, because a corrected sentence tends to want a
+subordinate clause to carry the correction.
+
+No check was added and no row changed verdict, so nothing needed breaking
+deliberately. Gates: the validator passes on all nine configs, `check-gaps.py`
+passes, and RHYTHM on the two touched data files is unchanged at 11/8.
+
+**Entries covered so far (125).**
+Alterac Mountains, Andorhal, Angerfang Encampment, Apocryphan's Rest, Arathi
+Highlands, Ashenvale, Auberdine, Azshara, Badlands, Bashal'Aran, Beggar's
+Haunt, Blackfathom Deeps, Blackwater Cove, Blackwing Lair, Blasted Lands,
+Bloodvenom Post, Bolgan's Hole, Booty Bay, Brackwell Pumpkin Patch,
+Brambleblade Ravine, Bramblescar, Brewnall Village, Brill, Burning Steppes,
+Caer Darrow, Camp E'thok, Camp Taurajo, Camp Wurg, Cathedral Square, Chillwind
+Camp, Cleft of Shadow, Crown Guard Tower, Dalson's Tears, Dandred's Fold,
+Darkshire, Darkshore, Darnassus, Deadwind Pass, Deadwood Village, Desolace,
+Dun Garok, Dun Modr, Durotar, Duskwood, Dustwallow Marsh, Eastern Plaguelands,
+Echo Ridge Mine, Elwynn Forest, Feathermoon Stronghold, Felwood, Feralas,
+Forest Song, Frostmane Hold, Gallows' End Tavern, Grim Batol, Haldarr
+Encampment, Hall of Legends, Hammerfall, Hearthglen, Hillsbrad Foothills, Iris
+Lake, Jerod's Landing, Jintha'Alor, Kodo Rock, Loch Modan, Lordamere
+Internment Camp, Mardenholde Keep, Menethil Harbor, Mirage Raceway, Moonbrook,
+Mulgore, Nesingwary's Expedition, Purgation Isle, Pyrewood Village, Raptor
+Grounds, Raven Hill, Redridge Mountains, Refuge Pointe, Ruins of Andorhal,
+Sandsorrow Watch, Scarlet Monastery, Searing Gorge, Shadowfang Keep,
+Shadra'Alor, Shok'Thokar, Silithus, Silverpine Forest, Southern Barrens,
+Southshore, Stonetalon Mountains, Stonetalon Peak, Stonewrought Dam,
+Stranglethorn Vale, Sun Rock Retreat, Swamp of Sorrows, Talrendis Point,
+Tanaris, Tarren Mill, Teldrassil, The Forgotten Pools, The Greymane Wall, The
+Harborage, The Park, The Shimmering Flats, The Talondeep Path, The Weathered
+Nook, Theramore Isle, Thousand Needles, Tiragarde Keep, Tirisfal Glades, Tyr's
+Hand, Un'Goro Crater, Uther's Tomb, Valley of Fangs, Valley of Honor, Valley
+of Wisdom, Valormok, Wavestrider Beach, Western Plaguelands, Westfall,
+Wetlands, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
+
+Still open, fixed in an earlier run but never reviewed as entries of their own:
+Sardor Isle, Tower of Althalaxx, Emberstrife's Den, Silverpine Forest.
+
+Next: P4, the next 25 by the corrected ranking.
