@@ -2289,8 +2289,8 @@ SubsOf("Mulgore", {
 		name = "Kodo Rock", parent = "Mulgore", faction = "Horde",
 		hook = "A stone near Camp Narache that tauren shaman are sent to find.",
 		lore = {
-			"Kodo Rock is a natural monument out between Camp Narache and the Brambleblade Ravine, and it is easy to walk past: it only shows itself from close up.",
-			"It is a shaman shrine, and young tauren shaman are sent out to find it. What they do here is drink the Earth Sapta, a brew only a few of their kind know how to make, and it has to be taken in a holy place and nowhere else.",
+			"Kodo Rock is a natural monument out east of Camp Narache, past the Brambleblade Ravine, and it is a shaman shrine.",
+			"What young tauren shaman come here to do is drink the Earth Sapta, a brew only a few of their kind know how to make. It has to be taken in a holy place and nowhere else, which is why they are sent out to find this one.",
 			"Shamanism among the tauren is not scholarship but a relationship with the land and the elements. Drinking the sapta binds the shaman's spirit to the element it was made for, and for the earth that means the mountains for strength and the plains for patience. Standing before the earth humbly is the whole of what is asked.",
 		},
 		readMore = { "Wowpedia: Kodo Rock", "Wowpedia: Camp Narache", "Wowpedia: Shaman" },
