@@ -1,5 +1,168 @@
 # Changelog
 
+## 1.2.8
+
+More of the vanilla-era sweep. The fixes in 1.2.6 and 1.2.7 were mostly places
+described as they are in a later expansion. These are mostly different: entries
+that named the wrong people, the wrong creatures or the wrong ground, and a
+number of sentences that read like lore and turned out to have no source at all.
+
+**Fixed**
+
+- Purgation Isle was a private site of the Scarlet Crusade. There is no Scarlet
+  Crusade on the island. It is a cemetery island of condemned dead who all served
+  the Light, paladins, clerics, monks and mages, and an ogre necromancer named
+  Kormok made use of them.
+- The Mirage Raceway was run by two rival goblin outfits. It was built by the
+  goblin Pozzik and the gnome Fizzle Brassbolts out of an argument about whose
+  people build the better machine, and they keep a camp each at opposite ends of
+  the track. Weazel's Crater beside it said the same wrong thing and is fixed too.
+- Camp Wurg had Boss Tho'grun patrolling between the four Badlands ogre camps. The
+  orcs at Kargath hired him to fetch the Sign of the Earth and he kept it instead,
+  and his band wanders rather than holding ground. Camp Boff counted only three of
+  the four camps and now counts four.
+- Hammerfall said the Doomhammer had belonged to Durotan's clan. Orgrim was
+  Blackrock clan and had the hammer from his own father, and it passed to Thrall
+  with the title of Warchief and Orgrim's black armour.
+- The Burning Steppes had the Dark Iron capital sinking into the mountain to become
+  Blackrock Depths. Thaurissan was a colony on the surface and the thane's
+  summoning destroyed it. The Searing Gorge told the same story and also credited
+  the summoning to Emperor Dagran Thaurissan, who is the emperor holding the Dark
+  Irons' seat now, not the thane who called up Ragnaros a long time before him.
+- Kodo Rock had an invented lesson about finding a stone. It is a shaman shrine,
+  and what young tauren come here to do is drink the Earth Sapta, which has to be
+  taken in a holy place and nowhere else.
+- Duskwood called the zone Grand Hamlet's county. Grand Hamlet is the old name of
+  Darkshire, as the same entry says further down.
+- Blackwater Cove was a pirate anchorage. It is the inlet Booty Bay is built
+  around and the far end of the Ratchet crossing, and the Blackwater Raiders are
+  Baron Revilgaz's people who run the port.
+- The Greymane Wall had Gilneas refusing to fight the Second War. Gilneas fought
+  it and then left the Alliance over the bill for the orc internment camps and
+  Nethergarde Keep. The Silverpine Forest entry said the same thing and is fixed
+  with it.
+- The Harborage had Magtoor's Lost Ones holding to the Holy Light. What keeps them
+  from going feral is draenethyst, crystals sacred to them that the feral ones
+  stole away into the Fallow Sanctuary.
+- The Southern Barrens now names the crone Charlga Razorflank mustering an army
+  inside Razorfen Kraul, and the Bristleback holding Agama'gor off the road west
+  of Camp Taurajo. It also records that the tauren lived in the southern Barrens
+  for decades and held the land holy before they were driven off it.
+- The Shimmering Flats were drained by the Sundering and had a low-grade argument
+  about digging rights. It is a dried lake bed with a wrecked ship still lying in
+  it, and the dwarves held the Rustmaul Dig Site until a Horde raiding party under
+  Moktar Krin came at them and a silithid hive drove both sides off.
+- The Talondeep Path was a tunnel nobody was watching. The tunnel is empty, but
+  Mystral Lake at the Ashenvale end has come alive and traffic between the two
+  zones is at a standstill because of it.
+- Hiri'watha was Vilebranch ground. It is Witherbark, one of their smaller
+  villages alongside Zun'watha, and the Hinterlands entry no longer gives all the
+  zone's trolls to the Vilebranch either.
+- The Ruins of Mathystra were held by furbolgs. The Stormscale naga have them,
+  with highborne relics scattered through the ruins and ghost sabers on the site.
+- The Isle of Dread had the gorillas and great cats of the mainland jungle. What
+  is on it is chimaerok, and their meat is the best food anyone can cook.
+- High Rise was Thunder Bluff's residential and trade mesa. That is the lower and
+  middle rise. The High Rise is the top of the central mesa, where Cairne
+  Bloodhoof lives and where a tauren who finishes the Rites of the Earthmother is
+  sent.
+- Shadowsong Shrine was unremarkable ruins in Azshara's interior. It is a
+  ruin-covered hill in the west of the zone, and the Highborne Apparitions and
+  Highborne Lichlings on it range over the ground around it.
+- Northwatch Hold was a Kul Tiras and Stormwind position. It is Theramore and Kul
+  Tiras, and the Horde's complaint about it is that the guns are hitting anything
+  in range.
+- Mor'Ladim at Raven Hill Cemetery was a father looking for his daughter. Morgan
+  Ladimore came home from Lordaeron to a wasted county and no family left to find,
+  went mad, and took his own life. The body was raised afterwards and it walks: he
+  keeps a meandering circuit through the cemetery, attacks Watchmen on patrol, and
+  the Night Watch has lost strong people to him. His grave at Forlorn Rowe is
+  empty.
+- The Decrepit Ferry had nothing afloat and worgen on Fenris Isle. The boat is
+  there and it is heaped with wrapped corpses, the Scourge hold the shore, and the
+  Rot Hide are mixed up in it.
+- Addle's Stead was a farm in Duskwood's eastern woods full of former farmhands.
+  It is in the south-west of the zone, and what walks there are Forlorn Spirits
+  the Night Watch takes for Defias dead.
+- The Temple of Arkkoran was dedicated to a sea creature the naga revere. It was
+  built as a temple of Elune, and what sits at the top of it now is the sea giant
+  Arkkoroc, with murlocs and makrura guarding the way up.
+- Hetaera's Clutch had hydras that were only Hetaera's children. Hetaera roams it
+  herself, three-headed, and Arkkoroc up at the temple calls her a false god who
+  claims to rule the oceans.
+- Brill Town Hall called the Defiler's Den the Forsaken's only other town hall.
+  The Defiler's Den is in Arathi Basin and is named for the Horde side there.
+- The Field of Giants explained its bones with the age before the Sundering, which
+  no source offers. What lives on the field now is silithid, raising mounds and
+  laying eggs, and the Horde at the Crossroads has taken an interest in how
+  intelligent they seem.
+- Blackthorn Ridge left its quilboar unnamed. They are Razormane, the ridge sits a
+  short way north of Razorfen Kraul, and the orc shaman Brine is camped on it above
+  a pool of unusually clean water.
+- The Gates of Ahn'Qiraj had Fandral Staghelm refusing the Scepter of the Shifting
+  Sands. Anachronos put it in his hands. He took it, and then he broke it.
+- Loch Modan gave the Explorers' League dig sites all over the valley. There is
+  one, Ironband's Excavation Site in the east, with troggs in it.
+- Deadwind Pass said almost nothing lives in it. Ogres hold the canyon and mean to
+  clear out everyone else, with harpies in the gullies above them.
+- Nesingwary's Expedition had Hemet hunting across the world. Stranglethorn is the
+  only camp he has in this period, and Ajeck Rouack and Barnil Stonepot hunt with
+  him.
+- Winterspring put Mazthoril beneath Frostsaber Rock. Mazthoril is the deep icy
+  cavern in the middle of the zone, near Lake Kel'Theril, and Frostsaber Rock is
+  out west where the frostsaber pride is.
+- The Valley of Honor held the Ring of Valor. That arena belongs to a later
+  expansion. The quarter trains Orgrimmar's warriors and hunters out of the Hall
+  of the Brave and the Hunter's Hall.
+- Emberstrife's Den called Deathwing's artefact the Dragon Soul. Here it is the
+  Demon Soul, which this addon's Wetlands entry already called it.
+- Brambleblade Ravine was a warren in the southern hills. It is east of Camp
+  Narache in Mulgore, under Chief Sharptusk Thornmantle, and it is where young
+  tauren are sent for the Rite of Strength.
+- Teldrassil had Malfurion Stormrage opposing the planting of the tree. He was
+  missing, which is why Fandral Staghelm could do it. Nozdormu refused his
+  blessing and chided Staghelm for his arrogance, and Alexstrasza refused with
+  him. The tree was also described as decades old when it was grown after the
+  Third War.
+- Feathermoon Stronghold was built on Sardor Isle. The stronghold has its own
+  island, and Sardor Isle lies further out with Hatecrest naga on it. The Sardor
+  Isle entry claimed the stronghold in return and now describes the naga.
+- Marshal's Refuge in Un'Goro Crater was a joint expedition of dwarves and gnomes.
+  It is a mixed camp under Williden Marshal, who is human.
+- Mulgore said the tauren's druids were trained by Cenarius himself. Tauren
+  druidism is recent, and the night elves of the Cenarion Circle still call them
+  young in the ways of Cenarius.
+- Tirisfal Glades gave the region's name a meaning no source in this period
+  supports. What is sourced, and what the entry now says, is that the Guardians of
+  Tirisfal took their name from the place their founders met in.
+- Stromgarde's surviving garrison answered to "Commander Trollbane's heirs". No
+  such rank exists. Thoras Trollbane is dead and his son Prince Galen Trollbane
+  holds a few districts of the city.
+- Shadowfang Keep had Baron Silverlaine offering his castle to the Dalaran mages.
+  Arugal was sent to hold Silverpine, his worgen turned on the wizards, and they
+  besieged the keep.
+- The Wetlands had Khardros Wildhammer killing Modgud for the curse she laid on
+  Grim Batol. She laid it as she died, after he struck her down.
+- Tanaris counted three titan installations while naming two. Uldum and Uldaman
+  are the two this period knows about.
+- Western Plaguelands repeated the four-cornered battle at Andorhal that 1.2.7
+  fixed in the Andorhal entry. The Scourge hold the town under Araj the Summoner.
+- Darkshore and the Tower of Althalaxx called the tower the Shadow Council's. The
+  warlocks in it are the Cult of the Dark Strand under Athrikus Narassin, and a
+  journal taken off them is what ties the cult to the Council.
+
+**Changed**
+
+- Several pairs of entries that quietly contradicted each other have been
+  reconciled: Blackwater Cove against Booty Bay, Camp Boff against Camp Wurg,
+  Hiri'watha against the Hinterlands, the Rustmaul Dig Site against the Shimmering
+  Flats, the Searing Gorge against the Burning Steppes, and Western Plaguelands
+  against Andorhal. Where two entries disagreed, one of them was wrong, and that
+  turned out to be the most reliable way to find these.
+- The Temple of Arkkoran and Hetaera's Clutch are now written as the pair they
+  are. Arkkoroc sits at the top of the temple and wants the heads of the hydra
+  that roams the clutch, and neither entry used to know about the other.
+
 ## 1.2.7
 
 The vanilla-era sweep continued. Every fix below is the same mistake: a place
