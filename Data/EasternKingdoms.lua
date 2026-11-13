@@ -368,7 +368,7 @@ Zone{
 		"Its defining disaster is Shadowfang Keep. The archmage Arugal, sent by Dalaran to help hold the line against the Scourge, summoned worgen out of another world as weapons. They did not stay under control. They overran Pyrewood Village and the keep itself, Arugal lost his mind, and the curse has been spreading through the forest ever since.",
 		"The Forsaken now claim Silverpine and hold it loosely from the Sepulcher. They are contesting Dalaran's remaining mages at Ambermill, watching the Greymane Wall, and trying to work out what to do about a forest full of wolves that used to be people.",
 	},
-	didYouKnow = "Gilneas sealed itself behind the Greymane Wall rather than help fight the Second War. Nobody outside has heard anything reliable from behind it since.",
+	didYouKnow = "Gilneas fought the Second War and then walked out of the Alliance over what the peace cost, sealing itself behind the Greymane Wall. Nobody outside has heard anything reliable from behind it since.",
 	readMore = { "Wowpedia: Silverpine Forest", "Wowpedia: Shadowfang Keep" },
 }
 
@@ -411,7 +411,7 @@ SubsOf("Silverpine Forest", {
 		name = "The Greymane Wall", parent = "Silverpine Forest", faction = "Contested",
 		hook = "Gilneas' enormous wall, sealed from the inside, with nobody answering.",
 		lore = {
-			"King Genn Greymane had the wall built across the isthmus and withdrew Gilneas from the Alliance rather than commit to the Second War. It is a serious piece of engineering and it has held shut for years.",
+			"King Genn Greymane had the wall built across the isthmus and took Gilneas out of the Alliance of Lordaeron after the Second War was won. The quarrel was the bill: taxes raised in Gilneas were paying to feed orcs in the internment camps and to raise Nethergarde Keep, and the king did not see why they should. It is a serious piece of engineering and it has held shut for years.",
 			"What is going on behind it is a genuine unknown. The Forsaken have probed it, the worgen curse has spread near it, and nothing has come out.",
 		},
 	},
@@ -732,7 +732,7 @@ Zone{
 	name = "Duskwood", continent = EK, faction = "Alliance", levels = "18-30",
 	hook = "A forest where the sun stopped rising, and the people who stayed formed a Night Watch.",
 	lore = {
-		"Duskwood was called Grand Hamlet's county and it was ordinary human farmland and woodland south of Elwynn. It is now permanently dark, wrapped in a mist that does not lift, and the trees have gone wrong.",
+		"Duskwood was ordinary human farmland and woodland south of Elwynn, worked out of a town called Grand Hamlet. It is now permanently dark, wrapped in a mist that does not lift, and the trees have gone wrong.",
 		"There is no single agreed cause. Necromancy practised in the region, the Scythe of Elune's passage through these woods, and the corruption bleeding out of Twilight Grove have all been blamed, and they may all be true at once. Whatever started it, the dead do not stay buried in Duskwood and the living have adapted.",
 		"The adaptation is the Night Watch. Darkshire, which used to be Grand Hamlet, is defended by a volunteer watch that patrols the roads with lanterns and treats every grave as a problem waiting to happen. They are underfunded, overworked, and the only reason anyone still lives here.",
 	},
@@ -764,9 +764,9 @@ SubsOf("Duskwood", {
 		hook = "Duskwood's largest graveyard, and the reason the Night Watch exists.",
 		lore = {
 			"Generations of the county's dead are buried here, and in Duskwood that is a liability rather than a memorial. The necromancer Morbent Fel took an interest in the place and the consequences are still walking.",
-			"Among them is Mor'Ladim, who was a father looking for his daughter before he died and has not entirely stopped. The Watch considers him the zone's most dangerous single resident.",
+			"Among them is Mor'Ladim, and he does not stay put. He walks a strange meandering circuit through the cemetery and out into the woods beyond it, attacking Watchmen on patrol and killing whoever else he meets. His grave is at Forlorn Rowe, out past the house on the hill, and he has not been in it for a long time. Commander Althea Ebonlocke has the job of dealing with him, and some of the Night Watch's strongest have been lost to him already.",
 		},
-		didYouKnow = "Mor'Ladim had a family in Darkshire before he died, which the Night Watch considers the worst thing about him. He kills anyone he meets now, and some of the watch knew him.",
+		didYouKnow = "Mor'Ladim was Morgan Ladimore, a soldier of Grand Hamlet who went off to fight in Lordaeron and came home to a wasted county and no family left to find. He went mad, killed innocents, and when he understood what he had done he took his own life. The body did not stay down.",
 	},
 	{
 		name = "Twilight Grove", parent = "Duskwood", faction = "Hostile",
@@ -795,10 +795,10 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Addle's Stead", parent = "Duskwood", faction = "Hostile",
-		hook = "A burned-out farm in the eastern woods, now a nest of things that used to be farmhands.",
+		hook = "An abandoned farm in the south-west, haunted by the men who used it last.",
 		lore = {
-			"Addle's Stead is one of several outlying farms the county lost. The buildings burned and what is there now is not farming.",
-			"The Night Watch has written it off, as they do with anything more than a patrol's reach from the road.",
+			"Addle's Stead sits in south-western Duskwood, south of Raven Hill and west of the Vul'Gol Ogre Mound, just off the road in from Westfall. It is one of several outlying farms the county lost when the dark came down.",
+			"What walks there now are Forlorn Spirits, and the Night Watch takes them for Defias dead. The Brotherhood used the empty farm for its own business, and agents of theirs gathering at it is the last thing anybody reports happening here.",
 		},
 	},
 	{
@@ -1034,10 +1034,11 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Purgation Isle", parent = "Hillsbrad Foothills", faction = "Hostile",
-		hook = "An island off the coast where the Scarlet Crusade does things it will not do on the mainland.",
+		hook = "An island of condemned dead, and every one of them served the Light.",
 		lore = {
-			"Purgation Isle is a small island in the bay south of Southshore, and the Scarlet Crusade has made it a private site. The name is not metaphorical.",
-			"What goes on there is some distance past what the Church of the Holy Light would sanction. That gap is what defines the Scarlet Crusade.",
+			"Purgation Isle is a small spiral island off the south coast of the Hillsbrad Foothills, with a cemetery and a ruined scout tower on it. Nobody living holds it.",
+			"What is on it is the dead: condemned paladins, clerics, monks and mages, human and dwarf, none of them at peace. Who condemned them, and what for, is not recorded. The name is not metaphorical.",
+			"An ogre necromancer named Kormok made use of them, and by the accounts he enjoyed it. Raising the banished dead of a place like this is the sort of work that gets an ogre remembered.",
 		},
 	},
 	{
@@ -1232,7 +1233,7 @@ SubsOf("Arathi Highlands", {
 			"Hammerfall is named for Orgrim Doomhammer, who died here. This was an internment camp, and Doomhammer was killed during its liberation, run down by a charging knight while Thrall's diversion covered the orcs' withdrawal. Doomhammer had led the Horde through the whole of the Second War after killing Blackhand for the warchief's title.",
 			"The settlement is a Horde statement: this ground is theirs now, in the birthplace of human civilisation, and the Alliance can do nothing about it.",
 		},
-		didYouKnow = "Doomhammer's weapon, the Doomhammer itself, passed to Thrall. It had belonged to his father Durotan's clan before that.",
+		didYouKnow = "Doomhammer gave Thrall the title of Warchief with his last breath, and his black armour and the Doomhammer itself with it. The hammer is his own family's, not the Frostwolves': Orgrim was Blackrock clan, and he inherited it from his father.",
 	},
 	{
 		name = "Boulderfist Hall", parent = "Arathi Highlands", faction = "Hostile",
@@ -1673,7 +1674,7 @@ Zone{
 	hook = "Wildhammer gryphon country, pressed up against a troll holy city that was old when Arathor was young.",
 	lore = {
 		"The Hinterlands are high forest in the northeast, and the Wildhammer dwarves hold them from Aerie Peak. The Wildhammers split from Ironforge in the War of the Three Hammers, went their own way, and became the Alliance's gryphon-riders. They are shamanistic, independent, and have no interest in Bronzebeard politics.",
-		"Their neighbours are the Vilebranch forest trolls, and the trolls were here first by a very long margin. Jintha'Alor on the eastern slopes is an ancient Amani city and a holy site, dedicated among other things to Shadra the spider loa. The Vilebranch are not a tribe of raiders squatting in ruins; they are living in their own city.",
+		"Their neighbours are forest trolls, and the trolls were here first by a very long margin. The Vilebranch hold the east and south out of Jintha'Alor, and the Witherbark keep smaller villages of their own further in. Jintha'Alor on the eastern slopes is an ancient Amani city and a holy site, dedicated among other things to Shadra the spider loa. The Vilebranch are not a tribe of raiders squatting in ruins; they are living in their own city.",
 		"The zone also holds Seradane, one of the green dragonflight's Emerald Dream portals, and Quel'Danil Lodge, where high elves who still speak to the Alliance maintain a presence. For a quiet-looking forest it is unusually crowded with ancient business.",
 	},
 	didYouKnow = "The Wildhammers tamed gryphons, which the Bronzebeards never managed. Every gryphon in Alliance service traces back to Aerie Peak.",
@@ -1787,13 +1788,13 @@ SubsOf("The Hinterlands", {
 
 Zone{
 	name = "Searing Gorge", continent = EK, faction = "Contested", levels = "43-50",
-	hook = "A strip-mined furnace of a valley, torn open when a Dark Iron emperor summoned a fire god.",
+	hook = "A strip-mined furnace of a valley, torn open when a Dark Iron thane reached for a fire god.",
 	lore = {
-		"The Searing Gorge and the Burning Steppes next door were made by a single catastrophe. Emperor Dagran Thaurissan of the Dark Iron dwarves, losing a war on two fronts, summoned Ragnaros the Firelord to fight for him. Ragnaros arrived, the summoning tore the mountain apart, and the blast created both zones and sank Thaurissan's capital into the molten depths as Blackrock Depths.",
+		"The Searing Gorge and the Burning Steppes next door were made by a single catastrophe. The Dark Iron thane Thaurissan, losing the War of the Three Hammers and his wife with it, reached for power enough to save his kingdom and brought up Ragnaros the Firelord instead. He did not mean to. The summoning tore the mountain apart, made both of these zones out of what had been part of the Redridge Mountains, and destroyed the Dark Irons' own capital, a city that carried his name.",
 		"The Dark Irons survived as Ragnaros' servants rather than his masters. They now work the Gorge for ore and metal under the Firelord's shadow, running the Cauldron and the Grimesilt digs. Nobody here outweighs them.",
 		"Not all of them accept it. The Thorium Brotherhood broke away from Ragnaros' service and set up at Thorium Point, where they trade with Alliance and Horde alike. They are the only Dark Iron faction anyone outside will deal with.",
 	},
-	didYouKnow = "Thaurissan's summoning is the single most destructive act of magic in dwarven history, and the Dark Irons have been paying for it ever since. His own wife, Moira Bronzebeard, is King Magni's daughter, and she is in Blackrock Depths.",
+	didYouKnow = "Thaurissan's summoning is the single most destructive act of magic in dwarven history, and the Dark Irons have been paying for it ever since. His line is still in charge: Emperor Dagran Thaurissan holds their seat inside Blackrock Mountain, and his wife Moira Bronzebeard is King Magni's own daughter.",
 	readMore = { "Wowpedia: Searing Gorge", "Wowpedia: Dark Iron clan", "Wowpedia: Ragnaros" },
 }
 
@@ -1876,7 +1877,7 @@ Zone{
 		"The mountain is the most dangerous address in the world. Blackrock Spire above holds the Dark Horde, orcs under Rend Blackhand who never accepted the Second War's end and still call themselves the true Horde. Blackrock Depths below holds the Dark Iron dwarves and, at the bottom, Ragnaros himself.",
 		"Above both sits Nefarian, son of Deathwing. He has taken the upper Spire, and he has spent years running experiments on dragonflight blood and manipulating the orcs below him as a workforce. The Dark Horde believe they serve Rend. Rend serves Nefarian, whether he admits it or not.",
 	},
-	didYouKnow = "The Ruins of Thaurissan on the Steppes are what is left of the Dark Iron capital's surface. The rest of the city sank into the mountain and became Blackrock Depths, with Thaurissan's heirs still living in it.",
+	didYouKnow = "The Ruins of Thaurissan on the Steppes are the colony the Dark Irons founded here after their exile, named for the thane who then destroyed it by summoning Ragnaros. They kept their seat inside the mountain instead, and Emperor Dagran Thaurissan holds it.",
 	readMore = { "Wowpedia: Burning Steppes", "Wowpedia: Blackrock Mountain", "Wowpedia: Nefarian" },
 }
 
@@ -2486,13 +2487,13 @@ SubsOf("Arathi Highlands", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "Blackwater Cove", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A pirate anchorage on a coast where every other power has already failed.",
+		hook = "The water Booty Bay sits in, and the far end of the Ratchet crossing.",
 		lore = {
-			"The Blackwater Raiders work this coast, and Stranglethorn suits them: dense jungle, no government, and a neutral goblin port at Booty Bay buying whatever comes in without asking.",
-			"Piracy here is a symptom. Stranglethorn was Gurubashi troll empire, then it was Stormwind's southern frontier, and now it is neither. Nobody's writ runs in the jungle, so everybody's does.",
-			"The Raiders are not even the only pirates. The Bloodsail Buccaneers are also on this coast and the two outfits hate each other considerably more than either hates a traveller.",
+			"Blackwater Cove is the inlet at Stranglethorn's southern tip, and Booty Bay is built into the cliffs around it. The Blackwater Raiders are Baron Revilgaz's people and they run the port, so the cove carries their name rather than a pirate's.",
+			"The cove is where the Ratchet boat ties up. A crate handed to the wharfmaster in the Barrens comes ashore here, and so does anyone crossing between the continents on goblin business.",
+			"Pirates are on this coast, but they are not in the cove. The Bloodsail Buccaneers work the water further out, and the bay's bruisers are the reason they stay there.",
 		},
-		readMore = { "Wowpedia: Blackwater Raiders", "Wowpedia: Stranglethorn Vale" },
+		readMore = { "Wowpedia: Blackwater Cove", "Wowpedia: Booty Bay", "Wowpedia: Blackwater Raiders" },
 	},
 	{
 		name = "Ruins of Jubuwal", parent = "Stranglethorn Vale", faction = "Contested",
@@ -2687,7 +2688,7 @@ SubsOf("Swamp of Sorrows", {
 		hook = "A camp of refugees who came through the Dark Portal and kept their minds.",
 		lore = {
 			"The Harborage is in the northern marsh, and the people in it came from the other side of the Dark Portal. They call themselves the Lost Ones and they are not orcs.",
-			"Most of their kind in this swamp have gone feral, and the Swamp of Sorrows is full of them. The ones here did not. Magtoor leads those who stayed sane, they hold to the Holy Light, and they are trying to make something of a camp in a marsh nobody else wants.",
+			"Most of their kind in this swamp have gone feral, and the Swamp of Sorrows is full of them. The ones here did not. Magtoor leads those who stayed sane, and what keeps them that way is draenethyst: crystals sacred to them, which the feral ones stole away into the Fallow Sanctuary. Magtoor says plainly that without the crystals his people may lose their way too, and that he has not the force to go and take them back.",
 			"They are the other casualty of the First War. The orcs came through that portal as an army; these came through as refugees from the same ruined world, and nothing in the Alliance or the Horde has a place for them.",
 		},
 		readMore = { "Wowpedia: Harborage", "Wowpedia: Lost One", "Wowpedia: Dark Portal" },
@@ -2982,7 +2983,7 @@ SubsOf("Tirisfal Glades", {
 		hook = "Brill's town hall, where a magistrate hands out work to the dead.",
 		lore = {
 			"The town hall is the most prominent building in Brill, and Magistrate Sevren runs the place from a podium inside it, giving out orders and errands to any Forsaken willing to take them.",
-			"It is one of only two town halls the Forsaken are known to operate anywhere. The other is the Defiler's Den.",
+			"A town hall is a strange thing for the Forsaken to keep at all, and this is the one they keep.",
 			"That is the shape of Sylvanas's project. The Forsaken do not want to be a horde of wandering dead; they want a state, with magistrates and paperwork and a hall to do it in, and Brill is where they practise.",
 		},
 		readMore = { "Wowpedia: Brill Town Hall", "Wowpedia: Brill", "Wowpedia: Forsaken" },
@@ -3156,11 +3157,11 @@ SubsOf("Arathi Highlands", {
 SubsOf("Badlands", {
 	{
 		name = "Camp Wurg", parent = "Badlands", faction = "Hostile",
-		hook = "One of four Dustbelcher ogre camps, with a boss who visited all of them.",
+		hook = "One of four Dustbelcher ogre camps, and the Badlands has mercenaries for hire.",
 		lore = {
 			"Camp Wurg is Dustbelcher ogre ground, one of four: Wurg, Cagg, Boff and Kosh, spread across the Badlands.",
-			"Boss Tho'grun did not sit in any of them. He patrolled between the four, which is more organisation than ogres are usually credited with.",
-			"Ogres in the Eastern Kingdoms are the Old Horde's leavings, brought through the Dark Portal by Gul'dan and abandoned when the Second War collapsed. Four camps and a circuit-riding chieftain is what they have made of that.",
+			"The ogres here take work. The orcs at Kargath hired Boss Tho'grun and his band to fetch the Sign of the Earth, a key to a black dragon prison in Lethlor Ravine, and Tho'grun kept it for himself instead. His band wanders rather than holding ground, and the Kargath orcs will tell you to try Camp Boff if you are looking for them.",
+			"Ogres in the Eastern Kingdoms are the Old Horde's leavings, brought through the Dark Portal by Gul'dan and abandoned when the Second War collapsed. Four camps and a mercenary contract is what they have made of that.",
 		},
 		readMore = { "Wowpedia: Camp Wurg", "Wowpedia: Dustbelcher", "Wowpedia: Ogre" },
 	},

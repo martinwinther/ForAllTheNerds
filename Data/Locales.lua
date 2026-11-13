@@ -335,10 +335,10 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("The Hinterlands", {
 	{
 		name = "Hiri'watha", faction = "Hostile",
-		hook = "A Vilebranch site in the central forest, lived in rather than ruined.",
+		hook = "A small Witherbark village in the forest, lived in rather than ruined.",
 		lore = {
-			"Hiri'watha is Vilebranch ground. The difference between a troll ruin and a troll settlement matters in the Hinterlands, because the Vilebranch are not squatters: Jintha'Alor and its outlying sites are theirs, and have been since the Amani Empire held this whole region.",
-			"Arathor's founding war was fought against that empire with high elven help, and the trolls lost it. They have never accepted the result, and the Wildhammers at Aerie Peak have never expected them to.",
+			"Hiri'watha is Witherbark ground, and one of the tribe's smaller villages alongside Zun'watha. The Vilebranch hold the south of the Hinterlands out of Jintha'Alor; these are the other forest trolls, and the two should not be confused.",
+			"The Witherbark are Amani stock like the rest, and Arathor's founding war was fought against that empire with high elven help. The trolls lost it. They have never accepted the result, and the Wildhammers at Aerie Peak have never expected them to.",
 		},
 	},
 	{
@@ -609,7 +609,7 @@ SubsOf("Thousand Needles", {
 		hook = "A crater on the salt flats, which is where goblin racing goes when it goes wrong.",
 		lore = {
 			"Weazel's Crater sits on the Shimmering Flats beside the Mirage Raceway. It is the sort of feature that appears when goblins combine rocket engines, a flat horizon and a betting market.",
-			"Two rival goblin outfits race here with sabotage treated as a recognised tactic. The Flats themselves are a dried sea bed, drained when the Sundering tore this part of Kalimdor apart, and the goblins are the first people to find a use for them.",
+			"The racing is a goblin against a gnome, Pozzik against Fizzle Brassbolts, and sabotage is a recognised tactic on both sides. The Flats themselves are a dried lake bed, with a wrecked sailing ship in the north as the evidence, and the racers are the first people to find a use for them.",
 		},
 	},
 })
@@ -767,7 +767,8 @@ SubsOf("Azshara", {
 		name = "Hetaera's Clutch", faction = "Hostile",
 		hook = "A drowned temple of Elune in the Bay of Storms, with hydras nesting in it.",
 		lore = {
-			"Hetaera's Clutch is a large underwater temple of Elune, off the Azshara coast in the Bay of Storms. The hydras filling it are the children of Hetaera, and they are why nobody has studied the building.",
+			"Hetaera's Clutch is a large underwater temple of Elune, off the Azshara coast in the Bay of Storms. Hetaera herself roams it, a hydra of three heads, and the clutch is named for her brood.",
+			"She has a rival rather than a cult. Lord Arkkoroc, the sea giant up at the Temple of Arkkoran, calls her a false god who claims to rule these oceans and wants all three of her heads brought to him. Between the two of them nobody has studied the building.",
 			"A temple of Elune this far down measures the Sundering better than any ruin on land. When the Well of Eternity collapsed the sea came in over night elf territory, and sites built dry are now reached by holding your breath.",
 		},
 	},
@@ -857,9 +858,9 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Blackthorn Ridge", faction = "Hostile",
-		hook = "A quilboar ridge in the southern Barrens, between the Horde and Razorfen.",
+		hook = "A thorny valley just north of Razorfen Kraul, with one orc living on the ridge.",
 		lore = {
-			"Blackthorn Ridge is quilboar ground on the route south. Razorfen Kraul and Razorfen Downs are the tribe's great sites, and ridges like this one are the ordinary business of holding the country between them.",
+			"Blackthorn Ridge is a thorny valley a short way north of Razorfen Kraul, and the Razormane hold it. The ridge it is named for has an orc shaman on it, Brine, camped above a pool whose water is unusually clean for this country, and she is the only thing here that is not quilboar.",
 			"Quilboar build around thorn growths they tend with real care. Agamaggan, the boar demigod killed in the War of the Ancients, is where their religion and their architecture both begin, and the thorns are not decorative.",
 		},
 	},
@@ -1153,10 +1154,10 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "The Decrepit Ferry", faction = "Contested",
-		hook = "A ferry landing on the lake shore, with nothing left that floats.",
+		hook = "A ferry landing with a boat still in use, and the cargo is bodies.",
 		lore = {
-			"The ferry crossed to Fenris Isle out in Lordamere Lake, back when there was a reason to go there.",
-			"Fenris Keep on the island is worgen-held now. Nobody is running a service to it.",
+			"The ferry crosses Lordamere Lake to Fenris Isle, and the dock on the far side can be seen from this one. It is not derelict. The boat tied up here is heaped with wrapped corpses.",
+			"The Scourge have taken this stretch of shore and the Rot Hide are mixed up in it. Where the bodies are going is Fenris Isle, and why is the question anyone finding the boat ends up asking.",
 		},
 	},
 	{
@@ -1425,9 +1426,9 @@ SubsOf("Stranglethorn Vale", {
 SubsOf("Badlands", {
 	{
 		name = "Camp Boff", faction = "Hostile",
-		hook = "The third of the Badlands ogre camps, on the western road.",
+		hook = "One of the four Badlands ogre camps, and the one the mercenaries pass through.",
 		lore = {
-			"Three ogre camps sit across the Badlands holding the roads: Boff, Kosh and Cagg. None of them has an objective beyond the next caravan.",
+			"Four ogre camps sit across the Badlands holding the roads: Boff, Kosh, Cagg and Wurg. Boff is the one worth knowing, because the wandering band of Dustbelcher mercenaries is seen near it and travels through it, and Kargath's orcs send people here to look for them.",
 			"Ogres east of the sea are the Old Horde's leavings, brought over by Gul'dan during the Second War and left behind when it ended.",
 		},
 	},
@@ -1916,10 +1917,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Shadowsong Shrine", faction = "Contested",
-		hook = "A night elf shrine in the hills, from before the empire fell.",
+		hook = "A ruin-covered hill in western Azshara, and the highborne are still on it.",
 		lore = {
-			"The shrine is highborne-era work in Azshara's interior, one of a great many such sites in the largest unsurveyed ruin field on the continent.",
-			"Almost none of this region has been properly looked at. The night elves keep one small camp here and the Horde keeps another, and between them they cover very little of it.",
+			"Shadowsong Shrine is a hill in the west of the zone, buried under ruins from before the empire fell. What walks on it are Highborne Apparitions and Highborne Lichlings, and they do not confine themselves to the hill. The ghosts range over the ground around it and go for anything living that comes through.",
+			"The shrine carries the Shadowsong name. So does Jarod Shadowsong, who commanded the resistance in the War of the Ancients. Whether he has anything to do with this hill, nobody has established.",
 		},
 	},
 	{

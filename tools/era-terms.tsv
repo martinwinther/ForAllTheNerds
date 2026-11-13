@@ -84,6 +84,7 @@ Archimonde	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Argent Crusade	out-of-era	Wrath of the Lich King. The Argent Dawn is the 1.12 organisation	tools/validate.lua, 1.2.5	ci
 Argent Dawn	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ariden	vanilla	AreaTable row	wow_classic_era	cs
+Arkkoroc	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arthas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arthas Menethil	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Arugal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -151,6 +152,7 @@ Blackrock Mountain	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackrock Pass	vanilla	AreaTable row	wow_classic_era	cs
 Blackrock Spire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackthorn Ridge	vanilla	AreaTable row	wow_classic_era	cs
+Blackwater Cove	vanilla	AreaTable row, and the Ratchet boat's destination in 1.12 game text	wow_classic_era	cs
 Blackwater Raiders	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackwing Lair	vanilla	AreaTable row	wow_classic_era	cs
 Blackwolf	vanilla	AreaTable row	wow_classic_era	cs
@@ -180,6 +182,7 @@ Boff	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bolder'ok	forever	used only by Forever entries	Forever	cs
 Bolgan's Hole	vanilla	AreaTable row	wow_classic_era	cs
 Booty Bay	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Boss Tho'grun	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bough Shadow	vanilla	AreaTable row	wow_classic_era	cs
 Boulder Lode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Boulderfist	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -197,6 +200,7 @@ Brightwater	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Brightwater Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Brightwood	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Brill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Brine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristleback	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristlebacks	vanilla	plural of a 1.12 name (Bristleback)	cmangos 1.12.1	cs
@@ -216,6 +220,7 @@ Cagg	vanilla	AreaTable row	wow_classic_era	cs
 Cairne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cairne Bloodhoof	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cairne's Bloodhoof	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Camp Boff	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Camp Cagg	vanilla	AreaTable row	wow_classic_era	cs
 Camp E'thok	vanilla	AreaTable row	wow_classic_era	cs
 Camp Gev'rek	forever	used only by Forever entries	Forever	cs
@@ -245,6 +250,7 @@ Cenarion Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cenarius	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Champions' Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Charlga Razorflank	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Charred Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chief Sharptusk Thornmantle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chill Breeze	vanilla	AreaTable row	wow_classic_era	cs
@@ -428,6 +434,7 @@ Dwarven District	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Earning	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Earth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Earth Mother	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Earth Sapta	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Earthen Ring	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Earthmother	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 East	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -480,6 +487,7 @@ Faldir's Cove	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falfarren	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falfarren River	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fallen Sky Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Fallow Sanctuary	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Falstad Wildhammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fandral	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fandral Staghelm	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -510,6 +518,7 @@ Firelord	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Firewatch Ridge	vanilla	AreaTable row	wow_classic_era	cs
 First	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 First War	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Fizzle Brassbolts	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Flame Crest	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Flame of Azel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Flame of Veraz	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -525,6 +534,8 @@ Forge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forgotten Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forgotten Pools	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forlorn Ridge	vanilla	AreaTable row	wow_classic_era	cs
+Forlorn Rowe	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
+Forlorn Spirits	vanilla	plural of a 1.12 name (Forlorn Spirit)	cmangos 1.12.1	cs
 Forsaken	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forsaken Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Forsaken's Royal Apothecary Society	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -667,12 +678,15 @@ High Tinker Mekkatorque	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Warlord	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Wilderness	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highborne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Highborne Apparitions	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Highborne Lichlings	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlord Bolvar Fordragon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlord Demitrian	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlord Taelan Fordring	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highperch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hillsbrad	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Hillsbrad Foothills	vanilla	AreaTable row	wow_classic_era	cs
 Hinterlands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hiri'watha	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hive'Ashi	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -729,6 +743,7 @@ Janeiro's Point	vanilla	AreaTable row	wow_classic_era	cs
 Jangolode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jansen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jarl	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Jarod Shadowsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jasperlode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jereman	forever	used only by Forever entries	Forever	cs
 Jintha'Alor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -773,6 +788,7 @@ Kodo Rock	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Koiter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kolkar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kormek's Hut	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Kormok	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kosh	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kraul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Krol'dok Stronghold	forever	used only by Forever entries	Forever	cs
@@ -814,6 +830,7 @@ Long Wash	vanilla	AreaTable row	wow_classic_era	cs
 Lord	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Admiral of Kul Tiras	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Lord Aliden Perenolde	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Lord Arkkoroc	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Ello Ebonlocke	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Jorach Ravenholdt	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Kazzak	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -914,6 +931,7 @@ Moonwell of Purity	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Mor'Ladim	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mor'shan Rampart	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morbent Fel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Morgan Ladimore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morgan's Vigil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morganth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morlos'Aran	vanilla	AreaTable row	wow_classic_era	cs
@@ -979,6 +997,7 @@ Northwatch Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Glade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Lair	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nozdormu	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Ogre	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old God	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old Gods	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -997,6 +1016,7 @@ Orchard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Orchards	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Order of the Silver Hand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ordil'Aran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Orgrim	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Orgrim Doomhammer	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Orgrimmar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ossirian	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1019,6 +1039,7 @@ Pool of Tears	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Pools of Vision	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Powderfuse	forever	used only by Forever entries	Forever	cs
 Powderfuse Port	forever	used only by Forever entries	Forever	cs
+Pozzik	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Practically	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Prate Cloudseer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Priestess	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1059,6 +1080,7 @@ Razor Hill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen Downs	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorfen Kraul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Razorflank	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razormane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Razorwind Canyon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Reaches	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1112,6 +1134,7 @@ Ruins of Lordaeron	vanilla	AreaTable row	wow_classic_era	cs
 Ruins of Solarsal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ruins of Taurajo	out-of-era	Camp Taurajo is standing in 1.12 and is burned in Cataclysm	tools/validate.lua, 1.2.5	ci
 Ruins of Thaurissan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Rustmaul Dig Site	vanilla	AreaTable row (The Rustmaul Dig Site)	wow_classic_era	cs
 Rut'theran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rut'theran Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sacred	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1176,6 +1199,8 @@ Shadowglen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowlands	out-of-era	Shadowlands	tools/validate.lua, 1.2.5	ci
 Shadowprey	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowprey Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shadowsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shadowsong Shrine	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Shadowthread	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowvale	forever	used only by Forever entries	Forever	cs
 Shadra	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1203,6 +1228,7 @@ Shrine of Akir	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Shrine of the Fallen Warrior	vanilla	AreaTable row	wow_classic_era	cs
 Sicco Thermaplugg	out-of-era	at 1.12 he is Mekgineer Thermaplugg, with no given name in the game's text	cmangos 1.12.1	ci
 Siege of Farholde	forever	used only by Forever entries	Forever	cs
+Sign of the Earth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Silithus	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Silver Hand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Silver Stream	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1316,6 +1342,7 @@ Stormpikes	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormrage	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormrage Barrow Dens	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormreaver	forever	used only by Forever entries	Forever	cs
+Stormscale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1454,6 +1481,7 @@ Tower of Azora	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tower of Ilgalar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade District	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Traders	vanilla	plural of a 1.12 name (Trader)	cmangos 1.12.1	cs
 Tradesmen's Terrace	vanilla	AreaTable row	wow_classic_era	cs
 Transport	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tribe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1527,6 +1555,7 @@ Vilebranch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Violet Citadel	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Vol'jin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vul'Gol	vanilla	AreaTable row	wow_classic_era	cs
+Vul'Gol Ogre Mound	vanilla	AreaTable row	wow_classic_era	cs
 Vuldren	forever	used only by Forever entries	Forever	cs
 Wailing Caverns	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wallace	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1546,6 +1575,7 @@ Warsong Lumber Camp	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wartorn Land	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Watch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Watch Post	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Watchmen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Waterspring Field	vanilla	AreaTable row	wow_classic_era	cs
 Weathered Nook	vanilla	AreaTable row	wow_classic_era	cs
 Weaver	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1632,4 +1662,5 @@ Zul'Gurub	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Kunda	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Mamwe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Mashar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Zun'watha	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Zuuldaia	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

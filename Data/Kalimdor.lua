@@ -339,10 +339,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Ruins of Mathystra", parent = "Darkshore", faction = "Hostile",
-		hook = "A night elf city from before the Sundering, now furbolg-held.",
+		hook = "A night elf city from before the Sundering, with naga in it now.",
 		lore = {
 			"Mathystra was a night elf settlement of the old empire, one of the better-preserved ruins on this coast. The architecture belongs to the same tradition Darnassus is built in. For a night elf it is an uncomfortable place to walk through.",
-			"Furbolgs have taken the ruins. The night elves' response is complicated by the fact that furbolgs used to be friends.",
+			"The Stormscale naga have the ruins and guard them against anyone who comes near. That is a particular insult: the naga are what became of the highborne, and what is scattered through Mathystra is highborne relics. Young night elves come looking for them anyway. The ghost sabers on the site are the other reason people make the trip.",
 		},
 	},
 	{
@@ -493,7 +493,7 @@ SubsOf("The Barrens", {
 		name = "Northwatch Hold", parent = "The Barrens", faction = "Hostile",
 		hook = "An Alliance fortress on the Barrens coast, directly in the Horde's way.",
 		lore = {
-			"Northwatch Hold is a Kul Tiras and Stormwind position on the eastern coast, and it exists to interdict the Horde's roads and shipping.",
+			"Northwatch Hold is a Theramore and Kul Tiras position on the Merchant Coast, and its guns are the point of it. Goblin shipping keeps going down off this shore, and the Horde's complaint is that the humans in the hold are trigger-happy and shooting at anything in range.",
 			"It was established as part of the Alliance's effort to contain the Horde in Kalimdor, an effort which Jaina Proudmoore at Theramore has been trying to moderate and her late father pushed as hard as he could.",
 		},
 	},
@@ -579,10 +579,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Field of Giants", parent = "The Barrens", faction = "Contested",
-		hook = "A plain scattered with the bones of enormous creatures.",
+		hook = "A plain of enormous bones, with something newer nesting among them.",
 		lore = {
-			"The Field of Giants is littered with skeletons far larger than anything currently living in the Barrens.",
-			"The usual explanation involves the age before the Sundering, when this was a very different place with very different inhabitants.",
+			"The Field of Giants is littered with skeletons far larger than anything currently living in the Barrens, and nothing on record says what they were.",
+			"What lives there now is silithid. They have raised mounds on the field and they lay eggs in them, and the Horde at the Crossroads has taken an interest: the creatures seem to have more intelligence to them than an animal should, and nobody knows much else. Razormane country begins further south, past the field.",
 		},
 	},
 })
@@ -858,18 +858,18 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Mirage Raceway", faction = "Neutral", levels = "25-35",
-		hook = "A goblin racetrack on a salt flat, run by two cartels who hate each other.",
+		hook = "A racetrack on a salt flat, built by a goblin and a gnome who cannot let it go.",
 		lore = {
-			"The Mirage Raceway is built on the Shimmering Flats, goblin enterprise in its purest form: a dry lake bed, some rocket engines and a betting operation.",
-			"Two rival goblin outfits, the Bloodsail-adjacent racing concerns of Gadgetzan and Steamwheedle interests, compete here with sabotage as a recognised tactic. It is neutral ground and it is the least serious place in Kalimdor.",
+			"The Mirage Raceway is built on the Shimmering Flats: a dry lake bed, some rocket engines and a betting operation.",
+			"It exists because the goblin Pozzik and the gnome Fizzle Brassbolts each wanted to prove his own people built the better machine. They laid out the track, built rocket cars and put teams in them, and they keep separate camps at opposite ends of it. Sabotage is a recognised tactic. It is neutral ground and it is the least serious place in Kalimdor.",
 		},
 	},
 	{
 		name = "The Shimmering Flats", parent = "Thousand Needles", faction = "Neutral",
-		hook = "A salt pan that was a sea before the world broke.",
+		hook = "A dried lake bed with a racetrack on it and a dig nobody got to keep.",
 		lore = {
-			"The Flats are the dried bed of a body of water that the Sundering drained. The salt crust goes down a long way and the sun off it is blinding.",
-			"The goblins race on it. The Explorers' League would rather dig in it, and there is an ongoing low-grade argument about who has the right.",
+			"The Flats are a dried lake bed. The wrecked sailing ship lying in the north is the evidence, and the salt crust goes down a long way with the sun off it blinding.",
+			"The goblins and gnomes race on it, because flat ground is what a rocket car wants. Dwarven archaeologists would rather dig, and they had the Rustmaul Dig Site in the south-west until a Horde raiding party under Moktar Krin came at them. In the end neither side held it: the dwarves dug into a silithid hive and everybody left.",
 		},
 	},
 	{
@@ -1270,8 +1270,8 @@ SubsOf("Feralas", {
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
 		hook = "An island of very large wildlife off the western coast.",
 		lore = {
-			"The Isle of Dread holds Feralas' heaviest concentration of dangerous animals, including the gorillas and great cats the mainland jungle is known for.",
-			"Sailors named it, not scholars, and nobody has surveyed it properly since.",
+			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the place to themselves.",
+			"Sailors named it, not scholars, and nobody has surveyed it properly since. The one thing anybody comes out here for is chimaerok meat, which cooks into the best food on the market.",
 		},
 	},
 })
@@ -1437,10 +1437,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Temple of Arkkoran", parent = "Azshara", faction = "Hostile",
-		hook = "A coastal temple to something that lives in the water.",
+		hook = "A temple of Elune on the shore, with a sea giant sitting at the top of it.",
 		lore = {
-			"The Temple of Arkkoran stands on Azshara's coast, dedicated to a sea creature the naga revere.",
-			"The naga's religion is not only Azshara-worship. They have older attachments, and the temple is one of the places where that shows.",
+			"The Temple of Arkkoran was built as a temple of Elune, on Azshara's north-eastern shore. The night elves do not hold it any more.",
+			"What is in it is the sea giant Arkkoroc, who sits on the top level with murlocs and makrura guarding the way up. The shore around the temple has hydras and more sea giants on it. A temple of the moon goddess with a sea giant installed at the top is the kind of thing Azshara is full of, and nobody has come to do anything about it.",
 		},
 	},
 	{
@@ -1975,7 +1975,7 @@ Zone{
 	lore = {
 		"About a thousand years before the Dark Portal, the qiraji came out of Ahn'Qiraj in numbers nobody had imagined. That was the War of the Shifting Sands, and it went badly: the night elves were losing until the bronze dragonflight came in beside them, and even then the best available outcome was not victory.",
 		"So they walled it up. The dragons and the night elves raised the Scarab Wall across the entrance and sealed the qiraji behind it, and Anachronos of the bronze flight handed the night elves the Scepter of the Shifting Sands, the key, so that the gates could be opened again if anyone ever needed to go in.",
-		"Fandral Staghelm broke the scepter. His son Valstann had been killed in front of him during the war, and when the dragons offered him the key to a door he had just paid that much to close, he shattered it rather than take it. The pieces were scattered.",
+		"Fandral Staghelm broke the scepter. His son Valstann had been killed in front of him during the war, and Anachronos put the key to that door in his hands. He took it, and then he broke it. The pieces were scattered.",
 		"That is why the gates are still shut and why opening them is a project rather than a decision. The Scarab Gong stands at the wall, and ringing it requires the scepter whole again.",
 	},
 	didYouKnow = "The wall was built to hold, and it has held for a thousand years. What is behind it has not been idle: the qiraji answer to C'Thun, one of the Old Gods the titans buried rather than killed.",
@@ -2289,9 +2289,9 @@ SubsOf("Mulgore", {
 		name = "Kodo Rock", parent = "Mulgore", faction = "Horde",
 		hook = "A stone near Camp Narache that tauren shaman are sent to find.",
 		lore = {
-			"Kodo Rock is a natural monument out between Camp Narache and the Brambleblade Ravine, and it is easy to walk past: it only shows itself from close up.",
-			"Young tauren shaman are sent here as part of their training, and the obscurity is deliberate. Shamanism among the tauren is not scholarship but a relationship with the land and the elements, and the first lesson is to go out and attend to one particular stone until you can find it.",
-			"The tauren are the oldest shamanic tradition on this continent, and Thrall learned the orcs' own from Drek'Thar and then from them. A rock in Mulgore is where that teaching starts.",
+			"Kodo Rock is a natural monument out east of Camp Narache, past the Brambleblade Ravine, and it is a shaman shrine.",
+			"What young tauren shaman come here to do is drink the Earth Sapta, a brew only a few of their kind know how to make. It has to be taken in a holy place and nowhere else, which is why they are sent out to find this one.",
+			"Shamanism among the tauren is not scholarship but a relationship with the land and the elements. Drinking the sapta binds the shaman's spirit to the element it was made for, and for the earth that means the mountains for strength and the plains for patience. Standing before the earth humbly is the whole of what is asked.",
 		},
 		readMore = { "Wowpedia: Kodo Rock", "Wowpedia: Camp Narache", "Wowpedia: Shaman" },
 	},
@@ -2601,10 +2601,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "The Rustmaul Dig Site", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A dwarven dig where the diggers were killed, and then the killers were driven off.",
+		hook = "A dwarven dig that neither the diggers nor the raiders got to keep.",
 		lore = {
-			"The Explorers' League were uncovering ruins out on the Shimmering Flats when a Horde war party under Moktar Krin came down on them and killed every one of them.",
-			"The fighting opened something. There was a silithid nest in a cave at the dig, and the swarm that came out of it drove the already battered war party off the site entirely. The survivors fell back to Ironstone Camp.",
+			"The Explorers' League were uncovering ruins out on the Shimmering Flats when a Horde raiding party under Moktar Krin came down on them.",
+			"Then the digging opened something. There was a silithid nest under the site, and what came out of it drove both sides off the ground entirely.",
 			"So the dig stands abandoned twice over, and what is in it now is neither dwarves nor orcs. Silithid are the qiraji's creatures, and Ahn'Qiraj is not far south of here.",
 		},
 		readMore = { "Wowpedia: Rustmaul Dig Site", "Wowpedia: Explorers' League", "Wowpedia: Silithid" },
@@ -2888,8 +2888,8 @@ SubsOf("Ashenvale", {
 		hook = "The Ashenvale mouth of the tunnel through to Stonetalon.",
 		lore = {
 			"The Talondeep Path is a tunnel through the mountains joining Ashenvale to the Stonetalon Mountains. This end of it opens just west of Mystral Lake.",
-			"Inside there is nothing. No camps, nobody waiting, no creatures: a winding passage with dead ends and odd hollows in the walls and no inhabitants at all. In Kalimdor that is close to remarkable.",
-			"What it is for is moving between two zones without going round. Both sides of the Ashenvale war have obvious uses for a tunnel that nobody is watching.",
+			"The tunnel itself is empty: a winding passage with dead ends and odd hollows in the walls and nobody living in it. In Kalimdor that is close to remarkable.",
+			"The trouble is at this end. Mystral Lake has come alive, and its water elementals go for anything that gets near, and that means anyone on the path. Traffic between Ashenvale and Stonetalon is at a standstill because of it, and Splintertree Post is sending people out to put the lake down.",
 		},
 		readMore = { "Wowpedia: Talondeep Path", "Wowpedia: Ashenvale", "Wowpedia: Stonetalon Mountains" },
 	},
@@ -3086,7 +3086,7 @@ SubsOf("The Barrens", {
 		hook = "The lower half of the Barrens, past the dry riverbed that splits the zone.",
 		lore = {
 			"The Barrens runs a long way. A dried-up riverbed crosses it about halfway down and the ground south of that gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
-			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the Bristleback have fought the tauren across this country since before the Horde landed.",
+			"Quilboar are the southern half's own problem. The Bristleback hold Agama'gor off the road west of Camp Taurajo, Razorfen Kraul and Razorfen Downs are quilboar ground too, and the crone Charlga Razorflank is mustering an army inside the Kraul. The tauren lived in the southern Barrens for decades and held the land holy before they were driven off it, and Thunder Bluff's elders want Razorflank dead rather than merely contained.",
 			"Northwatch Hold is the other difficulty: a human fort on the coast of what the Horde regards as its own continent, dug in and not leaving. The south Barrens is where the two factions actually touch.",
 		},
 		readMore = { "Wowpedia: Southern Barrens", "Wowpedia: Razorfen Kraul", "Wowpedia: Northwatch Hold" },
