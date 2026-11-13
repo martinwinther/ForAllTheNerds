@@ -767,7 +767,8 @@ SubsOf("Azshara", {
 		name = "Hetaera's Clutch", faction = "Hostile",
 		hook = "A drowned temple of Elune in the Bay of Storms, with hydras nesting in it.",
 		lore = {
-			"Hetaera's Clutch is a large underwater temple of Elune, off the Azshara coast in the Bay of Storms. The hydras filling it are the children of Hetaera, and they are why nobody has studied the building.",
+			"Hetaera's Clutch is a large underwater temple of Elune, off the Azshara coast in the Bay of Storms. Hetaera herself roams it, a hydra of three heads, and the clutch is named for her brood.",
+			"She has a rival rather than a cult. Lord Arkkoroc, the sea giant up at the Temple of Arkkoran, calls her a false god who claims to rule these oceans and wants all three of her heads brought to him. Between the two of them nobody has studied the building.",
 			"A temple of Elune this far down measures the Sundering better than any ruin on land. When the Well of Eternity collapsed the sea came in over night elf territory, and sites built dry are now reached by holding your breath.",
 		},
 	},
@@ -857,9 +858,9 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Blackthorn Ridge", faction = "Hostile",
-		hook = "A quilboar ridge in the southern Barrens, between the Horde and Razorfen.",
+		hook = "A thorny valley just north of Razorfen Kraul, with one orc living on the ridge.",
 		lore = {
-			"Blackthorn Ridge is quilboar ground on the route south. Razorfen Kraul and Razorfen Downs are the tribe's great sites, and ridges like this one are the ordinary business of holding the country between them.",
+			"Blackthorn Ridge is a thorny valley a short way north of Razorfen Kraul, and the Razormane hold it. The ridge it is named for has an orc shaman on it, Brine, camped above a pool whose water is unusually clean for this country, and she is the only thing here that is not quilboar.",
 			"Quilboar build around thorn growths they tend with real care. Agamaggan, the boar demigod killed in the War of the Ancients, is where their religion and their architecture both begin, and the thorns are not decorative.",
 		},
 	},
@@ -1425,9 +1426,9 @@ SubsOf("Stranglethorn Vale", {
 SubsOf("Badlands", {
 	{
 		name = "Camp Boff", faction = "Hostile",
-		hook = "The third of the Badlands ogre camps, on the western road.",
+		hook = "One of the four Badlands ogre camps, and the one the mercenaries pass through.",
 		lore = {
-			"Three ogre camps sit across the Badlands holding the roads: Boff, Kosh and Cagg. None of them has an objective beyond the next caravan.",
+			"Four ogre camps sit across the Badlands holding the roads: Boff, Kosh, Cagg and Wurg. Boff is the one worth knowing, because the wandering band of Dustbelcher mercenaries is seen near it and travels through it, and Kargath's orcs send people here to look for them.",
 			"Ogres east of the sea are the Old Horde's leavings, brought over by Gul'dan during the Second War and left behind when it ended.",
 		},
 	},

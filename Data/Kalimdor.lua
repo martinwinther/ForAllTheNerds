@@ -579,10 +579,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Field of Giants", parent = "The Barrens", faction = "Contested",
-		hook = "A plain scattered with the bones of enormous creatures.",
+		hook = "A plain of enormous bones, with something newer nesting among them.",
 		lore = {
-			"The Field of Giants is littered with skeletons far larger than anything currently living in the Barrens.",
-			"The usual explanation involves the age before the Sundering, when this was a very different place with very different inhabitants.",
+			"The Field of Giants is littered with skeletons far larger than anything currently living in the Barrens, and nothing on record says what they were.",
+			"What lives there now is silithid. They have raised mounds on the field and they lay eggs in them, and the Horde at the Crossroads has taken an interest: the creatures seem to have more intelligence to them than an animal should, and nobody knows much else. Razormane country begins further south, past the field.",
 		},
 	},
 })
@@ -1975,7 +1975,7 @@ Zone{
 	lore = {
 		"About a thousand years before the Dark Portal, the qiraji came out of Ahn'Qiraj in numbers nobody had imagined. That was the War of the Shifting Sands, and it went badly: the night elves were losing until the bronze dragonflight came in beside them, and even then the best available outcome was not victory.",
 		"So they walled it up. The dragons and the night elves raised the Scarab Wall across the entrance and sealed the qiraji behind it, and Anachronos of the bronze flight handed the night elves the Scepter of the Shifting Sands, the key, so that the gates could be opened again if anyone ever needed to go in.",
-		"Fandral Staghelm broke the scepter. His son Valstann had been killed in front of him during the war, and when the dragons offered him the key to a door he had just paid that much to close, he shattered it rather than take it. The pieces were scattered.",
+		"Fandral Staghelm broke the scepter. His son Valstann had been killed in front of him during the war, and Anachronos put the key to that door in his hands. He took it, and then he broke it. The pieces were scattered.",
 		"That is why the gates are still shut and why opening them is a project rather than a decision. The Scarab Gong stands at the wall, and ringing it requires the scepter whole again.",
 	},
 	didYouKnow = "The wall was built to hold, and it has held for a thousand years. What is behind it has not been idle: the qiraji answer to C'Thun, one of the Old Gods the titans buried rather than killed.",

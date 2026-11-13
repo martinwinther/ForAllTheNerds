@@ -2983,7 +2983,7 @@ SubsOf("Tirisfal Glades", {
 		hook = "Brill's town hall, where a magistrate hands out work to the dead.",
 		lore = {
 			"The town hall is the most prominent building in Brill, and Magistrate Sevren runs the place from a podium inside it, giving out orders and errands to any Forsaken willing to take them.",
-			"It is one of only two town halls the Forsaken are known to operate anywhere. The other is the Defiler's Den.",
+			"A town hall is a strange thing for the Forsaken to keep at all, and this is the one they keep.",
 			"That is the shape of Sylvanas's project. The Forsaken do not want to be a horde of wandering dead; they want a state, with magistrates and paperwork and a hall to do it in, and Brill is where they practise.",
 		},
 		readMore = { "Wowpedia: Brill Town Hall", "Wowpedia: Brill", "Wowpedia: Forsaken" },
