@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 125 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 150 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 125 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 150 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -754,6 +754,101 @@ Nook, Theramore Isle, Thousand Needles, Tiragarde Keep, Tirisfal Glades, Tyr's
 Hand, Un'Goro Crater, Uther's Tomb, Valley of Fangs, Valley of Honor, Valley
 of Wisdom, Valormok, Wavestrider Beach, Western Plaguelands, Westfall,
 Wetlands, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
+
+Still open, fixed in an earlier run but never reviewed as entries of their own:
+Sardor Isle, Tower of Althalaxx, Emberstrife's Den, Silverpine Forest.
+
+Next: P4, the next 25 by the corrected ranking.
+
+### 2026-11-13, P4, run 6 of about 33
+
+Reviewed 25 entries. Seven named the wrong occupant, the wrong wildlife or the
+wrong place. This was the run where the entries were not vague, they were
+specific and specifically wrong, which is easier to catch and worse to ship.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Hiri'watha | Vilebranch ground, with a paragraph on the Vilebranch holding Jintha'Alor and its outlying sites | Witherbark. The 1.12 quest naming it says "hunt Witherbark trolls... one of their smaller villages, Hiri'watha or Zun'watha". The Vilebranch are the other forest trolls, in the south |
+| Ruins of Mathystra | Furbolg-held, "complicated by the fact that furbolgs used to be friends" | The Stormscale naga hold it. Highborne relics are scattered through it and ghost sabers are on the site. No furbolgs |
+| Isle of Dread | Gorillas and great cats, "the mainland jungle" sort | Chimaera. The chimaerok of this island are the whole point of it, and their meat is the best food on the market |
+| High Rise | The residential and trade mesa: dwellings, traders, craftspeople | That is the lower and middle rise. The High Rise is the top of the central mesa, and the 1.12 text is plain: Cairne Bloodhoof "dwells atop the highest mesa in Thunder Bluff", and a tauren finishing the Rites is sent up to him |
+| Shadowsong Shrine | Highborne-era work "in Azshara's interior", unremarkable | A ruin-covered hill in **western** Azshara, haunted by Highborne Apparitions and Highborne Lichlings that range over the ground around it, in those words, from the 1.12 quest for the place |
+| Northwatch Hold | "A Kul Tiras and Stormwind position" | Theramore and Kul Tiras. Stormwind is not in it, and the entry's own next sentence is about Theramore |
+| Raven Hill Cemetery | Mor'Ladim "was a father looking for his daughter before he died and has not entirely stopped" | Morgan Ladimore went to fight in Lordaeron, came home to a wasted county and no family to find, went mad, killed innocents, and took his own life when he understood. The body was raised afterwards. He lies at Forlorn Rowe |
+
+**A phantom entry that turned out not to be one.** `High Rise` is absent from
+the 1.12 game text and absent from the Classic Era AreaTable, where Thunder
+Bluff has only Elder Rise, Spirit Rise, Hunter Rise and the Pools of Vision. That
+is the Sludgewerks signature, and it is also the signature P1 warned about: city
+districts such as the Mage Quarter are real and have no AreaTable row either. The
+wiki settles it. The capitalised "High Rise" is sourced to a 2010 novel, but the
+lower-case "high rise" is sourced to the Bluffwatchers' own direction text, which
+is in-game and in period. The place is real, the name is usable, and only the
+content was wrong. Worth remembering before deleting a city district on AreaTable
+evidence alone.
+
+**The extractor quirk from run 3 bit a real edit, exactly as predicted.** Taking
+the word "traders" out of the High Rise prose made the build fail on a different
+entry: `The Drunken Dwarf uses "Traders"`. The rule that discards a word
+capitalised only at the start of a sentence asks whether that word is ever seen
+lower-cased *anywhere in the corpus*, and High Rise held the corpus's only
+lower-case "traders". Remove it and a sentence-initial "Traders" elsewhere stops
+looking ordinary. Run 3 wrote this down as a confusing failure waiting to happen;
+here it is. It was filed as a row rather than worked around, because "Traders" is
+the plural of a 1.12 name.
+
+**Two that looked wrong and were not.** Magistrate Burnside really does lead
+Hillsbrad town, and the 1.12 Horde quest against him names the town council, the
+Hillsbrad Proclamation and the town registry, so there is more there for a later
+pass. Bayne really is a Tirisfal darkhound; whether he was at Stillwater Pond
+before patch 4.0.6 moved him to Calston Estate could not be settled with the
+tables to hand, so that claim was left alone rather than guessed at either way.
+
+**Ten rows filed:** Forlorn Rowe, Highborne Apparitions, Highborne Lichlings,
+Jarod Shadowsong, Morgan Ladimore, Shadowsong, Shadowsong Shrine, Stormscale,
+Traders and Zun'watha. Maiev is in no 1.12 source at all, so she came out of the
+Shadowsong sentence rather than being filed; Jarod is in the creature table and
+stayed. A bare `Rites` was reworded away. `, which` went over its rate budget
+again and two more sentences were reworded to get under, which is now a reliable
+side effect of correcting prose. The ledger is 1,658 rows.
+
+No check was added and no row changed verdict, so nothing needed breaking
+deliberately. Gates: the validator passes on all nine configs, `check-gaps.py`
+passes, and RHYTHM on the four touched data files is unchanged at 0/11/8/2.
+
+**Entries covered so far (150).**
+Alterac Mountains, Andorhal, Angerfang Encampment, Apocryphan's Rest, Arathi
+Highlands, Ashenvale, Auberdine, Azshara, Badlands, Bashal'Aran, Beggar's
+Haunt, Blackfathom Deeps, Blackwater Cove, Blackwing Lair, Blasted Lands,
+Bloodvenom Post, Bolgan's Hole, Booty Bay, Brackwell Pumpkin Patch,
+Brambleblade Ravine, Bramblescar, Brewnall Village, Brill, Burning Steppes,
+Caer Darrow, Camp E'thok, Camp Taurajo, Camp Wurg, Cathedral Square, Chillwind
+Camp, Cleft of Shadow, Crown Guard Tower, Dalson's Tears, Dandred's Fold,
+Darkshire, Darkshore, Darnassus, Deadwind Pass, Deadwood Village, Desolace,
+Dreadmaul Hold, Dun Garok, Dun Modr, Dun Morogh, Durnholde Keep, Durotar,
+Duskwood, Dustwallow Marsh, Eastern Plaguelands, Echo Ridge Mine, Elwynn
+Forest, Emerald Sanctuary, Feathermoon Stronghold, Felwood, Feralas, Forest
+Song, Fray Island, Freewind Post, Frostmane Hold, Gadgetzan, Gallows' End
+Tavern, Grim Batol, Haldarr Encampment, Hall of Legends, Hammerfall,
+Hearthglen, High Rise, Hillsbrad, Hillsbrad Foothills, Hiri'watha, Iris Lake,
+Isle of Dread, Jerod's Landing, Jintha'Alor, Kodo Rock, Land's End Beach,
+Light's Hope Chapel, Loch Modan, Lordamere Internment Camp, Mardenholde Keep,
+Menethil Harbor, Mirage Raceway, Molten Core, Moonbrook, Mulgore, Nesingwary's
+Expedition, Northwatch Hold, Onyxia's Lair, Purgation Isle, Pyrewood Village,
+Raptor Grounds, Raven Hill, Raven Hill Cemetery, Rebel Camp, Redridge
+Mountains, Refuge Pointe, Roguefeather Den, Ruins of Ahn'Qiraj, Ruins of
+Andorhal, Ruins of Mathystra, Rut'theran Village, Sandsorrow Watch, Scarlet
+Monastery, Searing Gorge, Shadowfang Keep, Shadowsong Shrine, Shadra'Alor,
+Shok'Thokar, Silithus, Silverpine Forest, Sorrowmurk, Southern Barrens,
+Southshore, Stillwater Pond, Stonetalon Mountains, Stonetalon Peak,
+Stonewrought Dam, Stranglethorn Vale, Sun Rock Retreat, Swamp of Sorrows,
+Talrendis Point, Tanaris, Tarren Mill, Teldrassil, The Forgotten Pools, The
+Greymane Wall, The Harborage, The Park, The Shimmering Flats, The Talondeep
+Path, The Weathered Nook, Theramore Isle, Thousand Needles, Tiragarde Keep,
+Tirisfal Glades, Tyr's Hand, Un'Goro Crater, Uther's Tomb, Valley of Fangs,
+Valley of Honor, Valley of Wisdom, Valormok, Wavestrider Beach, Western
+Plaguelands, Westfall, Wetlands, Windshear Crag, Winterspring, Yojamba Isle,
+Zul'Gurub.
 
 Still open, fixed in an earlier run but never reviewed as entries of their own:
 Sardor Isle, Tower of Althalaxx, Emberstrife's Den, Silverpine Forest.

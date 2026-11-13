@@ -361,10 +361,10 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "High Rise", faction = "Horde",
-		hook = "The residential and trade mesa.",
+		hook = "The top of the central mesa, where the High Chieftain lives.",
 		lore = {
-			"High Rise holds much of Thunder Bluff's ordinary life: dwellings, traders and the city's craftspeople.",
-			"The rope bridges between the mesas are the city's only internal roads. Thunder Bluff moves to a rhythm no other capital has.",
+			"The High Rise is the highest ground in Thunder Bluff, at the top of the central mesa, and Cairne Bloodhoof dwells on it. A tauren who completes the Rites of the Earthmother is sent up here to stand in front of him, and that audience is the last thing asked of them.",
+			"There is no throne room. The High Chieftain keeps a tent, and the open ground around it is where the city gathers to hear anything that matters. The rope bridges down to the other mesas are Thunder Bluff's only internal roads.",
 		},
 	},
 	{

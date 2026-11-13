@@ -335,10 +335,10 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("The Hinterlands", {
 	{
 		name = "Hiri'watha", faction = "Hostile",
-		hook = "A Vilebranch site in the central forest, lived in rather than ruined.",
+		hook = "A small Witherbark village in the forest, lived in rather than ruined.",
 		lore = {
-			"Hiri'watha is Vilebranch ground. The difference between a troll ruin and a troll settlement matters in the Hinterlands, because the Vilebranch are not squatters: Jintha'Alor and its outlying sites are theirs, and have been since the Amani Empire held this whole region.",
-			"Arathor's founding war was fought against that empire with high elven help, and the trolls lost it. They have never accepted the result, and the Wildhammers at Aerie Peak have never expected them to.",
+			"Hiri'watha is Witherbark ground, and one of the tribe's smaller villages alongside Zun'watha. The Vilebranch hold the south of the Hinterlands out of Jintha'Alor; these are the other forest trolls, and the two should not be confused.",
+			"The Witherbark are Amani stock like the rest, and Arathor's founding war was fought against that empire with high elven help. The trolls lost it. They have never accepted the result, and the Wildhammers at Aerie Peak have never expected them to.",
 		},
 	},
 	{
@@ -1916,10 +1916,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Shadowsong Shrine", faction = "Contested",
-		hook = "A night elf shrine in the hills, from before the empire fell.",
+		hook = "A ruin-covered hill in western Azshara, and the highborne are still on it.",
 		lore = {
-			"The shrine is highborne-era work in Azshara's interior, one of a great many such sites in the largest unsurveyed ruin field on the continent.",
-			"Almost none of this region has been properly looked at. The night elves keep one small camp here and the Horde keeps another, and between them they cover very little of it.",
+			"Shadowsong Shrine is a hill in the west of the zone, buried under ruins from before the empire fell. What walks on it are Highborne Apparitions and Highborne Lichlings, and they do not confine themselves to the hill. The ghosts range over the ground around it and go for anything living that comes through.",
+			"The shrine carries the Shadowsong name. So does Jarod Shadowsong, who commanded the resistance in the War of the Ancients. Whether he has anything to do with this hill, nobody has established.",
 		},
 	},
 	{

@@ -532,6 +532,7 @@ Forge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forgotten Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forgotten Pools	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forlorn Ridge	vanilla	AreaTable row	wow_classic_era	cs
+Forlorn Rowe	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Forsaken	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forsaken Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Forsaken's Royal Apothecary Society	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -674,6 +675,8 @@ High Tinker Mekkatorque	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Warlord	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Wilderness	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highborne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Highborne Apparitions	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Highborne Lichlings	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlord Bolvar Fordragon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Highlord Demitrian	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -737,6 +740,7 @@ Janeiro's Point	vanilla	AreaTable row	wow_classic_era	cs
 Jangolode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jansen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jarl	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Jarod Shadowsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jasperlode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jereman	forever	used only by Forever entries	Forever	cs
 Jintha'Alor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -923,6 +927,7 @@ Moonwell of Purity	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Mor'Ladim	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mor'shan Rampart	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morbent Fel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Morgan Ladimore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morgan's Vigil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morganth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morlos'Aran	vanilla	AreaTable row	wow_classic_era	cs
@@ -1189,6 +1194,8 @@ Shadowglen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowlands	out-of-era	Shadowlands	tools/validate.lua, 1.2.5	ci
 Shadowprey	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowprey Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shadowsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shadowsong Shrine	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Shadowthread	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadowvale	forever	used only by Forever entries	Forever	cs
 Shadra	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1330,6 +1337,7 @@ Stormpikes	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormrage	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormrage Barrow Dens	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormreaver	forever	used only by Forever entries	Forever	cs
+Stormscale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1468,6 +1476,7 @@ Tower of Azora	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tower of Ilgalar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade District	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Traders	vanilla	plural of a 1.12 name (Trader)	cmangos 1.12.1	cs
 Tradesmen's Terrace	vanilla	AreaTable row	wow_classic_era	cs
 Transport	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tribe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1646,4 +1655,5 @@ Zul'Gurub	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Kunda	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Mamwe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Mashar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Zun'watha	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Zuuldaia	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

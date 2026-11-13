@@ -339,10 +339,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Ruins of Mathystra", parent = "Darkshore", faction = "Hostile",
-		hook = "A night elf city from before the Sundering, now furbolg-held.",
+		hook = "A night elf city from before the Sundering, with naga in it now.",
 		lore = {
 			"Mathystra was a night elf settlement of the old empire, one of the better-preserved ruins on this coast. The architecture belongs to the same tradition Darnassus is built in. For a night elf it is an uncomfortable place to walk through.",
-			"Furbolgs have taken the ruins. The night elves' response is complicated by the fact that furbolgs used to be friends.",
+			"The Stormscale naga have the ruins and guard them against anyone who comes near. That is a particular insult: the naga are what became of the highborne, and what is scattered through Mathystra is highborne relics. Young night elves come looking for them anyway. The ghost sabers on the site are the other reason people make the trip.",
 		},
 	},
 	{
@@ -493,7 +493,7 @@ SubsOf("The Barrens", {
 		name = "Northwatch Hold", parent = "The Barrens", faction = "Hostile",
 		hook = "An Alliance fortress on the Barrens coast, directly in the Horde's way.",
 		lore = {
-			"Northwatch Hold is a Kul Tiras and Stormwind position on the eastern coast, and it exists to interdict the Horde's roads and shipping.",
+			"Northwatch Hold is a Theramore and Kul Tiras position on the Merchant Coast, and its guns are the point of it. The Horde's complaint is that the humans in it are trigger-happy and shooting at anything in range, and goblin shipping keeps going down off this shore.",
 			"It was established as part of the Alliance's effort to contain the Horde in Kalimdor, an effort which Jaina Proudmoore at Theramore has been trying to moderate and her late father pushed as hard as he could.",
 		},
 	},
@@ -1270,8 +1270,8 @@ SubsOf("Feralas", {
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
 		hook = "An island of very large wildlife off the western coast.",
 		lore = {
-			"The Isle of Dread holds Feralas' heaviest concentration of dangerous animals, including the gorillas and great cats the mainland jungle is known for.",
-			"Sailors named it, not scholars, and nobody has surveyed it properly since.",
+			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the place to themselves.",
+			"Sailors named it, not scholars, and nobody has surveyed it properly since. The one thing anybody comes out here for is chimaerok meat, which cooks into the best food on the market.",
 		},
 	},
 })
