@@ -732,7 +732,7 @@ Zone{
 	name = "Duskwood", continent = EK, faction = "Alliance", levels = "18-30",
 	hook = "A forest where the sun stopped rising, and the people who stayed formed a Night Watch.",
 	lore = {
-		"Duskwood was called Grand Hamlet's county and it was ordinary human farmland and woodland south of Elwynn. It is now permanently dark, wrapped in a mist that does not lift, and the trees have gone wrong.",
+		"Duskwood was ordinary human farmland and woodland south of Elwynn, worked out of a town called Grand Hamlet. It is now permanently dark, wrapped in a mist that does not lift, and the trees have gone wrong.",
 		"There is no single agreed cause. Necromancy practised in the region, the Scythe of Elune's passage through these woods, and the corruption bleeding out of Twilight Grove have all been blamed, and they may all be true at once. Whatever started it, the dead do not stay buried in Duskwood and the living have adapted.",
 		"The adaptation is the Night Watch. Darkshire, which used to be Grand Hamlet, is defended by a volunteer watch that patrols the roads with lanterns and treats every grave as a problem waiting to happen. They are underfunded, overworked, and the only reason anyone still lives here.",
 	},
@@ -1034,10 +1034,11 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Purgation Isle", parent = "Hillsbrad Foothills", faction = "Hostile",
-		hook = "An island off the coast where the Scarlet Crusade does things it will not do on the mainland.",
+		hook = "An island of condemned dead, and every one of them served the Light.",
 		lore = {
-			"Purgation Isle is a small island in the bay south of Southshore, and the Scarlet Crusade has made it a private site. The name is not metaphorical.",
-			"What goes on there is some distance past what the Church of the Holy Light would sanction. That gap is what defines the Scarlet Crusade.",
+			"Purgation Isle is a small spiral island off the south coast of the Hillsbrad Foothills, with a cemetery and a ruined scout tower on it. Nobody living holds it.",
+			"What is on it is the dead: condemned paladins, clerics, monks and mages, human and dwarf, none of them at peace. Who condemned them, and what for, is not recorded. The name is not metaphorical.",
+			"An ogre necromancer named Kormok made use of them, and by the accounts he enjoyed it. Raising the banished dead of a place like this is the sort of work that gets an ogre remembered.",
 		},
 	},
 	{
@@ -1232,7 +1233,7 @@ SubsOf("Arathi Highlands", {
 			"Hammerfall is named for Orgrim Doomhammer, who died here. This was an internment camp, and Doomhammer was killed during its liberation, run down by a charging knight while Thrall's diversion covered the orcs' withdrawal. Doomhammer had led the Horde through the whole of the Second War after killing Blackhand for the warchief's title.",
 			"The settlement is a Horde statement: this ground is theirs now, in the birthplace of human civilisation, and the Alliance can do nothing about it.",
 		},
-		didYouKnow = "Doomhammer's weapon, the Doomhammer itself, passed to Thrall. It had belonged to his father Durotan's clan before that.",
+		didYouKnow = "Doomhammer gave Thrall the title of Warchief with his last breath, and his black armour and the Doomhammer itself with it. The hammer is his own family's, not the Frostwolves': Orgrim was Blackrock clan, and he inherited it from his father.",
 	},
 	{
 		name = "Boulderfist Hall", parent = "Arathi Highlands", faction = "Hostile",
@@ -1876,7 +1877,7 @@ Zone{
 		"The mountain is the most dangerous address in the world. Blackrock Spire above holds the Dark Horde, orcs under Rend Blackhand who never accepted the Second War's end and still call themselves the true Horde. Blackrock Depths below holds the Dark Iron dwarves and, at the bottom, Ragnaros himself.",
 		"Above both sits Nefarian, son of Deathwing. He has taken the upper Spire, and he has spent years running experiments on dragonflight blood and manipulating the orcs below him as a workforce. The Dark Horde believe they serve Rend. Rend serves Nefarian, whether he admits it or not.",
 	},
-	didYouKnow = "The Ruins of Thaurissan on the Steppes are what is left of the Dark Iron capital's surface. The rest of the city sank into the mountain and became Blackrock Depths, with Thaurissan's heirs still living in it.",
+	didYouKnow = "The Ruins of Thaurissan on the Steppes are the colony the Dark Irons founded here after their exile, named for the thane who then destroyed it by summoning Ragnaros. They kept their seat inside the mountain instead, and Emperor Dagran Thaurissan holds it.",
 	readMore = { "Wowpedia: Burning Steppes", "Wowpedia: Blackrock Mountain", "Wowpedia: Nefarian" },
 }
 
@@ -3156,11 +3157,11 @@ SubsOf("Arathi Highlands", {
 SubsOf("Badlands", {
 	{
 		name = "Camp Wurg", parent = "Badlands", faction = "Hostile",
-		hook = "One of four Dustbelcher ogre camps, with a boss who visited all of them.",
+		hook = "One of four Dustbelcher ogre camps, and the Badlands has mercenaries for hire.",
 		lore = {
 			"Camp Wurg is Dustbelcher ogre ground, one of four: Wurg, Cagg, Boff and Kosh, spread across the Badlands.",
-			"Boss Tho'grun did not sit in any of them. He patrolled between the four, which is more organisation than ogres are usually credited with.",
-			"Ogres in the Eastern Kingdoms are the Old Horde's leavings, brought through the Dark Portal by Gul'dan and abandoned when the Second War collapsed. Four camps and a circuit-riding chieftain is what they have made of that.",
+			"The ogres here take work. The orcs at Kargath hired Boss Tho'grun and his band to fetch the Sign of the Earth, a key to a black dragon prison in Lethlor Ravine, and Tho'grun kept it for himself instead. His band wanders rather than holding ground, and the Kargath orcs will tell you to try Camp Boff if you are looking for them.",
+			"Ogres in the Eastern Kingdoms are the Old Horde's leavings, brought through the Dark Portal by Gul'dan and abandoned when the Second War collapsed. Four camps and a mercenary contract is what they have made of that.",
 		},
 		readMore = { "Wowpedia: Camp Wurg", "Wowpedia: Dustbelcher", "Wowpedia: Ogre" },
 	},

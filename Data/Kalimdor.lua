@@ -858,10 +858,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Mirage Raceway", faction = "Neutral", levels = "25-35",
-		hook = "A goblin racetrack on a salt flat, run by two cartels who hate each other.",
+		hook = "A racetrack on a salt flat, built by a goblin and a gnome who cannot let it go.",
 		lore = {
-			"The Mirage Raceway is built on the Shimmering Flats, goblin enterprise in its purest form: a dry lake bed, some rocket engines and a betting operation.",
-			"Two rival goblin outfits, the Bloodsail-adjacent racing concerns of Gadgetzan and Steamwheedle interests, compete here with sabotage as a recognised tactic. It is neutral ground and it is the least serious place in Kalimdor.",
+			"The Mirage Raceway is built on the Shimmering Flats: a dry lake bed, some rocket engines and a betting operation.",
+			"It exists because the goblin Pozzik and the gnome Fizzle Brassbolts each wanted to prove his own people built the better machine. They laid out the track, built rocket cars and put teams in them, and they keep separate camps at opposite ends of it. Sabotage is a recognised tactic. It is neutral ground and it is the least serious place in Kalimdor.",
 		},
 	},
 	{
@@ -2290,8 +2290,8 @@ SubsOf("Mulgore", {
 		hook = "A stone near Camp Narache that tauren shaman are sent to find.",
 		lore = {
 			"Kodo Rock is a natural monument out between Camp Narache and the Brambleblade Ravine, and it is easy to walk past: it only shows itself from close up.",
-			"Young tauren shaman are sent here as part of their training, and the obscurity is deliberate. Shamanism among the tauren is not scholarship but a relationship with the land and the elements, and the first lesson is to go out and attend to one particular stone until you can find it.",
-			"The tauren are the oldest shamanic tradition on this continent, and Thrall learned the orcs' own from Drek'Thar and then from them. A rock in Mulgore is where that teaching starts.",
+			"It is a shaman shrine, and young tauren shaman are sent out to find it. What they do here is drink the Earth Sapta, a brew only a few of their kind know how to make, and it has to be taken in a holy place and nowhere else.",
+			"Shamanism among the tauren is not scholarship but a relationship with the land and the elements. Drinking the sapta binds the shaman's spirit to the element it was made for, and for the earth that means the mountains for strength and the plains for patience. Standing before the earth humbly is the whole of what is asked.",
 		},
 		readMore = { "Wowpedia: Kodo Rock", "Wowpedia: Camp Narache", "Wowpedia: Shaman" },
 	},

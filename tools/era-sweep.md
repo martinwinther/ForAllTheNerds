@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 75 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 100 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 75 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 100 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -580,3 +580,86 @@ Isle, Tower of Althalaxx. Emberstrife's Den was fixed this run and is in the
 same position.
 
 Next: P4, the next 25 by the same ranking.
+
+### 2026-11-13, P4, run 4 of about 35
+
+Reviewed 25 entries. Seven asserted something no source in this period supports.
+None of the seven was a later-expansion name this time. They were inventions:
+sentences that sound like lore, are not contradicted by any term in the ledger,
+and are simply made up. That is the failure mode left once the era terms are
+under control, and the gate cannot see it at all.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Purgation Isle | The Scarlet Crusade has made it a private site, doing what the Church would not sanction | No Scarlet Crusade on it. It is a cemetery island of condemned dead who all served the Light, paladins, clerics, monks and mages, human and dwarf, and the ogre necromancer Kormok raised them |
+| Mirage Raceway | Two rival goblin outfits, "the Bloodsail-adjacent racing concerns of Gadgetzan and Steamwheedle interests" | The goblin Pozzik and the gnome Fizzle Brassbolts built it out of a goblin-against-gnome rivalry, with a camp each at opposite ends. The Bloodsail are Stranglethorn pirates and have nothing to do with it |
+| Camp Wurg | Boss Tho'grun "did not sit in any of them, he patrolled between the four" | Kargath's orcs hired him to fetch the Sign of the Earth and he kept it. His band wanders, and the quest text says to try Camp Boff |
+| Hammerfall | The Doomhammer "had belonged to his father Durotan's clan" | Orgrim was Blackrock clan and inherited the hammer from his own father. The 1.12 text has it exactly: Thrall "bears the armor and hammer of Orgrim" |
+| Burning Steppes | The Dark Iron capital "sank into the mountain and became Blackrock Depths" | Thaurissan was a surface colony the thane destroyed by summoning Ragnaros. The Dark Irons' seat is inside the mountain under Emperor Dagran Thaurissan, and it did not get there by sinking |
+| Kodo Rock | The obscurity is deliberate, and the first lesson is "to attend to one particular stone until you can find it" | It is a shaman shrine where young tauren drink the Earth Sapta, which must be taken in a holy place and nowhere else, binding the shaman's spirit to its element |
+| Duskwood | The zone "was called Grand Hamlet's county" | Grand Hamlet is the old name of Darkshire, the town, which the same entry says two paragraphs later. No source gives the zone that name |
+
+**Kodo Rock is the one to learn from.** The entry had the shape of the truth and
+none of the content. A shaman shrine where you drink a brew that binds your
+spirit to the earth is in the 1.12 quest text, in the shaman's own words, and
+what we had printed instead was an invented parable about finding a rock. The
+same goes for Tho'grun, who is a mercenary who took the money and kept the key,
+and for Purgation Isle, where the real thing on the island is better than the
+Scarlet Crusade we put there. Checking an entry against its article catches the
+wrong fact. It does not prompt anyone to ask whether a right-sounding sentence
+came from anywhere, and these seven did not.
+
+**Four that looked wrong and were not.** Doomhammer really was run down by a
+charging knight's lance while Thrall's diversion covered the retreat, which is
+*Lord of the Clans* and in scope. The Scarlet Monastery really was a seminary for
+paladins in training, Stromgarde's especially, which two 1.12 quests give. All
+four Badlands ogre camps are real AreaTable rows, Wurg included, so Camp Wurg is
+not another Sludgewerks. Dandred's Fold really is Aliden Perenolde's manor on the
+shores of Lordamere Lake with Elysa and the pendant, which the 1.12 quest chain
+spells out.
+
+**A flaw in this run's own ranking, worth fixing before run 5.** The scan scores
+the existence of a `Foo (Classic)` article at 3, and it counts a redirect as an
+article. `Scarlet Monastery (Classic)` is a redirect to `Scarlet Monastery`, so
+that entry was scored as though it had a separate Classic article and its fetched
+"article" was the one-line redirect. Any run recomputing the ranking should
+resolve redirects before scoring, and should re-fetch the real title when the
+content starts with `#REDIRECT`.
+
+**The gate took nine rows.** Boss Tho'grun, Camp Boff, Earth Sapta, Fizzle
+Brassbolts, Hillsbrad Foothills, Kormok, Orgrim, Pozzik and Sign of the Earth,
+each with its 1.12 evidence. The filing script now asserts that none of the nine
+is already present, because last run an add-if-absent script silently dropped a
+row whose term existed and the build still passed. All nine were genuinely new.
+The ledger is 1,643 rows. No check was added and no row changed verdict, so
+nothing needed breaking deliberately. Gates: the validator passes on all nine
+configs, `check-gaps.py` passes, and RHYTHM on the two touched data files is
+unchanged at 11/8.
+
+**Entries covered so far (100).**
+Alterac Mountains, Andorhal, Angerfang Encampment, Apocryphan's Rest, Arathi
+Highlands, Ashenvale, Auberdine, Azshara, Badlands, Bashal'Aran, Beggar's
+Haunt, Blasted Lands, Bloodvenom Post, Bolgan's Hole, Brambleblade Ravine,
+Bramblescar, Burning Steppes, Camp E'thok, Camp Taurajo, Camp Wurg, Cathedral
+Square, Chillwind Camp, Dalson's Tears, Dandred's Fold, Darkshire, Darkshore,
+Darnassus, Deadwind Pass, Deadwood Village, Desolace, Dun Garok, Dun Modr,
+Durotar, Duskwood, Dustwallow Marsh, Eastern Plaguelands, Echo Ridge Mine,
+Elwynn Forest, Feathermoon Stronghold, Felwood, Feralas, Forest Song,
+Frostmane Hold, Gallows' End Tavern, Grim Batol, Haldarr Encampment, Hall of
+Legends, Hammerfall, Hearthglen, Hillsbrad Foothills, Iris Lake, Jerod's
+Landing, Jintha'Alor, Kodo Rock, Loch Modan, Lordamere Internment Camp,
+Mardenholde Keep, Menethil Harbor, Mirage Raceway, Moonbrook, Mulgore,
+Nesingwary's Expedition, Purgation Isle, Pyrewood Village, Raptor Grounds,
+Raven Hill, Redridge Mountains, Refuge Pointe, Ruins of Andorhal, Sandsorrow
+Watch, Scarlet Monastery, Shadowfang Keep, Shadra'Alor, Shok'Thokar, Silithus,
+Silverpine Forest, Southshore, Stonetalon Peak, Stonewrought Dam,
+Stranglethorn Vale, Talrendis Point, Tanaris, Tarren Mill, Teldrassil,
+Theramore Isle, Thousand Needles, Tirisfal Glades, Tyr's Hand, Un'Goro Crater,
+Uther's Tomb, Valley of Honor, Valley of Wisdom, Valormok, Wavestrider Beach,
+Western Plaguelands, Westfall, Wetlands, Windshear Crag, Winterspring, Yojamba
+Isle.
+
+Still open, fixed in an earlier run but never reviewed as entries of their own:
+Sardor Isle, Tower of Althalaxx, Emberstrife's Den.
+
+Next: P4, the next 25 by the same ranking, with redirects resolved first.
