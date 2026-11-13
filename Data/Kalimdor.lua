@@ -493,7 +493,7 @@ SubsOf("The Barrens", {
 		name = "Northwatch Hold", parent = "The Barrens", faction = "Hostile",
 		hook = "An Alliance fortress on the Barrens coast, directly in the Horde's way.",
 		lore = {
-			"Northwatch Hold is a Theramore and Kul Tiras position on the Merchant Coast, and its guns are the point of it. The Horde's complaint is that the humans in it are trigger-happy and shooting at anything in range, and goblin shipping keeps going down off this shore.",
+			"Northwatch Hold is a Theramore and Kul Tiras position on the Merchant Coast, and its guns are the point of it. Goblin shipping keeps going down off this shore, and the Horde's complaint is that the humans in the hold are trigger-happy and shooting at anything in range.",
 			"It was established as part of the Alliance's effort to contain the Horde in Kalimdor, an effort which Jaina Proudmoore at Theramore has been trying to moderate and her late father pushed as hard as he could.",
 		},
 	},
@@ -1437,10 +1437,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Temple of Arkkoran", parent = "Azshara", faction = "Hostile",
-		hook = "A coastal temple to something that lives in the water.",
+		hook = "A temple of Elune on the shore, with a sea giant sitting at the top of it.",
 		lore = {
-			"The Temple of Arkkoran stands on Azshara's coast, dedicated to a sea creature the naga revere.",
-			"The naga's religion is not only Azshara-worship. They have older attachments, and the temple is one of the places where that shows.",
+			"The Temple of Arkkoran was built as a temple of Elune, on Azshara's north-eastern shore. The night elves do not hold it any more.",
+			"What is in it is the sea giant Arkkoroc, who sits on the top level with murlocs and makrura guarding the way up. The shore around the temple has hydras and more sea giants on it. A temple of the moon goddess with a sea giant installed at the top is the kind of thing Azshara is full of, and nobody has come to do anything about it.",
 		},
 	},
 	{
@@ -2601,10 +2601,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "The Rustmaul Dig Site", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A dwarven dig where the diggers were killed, and then the killers were driven off.",
+		hook = "A dwarven dig that neither the diggers nor the raiders got to keep.",
 		lore = {
-			"The Explorers' League were uncovering ruins out on the Shimmering Flats when a Horde war party under Moktar Krin came down on them and killed every one of them.",
-			"The fighting opened something. There was a silithid nest in a cave at the dig, and the swarm that came out of it drove the already battered war party off the site entirely. The survivors fell back to Ironstone Camp.",
+			"The Explorers' League were uncovering ruins out on the Shimmering Flats when a Horde raiding party under Moktar Krin came down on them.",
+			"Then the digging opened something. There was a silithid nest under the site, and what came out of it drove both sides off the ground entirely.",
 			"So the dig stands abandoned twice over, and what is in it now is neither dwarves nor orcs. Silithid are the qiraji's creatures, and Ahn'Qiraj is not far south of here.",
 		},
 		readMore = { "Wowpedia: Rustmaul Dig Site", "Wowpedia: Explorers' League", "Wowpedia: Silithid" },
@@ -3086,7 +3086,7 @@ SubsOf("The Barrens", {
 		hook = "The lower half of the Barrens, past the dry riverbed that splits the zone.",
 		lore = {
 			"The Barrens runs a long way. A dried-up riverbed crosses it about halfway down and the ground south of that gets its own name. Camp Taurajo is down here, so is Northwatch Hold, and so is Razorfen Kraul.",
-			"The quilboar are the southern half's own problem. Razorfen Kraul and Razorfen Downs are both theirs, and the crone Charlga Razorflank is mustering an army inside the Kraul. The tauren lived in the southern Barrens for decades and held the land holy before they were driven off it, and Thunder Bluff's elders want Razorflank dead rather than merely contained.",
+			"Quilboar are the southern half's own problem. The Bristleback hold Agama'gor off the road west of Camp Taurajo, Razorfen Kraul and Razorfen Downs are quilboar ground too, and the crone Charlga Razorflank is mustering an army inside the Kraul. The tauren lived in the southern Barrens for decades and held the land holy before they were driven off it, and Thunder Bluff's elders want Razorflank dead rather than merely contained.",
 			"Northwatch Hold is the other difficulty: a human fort on the coast of what the Horde regards as its own continent, dug in and not leaving. The south Barrens is where the two factions actually touch.",
 		},
 		readMore = { "Wowpedia: Southern Barrens", "Wowpedia: Razorfen Kraul", "Wowpedia: Northwatch Hold" },

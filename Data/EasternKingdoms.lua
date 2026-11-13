@@ -795,10 +795,10 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Addle's Stead", parent = "Duskwood", faction = "Hostile",
-		hook = "A burned-out farm in the eastern woods, now a nest of things that used to be farmhands.",
+		hook = "An abandoned farm in the south-west, haunted by the men who used it last.",
 		lore = {
-			"Addle's Stead is one of several outlying farms the county lost. The buildings burned and what is there now is not farming.",
-			"The Night Watch has written it off, as they do with anything more than a patrol's reach from the road.",
+			"Addle's Stead sits in south-western Duskwood, south of Raven Hill and west of the Vul'Gol Ogre Mound, just off the road in from Westfall. It is one of several outlying farms the county lost when the dark came down.",
+			"What walks there now are Forlorn Spirits, and the Night Watch takes them for Defias dead. The Brotherhood used the empty farm for its own business, and agents of theirs gathering at it is the last thing anybody reports happening here.",
 		},
 	},
 	{
@@ -1674,7 +1674,7 @@ Zone{
 	hook = "Wildhammer gryphon country, pressed up against a troll holy city that was old when Arathor was young.",
 	lore = {
 		"The Hinterlands are high forest in the northeast, and the Wildhammer dwarves hold them from Aerie Peak. The Wildhammers split from Ironforge in the War of the Three Hammers, went their own way, and became the Alliance's gryphon-riders. They are shamanistic, independent, and have no interest in Bronzebeard politics.",
-		"Their neighbours are the Vilebranch forest trolls, and the trolls were here first by a very long margin. Jintha'Alor on the eastern slopes is an ancient Amani city and a holy site, dedicated among other things to Shadra the spider loa. The Vilebranch are not a tribe of raiders squatting in ruins; they are living in their own city.",
+		"Their neighbours are forest trolls, and the trolls were here first by a very long margin. The Vilebranch hold the east and south out of Jintha'Alor, and the Witherbark keep smaller villages of their own further in. Jintha'Alor on the eastern slopes is an ancient Amani city and a holy site, dedicated among other things to Shadra the spider loa. The Vilebranch are not a tribe of raiders squatting in ruins; they are living in their own city.",
 		"The zone also holds Seradane, one of the green dragonflight's Emerald Dream portals, and Quel'Danil Lodge, where high elves who still speak to the Alliance maintain a presence. For a quiet-looking forest it is unusually crowded with ancient business.",
 	},
 	didYouKnow = "The Wildhammers tamed gryphons, which the Bronzebeards never managed. Every gryphon in Alliance service traces back to Aerie Peak.",

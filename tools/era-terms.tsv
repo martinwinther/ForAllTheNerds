@@ -84,6 +84,7 @@ Archimonde	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Argent Crusade	out-of-era	Wrath of the Lich King. The Argent Dawn is the 1.12 organisation	tools/validate.lua, 1.2.5	ci
 Argent Dawn	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ariden	vanilla	AreaTable row	wow_classic_era	cs
+Arkkoroc	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arthas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arthas Menethil	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Arugal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -533,6 +534,7 @@ Forgotten Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forgotten Pools	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forlorn Ridge	vanilla	AreaTable row	wow_classic_era	cs
 Forlorn Rowe	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
+Forlorn Spirits	vanilla	plural of a 1.12 name (Forlorn Spirit)	cmangos 1.12.1	cs
 Forsaken	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Forsaken Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Forsaken's Royal Apothecary Society	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -993,6 +995,7 @@ Northwatch Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Glade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Lair	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nozdormu	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Ogre	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old God	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Old Gods	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1550,6 +1553,7 @@ Vilebranch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Violet Citadel	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Vol'jin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vul'Gol	vanilla	AreaTable row	wow_classic_era	cs
+Vul'Gol Ogre Mound	vanilla	AreaTable row	wow_classic_era	cs
 Vuldren	forever	used only by Forever entries	Forever	cs
 Wailing Caverns	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wallace	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

@@ -609,7 +609,7 @@ SubsOf("Thousand Needles", {
 		hook = "A crater on the salt flats, which is where goblin racing goes when it goes wrong.",
 		lore = {
 			"Weazel's Crater sits on the Shimmering Flats beside the Mirage Raceway. It is the sort of feature that appears when goblins combine rocket engines, a flat horizon and a betting market.",
-			"Two rival goblin outfits race here with sabotage treated as a recognised tactic. The Flats themselves are a dried sea bed, drained when the Sundering tore this part of Kalimdor apart, and the goblins are the first people to find a use for them.",
+			"The racing is a goblin against a gnome, Pozzik against Fizzle Brassbolts, and sabotage is a recognised tactic on both sides. The Flats themselves are a dried lake bed, with a wrecked sailing ship in the north as the evidence, and the racers are the first people to find a use for them.",
 		},
 	},
 })
@@ -1153,10 +1153,10 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "The Decrepit Ferry", faction = "Contested",
-		hook = "A ferry landing on the lake shore, with nothing left that floats.",
+		hook = "A ferry landing with a boat still in use, and the cargo is bodies.",
 		lore = {
-			"The ferry crossed to Fenris Isle out in Lordamere Lake, back when there was a reason to go there.",
-			"Fenris Keep on the island is worgen-held now. Nobody is running a service to it.",
+			"The ferry crosses Lordamere Lake to Fenris Isle, and the dock on the far side can be seen from this one. It is not derelict. The boat tied up here is heaped with wrapped corpses.",
+			"The Scourge have taken this stretch of shore and the Rot Hide are mixed up in it. Where the bodies are going is Fenris Isle, and why is the question anyone finding the boat ends up asking.",
 		},
 	},
 	{
