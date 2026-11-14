@@ -72,10 +72,10 @@ player-facing lines to the `Unreleased` section of the changelog, and stop. Do
 not tag and do not publish: releases are Martin's call.
 
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
-to 3 shipped in 1.2.7, and P4 runs 4 to 8 shipped in 1.2.8**, all released
+to 3 in 1.2.7, runs 4 to 8 in 1.2.8, and runs 9 and 10 in 1.2.9**, all released
 mid-sweep at Martin's explicit instruction. Their player-facing lines are already
-in the changelog under those three headings, so do not write them again. P5 now
-covers only P4 run 9 onwards, plus `tools/era-audit.md`, which has not been
+in the changelog under those four headings, so do not write them again. P5 now
+covers only P4 run 11 onwards, plus `tools/era-audit.md`, which has not been
 updated for anything since the original four errors.
 
 ## Oracles, in order of preference
