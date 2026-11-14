@@ -968,7 +968,7 @@ SubsOf("Desolace", {
 		hook = "A cave system that is also a demigod's tomb and an elemental princess's home.",
 		lore = {
 			"Maraudon holds the body of Zaetar, son of Cenarius. Zaetar fathered the centaur with Princess Theradras of the earth elementals, and the centaur killed him at birth.",
-			"Theradras kept his remains and has been in these caverns since, and the place has become a strange hybrid of elemental earth and corrupted nature. The centaur consider it their point of origin.",
+			"The centaur hold his remains to this day, and Theradras has been down in these caverns ever since. She is an elemental force of earth with the Old Gods somewhere behind her, and the place has become a strange hybrid of elemental earth and corrupted nature. The centaur consider it their point of origin.",
 			"The Cenarion Circle has an interest in recovering what is left of Zaetar. Theradras has a different view.",
 		},
 		readMore = { "Wowpedia: Maraudon", "Wowpedia: Zaetar" },
@@ -2779,7 +2779,7 @@ SubsOf("Azshara", {
 		hook = "A cave on an islet in the Bay of Storms, usually with nobody home.",
 		lore = {
 			"The cave is on a tiny island in the western Bay of Storms, and it belongs to Scalebeard, who is a very large and very old turtle.",
-			"He is generally not in it. Scalebeard prefers to be out hunting in the Great Sea, so anyone who comes looking for him mostly finds an empty cave.",
+			"He is rarely in it, and nothing on record says where he goes instead. He does not trouble anyone who walks in on him either.",
 			"Azshara is full of ruins, satyrs, naga and the wreckage of a drowned empire. It is worth noting that one of its named places is a turtle's address.",
 		},
 		readMore = { "Wowpedia: Scalebeard's Cave", "Wowpedia: Azshara" },

@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 200 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 225 of 919 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 200 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 225 of 919 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -1060,8 +1060,130 @@ Valley of Wisdom, Valley of the Watchers, Valormok, Wavestrider Beach,
 Weazel's Crater, Western Plaguelands, Westfall, Wetlands, Whitereach Post,
 Windbreak Canyon, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
 
-Still open, fixed in an earlier run but never reviewed as entries of their own:
-Sardor Isle, Tower of Althalaxx, Emberstrife's Den, Silverpine Forest, Agama'gor,
-The Maul, Brackenwall Village, Rage Scar Hold, The Drunken Dwarf.
+Still open, rewritten in an earlier run but never reviewed as entries of their
+own: Sardor Isle, Tower of Althalaxx, Emberstrife's Den.
+
+This line has been wrong twice and both corrections are worth keeping. It once
+listed The Maul, Brackenwall Village, Rage Scar Hold and The Drunken Dwarf: their
+prose was never touched, they only came up because the extractor quirk made them
+fail the build, and filing a ledger row is not a rewrite. It also went on listing
+Silverpine Forest and Agama'gor after they had been reviewed in the ordinary way,
+in runs 2 and 8. Check this list against the covered list before trusting it.
+
+Next: P4, the next 25 by the corrected ranking.
+
+### 2026-11-14, P4, run 9 of about 30
+
+The scratchpad had been cleared, so the oracles were rebuilt from scratch first.
+That turned out to be worth doing for its own sake: the ranking recomputed to
+exactly run 5's numbers, 589 scoring above zero, 55 real `(Classic)` articles, 4
+`(Classic)` redirects, 137 entry names that are redirects and 14 missing. The
+formula written into this log reproduces faithfully.
+
+This run's 25 were the three entries rewritten in earlier runs but never reviewed
+in their own right, plus 22 by ranking. Sardor Isle, the Tower of Althalaxx and
+Emberstrife's Den all held up on review, which is the answer to whether a rewrite
+made in passing needs a second look: these three did not.
+
+**The creature helper exists now, and it works.** After the Mor'Ladim error the
+log said to check what the game says a creature *does*. `tools/..` is the wrong
+place for it, so it lives in the scratchpad as `creature.py`: give it names and it
+reports level, rank and MovementType from `creature_template`, and whether quest
+text names it. On the case that caused the error:
+
+    Mor'Ladim   id=522  level=35-35  rank=ELITE  movement=RANDOM (roams freely)
+                named in quest text: yes
+
+One lookup. Two things learned building it. The corpus has mysqldump's backslash
+escapes stripped so that names with apostrophes grep correctly, which also makes
+it unparseable as SQL, because a row reads `'Mor'Ladim'`; column lookups therefore
+have to read `db.sql`, which is still escaped. And `mkcorpus.py` now keeps the
+`CREATE TABLE` statements, without which `rank` is just the 34th number in a row
+of 87.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Northridge Lumber Camp | Overrun by the Scourge, "the loggers still working" | The Scarlet Crusade **runs** the mill and their timber comes from it. Both the Alliance and the Horde send people to wreck it, and the method is termites |
+| Quel'Danil Lodge | "Relations have soured badly", the lodge left "isolated and hostile to visitors" | It is the Hinterlands high elves' centre of communication, and its ambassadors are working to build relationships with other races, trading what they know about the Witherbark. Hostile to arrivals, yes; idle and sulking, no |
+| Scholomance | Kel'Thuzad "acquired the estate by promising them immortality and then murdering them for it" | The promise is right and the order is not. The Barovs believed him and **handed the keep over**, and the cultists killed them afterwards. Caer Darrow said he acquired it by murdering them, wrong in its own way, and is fixed with it |
+| Kolkar Crag | "A centaur camp in northern Durotar, raiding down from the Barrens" | A craggy gorge in **southern** Durotar. The Barrens is below it, not above |
+| Kargath | Kargath Bladefist "was held in a gladiator pit and severed his own hand to escape" | The arena story is Warlords-era, the Gorian Empire's pits at Highmaul. What stands is that he cut off his own hand, put a blade in its place, and gave both his name and his clan's |
+| Maraudon | "Theradras kept his remains" | The 1.12 quest text says the centaur killed Zaetar and "now hold Zaetar's remains". Theradras is in the caverns, and she is an elemental force of earth "related to the Old Gods" |
+| Scalebeard's Cave | Scalebeard "prefers to be out hunting in the Great Sea" | Nothing says that. He is a rare, stationary, non-aggressive turtle who is simply not there most of the time, which is a spawn timer and not a hunting trip |
+
+**Scalebeard is the clearest case of the helper earning its place.** The entry
+explained a rare spawn with a story about where the turtle goes. Three fields
+settle it: rare, stationary, not named in any quest text. There is nothing to
+explain, and the entry now says so instead of inventing a reason.
+
+**Two that looked wrong and were not.** Misty Reed Post attributes to Tok'Kar the
+hope that the picket might "one day get a burrow, or at least a tower". That is
+his line, word for word, from the gossip on `Lack of Surplus`, and the quest turns
+in to him. Old Town's SI:7 is in the 1.12 text 28 times.
+
+**A bookkeeping correction, twice over.** The "still open, rewritten but never
+reviewed" list in this log was wrong in both directions. It listed The Maul,
+Brackenwall Village, Rage Scar Hold and The Drunken Dwarf, whose prose was never
+touched: they only came up because the extractor quirk made them fail the build,
+and filing a ledger row is not a rewrite. It also kept listing Silverpine Forest
+and Agama'gor after they had been reviewed in the ordinary way, in runs 2 and 8.
+Check that list against the covered list before trusting it. With this run the
+list is empty.
+
+No rows were filed, no check was added and no row changed verdict, so nothing
+needed breaking deliberately. The ledger is 1,665 rows. Gates: the validator
+passes on all nine configs, `check-gaps.py` passes, and RHYTHM on the four touched
+data files is unchanged at 1/11/8/2.
+
+**Entries covered so far (225).**
+Addle's Stead, Aerie Peak, Agama'gor, Alterac Mountains, Ambermill, Andorhal,
+Angerfang Encampment, Apocryphan's Rest, Arathi Highlands, Ashenvale,
+Auberdine, Azshara, Badlands, Ban'Thallow Barrow Den, Bashal'Aran, Beggar's
+Haunt, Beren's Peril, Blackfathom Deeps, Blackthorn Ridge, Blackwater Cove,
+Blackwing Lair, Blasted Lands, Bloodvenom Post, Bolgan's Hole, Booty Bay,
+Brackwell Pumpkin Patch, Brambleblade Ravine, Bramblescar, Brewnall Village,
+Brill, Brill Town Hall, Burning Steppes, Caer Darrow, Camp Boff, Camp E'thok,
+Camp Taurajo, Camp Wurg, Cathedral Square, Chillwind Camp, Cleft of Shadow,
+Coldridge Valley, Crown Guard Tower, Dalson's Tears, Dandred's Fold,
+Darkshire, Darkshore, Darkwhisper Gorge, Darnassus, Deadwind Pass, Deadwood
+Village, Deeprun Tram, Desolace, Dire Maul, Draco'dar, Dragonmaw Gates,
+Dreadmaul Hold, Dun Garok, Dun Modr, Dun Morogh, Durnholde Keep, Durotar,
+Duskwood, Dustwallow Marsh, Dwarven District, Eastern Plaguelands, Echo Ridge
+Mine, Elwynn Forest, Emberstrife's Den, Emerald Sanctuary, Feathermoon
+Stronghold, Felwood, Feralas, Field of Giants, Flame Crest, Forest Song, Fray
+Island, Freewind Post, Frostmane Hold, Frostwhisper Gorge, Gadgetzan, Gallows'
+End Tavern, Garren's Haunt, Garrison Armory, Gates of Ahn'Qiraj, Gol'Bolar
+Quarry, Gold Coast Quarry, Grim Batol, Grommash Hold, Haldarr Encampment, Hall
+of Legends, Hammerfall, Hearthglen, Hetaera's Clutch, High Rise, Hillsbrad,
+Hillsbrad Fields, Hillsbrad Foothills, Hiri'watha, Iris Lake, Isle of Dread,
+Itharius's Cave, Jerod's Landing, Jintha'Alor, Kargath, Kharanos, Kodo Rock,
+Kolkar Crag, Kolkar Village, Lakeshire, Land's End Beach, Lethlor Ravine,
+Light's Hope Chapel, Loch Modan, Lordamere Internment Camp, Magram Village,
+Malden's Orchard, Maraudon, Mardenholde Keep, Menethil Harbor, Mirage Flats,
+Mirage Raceway, Misty Reed Post, Misty Valley, Molten Core, Moonbrook,
+Mulgore, Nesingwary's Expedition, Nighthaven, North Tide's Hollow, Northridge
+Lumber Camp, Northshire Vineyards, Northwatch Hold, Old Town, Onyxia's Lair,
+Purgation Isle, Pyrewood Village, Quel'Danil Lodge, Raptor Grounds, Raven
+Hill, Raven Hill Cemetery, Ravenholdt Manor, Rebel Camp, Redridge Mountains,
+Refuge Pointe, Render's Valley, Roguefeather Den, Ruins of Ahn'Qiraj, Ruins of
+Andorhal, Ruins of Mathystra, Rut'theran Village, Sandsorrow Watch, Sardor
+Isle, Scalebeard's Cave, Scarlet Monastery, Scholomance, Searing Gorge,
+Shadowfang Keep, Shadowsong Shrine, Shadra'Alor, Shok'Thokar, Silithus,
+Silverpine Forest, Sorrowmurk, Southern Barrens, Southshore, Stillwater Pond,
+Stonetalon Mountains, Stonetalon Peak, Stonewrought Dam, Stormwind City,
+Stormwind Keep, Stranglethorn Vale, Sun Rock Retreat, Swamp of Sorrows,
+Tahonda Ruins, Talrendis Point, Tanaris, Tarren Mill, Teldrassil, Temple of
+Arkkoran, Thalanaar, The Bulwark, The Charred Vale, The Deadmines, The
+Decrepit Ferry, The Drag, The Farstrider Lodge, The Forgotten Pools, The
+Greymane Wall, The Harborage, The Hinterlands, The Park, The Rustmaul Dig
+Site, The Shimmering Flats, The Stockade, The Tainted Scar, The Talondeep
+Path, The Weathered Nook, Theramore Isle, Thousand Needles, Tiragarde Keep,
+Tirisfal Glades, Tower of Althalaxx, Tyr's Hand, Uldum, Un'Goro Crater,
+Uther's Tomb, Valley of Fangs, Valley of Honor, Valley of Spirits, Valley of
+Strength, Valley of Wisdom, Valley of the Watchers, Valormok, Wavestrider
+Beach, Weazel's Crater, Western Plaguelands, Westfall, Wetlands, Whitereach
+Post, Windbreak Canyon, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
+
+Nothing is open from an earlier run.
 
 Next: P4, the next 25 by the corrected ranking.
