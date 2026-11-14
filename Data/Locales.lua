@@ -783,14 +783,6 @@ SubsOf("Felwood", {
 			"When the Burning Legion was broken at Mount Hyjal the demonic energy here did not disperse. It went into the ground, and the trees, the water and the wildlife have been wrong ever since.",
 		},
 	},
-	{
-		name = "Whisperwind Grove", faction = "Neutral",
-		hook = "A grove in northern Felwood the Cenarion Circle is trying to hold clean.",
-		lore = {
-			"Whisperwind Grove is one of the few places in this forest the Circle still has a claim on. The work is restoration, and in Felwood restoration means holding ground rather than gaining any.",
-			"The Circle is the order of druids founded on Cenarius' teaching, opened to tauren as well as night elves after the Third War. Felwood is its largest project and its least successful one.",
-		},
-	},
 })
 
 SubsOf("Un'Goro Crater", {

@@ -1270,7 +1270,7 @@ SubsOf("Feralas", {
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
 		hook = "An island of very large wildlife off the western coast.",
 		lore = {
-			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the place to themselves.",
+			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the run of it, though the Hatecrest naga have cut Shalzaru's Lair into the northern end.",
 			"Sailors named it, not scholars, and nobody has surveyed it properly since. The one thing anybody comes out here for is chimaerok meat, which cooks into the best food on the market.",
 		},
 	},
@@ -2082,7 +2082,7 @@ SubsOf("Desolace", {
 		hook = "The Magram clan's hold, in a war that has outlasted every kingdom.",
 		lore = {
 			"The Valley of Spears belongs to the Magram, one of the centaur clans of Desolace. The Gelkis are the other one that counts here, and the two have been killing each other for longer than any human kingdom has existed.",
-			"The centaur came from Zaetar, Cenarius's son, and Theradras, a princess of the earth elementals. Their children killed their father, and Theradras keeps his remains in Maraudon to this day.",
+			"The centaur came from Zaetar, Cenarius's son, and Theradras, a princess of the earth elementals. Their children killed their father, and the centaur have held his remains ever since, down in Maraudon where Theradras is.",
 			"The tauren have been driven across Kalimdor by centaur raiding for generations. That is a large part of why Thrall found them in the state he did when the Horde landed.",
 		},
 		readMore = { "Wowpedia: Magram", "Wowpedia: Centaur", "Wowpedia: Zaetar", "Wowpedia: Theradras" },

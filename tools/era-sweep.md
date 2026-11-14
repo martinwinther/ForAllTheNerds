@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 225 of 919 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 250 of 918 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 225 of 919 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 250 of 918 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -1185,5 +1185,114 @@ Beach, Weazel's Crater, Western Plaguelands, Westfall, Wetlands, Whitereach
 Post, Windbreak Canyon, Windshear Crag, Winterspring, Yojamba Isle, Zul'Gurub.
 
 Nothing is open from an earlier run.
+
+Next: P4, the next 25 by the corrected ranking.
+
+### 2026-11-14, P4, run 10 of about 29
+
+Reviewed 25 entries. One had to be deleted, four more carried a bad claim, and
+two of those four were this sweep's own corrections not carried across.
+
+**An entry deleted: Whisperwind Grove.** Its only patch template is 4.0.3a, it is
+absent from the Classic Era AreaTable, and it is absent from the 1.12 game text.
+Felwood's groves in this period are Emerald Sanctuary, Talonbranch Glade,
+Jadefire Glen and Morlos'Aran; Whisperwind Grove is the Emerald Circle's
+Cataclysm capital and the Circle's bases in our period are Emerald Sanctuary and
+Wildheart Point. This is the Sludgewerks case again, and the corpus is now 918
+vanilla entries.
+
+**Third live instance of the compositional-rule hole.** The ledger carried
+`Whisperwind Grove` as **vanilla**, on "every part named in 1.12 sources", because
+Whisperwind and Grove are each vanilla words. Ring of Valor and Dragon Soul were
+the first two, in run 3. That rule has now let through a Wrath arena, a Cataclysm
+artefact name and a whole Cataclysm town. The remaining rows resting on it still
+deserve a pass of their own, and this is the third time that has been written
+down.
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| The High Seat | "Three thrones and only one occupant", the chamber remembering three clans | Three thrones are the Council of Three Hammers, which exists because Magni is petrified in Cataclysm. Here Magni sits in his own throne room and rules alone |
+| Anvilmar | "The hall the dwarves lived in before Ironforge" | The hall at the north end of Coldridge Valley is the first settlement a new dwarf reaches. Nothing identifies it as Modimus Anvilmar's seat, and the wiki marks even the naming as speculation. The Modimus history is in scope and stays; the identification does not |
+| Valley of Spears | "Theradras keeps his remains in Maraudon to this day" | The centaur hold Zaetar's remains, which run 9 established from the 1.12 quest text and fixed in the Maraudon entry. This entry kept the old version |
+| Isle of Dread | The chimaerok "have the place to themselves" | Written by run 6, and wrong. Shalzaru's Lair is cut into the island's northern end and the Hatecrest naga are in it, which our own Shalzaru's Lair entry says |
+
+**Two of the four were ours, and that is the pattern now.** Run 7 found run 5's
+Bristleback error, run 9 found run 6's Isle of Dread error only indirectly, and
+this run found both the Maraudon fix and the Isle of Dread fix had not been
+carried across to the entries that repeat them. A correction is not finished when
+the entry it was found in is fixed. Grep the other entries for the claim before
+closing it out, because the sweep keeps catching itself.
+
+**Broken deliberately, two ways.** A re-verdicted row is not done until the gate
+fails on the term, so `Whisperwind Grove is north of here.` and
+`The grove at whisperwind grove is north of here.` were both injected into a
+Felwood entry. Each failed naming the patch and the evidence, the second
+exercising the `ci` column. Reverted.
+
+**Two that looked wrong and were not.** Thalassian Base Camp is careful where the
+article is not: the article calls its elves blood elves, which is a 2.0.1
+reclassification, and our entry says Thalassian out of Quel'Thalas. Stonewrought
+Pass really does run from Dustfire Valley to the Valley of Kings, and Franclorn
+Forgewright, a Dark Iron, really did design both it and the Stonewrought Dam.
+
+**One row filed and one re-verdicted:** `Shalzaru's Lair` as an AreaTable row, and
+`Whisperwind Grove` from vanilla to out-of-era. The ledger is 1,666 rows. Gates:
+the validator passes on all nine configs, `check-gaps.py` passes with the entry
+deleted, and RHYTHM on the four touched data files is unchanged at 0/11/8/2.
+
+**Entries covered so far (250).**
+Addle's Stead, Aerie Peak, Agama'gor, Agamand Mills, Alterac Mountains,
+Alterac Valley, Ambermill, Andorhal, Angerfang Encampment, Anvilmar,
+Apocryphan's Rest, Arathi Highlands, Ashenvale, Auberdine, Azshara, Badlands,
+Ban'Thallow Barrow Den, Bashal'Aran, Beggar's Haunt, Beren's Peril,
+Blackfathom Deeps, Blackthorn Ridge, Blackwater Cove, Blackwing Lair, Blasted
+Lands, Bloodvenom Post, Bolgan's Hole, Booty Bay, Brackwell Pumpkin Patch,
+Brambleblade Ravine, Bramblescar, Brewnall Village, Brill, Brill Town Hall,
+Burning Steppes, Caer Darrow, Camp Boff, Camp E'thok, Camp Taurajo, Camp Wurg,
+Cathedral Square, Chillwind Camp, Cleft of Shadow, Coldridge Valley, Crown
+Guard Tower, Dalson's Tears, Dandred's Fold, Darkshire, Darkshore, Darkwhisper
+Gorge, Darnassus, Deadwind Pass, Deadwood Village, Deeprun Tram, Desolace,
+Dire Maul, Draco'dar, Dragonmaw Gates, Dreadmaul Hold, Dun Garok, Dun Modr,
+Dun Morogh, Durnholde Keep, Durotar, Duskwood, Dustwallow Marsh, Dwarven
+District, Eastern Plaguelands, Echo Ridge Mine, Elwynn Forest, Emberstrife's
+Den, Emerald Sanctuary, Feathermoon Stronghold, Felwood, Feralas, Field of
+Giants, Flame Crest, Forest Song, Fray Island, Freewind Post, Frostmane Hold,
+Frostwhisper Gorge, Gadgetzan, Gallows' End Tavern, Garren's Haunt, Garrison
+Armory, Gates of Ahn'Qiraj, Gol'Bolar Quarry, Gold Coast Quarry, Grim Batol,
+Grommash Hold, Haldarr Encampment, Hall of Legends, Hammerfall, Hearthglen,
+Hetaera's Clutch, High Rise, Hillsbrad, Hillsbrad Fields, Hillsbrad Foothills,
+Hiri'watha, Iris Lake, Isle of Dread, Itharius's Cave, Jerod's Landing,
+Jintha'Alor, Kargath, Kharanos, Kodo Rock, Kolkar Crag, Kolkar Village,
+Lakeshire, Land's End Beach, Lethlor Ravine, Light's Hope Chapel, Loch Modan,
+Lordamere Internment Camp, Magram Village, Malden's Orchard, Maraudon,
+Mardenholde Keep, Menethil Harbor, Mirage Flats, Mirage Raceway, Misty Reed
+Post, Misty Valley, Molten Core, Moonbrook, Mulgore, Nesingwary's Expedition,
+Nighthaven, North Tide's Hollow, Northridge Lumber Camp, Northshire Vineyards,
+Northwatch Hold, Old Town, Onyxia's Lair, Purgation Isle, Pyrewood Village,
+Quel'Danil Lodge, Raptor Grounds, Raven Hill, Raven Hill Cemetery, Ravenholdt
+Manor, Rebel Camp, Redridge Mountains, Refuge Pointe, Render's Valley,
+Roguefeather Den, Ruins of Ahn'Qiraj, Ruins of Andorhal, Ruins of Mathystra,
+Rut'theran Village, Sandsorrow Watch, Sardor Isle, Scalebeard's Cave, Scarlet
+Monastery, Scholomance, Searing Gorge, Seradane, Shadowfang Keep, Shadowsong
+Shrine, Shadra'Alor, Shalzaru's Lair, Shok'Thokar, Silithus, Silverpine
+Forest, Sishir Canyon, Sorrowmurk, South Gate Outpost, Southern Barrens,
+Southern Gold Road, Southshore, Splintertree Post, Stillwater Pond, Stonard,
+Stonetalon Mountains, Stonetalon Peak, Stonewrought Dam, Stonewrought Pass,
+Stormwind City, Stormwind Keep, Stranglethorn Vale, Sun Rock Retreat, Swamp of
+Sorrows, Tahonda Ruins, Talrendis Point, Tanaris, Tarren Mill, Teldrassil,
+Temple of Arkkoran, Thalanaar, Thalassian Base Camp, Thandol Span, The
+Bulwark, The Charred Vale, The Dead Field, The Deadmines, The Decrepit Ferry,
+The Drag, The Farstrider Lodge, The Forgotten Coast, The Forgotten Pools, The
+Greymane Wall, The Harborage, The High Seat, The Hinterlands, The Park, The
+Rustmaul Dig Site, The Screeching Canyon, The Shimmering Flats, The Stockade,
+The Tainted Scar, The Talon Den, The Talondeep Path, The Weathered Nook,
+Theramore Isle, Thondroril River, Thousand Needles, Tiragarde Keep, Tirisfal
+Glades, Tower of Althalaxx, Trade District, Tyr's Hand, Uldum, Un'Goro Crater,
+Uther's Tomb, Valley of Fangs, Valley of Honor, Valley of Spears, Valley of
+Spirits, Valley of Strength, Valley of Trials, Valley of Wisdom, Valley of the
+Watchers, Valormok, Warrior's Terrace, Wavestrider Beach, Weazel's Crater,
+Western Plaguelands, Westfall, Wetlands, Whisperwind Grove, Whitereach Post,
+Windbreak Canyon, Windshear Crag, Winterfall Village, Winterspring, Yojamba
+Isle, Zul'Gurub.
 
 Next: P4, the next 25 by the corrected ranking.

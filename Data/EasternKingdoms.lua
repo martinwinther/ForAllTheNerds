@@ -2389,11 +2389,11 @@ SubsOf("Silverpine Forest", {
 SubsOf("Dun Morogh", {
 	{
 		name = "Anvilmar", parent = "Dun Morogh", faction = "Alliance",
-		hook = "The hall the dwarves lived in before Ironforge, and the name of their last High King.",
+		hook = "The first hall a new dwarf sees, carrying the name of their last High King.",
 		lore = {
-			"Anvilmar is where the dwarves were before they were three peoples. Modimus Anvilmar was High King when they were still one, ruling from a hall rather than from a mountain, and the clans answered to him together.",
+			"Anvilmar is the hall at the north end of Coldridge Valley, and the first settlement of any size a new dwarf comes to. The name is the interesting part. Modimus Anvilmar was High King when the dwarves were still one people and the clans answered to him together.",
 			"His death ended that. There was no settled succession, and the Bronzebeards, the Wildhammers and the Dark Irons went to war over the throne. That is the War of the Three Hammers, and every dwarven grievance since turns on it.",
-			"The hall is a quiet place for new dwarves to start out from, and that is a mild irony. Everything that divided their people began with the question of who got to sit in it.",
+			"So a quiet hall full of dwarves taking their first instructions carries the name of the king whose death split the race. Nobody claims this is the hall he ruled from. The name is the whole of the connection.",
 		},
 		readMore = { "Wowpedia: Anvilmar", "Wowpedia: Modimus Anvilmar", "Wowpedia: War of the Three Hammers" },
 	},
