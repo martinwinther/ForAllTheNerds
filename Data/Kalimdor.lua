@@ -968,7 +968,7 @@ SubsOf("Desolace", {
 		hook = "A cave system that is also a demigod's tomb and an elemental princess's home.",
 		lore = {
 			"Maraudon holds the body of Zaetar, son of Cenarius. Zaetar fathered the centaur with Princess Theradras of the earth elementals, and the centaur killed him at birth.",
-			"Theradras kept his remains and has been in these caverns since, and the place has become a strange hybrid of elemental earth and corrupted nature. The centaur consider it their point of origin.",
+			"The centaur hold his remains to this day, and Theradras has been down in these caverns ever since. She is an elemental force of earth with the Old Gods somewhere behind her, and the place has become a strange hybrid of elemental earth and corrupted nature. The centaur consider it their point of origin.",
 			"The Cenarion Circle has an interest in recovering what is left of Zaetar. Theradras has a different view.",
 		},
 		readMore = { "Wowpedia: Maraudon", "Wowpedia: Zaetar" },
@@ -1270,7 +1270,7 @@ SubsOf("Feralas", {
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
 		hook = "An island of very large wildlife off the western coast.",
 		lore = {
-			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the place to themselves.",
+			"The Isle of Dread lies off Feralas' western coast, south of Sardor Isle, and what is on it is chimaera. The chimaerok of this island are far heavier than the mainland sort and they have the run of it, though the Hatecrest naga have cut Shalzaru's Lair into the northern end.",
 			"Sailors named it, not scholars, and nobody has surveyed it properly since. The one thing anybody comes out here for is chimaerok meat, which cooks into the best food on the market.",
 		},
 	},
@@ -2082,7 +2082,7 @@ SubsOf("Desolace", {
 		hook = "The Magram clan's hold, in a war that has outlasted every kingdom.",
 		lore = {
 			"The Valley of Spears belongs to the Magram, one of the centaur clans of Desolace. The Gelkis are the other one that counts here, and the two have been killing each other for longer than any human kingdom has existed.",
-			"The centaur came from Zaetar, Cenarius's son, and Theradras, a princess of the earth elementals. Their children killed their father, and Theradras keeps his remains in Maraudon to this day.",
+			"The centaur came from Zaetar, Cenarius's son, and Theradras, a princess of the earth elementals. Their children killed their father, and the centaur have held his remains ever since, down in Maraudon where Theradras is.",
 			"The tauren have been driven across Kalimdor by centaur raiding for generations. That is a large part of why Thrall found them in the state he did when the Horde landed.",
 		},
 		readMore = { "Wowpedia: Magram", "Wowpedia: Centaur", "Wowpedia: Zaetar", "Wowpedia: Theradras" },
@@ -2779,7 +2779,7 @@ SubsOf("Azshara", {
 		hook = "A cave on an islet in the Bay of Storms, usually with nobody home.",
 		lore = {
 			"The cave is on a tiny island in the western Bay of Storms, and it belongs to Scalebeard, who is a very large and very old turtle.",
-			"He is generally not in it. Scalebeard prefers to be out hunting in the Great Sea, so anyone who comes looking for him mostly finds an empty cave.",
+			"He is rarely in it, and nothing on record says where he goes instead. He does not trouble anyone who walks in on him either.",
 			"Azshara is full of ruins, satyrs, naga and the wreckage of a drowned empire. It is worth noting that one of its named places is a turtle's address.",
 		},
 		readMore = { "Wowpedia: Scalebeard's Cave", "Wowpedia: Azshara" },

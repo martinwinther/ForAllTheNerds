@@ -1210,6 +1210,7 @@ Shady Rest	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shaka	vanilla	Khan Shaka of the Gelkis, named in 1.12 quest text	cmangos 1.12.1	cs
 Shal'nan	forever	used only by Forever entries	Forever	cs
 Shalzaru	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shalzaru's Lair	vanilla	AreaTable row	wow_classic_era	cs
 Shandris	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shandris Feathermoon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shaol'watha	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1599,7 +1600,7 @@ Whelps	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Whichever Staghelm	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Whispering Forest	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Whispering Shore	vanilla	AreaTable row	wow_classic_era	cs
-Whisperwind Grove	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Whisperwind Grove	out-of-era	added in patch 4.0.3a, in neither the Classic Era AreaTable nor the 1.12 game text. The Emerald Circle's bases in this period are Emerald Sanctuary and Wildheart Point	warcraft.wiki.gg	ci
 Whitereach Post	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wild God	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Wild Gods	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs

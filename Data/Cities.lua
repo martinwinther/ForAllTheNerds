@@ -127,9 +127,9 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "The High Seat", faction = "Alliance",
-		hook = "Magni Bronzebeard's throne room, with three thrones and only one occupant.",
+		hook = "Ironforge's throne room, and Magni Bronzebeard rules alone from it.",
 		lore = {
-			"The High Seat is Ironforge's throne room. Magni rules from it, and the chamber's design remembers that the dwarves once had three clans and a High King.",
+			"The High Seat is Ironforge's throne room, off the Great Forge at the heart of the city, and King Magni Bronzebeard sits in it. One throne, one king, one clan.",
 			"The War of the Three Hammers ended that. The Wildhammers went to Aerie Peak and the Dark Irons went south to Blackrock Mountain, and the Bronzebeards have held Ironforge alone ever since.",
 		},
 	},

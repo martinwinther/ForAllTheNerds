@@ -1475,7 +1475,7 @@ SubsOf("Badlands", {
 		hook = "The Horde's dusty outpost in Khaz Modan, named for an orc who cut off his own hand.",
 		lore = {
 			"Kargath is the Horde's base in the Badlands, watching the dwarves and the Dark Irons and keeping a claim on the region. It is a hard posting in a zone with no water and no shade.",
-			"The name honours Kargath Bladefist, chieftain of the Shattered Hand clan, who was held in a gladiator pit and severed his own hand to escape, replacing it with a blade. The Shattered Hand took their name from the act.",
+			"The name honours Kargath Bladefist, chieftain of the Shattered Hand clan. He cut off his own hand and put a blade in its place, and both his name and his clan's come from that.",
 		},
 	},
 	{
@@ -1710,10 +1710,10 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Quel'Danil Lodge", parent = "The Hinterlands", faction = "Hostile",
-		hook = "A high elf lodge in the woods, and a reminder that not all elves withdrew.",
+		hook = "The high elves' listening post in the Hinterlands, and it is not idle.",
 		lore = {
-			"Quel'Danil was a high elven outpost maintained by elves who kept ties to the Alliance after Quel'Thalas largely withdrew from it. The high elves were the Alliance of Lordaeron's magical backbone in the Second War.",
-			"Relations have soured badly. The elves' withdrawal from the Alliance, the destruction of Quel'Thalas by Arthas and the Scourge, and the bitterness on both sides have left places like this one isolated and hostile to visitors.",
+			"Quel'Danil is the Hinterlands high elves' centre of communication, and its ambassadors are working to build relationships with other races. What they have to trade is what they know about the Witherbark trolls holding the south of the zone. The high elves were the Alliance of Lordaeron's magical backbone in the Second War.",
+			"That outreach has limits. The elves' withdrawal from the Alliance, the destruction of Quel'Thalas by Arthas and the Scourge, and the bitterness on both sides mean the lodge decides for itself who is welcome, and most arrivals are not.",
 		},
 	},
 	{
@@ -2004,7 +2004,7 @@ SubsOf("Western Plaguelands", {
 		name = "Caer Darrow", parent = "Western Plaguelands", faction = "Hostile",
 		hook = "An island estate turned into a school of necromancy.",
 		lore = {
-			"Caer Darrow was the Barov family's island holding in Darrowmere Lake, a wealthy and respectable estate. Kel'Thuzad acquired it by murdering the family, and converted the manor's crypts into Scholomance.",
+			"Caer Darrow was the Barov family's island holding in Darrowmere Lake, a wealthy and respectable estate. Kel'Thuzad talked the family into handing it over and the cultists killed them afterwards, and the manor's crypts became Scholomance.",
 			"Scholomance is now the Cult of the Damned's primary teaching institution, where necromancers are trained. The Barovs' ghosts are on the island and the family's surviving relatives are still litigating the deeds.",
 		},
 		readMore = { "Wowpedia: Scholomance", "Wowpedia: Caer Darrow" },
@@ -2043,10 +2043,10 @@ SubsOf("Western Plaguelands", {
 	},
 	{
 		name = "Northridge Lumber Camp", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "A logging camp overrun by the Scourge, with the loggers still working.",
+		hook = "A working lumber mill, run by the Scarlet Crusade and sabotaged by everyone else.",
 		lore = {
-			"Northridge supplied timber to the region. The Scourge took it, and the workforce has been repurposed rather than replaced.",
-			"It sits on the road to Hearthglen, making it the Scarlet Crusade's problem as well.",
+			"Northridge is the Scarlet Crusade's mill, close to Hearthglen, and their timber comes from it. It is still cutting.",
+			"That makes it worth attacking, and both the Alliance and the Horde have worked out that the cheapest way to do it is termites rather than soldiers.",
 		},
 	},
 	{
@@ -2389,11 +2389,11 @@ SubsOf("Silverpine Forest", {
 SubsOf("Dun Morogh", {
 	{
 		name = "Anvilmar", parent = "Dun Morogh", faction = "Alliance",
-		hook = "The hall the dwarves lived in before Ironforge, and the name of their last High King.",
+		hook = "The first hall a new dwarf sees, carrying the name of their last High King.",
 		lore = {
-			"Anvilmar is where the dwarves were before they were three peoples. Modimus Anvilmar was High King when they were still one, ruling from a hall rather than from a mountain, and the clans answered to him together.",
+			"Anvilmar is the hall at the north end of Coldridge Valley, and the first settlement of any size a new dwarf comes to. The name is the interesting part. Modimus Anvilmar was High King when the dwarves were still one people and the clans answered to him together.",
 			"His death ended that. There was no settled succession, and the Bronzebeards, the Wildhammers and the Dark Irons went to war over the throne. That is the War of the Three Hammers, and every dwarven grievance since turns on it.",
-			"The hall is a quiet place for new dwarves to start out from, and that is a mild irony. Everything that divided their people began with the question of who got to sit in it.",
+			"So a quiet hall full of dwarves taking their first instructions carries the name of the king whose death split the race. Nobody claims this is the hall he ruled from. The name is the whole of the connection.",
 		},
 		readMore = { "Wowpedia: Anvilmar", "Wowpedia: Modimus Anvilmar", "Wowpedia: War of the Three Hammers" },
 	},

@@ -1,5 +1,58 @@
 # Changelog
 
+## 1.2.9
+
+Two more rounds of the vanilla-era sweep. One entry turned out to describe a town
+that does not exist in this period and has been removed; the rest are entries that
+named the wrong people or explained something that needed no explaining.
+
+**Removed**
+
+- Whisperwind Grove. It is the Emerald Circle's capital in a later expansion and
+  is in neither client this addon runs on, so the entry could never have come up.
+  The Circle's holdings in this period are the Emerald Sanctuary in southern
+  Felwood and Wildheart Point.
+
+**Fixed**
+
+- The Northridge Lumber Camp was a logging camp overrun by the Scourge. The
+  Scarlet Crusade runs the mill and their timber comes from it, which is why both
+  the Alliance and the Horde send people to wreck it, and the method is termites
+  rather than soldiers.
+- Quel'Danil Lodge was isolated and sulking after the high elves' falling-out with
+  the Alliance. It is their centre of communication in the Hinterlands, and its
+  ambassadors are working to build relationships with other races, trading what
+  they know about the Witherbark trolls. It is still no friendlier to arrivals.
+- Scholomance had Kel'Thuzad taking the Barov estate by murdering the family. He
+  promised immortality to anyone who would serve the Lich King, the Barovs
+  believed him and handed over the keep and its crypts, and the cultists killed
+  them afterwards. The Caer Darrow entry had its own wrong version of the same
+  story and is fixed with it.
+- The High Seat had three thrones in it. Three thrones belong to a council that
+  sits only after Magni is lost, which is a later expansion. Here Magni holds
+  Ironforge alone, from one throne.
+- Anvilmar was the hall the dwarves lived in before Ironforge. It is the first
+  settlement a new dwarf reaches, at the north end of Coldridge Valley, and
+  nothing identifies it as Modimus Anvilmar's seat. The history of Modimus and
+  the War of the Three Hammers is unchanged; only the claim about the building is
+  gone.
+- Kargath had its namesake held in a gladiator pit. That account belongs to a much
+  later expansion. What the entry says now is that Kargath Bladefist cut off his
+  own hand and put a blade in its place, and that both his name and his clan's
+  come from it.
+- Maraudon had Theradras keeping Zaetar's remains. The centaur killed him and hold
+  the remains, and Theradras is down in the caverns with them. The Valley of
+  Spears entry repeated the old version and is fixed too.
+- Kolkar Crag was in northern Durotar raiding down from the Barrens. It is a
+  craggy gorge in the south of the zone, with the Barrens below it rather than
+  above.
+- Scalebeard's Cave explained an empty cave by saying its turtle was out hunting
+  in the Great Sea. Nothing says that. Scalebeard is simply not there most of the
+  time, and he does not trouble anyone who walks in on him.
+- The Isle of Dread said its chimaerok have the place to themselves. The Hatecrest
+  naga have cut Shalzaru's Lair into the island's northern end, which this addon's
+  own Shalzaru's Lair entry describes.
+
 ## 1.2.8
 
 More of the vanilla-era sweep. The fixes in 1.2.6 and 1.2.7 were mostly places

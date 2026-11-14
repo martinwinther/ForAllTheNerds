@@ -47,7 +47,7 @@ Instance{
 	hook = "A noble family's crypt turned into the Scourge's school of necromancy.",
 	lore = {
 		"Scholomance is on Caer Darrow, the island estate of the Barov family in Darrowmere Lake. The Barovs were wealthy, respectable Lordaeron nobility.",
-		"Kel'Thuzad acquired the estate by promising them immortality and then murdering them for it. The crypts beneath the manor became a school, and the Cult of the Damned trains its necromancers in them.",
+		"Kel'Thuzad promised immortality to anyone who would serve the Lich King, the Barovs believed him and handed over the keep and its crypts, and the cultists killed them afterwards. The crypts beneath the manor became a school, and the Cult of the Damned trains its necromancers in them.",
 		"Darkmaster Gandling runs it. The Barov family's surviving relatives on both sides of the faction divide are still trying to reclaim the deeds. It is a notably bureaucratic response to a school of necromancy.",
 	},
 	readMore = { "Wowpedia: Scholomance", "Wowpedia: Kel'Thuzad" },

@@ -783,14 +783,6 @@ SubsOf("Felwood", {
 			"When the Burning Legion was broken at Mount Hyjal the demonic energy here did not disperse. It went into the ground, and the trees, the water and the wildlife have been wrong ever since.",
 		},
 	},
-	{
-		name = "Whisperwind Grove", faction = "Neutral",
-		hook = "A grove in northern Felwood the Cenarion Circle is trying to hold clean.",
-		lore = {
-			"Whisperwind Grove is one of the few places in this forest the Circle still has a claim on. The work is restoration, and in Felwood restoration means holding ground rather than gaining any.",
-			"The Circle is the order of druids founded on Cenarius' teaching, opened to tauren as well as night elves after the Third War. Felwood is its largest project and its least successful one.",
-		},
-	},
 })
 
 SubsOf("Un'Goro Crater", {
@@ -1521,10 +1513,10 @@ SubsOf("Deadwind Pass", {
 SubsOf("Durotar", {
 	{
 		name = "Kolkar Crag", faction = "Hostile",
-		hook = "A centaur camp in northern Durotar, raiding down from the Barrens.",
+		hook = "A craggy gorge in southern Durotar with centaur living in it.",
 		lore = {
 			"The Kolkar are centaur, and centaur are the reason the tauren were nomads for generations before the Horde arrived in Kalimdor. They hunted them across the continent.",
-			"Having them inside Durotar's borders is a problem Razor Hill handles rather than solves. The clans trace themselves to Zaetar, a son of the demigod Cenarius, and the earth elemental princess Theradras, and they have the temperament that suggests.",
+			"The crag sits at Durotar's southern end, where the Barrens begins, and having Kolkar inside Durotar's borders at all is a problem Razor Hill handles rather than solves. The clans trace themselves to Zaetar, a son of the demigod Cenarius, and the earth elemental princess Theradras, and they have the temperament that suggests.",
 		},
 	},
 	{
