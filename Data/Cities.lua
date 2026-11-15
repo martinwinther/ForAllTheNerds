@@ -399,7 +399,7 @@ SubsOf("Darnassus", {
 		hook = "Elune's temple and Tyrande's seat, the centre of night elf religion.",
 		lore = {
 			"The Temple of the Moon is the Sisters of Elune's great temple and Tyrande Whisperwind's seat as High Priestess. Priestess training happens here.",
-			"Elune is the night elves' moon goddess, and unlike most divinities in this world her nature is genuinely unclear even to her own priesthood. The Sisters of Elune are the oldest institution the night elves have.",
+			"Elune is the night elves' moon goddess and this temple is the centre of their spiritual life. The Sisters of Elune work outward from it as well: the priestess looking into whatever has been washing up on the Darkshore coast was sent out from here.",
 		},
 	},
 	{

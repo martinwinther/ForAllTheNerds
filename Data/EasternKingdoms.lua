@@ -28,10 +28,10 @@ Zone{
 SubsOf("Elwynn Forest", {
 	{
 		name = "Northshire Valley", faction = "Alliance", levels = "1-5",
-		hook = "A sheltered training vale where Stormwind has taught its recruits for three generations.",
+		hook = "The walled training vale where Stormwind's recruits start.",
 		lore = {
-			"The valley is a natural bowl in the hills north of Goldshire, and the Church chose it for exactly that. Steep sides, one road in, good water. It has been Stormwind's training ground for new soldiers, clerics and mages for as long as the kingdom has needed them.",
-			"It has not always been safe. During the First War orcs came through this valley on their way to the city and left the Abbey a shell. The kobolds now infesting Echo Ridge Mine are a nuisance by comparison, so green recruits are sent to deal with them.",
+			"Northshire Valley is closed in by mountains with one way through it, a southern pass behind thick stone walls and a guarded gate, and a river runs down the middle of it and out into Crystal Lake. Northshire Abbey trains the kingdom's recruits inside that ring, and Marshal McBride commands its garrison.",
+			"It has not always been safe. The Abbey was left a shell in the First War, taken apart in an orcish onslaught after the Horde came through this valley. The troubles now are smaller: kobolds in Echo Ridge Mine, Defias thugs eyeing the vineyard, and more wolves in the woods than there used to be, driven up here out of Duskwood.",
 		},
 	},
 	{
@@ -102,10 +102,10 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Eastvale Logging Camp", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "The timber camp that is rebuilding Stormwind, one cartload at a time.",
+		hook = "Stormwind's lumber camp in eastern Elwynn, always behind on its orders.",
 		lore = {
-			"Stormwind City was burned to the ground in the First War and the reconstruction has eaten timber for decades. Eastvale is where most of it comes from. The camp runs hard, and the loggers are pushing further east into the forest than is really safe.",
-			"That expansion keeps running into the local wildlife and the occasional orc scouting party out of the Redridge Mountains. The camp's foremen would like more militia. They are not getting more militia.",
+			"Eastvale cuts Stormwind's timber out of the forest east of Goldshire, and the orders keep arriving against delivery dates the camp struggles to meet.",
+			"The wildlife is why. Wolves and bears attack the camp almost constantly, enough to chase the workers off the cut, and the Stormwind Guard has taken to paying passing help to thin them out. Marshal Haggard, who led the Stormwind Guard before he retired, keeps a manor here.",
 		},
 	},
 	{
@@ -142,12 +142,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Valley of Heroes", parent = "Stormwind City", faction = "Alliance",
-		hook = "The approach to Stormwind, lined with statues of the Second War's commanders.",
+		hook = "The approach to Stormwind, lined with statues of the Alliance Expedition's commanders.",
 		lore = {
-			"The statues honour the leaders of the Alliance of Lordaeron who turned back the Horde in the Second War: among them Anduin Lothar, Turalyon, Danath Trollbane, Kurdran Wildhammer and Khadgar. Every one of them is tied to the campaign that saved the human kingdoms after Stormwind had already fallen once.",
-			"Several of them never came home. When the Alliance Expedition went through the Dark Portal into Draenor and the portal was destroyed behind them, Turalyon, Khadgar, Danath and Kurdran were on the far side. Stormwind has no idea what became of them.",
+			"Five statues stand along the road in, raised while the city was still being rebuilt after the Second War. Turalyon is the one at the head of the road, with Kurdran Wildhammer and Khadgar on one side of the approach and Danath Trollbane and Alleria Windrunner on the other.",
+			"All five led the Alliance Expedition. They went through the Dark Portal into Draenor to shut it from the far side, the portal came down behind them, and Stormwind has no idea what became of any of them. The statues went up for people who were already gone.",
 		},
-		didYouKnow = "Lothar's statue is the centrepiece because he is the reason there is a Stormwind to walk into. He covered the retreat from this city in the First War and died holding the line at Blackrock Spire in the Second.",
+		didYouKnow = "None of the five is Anduin Lothar, though he is the reason there is a Stormwind to walk into. He covered the retreat from this city in the First War and died holding the line at Blackrock Spire in the Second.",
 	},
 })
 
@@ -304,7 +304,7 @@ SubsOf("Tirisfal Glades", {
 			"These are the remains of the greatest human city in the world. The throne room above is where Arthas killed his father Terenas, and the Forsaken have left the ruin standing largely as it fell.",
 			"The Undercity below was originally a crypt and sewer system that Arthas had begun expanding. Sylvanas finished the job and turned it into a capital. The symbolism of a dead nation's heirs living in its basement is not lost on anyone.",
 		},
-		didYouKnow = "The Forsaken have left the throne room much as they found it. They hold their court in the crypts below instead. Nobody is spared the walk past it.",
+		didYouKnow = "The Forsaken have left the throne room much as they found it. They hold their court in the crypts below instead.",
 	},
 	{
 		name = "The Bulwark", parent = "Tirisfal Glades", faction = "Horde",
@@ -510,10 +510,10 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "The Jansen Stead", parent = "Westfall", faction = "Contested",
-		hook = "An abandoned farmstead, its scarecrows gone wrong.",
+		hook = "A farm the thieves emptied, with the harvest machines still in the fields.",
 		lore = {
-			"The Jansen family left like most of Westfall's tenants. What they left behind has not stayed inert: the harvest golems and scarecrows across these fields have been animated by something, and they attack anyone who comes near.",
-			"The usual explanation blames the harvest watchers on experimental Stormwind engineering abandoned in place. Nobody has produced a better one.",
+			"The Jansen Stead was emptied like most of Westfall's farms, and it was thieves who did the emptying. What holds the fields now is a crowd of harvest watchers, mechanical things shaped like scarecrows that go for anyone who comes near.",
+			"Nobody is sure who built them. Some say only goblins could have. Others say the Defias Brotherhood had them made to frighten Westfall off its own land and leave the smuggling roads clear. Either way they have done the job.",
 		},
 	},
 	{
@@ -1269,10 +1269,10 @@ SubsOf("Arathi Highlands", {
 	},
 	{
 		name = "Faldir's Cove", parent = "Arathi Highlands", faction = "Contested",
-		hook = "A hidden cove on the southern coast, used by people who do not want harbours.",
+		hook = "A cove under the cliffs with a treasure hunt stranded in it.",
 		lore = {
-			"Faldir's Cove is a sheltered beach reachable only by a difficult descent, ideal for smuggling and for ships that would rather not be seen.",
-			"There are wrecks here and there is treasure, and both have attracted the attention of pirates working this coast.",
+			"Faldir's Cove is a sheltered beach on the southern coast, reachable only by a difficult descent. A Blackwater Raiders expedition out of Booty Bay came here after a sunken elven treasure and brought three ships in to lift it.",
+			"Two of them went onto the reef. The Spirit of Silverpine and the Maiden's Folly are on the bottom, the Daggerspine naga killed the crews who made it into the water, and what is left of the expedition is camped on the sand with the naga massing offshore.",
 		},
 	},
 	{
@@ -1285,10 +1285,10 @@ SubsOf("Arathi Highlands", {
 	},
 	{
 		name = "Northfold Manor", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "A noble estate turned Syndicate house.",
+		hook = "A Stromgarde farm the Syndicate moved into.",
 		lore = {
-			"Northfold belonged to one of Stromgarde's noble families. The Syndicate now uses it, returning the house to dispossessed nobility of a sort, just not the ones who owned it.",
-			"The Highlands are littered with these: good stone houses with the wrong people in them.",
+			"Northfold Manor was a Stromgarde farm out on the northwestern edge of the Highlands. The Syndicate hold it now, which puts dispossessed Alterac nobility in a house it never owned and never lost.",
+			"They are not only squatting in it. A troll shaman followed the residual traces of demonic summoning to this manor and found an amulet of bloodstone on the ground, the sort used to help a summoning along.",
 		},
 	},
 	{
@@ -1934,10 +1934,10 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Terror Wing Path", parent = "Burning Steppes", faction = "Hostile",
-		hook = "A pass full of black dragonkin, on the approach to the mountain.",
+		hook = "A valley at the eastern end of the Steppes, full of black dragonkin.",
 		lore = {
-			"Terror Wing Path is black dragonflight territory, which on the Steppes means Nefarian's. Drakes and dragonspawn patrol it.",
-			"Nefarian's work in the Spire needs space and privacy, and the Steppes supply both. These patrols are how he keeps the second one.",
+			"Terror Wing Path runs through the eastern Burning Steppes, at the far end of the zone from Blackrock Mountain. Whelps of the black dragonflight fill the valley and black drakes patrol its length.",
+			"The dragons are not the only thing moving through. Volchan, a magma giant, wanders the path on no fixed route, and the standing advice about this valley is not to cross it alone.",
 		},
 	},
 	{
@@ -2051,10 +2051,11 @@ SubsOf("Western Plaguelands", {
 	},
 	{
 		name = "Sorrow Hill", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "A mass burial ground below Uther's tomb.",
+		hook = "Andorhal's graveyard, and the Scourge's first line on the eastern road.",
 		lore = {
-			"Sorrow Hill holds the dead of the plague's first wave, buried in numbers that made individual graves impossible.",
-			"Being a mass grave in the Plaguelands, it has not stayed quiet. The proximity to Uther's tomb is a bitter joke the land is playing.",
+			"Sorrow Hill is where Andorhal buried its dead long before the plague, rich and poor together, crypts alongside plain plots. The defence of the town then filled it faster than graves could be dug for it.",
+			"The cauldrons standing in the fields around brought all of it back up. The undead on the hill now screen Andorhal's eastern approach, the one road into the town that is not fortified.",
+			"Uther's tomb stands on the crown of the cemetery, raised there by the last of the townsfolk before they abandoned the place, and High Priest Thel'danis guards it.",
 		},
 	},
 	{
@@ -2104,9 +2105,9 @@ SubsOf("Eastern Plaguelands", {
 		name = "Stratholme", parent = "Eastern Plaguelands", faction = "Hostile", levels = "58-60",
 		hook = "The city Arthas purged, now the Scourge's capital and the Scarlet Crusade's obsession.",
 		lore = {
-			"Stratholme was Lordaeron's second city, a centre of the Church of the Holy Light, and the seat of the Knights of the Silver Hand. When the plagued grain reached it, Arthas ordered the city killed. Uther and Jaina walked away rather than take part; Arthas carried out the purge and then followed Mal'Ganis to Northrend.",
+			"Stratholme was Lordaeron's second city, a centre of the Church of the Holy Light, and the city where the Knights of the Silver Hand were founded. When the plagued grain reached it, Arthas ordered the city killed. Uther and Jaina walked away rather than take part; Arthas carried out the purge and then followed Mal'Ganis to Northrend.",
 			"The city is now held by the Scourge under Baron Rivendare, with the Scarlet Crusade fighting for the other half under Grand Crusader Dathrohan. Two of the most fanatical forces in the world are contesting a city that is already dead.",
-			"The Scarlet Crusade's rank and file are told very little by their own command. They are dying in these streets under orders they have no standing to question.",
+			"Neither side will leave while the other is standing. The fighting over the districts is constant, and anyone who walks in has both of them to deal with before long.",
 		},
 		readMore = { "Wowpedia: Stratholme", "Wowpedia: Culling of Stratholme" },
 	},

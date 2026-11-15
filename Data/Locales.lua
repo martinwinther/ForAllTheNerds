@@ -1047,10 +1047,10 @@ SubsOf("Dun Morogh", {
 SubsOf("Tirisfal Glades", {
 	{
 		name = "Solliden Farmstead", faction = "Hostile",
-		hook = "A Lordaeron farm whose family is still on the land, after a fashion.",
+		hook = "A pumpkin farm north of Deathknell where the family is still alive.",
 		lore = {
-			"The Sollidens farmed this ground before the plague, like half the families in Tirisfal. What is walking the fields now got up without its mind.",
-			"The Forsaken make a sharp distinction between themselves and what is out here. Free will is the only thing separating the two, and they test for it the moment somebody sits up.",
+			"The Sollidens farmed this ground before the plague and they are farming it still. Almost nobody in Tirisfal can say that. The farmers and farmhands out in the fields are living humans, and they are hostile to everything that comes up the road, Forsaken and Alliance alike.",
+			"Brill has found a use for them anyway. The apothecaries send new Forsaken west to steal the farm's pumpkins. They come back laced, and they are tried out on the Scarlet Crusade prisoners in the Gallows' End cellar. The Crusade patrols the ground near the farm from a tower of its own.",
 		},
 	},
 	{

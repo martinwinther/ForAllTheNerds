@@ -129,8 +129,8 @@ Barovs	vanilla	plural of a 1.12 name (Barov)	cmangos 1.12.1	cs
 Barrens	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Barrow	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bashal'Aran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Battle of Mount Hyjal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Battle Ring	vanilla	AreaTable row	wow_classic_era	cs
+Battle of Mount Hyjal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bay of Storms	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bayne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Beer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -253,6 +253,7 @@ Champions' Hall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Charlga Razorflank	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Charred Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chief Sharptusk Thornmantle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Chieftain Bloodmaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chill Breeze	vanilla	AreaTable row	wow_classic_era	cs
 Chillwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Chillwind Camp	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -291,9 +292,9 @@ Crown Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crusade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crushridge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crystal Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Crystal of Zin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crystal Shore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crystal Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Crystal of Zin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Crystalvein	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cult	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Cult of the Damned	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -503,6 +504,7 @@ Fel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fel Rock	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Felfire Hill	vanilla	AreaTable row	wow_classic_era	cs
 Felpaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Felpaw Village	vanilla	AreaTable row	wow_classic_era	cs
 Felstone Field	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Felwood	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fenris Isle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -670,6 +672,7 @@ High Elder Talaanis Shadowsong	forever	used only by Forever entries	Forever	cs
 High King	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 High King Modimus Anvilmar	history	the first king of the dwarves, pre-WoW	warcraft.wiki.gg	cs
 High Order	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+High Priest Thel'danis	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Priestess	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Priestess of Elune	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 High Rise	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -742,6 +745,7 @@ Jaina Proudmoore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Janeiro's Point	vanilla	AreaTable row	wow_classic_era	cs
 Jangolode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jansen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Jansen Stead	vanilla	AreaTable row	wow_classic_era	cs
 Jarl	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jarod Shadowsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Jasperlode	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -883,6 +887,8 @@ Marris Stead	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Marrosis	forever	used only by Forever entries	Forever	cs
 Marsh	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Marshal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Marshal Haggard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Marshal McBride	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Marshal's Refuge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Marshlands	vanilla	AreaTable row	wow_classic_era	cs
 Master's Glaive	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -986,6 +992,7 @@ Northern	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northern Barrens	out-of-era	the Barrens was cut in two by the Cataclysm. In 1.12 it is one zone	tools/validate.lua, 1.2.5	cs
 Northern Pylon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northfold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Northfold Manor	vanilla	AreaTable row	wow_classic_era	cs
 Northpass	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northrend	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northridge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1061,6 +1068,7 @@ Quel'Danil Lodge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Lithien	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Thalas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rage Scar Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Ragefire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ragefire Chasm	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Raging	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ragnaros	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1171,6 +1179,7 @@ Scythe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scythe of Elune	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sea	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sea of Cinders	vanilla	AreaTable row	wow_classic_era	cs
+Searing Blade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Searing Gorge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Second	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Second War	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1186,6 +1195,7 @@ Sentinels	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sentry Point	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sepulcher	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Seradane	vanilla	AreaTable row	wow_classic_era	cs
+Serena Bloodfeather	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Serpent's Coil	vanilla	AreaTable row	wow_classic_era	cs
 Setting	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadow Council	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1272,10 +1282,10 @@ Soulflayer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 South	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 South Gate Outpost	vanilla	AreaTable row	wow_classic_era	cs
 South Gate Pass	vanilla	AreaTable row	wow_classic_era	cs
-South of Moonbrook	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
-South of the Wild Shore	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 South Seas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 South Tide's Run	vanilla	AreaTable row	wow_classic_era	cs
+South of Moonbrook	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+South of the Wild Shore	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Southbreak Shore	vanilla	AreaTable row	wow_classic_era	cs
 Southern Gold Road	vanilla	AreaTable row	wow_classic_era	cs
 Southern Savage Coast	vanilla	AreaTable row	wow_classic_era	cs
@@ -1292,9 +1302,9 @@ Southwind Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spell	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spirit Den	vanilla	AreaTable row	wow_classic_era	cs
-Spirit of Silverpine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spirit Rise	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spirit Rock	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Spirit of Silverpine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spirits	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Spitelash	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Splintertree	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1347,6 +1357,7 @@ Stormscale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind City Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Stormwind Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind Keep	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stormwind's Champions' Hall	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Stormwind's Mage Quarter	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -1369,8 +1380,8 @@ Sunnyglade	forever	used only by Forever entries	Forever	cs
 Sunscale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sunwell	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Swamp Eye	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Swamp of Sorrows	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Swamp Talker	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Swamp of Sorrows	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Swamplight Manor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Swarming Pillar	vanilla	AreaTable row	wow_classic_era	cs
 Sylvanas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1399,8 +1410,8 @@ Temple Gardens	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Temple of Ahn'Qiraj	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Temple of Arkkoran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Temple of Atal'Hakkar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Temple of the Moon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Temple of Zin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Temple of the Moon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tenaron Stormgrip	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Terenas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Terenas Menethil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1465,6 +1476,7 @@ Tidefury Cove	vanilla	AreaTable row	wow_classic_era	cs
 Tidehunter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tidus Stair	vanilla	AreaTable row	wow_classic_era	cs
 Timbermaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Timbermaw Hold	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Tinker Town	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tiragarde Keep	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tirion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1531,9 +1543,9 @@ Valley of Kings	vanilla	AreaTable row	wow_classic_era	cs
 Valley of Spears	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valley of Spirits	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valley of Strength	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-Valley of the Watchers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valley of Trials	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valley of Wisdom	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Valley of the Watchers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valor's Rest	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valormok	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valorwind	vanilla	AreaTable row	wow_classic_era	cs
@@ -1555,15 +1567,16 @@ Vile Reef	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vilebranch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Violet Citadel	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Vol'jin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Volchan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vul'Gol	vanilla	AreaTable row	wow_classic_era	cs
 Vul'Gol Ogre Mound	vanilla	AreaTable row	wow_classic_era	cs
 Vuldren	forever	used only by Forever entries	Forever	cs
 Wailing Caverns	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wallace	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+War Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 War of the Ancients	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 War of the Shifting Sands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 War of the Three Hammers	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
-War Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Warchief	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Warchief Vol'jin	out-of-era	Vol'jin leads the Darkspear in 1.12 and is not Warchief until Mists of Pandaria	tools/validate.lua, 1.2.5	ci
 Warcraft	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1626,12 +1639,13 @@ Winterhoof	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Winterspring	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Witch Doctor Unbagwa	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Witch Hill	vanilla	AreaTable row	wow_classic_era	cs
+Witchwing	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Witherbark	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wizard's Sanctum	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Woodpaw	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Woodpaws	vanilla	plural of a 1.12 name (Woodpaw)	cmangos 1.12.1	cs
-World of Warcraft	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 World Tree	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+World of Warcraft	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wrathgate	out-of-era	Wrath of the Lich King	tools/validate.lua, 1.2.5	ci
 Writhing Haunt	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wurg	vanilla	AreaTable row	wow_classic_era	cs

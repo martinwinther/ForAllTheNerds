@@ -55,7 +55,7 @@ SubsOf("Durotar", {
 		hook = "The Darkspear's own islands, stolen by one of their own witch doctors.",
 		lore = {
 			"The Echo Isles were given to the Darkspear as their home when they allied with Thrall. They do not hold them any more.",
-			"Zalazane, a Darkspear witch doctor, turned on his own people, seized the islands and has been enslaving the minds of any troll who goes back. The tribe lives on the mainland at Sen'jin Village and the loss is a standing humiliation nobody in the village will discuss at length.",
+			"Zalazane, a Darkspear witch doctor, turned on his own people and seized the islands. He sends his trolls across to the mainland to hex the Darkspear and drag more of them under his sway, and he keeps the skulls of the taken in a circle of power on the largest isle. The tribe lives at Sen'jin Village now and wants him dealt with.",
 		},
 	},
 	{
@@ -476,8 +476,8 @@ SubsOf("The Barrens", {
 		name = "Razorfen Kraul", parent = "The Barrens", faction = "Hostile", levels = "25-35",
 		hook = "A quilboar fortress woven out of living thorns.",
 		lore = {
-			"Razorfen Kraul is a quilboar warren on a scale no other warren matches, built out of enormous thorny growths that the quilboar cultivate and live inside.",
-			"Quilboar religion centres on Agamaggan, a boar demigod killed fighting the Burning Legion during the War of the Ancients. These thorns are said to have grown from his blood, making the Kraul a temple as much as a fortress.",
+			"Razorfen Kraul is the quilboar's ancestral home, a warren built inside enormous thorny growths at the far southern edge of the Barrens.",
+			"Quilboar religion centres on Agamaggan, a boar demigod killed fighting the Burning Legion during the War of the Ancients. The thorns are said to have sprung from the ground where his blood fell, making the Kraul a temple as much as a fortress. The crone Charlga Razorflank rules it now, and her quilboar raid rival tribes and Horde villages alike.",
 		},
 		readMore = { "Wowpedia: Razorfen Kraul", "Wowpedia: Agamaggan" },
 	},
@@ -485,8 +485,8 @@ SubsOf("The Barrens", {
 		name = "Razorfen Downs", parent = "The Barrens", faction = "Hostile", levels = "35-45",
 		hook = "A quilboar burial warren where the Scourge has arrived.",
 		lore = {
-			"The Downs are the quilboar's burial grounds, the oldest of their sites in the Barrens and dense with their dead.",
-			"The Scourge has reached it. A cult of undead has moved into the Downs and begun raising the quilboar dead. The living quilboar are now fighting their own ancestors.",
+			"The Downs are the quilboar's ancestral burial ground and their traditional capital, grown from the same thorns as the Kraul and dense with their dead.",
+			"The Scourge has reached it. Undead hold much of the warren now and the quilboar dead are coming up out of their own graves, so the living are fighting their ancestors for their own capital.",
 		},
 	},
 	{
@@ -571,10 +571,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "The Dry Hills", parent = "The Barrens", faction = "Hostile",
-		hook = "Gnoll country in the northwestern Barrens.",
+		hook = "Harpy country in the northwestern Barrens.",
 		lore = {
-			"The Dry Hills hold a gnoll population working the western roads.",
-			"Gnolls in the Barrens are a nuisance rather than a power. The centaur and the quilboar are neither.",
+			"The Dry Hills are Witchwing ground. The harpies nest in the hills at the zone's northwestern corner, and they have been ravaging the Horde's caravan supplies on the road below for a long time.",
+			"Serena Bloodfeather leads them, and the raids are revenge: her sister Bloodfeather was killed by Rexxar. The Crossroads wants her head, and the Witchwing slayers who lead her raiding parties with it.",
 		},
 	},
 	{
@@ -1485,10 +1485,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Forlorn Ridge", parent = "Azshara", faction = "Hostile",
-		hook = "A ridge of ruins in the south, picked over by satyrs.",
+		hook = "The mountain that dominates the western half of the zone.",
 		lore = {
-			"Forlorn Ridge carries more of the zone's night elf ruins, and the satyrs have been through them.",
-			"Azshara is the largest ruin field on the continent, and almost none of it has been properly surveyed.",
+			"Forlorn Ridge is the great mountain of western Azshara. It is rock rather than a settlement, and the zone's inhabitants are around its foot rather than on it.",
+			"The satyr encampments are inland of it, the naga hold the shore, and the ruins of the night elf empire run along the coast. Azshara is mostly somebody else's wreckage, and the ridge is the ground it lies on.",
 		},
 	},
 	{
@@ -1561,10 +1561,10 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Felpaw Village", parent = "Felwood", faction = "Hostile",
-		hook = "Another corrupted furbolg village, in the north.",
+		hook = "A corrupted furbolg village in the far north, at Timbermaw Hold's door.",
 		lore = {
-			"The Felpaw tribe is in the same state as the Deadwood, holding a village in northern Felwood.",
-			"The Timbermaw regard these tribes as lost rather than enemy. The fighting goes on regardless.",
+			"Felpaw Village belongs to the Deadwood, the furbolg tribe just past Timbermaw Hold that the fel has corrupted and driven mad, and Chieftain Bloodmaw holds it.",
+			"The Timbermaw want them driven back rather than talked round, and they count the headdress feathers of the fallen as proof of the work. The wolves and ravagers in the same woods carry the village's name.",
 		},
 	},
 	{
