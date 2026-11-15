@@ -381,10 +381,10 @@ SubsOf("Western Plaguelands", {
 SubsOf("Eastern Plaguelands", {
 	{
 		name = "Eastwall Tower", faction = "Contested",
-		hook = "One of four Lordaeron watchtowers ringing the zone, worth holding for the sightlines.",
+		hook = "One of the four Lordaeron towers in the zone, being fought over again.",
 		lore = {
-			"Four towers stand at the compass points of the Eastern Plaguelands: Eastwall, Northpass, Crown Guard and the tower at Plaguewood. Lordaeron raised them to watch its own roads.",
-			"They are still worth having. Whoever holds a tower can see movement across a long stretch of open blight, and in a zone where the Scourge moves in columns that counts for something.",
+			"Four towers stand around the Eastern Plaguelands: Eastwall, Northpass, Crown Guard and the tower at Plaguewood. They are Lordaeron's, and they have stood abandoned since the days of Lordaeron.",
+			"Both sides want them now. An Alliance emissary at Light's Hope Chapel is handing out orders to seize and rebuild all four, to tighten the hold on the Forsaken positions west of here, and a Horde emissary at the same chapel is handing out the same assignment. Whoever took a tower last has a banner on it.",
 		},
 	},
 	{
@@ -689,8 +689,8 @@ SubsOf("Feralas", {
 		name = "Jademir Lake", faction = "Contested",
 		hook = "A lake in northern Feralas, close to a door into the Emerald Dream.",
 		lore = {
-			"Jademir sits in the north of the jungle with the Dream Bough nearby. That is one of four places in this world where the Emerald Dream presses against the waking one.",
-			"The green dragonflight guards all four and is not coping. Something has gone wrong in the Dream, and the dragons posted at Seradane, Bough Shadow, Twilight Grove and the Dream Bough have turned hostile to everyone, one another included.",
+			"Jademir Lake sits in the north of the jungle with an island at its centre, and the island is the Dream Bough. That is one of four places in this world where the Emerald Dream presses against the waking one.",
+			"The green dragonflight guards all four. Lethlas holds this one with tree warders around him, and the whelps along the lake's north-western shore have gone sick. Something has gone wrong in the Dream, and the dragons posted at Seradane, Bough Shadow, Twilight Grove and the Dream Bough have turned on everyone who comes near.",
 		},
 	},
 	{
@@ -749,10 +749,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Bay of Storms", faction = "Hostile",
-		hook = "A naga-held bay on the Azshara coast, as near to Zin-Azshari as the map gets.",
+		hook = "The stretch of sea off Azshara's eastern coast, with three strange addresses in it.",
 		lore = {
-			"The Bay of Storms is naga ground. Azshara's coastline is where the sea took her palace, and the weight of naga along it follows from that.",
-			"Azshara did not die in the Sundering. She and her closest followers were transformed into the naga and have been under the water for ten thousand years. What comes ashore in this bay is her court.",
+			"The Bay of Storms is water rather than a place anybody holds: the part of the Great Sea that travellers down Azshara's eastern coast have to name. Scalebeard's Cave is in it, Hetaera's Clutch is under it, and the Temple of Arkkoran stands on its shore.",
+			"What that comes to in practice is hydras, a sea giant, murlocs and one very old turtle. There is a maelstrom out in the bay as well, with wreckage turning in it.",
 		},
 	},
 	{
@@ -1004,10 +1004,10 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Helm's Bed Lake", faction = "Contested",
-		hook = "A frozen lake in eastern Dun Morogh, on the road toward Loch Modan.",
+		hook = "A frozen lake in eastern Dun Morogh with a hole kept open in the ice.",
 		lore = {
-			"Helm's Bed lies on the eastern side of the mountains, where the road runs down through the Valley of Kings toward Loch Modan.",
-			"Dun Morogh's lakes stay frozen most of the year and the dwarves fish them through the ice. It is a practical arrangement that the Frostmane keep interrupting.",
+			"Helm's Bed lies on the eastern side of the mountains. The lake has frozen over and a hole is kept open in it at all times, so there is fresh water to be had out here.",
+			"Crossing the ice is the safe part. Rockjaw troggs work the ground around the lake and Dark Iron dwarves have taken an abandoned building south of it, and the body of the dwarf who went to look at them too closely is still lying out there.",
 		},
 	},
 	{
@@ -1036,10 +1036,10 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Chill Breeze Valley", faction = "Contested",
-		hook = "A valley in the north, with wolves in numbers.",
+		hook = "A valley in western Dun Morogh with a wendigo at the end of it.",
 		lore = {
-			"Chill Breeze runs north of the main road, and the wolf population in it is large enough that Ironforge's hunters treat it as a working ground rather than a hazard.",
-			"Dun Morogh's wildlife is one of the reasons the dwarves are as hardy as they are. There is nothing gentle living on this mountain.",
+			"Chill Breeze Valley runs between Gnomeregan and Kharanos. The arm of it that turns north is the part nobody walks, and the snow up there carries the evidence: blood and the remains of animals.",
+			"Old Icebeard holds a cave at the end of it. Tundra MacGrann had a month of dried meat salted and locked away for the cold season, locked so the bears could not get at it, and the wendigo carried the whole locker off into the cave. He has not managed the thorium.",
 		},
 	},
 })
@@ -1173,10 +1173,10 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Jangolode Mine", faction = "Hostile",
-		hook = "A worked-out mine in the north of the zone, with Defias in it.",
+		hook = "A Westfall mine with the machines still wandering in it.",
 		lore = {
-			"Jangolode was a legitimate operation before the ore ran thin. The Brotherhood uses it now. A guild of excavators finding a use for an empty shaft is no surprise.",
-			"Westfall has several of these. Moonbrook's mine, the Gold Coast quarry and this one were all somebody's livelihood a few years ago.",
+			"Jangolode was one of Westfall's main sources of minerals for Stormwind. Nothing is being mined now: rusty harvest golems wander the workings, and the Defias hold the road outside, running between Moonbrook, the Gold Coast quarry and here.",
+			"Westfall has several of these. Moonbrook's mine, the quarry and this one were all somebody's livelihood a few years ago.",
 		},
 	},
 	{
@@ -1383,10 +1383,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Janeiro's Point", faction = "Contested",
-		hook = "A point on the eastern coast, named for somebody the sea kept.",
+		hook = "An island off Booty Bay with a giant goblin standing on it.",
 		lore = {
-			"The point juts out on Stranglethorn's eastern shore, north of the Horde's camp at Grom'gol.",
-			"This coast has taken a steady toll of shipping. Between the reefs, the weather and the Bloodsail pirates working the water, a good deal has gone down within sight of the trees.",
+			"Janeiro's Point is a small island in the water just outside Booty Bay, and the thing standing on it is a statue of a goblin with its arms thrown wide, built on a scale that can be read from well out to sea.",
+			"Nobody lives there. The sea giant Mok'rash has the island to himself. That is as close as the point comes to having a keeper.",
 		},
 	},
 	{
@@ -1718,10 +1718,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Ironstone Camp", faction = "Hostile",
-		hook = "A camp on the salt flats, worked by people who do not advertise what for.",
+		hook = "A Horde war party camped at the edge of the salt flats.",
 		lore = {
-			"Ironstone sits out on the Shimmering Flats, the dried bed of a body of water the Sundering drained.",
-			"The flats are crossed by goblins, racing teams, prospectors and whoever else thinks a salt pan is worth something. Not all of them explain themselves.",
+			"Ironstone Camp is Moktar Krin's. His war party was sent out to drive the Explorers' League off the Rustmaul dig site, and it made camp here on the edge of the Shimmering Flats with its kodos to do it.",
+			"That is not what they are fighting now. The digging opened a silithid nest, and what came out of it is why the camp is still sitting at the edge of the flats rather than on the dig.",
 		},
 	},
 	{
@@ -1755,7 +1755,7 @@ SubsOf("Desolace", {
 		name = "Bolgan's Hole", faction = "Hostile",
 		hook = "A cave in Gelkis Village, where the Gelkis keep their khan.",
 		lore = {
-			"Bolgan's Hole is a cave inside Gelkis Village, in Desolace's eastern rise, and the most senior of the Gelkis centaur are in it. Khan Shaka holds that seat.",
+			"Bolgan's Hole is a cave in the cliff face at Gelkis Village, in Desolace's south-west, and the most senior of the Gelkis centaur are in it. Khan Shaka holds that seat.",
 			"The zone supports very little. Nijel's Point in the north, Ghost Walker Post in the centre and Shadowprey Village on the coast are the settlements, and there is almost nothing between them.",
 		},
 	},

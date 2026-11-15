@@ -381,10 +381,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Grove of the Ancients", parent = "Darkshore", faction = "Alliance",
-		hook = "A grove where the tree-ancients themselves stand guard.",
+		hook = "A ruined temple in southern Darkshore with an Ancient of Lore in it.",
 		lore = {
 			"The Ancients are enormous sentient trees, allies of the night elves since the War of the Ancients. They fought at Mount Hyjal and they are not decorative.",
-			"The grove is a night elf strongpoint in southern Darkshore, and the Ancients there are both garrison and advisors.",
+			"What is at this grove is one of them. Onu sits in the ruins of an old night elf temple, in against the mountains, with two merchants and a sleeping druid for company. He is a keeper of lore rather than a garrison, and the Circle of Ancients meets here.",
 		},
 	},
 	{
@@ -646,10 +646,10 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Grimtotem Post", parent = "Stonetalon Mountains", faction = "Hostile",
-		hook = "A camp of tauren who reject the Horde and everyone else.",
+		hook = "The Grimtotem's camp in Stonetalon, with a prisoner in it.",
 		lore = {
-			"The Grimtotem are a tauren tribe that refused Cairne Bloodhoof's alliance with the orcs. Magatha Grimtotem leads them and her ambitions are her own.",
-			"They are spread across Kalimdor in camps like this one, hostile to Horde and Alliance alike.",
+			"Grimtotem Post is the tribe's base in the Stonetalon Mountains, held by Grundig Darkcloud with brutes and sorcerers around him. Kaya Flathoof is being kept here, taken when they attacked her village.",
+			"The Grimtotem are the one tauren tribe that never formally joined the Horde. Magatha Grimtotem leads them from a seat on Thunder Bluff, with all the standing of a tauren elder, while camps like this one are spread across Kalimdor and hostile to Horde and Alliance alike.",
 		},
 	},
 	{
@@ -1007,10 +1007,10 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Gelkis Village", parent = "Desolace", faction = "Hostile",
-		hook = "The other centaur clan, in the southern hills.",
+		hook = "The Gelkis clan's village, built around a ravine off the road.",
 		lore = {
-			"The Gelkis hold the hills near Maraudon and consider themselves the senior clan. The Magram disagree.",
-			"Both clans claim descent from Zaetar, and their mutual hatred is theological as much as territorial.",
+			"The Gelkis hold a ravine in Desolace's south-west, close to the coast and beside the road. The village is built in a ring around the drop, and Khan Shaka keeps to a cave in the cliff face.",
+			"The Gelkis and the Magram both claim descent from Zaetar and hate each other for it. There are four centaur clans in this zone, and Maraudon belongs to a third of them, the Maraudine.",
 		},
 	},
 	{
@@ -1180,8 +1180,8 @@ SubsOf("Feralas", {
 		name = "Camp Mojache", faction = "Horde", levels = "40-50",
 		hook = "A tauren camp in the jungle, dealing with gnolls and a very old ruin.",
 		lore = {
-			"Camp Mojache is the Horde's position in Feralas, held by tauren who are more interested in the zone's natural state than in contesting it with the night elves.",
-			"Its practical concerns are the Woodpaw gnolls, the Grimtotem at the Twin Colossals, and whatever the ogres at Dire Maul are doing.",
+			"Camp Mojache is the Horde's position in Feralas: a tauren camp in the east of the zone above Wildwind Lake, with braves on the approaches and a wind rider master inside.",
+			"Its practical concerns are the Woodpaw gnolls, the Grimtotem in their compound to the west, whatever the ogres at Dire Maul are doing, and the silithid that have come up next to the camp itself.",
 		},
 	},
 	{
@@ -2382,8 +2382,8 @@ SubsOf("Feralas", {
 		hook = "The eastern of the Twin Colossals, the highest ground in Feralas.",
 		lore = {
 			"The Twin Colossals are two sheer mountains on Feralas's western side, and they are the tallest thing in the zone by a long way. The road from Feralas into Desolace runs between them.",
-			"Getting up the eastern one is not a walk. It was reached by arrangement rather than by climbing, and that says enough about how sheer these are.",
-			"There is a pond at the top with a giant makura in it called Diamond Head. Gregan Brewspewer watched the thing claw its own way up the mountain, and is now up there with it.",
+			"Getting up the eastern one is not a walk. Marli Wishrunner, at the foot of the western colossal, will send a traveller to the top of it, and she is clear that it is a one-way trip.",
+			"What is up there is a view and a way down. Kalin Windflight keeps a stock of parachutes on the summit, and that is what makes the trip survivable.",
 		},
 		readMore = { "Wowpedia: Twin Colossals", "Wowpedia: Feralas" },
 	},
@@ -3049,7 +3049,7 @@ SubsOf("Tanaris", {
 		aliases = { "Gunstan's Dig" },
 		hook = "A small Explorers' League dig south of the Southmoon Ruins.",
 		lore = {
-			"Prospector Gunstan runs this camp in southern Tanaris, below the Southmoon Ruins: a handful of dwarves and a dig.",
+			"Prospector Gunstan runs this camp in southern Tanaris, below the Southmoon Ruins, and runs it on his own: one dwarf, a campfire and a book propped up in the sand about the awakening of the dwarves.",
 			"The Explorers' League work desert sites for the same reason they work everywhere else. Uldaman gave Ironforge the Discs of Norgannon and the record of the earthen, and every site since has been read as more of that story.",
 			"Tanaris has rather a lot to find. Uldum's sealed gate is in this desert, the Caverns of Time are in it, and the Gadgetzan goblins have been digging here for profit since long before the dwarves arrived.",
 		},

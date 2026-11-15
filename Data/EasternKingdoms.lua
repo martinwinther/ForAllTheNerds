@@ -494,10 +494,10 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Furlbrow's Pumpkin Farm", parent = "Westfall", faction = "Alliance",
-		hook = "One of the last Westfall farms still being worked, by a couple too stubborn to leave.",
+		hook = "A pumpkin farm the Defias took, with the machines still working the rows.",
 		lore = {
-			"The Furlbrows are holding on where most of their neighbours have walked away. Their pumpkins are one of the few crops still coming out of Westfall, and the Defias steal from them regularly.",
-			"Their deed has been stolen more than once, and recovering it has fallen to passing strangers rather than to anyone wearing a tabard.",
+			"The Furlbrows are not here. They fled the farm and are camped out on the road up by the Jansen Stead, and Farmer Furlbrow left his pocket watch behind in the wardrobe of the farmhouse.",
+			"What holds the fields now is Defias smugglers and harvest watchers, with a Foe Reaper among them. The deed to the place was stolen as well, and getting it back has fallen to passing strangers rather than to anyone wearing a tabard.",
 		},
 	},
 	{
@@ -700,10 +700,10 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Alther's Mill", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "A sawmill overrun by gnolls, and a reminder of how far Lakeshire has shrunk.",
+		hook = "An abandoned sawmill northeast of Lakeshire, full of spiders.",
 		lore = {
-			"Alther's Mill was part of Lakeshire's timber operation until the Redridge gnolls took it. It has not been retaken.",
-			"The mill's loss is a small thing compared to Stonewatch, but it is the kind of small thing that adds up to a county quietly giving ground.",
+			"Alther's Mill was part of Lakeshire's timber operation and nobody works it now. What is in it is spiders and dire condors, Chatter somewhere among them, and the people who come this way are mostly passing through towards Stonewatch.",
+			"Stormwind's rogues have a use for the place that has nothing to do with timber. There is a lockbox up at the mill, and cracking it open is what earns a thief out of Lakeshire his certificate.",
 		},
 	},
 	{
@@ -1026,10 +1026,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Azurelode Mine", parent = "Hillsbrad Foothills", faction = "Hostile",
-		hook = "A silver mine in the western hills, worked now by the Syndicate.",
+		hook = "A working Alliance mine south of Hillsbrad, and a target.",
 		lore = {
-			"Azurelode was a legitimate Hillsbrad mine. The Syndicate, which is what is left of Alterac's nobility after their kingdom was destroyed, has taken it over and runs it with forced labour.",
-			"The Syndicate are bandits with heraldry. They lost a kingdom and have been financing a grudge ever since.",
+			"Azurelode is worked, guarded and Alliance-held. Foreman Bonds has better than twenty miners down there, the veins are silver and tin, and the iron that comes out goes to Alliance armories.",
+			"That last fact is why Tarren Mill knows the mine by name. The Forsaken read it out of the Hillsbrad town registry they stole, and what they want in the hills now is the foreman dead, his miners with him, and the Alliance left in no doubt about who did it.",
 		},
 	},
 	{
@@ -1857,10 +1857,10 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "Dustfire Valley", parent = "Searing Gorge", faction = "Contested",
-		hook = "A scorched valley on the Gorge's southern edge.",
+		hook = "The valley at the Gorge's northern end, under a gate that stays shut.",
 		lore = {
-			"Dustfire is the route between the Searing Gorge and the Badlands, as dry and hot as everything else here.",
-			"Travellers between Khaz Modan and Blackrock Mountain pass through, and that is most of the traffic this zone gets.",
+			"Dustfire Valley runs north out of the Searing Gorge to the gates of Stonewrought Pass, the tunnel through to the Valley of Kings in Loch Modan. The gates are locked and nobody goes through them without a key, so the valley is a dead end rather than a road.",
+			"A Dark Iron camp sits at the head of it. That is the other reason not to wander up there.",
 		},
 	},
 })
@@ -1887,8 +1887,8 @@ SubsOf("Burning Steppes", {
 		hook = "A volcano holding two armies, a fire lord and a black dragon, all of whom want the others dead.",
 		lore = {
 			"Blackrock Mountain is a single volcano containing several wars. The orcish Horde used it as its staging ground in the First and Second Wars; Anduin Lothar died fighting Orgrim Doomhammer at its gates.",
-			"Now it is layered. The Dark Iron dwarves and Ragnaros hold the Depths. The Dark Horde holds the Spire. Nefarian holds the Spire's upper reaches and plays the others against each other. None of these parties are allies.",
-			"The mountain is the single densest concentration of hostile power on the continent, and both the Alliance and the Horde have decided to treat it as somebody else's problem for now.",
+			"Now it is layered. The Dark Iron dwarves and Ragnaros hold the Depths. Above them the Dark Horde holds the Spire, and Nefarian holds the peak over that. The orcs are the dragon's. That is what the Dark Irons are really fighting.",
+			"The mountain is the single densest concentration of hostile power on the continent, and neither faction is waiting it out. Thrall wants Rend Blackhand's head for calling himself warchief, and the Horde's warlord at Kargath keeps a standing list of names in the lower spire.",
 		},
 		readMore = { "Wowpedia: Blackrock Mountain", "Wowpedia: Blackrock Spire" },
 	},
@@ -1918,10 +1918,10 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Dreadmaul Rock", parent = "Burning Steppes", faction = "Hostile",
-		hook = "An ogre hold on the Steppes, allied with the Dark Horde.",
+		hook = "An ogre hold on the Steppes, keeping to itself.",
 		lore = {
-			"The Dreadmaul ogres hold this rock and work alongside the Blackrock orcs. Most ogre clans never manage an arrangement that functional.",
-			"Ogres were brought to this world by the Horde and the ones who stayed near Blackrock Mountain never really left the Horde's orbit.",
+			"Dreadmaul Rock belongs to the Firegut clan: a great rock with paths up it and a system of ogre mounds cut inside, with Gorgon'och and Hahk'Zor among the ogres on it.",
+			"The Firegut keep no allies but other ogres. They sit on the same Steppes as the Dark Horde and the black dragonflight without belonging to either. Ogres came to this world with the Horde, and most of them have been on their own since it broke.",
 		},
 	},
 	{
