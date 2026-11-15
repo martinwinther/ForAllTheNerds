@@ -1,5 +1,148 @@
 # Changelog
 
+## 1.2.10
+
+Two more rounds of the vanilla-era sweep, and the heaviest pair so far: 42 of the
+50 entries reviewed were carrying something wrong. The reason is a better method.
+The 1.12 world database records the map position of every creature and every
+object in the game, so the question of who holds a place can be settled by
+listing what is standing there rather than by reading an article written for a
+later version of the game.
+
+**Fixed**
+
+- The Dry Hills were gnoll country in the western Barrens. They are harpy
+  country: the Witchwing nest in the hills at the zone's northwestern corner and
+  raid the caravan road below, and Serena Bloodfeather leads them. No gnoll tribe
+  is recorded anywhere in the Barrens.
+- Forlorn Ridge was a ridge of ruins in the south of Azshara, picked over by
+  satyrs. It is the mountain that dominates the west of the zone. Azshara's
+  satyrs camp at Haldarr and Legash, and its ruins are down on the coast.
+- Solliden Farmstead had the farmers dead and walking the fields. They are alive.
+  This is one of the few places in Tirisfal where the native farmers survived the
+  plague, and the Forsaken send recruits to steal their pumpkins.
+- The Valley of Heroes gave its statues as the Second War's commanders with Lothar
+  at the centre. The five are Turalyon, Kurdran Wildhammer, Khadgar, Danath
+  Trollbane and Alleria Windrunner, all of them leaders of the Alliance Expedition
+  through the Dark Portal, and not one of them is Lothar. The entry now names all
+  five and says what became of them.
+- Ragefire Chasm had the Burning Blade cult in it. The cult below Orgrimmar is the
+  Searing Blade. The Burning Blade is Durotar's, and the game names both in a
+  single sentence to keep them apart.
+- Blackrock Spire had Rend and Nefarian as separate powers minding their own
+  business. Thrall says plainly that Rend's claims rest on the black
+  dragonflight's protection, and Rend's own letter calls Nefarian the master. The
+  Blackrock Mountain entry was built on the same error and is fixed with it.
+- Faldir's Cove had pirates drawn to the wrecks. The wrecks are a Blackwater
+  Raiders expedition out of Booty Bay that went onto the reef after sunken elven
+  treasure. The Daggerspine naga killed the survivors in the water, and the rest
+  are stranded ashore.
+- The Echo Isles had Zalazane taking the mind of any troll who goes back. He
+  sends his own trolls the other way instead, to hex Sen'jin's people and drag
+  them under his sway.
+- Felpaw Village belonged to the Felpaw tribe. There is no such tribe. The village
+  is the Deadwood's, under Chieftain Bloodmaw, and Felpaw is the name of the local
+  wolves and scavengers.
+- Sorrow Hill was a mass grave with Uther's tomb standing nearby by unhappy
+  accident. The hill is Andorhal's cemetery and was named before the plague, and
+  the last of the townsfolk raised the tomb on its crown deliberately. High Priest
+  Thel'danis keeps watch over it.
+- The Jansen Stead had its harvest golems animated by something unexplained and
+  blamed on abandoned Stormwind engineering. They are machines. The explanations
+  on offer locally are goblin manufacture or Defias money.
+- Northfold Manor was a noble family's estate. It is a farm on the northwestern
+  edge of the Highlands, Stromgarde's until the Syndicate took it, and the thing
+  worth knowing about it is the demonic summoning traced there.
+- Terror Wing Path was a pass on the approach to Blackrock Mountain. It is a
+  valley at the eastern end of the Burning Steppes, the far side of the zone from
+  the mountain, with whelps and drakes in it and Volchan roaming.
+- The Eastvale Logging Camp was troubled by orc scouting parties out of Redridge.
+  Its troubles are wolves, bears and delivery deadlines. No orc appears anywhere
+  near Elwynn in this period.
+- Naxxramas floated unassailable. The Argent Dawn attunes raiders into it, and the
+  four wings are the spider, plague, construct and military quarters, with the
+  frostwyrm lair above them. The old line counted the frostwyrm lair as a wing and
+  left the spider quarter out.
+- Azurelode Mine was Syndicate ground worked by forced labour. It is an Alliance
+  mine, worked and guarded, with a foreman, four more foremen and twenty-two
+  miners in it. The Forsaken want it shut because it supplies the Alliance
+  armories.
+- Dreadmaul Rock had the Dreadmaul ogres on it, working alongside the Blackrock
+  orcs. The Firegut clan holds the rock. The Dreadmaul are the Blasted Lands clan,
+  as this addon's own Dreadmaul Hold entry says, and the Firegut keep no allies
+  except other ogres.
+- Alther's Mill had been taken by the Redridge gnolls. The gnolls are in the
+  Redridge Canyons. The mill is abandoned and full of spiders and dire condors,
+  and what happens there now is Alliance rogues cracking a lockbox for their
+  certificate of thievery.
+- Dustfire Valley was the route between the Searing Gorge and the Badlands. It
+  runs north to the gates of Stonewrought Pass, and in this period those gates are
+  locked and need a key, so it is a dead end.
+- Janeiro's Point was a headland on Stranglethorn's eastern shore north of
+  Grom'gol. It is a small island in the water outside Booty Bay with the giant
+  goblin statue on it, and a sea giant for company.
+- The East Pillar had a pond at the summit with a giant makura in it called
+  Diamond Head, and Gregan Brewspewer up there watching it. Diamond Head is out
+  in the sea off the Feralas coast, a long way from the colossals and well below
+  the waterline, and Gregan is on the ground. What is up on the summit is a view,
+  and Kalin Windflight selling parachutes to people who took the one-way teleport.
+- Furlbrow's Pumpkin Farm was still being worked by a couple too stubborn to
+  leave. The Furlbrows fled. They are camped out on the road, Farmer Furlbrow left
+  his pocket watch behind in the farmhouse, and Defias smugglers and harvest
+  watchers have the fields.
+- The Bay of Storms was naga ground, with Azshara's court coming ashore in it. It
+  is the stretch of the Great Sea off the zone's eastern coast, holding hydras, a
+  sea giant, murlocs and a very old turtle, exactly as this addon's own entries
+  for Scalebeard's Cave, Hetaera's Clutch and the Temple of Arkkoran describe.
+- The Grove of the Ancients had several Ancients in it, serving as garrison and
+  advisors. There is one. Onu is an Ancient of Lore, sitting in a ruined temple
+  with two merchants and a sleeping druid.
+- Chill Breeze Valley was a wolf-hunting ground north of the main road. It is
+  western Dun Morogh, between Gnomeregan and Kharanos, with crag boars and
+  wendigos in it, and Old Icebeard at the end holding a stolen meat locker he
+  cannot get open.
+- Helm's Bed Lake had dwarves fishing through the ice and the Frostmane
+  interrupting them. The hole in the ice is kept open for fresh water. The trouble
+  around the lake is Rockjaw troggs and a Dark Iron camp to the south.
+- Ironstone Camp was worked by people who do not advertise what for. It is Moktar
+  Krin's Horde war party, sent against the Explorers' League at the Rustmaul dig
+  and now fighting the silithid the digging let out.
+- Eastwall Tower had sightlines and columns of Scourge. Both factions keep an
+  emissary at Light's Hope Chapel handing out orders to seize and rebuild all four
+  of the Plaguelands towers.
+- Gelkis Village put the clan's hills near Maraudon and had them holding
+  themselves the senior centaur line. Maraudon is Maraudine ground. The Gelkis
+  ravine is in the south-west of Desolace, and the Bolgan's Hole entry pointed the
+  wrong way about the same ground and is fixed with it.
+- Camp Mojache put the Grimtotem at the Twin Colossals. The Feralas Grimtotem are
+  west of the camp, well short of the colossals.
+- Gunstan's Post had a handful of dwarves and a dig. Gunstan is there alone with a
+  campfire and a book.
+- Ironforge had the discovery of Uldaman bringing the Explorers' League into
+  being. It happened the other way round. Magni turned dwarven industry to
+  archaeology and helped create the League, and Uldaman came out of that.
+
+**Removed**
+
+Six claims could not be supported from anything in this period, so they are gone
+rather than reworded into something vaguer:
+
+- Northshire Valley had the Church picking the valley for its steep sides and good
+  water, and teaching there for three generations. What the entry says now is the
+  walled southern pass, the river out to Crystal Lake and Marshal McBride's
+  garrison.
+- The Temple of the Moon had Elune's nature unclear even to her own priesthood,
+  and the Sisters as the oldest institution the night elves have.
+- Razorfen Kraul had the quilboar cultivating thorns grown where Agamaggan's blood
+  fell, at a scale no other warren matches. The Downs is the quilboar capital. The
+  entry had also left out Charlga Razorflank, who rules the Kraul.
+- Razorfen Downs was the oldest of the quilboar sites.
+- Stratholme had the Scarlet rank and file told very little by their own command,
+  and gave the city as the Silver Hand's seat. The sourced fact is that the order
+  was founded there.
+- The Ruins of Lordaeron had nobody spared the walk past a throne room that is not
+  on the way in.
+
 ## 1.2.9
 
 Two more rounds of the vanilla-era sweep. One entry turned out to describe a town
