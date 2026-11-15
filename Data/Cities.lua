@@ -101,8 +101,8 @@ Zone{
 	hook = "A city built inside a mountain's forge, run by a king who put his nation's money into archaeology.",
 	lore = {
 		"Ironforge is carved into the mountain at the heart of Dun Morogh, and the Great Forge at its centre is both an industrial site and the reason the city exists. The dwarves have been enlarging it for as long as they have been a nation.",
-		"King Magni Bronzebeard rules. His reign has been defined by one decision: after the Uldaman excavations turned up evidence that dwarves descend from the earthen, beings the titans shaped out of living stone, Magni helped set up the Explorers' League and put Ironforge's resources behind digging up the past. Nearly every dwarven dig in the world traces back to that.",
-		"The city is also the Alliance's most crowded capital, because Gnomeregan fell and the gnomes had nowhere else to go. Tinker Town is full of refugees running a government-in-exile, and High Tinker Mekkatorque is recruiting for an operation to retake his city.",
+		"King Magni Bronzebeard rules. His reign has been defined by one decision: he ordered the dwarves to turn from mining and engineering to archaeology and helped set up the Explorers' League to do it, and nearly every dwarven dig in the world traces back to that. Uldaman came out of it, with the Discs of Norgannon and the record of the earthen, beings the titans shaped out of living stone.",
+		"The city is crowded, because Gnomeregan fell and the gnomes had nowhere else to go. Tinker Town is full of refugees running a government-in-exile, and High Tinker Mekkatorque is recruiting for an operation to retake his city.",
 	},
 	didYouKnow = "Magni has two brothers. Muradin Bronzebeard went to Northrend with Arthas' expedition and was presumed killed when Arthas claimed Frostmourne. Brann Bronzebeard is the Explorers' League's most famous field archaeologist and is almost never home.",
 	readMore = { "Wowpedia: Ironforge", "Wowpedia: Magni Bronzebeard", "Wowpedia: Explorers' League" },
@@ -399,7 +399,7 @@ SubsOf("Darnassus", {
 		hook = "Elune's temple and Tyrande's seat, the centre of night elf religion.",
 		lore = {
 			"The Temple of the Moon is the Sisters of Elune's great temple and Tyrande Whisperwind's seat as High Priestess. Priestess training happens here.",
-			"Elune is the night elves' moon goddess, and unlike most divinities in this world her nature is genuinely unclear even to her own priesthood. The Sisters of Elune are the oldest institution the night elves have.",
+			"Elune is the night elves' moon goddess and this temple is the centre of their spiritual life. The Sisters of Elune work outward from it as well: the priestess looking into whatever has been washing up on the Darkshore coast was sent out from here.",
 		},
 	},
 	{

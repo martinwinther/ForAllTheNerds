@@ -1,6 +1,6 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, the next 25 entries. 250 of 918 covered.
+IN PROGRESS. Next: P4, the next 25 entries. 300 of 918 covered.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -57,7 +57,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 250 of 918 covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 300 of 918 covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -72,11 +72,12 @@ player-facing lines to the `Unreleased` section of the changelog, and stop. Do
 not tag and do not publish: releases are Martin's call.
 
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
-to 3 in 1.2.7, runs 4 to 8 in 1.2.8, and runs 9 and 10 in 1.2.9**, all released
-mid-sweep at Martin's explicit instruction. Their player-facing lines are already
-in the changelog under those four headings, so do not write them again. P5 now
-covers only P4 run 11 onwards, plus `tools/era-audit.md`, which has not been
-updated for anything since the original four errors.
+to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, and runs 11 and 12
+in 1.2.10**, all released mid-sweep at Martin's explicit instruction. Their
+player-facing lines are already in the changelog under those five headings, so do
+not write them again. P5 now covers only P4 run 13 onwards, plus
+`tools/era-audit.md`, still not updated for anything since the original four
+errors.
 
 ## Oracles, in order of preference
 
@@ -1292,6 +1293,327 @@ Uther's Tomb, Valley of Fangs, Valley of Honor, Valley of Spears, Valley of
 Spirits, Valley of Strength, Valley of Trials, Valley of Wisdom, Valley of the
 Watchers, Valormok, Warrior's Terrace, Wavestrider Beach, Weazel's Crater,
 Western Plaguelands, Westfall, Wetlands, Whisperwind Grove, Whitereach Post,
+Windbreak Canyon, Windshear Crag, Winterfall Village, Winterspring, Yojamba
+Isle, Zul'Gurub.
+
+Next: P4, the next 25 by the corrected ranking.
+
+### 2026-11-15, P4, run 11 of about 29
+
+Reviewed 25 entries and found far more than any earlier run: fifteen carried a
+bad claim and six more carried an unsupported one. The 25 were the top of the
+recomputed ranking, which is zones and landmarks with strong later-era markers,
+and three of them turned out to be entries whose whole subject was wrong.
+
+**Three entries described the wrong thing entirely.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| The Dry Hills | "Gnoll country", a gnoll population working the western roads | Witchwing harpy ground. Darsok Swiftdagger sends players against Witchwing harpies, roguefeathers and slayers there, and Serena Bloodfeather leads them. No gnoll tribe is attested anywhere in the Barrens |
+| Forlorn Ridge | A ridge of ruins in the south, picked over by satyrs | The mountain that dominates western Azshara. Not a ruin, not a satyr camp: Azshara's satyrs are at the Haldarr and Legash encampments and its ruins are on the coast |
+| Solliden Farmstead | "What is walking the fields now got up without its mind" | The farmers are alive. Tirisfal Farmer, Tirisfal Farmhand and Farmer Solliden are all Humanoid on faction 67 in `creature_template`, one of the few places in Tirisfal where the native farmers survived the plague, and the Forsaken send recruits to steal their pumpkins |
+
+**Twelve more with a claim that a vanilla source contradicts.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Valley of Heroes | Statues of the Second War's commanders, Lothar's "the centrepiece" | Five statues, and the 1.12 `gameobject_template` names every one: Kurdran Wildhammer, General Turalyon, Ranger Captain Alleria Windrunner, Danath Trollbane and Archmage Khadgar of the Kirin Tor. The Alliance Expedition's leaders, not the Second War's, and there is no Lothar among them. Alleria was missing from our list and Lothar was in it |
+| Ragefire Chasm | The Burning Blade cult | A different cult: the Searing Blade, "a sect of the Shadow Council hidden in caverns below Orgrimmar", plus the Ragefire troggs. The Burning Blade is Durotar's, and quest 5761 names both in one sentence to distinguish them |
+| Blackrock Spire | Rend holds the lower halls, Nefarian the upper, "whatever passes between them is their own business" | Thrall: "Rend dares make such grand claims because of the protection he is afforded by the black flight." Rend's own letter calls Nefarian "the master". The lower city is Wyrmthalak's, "taskmaster of the lesser city", and Rend is one of the dragon's generals in the spire above it |
+| Faldir's Cove | Wrecks and treasure that "attracted the attention of pirates working this coast" | A Blackwater Raiders expedition out of Booty Bay after sunken elven treasure. Two of its three ships went onto the reef, the Daggerspine naga killed the survivors in the water, and the rest are stranded ashore with the naga massing. No pirates. Our own Drowned Reef entry already named both wrecks |
+| Echo Isles | Zalazane "enslaving the minds of any troll who goes back" | The other direction: "From there he sends his trolls to the mainland, to hex our people and drag more of them under his sway." The claim that nobody in Sen'jin will discuss it is contradicted by the village's own quest text, which discusses little else |
+| Felpaw Village | "The Felpaw tribe is in the same state as the Deadwood" | There is no Felpaw tribe. The village is the Deadwood's, under Chieftain Bloodmaw; Felpaw is what the local wolves, scavengers and ravagers are called, and they are Beasts. Nor do the Timbermaw regard the Deadwood as lost rather than enemy: they want them driven back and pay in recognition for their headdress feathers |
+| Sorrow Hill | A mass burial ground, and Uther's tomb's proximity "a bitter joke the land is playing" | Andorhal's cemetery, named before the plague, with crypts and plain plots. The tomb was deliberately raised on the crown of the hill by the last of the townsfolk, so the proximity is the point rather than an accident, and High Priest Thel'danis guards it. In 1.12 the hill is the Scourge's first line on Andorhal's one unfortified road |
+| The Jansen Stead | Golems "animated by something", blamed on "experimental Stormwind engineering abandoned in place" | Harvest Golem, Harvest Watcher and Harvest Reaper are all Mechanical in `creature_template`. The farmers were driven off by thieves, not simply gone, and the explanations on offer are goblin manufacture or the Defias having them built to clear Westfall out |
+| Northfold Manor | A noble estate, "belonged to one of Stromgarde's noble families" | A farm on the northwestern edge of the Highlands, Stromgarde's before the Syndicate took it. The vanilla fact the entry missed is the demonic summoning traced to it, and the bloodstone amulet found on the ground |
+| Terror Wing Path | A pass "on the approach to the mountain" | A valley at the eastern end of the Burning Steppes, the far end of the zone from Blackrock Mountain. Whelps and drakes, and Volchan roaming it on `MovementType` 1 |
+| Eastvale Logging Camp | "The occasional orc scouting party out of the Redridge Mountains" | Wolves and bears. No orc appears anywhere near Elwynn in the 1.12 text, and the camp's trouble is delivery deadlines |
+| Naxxramas | Floating there "unassailable" | The Argent Dawn attunes raiders into it, which is the opposite of unassailable, and the wings are the spider, plague, construct and military quarters with the frostwyrm lair above them. Our line counted the frostwyrm lair as one of the four and left the spider wing out |
+
+**Six unsupported claims deleted rather than reworded.** Northshire Valley had
+the Church choosing the valley for its steep sides and "good water" and teaching
+there "for three generations"; the sourceable facts are the walled southern pass,
+the river out to Crystal Lake and Marshal McBride's garrison. Temple of the Moon
+had Elune's nature "genuinely unclear even to her own priesthood" and the Sisters
+as "the oldest institution the night elves have". Razorfen Kraul had quilboar
+cultivating the thorns, which grew where Agamaggan's blood fell, and a scale "no
+other warren matches", when the Downs is the quilboar capital; Charlga Razorflank
+ruling the Kraul was missing. Razorfen Downs had "the oldest of their sites".
+Stratholme had the Scarlet rank and file "told very little by their own command",
+and gave the city as the Silver Hand's seat when the sourced fact is that the
+order was founded there. Ruins of Lordaeron had "nobody is spared the walk past
+it" about a throne room that is not on the way in.
+
+**Four cleared.** Orgrimmar holds up in full, including Doomhammer dying in the
+Arathi Highlands, which is right: he fell at the internment camp that is now
+Hammerfall. Ratchet, The Writhing Haunt and The Mage Quarter are all clean, and
+Kel'Thuzad being expelled from Dalaran, which three entries assert, is sourced to
+Antonidas stripping his rank and exiling him.
+
+**The gameobject table is an oracle this sweep had not used.** The Valley of
+Heroes finding came from `gameobject_template`, where the five statues carry the
+names and titles the game gives them. Any entry about a monument, a sign, a grave
+or a plaque can be settled the same way, and several in the corpus are.
+
+**Fourteen rows filed, two already present.** The add-if-absent assertion caught
+`Alleria Windrunner` and `Bloodfeather`, both already `vanilla`, which is the
+check the log asks for working as intended. The ledger is 1,680 rows.
+
+**Broken deliberately, twice.** Removing the `Searing Blade` row failed the build
+naming Ragefire Chasm, and removing `Witchwing` failed it naming The Dry Hills,
+each with the expected message. Restored and the file verified identical.
+
+**The rate budget and the rhythm linter both bit.** The `, which` rate went to
+12.2 per 10k against a budget of 12, and three new clauses were reworded rather
+than the budget raised. The RHYTHM count on `Data/Kalimdor.lua` rose from 8 to 9,
+and the new one was real: the Razorfen Downs rewrite had put three sentences in a
+row opening "The ". Reworded, and the count is back to 8. Both of these are worth
+expecting after any run that rewrites this many entries.
+
+Gates: the validator passes on all nine configs, `check-gaps.py` passes, and
+RHYTHM on the five touched data files is unchanged at 0/1/11/8/2.
+
+**Entries covered so far (275).**
+Addle's Stead, Aerie Peak, Agama'gor, Agamand Mills, Alterac Mountains,
+Alterac Valley, Ambermill, Andorhal, Angerfang Encampment, Anvilmar,
+Apocryphan's Rest, Arathi Highlands, Ashenvale, Auberdine, Azshara,
+Badlands, Ban'Thallow Barrow Den, Bashal'Aran, Beggar's Haunt, Beren's
+Peril, Blackfathom Deeps, Blackrock Spire, Blackthorn Ridge, Blackwater
+Cove, Blackwing Lair, Blasted Lands, Bloodvenom Post, Bolgan's Hole, Booty
+Bay, Brackwell Pumpkin Patch, Brambleblade Ravine, Bramblescar, Brewnall
+Village, Brill, Brill Town Hall, Burning Steppes, Caer Darrow, Camp Boff,
+Camp E'thok, Camp Taurajo, Camp Wurg, Cathedral Square, Chillwind Camp,
+Cleft of Shadow, Coldridge Valley, Crown Guard Tower, Dalson's Tears,
+Dandred's Fold, Darkshire, Darkshore, Darkwhisper Gorge, Darnassus,
+Deadwind Pass, Deadwood Village, Deeprun Tram, Desolace, Dire Maul,
+Draco'dar, Dragonmaw Gates, Dreadmaul Hold, Dun Garok, Dun Modr, Dun
+Morogh, Durnholde Keep, Durotar, Duskwood, Dustwallow Marsh, Dwarven
+District, Eastern Plaguelands, Eastvale Logging Camp, Echo Isles, Echo
+Ridge Mine, Elwynn Forest, Emberstrife's Den, Emerald Sanctuary, Faldir's
+Cove, Feathermoon Stronghold, Felpaw Village, Felwood, Feralas, Field of
+Giants, Flame Crest, Forest Song, Forlorn Ridge, Fray Island, Freewind
+Post, Frostmane Hold, Frostwhisper Gorge, Gadgetzan, Gallows' End Tavern,
+Garren's Haunt, Garrison Armory, Gates of Ahn'Qiraj, Gol'Bolar Quarry, Gold
+Coast Quarry, Grim Batol, Grommash Hold, Haldarr Encampment, Hall of
+Legends, Hammerfall, Hearthglen, Hetaera's Clutch, High Rise, Hillsbrad,
+Hillsbrad Fields, Hillsbrad Foothills, Hiri'watha, Iris Lake, Isle of
+Dread, Itharius's Cave, Jerod's Landing, Jintha'Alor, Kargath, Kharanos,
+Kodo Rock, Kolkar Crag, Kolkar Village, Lakeshire, Land's End Beach,
+Lethlor Ravine, Light's Hope Chapel, Loch Modan, Lordamere Internment Camp,
+Magram Village, Malden's Orchard, Maraudon, Mardenholde Keep, Menethil
+Harbor, Mirage Flats, Mirage Raceway, Misty Reed Post, Misty Valley, Molten
+Core, Moonbrook, Mulgore, Naxxramas, Nesingwary's Expedition, Nighthaven,
+North Tide's Hollow, Northfold Manor, Northridge Lumber Camp, Northshire
+Valley, Northshire Vineyards, Northwatch Hold, Old Town, Onyxia's Lair,
+Orgrimmar, Purgation Isle, Pyrewood Village, Quel'Danil Lodge, Ragefire
+Chasm, Raptor Grounds, Ratchet, Raven Hill, Raven Hill Cemetery, Ravenholdt
+Manor, Razorfen Downs, Razorfen Kraul, Rebel Camp, Redridge Mountains,
+Refuge Pointe, Render's Valley, Roguefeather Den, Ruins of Ahn'Qiraj, Ruins
+of Andorhal, Ruins of Lordaeron, Ruins of Mathystra, Rut'theran Village,
+Sandsorrow Watch, Sardor Isle, Scalebeard's Cave, Scarlet Monastery,
+Scholomance, Searing Gorge, Seradane, Shadowfang Keep, Shadowsong Shrine,
+Shadra'Alor, Shalzaru's Lair, Shok'Thokar, Silithus, Silverpine Forest,
+Sishir Canyon, Solliden Farmstead, Sorrow Hill, Sorrowmurk, South Gate
+Outpost, Southern Barrens, Southern Gold Road, Southshore, Splintertree
+Post, Stillwater Pond, Stonard, Stonetalon Mountains, Stonetalon Peak,
+Stonewrought Dam, Stonewrought Pass, Stormwind City, Stormwind Keep,
+Stranglethorn Vale, Stratholme, Sun Rock Retreat, Swamp of Sorrows, Tahonda
+Ruins, Talrendis Point, Tanaris, Tarren Mill, Teldrassil, Temple of
+Arkkoran, Temple of the Moon, Terror Wing Path, Thalanaar, Thalassian Base
+Camp, Thandol Span, The Bulwark, The Charred Vale, The Dead Field, The
+Deadmines, The Decrepit Ferry, The Drag, The Dry Hills, The Farstrider
+Lodge, The Forgotten Coast, The Forgotten Pools, The Greymane Wall, The
+Harborage, The High Seat, The Hinterlands, The Jansen Stead, The Mage
+Quarter, The Park, The Rustmaul Dig Site, The Screeching Canyon, The
+Shimmering Flats, The Stockade, The Tainted Scar, The Talon Den, The
+Talondeep Path, The Weathered Nook, The Writhing Haunt, Theramore Isle,
+Thondroril River, Thousand Needles, Tiragarde Keep, Tirisfal Glades, Tower
+of Althalaxx, Trade District, Tyr's Hand, Uldum, Un'Goro Crater, Uther's
+Tomb, Valley of Fangs, Valley of Heroes, Valley of Honor, Valley of Spears,
+Valley of Spirits, Valley of Strength, Valley of the Watchers, Valley of
+Trials, Valley of Wisdom, Valormok, Warrior's Terrace, Wavestrider Beach,
+Weazel's Crater, Western Plaguelands, Westfall, Wetlands, Whisperwind
+Grove, Whitereach Post, Windbreak Canyon, Windshear Crag, Winterfall
+Village, Winterspring, Yojamba Isle, Zul'Gurub.
+
+Next: P4, the next 25 by the corrected ranking.
+
+### 2026-11-15, P4, run 12 of about 29
+
+Reviewed 25 entries and corrected 21 of them. The score-4 band was exhausted by
+run 11, so this run is the top of the score-3 band, taken alphabetically as the
+formula's tie-break gives it. Three entries described the wrong occupants, one
+described a road that does not exist, and one put a creature on a mountain it is
+not on.
+
+**A new way to answer "what is actually there", and it did most of the work.**
+Until now a place's inhabitants were read off the wiki and spot-checked against
+`creature_template`. The spawn tables answer it directly: `creature` and
+`gameobject` carry map, x, y and z for every spawn in the game, so anchoring on a
+named creature or a quest object and listing everything within a radius gives the
+1.12 population of a place, with levels and quest objects included. It lives in
+the scratchpad as `nearby.py`. On Alther's Mill, anchored on Lucius's Lockbox:
+
+    6x Chatter  lvl 23    5x Greater Tarantula  lvl 19-20    3x Dire Condor  lvl 18-19
+    objects: Practice Lockbox x5, Lucius's Lockbox, Battered Chest
+
+That is the entry rewritten in one call, and it is also the end of the gnolls the
+entry had taken the mill. Use it before writing anything about who holds a place.
+**The z column matters too**, which is how the East Pillar error below was caught.
+
+**Three entries had the wrong occupants.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Azurelode Mine | A silver mine "worked now by the Syndicate" with forced labour | An Alliance mine, worked and guarded: Foreman Bonds, 22 Hillsbrad Miners and 4 foremen on the spawn list, silver and tin veins. Quest 539 has the Forsaken reading it out of the stolen Hillsbrad town registry as "a prime source of iron ore for the Alliance armories" and sending a player to kill the foreman and his miners. No Syndicate anywhere near it |
+| Dreadmaul Rock | "The Dreadmaul ogres hold this rock and work alongside the Blackrock orcs" | The Firegut clan holds it, with Gorgon'och and Hahk'Zor on it. The Dreadmaul are the Blasted Lands clan, as our own Dreadmaul Hold entry says, and the Blackrock alliance is a Cataclysm development. The Firegut "keep no allies except other ogres" |
+| Alther's Mill | "Until the Redridge gnolls took it. It has not been retaken" | An abandoned mill with spiders and dire condors in it. The gnolls are in the Redridge Canyons, where our own entry for those puts them. What the mill is actually for in 1.12 is Alliance rogues, who crack a lockbox here for their certificate of thievery |
+
+**Two entries sent the reader to the wrong place.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Dustfire Valley | "The route between the Searing Gorge and the Badlands", with travellers passing through | It runs north out of the Gorge to the gates of Stonewrought Pass and Loch Modan, and in this period those gates are locked and need a key, so it is a dead end. Our own Stonewrought Pass entry says both halves of that, which makes this the fourth finding that came from two of our entries disagreeing |
+| Janeiro's Point | A point on Stranglethorn's eastern shore north of Grom'gol | A small island in the water just outside Booty Bay with the giant goblin statue on it. The sea giant Mok'rash is the only thing spawned there |
+
+**The East Pillar, which is what the z column is for.** The entry had a pond at
+the summit "with a giant makura in it called Diamond Head", and Gregan Brewspewer
+up there watching it. In 1.12 Diamond Head sits at x -4748, y 2898, **z -39.7**,
+underwater off the Feralas coast among the Coast Crawl makrura, about 1,300 yards
+from the colossals; Gregan is at z 62.8, on the ground. The only thing on the
+summit is Kalin Windflight at z 245.9, who sells the Colossal Parachute, and the
+way up is Marli Wishrunner's teleport from the foot of the western colossal: "Do
+consider how you will get down, though. This is a one way trip only." The wiki's
+account is the retail one; the creature was moved later. A place's altitude is
+checkable and nobody had checked it.
+
+**Six more claims a vanilla source contradicts.**
+
+| Entry | What it said | What is true at 1.12 |
+|---|---|---|
+| Furlbrow's Pumpkin Farm | "One of the last Westfall farms still being worked, by a couple too stubborn to leave" | The Furlbrows fled. They are camped on the road by the Jansen Stead and Farmer Furlbrow left his pocket watch in the farmhouse wardrobe. The fields hold Defias smugglers, harvest watchers and a Foe Reaper 4000 |
+| Bay of Storms | "Naga ground", and "what comes ashore in this bay is her court" | The stretch of the Great Sea off Azshara's eastern coast, holding Scalebeard's Cave, Hetaera's Clutch and the Temple of Arkkoran. Hydras, a sea giant, murlocs and a very old turtle, as our own three entries for those places say. Contradicting ourselves again |
+| Grove of the Ancients | A night elf strongpoint where "the Ancients there are both garrison and advisors" | One Ancient. Onu, an Ancient of Lore, sits in a ruined temple with two merchants and a sleeping druid, and quest 948 names him and the grove exactly. The grove of ancient protectors is Cataclysm |
+| Chill Breeze Valley | A wolf-hunting ground north of the main road | Western Dun Morogh between Gnomeregan and Kharanos. Crag boars and wendigos, with Old Icebeard in a cave at the end holding Tundra MacGrann's stolen meat locker, which he cannot break open |
+| Helm's Bed Lake | Dwarves fishing through the ice, interrupted by the Frostmane | A hole is kept open in the ice for fresh water. The trouble around the lake is Rockjaw troggs and a Dark Iron camp in a building to the south, with the body of the dwarf who went to look at it still lying there. No Frostmane |
+| Ironstone Camp | A camp "worked by people who do not advertise what for" | Moktar Krin's Horde war party, sent against the Explorers' League at the Rustmaul dig and now fighting the silithid the digging let out. Our own Rustmaul Dig Site and Shimmering Flats entries both tell this story |
+
+**Blackrock Mountain carried run 11's error.** It said Nefarian "plays the others
+against each other" and that "none of these parties are allies", and that both
+factions treat the mountain as somebody else's problem. Run 11 established from
+Thrall's own words that the Dark Horde holds the Spire under the black flight's
+protection, so the Dark Irons are fighting the dragon's orcs rather than a third
+party; and Thrall sends champions after Rend while the Horde's warlord at Kargath
+keeps a standing list of names in the lower spire. **This is the sixth time a
+correction had to be carried across to a second entry.** Grep for the claim, not
+just the entry.
+
+**Five more trims.** Eastwall Tower invented sightlines and Scourge columns; in
+1.12 both factions have an emissary at Light's Hope Chapel handing out orders to
+seize and rebuild all four towers, and the capture banners are in the object
+table. Gelkis Village put the clan's hills "near Maraudon" and had them thinking
+themselves senior; Maraudon is Maraudine ground and the Gelkis ravine is in the
+south-west. Camp Mojache put the Grimtotem at the Twin Colossals, 1,800 yards from
+where the Feralas Grimtotem actually spawn, west of the camp. Gunstan's Post had
+"a handful of dwarves and a dig"; Gunstan is alone with a campfire and a readable
+book. Ironforge had Uldaman causing the Explorers' League, and the vanilla game
+manual has it the other way round: Magni turned dwarven industry to archaeology
+and helped create the League, and Uldaman came out of that.
+
+**Bolgan's Hole, from an earlier run, said "Desolace's eastern rise".** Khan Shaka
+spawns in the south-west. Fixed with the Gelkis entry rather than left for a later
+run to find.
+
+**Four cleared.** Cenarion Enclave is right that Fandral Staghelm leads the druids
+from there in Malfurion's absence, and quest 933 confirms both the Circle of
+Ancients and that Staghelm took over because Shan'do Stormrage never returned.
+Dolanaar holds up, and quest 459 is the source for the furbolgs having been
+peaceful neighbours before the Gnarlpine. Arathi Basin and Ethel Rethor are clean.
+
+**Twenty-seven rows filed, one of them a `fragment`.** The ledger is 1,707 rows.
+Two things worth knowing about why so many were needed. First, the
+sentence-initial rule means a name that has only ever opened a sentence is invisible
+to the gate, so moving `Khan Shaka` into the middle of a sentence made it a new
+term. Second, **removing the only lower-cased "excavations" in the corpus made
+`Excavations` a proper noun and failed the build naming the Dun Morogh entry**,
+which is the corpus-global trap the log has warned about, seen live for the first
+time. It is filed as a `fragment`.
+
+**Broken deliberately, three ways.** Removing `Firegut` failed the build naming
+Dreadmaul Rock, removing `Onu` failed it naming the Grove of the Ancients, and
+removing `Excavations` failed it naming Dun Morogh, each with the expected message.
+Restored, and the file verified identical.
+
+Gates: the validator passes on all nine configs, `check-gaps.py` passes, and RHYTHM
+on the four touched data files is 0/10/8/2 against 0/11/8/2 at the previous commit.
+The `, which` rate went over again and five clauses were reworded back under.
+
+**Entries covered so far (300).**
+Addle's Stead, Aerie Peak, Agama'gor, Agamand Mills, Alterac Mountains,
+Alterac Valley, Alther's Mill, Ambermill, Andorhal, Angerfang Encampment,
+Anvilmar, Apocryphan's Rest, Arathi Basin, Arathi Highlands, Ashenvale,
+Auberdine, Azshara, Azurelode Mine, Badlands, Ban'Thallow Barrow Den,
+Bashal'Aran, Bay of Storms, Beggar's Haunt, Beren's Peril, Blackfathom
+Deeps, Blackrock Mountain, Blackrock Spire, Blackthorn Ridge, Blackwater
+Cove, Blackwing Lair, Blasted Lands, Bloodvenom Post, Bolgan's Hole, Booty
+Bay, Brackwell Pumpkin Patch, Brambleblade Ravine, Bramblescar, Brewnall
+Village, Brill, Brill Town Hall, Burning Steppes, Caer Darrow, Camp Boff,
+Camp E'thok, Camp Mojache, Camp Taurajo, Camp Wurg, Cathedral Square,
+Cenarion Enclave, Chill Breeze Valley, Chillwind Camp, Cleft of Shadow,
+Coldridge Valley, Crown Guard Tower, Dalson's Tears, Dandred's Fold,
+Darkshire, Darkshore, Darkwhisper Gorge, Darnassus, Deadwind Pass, Deadwood
+Village, Deeprun Tram, Desolace, Dire Maul, Dolanaar, Draco'dar, Dragonmaw
+Gates, Dreadmaul Hold, Dreadmaul Rock, Dun Garok, Dun Modr, Dun Morogh,
+Durnholde Keep, Durotar, Duskwood, Dustfire Valley, Dustwallow Marsh,
+Dwarven District, East Pillar, Eastern Plaguelands, Eastvale Logging Camp,
+Eastwall Tower, Echo Isles, Echo Ridge Mine, Elwynn Forest, Emberstrife's
+Den, Emerald Sanctuary, Ethel Rethor, Faldir's Cove, Feathermoon
+Stronghold, Felpaw Village, Felwood, Feralas, Field of Giants, Flame Crest,
+Forest Song, Forlorn Ridge, Fray Island, Freewind Post, Frostmane Hold,
+Frostwhisper Gorge, Furlbrow's Pumpkin Farm, Gadgetzan, Gallows' End
+Tavern, Garren's Haunt, Garrison Armory, Gates of Ahn'Qiraj, Gelkis
+Village, Gol'Bolar Quarry, Gold Coast Quarry, Grim Batol, Grimtotem Post,
+Grommash Hold, Grove of the Ancients, Gunstan's Post, Haldarr Encampment,
+Hall of Legends, Hammerfall, Hearthglen, Helm's Bed Lake, Hetaera's Clutch,
+High Rise, Hillsbrad, Hillsbrad Fields, Hillsbrad Foothills, Hiri'watha,
+Iris Lake, Ironforge, Ironstone Camp, Isle of Dread, Itharius's Cave,
+Jademir Lake, Janeiro's Point, Jangolode Mine, Jerod's Landing,
+Jintha'Alor, Kargath, Kharanos, Kodo Rock, Kolkar Crag, Kolkar Village,
+Lakeshire, Land's End Beach, Lethlor Ravine, Light's Hope Chapel, Loch
+Modan, Lordamere Internment Camp, Magram Village, Malden's Orchard,
+Maraudon, Mardenholde Keep, Menethil Harbor, Mirage Flats, Mirage Raceway,
+Misty Reed Post, Misty Valley, Molten Core, Moonbrook, Mulgore, Naxxramas,
+Nesingwary's Expedition, Nighthaven, North Tide's Hollow, Northfold Manor,
+Northridge Lumber Camp, Northshire Valley, Northshire Vineyards, Northwatch
+Hold, Old Town, Onyxia's Lair, Orgrimmar, Purgation Isle, Pyrewood Village,
+Quel'Danil Lodge, Ragefire Chasm, Raptor Grounds, Ratchet, Raven Hill,
+Raven Hill Cemetery, Ravenholdt Manor, Razorfen Downs, Razorfen Kraul,
+Rebel Camp, Redridge Mountains, Refuge Pointe, Render's Valley,
+Roguefeather Den, Ruins of Ahn'Qiraj, Ruins of Andorhal, Ruins of
+Lordaeron, Ruins of Mathystra, Rut'theran Village, Sandsorrow Watch, Sardor
+Isle, Scalebeard's Cave, Scarlet Monastery, Scholomance, Searing Gorge,
+Seradane, Shadowfang Keep, Shadowsong Shrine, Shadra'Alor, Shalzaru's Lair,
+Shok'Thokar, Silithus, Silverpine Forest, Sishir Canyon, Solliden
+Farmstead, Sorrow Hill, Sorrowmurk, South Gate Outpost, Southern Barrens,
+Southern Gold Road, Southshore, Splintertree Post, Stillwater Pond,
+Stonard, Stonetalon Mountains, Stonetalon Peak, Stonewrought Dam,
+Stonewrought Pass, Stormwind City, Stormwind Keep, Stranglethorn Vale,
+Stratholme, Sun Rock Retreat, Swamp of Sorrows, Tahonda Ruins, Talrendis
+Point, Tanaris, Tarren Mill, Teldrassil, Temple of Arkkoran, Temple of the
+Moon, Terror Wing Path, Thalanaar, Thalassian Base Camp, Thandol Span, The
+Bulwark, The Charred Vale, The Dead Field, The Deadmines, The Decrepit
+Ferry, The Drag, The Dry Hills, The Farstrider Lodge, The Forgotten Coast,
+The Forgotten Pools, The Greymane Wall, The Harborage, The High Seat, The
+Hinterlands, The Jansen Stead, The Mage Quarter, The Park, The Rustmaul Dig
+Site, The Screeching Canyon, The Shimmering Flats, The Stockade, The
+Tainted Scar, The Talon Den, The Talondeep Path, The Weathered Nook, The
+Writhing Haunt, Theramore Isle, Thondroril River, Thousand Needles,
+Tiragarde Keep, Tirisfal Glades, Tower of Althalaxx, Trade District, Tyr's
+Hand, Uldum, Un'Goro Crater, Uther's Tomb, Valley of Fangs, Valley of
+Heroes, Valley of Honor, Valley of Spears, Valley of Spirits, Valley of
+Strength, Valley of the Watchers, Valley of Trials, Valley of Wisdom,
+Valormok, Warrior's Terrace, Wavestrider Beach, Weazel's Crater, Western
+Plaguelands, Westfall, Wetlands, Whisperwind Grove, Whitereach Post,
 Windbreak Canyon, Windshear Crag, Winterfall Village, Winterspring, Yojamba
 Isle, Zul'Gurub.
 

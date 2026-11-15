@@ -19,7 +19,7 @@ Instance{
 	hook = "A lava cave directly under Orgrimmar, with a demon cult in it that the Horde has not cleaned out.",
 	lore = {
 		"Ragefire Chasm runs down from the Cleft of Shadow beneath Orgrimmar. It is, in other words, inside the Horde's capital.",
-		"The Burning Blade cult has established itself down there, along with elementals and worse. The cult wants the orcs' old demonic power back, the one thing Thrall outlawed outright.",
+		"The Searing Blade is down there, a sect of the Shadow Council working quietly on members of the Horde, and the Ragefire troggs are in the caves with them, along with elementals and worse. What the Shadow Council deals in is the demonic power Thrall outlawed outright.",
 		"That this is happening under the Warchief's own city is an embarrassment with real implications. Thrall's authority over the Horde's fringes has always been thinner than Orgrimmar's walls suggest.",
 	},
 	aliases = { "Ragefire Chasm" },
@@ -85,9 +85,9 @@ Instance{
 	name = "Blackrock Spire", continent = "Eastern Kingdoms", faction = "Hostile", levels = "55-60",
 	hook = "An orcish fortress with a black dragon living on the top floor and running the place.",
 	lore = {
-		"Blackrock Spire is the upper half of Blackrock Mountain. The lower reaches are held by the Dark Horde: orcs under Rend Blackhand, son of the Horde's first warchief, who never accepted the Second War's end and still calls himself warchief.",
-		"The upper Spire belongs to Nefarian, son of Deathwing. He has been running experiments on dragonflight blood up there, attempting to create a new flight that combines the others' strengths.",
-		"Rend holds the lower halls and Nefarian the upper. Whatever passes between them is their own business, and the orcs doing the fighting further down are not told much about it.",
+		"Blackrock Spire is the upper half of Blackrock Mountain, and the Dark Horde holds it: orcs, ogres and forest trolls under Rend Blackhand, son of the Horde's first warchief, who never accepted the Second War's end and still calls himself warchief.",
+		"Nefarian, son of Deathwing, took the upper spire and the peak above it. He has been running experiments on dragonflight blood up there, attempting to create a new flight that combines the others' strengths.",
+		"The two are not rivals. Rend can make the claims he makes because the black flight protects him, and in his own letters Nefarian is the master. The dragon's generals, Rend among them, hold the spire below the peak while the work above goes on.",
 	},
 	aliases = { "Lower Blackrock Spire", "Upper Blackrock Spire" },
 	readMore = { "Wowpedia: Blackrock Spire", "Wowpedia: Nefarian", "Wowpedia: Rend Blackhand" },
@@ -114,7 +114,7 @@ Instance{
 	lore = {
 		"Naxxramas is a necropolis: a floating fortress of the Scourge, hanging above Plaguewood in the Eastern Plaguelands. It is Kel'Thuzad's seat.",
 		"Kel'Thuzad was a Kirin Tor archmage expelled from Dalaran for studying necromancy. He went to Northrend, found the Lich King, founded the Cult of the Damned, and seeded the plague that destroyed Lordaeron. He was killed during the Third War and raised as a lich, which was always the plan.",
-		"The necropolis holds the Scourge's four great wings, its Construct and Plague works, its military quarter and its own frozen chamber at the top. It is the Lich King's forward headquarters in these lands.",
+		"The necropolis is built as a wheel, four wings around the entrance, the spider, plague, construct and military quarters, with the frostwyrm lair sealed off above them. It is the Lich King's forward position in these lands, and the Argent Dawn is the way in: getting through the door needs an attunement they hold.",
 	},
 	didYouKnow = "Naxxramas is visible from the ground in the Eastern Plaguelands. It has been floating there, unassailable, while the Argent Dawn fights farm by farm beneath it.",
 	readMore = { "Wowpedia: Naxxramas", "Wowpedia: Kel'Thuzad" },
