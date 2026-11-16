@@ -1,5 +1,120 @@
 # Changelog
 
+## 1.2.11
+
+Two more rounds of the vanilla-era sweep: 50 entries reviewed, 39 of them
+carrying something wrong, and one removed. The method keeps improving. The 1.12
+world database turns out to hold a table of named locations with coordinates, and
+the game's own signposts are objects with the place name on them, so a place with
+nobody standing in it can now be found and checked like any other.
+
+**Removed**
+
+- The Red Reaches. It is a stretch of the Blasted Lands coast added in a later
+  expansion, and it does not exist as a place in either client this addon runs on,
+  so the entry could never have come up. The Blasted Lands in this period have
+  Nethergarde Keep, the Dark Portal, the Tainted Scar, the Altar of Storms, the
+  Rise of the Defiler, Serpent's Coil, Dreadmaul Hold, Dreadmaul Post and the
+  Garrison Armory, and no named coast.
+
+**Fixed**
+
+- Quel'Lithien Lodge had the high elves there grown bitter and dangerous, blaming
+  the humans who failed to hold the line. They are on the Alliance's side in this
+  period and hostile to the Horde, and the Horde is the side that raids them, for
+  a registry of elven lives that Nathanos Blightcaller wants because his own
+  mortal life is written in it. The wretched, hostile version of the lodge belongs
+  to a later expansion.
+- The Marris Stead was a Scourge-held farm pressing on Light's Hope Chapel. It is
+  Nathanos Blightcaller's own house, he is the first of Sylvanas's champions, and
+  he kills Scourge and Alliance alike from it. It also sits a long mile from
+  Light's Hope rather than next door.
+- The Ruins of Kel'Theril had the Sundering destroying the city, and the Highborne
+  haunting it by choice rather than under a curse. It is a curse and they earned
+  it: the highborne of that city stole the Crystal of Zin-Malor meaning to siphon
+  its power, it shattered, and the pieces went under the ice of the lake. They are
+  still looking for them.
+- The Twin Colossals had a Grimtotem camp between the peaks. The Grimtotem are a
+  mile south, west of Camp Mojache. What is at the foot of the western peak is
+  Rexxar and his bear Misha, and the harpies above are the Northspring.
+- Lake Falathim was ground the Sentinels hold without having to fight for it. It
+  is murloc water. The Saltspittle have the shore and the shallows, and the night
+  elf scholar Teronis, who went missing here, is still lying on the bank.
+- Maestra's Post was a Sentinel camp on Ashenvale's southern border, watching the
+  Barrens road. It is at the opposite corner of the forest, by the Darkshore
+  border, and it is a junction with signposts and three people on it. The one who
+  matters is Delgren the Purifier, working against the Dark Strand cult at the
+  Tower of Althalaxx.
+- The Pool of Tears had the naga taking an interest. The green dragonflight is all
+  around it, and has been since Ysera sank the temple under it. Somnus is the one
+  worth avoiding.
+- Misty Pine Refuge was a seasonal hunting camp for Ironforge's hunters. It is one
+  house with a fire, three chairs and Father Gavin of the Argent Dawn in it, and
+  nothing else for a hundred yards.
+- The Ruins of Constellas had the night elves writing Felwood off. The Jadefire
+  satyrs hold the ruins under Xavathras, there is a corrupted moonwell in there
+  bringing forth more of them, and the Emerald Circle is fighting for the place
+  and says plainly that the land was once theirs.
+- Roland's Doom had the Scythe of Elune found by a man named Jitters, and the Dark
+  Riders coming down on Duskwood in time. Jitters is the frightened man at Raven
+  Hill in a different story, and no Dark Rider exists in this period at all. What
+  is true is that the Nightbane worgen hold the mine under Gutspill, and that the
+  Carevins of Darkshire say the worgen were first found there.
+- The Yorgen Farmstead asked how worgen reached Duskwood from Silverpine. They did
+  not: the same Carevin account puts their first appearance at Roland's Doom, in
+  the south-east of the zone.
+- Splithoof Crag was one centaur holding among others at the canyon's western end.
+  It is the Galak clan's stronghold, against the northern wall, and Splithoof Hold
+  inside it guards a relic from the time of the centaurs' creation.
+- The Ruins of Aboraz explained its drowned lower levels with the Sundering
+  raising the sea. Nothing supports that, and the entry said nothing about who is
+  there: Zanzil the Outcast holds the ruins with the dead he has raised, and keeps
+  a Darkspear captive.
+- The Venture Co. Base Camp was clear-cutting Stranglethorn for timber. It is a
+  strip mine, cutting iron, silver and gold out of the ground, with the
+  Skullsplitter trolls on the slope above. The company's loggers are in Stonetalon.
+- Uldaman had the troggs as the earthen experiment's failures. The dwarves on site
+  say the digging woke them: urns and idols came out of the ground and the troggs
+  came up after. The Dark Iron are in the ruins too, holding a League prospector
+  for what he knows about titan golems.
+- Whelgar's Excavation Site was turning up dragon bones. It is turning up titan
+  script. The tablet Whelgar has reads of a divine plan, a doomed prophecy, and
+  Old Gods chained beneath the land.
+- Zul'Farrak held a captured Alliance force. It holds Sergeant Bly's band of
+  ill-reputed treasure hunters, who went in on their own account, and tablets of
+  the prophecy of Mosh'aru.
+- Seven more entries had the wrong place or the wrong people, each now matched to
+  what the 1.12 game says. Ranazjar Isle is a mile north of Shadowprey rather than
+  in sight of it, and the naga on it are the Slitherblade. Mosshide Fen is in the
+  eastern marsh, and the complaint against the gnolls is that they trample it and
+  fell too much wood, not that they ambush the road. Night Web's Hollow is a gold
+  mine the Forsaken cannot work for spiders, not a test for new Forsaken. Northpass
+  Tower is the northernmost of the zone's four towers, on the road out towards
+  Quel'Thalas, and both factions want all four as outposts. Prospector Remtravel is
+  alone at his dig with stone golems walking it. Silverwind Refuge has trainers,
+  vendors and a lake full of befouled water elementals rather than the Warsong on
+  both sides. The Noxious Glade holds Scourge champions from the battle of
+  Darrowshire.
+- Six entries were short of what is actually there, and now say it. Lake Mennar is
+  ringed by the blue dragonflight rather than being one of Azshara's quiet spots.
+  The Lakkari Tar Pits have tar elementals walking about in them. Marshal's Refuge
+  is a non-aligned expedition in Williden Marshal's own words, not an Explorers'
+  League camp, and it has a flight path and goblin bruisers keeping order.
+  Morgan's Vigil has a gryphon master, a weaponsmith and Marshal Maxwell running
+  the campaign against Blackrock Mountain. Sentinel Hill's militia has a captain,
+  protectors, a quartermaster and a scout, and a recruit joins as a pledge sworn
+  to the Light. Talonbranch Glade has a druid trainer, a hunter trainer and a pet
+  trainer as well as its hippogryphs.
+- Smaller trims, where a claim had no source: the Barrens no longer blames the
+  Sundering for drying out, the Stagnant Oasis has a fissure under it rather than
+  something wrong with its water, Thistleshrub Valley loses an Explorers' League
+  theory about titan work, Thunder Ridge gains the Burning Blade warlock camped in
+  it and loses a paragraph about shaman, the Scarab Dais now says the scepter
+  shattered after Fandral Staghelm's betrayal and was divided among the four
+  Aspects, the Temple Gardens explain that Darnassus imports its moonwell water in
+  phials from Teldrassil, and the Pillar of Ash stops claiming every army in
+  history marched past it.
+
 ## 1.2.10
 
 Two more rounds of the vanilla-era sweep, and the heaviest pair so far: 42 of the
