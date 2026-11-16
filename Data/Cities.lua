@@ -436,10 +436,10 @@ SubsOf("Darnassus", {
 	},
 	{
 		name = "The Temple Gardens", faction = "Alliance",
-		hook = "The gardens before Elune's temple, with the city's moonwell.",
+		hook = "The gardens before Elune's temple, kept green at the top of a tree.",
 		lore = {
-			"The Temple Gardens surround the Temple of the Moon and hold a moonwell, the night elves' source of healing and renewal.",
-			"Moonwells are drawn from the Well of Eternity's waters. Every one of them is a fragment of the thing whose destruction broke the world.",
+			"The Temple Gardens surround the Temple of the Moon, where Tyrande Whisperwind presides and the Sisters of Elune keep the rites.",
+			"Darnassus has a moonwell of its own and it does not fill itself. The druids here top it up with water carried in phials from the five wells down in Teldrassil, and the oldest and strongest of those is the one under the Oracle Tree. A city on a treetop imports its holy water from the roots.",
 		},
 	},
 })

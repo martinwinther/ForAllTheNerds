@@ -78,8 +78,8 @@ SubsOf("Durotar", {
 		name = "Thunder Ridge", parent = "Durotar", faction = "Contested",
 		hook = "A ridge where the storms never quite stop, full of lightning-charged lizards.",
 		lore = {
-			"Thunder Ridge sits in northeastern Durotar, and the elemental activity there is strong enough to charge the local wildlife. Thunder lizards in Kalimdor are a known hazard and this ridge is a dense population of them.",
-			"The Horde's shaman take an interest. Elemental disturbance of this kind usually means something has upset the balance nearby, and Kalimdor has plenty that is upset.",
+			"Thunder Ridge sits in northeastern Durotar, and the storms have got into the wildlife: thunder lizards and lightning hides, whose scales come off singed. Orgrimmar's warriors send recruits up here to fight them as a test.",
+			"Something else is camped in the hollow. Fizzle Darkstorm is a goblin warlock of the Burning Blade, and he and his cultists are working out here in the open, well inside Durotar, which is the whole trouble with that cult.",
 		},
 	},
 	{
@@ -87,7 +87,8 @@ SubsOf("Durotar", {
 		hook = "A cave of Burning Blade cultists, practising exactly what Thrall outlawed.",
 		lore = {
 			"The Burning Blade is a demonic cult operating inside Horde territory. Its members are mostly orcs who want the old power back: the demon blood, the warlock pacts, the strength that the Horde used to have and that destroyed it.",
-			"Thrall's Horde has banned that path outright. The cults keep forming anyway, because the Horde's strength under Gul'dan was real and some orcs would rather be strong than free.",
+			"Thrall's Horde has banned that path outright and Thrall would have them killed. The cults keep forming anyway, because the Horde's strength under Gul'dan was real and some orcs would rather be strong than free.",
+			"What the cave east of Orgrimmar holds is the practice itself. The cultists perform their rituals in there and burn their own flesh with searing collars, which is how they attune themselves to demonic power, and one of the collars taken out of this cave is what first put the Horde on to them.",
 		},
 	},
 	{
@@ -400,7 +401,7 @@ SubsOf("Darkshore", {
 		hook = "A dwarven dig in night elf ruins, run by an archaeologist with no sense of self-preservation.",
 		lore = {
 			"Prospector Remtravel of the Explorers' League is excavating the ruins at Darkshore's southern end. The night elves regard it as grave-robbing conducted by an ally.",
-			"Remtravel's own expedition has fallen apart around him. He has not noticed.",
+			"He is also alone out there, and the digging has woken something up. Cracked golems walk the site with a stone behemoth among them, and Remtravel is still at his work in the middle of it.",
 		},
 	},
 	{
@@ -429,7 +430,7 @@ Zone{
 	name = "The Barrens", continent = KA, faction = "Horde", levels = "10-25",
 	hook = "A vast dry savannah that used to be forest, and the Horde's main road through Kalimdor.",
 	lore = {
-		"The Barrens are the great dry middle of Kalimdor, and the name is accurate now but was not always. Before the Sundering this was lush country. The breaking of the continent took the water with it, and what remains is savannah, scrub and a handful of oases.",
+		"The Barrens are the great dry middle of Kalimdor, and the name is accurate now but was not always. This was lush forest once, and the druids who want it back say so in those words. What remains is savannah, scrub and a handful of oases.",
 		"The Horde runs through it. The Crossroads sits at the junction of every road that matters, Camp Taurajo supplies the south, and the Mor'shan Rampart holds the northern border against the night elves in Ashenvale. For most Horde players the Barrens are the spine of the world.",
 		"It is crowded with other claims. Quilboar hold Razorfen Kraul and Razorfen Downs, Kolkar centaur raid the central roads, the Venture Company is stripping the Sludge Fen, dwarves are digging at Bael'dun without permission, the Alliance holds Northwatch Hold on the coast, and Ratchet is a goblin free port where nobody is allowed to fight.",
 	},
@@ -539,10 +540,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "The Stagnant Oasis", parent = "The Barrens", faction = "Contested",
-		hook = "The southern oasis, and the name is a warning.",
+		hook = "The southern oasis, with a fissure under it and centaur camped on it.",
 		lore = {
-			"The Stagnant Oasis has not aged as well as its neighbours. Something in the water has gone wrong, and the wildlife around it reflects that.",
-			"Water quality in the Barrens is not a minor concern. It is the zone's only real resource.",
+			"The Kolkar have a command tent at this oasis, and Verog the Dervish works out of it. Water is the zone's only real resource, so the oasis the centaur hold is the one worth holding.",
+			"There is a fissure beneath the water, as there is at the Forgotten Pools. The Crossroads druids think the fissures are what feed the oases, and the test they ran was to drop dead, dried seeds into one. The seeds came up alive. Whatever is down there makes life out of nothing, and nobody knows what it is.",
 		},
 	},
 	{
@@ -791,10 +792,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Maestra's Post", faction = "Alliance", levels = "18-25",
-		hook = "A Sentinel camp on the southern border, watching the Barrens road.",
+		hook = "A road junction in north-western Ashenvale, with a paladin working out of it.",
 		lore = {
-			"Maestra's Post is the night elves' position nearest the Mor'shan Rampart and the Barrens, and the first thing the Horde meets coming north.",
-			"It is small and exposed, and serves as the Sentinels' early warning for anything coming out of the Barrens.",
+			"Maestra's Post sits near the Darkshore border at the top of the forest, a junction more than a camp: signposts for Darkshore, Astranaar and the Shrine of Aessina, and three people.",
+			"Delgren the Purifier runs his own campaign from here against the Dark Strand, the night elf cult holding the Tower of Althalaxx north of the post. Feero Ironhand is the other man worth knowing, and his business is getting a supply run through to Auberdine.",
 		},
 	},
 	{
@@ -898,10 +899,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Splithoof Crag", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A centaur camp in the western canyon.",
+		hook = "The Galak stronghold, against the canyon's northern wall.",
 		lore = {
-			"Splithoof Crag is one of the centaur clans' holdings in the canyon's western end.",
-			"The centaur clans fight each other almost as much as they fight the tauren. Without that, Freewind Post would not have held.",
+			"Splithoof Crag is the Galak clan's stronghold, set against the northern wall of the canyon east of Darkcloud Pinnacle, and the Galak are here in great numbers.",
+			"Splithoof Hold is the guarded part of it. The centaur keep a relic in there from the time of their own creation, held in a flame that does not go out, and Freewind Post has been working at thinning the clan for a long time without much to show for it.",
 		},
 	},
 	{
@@ -1033,8 +1034,8 @@ SubsOf("Desolace", {
 		name = "Valley of Bones", parent = "Desolace", faction = "Contested",
 		hook = "A valley of bleached bones on the southern road.",
 		lore = {
-			"The Valley of Bones is exactly that, and it sits on the route south out of Desolace.",
-			"Between the kodo graveyard, this valley and the centaur wars, Desolace has more skeletal landscape than most zones manage.",
+			"The Valley of Bones is exactly that, and it sits on the route south out of Desolace. What walks among the bones is undead, and the ghosts are Magram: the centaur clan's own dead, haunting a valley the living Magram will not go into.",
+			"Both sides have taken an interest for their own reasons. The Scarlet Crusade uses the valley as a proving ground for recruits, and a goblin in Gadgetzan wants the ghost energy bottled, on the grounds that the Magram will pay a great deal to have their ancestors taken away.",
 		},
 	},
 })
@@ -1196,10 +1197,11 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "The Twin Colossals", parent = "Feralas", faction = "Contested",
-		hook = "Two enormous peaks in the north, with a Grimtotem camp between them.",
+		hook = "Two enormous peaks in the north, with Rexxar camped at the foot of one.",
 		lore = {
 			"The Twin Colossals are the two great mountains in northern Feralas, and the route between them is the land link toward Desolace.",
-			"The Grimtotem hold ground here, as do harpies, and the peaks themselves are home to some of Kalimdor's largest wildlife.",
+			"Rexxar is here, with Misha beside him, at the base of the western peak. He holds no post and runs no camp: he is simply out here, as far from either capital as Kalimdor allows.",
+			"Northspring harpies nest on the slopes above, groddoc apes and rage scar yetis hold the ground below, and the Grimtotem that this place is often credited with are a mile south, west of Camp Mojache.",
 		},
 	},
 	{
@@ -1306,8 +1308,8 @@ SubsOf("Tanaris", {
 		hook = "A Sandfury troll city built around a pyramid, with something very large in the water.",
 		lore = {
 			"Zul'Farrak is the Sandfury tribe's city in western Tanaris, centred on a stepped pyramid and a sacrificial pool. The Sandfury are desert trolls, a separate branch from the jungle and forest tribes.",
-			"They keep a creature called Gahz'rilla, a hydra they revere and summon, and the city's whole layout is built around their religious practice. Troll religion works. That is the recurring difficulty with troll cities.",
-			"There is also a captured Alliance force held in the city, and that is how most outsiders end up involved.",
+			"They keep a creature called Gahz'rilla, a hydra they revere as a god and summon, and they carve ornaments in its image out of an element the goblins have named gahz'ridian after it. Troll religion works. That is the recurring difficulty with troll cities.",
+			"Two things in the city draw outsiders. Sergeant Bly's band of ill-reputed treasure hunters went in on their own account and are still in there, and the trolls hold tablets of the prophecy of Mosh'aru. Those bear on Hakkar, and they are wanted by people a long way from Tanaris.",
 		},
 		readMore = { "Wowpedia: Zul'Farrak", "Wowpedia: Sandfury" },
 	},
@@ -1380,8 +1382,8 @@ SubsOf("Tanaris", {
 		name = "Thistleshrub Valley", parent = "Tanaris", faction = "Contested",
 		hook = "A valley of hostile desert plants.",
 		lore = {
-			"Thistleshrub Valley is full of animated plant life that has adapted to the desert and is unpleasant about it.",
-			"Tanaris's ecology is stranger than a desert's has any right to be, and the Explorers' League puts it down to the titan work nearby.",
+			"Thistleshrub Valley is full of animated plant life that has adapted to the desert and is unpleasant about it. The things are called gnarled thistleshrubs and thistleshrub rootshapers, and they are big enough that Gadgetzan's own prospectors will not walk in.",
+			"What is in there that anybody wants is a cactus. One goblin has been trying to get a look at it for a while and keeps sending other people to clear his way.",
 		},
 	},
 	{
@@ -1493,10 +1495,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Lake Mennar", parent = "Azshara", faction = "Contested",
-		hook = "A lake in the eastern hills, oddly untouched.",
+		hook = "A lake in the eastern hills, ringed by blue dragonkin.",
 		lore = {
-			"Lake Mennar sits in the hills above the coast and is one of the quieter spots in Azshara.",
-			"Quiet in Azshara means unvisited rather than safe. The zone is far too large for the single night elf camp and the single Horde camp in it to patrol. Most of it goes unobserved.",
+			"Lake Mennar sits in the hills above the coast, and the ground on every side of it belongs to the blue dragonflight. Scalebanes and mageweavers hold the perimeter, with magelords behind them, and all of them are stronger than anything else in the zone.",
+			"The water itself is clear. Getting to it is the difficulty, and this is one of very few places outside Northrend where the blue flight keeps a holding at all.",
 		},
 	},
 })
@@ -1585,18 +1587,18 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Ruins of Constellas", parent = "Felwood", faction = "Hostile",
-		hook = "A night elf ruin in a forest that used to be theirs.",
+		hook = "A night elf ruin with a corrupted moonwell in it, worked by satyrs.",
 		lore = {
-			"Constellas was a night elf site in what was then Ashenvale's northern forest. Felwood's corruption took the area around it.",
-			"The night elves have written Felwood off. For a people who kept these forests for ten thousand years that is a significant concession.",
+			"Constellas was a night elf site in forest the night elves held, and Felwood's corruption took it along with everything around it. The Jadefire satyrs hold the ruins now, under one called Xavathras, and they spread the disease to whatever they meet.",
+			"The moonwell is the reason the place matters. A moonwell was a symbol of renewal, and this one is corrupted and bringing forth more satyrs. The Emerald Circle wants Constellas back and says plainly that this land was once theirs.",
 		},
 	},
 	{
 		name = "Talonbranch Glade", faction = "Alliance", levels = "48-55",
 		hook = "A night elf camp near the Timbermaw tunnels.",
 		lore = {
-			"Talonbranch Glade is a small night elf position in northern Felwood, close to the route through to Winterspring.",
-			"It is a waypoint rather than a garrison. The night elves' presence in Felwood is minimal by choice.",
+			"Talonbranch Glade is a small night elf position in northern Felwood, high up and close to the route through to Winterspring.",
+			"It is a waypoint rather than a garrison, and the hippogryphs are the point of it. What is here besides the flight master is a druid trainer, a hunter trainer with his own cat, a pet trainer and two merchants, which is more than the glade's size suggests.",
 		},
 	},
 	{
@@ -1630,8 +1632,8 @@ SubsOf("Un'Goro Crater", {
 		name = "Marshal's Refuge", faction = "Neutral", levels = "48-55",
 		hook = "A dwarf and gnome expedition camped in a crater full of dinosaurs.",
 		lore = {
-			"Marshal's Refuge is the research camp inside Un'Goro, run jointly by Explorers' League dwarves and gnomish technicians, on neutral ground.",
-			"They are studying the pylons, the crystals and the crater's ecology. They are also hiding in a cave from devilsaurs, a task that takes up a good share of the working day.",
+			"Marshal's Refuge is the research camp inside Un'Goro, and Williden Marshal, who leads it, calls his people a non-aligned expedition troupe. They are nobody's envoys: not the Explorers' League, not Gadgetzan, not either faction.",
+			"They are studying the three pylons and the crater's power crystals, which J.D. Collie works on in the cave. The expedition underestimated Un'Goro and has been driven back to this one hole in the rock, where Gadgetzan bruisers keep order and a hippogryph will carry anybody out who has had enough.",
 		},
 	},
 	{
@@ -1652,10 +1654,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Lakkari Tar Pits", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "Tar pits in the north, full of things that got stuck and things that eat them.",
+		hook = "Tar pits in the north of the crater, with the tar itself walking about.",
 		lore = {
-			"The Lakkari Tar Pits are natural asphalt seeps, and they have trapped a fair share of the crater's wildlife over time.",
-			"The pits are also a source of the crater's fossil record, which the expedition would like to study and the local pterrordax would prefer they did not.",
+			"The Lakkari Tar Pits are natural asphalt seeps a short way south of Marshal's Refuge, and they have trapped a fair share of the crater's wildlife over time, and old bones stand up out of the surface.",
+			"Some of the tar has got up and moved off. Tar beasts, creepers, lurkers and lords are all elementals of the stuff, and they are what a traveller meets at the pits rather than anything that drowned in them.",
 		},
 	},
 	{
@@ -2244,8 +2246,8 @@ SubsOf("Ashenvale", {
 		name = "Silverwind Refuge", parent = "Ashenvale", faction = "Alliance",
 		hook = "A night elf position in south-central Ashenvale, north of Mystral Lake.",
 		lore = {
-			"Silverwind Refuge stands in south-central Ashenvale, north of Mystral Lake. It is night elf ground, and Sentinel Velene Starstrike holds it.",
-			"The Warsong are close on both sides of it. Horde scouts watch the refuge from across the lake, which makes this a forward position rather than a safe one.",
+			"Silverwind Refuge stands in south-central Ashenvale, north of Mystral Lake. It is night elf ground, Sentinel Velene Starstrike holds it, and the place is a proper settlement: a hunter trainer, a pet trainer, two alchemists, a herbalist, a skinner, a bowyer and a butcher, with Sentinels out of Astranaar standing guard.",
+			"The lake below has turned. Its water elementals are befouled, they have come up in numbers, and they attack anything that goes near the water, which has stopped the traffic on the Talondeep Path. Splintertree Post has noticed the gazebo out on the water, and wants it quietly for the view it gives of this place. Foulweald furbolgs hold the woods on either side.",
 			"That is Ashenvale as plainly as it can be put. The Warsong clan needs the timber, Darnassus will not sell it, and the two of them are settling the question a clearing at a time.",
 		},
 		readMore = { "Wowpedia: Velene Starstrike", "Wowpedia: Ashenvale", "Wowpedia: Warsong clan" },
@@ -2481,7 +2483,7 @@ SubsOf("Azshara", {
 		hook = "A ruined shrine in the Reaches with nobody in it but stray murlocs.",
 		lore = {
 			"Rethress Sanctum is a shrine south-west of Ravencrest Monument, and it is a ruin. Nothing lives there. Murlocs and makrura wander through it.",
-			"That is unusual for Azshara, where almost everything is held by somebody: Legashi and Haldarr satyrs inland, naga along the coast, blue dragonkin at the pinnacle.",
+			"That is unusual for Azshara, where almost everything is held by somebody: Legashi and Haldarr satyrs inland, naga along the coast, blue dragonkin around Lake Mennar.",
 			"An empty shrine in the middle of that is a reminder of the scale of what was lost. There was enough night elf civilisation here that some of its holy places are not worth anybody's trouble to occupy.",
 		},
 		readMore = { "Wowpedia: Rethress Sanctum", "Wowpedia: Azshara" },
@@ -2614,13 +2616,13 @@ SubsOf("Thousand Needles", {
 SubsOf("Winterspring", {
 	{
 		name = "The Ruins of Kel'Theril", parent = "Winterspring", faction = "Hostile",
-		hook = "A night elf city the Sundering took, with its Highborne still grieving in it.",
+		hook = "A night elf ruin on a frozen lake, with its Highborne cursed to it.",
 		lore = {
-			"Kel'Theril was a great night elf city and the Great Sundering destroyed it. What is left is on the shores of the lake that carries its name, in the middle of Winterspring.",
-			"The Highborne who did not survive are still here. They did not move on, and the ruins are haunted by them: not a curse laid on the place by somebody else, but the dead of the city refusing to leave it.",
+			"What is left of Kel'Theril stands on the shores of the lake that carries its name, in the middle of Winterspring, and the Highborne who lived there are still on the ruins.",
+			"They are there because of what they did. The Highborne of this city stole a sacred artefact, the Crystal of Zin-Malor, believing they could siphon its power into themselves. It shattered in an explosion that drove the pieces down under the ice of the lake, and the thieves have been bound here ever since, still looking for them. The curse is their own.",
 			"The Highborne were Azshara's arcane nobility, and the Sundering was the direct result of what their queen and her court did with the Well of Eternity. Spirits tormented on the ruins of their own city is as exact a judgement as the world has handed down.",
 		},
-		didYouKnow = "The Crystal of Zin-Malor was taken from the Temple of Zin-Malor in Azshara and brought to Kel'Theril. Two ruins of the same vanished empire, with one of its relics moved between them.",
+		didYouKnow = "The fragments can be brought up out of the ice and the crystal mended, and the elf who knows how is not here. She is Aurora Skycaller, living a continent away outside Quel'Lithien Lodge in the Eastern Plaguelands, and she grieves for what her people did.",
 		readMore = { "Wowpedia: Ruins of Kel'Theril", "Wowpedia: Highborne", "Wowpedia: Great Sundering" },
 	},
 })

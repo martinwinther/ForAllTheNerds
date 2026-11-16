@@ -238,10 +238,10 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Misty Pine Refuge", parent = "Dun Morogh", faction = "Alliance",
-		hook = "A quiet hunters' camp in the pines, as close to peaceful as this mountain gets.",
+		hook = "One building in the pines, with the Argent Dawn's man in Dun Morogh sitting in it.",
 		lore = {
-			"The refuge is a seasonal hunting camp rather than a settlement, used by Ironforge's hunters working the northern woods. There is no mine here. In Dun Morogh that counts as remarkable.",
-			"It has become more useful than intended as a waypoint for travellers avoiding the main road and whatever the Frostmane are doing on it that week.",
+			"The refuge is a single house off the road north-east of Kharanos, with a fire, three chairs and Father Gavin in it, who serves the Argent Dawn. There is no mine here, and in Dun Morogh that counts as remarkable.",
+			"The Argent Dawn fights the Scourge in the Plaguelands, most of a continent away, and it recruits and collects everywhere else. Keeping one man this far from the war is what that looks like on the ground.",
 		},
 	},
 })
@@ -316,10 +316,10 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Night Web's Hollow", parent = "Tirisfal Glades", faction = "Hostile",
-		hook = "A spider-choked cave near Deathknell, used as a first test for new Forsaken.",
+		hook = "A gold mine north-west of Deathknell that the Forsaken cannot work for spiders.",
 		lore = {
-			"The hollow is a nest of unusually large spiders in the hills near Deathknell. It is close, contained, and lethal enough to be a real test. Forsaken who have just regained their minds are sent here first.",
-			"Tirisfal's wildlife has not been improved by the plague. A great deal of what lives here now is bigger and meaner than it was when this was farmland.",
+			"There is a gold mine in the hollow, and the Forsaken want what is in it. There was little gold in Lordaeron even at its height, and the state the Forsaken are building has less than that.",
+			"The spiders got there first. Night web spiders have the cave and the slope outside it, with a matriarch among them, and Executor Arren in Deathknell has no manpower to spare for the job. So it is done a few spiders at a time, and he reckons on months before the mine is clear enough to go in with torches and burn the webbing out.",
 		},
 	},
 	{
@@ -471,7 +471,8 @@ SubsOf("Westfall", {
 		hook = "The People's Militia headquarters, holding Westfall with volunteers because the kingdom will not.",
 		lore = {
 			"Sentinel Hill is a stone tower on the only high ground in central Westfall, and the last functioning Alliance authority in the zone. Gryan Stoutmantle runs the People's Militia out of it.",
-			"The militia is farmers, labourers and a handful of veterans. They are holding a zone against an organised criminal army with the resources of a county fair, and they know precisely how little help is coming from Stormwind.",
+			"The militia is better organised than volunteers usually are. Captain Danuvin and a line of protectors serve under Stoutmantle, there is a quartermaster and a scout, and anyone joining starts as a pledge sworn to the militia and to the Light.",
+			"What they do not have is help. Stoutmantle's own view is that Stormwind deserted Westfall, and that if it had not there would be no need for a militia at all. Lakeshire's magistrate, writing to ask the militia for aid, got a letter back saying so.",
 		},
 	},
 	{
@@ -806,7 +807,7 @@ SubsOf("Duskwood", {
 		hook = "An abandoned farm with worgen in the barn.",
 		lore = {
 			"The Yorgen place is another lost holding, and it has become one of the clearest signs that Duskwood's worgen population is not a rumour.",
-			"How worgen reached this far south from Silverpine is an open question in Darkshire, and not a comforting one.",
+			"They did not come down from Silverpine. The Carevin family in Darkshire will tell anybody who asks that the worgen in this forest were first found in the mine at Roland's Doom, in the south-east of the zone, and that they appeared there out of nowhere.",
 		},
 	},
 	{
@@ -918,10 +919,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Whelgar's Excavation Site", parent = "Wetlands", faction = "Alliance",
-		hook = "An Explorers' League dig in the marsh, turning up dragon bones and raptor trouble.",
+		hook = "An Explorers' League dig in the marsh, reading titan script out of the mud.",
 		lore = {
-			"Whelgar's team came for the fossils. The Wetlands have an unusually rich bed of very large bones, and the League wants to know what they belonged to and when.",
-			"The dig has been overrun by raptors and murlocs more than once, the usual career trajectory for an Explorers' League site.",
+			"What Whelgar has pulled out of this site is a tablet. He calls it the Goaz Stone, it is written in titan script, and the translation breaks off in four places, so he keeps sending people back into the mud for the missing fragments.",
+			"What he has read so far is enough. The text speaks of a divine plan and a doomed prophecy, and then of Old Gods chained beneath the land. He is pleased. The dig has also been overrun by raptors more than once. That is the usual career trajectory for an Explorers' League site.",
 		},
 	},
 	{
@@ -958,10 +959,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Mosshide Fen", parent = "Wetlands", faction = "Hostile",
-		hook = "Gnoll country in the central marsh, astride the road north.",
+		hook = "Gnoll country in the eastern marsh, below the dwarven gate.",
 		lore = {
-			"The Mosshide gnolls hold the fen and tax the road through it in the manner of gnolls everywhere, which is to say by ambush.",
-			"They have also been digging up the Explorers' League's sites, apparently out of curiosity. The League's dwarves have taken it personally.",
+			"The Mosshide gnolls hold the eastern fen in a scatter of camps, down towards the gate at Dun Algaz, and Gnawbone is the one they follow. Brutes, trappers, mystics and an alpha are what the camps hold.",
+			"The complaint against them is not that they raid. They lived in the Wetlands quietly for years and have simply grown too numerous: they trample the fen flat, and they cut far more wood than they need for their fires. Rethiel the Greenwarden puts it as a matter of balance, and wants their numbers brought down and their firemaking tools taken off them.",
 		},
 	},
 	{
@@ -1413,10 +1414,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Venture Co. Base Camp", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A goblin logging operation stripping the jungle with no regard for anything.",
+		hook = "A goblin strip mine in the jungle, run with no regard for anything.",
 		lore = {
-			"The Venture Company is the goblin cartel that does not bother with neutrality or reputation. Where the Steamwheedle Cartel sells to everyone, Venture Co. takes. It is clear-cutting Stranglethorn for timber.",
-			"They are the same firm that built Edwin VanCleef's warship in the Deadmines and that is tearing up Mulgore and the Barrens on the other continent. Goblin enterprise at its least charming.",
+			"The Venture Company is the goblin cartel that does not bother with neutrality or reputation. Where the Steamwheedle Cartel sells to everyone, Venture Co. takes.",
+			"What it is taking here is metal. The camp is a strip mine with a foreman, surveyors and tinkerers on it and iron, silver and gold cut out of the ground all around, and the Skullsplitter trolls whose jungle this is are on the slope above. The same firm is tearing up Mulgore and the Barrens on the other continent. Goblin enterprise at its least charming.",
 		},
 	},
 	{
@@ -1484,7 +1485,7 @@ SubsOf("Badlands", {
 		lore = {
 			"Uldaman is one of the titans' installations, built to house their work on this world and sealed afterwards. The dwarves found it, dug in, and discovered the Discs of Norgannon.",
 			"The discs are a titan record, and what they record is that the earthen, the dwarves' ancestors, were shaped from living stone to work the deep places of the world. Dwarves are not natives of Azeroth in the way they always assumed. They are a titan project.",
-			"The vault has its own guardians, still functioning after all this time, and the troggs that infest the upper levels are the earthen experiment's failures. The Explorers' League is digging anyway.",
+			"The vault has its own guardians, still functioning after all this time, and the troggs are all over the upper levels. Dwarven opinion on site is that the digging woke them: urns and idols came out of the ground and the troggs came up after them. The Explorers' League is digging anyway, and the Dark Iron are in the ruins too, holding a League prospector hostage for what he knows, because they want the titans' way of making golems.",
 		},
 		didYouKnow = "The vault's guardian construct is still following orders issued by beings who left this world long ago. It does not care who Ironforge is.",
 		readMore = { "Wowpedia: Uldaman", "Wowpedia: Discs of Norgannon" },
@@ -1601,10 +1602,10 @@ SubsOf("Swamp of Sorrows", {
 	},
 	{
 		name = "Pool of Tears", parent = "Swamp of Sorrows", faction = "Contested",
-		hook = "The flooded crater above the sunken temple.",
+		hook = "The lake that covers the sunken temple, watched by green dragons.",
 		lore = {
-			"The Pool of Tears is the water that covers the Temple of Atal'Hakkar. It is the visible mark of what Ysera did to the place.",
-			"The naga have taken an interest in the pool. Nothing improves once they do.",
+			"The Pool of Tears is the water that covers the Temple of Atal'Hakkar, the visible mark of what Ysera did to the place. Atal'ai ruins break the surface at the edges and run on under it.",
+			"The green dragonflight is all around the pool and has been since the temple went under: scalebanes and wyrmkin in the marsh, and Somnus, who is a great deal more than that. They are watching a corrupted temple rather than guarding a lake.",
 		},
 	},
 	{
@@ -1912,8 +1913,8 @@ SubsOf("Burning Steppes", {
 		name = "Morgan's Vigil", faction = "Alliance", levels = "50-58",
 		hook = "The Alliance's camp on the Steppes, doing the same job from the other side of the road.",
 		lore = {
-			"Morgan's Vigil is Stormwind's forward position on the Steppes, watching the mountain and the road east.",
-			"It is small, exposed and about as far from reinforcement as an Alliance posting gets.",
+			"Morgan's Vigil is Stormwind's forward position on the Steppes, watching the mountain and the road east. It is small and exposed, but it is not isolated: there is a gryphon master here, a weaponsmith and someone selling food.",
+			"Marshal Maxwell commands it, and his business is Blackrock Mountain. The orders that go out from this camp are about the dark iron dwarves, the Dark Horde in the spire and the hunt for Marshal Windsor.",
 		},
 	},
 	{
@@ -1945,7 +1946,7 @@ SubsOf("Burning Steppes", {
 		hook = "A rock spire on the road to Blackrock Mountain, used as a landmark by everyone.",
 		lore = {
 			"The Pillar is the most visible feature on the Steppes after the mountain itself, and it marks the approach to Blackrock Mountain's gates.",
-			"Every army that has marched on or out of the mountain has passed it, and that is a considerable number of armies.",
+			"Nothing holds it and nothing is built on it. On a zone this bare that is the whole of its use: a thing you can see from a long way off and name, in country where one black slope looks much like the next.",
 		},
 	},
 	{
@@ -2145,18 +2146,19 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Marris Stead", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A farmstead turned Scourge outpost, close to Light's Hope.",
+		hook = "A farmstead in the western Plaguelands of the east, and Nathanos Blightcaller's house.",
 		lore = {
-			"The Marris Stead is a Scourge-held farm uncomfortably near the Argent Dawn's chapel, which is deliberate.",
-			"The Scourge keeps pressure on Light's Hope constantly without ever being able to take it.",
+			"The stead is not the Scourge's. Nathanos Blightcaller lives here, the first of Sylvanas Windrunner's champions, and he holds this farm a long mile out from Light's Hope Chapel with nobody at his back.",
+			"What he does from it is kill. He roams the wastes around the stead killing Scourge and Alliance alike, and he sends agents further out: to Tyr's Hand in the guise of the Scarlet Crusade, and north to the high elf lodge at Quel'Lithien for a registry that has his mortal life written in it.",
 		},
 	},
 	{
 		name = "Quel'Lithien Lodge", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A high elf lodge in the north, guarding a border that no longer exists.",
+		hook = "A high elf hunting lodge in the north, on the Alliance's side and nobody else's.",
 		lore = {
-			"The elves at Quel'Lithien were posted to watch the southern approach to Quel'Thalas. Then Arthas came north through this region with the Scourge and destroyed their kingdom anyway.",
-			"The survivors here have grown bitter and dangerous. Their homeland is gone, the Sunwell was defiled, and they blame the humans who failed to hold the line.",
+			"Quel'Lithien stands near Northpass Tower, a lodge of rangers, woodsmen and pathstriders under Ranger Lord Hawkspear. They are the Silvermoon Remnant, and they side with the Alliance: the Alliance is welcome at the lodge, the Horde is not.",
+			"Their kingdom is gone. Arthas came north through this region with the Scourge, Quel'Thalas fell and the Sunwell was defiled, and the lodge kept the Quel'Thalas Registry, which is a record of elven lives. Nathanos Blightcaller wants it, because his own mortal life is written in it, and sends Horde agents up here to take it and to leave the lodge suffering.",
+			"Aurora Skycaller is outside the lodge, nearer the tower. What she says about all this is that the elves have been shattered like the artefact she is trying to mend, and she does not know whether the pieces go back together.",
 		},
 	},
 	{
@@ -2171,8 +2173,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "The Noxious Glade", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A pocket of concentrated blight in the eastern woods.",
 		lore = {
-			"The Noxious Glade is one of the places where the Plaguelands' corruption is at its thickest, and the things living in it reflect that.",
-			"The Argent Dawn maps these pockets carefully. They are where the blight is being actively maintained rather than merely lingering.",
+			"The Noxious Glade is one of the pockets where the Plaguelands' corruption is at its thickest, and the things standing in it are not the usual plague wildlife. Scourge champions hold the glade, the same rank of undead that fought in the battle of Darrowshire.",
+			"That is why anybody comes here. The dead of Darrowshire are owed an accounting, and the champions who took part in the battle can be identified from their skulls.",
 		},
 	},
 	{
@@ -2185,10 +2187,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Northpass Tower", parent = "Eastern Plaguelands", faction = "Contested",
-		hook = "One of four towers ringing the zone, worth holding for the view.",
+		hook = "The northernmost of the zone's four towers, on the road out towards Quel'Thalas.",
 		lore = {
-			"Four towers stand at the Eastern Plaguelands' compass points: Northpass, Eastwall, Crown Guard and the Plaguewood tower. They were Lordaeron's watch posts.",
-			"They change hands between the Scourge and whoever is contesting them, and holding them gives real advantage over the zone's roads.",
+			"Four towers stand at the Eastern Plaguelands' compass points: Northpass, Eastwall, Crown Guard and the Plaguewood tower. They were Lordaeron's watch posts, and shrines to Lordaeron still stand at the foot of this one.",
+			"Northpass is the one on the northern road, and the pass it watches leads up towards what is left of Quel'Thalas. The tower is a ruin with plaguebats and plaguehounds around it.",
+			"Both sides want all four. The emissaries at Light's Hope Chapel, one for the Alliance and one for the Horde, send people to take the towers and hold them as outposts, which is what the banners at each one are for.",
 		},
 	},
 	{
@@ -2431,6 +2434,7 @@ SubsOf("Wetlands", {
 			"Menethil Harbor is the Alliance's western port and the keep is what holds it. Both carry the name of Lordaeron's royal house: Terenas Menethil was the king who assembled the Alliance of Lordaeron and won the Second War.",
 			"His son finished the house. Arthas Menethil took up Frostmourne, came home a death knight, and killed his father on the throne in Capital City.",
 			"So a working harbour in dwarf country keeps the name of a dynasty whose last act was to destroy its own kingdom. Nobody has suggested changing it.",
+			"Captain Stoutfist holds the keep itself, for Ironforge, with the Menethil sentries under him.",
 		},
 		readMore = { "Wowpedia: Menethil Harbor", "Wowpedia: Terenas Menethil II", "Wowpedia: Arthas Menethil" },
 	},
@@ -2815,11 +2819,11 @@ SubsOf("Elwynn Forest", {
 SubsOf("Duskwood", {
 	{
 		name = "Roland's Doom", parent = "Duskwood", faction = "Hostile",
-		hook = "A mine in the south-east where the Scythe of Elune changed hands.",
+		hook = "A mine in the south-east, and where Duskwood's worgen were first found.",
 		lore = {
-			"Velinde Starsong died in this mine. She was a night elf priestess of Elune and she had the Scythe of Elune, an artefact she had been using to set worgen loose in these woods against the Scourge and worse.",
-			"She lost control of it, and then she lost her life here. The Scythe was found afterwards by a man named Jitters, and the finding of it brought more worgen, and in time the Dark Riders, down on Duskwood and Darkshire.",
-			"The permanent dark over this zone is not weather. Gutspill and Nefaru of the Nightbane pack work out of the mine now, and the Rotting Orchard is next door.",
+			"The Nightbane worgen hold the mine. Gutspill leads them and Nefaru is the other one worth naming, and the Carevin family in Darkshire will tell anybody who asks that this is where the worgen first appeared, out of nowhere, before they were anywhere else in the woods.",
+			"The night elf priestess Velinde Starsong is the reason the Scythe of Elune comes into it. Elune granted her the Scythe, she used it in the fight against the demons of Felwood, and then she disappeared. The Sentinels kept her chest and her journal and expected her back: she had earned their trust, and they assumed she had her reasons.",
+			"Where the trail of her leads is this mine. The Rotting Orchard is next door.",
 		},
 		readMore = { "Wowpedia: Roland's Doom", "Wowpedia: Scythe of Elune", "Wowpedia: Velinde Starsong", "Wowpedia: Worgen" },
 	},
