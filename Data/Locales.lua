@@ -633,9 +633,9 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Ranazjar Isle", faction = "Hostile",
-		hook = "A naga-held island off the Desolace coast, within sight of a troll village.",
+		hook = "A naga-held island off the northern end of the Desolace coast.",
 		lore = {
-			"Ranazjar lies off the western shore and the naga hold it. Shadowprey Village, the Darkspear settlement on the mainland, exists largely to deal with what comes off islands like this one.",
+			"Ranazjar lies a long way up the western shore, a mile north of Shadowprey Village rather than in sight of it, and the Slitherblade naga hold it. A statue of a serpent stands on the rock, and there are night elf ruins on the sea floor around the island.",
 			"Naga coming up on these beaches are returning rather than invading. They were Azshara's highborne before the Well of Eternity collapsed, and this coast belonged to their empire.",
 		},
 	},
@@ -1359,10 +1359,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Ruins of Aboraz", faction = "Hostile",
-		hook = "Gurubashi ruins on the southern coast, with the sea taking the lower levels.",
+		hook = "Gurubashi ruins on the south-eastern coast, held by a witch doctor and his dead.",
 		lore = {
-			"Aboraz is one of the chain of Gurubashi sites running the length of the vale. The empire built right down to the waterline and in places beyond it.",
-			"How much of their work is underwater is a measure of how far this coast has moved. The Sundering raised the sea over ground that had been dry.",
+			"Aboraz is one of the chain of Gurubashi sites running the length of the vale, built right down to the waterline and in places beyond it.",
+			"What lives in it now is Zanzil the Outcast. He has raised the dead to hold the ruins for him, zombies and risen naga and a hunter, with his own witch doctors among them, and he keeps a Darkspear captive called Yenniku there.",
 		},
 	},
 	{
@@ -1539,7 +1539,8 @@ SubsOf("Durotar", {
 		name = "Southfury River", faction = "Contested",
 		hook = "The river between Durotar and the Barrens, and the border in practice.",
 		lore = {
-			"The Southfury runs down the western side of Durotar and marks where the orcs' land ends and the Barrens begin. Crossing it is how most traffic enters or leaves.",
+			"The Southfury runs down the western side of Durotar and marks where the orcs' land ends and the Barrens begin. Crossing it is how most traffic enters or leaves, by one of the three bridges over it.",
+			"Further north the same river divides Ashenvale from Azshara, so four of Kalimdor's zones take their edge from it.",
 			"Durotar is named for Durotan, chieftain of the Frostwolf clan and Thrall's father, who refused the demon blood when Gul'dan offered it to the clans and was murdered for it.",
 		},
 	},
@@ -1667,10 +1668,10 @@ SubsOf("Stonetalon Mountains", {
 SubsOf("Ashenvale", {
 	{
 		name = "Lake Falathim", faction = "Alliance",
-		hook = "A lake in the northwest, with Astranaar's road running past it.",
+		hook = "A lake in western Ashenvale, held by murlocs rather than by anybody who wanted it.",
 		lore = {
-			"Falathim sits in Ashenvale's northwestern corner, in ground the Sentinels still hold without having to fight for it weekly.",
-			"That is unusual here. The eastern half of this forest is contested at close quarters, with Astranaar and Splintertree Post within a short march of one another.",
+			"Falathim lies in the west of the forest, south-east of the Zoram Strand and south-west of Maestra's Post. The Saltspittle murlocs have the shore and the shallows, oracles and warriors among them, with a big one called Mugglefin in the water.",
+			"Teronis went missing here. He was a night elf scholar, he was last seen by this lake, and his body is still lying on the bank where the murlocs left it.",
 		},
 	},
 	{

@@ -87,7 +87,8 @@ SubsOf("Durotar", {
 		hook = "A cave of Burning Blade cultists, practising exactly what Thrall outlawed.",
 		lore = {
 			"The Burning Blade is a demonic cult operating inside Horde territory. Its members are mostly orcs who want the old power back: the demon blood, the warlock pacts, the strength that the Horde used to have and that destroyed it.",
-			"Thrall's Horde has banned that path outright. The cults keep forming anyway, because the Horde's strength under Gul'dan was real and some orcs would rather be strong than free.",
+			"Thrall's Horde has banned that path outright and Thrall would have them killed. The cults keep forming anyway, because the Horde's strength under Gul'dan was real and some orcs would rather be strong than free.",
+			"What the cave east of Orgrimmar holds is the practice itself. The cultists perform their rituals in there and burn their own flesh with searing collars, which is how they attune themselves to demonic power, and one of the collars taken out of this cave is what first put the Horde on to them.",
 		},
 	},
 	{
@@ -400,7 +401,7 @@ SubsOf("Darkshore", {
 		hook = "A dwarven dig in night elf ruins, run by an archaeologist with no sense of self-preservation.",
 		lore = {
 			"Prospector Remtravel of the Explorers' League is excavating the ruins at Darkshore's southern end. The night elves regard it as grave-robbing conducted by an ally.",
-			"Remtravel's own expedition has fallen apart around him. He has not noticed.",
+			"He is also alone out there, and the digging has woken something up. Cracked golems walk the site with a stone behemoth among them, and Remtravel is still at his work in the middle of it.",
 		},
 	},
 	{
@@ -791,10 +792,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Maestra's Post", faction = "Alliance", levels = "18-25",
-		hook = "A Sentinel camp on the southern border, watching the Barrens road.",
+		hook = "A road junction in north-western Ashenvale, with a paladin working out of it.",
 		lore = {
-			"Maestra's Post is the night elves' position nearest the Mor'shan Rampart and the Barrens, and the first thing the Horde meets coming north.",
-			"It is small and exposed, and serves as the Sentinels' early warning for anything coming out of the Barrens.",
+			"Maestra's Post sits near the Darkshore border at the top of the forest, a junction more than a camp: signposts for Darkshore, Astranaar and the Shrine of Aessina, and three people.",
+			"Delgren the Purifier runs his own campaign from here against the Dark Strand, the night elf cult holding the Tower of Althalaxx north of the post. Feero Ironhand is the other man worth knowing, and his business is getting a supply run through to Auberdine.",
 		},
 	},
 	{
@@ -898,10 +899,10 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Splithoof Crag", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A centaur camp in the western canyon.",
+		hook = "The Galak stronghold, against the canyon's northern wall.",
 		lore = {
-			"Splithoof Crag is one of the centaur clans' holdings in the canyon's western end.",
-			"The centaur clans fight each other almost as much as they fight the tauren. Without that, Freewind Post would not have held.",
+			"Splithoof Crag is the Galak clan's stronghold, set against the northern wall of the canyon east of Darkcloud Pinnacle, and the Galak are here in great numbers.",
+			"Splithoof Hold is the guarded part of it. The centaur keep a relic in there from the time of their own creation, held in a flame that does not go out, and Freewind Post has been working at thinning the clan for a long time without much to show for it.",
 		},
 	},
 	{
@@ -1493,10 +1494,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Lake Mennar", parent = "Azshara", faction = "Contested",
-		hook = "A lake in the eastern hills, oddly untouched.",
+		hook = "A lake in the eastern hills, ringed by blue dragonkin.",
 		lore = {
-			"Lake Mennar sits in the hills above the coast and is one of the quieter spots in Azshara.",
-			"Quiet in Azshara means unvisited rather than safe. The zone is far too large for the single night elf camp and the single Horde camp in it to patrol. Most of it goes unobserved.",
+			"Lake Mennar sits in the hills above the coast, and the ground on every side of it belongs to the blue dragonflight. Scalebanes and mageweavers hold the perimeter, with magelords behind them, and all of them are stronger than anything else in the zone.",
+			"The water itself is clear. Getting to it is the difficulty, and this is one of very few places outside Northrend where the blue flight keeps a holding at all.",
 		},
 	},
 })
@@ -1585,18 +1586,18 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Ruins of Constellas", parent = "Felwood", faction = "Hostile",
-		hook = "A night elf ruin in a forest that used to be theirs.",
+		hook = "A night elf ruin with a corrupted moonwell in it, worked by satyrs.",
 		lore = {
-			"Constellas was a night elf site in what was then Ashenvale's northern forest. Felwood's corruption took the area around it.",
-			"The night elves have written Felwood off. For a people who kept these forests for ten thousand years that is a significant concession.",
+			"Constellas was a night elf site in forest the night elves held, and Felwood's corruption took it along with everything around it. The Jadefire satyrs hold the ruins now, under one called Xavathras, and they spread the disease to whatever they meet.",
+			"The moonwell is the reason the place matters. A moonwell was a symbol of renewal, and this one is corrupted and bringing forth more satyrs. The Emerald Circle wants Constellas back and says plainly that this land was once theirs.",
 		},
 	},
 	{
 		name = "Talonbranch Glade", faction = "Alliance", levels = "48-55",
 		hook = "A night elf camp near the Timbermaw tunnels.",
 		lore = {
-			"Talonbranch Glade is a small night elf position in northern Felwood, close to the route through to Winterspring.",
-			"It is a waypoint rather than a garrison. The night elves' presence in Felwood is minimal by choice.",
+			"Talonbranch Glade is a small night elf position in northern Felwood, high up and close to the route through to Winterspring.",
+			"It is a waypoint rather than a garrison, and the hippogryphs are the point of it. What is here besides the flight master is a druid trainer, a hunter trainer with his own cat, a pet trainer and two merchants, which is more than the glade's size suggests.",
 		},
 	},
 	{
@@ -1630,8 +1631,8 @@ SubsOf("Un'Goro Crater", {
 		name = "Marshal's Refuge", faction = "Neutral", levels = "48-55",
 		hook = "A dwarf and gnome expedition camped in a crater full of dinosaurs.",
 		lore = {
-			"Marshal's Refuge is the research camp inside Un'Goro, run jointly by Explorers' League dwarves and gnomish technicians, on neutral ground.",
-			"They are studying the pylons, the crystals and the crater's ecology. They are also hiding in a cave from devilsaurs, a task that takes up a good share of the working day.",
+			"Marshal's Refuge is the research camp inside Un'Goro, and Williden Marshal, who leads it, calls his people a non-aligned expedition troupe. They are nobody's envoys: not the Explorers' League, not Gadgetzan, not either faction.",
+			"They are studying the three pylons and the crater's power crystals, which J.D. Collie works on in the cave. The expedition underestimated Un'Goro and has been driven back to this one hole in the rock, where Gadgetzan bruisers keep order and a hippogryph will carry anybody out who has had enough.",
 		},
 	},
 	{
@@ -1652,10 +1653,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Lakkari Tar Pits", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "Tar pits in the north, full of things that got stuck and things that eat them.",
+		hook = "Tar pits in the north of the crater, with the tar itself walking about.",
 		lore = {
-			"The Lakkari Tar Pits are natural asphalt seeps, and they have trapped a fair share of the crater's wildlife over time.",
-			"The pits are also a source of the crater's fossil record, which the expedition would like to study and the local pterrordax would prefer they did not.",
+			"The Lakkari Tar Pits are natural asphalt seeps a short way south of Marshal's Refuge, and they have trapped a fair share of the crater's wildlife over time, and old bones stand up out of the surface.",
+			"Some of the tar has got up and moved off. Tar beasts, creepers, lurkers and lords are all elementals of the stuff, and they are what a traveller meets at the pits rather than anything that drowned in them.",
 		},
 	},
 	{
@@ -2244,8 +2245,8 @@ SubsOf("Ashenvale", {
 		name = "Silverwind Refuge", parent = "Ashenvale", faction = "Alliance",
 		hook = "A night elf position in south-central Ashenvale, north of Mystral Lake.",
 		lore = {
-			"Silverwind Refuge stands in south-central Ashenvale, north of Mystral Lake. It is night elf ground, and Sentinel Velene Starstrike holds it.",
-			"The Warsong are close on both sides of it. Horde scouts watch the refuge from across the lake, which makes this a forward position rather than a safe one.",
+			"Silverwind Refuge stands in south-central Ashenvale, north of Mystral Lake. It is night elf ground, Sentinel Velene Starstrike holds it, and the place is a proper settlement: a hunter trainer, a pet trainer, two alchemists, a herbalist, a skinner, a bowyer and a butcher, with Sentinels out of Astranaar standing guard.",
+			"The lake below has turned. Its water elementals are befouled, they have come up in numbers, and they attack anything that goes near the water, which has stopped the traffic on the Talondeep Path. Splintertree Post has noticed the gazebo out on the water, and wants it quietly for the view it gives of this place. Foulweald furbolgs hold the woods on either side.",
 			"That is Ashenvale as plainly as it can be put. The Warsong clan needs the timber, Darnassus will not sell it, and the two of them are settling the question a clearing at a time.",
 		},
 		readMore = { "Wowpedia: Velene Starstrike", "Wowpedia: Ashenvale", "Wowpedia: Warsong clan" },
@@ -2481,7 +2482,7 @@ SubsOf("Azshara", {
 		hook = "A ruined shrine in the Reaches with nobody in it but stray murlocs.",
 		lore = {
 			"Rethress Sanctum is a shrine south-west of Ravencrest Monument, and it is a ruin. Nothing lives there. Murlocs and makrura wander through it.",
-			"That is unusual for Azshara, where almost everything is held by somebody: Legashi and Haldarr satyrs inland, naga along the coast, blue dragonkin at the pinnacle.",
+			"That is unusual for Azshara, where almost everything is held by somebody: Legashi and Haldarr satyrs inland, naga along the coast, blue dragonkin around Lake Mennar.",
 			"An empty shrine in the middle of that is a reminder of the scale of what was lost. There was enough night elf civilisation here that some of its holy places are not worth anybody's trouble to occupy.",
 		},
 		readMore = { "Wowpedia: Rethress Sanctum", "Wowpedia: Azshara" },
