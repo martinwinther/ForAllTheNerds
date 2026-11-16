@@ -807,7 +807,7 @@ SubsOf("Duskwood", {
 		hook = "An abandoned farm with worgen in the barn.",
 		lore = {
 			"The Yorgen place is another lost holding, and it has become one of the clearest signs that Duskwood's worgen population is not a rumour.",
-			"How worgen reached this far south from Silverpine is an open question in Darkshire, and not a comforting one.",
+			"They did not come down from Silverpine. The Carevin family in Darkshire will tell anybody who asks that the worgen in this forest were first found in the mine at Roland's Doom, in the south-east of the zone, and that they appeared there out of nowhere.",
 		},
 	},
 	{
@@ -919,10 +919,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Whelgar's Excavation Site", parent = "Wetlands", faction = "Alliance",
-		hook = "An Explorers' League dig in the marsh, turning up dragon bones and raptor trouble.",
+		hook = "An Explorers' League dig in the marsh, reading titan script out of the mud.",
 		lore = {
-			"Whelgar's team came for the fossils. The Wetlands have an unusually rich bed of very large bones, and the League wants to know what they belonged to and when.",
-			"The dig has been overrun by raptors and murlocs more than once, the usual career trajectory for an Explorers' League site.",
+			"What Whelgar has pulled out of this site is a tablet. He calls it the Goaz Stone, it is written in titan script, and the translation breaks off in four places, so he keeps sending people back into the mud for the missing fragments.",
+			"What he has read so far is enough. The text speaks of a divine plan and a doomed prophecy, and then of Old Gods chained beneath the land. He is pleased. The dig has also been overrun by raptors more than once. That is the usual career trajectory for an Explorers' League site.",
 		},
 	},
 	{
@@ -1414,10 +1414,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Venture Co. Base Camp", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A goblin logging operation stripping the jungle with no regard for anything.",
+		hook = "A goblin strip mine in the jungle, run with no regard for anything.",
 		lore = {
-			"The Venture Company is the goblin cartel that does not bother with neutrality or reputation. Where the Steamwheedle Cartel sells to everyone, Venture Co. takes. It is clear-cutting Stranglethorn for timber.",
-			"They are the same firm that built Edwin VanCleef's warship in the Deadmines and that is tearing up Mulgore and the Barrens on the other continent. Goblin enterprise at its least charming.",
+			"The Venture Company is the goblin cartel that does not bother with neutrality or reputation. Where the Steamwheedle Cartel sells to everyone, Venture Co. takes.",
+			"What it is taking here is metal. The camp is a strip mine with a foreman, surveyors and tinkerers on it and iron, silver and gold cut out of the ground all around, and the Skullsplitter trolls whose jungle this is are on the slope above. The same firm is tearing up Mulgore and the Barrens on the other continent. Goblin enterprise at its least charming.",
 		},
 	},
 	{
@@ -1485,7 +1485,7 @@ SubsOf("Badlands", {
 		lore = {
 			"Uldaman is one of the titans' installations, built to house their work on this world and sealed afterwards. The dwarves found it, dug in, and discovered the Discs of Norgannon.",
 			"The discs are a titan record, and what they record is that the earthen, the dwarves' ancestors, were shaped from living stone to work the deep places of the world. Dwarves are not natives of Azeroth in the way they always assumed. They are a titan project.",
-			"The vault has its own guardians, still functioning after all this time, and the troggs that infest the upper levels are the earthen experiment's failures. The Explorers' League is digging anyway.",
+			"The vault has its own guardians, still functioning after all this time, and the troggs are all over the upper levels. Dwarven opinion on site is that the digging woke them: urns and idols came out of the ground and the troggs came up after them. The Explorers' League is digging anyway, and the Dark Iron are in the ruins too, holding a League prospector hostage for what he knows, because they want the titans' way of making golems.",
 		},
 		didYouKnow = "The vault's guardian construct is still following orders issued by beings who left this world long ago. It does not care who Ironforge is.",
 		readMore = { "Wowpedia: Uldaman", "Wowpedia: Discs of Norgannon" },
@@ -1946,7 +1946,7 @@ SubsOf("Burning Steppes", {
 		hook = "A rock spire on the road to Blackrock Mountain, used as a landmark by everyone.",
 		lore = {
 			"The Pillar is the most visible feature on the Steppes after the mountain itself, and it marks the approach to Blackrock Mountain's gates.",
-			"Every army that has marched on or out of the mountain has passed it, and that is a considerable number of armies.",
+			"Nothing holds it and nothing is built on it. On a zone this bare that is the whole of its use: a thing you can see from a long way off and name, in country where one black slope looks much like the next.",
 		},
 	},
 	{
@@ -2146,10 +2146,10 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Marris Stead", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A farmstead turned Scourge outpost, close to Light's Hope.",
+		hook = "A farmstead in the western Plaguelands of the east, and Nathanos Blightcaller's house.",
 		lore = {
-			"The Marris Stead is a Scourge-held farm uncomfortably near the Argent Dawn's chapel, which is deliberate.",
-			"The Scourge keeps pressure on Light's Hope constantly without ever being able to take it.",
+			"The stead is not the Scourge's. Nathanos Blightcaller lives here, the first of Sylvanas Windrunner's champions, and he holds this farm a long mile out from Light's Hope Chapel with nobody at his back.",
+			"What he does from it is kill. He roams the wastes around the stead killing Scourge and Alliance alike, and he sends agents further out: to Tyr's Hand in the guise of the Scarlet Crusade, and north to the high elf lodge at Quel'Lithien for a registry that has his mortal life written in it.",
 		},
 	},
 	{
@@ -2173,8 +2173,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "The Noxious Glade", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A pocket of concentrated blight in the eastern woods.",
 		lore = {
-			"The Noxious Glade is one of the places where the Plaguelands' corruption is at its thickest, and the things living in it reflect that.",
-			"The Argent Dawn maps these pockets carefully. They are where the blight is being actively maintained rather than merely lingering.",
+			"The Noxious Glade is one of the pockets where the Plaguelands' corruption is at its thickest, and the things standing in it are not the usual plague wildlife. Scourge champions hold the glade, the same rank of undead that fought in the battle of Darrowshire.",
+			"That is why anybody comes here. The dead of Darrowshire are owed an accounting, and the champions who took part in the battle can be identified from their skulls.",
 		},
 	},
 	{

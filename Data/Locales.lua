@@ -199,7 +199,7 @@ SubsOf("Searing Gorge", {
 		name = "Tanner Camp", faction = "Hostile",
 		hook = "A Dark Iron camp on the Gorge's rim, worked the way they work everything.",
 		lore = {
-			"The Dark Irons hold the Searing Gorge, and camps like this one are how: a position on the rim, a crew, and an overseer. They do not pay wages and they do not recruit.",
+			"The Dark Irons hold the Searing Gorge, and camps like this one are how: a position on the rim, a work gang and a taskmaster over it. They do not pay wages and they do not recruit. The gangs are slaves, and the archaeologists among them were taken for their expertise rather than their backs.",
 			"Every one of them answers to Ragnaros in the end. Emperor Thaurissan summoned the Firelord to win a war he was losing, and the clan has been in his service since. No dwarf has ever made a worse bargain.",
 		},
 	},
@@ -247,17 +247,6 @@ SubsOf("Badlands", {
 		lore = {
 			"Dustbelch Grotto is where the ogres of the northern Badlands shelter. Three ogre camps are strung across this zone holding the roads, and the grotto is where they go when the sun is at its worst.",
 			"They have no strategic aim. Caravans pass, the ogres take what they can, and the dwarves and the Horde both file it under weather.",
-		},
-	},
-})
-
-SubsOf("Blasted Lands", {
-	{
-		name = "The Red Reaches", faction = "Contested",
-		hook = "The eastern coast of the Blasted Lands, red rock running down into the sea.",
-		lore = {
-			"The Reaches are what this zone does when it meets water. The stone is the same cracked red as everywhere else in it, and the sea does nothing to soften the look of it.",
-			"All of this was the Black Morass before the Dark Portal opened. What came through turned a swamp into glass and rock, and the coastline is the clearest place to see how deep the change went.",
 		},
 	},
 })
@@ -888,7 +877,7 @@ SubsOf("Silithus", {
 		hook = "The dais before the Gates, where the Scepter of the Shifting Sands gets used.",
 		lore = {
 			"The Scarab Dais stands in front of the Gates of Ahn'Qiraj. The Scepter of the Shifting Sands is the key to the Scarab Wall, and the dais is where it is brought to bear.",
-			"The scepter was broken and its pieces scattered, partly so that nobody could open the gates casually. Reassembling it is now argued for seriously, on the grounds that opening Ahn'Qiraj deliberately with an army ready beats waiting for the qiraji to come out on a schedule of their own choosing.",
+			"The scepter is in pieces. It shattered after Fandral Staghelm's betrayal, and what was left was divided among the four Aspects, each dragonflight charged with keeping its share out of the wrong hands. Reassembling it is now argued for seriously, on the grounds that opening Ahn'Qiraj deliberately with the might of Kalimdor behind you beats waiting for the qiraji to come out on a schedule of their own choosing.",
 		},
 	},
 	{

@@ -379,6 +379,7 @@ Den	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Den of Flame	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Den'dralass	forever	used only by Forever entries	Forever	cs
 Depths	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Dervish	vanilla	the title in Verog the Dervish, a Kolkar at the Stagnant Oasis	cmangos 1.12.1	cs
 Desolace	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Desolation Hold	out-of-era	Cataclysm, Southern Barrens	tools/validate.lua, 1.2.5	ci
 Devilsaur	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -541,6 +542,7 @@ Firewatch Ridge	vanilla	AreaTable row	wow_classic_era	cs
 First	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 First War	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fizzle Brassbolts	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Fizzle Darkstorm	vanilla	named in 1.12 game text, a Burning Blade warlock on Thunder Ridge	cmangos 1.12.1	cs
 Flame Crest	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Flame of Azel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Flame of Veraz	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -610,6 +612,7 @@ Gnarlpine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gnawbone	vanilla	a 1.12 rare, in Mosshide Fen	cmangos 1.12.1	cs
 Gnomeregan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Go'Shek	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Goaz Stone	vanilla	named in 1.12 quest text, the tablet Whelgar dug up	cmangos 1.12.1	cs
 Gol'Bolar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Golakka Hot Springs	vanilla	AreaTable row	wow_classic_era	cs
 Gold Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -663,6 +666,7 @@ Guardian of Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Guardians of Tirisfal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gul'dan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gul'dan's Horde	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Gunstan	vanilla	Prospector Gunstan, of the Explorers' League	cmangos 1.12.1	cs
 Gunther Arcanus	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gurubashi	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gurubashi Arena	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -746,6 +750,7 @@ Inn	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Inner	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Inner Binding	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Iris Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Ironband	vanilla	Prospector Ironband, and an AreaTable row for his excavation site	wow_classic_era	cs
 Ironband's Excavation Site	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ironforge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ironforge's Explorers' League	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -948,6 +953,7 @@ Mirage Flats	vanilla	AreaTable row	wow_classic_era	cs
 Mirage Raceway	vanilla	AreaTable row	wow_classic_era	cs
 Mirkfallon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mirror Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Misha	vanilla	named in 1.12 game text, Rexxar's bear	cmangos 1.12.1	cs
 Mistmantles	vanilla	plural of a 1.12 name (Mistmantle)	cmangos 1.12.1	cs
 Mistvale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mistvale Valley	vanilla	AreaTable row	wow_classic_era	cs
@@ -979,6 +985,7 @@ Morganth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Morlos'Aran	vanilla	AreaTable row	wow_classic_era	cs
 Morpheus	fragment	Greek myth, cited for the origin of the name Oneiros	our prose	cs
 Mosh'Ogg	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Mosh'aru	vanilla	six Mosh'aru Tablets as 1.12 items, and named in quest text	cmangos 1.12.1	cs
 Mosshide	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mount Hyjal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mountain	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1040,6 +1047,7 @@ Northshire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northshire Abbey	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Northshire River	vanilla	AreaTable row	wow_classic_era	cs
 Northshire Valley	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Northspring	vanilla	named in 1.12 game text, the Feralas harpies	cmangos 1.12.1	cs
 Northwatch Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Glade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Noxious Lair	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1109,6 +1117,7 @@ Queen Azshara	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Danil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Danil Lodge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Lithien	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Quel'Lithien Lodge	vanilla	AreaTable row, and named in 1.12 quest text	wow_classic_era	cs
 Quel'Thalas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Quel'Thalas Registry	vanilla	a 1.12 object, in the lodge	cmangos 1.12.1	cs
 Rage Scar Hold	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1139,11 +1148,13 @@ Razorwind Canyon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Reaches	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rebel Camp	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Red Cloud Mesa	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Red Reaches	out-of-era	added as an area in patch 4.0.3a, in neither the Classic Era AreaTable nor the 1.12 game text. The Blasted Lands coast is unnamed in this period	warcraft.wiki.gg	ci
 Red Rocks	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Redridge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Redridge Mountains	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Refuge Pointe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Remtravel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Remtravel of the Explorers' League	vanilla	Prospector Remtravel, titled Explorers' League on his 1.12 nameplate	cmangos 1.12.1	cs
 Remulos	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rend	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rend Blackhand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1212,6 +1223,7 @@ Satyrnaar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Savage Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scalebeard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scalebeard's Cave	vanilla	AreaTable row	wow_classic_era	cs
+Scar Hold	vanilla	the tail of Rage Scar Hold, which has an AreaTable row	wow_classic_era	cs
 Scarab Dais	vanilla	AreaTable row	wow_classic_era	cs
 Scarab Gong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scarab Wall	vanilla	AreaTable row	wow_classic_era	cs
@@ -1246,6 +1258,7 @@ Sentry Point	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sepulcher	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Seradane	vanilla	AreaTable row	wow_classic_era	cs
 Serena Bloodfeather	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Sergeant Bly	vanilla	named in 1.12 game text, in Zul'Farrak	cmangos 1.12.1	cs
 Serpent's Coil	vanilla	AreaTable row	wow_classic_era	cs
 Setting	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shadow Council	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1594,6 +1607,7 @@ Uther	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valaar's Berth	out-of-era	the Azuremyst Isle landing, patch 2.0.1	warcraft.wiki.gg	ci
 Valanaar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valgan	vanilla	AreaTable row	wow_classic_era	cs
+Valley	fragment	an ordinary word, left standing when Thistleshrub was discarded as never capitalised mid-sentence	our prose	cs
 Valley of Bones	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Valley of Fangs	vanilla	AreaTable row	wow_classic_era	cs
 Valley of Heroes	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1620,6 +1634,7 @@ Venture Company	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Verdantis	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Verdantis River	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vereesa Windrunner	history	Sylvanas's sister, of the Third War generation	warcraft.wiki.gg	cs
+Verog	vanilla	Verog the Dervish, named in 1.12 quest text	cmangos 1.12.1	cs
 Vice	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vile Fin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vile Reef	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
