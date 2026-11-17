@@ -536,11 +536,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "The Dagger Hills", parent = "Westfall", faction = "Hostile",
-		hook = "Broken hills in southern Westfall, full of gnolls and Defias scouts.",
+		hook = "The ridge behind Moonbrook, where Defias bands hide between raids.",
 		lore = {
-			"The Dagger Hills are rough country on the way to the Duskwood border, and they have never been settled or farmed. Riverpaw gnolls use them, and so do the Defias.",
-			"For the militia at Sentinel Hill they are mainly a direction: the one trouble arrives from, over and over, with nothing on the far side worth garrisoning.",
+			"The Dagger Hills rise behind Moonbrook in southern Westfall. Defias knuckledusters, pathstalkers and highwaymen occupy the hills.",
+			"The People's Militia has reports of Defias raiders hiding here after pillaging the countryside. Sentinel Hill is sending adventurers against them.",
 		},
+		readMore = { "Wowpedia: Dagger Hills", "Wowpedia: The People's Militia (3)" },
 	},
 	{
 		name = "Alexston Farmstead", parent = "Westfall", faction = "Hostile",
@@ -670,11 +671,12 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Stonewatch", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "The keep built to guard Stormwind's eastern approach, now the orcs' forward base.",
+		hook = "A captured human stronghold in Redridge, held by the Blackrock orcs.",
 		lore = {
-			"Stonewatch Keep commands the pass between Redridge and the Burning Steppes. Stormwind built it precisely to stop orcs coming down that road, and the orcs took it.",
-			"Gath'Ilzogg holds it now. Losing Stonewatch means Redridge has no defensible line at all, and Lakeshire is the next thing down the hill.",
+			"Stonewatch includes the keep and its nearby watchtower, above Stonewatch Falls. The Blackrock orcs have captured the stronghold from the humans of Lakeshire.",
+			"Gath'Ilzogg holds the keep, while Morganth works from the Tower of Ilgalar. Once allies in the attack on Stonewatch, the warlock and the orcs are now enemies.",
 		},
+		readMore = { "Wowpedia: Stonewatch", "Wowpedia: The State of Lakeshire", "Wowpedia: Looking Further" },
 	},
 	{
 		name = "Tower of Ilgalar", parent = "Redridge Mountains", faction = "Hostile",
@@ -1069,12 +1071,13 @@ SubsOf("Hillsbrad Foothills", {
 		},
 	},
 	{
-		name = "Southpoint Tower", parent = "Hillsbrad Foothills", faction = "Contested",
-		hook = "A watchtower on the southern road, changing hands often enough that nobody repaints it.",
+		name = "Southpoint Tower", parent = "Hillsbrad Foothills", faction = "Horde",
+		hook = "A ruined tower on the Silverpine road, used by a Forsaken scout.",
 		lore = {
-			"Southpoint watches the road between Hillsbrad and the Alterac foothills. It is a small, valuable piece of ground on a contested route.",
-			"Towers like this one get taken, retaken and garrisoned with whoever is nearest. Its current occupants are a matter of recent news rather than record.",
+			"Southpoint Tower stands at the western end of Hillsbrad Foothills, just south of the road to Silverpine Forest. Deathstalker Lesh is stationed here, watching Alliance activity.",
+			"Lesh is surveying Hillsbrad and needs a message carried to High Executor Darthalia in Tarren Mill. The ruined tower serves as a reconnaissance post.",
 		},
+		readMore = { "Wowpedia: Southpoint Tower", "Wowpedia: Time To Strike" },
 	},
 	{
 		name = "Lordamere Internment Camp", parent = "Hillsbrad Foothills", faction = "Hostile",
@@ -1119,9 +1122,10 @@ SubsOf("Alterac Mountains", {
 		name = "Ruins of Alterac", parent = "Alterac Mountains", faction = "Hostile",
 		hook = "The capital of a kingdom that was taken off the map for treason.",
 		lore = {
-			"This was Alterac's seat of government. After Perenolde's betrayal was exposed, the kingdom was broken up and the city was left to rot rather than resettled.",
-			"The Syndicate holds the ruins now. For them it is not a ruin, it is a claim.",
+			"This was Alterac's seat of government. The Alliance attacked the city after Perenolde's betrayal in the Second War. Its abandoned buildings now shelter the Crushridge ogres.",
+			"Mug'thol leads the ogres here. Southshore offers bounties on the Crushridge and sends adventurers into the ruined capital to fight their warmongers.",
 		},
+		readMore = { "Wowpedia: Ruins of Alterac", "Wowpedia: Crushridge Warmongers", "Wowpedia: The Crown of Will" },
 	},
 	{
 		name = "Strahnbrad", parent = "Alterac Mountains", faction = "Hostile",
@@ -1141,11 +1145,11 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Sofera's Naze", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "A hilltop ruin with a Syndicate camp and an unusually literate ghost problem.",
+		hook = "A Syndicate camp on one of the four ridges above Hillsbrad.",
 		lore = {
-			"The naze is a rocky outcrop with old Alterac stonework on it, now used by the Syndicate. The dead here have not settled.",
-			"Alterac's collapse left a great many people unburied and a great many grievances unresolved, and the mountains show it.",
+			"The Syndicate holds Sofera's Naze. Southshore has identified this camp and the one at Corrahn's Dagger as positions held by the thieves and their leaders, nobles of the fallen kingdom of Alterac.",
 		},
+		readMore = { "Wowpedia: Sofera's Naze", "Wowpedia: Syndicate Assassins" },
 	},
 	{
 		name = "Gavin's Naze", parent = "Alterac Mountains", faction = "Contested",
@@ -1203,12 +1207,13 @@ Zone{
 SubsOf("Arathi Highlands", {
 	{
 		name = "Stromgarde Keep", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "The oldest human city in the world, now split three ways and losing.",
+		hook = "The former capital of Arathor, divided between three warring occupants.",
 		lore = {
-			"Stromgarde is built on Strom, Thoradin's capital and the birthplace of human nationhood. It was still a functioning kingdom within living memory, and one of the Alliance of Lordaeron's founding members.",
-			"It has fallen apart. The Syndicate holds part of the city, the Boulderfist ogres hold another part, and the surviving Stromgarde garrison holds what it can. None of the three is gaining ground, and the Alliance has not intervened.",
-			"For a human player, this is an uncomfortable place to stand. The ruins are the foundation of their own civilisation and the kingdom that sits on them is being carved up by bandits.",
+			"Stromgarde is built on Strom, Thoradin's capital and the birthplace of human nationhood. It was one of the kingdoms of the Alliance of Lordaeron, but its capital has fallen into ruin.",
+			"The Syndicate, the Boulderfist ogres and Stromgarde's remaining soldiers each hold part of the city. Captain Nials describes a stalemate in which her own forces dwindle while their enemies grow.",
+			"Southshore is sending supplies, but Syndicate positions between the two towns make delivery difficult. The defenders need the route cleared as well as the city reclaimed.",
 		},
+		readMore = { "Wowpedia: Stromgarde Keep", "Wowpedia: Northfold Manor (Classic)" },
 	},
 	{
 		name = "The Sanctum", parent = "Arathi Highlands", faction = "Alliance",
@@ -1628,11 +1633,11 @@ SubsOf("Swamp of Sorrows", {
 	},
 	{
 		name = "Stagalbog", parent = "Swamp of Sorrows", faction = "Hostile",
-		hook = "A bog in the southeast with an Atal'ai presence in the caves.",
+		hook = "Dense marshland south of the Pool of Tears, with murlocs in its cave.",
 		lore = {
-			"Stagalbog's caves are used by the Atal'ai, who have never confined themselves to the sunken temple alone.",
-			"The cult is larger and better established in this swamp than anybody outside it realises.",
+			"The Stagalbog lies south of the Pool of Tears, against the southern mountains of the Swamp of Sorrows. Its cave is occupied by Marsh tribe murlocs under the Swamp Talker.",
 		},
+		readMore = { "Wowpedia: Stagalbog", "Wowpedia: Stagalbog Cave" },
 	},
 	{
 		name = "Itharius's Cave", parent = "Swamp of Sorrows", faction = "Neutral",
@@ -1737,11 +1742,12 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "The Altar of Zul", parent = "The Hinterlands", faction = "Hostile",
-		hook = "A high altar above Jintha'Alor, at the top of the terraces.",
+		hook = "A Vilebranch altar on the western edge of their territory in the Hinterlands.",
 		lore = {
-			"The Altar of Zul crowns Jintha'Alor and is the holiest ground in the Vilebranch's city. 'Zul' marks a priest or prophet in the troll tongue, and the altar's name places it at the centre of their religion.",
-			"Reaching it means climbing the full height of the city, past everything and everyone in it.",
+			"The Altar of Zul stands apart from Jintha'Alor. Qiaga the Keeper and Morta'gya the Keeper guard its summit, both formidable opponents.",
+			"The Vilebranch are known for sacrifices here. Gryphon Master Talonaxe sends adventurers to search the top when he fears that the trolls have captured a young gryphon.",
 		},
+		readMore = { "Wowpedia: Altar of Zul", "Wowpedia: The Altar of Zul (quest)" },
 	},
 	{
 		name = "Agol'watha", parent = "The Hinterlands", faction = "Hostile",
@@ -2198,11 +2204,12 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Terrordale", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A ruined town in the far north, abandoned even by the standards of this zone.",
+		hook = "A ruined town by the Plaguewood, with two unlikely residents.",
 		lore = {
-			"Terrordale was a Lordaeron town on the road north toward Quel'Thalas. It was destroyed when the Scourge came through and has been left to rot.",
-			"It is close enough to Stratholme to be well inside Scourge territory and far enough from anything useful to be ignored.",
+			"Terrordale lies in the northwest of the Eastern Plaguelands, near Stratholme. Augustus the Touched wants to reopen his shop here, while Egan works on freeing the souls trapped in Stratholme.",
+			"The town itself is haunted. Patches of disturbed ground reveal the torment of its spirits, and paladins are sent here to perform exorcisms.",
 		},
+		readMore = { "Wowpedia: Terrordale", "Wowpedia: Augustus' Receipt Book (quest)", "Wowpedia: The Restless Souls", "Wowpedia: Exorcising Terrordale" },
 	},
 })
 
@@ -2278,13 +2285,12 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "The Dark Portal", parent = "Blasted Lands", faction = "Hostile",
-		hook = "The gate the orcs came through, standing broken in a crater of its own making.",
+		hook = "The gate the orcs came through, standing dormant in the Blasted Lands.",
 		lore = {
-			"Medivh, under Sargeras' influence, worked with Gul'dan to open this portal between Azeroth and the orcs' dying homeworld of Draenor. The First War came through it.",
-			"After the Second War the Alliance Expedition went the other way and destroyed it from the Draenor side. The frame remains, and so does the crater its opening burned into the land.",
-			"Demons gather near it. Whether that is because the portal still leaks or simply because the Legion likes the symbolism is an open question at Nethergarde.",
+			"Medivh, under Sargeras' influence, worked with Gul'dan to open the Dark Portal between Azeroth and Draenor. The invading orcs came through it at the beginning of the First War.",
+			"After the Second War, the Alliance Expedition crossed to Draenor and destroyed the portal from that side as the world broke apart. On Azeroth, the stone gateway still stands in a crater, surrounded by demons.",
 		},
-		readMore = { "Wowpedia: Dark Portal" },
+		readMore = { "Wowpedia: Dark Portal", "Wowpedia: The Dark Portal and the Fall of Stormwind" },
 	},
 	{
 		name = "The Tainted Scar", parent = "Blasted Lands", faction = "Hostile",
@@ -2448,10 +2454,9 @@ SubsOf("Tirisfal Glades", {
 		hook = "The crypt in the Deathknell graves where the Forsaken wake up.",
 		lore = {
 			"Shadow Grave sits at the top of a slope in the graves above Deathknell, with a path running down into the village. New Forsaken wake in here.",
-			"That is the whole of the Forsaken condition in one room. They were buried as Lordaeron's dead, raised by the Scourge as its property, and then freed when Sylvanas Windrunner broke the Lich King's hold on a part of his own army.",
-			"Free is a strained word for it. They remember who they were, their families are alive and want nothing to do with them, and the Church of the Holy Light considers them an abomination. Waking in a crypt is the gentlest part of the arrangement.",
+			"Mordo, the caretaker, greets those who wake and sends them to the chapel below. Shadow Priest Sarvis explains their freedom from the Lich King and the war their new leader Sylvanas is fighting against the Scourge.",
 		},
-		readMore = { "Wowpedia: Deathknell", "Wowpedia: Forsaken", "Wowpedia: Sylvanas Windrunner" },
+		readMore = { "Wowpedia: Shadow Grave", "Wowpedia: Rude Awakening" },
 	},
 	{
 		name = "Agamand Family Crypt", parent = "Tirisfal Glades", faction = "Hostile",
@@ -2964,13 +2969,12 @@ SubsOf("Alterac Mountains", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "Southern Savage Coast", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The western beaches of the cape, from Booty Bay up to the Vile Reef.",
+		hook = "The beaches along southern Stranglethorn's western shore.",
 		lore = {
-			"The Southern Savage Coast is the shallow water and beach along the cape's western side, where the South Seas come in. It runs from the Wild Shore past Booty Bay and Janeiro's Point and stops at the Vile Reef, which separates it from the Savage Coast proper further north.",
-			"Naga work this whole shoreline. So do the Bloodsail, from their anchorage at the southern end, and the goblins out of Booty Bay, who sell to everybody and police nothing beyond their own harbour wall.",
-			"The reef is the reason the coast has two names. It is also the reason a great many ships have not made it past.",
+			"The Southern Savage Coast follows the western side of southern Stranglethorn. The Vile Reef separates it from the Savage Coast to the north; Booty Bay and Janeiro's Point lie towards its southern end.",
+			"Bloodsail pirates have been seen in the cove north of Booty Bay. The port is looking for someone to scout their position.",
 		},
-		readMore = { "Wowpedia: Southern Savage Coast", "Wowpedia: Booty Bay", "Wowpedia: Naga" },
+		readMore = { "Wowpedia: Southern Savage Coast", "Wowpedia: The Bloodsail Buccaneers (Classic)" },
 	},
 	{
 		name = "Spirit Den", parent = "Stranglethorn Vale", faction = "Neutral",
@@ -3000,13 +3004,12 @@ SubsOf("Tirisfal Glades", {
 SubsOf("Swamp of Sorrows", {
 	{
 		name = "Stagalbog Cave", parent = "Swamp of Sorrows", faction = "Hostile",
-		hook = "A large cave in the eastern bog, held by murlocs under a Swamp Talker.",
+		hook = "A large cave in the eastern bog, held by murlocs under the Swamp Talker.",
 		lore = {
-			"Stagalbog Cave sits in the Stagalbog in the east of the swamp, and the Marsh tribe murlocs have it, with their leader the Swamp Talker inside.",
-			"Murlocs are easy to dismiss and consistently should not be. They have tribes, leaders, titles and ritual, and \"Swamp Talker\" is a role rather than a name.",
-			"The Swamp of Sorrows was not always a swamp. This was fertile country before the Dark Portal opened in it and the land went wrong, and everything living here now arrived after that.",
+			"Stagalbog Cave lies in the southern mountains of the Swamp of Sorrows. Marsh tribe murlocs occupy it, and the Swamp Talker is among them.",
+			"A Horde courier was ambushed by murlocs on his way to the Blasted Lands. His account names the Swamp Talker as the one who took his orders and points towards this cave.",
 		},
-		readMore = { "Wowpedia: Stagalbog Cave", "Wowpedia: Murloc", "Wowpedia: Swamp of Sorrows" },
+		readMore = { "Wowpedia: Stagalbog Cave", "Wowpedia: The Swamp Talker" },
 	},
 	{
 		name = "Misty Reed Post", parent = "Swamp of Sorrows", faction = "Horde",
@@ -3128,13 +3131,12 @@ SubsOf("Wetlands", {
 SubsOf("Alterac Mountains", {
 	{
 		name = "The Headland", parent = "Alterac Mountains", faction = "Contested",
-		hook = "The third of the four ridges above Hillsbrad, held by nothing but mountain lions.",
+		hook = "The third of the four ridges above Hillsbrad, with mountain lions on its slopes.",
 		lore = {
-			"Four ridges run down out of these mountains and stand out over Hillsbrad. Sofera's Naze is the first of them, Corrahn's Dagger the second, this one the third and Gavin's Naze the last.",
-			"Nobody is on it. Mountain lions keep the cliffside here, and the rare cat that ranges across all four of these ridges is as much of an event as the Headland offers.",
-			"The Alliance road into Alterac Valley runs north of here. The Stormpike Guard are digging in that valley and the Frostwolf orcs want them out, and both sides have been feeding soldiers into the argument for years. None of it has reached this ridge.",
+			"Four ridges run down out of these mountains and stand out over Hillsbrad. Sofera's Naze is the first, Corrahn's Dagger the second, the Headland the third and Gavin's Naze the last.",
+			"The Headland is mountain lion country. The Alliance entrance to Alterac Valley lies nearby, but there is no military camp on this ridge.",
 		},
-		readMore = { "Wowpedia: Headland", "Wowpedia: Alterac Mountains", "Wowpedia: Alterac Valley" },
+		readMore = { "Wowpedia: Headland" },
 	},
 	{
 		name = "The Foothill Caverns", parent = "Alterac Mountains", faction = "Hostile",
@@ -3236,26 +3238,24 @@ SubsOf("Elwynn Forest", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "The Crystal Shore", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "Sandy coast on the cape's south-east, cut off from inland by cliffs.",
+		hook = "Sandy coast on southern Stranglethorn's eastern side, below a steep ridge.",
 		lore = {
-			"The Crystal Shore follows the cape's south-eastern side, from the Wild Shore up to the cliffs where the cape meets northern Stranglethorn. The South Seas wash against it, and against the eastern beaches of Jaguero Isle across the strait.",
-			"A steep rise separates most of it from the jungle behind, so the beach is its own place rather than an edge of the forest.",
-			"That isolation is why the coast is worth anything to the people using it. Pirates, naga and goblins all want shoreline that the inland cannot easily reach.",
+			"The Crystal Shore runs northeast from the Wild Shore, facing the eastern beaches of Jaguero Isle across the water. A steep ridge separates much of the beach from the jungle inland.",
+			"The Ruins of Aboraz lie along this coast. Zanzil the Outcast and his followers occupy those ruins.",
 		},
-		readMore = { "Wowpedia: Crystal Shore", "Wowpedia: Jaguero Isle", "Wowpedia: Stranglethorn Vale" },
+		readMore = { "Wowpedia: Crystal Shore", "Wowpedia: Saving Yenniku (Classic)" },
 	},
 })
 
 SubsOf("Swamp of Sorrows", {
 	{
 		name = "Misty Reed Strand", parent = "Swamp of Sorrows", faction = "Contested",
-		hook = "The swamp's coastline, and there is almost nothing on it.",
+		hook = "The gloomy coastline of the Swamp of Sorrows.",
 		lore = {
-			"The Misty Reed Strand is the beach along the Swamp of Sorrows: a long stretch of very little, with driftwood, debris, crocolisks, crabs and murlocs.",
-			"The gloom is the swamp's own. This was good country before the Dark Portal opened inland and the land turned, and the coast went with the rest of it.",
-			"Stonard keeps a picket out towards the southern end at the Misty Reed Post, hoping for a tower. Nothing else is competing for the shoreline.",
+			"The Misty Reed Strand is the beach along the Swamp of Sorrows, with driftwood, debris, crocolisks, crabs and murlocs.",
+			"Stonard keeps a post towards the southern end. Along the beach, Horde adventurers hunt murlocs while Alliance visitors gather driftwood and hunt crabs.",
 		},
-		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Swamp of Sorrows", "Wowpedia: Stonard" },
+		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Misty Reed Post" },
 	},
 })
 
@@ -3295,13 +3295,11 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "South Tide's Run", parent = "Silverpine Forest", faction = "Contested",
-		hook = "The matching shore in the south-west, and the quieter of the two.",
+		hook = "Silverpine's southwestern shore along the Great Sea.",
 		lore = {
-			"South Tide's Run is the counterpart to the northern one: the south-western coast of Silverpine along the Great Sea.",
-			"The pair of them are the zone's whole seaboard. Silverpine is mostly forest, Forsaken holdings and the road down from Lordaeron's ruin, and the coast is the edge nobody contests.",
-			"Pyrewood Village and the Greymane Wall are further south from here. The wall is the one Gilneas built to shut itself away from the Alliance, and nothing has come through it in years.",
+			"South Tide's Run is the southwestern coast of Silverpine Forest. It forms the southern counterpart to North Tide's Run along the Great Sea.",
 		},
-		readMore = { "Wowpedia: South Tide's Run", "Wowpedia: Silverpine Forest", "Wowpedia: Greymane Wall" },
+		readMore = { "Wowpedia: South Tide's Run" },
 	},
 })
 

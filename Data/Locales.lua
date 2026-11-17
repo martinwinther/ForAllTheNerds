@@ -75,11 +75,12 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "The Hushed Bank", faction = "Contested",
-		hook = "Duskwood's river bank, with Westfall's dust visible across the water.",
+		hook = "Duskwood's western riverbank, across the water from Westfall.",
 		lore = {
-			"Stand on this bank and you can see what a river is worth. Behind you the forest is dark at noon; across the water Westfall is bleached and open. The two counties share a border and very little else.",
-			"Smugglers use the crossings and so do the Defias. Neither the Night Watch nor the People's Militia has anybody to spare for river patrol, and both sides know it.",
+			"The Hushed Bank follows Duskwood's western river, from the meeting of Elwynn, Westfall and Duskwood south towards Stranglethorn. The covered bridge to Westfall crosses here.",
+			"Sven Yorgen and Lars camp at the northern end. Lars hunts for their food, but starving and rabid wolves follow him when he brings meat back to camp.",
 		},
+		readMore = { "Wowpedia: Hushed Bank", "Wowpedia: Wolves at Our Heels (Classic)" },
 	},
 })
 
@@ -178,11 +179,12 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "The Green Belt", faction = "Contested",
-		hook = "The green heart of the Wetlands, full of raptors and very old bones.",
+		hook = "Marshland in the eastern Wetlands, home to the Greenwarden.",
 		lore = {
-			"The Green Belt is the band of dense growth running through the middle of the zone. Raptors range through it in numbers, and the Explorers' League's interest in the ground is the only reason anybody goes in on purpose.",
-			"The bone beds here hold remains far too large to belong to anything currently alive in Khaz Modan. Whelgar's excavation is working them, when the raptors allow it.",
+			"The Green Belt lies in the eastern Wetlands, where crocolisks, bog beasts and oozes inhabit the marsh. Rethiel the Greenwarden lives here, east of the road that forks towards Dun Modr.",
+			"Rethiel is troubled by the suffering of the land. He asks adventurers to destroy the Fen Creepers rising in the waterways so that they can settle back into the marsh.",
 		},
+		readMore = { "Wowpedia: Green Belt", "Wowpedia: The Greenwarden", "Wowpedia: Blisters on The Land" },
 	},
 	{
 		name = "Saltspray Glen", faction = "Hostile",
@@ -394,11 +396,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Infectis Scar", faction = "Hostile",
-		hook = "A scar of corrupted ground in the south, held and worked by the Scourge.",
+		hook = "A gorge west of Corin's Crossing, with a shattered runeblade at its bottom.",
 		lore = {
-			"The Infectis Scar is open blight in the southern Eastern Plaguelands, and the Scourge holds it the way a works holds a yard.",
-			"The Scourge does not occupy this zone so much as operate it. Farms, graveyards, towers and scars all feed the same business, with Naxxramas hanging over the whole arrangement.",
+			"The Infectis Scar cuts into the blighted ground west of Corin's Crossing. The shattered sword of Marduk the Black lies at the bottom of the gorge, a remnant of the battle of Darrowshire.",
 		},
+		readMore = { "Wowpedia: Infectis Scar", "Wowpedia: Villains of Darrowshire (Classic)" },
 	},
 	{
 		name = "Lake Mereldar", faction = "Contested",
@@ -433,11 +435,11 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Scuttle Coast", faction = "Contested",
-		hook = "Durotar's southeastern shore, looking out at islands the Darkspear have lost.",
+		hook = "Durotar's eastern shore, littered with the wrecks of Kul Tiran ships.",
 		lore = {
-			"The Scuttle Coast runs down to the water opposite the Echo Isles. Those islands were given to the Darkspear when they allied with Thrall, and the tribe does not hold them now.",
-			"Zalazane, one of their own witch doctors, took the isles and enslaves the mind of any troll who goes back. Sen'jin Village sits on the mainland looking at them, and nobody in the village cares to discuss it at length.",
+			"The Scuttle Coast lies southeast of Razor Hill and north of Tiragarde Keep. Ships from Kul Tiras lie wrecked along the coast, left from the fighting between the orcs and Daelin Proudmoore's fleet.",
 		},
+		readMore = { "Wowpedia: Scuttle Coast" },
 	},
 	{
 		name = "Deadeye Shore", faction = "Contested",
@@ -696,11 +698,11 @@ SubsOf("Feralas", {
 SubsOf("Tanaris", {
 	{
 		name = "Noonshade Ruins", faction = "Hostile",
-		hook = "One of Tanaris's unexplained ruin sets, occupied by desert trolls.",
+		hook = "Ancient troll ruins east of Gadgetzan, occupied by Wastewander bandits.",
 		lore = {
-			"Three sets of ruins stand in Tanaris: Noonshade, Eastmoon and Southmoon. Nobody has established who built them. The Sandfury trolls use them, and whether their own ancestors raised them is a question the Sandfury decline to answer.",
-			"Tanaris holds older work than this. The Gates of Uldum at the zone's southeastern edge are titan-built and still sealed, and the Explorers' League would much rather be digging there.",
+			"The Wastewander hold these ruins in northeastern Tanaris. Their bandits and thieves are among the targets sought by the Gadgetzan Water Company, whose wells the nomads have seized.",
 		},
+		readMore = { "Wowpedia: Noonshade Ruins", "Wowpedia: Wastewander Justice" },
 	},
 	{
 		name = "Southmoon Ruins", faction = "Hostile",
@@ -942,12 +944,12 @@ SubsOf("Elwynn Forest", {
 		},
 	},
 	{
-		name = "Mirror Lake Orchard", faction = "Alliance",
-		hook = "The orchard above Mirror Lake, supplying a good share of Stormwind's cider.",
+		name = "Mirror Lake Orchard", faction = "Hostile",
+		hook = "An orchard on the southern bank of Mirror Lake, occupied by Defias bandits.",
 		lore = {
-			"The orchard works the slopes above the lake and sends its fruit up the road to the city. Between this and the vineyards to the south, Elwynn drinks well for a county with a gnoll problem.",
-			"Kobolds have been coming up out of the hills into the rows. The farmhands deal with it themselves, since the militia is busy further west.",
+			"The orchard lies in western Elwynn Forest, beside Mirror Lake. Defias bandits have taken possession of the trees and the nearby cottage.",
 		},
+		readMore = { "Wowpedia: Mirror Lake Orchard" },
 	},
 	{
 		name = "Forest's Edge", faction = "Contested",
@@ -1085,11 +1087,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Scarlet Watch Post", faction = "Hostile",
-		hook = "Another Crusade position on the Monastery road.",
+		hook = "A Scarlet tower guarding the northern side of the Monastery.",
 		lore = {
-			"The watch posts screen the approach to the Scarlet Monastery, which the Crusade holds as a fortress rather than as the cathedral and seminary it was built to be.",
-			"Lordaeron's priesthood used that building as a seat of learning. The order occupying it now considers the Argent Dawn traitors for working alongside the Forsaken.",
+			"Captain Melrache commands this tower in northeastern Tirisfal Glades. The Scarlet Crusade uses it to guard the northern approach to the Scarlet Monastery.",
+			"The soldiers also raid from the tower. The Forsaken have identified Melrache and his two bodyguards as targets.",
 		},
+		readMore = { "Wowpedia: Scarlet Watch Post", "Wowpedia: At War With The Scarlet Crusade (4)" },
 	},
 })
 
@@ -1104,11 +1107,11 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "Olsen's Farthing", faction = "Hostile",
-		hook = "An abandoned Silverpine holding on the road south.",
+		hook = "A ruined Silverpine farm occupied by Ravenclaw undead.",
 		lore = {
-			"Olsen's was a working farm when Silverpine still had working farms. The people who lived here left, or did not, and the forest has been taking the buildings back since.",
-			"Silverpine is a corridor now rather than a country. Everything between Tirisfal and the Greymane Wall is either held by the Forsaken, the worgen or nobody.",
+			"Olsen's Farthing was once a farmstead beside Silverpine's trade road. Ravenclaw slaves and raiders occupy the ruins, under the control of Thule Ravenclaw.",
 		},
+		readMore = { "Wowpedia: Olsen's Farthing" },
 	},
 	{
 		name = "The Dead Field", faction = "Hostile",
@@ -1190,11 +1193,12 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Stonesplinter Valley", faction = "Hostile",
-		hook = "A valley of troggs on the loch's western side.",
+		hook = "A trogg-held valley in southwestern Loch Modan.",
 		lore = {
-			"The Stonesplinter troggs hold this valley and come up out of the deep tunnels into the dwarven workings above.",
-			"Troggs are the titans' first attempt at what became the earthen, and the earthen became the dwarves. Ironforge has had to absorb that relationship and does not enjoy discussing it.",
+			"The Stonesplinter troggs hold this valley and its caves. Dwarven scouts identify Grawmug as the leader of the incursion, with Gnasher and Brawler guarding him.",
+			"The local defenders need help keeping the troggs in check. Their reserves have been called to the front, leaving too few soldiers to handle the threat at home.",
 		},
+		readMore = { "Wowpedia: Stonesplinter Valley", "Wowpedia: In Defense of the King's Lands (Classic)" },
 	},
 	{
 		name = "Algaz Station", faction = "Alliance",
@@ -1227,11 +1231,12 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Lakeridge Highway", faction = "Contested",
-		hook = "The road along the lake, and the only way through the zone.",
+		hook = "The old road along the southern shore of Lake Everstill.",
 		lore = {
-			"The highway runs the length of Lake Everstill and over the bridge at Lakeshire. Everything crossing Redridge uses it, including the things Redridge would rather did not.",
-			"The bridge is the zone's weak point and the orcs in Stonewatch know it. Repairing it is a recurring item of town business.",
+			"The Lakeridge Highway follows the southern edge of Lake Everstill. Once a busy route, it has fallen into disuse since the orcs took Stonewatch Keep. Gnolls patrol the road.",
+			"Lakeshire has trouble keeping even its bridge in repair. The town used its iron for weapons during the last orc invasion, and gnolls stole the replacement shipment from Stormwind.",
 		},
+		readMore = { "Wowpedia: Lakeridge Highway", "Wowpedia: The Everstill Bridge" },
 	},
 })
 
@@ -1265,11 +1270,12 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Menethil Bay", faction = "Alliance",
-		hook = "The water outside Menethil Harbor, and the Alliance's western shipping lane.",
+		hook = "The inlet beside Menethil Harbor, within the larger Baradin Bay.",
 		lore = {
-			"The bay carries the traffic between Khaz Modan and Kalimdor. Ships out of Menethil run to Theramore in Dustwallow Marsh and north to Auberdine. This is the Alliance's main crossing between the continents.",
-			"It is named for Lordaeron's royal house, as the port is, from the days when the Alliance of Lordaeron still held together.",
+			"Menethil Bay lies between Menethil Harbor and the northern cliffs of Dun Morogh. Crocolisks inhabit the water beside the port.",
+			"Ships out of Menethil Harbor run to Theramore in Dustwallow Marsh and to Auberdine. Those two routes connect the Alliance ports of Khaz Modan and Kalimdor.",
 		},
+		readMore = { "Wowpedia: Menethil Bay", "Wowpedia: Menethil Harbor" },
 	},
 })
 
@@ -1457,11 +1463,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Pestilent Scar", faction = "Hostile",
-		hook = "An open wound of corrupted ground in the middle of the zone.",
+		hook = "A deep gorge in the blighted ground of the Eastern Plaguelands.",
 		lore = {
-			"The scar is one of the places where the blight has eaten through to something underneath. Nothing crosses it that does not have to.",
-			"The Scourge does not occupy the Eastern Plaguelands so much as run it. Farms, graveyards, towers and scars all feed the same work.",
+			"The Pestilent Scar cuts into the ground of the Eastern Plaguelands. The gorge is inhabited by oozes, below the surrounding plague-stricken land.",
 		},
+		readMore = { "Wowpedia: Pestilent Scar" },
 	},
 	{
 		name = "Mazra'Alor", faction = "Hostile",

@@ -45,10 +45,10 @@ SubsOf("Durotar", {
 		name = "Sen'jin Village", faction = "Horde", levels = "5-12",
 		hook = "The Darkspear trolls' village on the coast, home to a tribe twice driven from its islands.",
 		lore = {
-			"The Darkspear are jungle trolls who were living on the Echo Isles when Thrall's fleet arrived. He helped them against the murlocs and the sea witch who had them cornered, and their chieftain Sen'jin died in the fighting after foreseeing that his people's future lay with the orcs.",
-			"Vol'jin leads them now, and the village is named for his father. The Darkspear's loyalty to Thrall personally is absolute and has nothing to do with the Horde as an institution.",
+			"Thrall met the Darkspear on their island home during his voyage to Kalimdor. He helped them against the murlocs, but their chieftain Sen'jin died after foreseeing that the orc would lead his people away.",
+			"The tribe later settled on the Echo Isles, only to be driven out by Zalazane. Vol'jin brought his people to the coast of Durotar and named this village after his father. Master Gadrin now seeks help against the witch doctor and his hexed followers.",
 		},
-		didYouKnow = "The Darkspear are the only troll tribe to have joined either faction willingly, and they did it on the strength of one dying chieftain's vision.",
+		readMore = { "Wowpedia: Sen'jin Village", "Wowpedia: Sen'jin", "Wowpedia: Zalazane (quest)" },
 	},
 	{
 		name = "Echo Isles", parent = "Durotar", faction = "Hostile",
@@ -93,7 +93,7 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Razormane Grounds", parent = "Durotar", faction = "Hostile",
-		hook = "Quilboar territory in western Durotar.",
+		hook = "Quilboar territory in central Durotar.",
 		lore = {
 			"The Razormane are quilboar, and quilboar were in Durotar and the Barrens long before the orcs arrived. They are organised around their thorny warrens and they do not recognise Horde claims.",
 			"Quilboar trace themselves to Agamaggan, a boar demigod killed fighting the Burning Legion. Their religion and their geography both grow out of that.",
@@ -123,8 +123,9 @@ SubsOf("Mulgore", {
 		hook = "The mesa where young tauren are given their first rites.",
 		lore = {
 			"Red Cloud Mesa is the tauren equivalent of the orcs' Valley of Trials: a contained stretch of plain where the young are taught, tested and sent on.",
-			"Tauren training is as much religious as martial. The rites here are about the Earthmother and a young tauren's place in the world, and the fighting is incidental to that.",
+			"The rites begin with practical service to the tribe. Young hunters bring meat and feathers back to Camp Narache, and the Bristleback quilboar in Brambleblade Ravine threaten their home.",
 		},
+		readMore = { "Wowpedia: Red Cloud Mesa", "Wowpedia: The Hunt Begins", "Wowpedia: Break Sharptusk!" },
 	},
 	{
 		name = "Camp Narache", faction = "Horde", levels = "1-6",
@@ -532,11 +533,12 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Lushwater Oasis", parent = "The Barrens", faction = "Contested",
-		hook = "A green oasis in the central Barrens, on the main road.",
+		hook = "An oasis south of the Crossroads, held by Kolkar centaurs.",
 		lore = {
-			"Lushwater sits close to the Crossroads and is the most-travelled of the Barrens' oases.",
-			"The oases support an ecology the surrounding savannah cannot, including the thunder lizards and raptors that make the central Barrens a serious hazard.",
+			"The Kolkar leader Hezrul Bloodmark leads his people from Lushwater Oasis. The water draws beasts to the pools, but the centaurs make this a dangerous watering place.",
+			"The oasis also draws attention for what its water does to those beasts. Shells from the snapjaws here and at the Stagnant Oasis are being collected to investigate the changes.",
 		},
+		readMore = { "Wowpedia: Lushwater Oasis", "Wowpedia: Hezrul Bloodmark (quest)", "Wowpedia: Altered Beings (Classic)" },
 	},
 	{
 		name = "The Stagnant Oasis", parent = "The Barrens", faction = "Contested",
@@ -639,11 +641,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Mirkfallon Lake", parent = "Stonetalon Mountains", faction = "Contested",
-		hook = "A high mountain lake at the centre of the range.",
+		hook = "A mountain lake with seeds that may help regrow Stonetalon.",
 		lore = {
-			"Mirkfallon is the range's main lake, surrounded by the forest that everybody is arguing about.",
-			"It is one of the few parts of Stonetalon that nobody has yet cut, dug or burned.",
+			"Mirkfallon Lake lies in the centre of the Stonetalon Mountains, north of Sun Rock Retreat. Pridewing wyverns live nearby.",
+			"The lakeshore is a source of Gaea seeds. Tammra Windfield wants to imbue them with shamanistic power and plant a new forest on land damaged by industry and war.",
 		},
+		readMore = { "Wowpedia: Mirkfallon Lake", "Wowpedia: Cycle of Rebirth", "Wowpedia: Pridewings of Stonetalon" },
 	},
 	{
 		name = "Grimtotem Post", parent = "Stonetalon Mountains", faction = "Hostile",
@@ -663,11 +666,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Malaka'jin", parent = "Stonetalon Mountains", faction = "Horde",
-		hook = "A troll witch doctor's camp in the southern mountains.",
+		hook = "A troll hunting camp with a witch doctor and three captive night elves.",
 		lore = {
-			"Malaka'jin is a small Darkspear troll site, and the trolls' spiritual practice sits oddly alongside the Horde's industry a few valleys away.",
-			"Darkspear witch doctors work with spirits and loa in ways the orcs' shamanism does not quite cover, and the Horde has mostly decided not to ask.",
+			"The trolls of Malaka'jin live by hunting in the Stonetalon Mountains. Spiders have begun raiding their camps at night to steal the catch, and the hunters are asking for help.",
+			"Witch Doctor Jin'Zil works from a cave here. He keeps three night elves in cages and collects sap, whiskers, eyes and a fey dragon scale for a brew he calls forest magic.",
 		},
+		readMore = { "Wowpedia: Malaka'jin", "Wowpedia: Blood Feeders", "Wowpedia: Jin'Zil's Forest Magic" },
 	},
 	{
 		name = "Webwinder Path", parent = "Stonetalon Mountains", faction = "Hostile",
@@ -875,11 +879,12 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "The Great Lift", parent = "Thousand Needles", faction = "Contested",
-		hook = "The tauren-built elevator between the canyon and the Barrens.",
+		hook = "The tauren-built elevator between Thousand Needles and the Barrens.",
 		lore = {
-			"The Great Lift carries traffic up out of Thousand Needles to the Barrens above. It is tauren engineering and it is the main route between southern and central Kalimdor.",
-			"Control of the lift matters enormously. The centaur harass it and the Horde keeps it running.",
+			"The Great Lift carries travellers between the Barrens and the canyon of Thousand Needles. Tauren guards watch the elevator.",
+			"Grish Longrunner has requested time away to visit his family. A reserve warrior is being sent to relieve him, and a letter from his superior brings the news.",
 		},
+		readMore = { "Wowpedia: Great Lift", "Wowpedia: Calling in the Reserves" },
 	},
 	{
 		name = "Highperch", parent = "Thousand Needles", faction = "Hostile",
@@ -1096,11 +1101,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Stonemaul Ruins", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "The Stonemaul ogres' old city, lost to them.",
+		hook = "The Stonemaul ogres' former home, occupied by Firemane dragonkin.",
 		lore = {
-			"The Stonemaul held this settlement before they were driven out and ended up at Brackenwall. The ruins are now occupied by ogres who did not come along.",
-			"Rexxar's involvement with the Stonemaul and their change of leadership is the reason any of them are Horde today.",
+			"The Stonemaul held this settlement before black dragons drove them out. Mok'Morokk led the survivors to Brackenwall Village, leaving their old home to the Firemane dragonkin.",
+			"Tharg still calls the ruins home and wants to fight for them. Rexxar's choice of Mok'Morokk as leader has not persuaded every ogre to accept the retreat.",
 		},
+		readMore = { "Wowpedia: Stonemaul Ruins", "Wowpedia: Overlord Mok'Morokk's Concern", "Wowpedia: Army of the Black Dragon" },
 	},
 	{
 		name = "Witch Hill", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -1324,11 +1330,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Steamwheedle Port", parent = "Tanaris", faction = "Neutral",
-		hook = "A goblin port on the southern coast, harassed by pirates.",
+		hook = "A goblin port on the eastern coast of Tanaris, paying pirates who keep raiding it.",
 		lore = {
-			"Steamwheedle Port is the cartel's seaside operation in Tanaris, handling shipping that does not want to go through Ratchet or Booty Bay.",
-			"The Southsea pirates along this coast are a constant problem, and goblin relations with goblin pirates are complicated by the fact that they are all goblins.",
+			"Steamwheedle Port belongs to the neutral Steamwheedle Cartel. Its shipping connects it with Booty Bay, and pirates have obtained detailed schedules of those journeys.",
+			"The cartel pays protection money to the Southsea pirates, but the raids continue. Security Chief Bilgewhizzle must stay in town to keep the peace, so he recruits adventurers to deal with the pirates at Lost Rigger Cove.",
 		},
+		readMore = { "Wowpedia: Steamwheedle Port", "Wowpedia: Ship Schedules", "Wowpedia: Southsea Shakedown" },
 	},
 	{
 		name = "Lost Rigger Cove", parent = "Tanaris", faction = "Hostile",
@@ -1729,11 +1736,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Starfall Village", faction = "Alliance", levels = "55-60",
-		hook = "A night elf village in the eastern snows, watching the sky.",
+		hook = "A night elf village northwest of Everlook, with explorers among its residents.",
 		lore = {
-			"Starfall Village is a small night elf settlement in eastern Winterspring, concerned with the zone's dragons and with what the night elves consider their own business in the north.",
-			"It is one of the night elves' most remote outposts and it operates without much reference to Darnassus.",
+			"Starfall Village stands along the main road northwest of Everlook. Its buildings include a night elf lodge, a smaller house and the Ban'Thallow Barrow Den.",
+			"Wynd Nightchaser knows the surrounding ruins, while Jaron Stoneshaper, a member of the Explorers' League, has visited Kel'Theril. The village is a place to ask about what lies beneath Winterspring's snow.",
 		},
+		readMore = { "Wowpedia: Starfall Village", "Wowpedia: Starfall", "Wowpedia: The Ruins of Kel'Theril (Classic)" },
 	},
 	{
 		name = "Mazthoril", parent = "Winterspring", faction = "Hostile",
@@ -2401,13 +2409,11 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Oneiros", parent = "Feralas", faction = "Hostile",
-		hook = "Night elf ruins in the north guarded by green dragonspawn, named for the Greek gods of dreams.",
+		hook = "Night elf ruins south of Jademir Lake, patrolled by elite green dragonspawn.",
 		lore = {
-			"Oneiros lies south of Jademir Lake, and it is night elf ruins with green dragonspawn patrolling them. The green flight is Ysera's, and Ysera's charge is the Emerald Dream.",
-			"The name is not Darnassian. The Oneiroi were the sons of Hypnos in Greek myth, the personifications of dreams, and Morpheus was the greatest of them. Somebody chose that deliberately for a place where the Dream presses against the waking world.",
-			"There is a small night elf camp inside the ruins called Dreamer's Rest. Druids sleep for centuries in this world while they walk in the other one, and a dragon-guarded ruin is a reasonable place to do it.",
+			"Oneiros lies in northern Feralas, just south of Jademir Lake. Elite green dragonspawn patrol the night elf ruins. The green flight is Ysera's, and her charge is the Emerald Dream.",
 		},
-		readMore = { "Wowpedia: Oneiros", "Wowpedia: Emerald Dream", "Wowpedia: Green dragonflight" },
+		readMore = { "Wowpedia: Oneiros", "Wowpedia: Green dragonflight" },
 	},
 	{
 		name = "The Writhing Deep", parent = "Feralas", faction = "Hostile",
@@ -2583,13 +2589,12 @@ SubsOf("The Barrens", {
 SubsOf("Thousand Needles", {
 	{
 		name = "Splithoof Hold", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A Galak centaur stronghold in a cave, with a flame in it that does not go out.",
+		hook = "A guarded Galak cave with a sacred flame burning inside.",
 		lore = {
-			"The Galak are the centaur clan of Thousand Needles, and they took this cave in Splithoof Crag and made a stronghold of it.",
-			"Inside is the Ancient Brazier and the Sacred Flame, and the flame burns without stopping. The centaur guard it. Whatever it was before they arrived, they have kept it alight.",
-			"All five centaur clans descend from Zaetar, Cenarius's son, and Theradras of the earth elementals, and they killed their father between them. A clan keeping an eternal flame is a strange note in that family history.",
+			"Splithoof Hold is a cave in Splithoof Crag, the Galak centaurs' stronghold in Thousand Needles. The Ancient Brazier and the Sacred Flame stand within it.",
+			"The flame protects a relic the centaurs prize. The hold is heavily guarded, and the Galak have no intention of surrendering it.",
 		},
-		readMore = { "Wowpedia: Splithoof Hold", "Wowpedia: Galak", "Wowpedia: Centaur" },
+		readMore = { "Wowpedia: Splithoof Hold", "Wowpedia: The Sacred Flame (quest)" },
 	},
 	{
 		name = "Tahonda Ruins", parent = "Thousand Needles", faction = "Neutral",
@@ -2867,13 +2872,12 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Ashenvale", {
 	{
 		name = "Silverwing Outpost", parent = "Ashenvale", faction = "Alliance",
-		hook = "A Sentinel post on the wrong side of the river, holding anyway.",
+		hook = "A Sentinel post on the Horde side of the Falfarren River.",
 		lore = {
-			"Silverwing Outpost is in south-central Ashenvale, near the Barrens border and south-west of Splintertree Post. Duriel Moonfire has it.",
-			"The position is the point: it is on the Horde's side of the Falfarren River. The Silverwing Sentinels put a post east of the line on purpose and the orcs have been trying to remove it ever since, without pause.",
-			"Splintertree is close enough to make that a daily matter. Holding ground across a river from an enemy camp is a statement rather than a strategy, and Darnassus is making it.",
+			"Silverwing Outpost is in south-central Ashenvale, near the Barrens border and south-west of Splintertree Post. Duriel Moonfire leads it.",
+			"The post is defended by sentinels and warriors. Nearby, Torek and his raiders are preparing an attack and looking for volunteers to join them.",
 		},
-		readMore = { "Wowpedia: Silverwing Outpost", "Wowpedia: Silverwing Sentinels", "Wowpedia: Splintertree Post" },
+		readMore = { "Wowpedia: Silverwing Outpost", "Wowpedia: Torek's Assault" },
 	},
 	{
 		name = "Falfarren River", parent = "Ashenvale", faction = "Contested",
@@ -3059,13 +3063,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Southbreak Shore", parent = "Tanaris", faction = "Hostile",
-		hook = "Flat empty beach below Lost Rigger Cove, apart from the pirates on it.",
+		hook = "Flat beach south of Lost Rigger Cove, with pirates at its northern end.",
 		lore = {
-			"Southbreak Shore runs south from Lost Rigger Cove: a wide flat beach with almost nothing happening on it, except at the northern end.",
-			"The Southsea Freebooters have that end, and Lost Rigger Cove above is their proper anchorage. Sea giants work the surf along this stretch as well, which is its own reason to stay off the sand.",
-			"Tanaris is a desert with a goblin port on it and pirates on the coast, which is the arrangement everywhere the Steamwheedle set up. Gadgetzan sells to everybody and polices nothing past its own walls.",
+			"Southbreak Shore runs south from Lost Rigger Cove. The Southsea Freebooters occupy the northern end of this stretch of beach, while turtles and sea giants roam the surf.",
+			"The pirates have enemies in Steamwheedle Port. The cartel pays them protection money, but they have been disregarding the arrangement, and the port is recruiting adventurers to strike back.",
 		},
-		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Freebooters", "Wowpedia: Gadgetzan" },
+		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Shakedown" },
 	},
 })
 
@@ -3111,12 +3114,11 @@ SubsOf("Thousand Needles", {
 SubsOf("Ashenvale", {
 	{
 		name = "Moonwell", parent = "Ashenvale", faction = "Neutral",
-		hook = "One of Ashenvale's three moonwells, and a fragment of the Well of Eternity.",
+		hook = "Sacred waters in Ashenvale, revered by the Sentinels and used by druids.",
 		lore = {
-			"Ashenvale has three moonwells. The Moonwell of Purity is in the north, east of Iris Lake and west of Raynewood Retreat; the Moonwell of Cleansing lies west of the Silverwing Outpost; and a third carries no further name than the one the client reports.",
-			"A moonwell is not decorative. They are drawn from the waters of the Well of Eternity, which means every one of them is a piece of the thing whose destruction broke this world apart, kept and tended by the people who caused it.",
-			"They heal, and they sustain the forest around them. In a zone being logged from one end and held by satyrs at the other, three of them is a reason the night elves will not give Ashenvale up.",
+			"The dryad Shael'dryn stands beside a moonwell east of Iris Lake. Another lies near the western bank of the Falfarren River, south of the main road.",
+			"The moonwells hold water from the Well of Eternity. Druids make use of its properties, and the Sentinels revere these pools as shrines to Elune.",
 		},
-		readMore = { "Wowpedia: Moonwell", "Wowpedia: Well of Eternity", "Wowpedia: Ashenvale" },
+		readMore = { "Wowpedia: Moonwell (Ashenvale)", "Wowpedia: Raene's Cleansing", "Wowpedia: Crown of the Earth", "Wowpedia: The Sacred Flame (quest)" },
 	},
 })
