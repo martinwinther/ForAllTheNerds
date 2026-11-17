@@ -73,11 +73,11 @@ not tag and do not publish: releases are Martin's call.
 
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
-in 1.2.10, and runs 13 and 14 in 1.2.11**, all released mid-sweep at Martin's
-explicit instruction. Their player-facing lines are already in the changelog under
-those six headings, so do not write them again. P5 now covers only P4 run 15
-onwards, plus `tools/era-audit.md`, still not updated for anything since the
-original four errors.
+in 1.2.10, runs 13 and 14 in 1.2.11, and runs 15 and 16 in 1.2.12**, all released
+mid-sweep at Martin's explicit instruction. Their player-facing lines are already
+in the changelog under those seven headings, so do not write them again. P5 now
+covers only P4 run 17 onwards, plus `tools/era-audit.md`, still not updated for
+anything since the original four errors.
 
 ## Oracles, in order of preference
 
