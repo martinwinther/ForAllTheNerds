@@ -105,10 +105,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Corrahn's Dagger", faction = "Hostile",
-		hook = "High ground in the Hillsbrad hills, with the Syndicate holding it.",
+		hook = "High ground in the Alterac Mountains, with the Syndicate holding it.",
 		lore = {
 			"The Syndicate has the run of this hill. They are what became of Alterac's nobility after King Aiden Perenolde sold the Alliance out to the Horde and his kingdom was dismantled for it.",
-			"Titles, land and income went in one stroke, and they have been financing a grudge ever since, working the Hillsbrad hills for whatever the roads and the mines will yield. They are better dressed than ordinary bandits and no less dangerous for it.",
+			"Titles, land and income went in one stroke, and they have been financing a grudge ever since, working the ridges above Hillsbrad for whatever the roads and the mines will yield. They are better dressed than ordinary bandits and no less dangerous for it.",
 		},
 	},
 })
@@ -146,7 +146,7 @@ SubsOf("Arathi Highlands", {
 		hook = "The westernmost of the four Highlands circles, nearest the Thandol Span road.",
 		lore = {
 			"West Binding sits closest to the road down to the Thandol Span, so it sees more traffic than the other three. Travellers notice it, and a fair number stop.",
-			"The Explorers' League would like to survey all four properly. Stromgarde's collapse means there is nobody in the Highlands to grant permission or provide an escort, and Ironforge has sent neither.",
+			"There is a stone standing at the centre of each of the four circles, and they are not ornaments. Three of them hold keys, one burning, one cresting and one thundering, and the three keys are meant to be carried to the stone at the Inner Binding. Whoever set that up left no word of what it opens.",
 		},
 	},
 	{
@@ -584,10 +584,10 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Camp Aparaje", faction = "Horde",
-		hook = "A small Horde camp in the southern mountains, and not a logging one.",
+		hook = "Three people, a fire and a meat rack, in the middle of Grimtotem country.",
 		lore = {
-			"Aparaje is tauren rather than orcish, and the tauren position in Stonetalon is uncomfortable. They are Horde, and they share the night elves' view of what a forest is for.",
-			"The camp puts most of its effort into harpies and into the Grimtotem, the tauren tribe that refused Cairne Bloodhoof's alliance with the orcs and answers to nobody. That arrangement suits everyone who has to live up here.",
+			"Camp Aparaje is about as small as a Horde position gets: Denni'ka the butcher, Ken'zigla and an orc up from Orgrimmar, with a campfire and a rack of smoked meat. It is a waypoint and a place to be behind.",
+			"What surrounds it is the Grimtotem, the tauren tribe that refused Cairne Bloodhoof's alliance with the orcs and answers to nobody. Their brutes, sorcerers and mercenaries hold the ground on every side, and anybody got out of their hands is brought here first. Kaya Flathoof was walked back to this camp, and her father wanted word she was safe.",
 		},
 	},
 })
@@ -988,7 +988,7 @@ SubsOf("Dun Morogh", {
 		hook = "A ram ranch east of Kharanos, breeding the mounts Ironforge rides.",
 		lore = {
 			"The Amberstills breed mountain rams. That is how dwarves get about. A ram will go up ground a horse will not look at, and in Dun Morogh that is not a preference.",
-			"The ranch loses stock to Frostmane raids and to the wildlife, and the family has a standing arrangement with anybody passing who can do something about either.",
+			"Four Amberstills work the place, with Ultham Ironhorn teaching the riding. What they lose stock to is on the hillside above them: Rudra Amberstill will point out Vagash, a worg big enough to take a ram, and ask any passing stranger to deal with him.",
 		},
 	},
 	{
@@ -1673,10 +1673,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Bathran's Haunt", faction = "Hostile",
-		hook = "A ruin in the northern forest with a name the night elves gave it afterwards.",
+		hook = "A ruin in the north where a healing plant grew, with Forsaken picking it over.",
 		lore = {
-			"The haunt is a night elf site in northern Ashenvale that has not stayed empty. Places here acquire names like this one when something takes up residence.",
-			"Satyrs hold a good deal of this forest. They descend from night elves who sided with the Burning Legion in the War of the Ancients and were transformed for it, which is why the Sentinels treat them as traitors rather than as monsters.",
+			"Bathran's Hair grew in these ruins, north of Maestra's Post and just short of the Darkshore border. It was a plant that cured ailments of the spirit, a rare property and the reason anyone remembers the place.",
+			"The Forsaken are there now. Apothecary Falthis has brought herbalists, seekers and a few thugs out to the haunt, and the night elves who hear about it call that very troubling indeed. They are not wrong to: what the Royal Apothecary Society wants with a cure for the spirit is an open question.",
 		},
 	},
 	{

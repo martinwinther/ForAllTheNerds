@@ -63,7 +63,7 @@ Instance{
 	lore = {
 		"Blackrock Depths is the city of Thaurissan, the Dark Iron dwarves' capital, after Emperor Dagran Thaurissan's summoning of Ragnaros dropped it into the mountain.",
 		"Thaurissan still rules it. So does Ragnaros, from further down, and the arrangement is not an equal one: the Dark Irons summoned the Firelord and ended up his servants.",
-		"The emperor's consort is Moira Bronzebeard, King Magni's only daughter. She was taken from Ironforge and she is now, by any reading, the Dark Iron empress. Magni wants her back and has not asked too loudly what she wants.",
+		"The emperor's consort is Princess Moira Bronzebeard, King Magni's only daughter. She was taken out of Ironforge, and what holds her at Thaurissan's side is a spell of his. Magni wants her back, and the Horde is asking its own questions about the kidnapping through a dwarf held in a cell down there.",
 	},
 	didYouKnow = "The Grim Guzzler, a tavern inside the Depths, serves Dark Irons, ogres and anyone else who walks in. It is the only neutral ground inside Blackrock Mountain.",
 	readMore = { "Wowpedia: Blackrock Depths", "Wowpedia: Dagran Thaurissan" },
