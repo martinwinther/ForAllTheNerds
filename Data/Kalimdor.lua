@@ -564,10 +564,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Grol'dom Farm", parent = "The Barrens", faction = "Horde",
-		hook = "A Horde farm in the southern Barrens, raided by quilboar.",
+		hook = "A Horde farm in the southern Barrens, working thin ground.",
 		lore = {
-			"Grol'dom is one of the Horde's attempts at agriculture in the Barrens. Farming here is hard work for thin returns.",
-			"The Razorfen quilboar raid it regularly, and the farm is as much a border post as a food source.",
+			"Grol'dom is one of the Horde's attempts at agriculture in the Barrens. Farming here is hard work for thin returns, and the farm is a long way south of the Crossroads.",
+			"The quilboar warrens are the nearest neighbours. Razorfen Kraul lies south-west of the farm and the Downs beyond it, which is reason enough to build a palisade around a field.",
 		},
 	},
 	{
@@ -886,7 +886,7 @@ SubsOf("Thousand Needles", {
 		hook = "A wyvern roost on the western mesas.",
 		lore = {
 			"Highperch is a wyvern nesting site. Wyverns are native to Kalimdor and the Horde uses them as flying mounts, which the wild populations have not consented to.",
-			"The mesas' tops are the only safe nesting ground in the canyon. Wyverns and tauren both want them.",
+			"The nests are up on the mesa tops, with the egg shells scattered on the ground below them. The shells are sun-scorched by the time they are collected, and worth something to an armoursmith, which is the usual reason anyone climbs up here.",
 		},
 	},
 	{
@@ -995,7 +995,7 @@ SubsOf("Desolace", {
 		hook = "Where Kalimdor's kodo go to die, and something is interfering with it.",
 		lore = {
 			"Kodo travel to this place when they are dying. The behaviour is real, and the tauren treat it with reverence.",
-			"The bones are being harvested and the site disturbed. The tauren call it desecration and mean it. Kodo are central to tauren life and this is their animals' resting place.",
+			"The bones are being carted off. A goblin at Kormek's Hut on the road north buys them ten at a time and a caravan takes them to the coast, where they are made into furniture, instruments and blasting powder. Kodo are central to tauren life and this is their animals' resting place, so the trade is not a small thing to them.",
 		},
 	},
 	{
@@ -1723,7 +1723,7 @@ SubsOf("Winterspring", {
 		name = "Everlook", faction = "Neutral", levels = "55-60",
 		hook = "A goblin town in the snow, selling to anyone who gets this far north.",
 		lore = {
-			"Everlook is the Steamwheedle Cartel's northern outpost and the only settlement of any size in Winterspring. Inn, flight path, auctioneer, bruisers.",
+			"Everlook is the Steamwheedle Cartel's northern outpost and the only settlement of any size in Winterspring. An inn, an auctioneer, a stable, fifteen bruisers to keep order, and two flight masters: a hippogryph for one side and a wind rider for the other, standing within sight of each other.",
 			"The cartel put a town here because the zone has resources and nobody else was going to. Goblin commercial instinct is the only thing that reliably reaches Kalimdor's extremities.",
 		},
 	},
@@ -2170,7 +2170,7 @@ SubsOf("Desolace", {
 		lore = {
 			"Desolace earns the name. It is grey, broken, mostly dead ground, fought over by centaur clans who have been killing each other since their founding.",
 			"The tauren are here anyway, and the reason is partly that the centaur are. Generations of centaur raiding drove the tauren across Kalimdor, and a camp in Desolace is a people who have decided to stop retreating.",
-			"The Burning Blade and the Kolkar both hold ground within reach of the post, and neither is a problem that gets solved so much as held at arm's length.",
+			"The Burning Blade and the Kolkar both hold ground within reach of the post, and neither is a problem that gets solved so much as held at arm's length. The post itself is small: a few braves, a macecrafter and a leatherworker, with the kodo graveyard away to the south and the dying animals walking past on their way to it.",
 		},
 		readMore = { "Wowpedia: Ghost Walker Post", "Wowpedia: Tauren", "Wowpedia: Centaur" },
 	},
@@ -2881,7 +2881,7 @@ SubsOf("Ashenvale", {
 		lore = {
 			"The Falfarren runs north-east to south-west across Ashenvale, and it is the nearest thing this zone has to a border: night elf country under Astranaar to the west, orc country under Splintertree Post to the east.",
 			"It is not much of a river. Not deep, not wide, and it swells after rain. Nobody could hold it as a line even if both sides agreed it was one.",
-			"Bog beasts move under the surface near Felfire Hill, and they are the other reason to use the bridges. A frontier that can be waded is the most honest description of the war in Ashenvale.",
+			"A frontier that can be waded is the most honest description of the war in Ashenvale.",
 		},
 		readMore = { "Wowpedia: Falfarren River", "Wowpedia: Astranaar", "Wowpedia: Ashenvale" },
 	},

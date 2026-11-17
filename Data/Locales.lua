@@ -162,9 +162,9 @@ SubsOf("Arathi Highlands", {
 SubsOf("Wetlands", {
 	{
 		name = "Direforge Hill", faction = "Hostile",
-		hook = "A Dark Iron foothold in the highlands, in reach of the Thandol Span.",
+		hook = "A Dark Iron camp in the northern Wetlands, in reach of the Thandol Span.",
 		lore = {
-			"Dark Iron dwarves have established themselves on this hill, within reach of both Dun Modr and the Thandol Span. Ironforge regards that as serious and has done nothing about it.",
+			"Dark Iron dwarves have established themselves on this hill at the top of the Wetlands, within reach of both Dun Modr and the Thandol Span. Balgaras the Foul is the warlock who holds it, and the dwarves who have looked into him say he is a coward who sends his soldiers out and stays in his camp. There is a standing price on his ear.",
 			"The Dark Irons lost the War of the Three Hammers, fled south and bound themselves to Ragnaros. Everything they have done in the north since has been aimed at the Bronzebeards, and a bridge is a sensible thing to aim at.",
 		},
 	},
@@ -606,10 +606,11 @@ SubsOf("Thousand Needles", {
 SubsOf("Desolace", {
 	{
 		name = "Kormek's Hut", faction = "Contested",
-		hook = "A single hut on the Desolace road, which is as much settlement as this zone offers.",
+		hook = "A hut on the Desolace road, where a goblin buys kodo bones by the sack.",
 		lore = {
-			"Kormek's Hut stands alone on the road through central Desolace. Between Nijel's Point in the north and Shadowprey Village on the coast there is nothing else.",
-			"Desolace does not support much. The land was green inside night elf memory and something killed it, and the two centaur clans holding most of it are too busy with each other to build.",
+			"Kormek's Hut stands by itself on the road through central Desolace, between Nijel's Point in the north and Shadowprey Village on the coast. What is in it is a goblin and a trade.",
+			"Bibbly F'utzbuckle buys kodo bones, ten at a time, out of the graveyard to the south. A caravan calls at the hut and takes them down to Shadowprey, and what becomes of them is furniture, musical instruments and blasting powder. He will tell you himself that the bones are going to change the world forever.",
+			"Desolace does not support much else. The land was green inside night elf memory and something killed it, and the two centaur clans holding most of it are too busy with each other to build.",
 		},
 	},
 	{
@@ -806,8 +807,8 @@ SubsOf("Winterspring", {
 		name = "Frostfire Hot Springs", faction = "Contested",
 		hook = "Hot springs in the southern snows, which is a stranger combination than it sounds.",
 		lore = {
-			"The Frostfire springs run warm in the middle of Winterspring's ice. Elemental activity is the explanation generally offered, and the Horde's shaman take more interest in them than anybody else does.",
-			"Winterspring has several places where the elements press close. Frostwhisper Gorge in the west is held by ice and water elementals outright, and the shaman read both sites as signs that something nearby has been knocked out of balance.",
+			"The Frostfire springs run warm in the middle of Winterspring's ice, and the water has qualities nobody has explained. There is a researcher camped out here trying to find the source of them and getting nowhere.",
+			"The Winterfall furbolgs are drawn to the springs, which is the researcher's other problem. Winterspring has several places where the elements press close: Frostwhisper Gorge in the west is held by ice and water elementals outright.",
 		},
 	},
 	{
@@ -1716,9 +1717,9 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Galak Hold", faction = "Hostile",
-		hook = "The Galak centaur's own hold in the eastern canyon.",
+		hook = "A Galak centaur holding in the eastern canyon.",
 		lore = {
-			"The hold is the Galak clan's seat, and the clan is why Thousand Needles has never been safely crossed.",
+			"The hold is one of the Galak clan's positions, and the clan is why Thousand Needles has never been safely crossed. Their stronghold proper is Splithoof Crag, against the canyon's northern wall.",
 			"Centaur descend from Zaetar, a son of Cenarius, and the earth elemental princess Theradras. The clans are named for Zaetar's sons and their feuds are hereditary.",
 		},
 	},

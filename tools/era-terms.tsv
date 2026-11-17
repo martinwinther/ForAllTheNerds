@@ -116,6 +116,7 @@ Bael'dun	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Baine	vanilla	Baine Bloodhoof, in Bloodhoof Village	cmangos 1.12.1	cs
 Baine Bloodhoof	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bal'lal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Balgaras	vanilla	Balgaras the Foul, the Dark Iron warlock on Direforge Hill	cmangos 1.12.1	cs
 Balia'mah	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Balnir	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ban'aethal	forever	used only by Forever entries	Forever	cs
@@ -142,6 +143,7 @@ Beer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Beggar's Haunt	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Benjy Wheeler	forever	used only by Forever entries	Forever	cs
 Besseleth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Bibbly F'utzbuckle	vanilla	named in 1.12 game text, the bone buyer at Kormek's Hut	cmangos 1.12.1	cs
 Binding	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bitter Reaches	vanilla	AreaTable row	wow_classic_era	cs
 Black	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -574,6 +576,7 @@ Forsaken Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Forsaken's Royal Apothecary Society	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Forsaken's Undercity	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Fort Triumph	out-of-era	Cataclysm, Southern Barrens	tools/validate.lua, 1.2.5	ci
+Foul	vanilla	the title in Balgaras the Foul	cmangos 1.12.1	cs
 Foulweald	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fourth War	out-of-era	Battle for Azeroth	tools/validate.lua, 1.2.5	ci
 Franclorn Forgewright	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -825,6 +828,7 @@ King Llane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 King Llane Wrynn	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 King Magni	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 King Magni Bronzebeard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+King Mukla of the Skymane	vanilla	King Mukla, titled the great Skymane in 1.12 quest text	cmangos 1.12.1	cs
 King Terenas Menethil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 King Varian Wrynn	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kingdom of Azeroth	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -1118,6 +1122,7 @@ Prince Arthas	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Prince Galen Trollbane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Prince Tortheldrin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Princess Moira Bronzebeard	vanilla	named in 1.12 game text, titled Princess of Ironforge	cmangos 1.12.1	cs
+Princess Poobah	vanilla	named in 1.12 game text, chained on Jaguero Isle	cmangos 1.12.1	cs
 Princess Theradras	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Private	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Prospector Gunstan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

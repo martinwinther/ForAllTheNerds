@@ -225,7 +225,7 @@ SubsOf("Dun Morogh", {
 			"It worked on the troggs. It also irradiated the gnomes. Something like four-fifths of the gnomish population died or was warped into leper gnomes, and Thermaplugg sealed himself inside and took the city for himself. The survivors fled to Ironforge, where the dwarves took them in.",
 			"The gnomes have not given up on retaking it. Mekkatorque is openly recruiting anyone willing to go down into the irradiated levels, and the entrance is crawling with takers.",
 		},
-		didYouKnow = "In Tinker Town it is said, carefully and not too loudly, that Thermaplugg knew what the radiation would do before he proposed it. The gnomes would much rather that stayed a rumour.",
+		didYouKnow = "Nobody in Tinker Town is being delicate about it. Mekkatorque says outright that he trusted Thermaplugg and was betrayed, calls him a madman and the king of nothing, and what he asks of anyone who volunteers is to kill the betrayer and take the city back.",
 		readMore = { "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
 	},
 	{
@@ -1155,7 +1155,7 @@ SubsOf("Alterac Mountains", {
 			"Three of them carry a person's name and not one of those people is recorded anywhere. Alterac was dissolved after the Second War and its archives went with it, so the hills keep the names of Sofera, Corrahn and Gavin and nothing explains any of them.",
 			"The Syndicate took Sofera's Naze and Corrahn's Dagger, the Crushridge ogres took the holds further east, and this one is the most defensible of the four. Nothing is on it. The mountain lions have it.",
 		},
-		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She wanders the length of Hillsbrad and surfaces about once a day. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
+		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She does not roam: she holds one spot up here among the ordinary mountain lions, and she is rarely there when anybody looks. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
 		readMore = { "Wowpedia: Gavin's Naze", "Wowpedia: Alterac Mountains" },
 	},
 	{
@@ -1424,10 +1424,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Jaguero Isle", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "An island off the southern coast, with a stranded noblewoman and a very large ape.",
+		hook = "An island off the southern coast, with a chained troll princess and the ape who chained her.",
 		lore = {
 			"Jaguero is a small island south of Booty Bay, reachable only by swimming. It is isolated enough to have its own ecology and its own problems.",
-			"A shipwrecked Stormwind noblewoman is stuck there, and the island's dominant resident is an enormous gorilla that stands between her and the shore.",
+			"Princess Poobah is on it, and she is not shipwrecked. King Mukla of the Skymane keeps her there in a shackle, he commands the beasts of the island, and the key to the chain is on him. She has got word out in a bottle and offers whoever frees her a place among her own tribe.",
 		},
 	},
 	{
