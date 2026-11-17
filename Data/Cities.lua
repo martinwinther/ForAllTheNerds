@@ -111,11 +111,12 @@ Zone{
 SubsOf("Ironforge", {
 	{
 		name = "The Great Forge", faction = "Alliance",
-		hook = "The forge the city is named for, and the centre of everything.",
+		hook = "The foundry at the heart of Ironforge, with smiths working around its anvils.",
 		lore = {
-			"The Great Forge is a vast open foundry at Ironforge's heart, and the city's wards are arranged around it. It has been burning for a very long time.",
-			"Dwarven smithing is the best in the Alliance, and the Forge is where most of it happens. The heat and noise are permanent features of living here.",
+			"The Great Forge is a vast open foundry at Ironforge's heart, with the city's wards arranged around it. Smiths work beside the molten pit, and blacksmithing trainers and suppliers stand at its centre.",
+			"Tormus Deepforge works here, making weapons for warriors sent to him by their trainers.",
 		},
+		readMore = { "Wowpedia: Great Forge", "Wowpedia: Tormus Deepforge (quest)" },
 	},
 	{
 		name = "Hall of Explorers", faction = "Alliance",
@@ -202,11 +203,12 @@ SubsOf("Undercity", {
 	},
 	{
 		name = "The Apothecarium", faction = "Horde",
-		hook = "Where the Royal Apothecary Society develops a new plague.",
+		hook = "Where the Royal Apothecary Society develops a plague against the living and the dead.",
 		lore = {
-			"The Apothecarium houses the Royal Apothecary Society, and its project is a plague of its own: something that will kill the Scourge.",
-			"The Forsaken's stated target is the Lich King's undead. Whether a weapon of that kind can be aimed only at the Scourge is a question the Horde has not pressed hard enough.",
+			"The Apothecarium houses the Royal Apothecary Society in the Undercity. Master Apothecary Faranell receives ingredients gathered for its research into poisons and disease.",
+			"The intended victims include humans as well as the Scourge. The apothecaries' instructions state both targets openly; their work is not confined to destroying the Lich King's army.",
 		},
+		readMore = { "Wowpedia: Apothecarium", "Wowpedia: A Recipe For Death" },
 	},
 	{
 		name = "The Trade Quarter", faction = "Horde",

@@ -879,11 +879,12 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "The Great Lift", parent = "Thousand Needles", faction = "Contested",
-		hook = "The tauren-built elevator between the canyon and the Barrens.",
+		hook = "The tauren-built elevator between Thousand Needles and the Barrens.",
 		lore = {
-			"The Great Lift carries traffic up out of Thousand Needles to the Barrens above. It is tauren engineering and it is the main route between southern and central Kalimdor.",
-			"Control of the lift matters enormously. The centaur harass it and the Horde keeps it running.",
+			"The Great Lift carries travellers between the Barrens and the canyon of Thousand Needles. Tauren guards watch the elevator.",
+			"Grish Longrunner has requested time away to visit his family. A reserve warrior is being sent to relieve him, and a letter from his superior brings the news.",
 		},
+		readMore = { "Wowpedia: Great Lift", "Wowpedia: Calling in the Reserves" },
 	},
 	{
 		name = "Highperch", parent = "Thousand Needles", faction = "Hostile",
@@ -1100,11 +1101,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Stonemaul Ruins", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "The Stonemaul ogres' old city, lost to them.",
+		hook = "The Stonemaul ogres' former home, occupied by Firemane dragonkin.",
 		lore = {
-			"The Stonemaul held this settlement before they were driven out and ended up at Brackenwall. The ruins are now occupied by ogres who did not come along.",
-			"Rexxar's involvement with the Stonemaul and their change of leadership is the reason any of them are Horde today.",
+			"The Stonemaul held this settlement before black dragons drove them out. Mok'Morokk led the survivors to Brackenwall Village, leaving their old home to the Firemane dragonkin.",
+			"Tharg still calls the ruins home and wants to fight for them. Rexxar's choice of Mok'Morokk as leader has not persuaded every ogre to accept the retreat.",
 		},
+		readMore = { "Wowpedia: Stonemaul Ruins", "Wowpedia: Overlord Mok'Morokk's Concern", "Wowpedia: Army of the Black Dragon" },
 	},
 	{
 		name = "Witch Hill", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -1328,11 +1330,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Steamwheedle Port", parent = "Tanaris", faction = "Neutral",
-		hook = "A goblin port on the southern coast, harassed by pirates.",
+		hook = "A goblin port on the eastern coast of Tanaris, paying pirates who keep raiding it.",
 		lore = {
-			"Steamwheedle Port is the cartel's seaside operation in Tanaris, handling shipping that does not want to go through Ratchet or Booty Bay.",
-			"The Southsea pirates along this coast are a constant problem, and goblin relations with goblin pirates are complicated by the fact that they are all goblins.",
+			"Steamwheedle Port belongs to the neutral Steamwheedle Cartel. Its shipping connects it with Booty Bay, and pirates have obtained detailed schedules of those journeys.",
+			"The cartel pays protection money to the Southsea pirates, but the raids continue. Security Chief Bilgewhizzle must stay in town to keep the peace, so he recruits adventurers to deal with the pirates at Lost Rigger Cove.",
 		},
+		readMore = { "Wowpedia: Steamwheedle Port", "Wowpedia: Ship Schedules", "Wowpedia: Southsea Shakedown" },
 	},
 	{
 		name = "Lost Rigger Cove", parent = "Tanaris", faction = "Hostile",
@@ -1733,11 +1736,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Starfall Village", faction = "Alliance", levels = "55-60",
-		hook = "A night elf village in the eastern snows, watching the sky.",
+		hook = "A night elf village northwest of Everlook, with explorers among its residents.",
 		lore = {
-			"Starfall Village is a small night elf settlement in eastern Winterspring, concerned with the zone's dragons and with what the night elves consider their own business in the north.",
-			"It is one of the night elves' most remote outposts and it operates without much reference to Darnassus.",
+			"Starfall Village stands along the main road northwest of Everlook. Its buildings include a night elf lodge, a smaller house and the Ban'Thallow Barrow Den.",
+			"Wynd Nightchaser knows the surrounding ruins, while Jaron Stoneshaper, a member of the Explorers' League, has visited Kel'Theril. The village is a place to ask about what lies beneath Winterspring's snow.",
 		},
+		readMore = { "Wowpedia: Starfall Village", "Wowpedia: Starfall", "Wowpedia: The Ruins of Kel'Theril (Classic)" },
 	},
 	{
 		name = "Mazthoril", parent = "Winterspring", faction = "Hostile",
@@ -2585,13 +2589,12 @@ SubsOf("The Barrens", {
 SubsOf("Thousand Needles", {
 	{
 		name = "Splithoof Hold", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A Galak centaur stronghold in a cave, with a flame in it that does not go out.",
+		hook = "A guarded Galak cave with a sacred flame burning inside.",
 		lore = {
-			"The Galak are the centaur clan of Thousand Needles, and they took this cave in Splithoof Crag and made a stronghold of it.",
-			"Inside is the Ancient Brazier and the Sacred Flame, and the flame burns without stopping. The centaur guard it. Whatever it was before they arrived, they have kept it alight.",
-			"All five centaur clans descend from Zaetar, Cenarius's son, and Theradras of the earth elementals, and they killed their father between them. A clan keeping an eternal flame is a strange note in that family history.",
+			"Splithoof Hold is a cave in Splithoof Crag, the Galak centaurs' stronghold in Thousand Needles. The Ancient Brazier and the Sacred Flame stand within it.",
+			"The flame protects a relic the centaurs prize. The hold is heavily guarded, and the Galak have no intention of surrendering it.",
 		},
-		readMore = { "Wowpedia: Splithoof Hold", "Wowpedia: Galak", "Wowpedia: Centaur" },
+		readMore = { "Wowpedia: Splithoof Hold", "Wowpedia: The Sacred Flame (quest)" },
 	},
 	{
 		name = "Tahonda Ruins", parent = "Thousand Needles", faction = "Neutral",
@@ -3060,13 +3063,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Southbreak Shore", parent = "Tanaris", faction = "Hostile",
-		hook = "Flat empty beach below Lost Rigger Cove, apart from the pirates on it.",
+		hook = "Flat beach south of Lost Rigger Cove, with pirates at its northern end.",
 		lore = {
-			"Southbreak Shore runs south from Lost Rigger Cove: a wide flat beach with almost nothing happening on it, except at the northern end.",
-			"The Southsea Freebooters have that end, and Lost Rigger Cove above is their proper anchorage. Sea giants work the surf along this stretch as well, which is its own reason to stay off the sand.",
-			"Tanaris is a desert with a goblin port on it and pirates on the coast, which is the arrangement everywhere the Steamwheedle set up. Gadgetzan sells to everybody and polices nothing past its own walls.",
+			"Southbreak Shore runs south from Lost Rigger Cove. The Southsea Freebooters occupy the northern end of this stretch of beach, while turtles and sea giants roam the surf.",
+			"The pirates have enemies in Steamwheedle Port. The cartel pays them protection money, but they have been disregarding the arrangement, and the port is recruiting adventurers to strike back.",
 		},
-		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Freebooters", "Wowpedia: Gadgetzan" },
+		readMore = { "Wowpedia: Southbreak Shore", "Wowpedia: Southsea Shakedown" },
 	},
 })
 

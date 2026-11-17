@@ -75,11 +75,12 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "The Hushed Bank", faction = "Contested",
-		hook = "Duskwood's river bank, with Westfall's dust visible across the water.",
+		hook = "Duskwood's western riverbank, across the water from Westfall.",
 		lore = {
-			"Stand on this bank and you can see what a river is worth. Behind you the forest is dark at noon; across the water Westfall is bleached and open. The two counties share a border and very little else.",
-			"Smugglers use the crossings and so do the Defias. Neither the Night Watch nor the People's Militia has anybody to spare for river patrol, and both sides know it.",
+			"The Hushed Bank follows Duskwood's western river, from the meeting of Elwynn, Westfall and Duskwood south towards Stranglethorn. The covered bridge to Westfall crosses here.",
+			"Sven Yorgen and Lars camp at the northern end. Lars hunts for their food, but starving and rabid wolves follow him when he brings meat back to camp.",
 		},
+		readMore = { "Wowpedia: Hushed Bank", "Wowpedia: Wolves at Our Heels (Classic)" },
 	},
 })
 
@@ -178,11 +179,12 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "The Green Belt", faction = "Contested",
-		hook = "The green heart of the Wetlands, full of raptors and very old bones.",
+		hook = "Marshland in the eastern Wetlands, home to the Greenwarden.",
 		lore = {
-			"The Green Belt is the band of dense growth running through the middle of the zone. Raptors range through it in numbers, and the Explorers' League's interest in the ground is the only reason anybody goes in on purpose.",
-			"The bone beds here hold remains far too large to belong to anything currently alive in Khaz Modan. Whelgar's excavation is working them, when the raptors allow it.",
+			"The Green Belt lies in the eastern Wetlands, where crocolisks, bog beasts and oozes inhabit the marsh. Rethiel the Greenwarden lives here, east of the road that forks towards Dun Modr.",
+			"Rethiel is troubled by the suffering of the land. He asks adventurers to destroy the Fen Creepers rising in the waterways so that they can settle back into the marsh.",
 		},
+		readMore = { "Wowpedia: Green Belt", "Wowpedia: The Greenwarden", "Wowpedia: Blisters on The Land" },
 	},
 	{
 		name = "Saltspray Glen", faction = "Hostile",
@@ -394,11 +396,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Infectis Scar", faction = "Hostile",
-		hook = "A scar of corrupted ground in the south, held and worked by the Scourge.",
+		hook = "A gorge west of Corin's Crossing, with a shattered runeblade at its bottom.",
 		lore = {
-			"The Infectis Scar is open blight in the southern Eastern Plaguelands, and the Scourge holds it the way a works holds a yard.",
-			"The Scourge does not occupy this zone so much as operate it. Farms, graveyards, towers and scars all feed the same business, with Naxxramas hanging over the whole arrangement.",
+			"The Infectis Scar cuts into the blighted ground west of Corin's Crossing. The shattered sword of Marduk the Black lies at the bottom of the gorge, a remnant of the battle of Darrowshire.",
 		},
+		readMore = { "Wowpedia: Infectis Scar", "Wowpedia: Villains of Darrowshire (Classic)" },
 	},
 	{
 		name = "Lake Mereldar", faction = "Contested",
@@ -1191,11 +1193,12 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Stonesplinter Valley", faction = "Hostile",
-		hook = "A valley of troggs on the loch's western side.",
+		hook = "A trogg-held valley in southwestern Loch Modan.",
 		lore = {
-			"The Stonesplinter troggs hold this valley and come up out of the deep tunnels into the dwarven workings above.",
-			"Troggs are the titans' first attempt at what became the earthen, and the earthen became the dwarves. Ironforge has had to absorb that relationship and does not enjoy discussing it.",
+			"The Stonesplinter troggs hold this valley and its caves. Dwarven scouts identify Grawmug as the leader of the incursion, with Gnasher and Brawler guarding him.",
+			"The local defenders need help keeping the troggs in check. Their reserves have been called to the front, leaving too few soldiers to handle the threat at home.",
 		},
+		readMore = { "Wowpedia: Stonesplinter Valley", "Wowpedia: In Defense of the King's Lands (Classic)" },
 	},
 	{
 		name = "Algaz Station", faction = "Alliance",
