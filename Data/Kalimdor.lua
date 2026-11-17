@@ -45,10 +45,10 @@ SubsOf("Durotar", {
 		name = "Sen'jin Village", faction = "Horde", levels = "5-12",
 		hook = "The Darkspear trolls' village on the coast, home to a tribe twice driven from its islands.",
 		lore = {
-			"The Darkspear are jungle trolls who were living on the Echo Isles when Thrall's fleet arrived. He helped them against the murlocs and the sea witch who had them cornered, and their chieftain Sen'jin died in the fighting after foreseeing that his people's future lay with the orcs.",
-			"Vol'jin leads them now, and the village is named for his father. The Darkspear's loyalty to Thrall personally is absolute and has nothing to do with the Horde as an institution.",
+			"Thrall met the Darkspear on their island home during his voyage to Kalimdor. He helped them against the murlocs, but their chieftain Sen'jin died after foreseeing that the orc would lead his people away.",
+			"The tribe later settled on the Echo Isles, only to be driven out by Zalazane. Vol'jin brought his people to the coast of Durotar and named this village after his father. Master Gadrin now seeks help against the witch doctor and his hexed followers.",
 		},
-		didYouKnow = "The Darkspear are the only troll tribe to have joined either faction willingly, and they did it on the strength of one dying chieftain's vision.",
+		readMore = { "Wowpedia: Sen'jin Village", "Wowpedia: Sen'jin", "Wowpedia: Zalazane (quest)" },
 	},
 	{
 		name = "Echo Isles", parent = "Durotar", faction = "Hostile",
@@ -93,7 +93,7 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Razormane Grounds", parent = "Durotar", faction = "Hostile",
-		hook = "Quilboar territory in western Durotar.",
+		hook = "Quilboar territory in central Durotar.",
 		lore = {
 			"The Razormane are quilboar, and quilboar were in Durotar and the Barrens long before the orcs arrived. They are organised around their thorny warrens and they do not recognise Horde claims.",
 			"Quilboar trace themselves to Agamaggan, a boar demigod killed fighting the Burning Legion. Their religion and their geography both grow out of that.",
@@ -123,8 +123,9 @@ SubsOf("Mulgore", {
 		hook = "The mesa where young tauren are given their first rites.",
 		lore = {
 			"Red Cloud Mesa is the tauren equivalent of the orcs' Valley of Trials: a contained stretch of plain where the young are taught, tested and sent on.",
-			"Tauren training is as much religious as martial. The rites here are about the Earthmother and a young tauren's place in the world, and the fighting is incidental to that.",
+			"The rites begin with practical service to the tribe. Young hunters bring meat and feathers back to Camp Narache, and the Bristleback quilboar in Brambleblade Ravine threaten their home.",
 		},
+		readMore = { "Wowpedia: Red Cloud Mesa", "Wowpedia: The Hunt Begins", "Wowpedia: Break Sharptusk!" },
 	},
 	{
 		name = "Camp Narache", faction = "Horde", levels = "1-6",
@@ -532,11 +533,12 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Lushwater Oasis", parent = "The Barrens", faction = "Contested",
-		hook = "A green oasis in the central Barrens, on the main road.",
+		hook = "An oasis south of the Crossroads, held by Kolkar centaurs.",
 		lore = {
-			"Lushwater sits close to the Crossroads and is the most-travelled of the Barrens' oases.",
-			"The oases support an ecology the surrounding savannah cannot, including the thunder lizards and raptors that make the central Barrens a serious hazard.",
+			"The Kolkar leader Hezrul Bloodmark leads his people from Lushwater Oasis. The water draws beasts to the pools, but the centaurs make this a dangerous watering place.",
+			"The oasis also draws attention for what its water does to those beasts. Shells from the snapjaws here and at the Stagnant Oasis are being collected to investigate the changes.",
 		},
+		readMore = { "Wowpedia: Lushwater Oasis", "Wowpedia: Hezrul Bloodmark (quest)", "Wowpedia: Altered Beings (Classic)" },
 	},
 	{
 		name = "The Stagnant Oasis", parent = "The Barrens", faction = "Contested",
@@ -639,11 +641,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Mirkfallon Lake", parent = "Stonetalon Mountains", faction = "Contested",
-		hook = "A high mountain lake at the centre of the range.",
+		hook = "A mountain lake with seeds that may help regrow Stonetalon.",
 		lore = {
-			"Mirkfallon is the range's main lake, surrounded by the forest that everybody is arguing about.",
-			"It is one of the few parts of Stonetalon that nobody has yet cut, dug or burned.",
+			"Mirkfallon Lake lies in the centre of the Stonetalon Mountains, north of Sun Rock Retreat. Pridewing wyverns live nearby.",
+			"The lakeshore is a source of Gaea seeds. Tammra Windfield wants to imbue them with shamanistic power and plant a new forest on land damaged by industry and war.",
 		},
+		readMore = { "Wowpedia: Mirkfallon Lake", "Wowpedia: Cycle of Rebirth", "Wowpedia: Pridewings of Stonetalon" },
 	},
 	{
 		name = "Grimtotem Post", parent = "Stonetalon Mountains", faction = "Hostile",
@@ -663,11 +666,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Malaka'jin", parent = "Stonetalon Mountains", faction = "Horde",
-		hook = "A troll witch doctor's camp in the southern mountains.",
+		hook = "A troll hunting camp with a witch doctor and three captive night elves.",
 		lore = {
-			"Malaka'jin is a small Darkspear troll site, and the trolls' spiritual practice sits oddly alongside the Horde's industry a few valleys away.",
-			"Darkspear witch doctors work with spirits and loa in ways the orcs' shamanism does not quite cover, and the Horde has mostly decided not to ask.",
+			"The trolls of Malaka'jin live by hunting in the Stonetalon Mountains. Spiders have begun raiding their camps at night to steal the catch, and the hunters are asking for help.",
+			"Witch Doctor Jin'Zil works from a cave here. He keeps three night elves in cages and collects sap, whiskers, eyes and a fey dragon scale for a brew he calls forest magic.",
 		},
+		readMore = { "Wowpedia: Malaka'jin", "Wowpedia: Blood Feeders", "Wowpedia: Jin'Zil's Forest Magic" },
 	},
 	{
 		name = "Webwinder Path", parent = "Stonetalon Mountains", faction = "Hostile",
@@ -2401,13 +2405,11 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Oneiros", parent = "Feralas", faction = "Hostile",
-		hook = "Night elf ruins in the north guarded by green dragonspawn, named for the Greek gods of dreams.",
+		hook = "Night elf ruins south of Jademir Lake, patrolled by elite green dragonspawn.",
 		lore = {
-			"Oneiros lies south of Jademir Lake, and it is night elf ruins with green dragonspawn patrolling them. The green flight is Ysera's, and Ysera's charge is the Emerald Dream.",
-			"The name is not Darnassian. The Oneiroi were the sons of Hypnos in Greek myth, the personifications of dreams, and Morpheus was the greatest of them. Somebody chose that deliberately for a place where the Dream presses against the waking world.",
-			"There is a small night elf camp inside the ruins called Dreamer's Rest. Druids sleep for centuries in this world while they walk in the other one, and a dragon-guarded ruin is a reasonable place to do it.",
+			"Oneiros lies in northern Feralas, just south of Jademir Lake. Elite green dragonspawn patrol the night elf ruins. The green flight is Ysera's, and her charge is the Emerald Dream.",
 		},
-		readMore = { "Wowpedia: Oneiros", "Wowpedia: Emerald Dream", "Wowpedia: Green dragonflight" },
+		readMore = { "Wowpedia: Oneiros", "Wowpedia: Green dragonflight" },
 	},
 	{
 		name = "The Writhing Deep", parent = "Feralas", faction = "Hostile",
@@ -2867,13 +2869,12 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Ashenvale", {
 	{
 		name = "Silverwing Outpost", parent = "Ashenvale", faction = "Alliance",
-		hook = "A Sentinel post on the wrong side of the river, holding anyway.",
+		hook = "A Sentinel post on the Horde side of the Falfarren River.",
 		lore = {
-			"Silverwing Outpost is in south-central Ashenvale, near the Barrens border and south-west of Splintertree Post. Duriel Moonfire has it.",
-			"The position is the point: it is on the Horde's side of the Falfarren River. The Silverwing Sentinels put a post east of the line on purpose and the orcs have been trying to remove it ever since, without pause.",
-			"Splintertree is close enough to make that a daily matter. Holding ground across a river from an enemy camp is a statement rather than a strategy, and Darnassus is making it.",
+			"Silverwing Outpost is in south-central Ashenvale, near the Barrens border and south-west of Splintertree Post. Duriel Moonfire leads it.",
+			"The post is defended by sentinels and warriors. Nearby, Torek and his raiders are preparing an attack and looking for volunteers to join them.",
 		},
-		readMore = { "Wowpedia: Silverwing Outpost", "Wowpedia: Silverwing Sentinels", "Wowpedia: Splintertree Post" },
+		readMore = { "Wowpedia: Silverwing Outpost", "Wowpedia: Torek's Assault" },
 	},
 	{
 		name = "Falfarren River", parent = "Ashenvale", faction = "Contested",
@@ -3111,12 +3112,11 @@ SubsOf("Thousand Needles", {
 SubsOf("Ashenvale", {
 	{
 		name = "Moonwell", parent = "Ashenvale", faction = "Neutral",
-		hook = "One of Ashenvale's three moonwells, and a fragment of the Well of Eternity.",
+		hook = "Sacred waters in Ashenvale, revered by the Sentinels and used by druids.",
 		lore = {
-			"Ashenvale has three moonwells. The Moonwell of Purity is in the north, east of Iris Lake and west of Raynewood Retreat; the Moonwell of Cleansing lies west of the Silverwing Outpost; and a third carries no further name than the one the client reports.",
-			"A moonwell is not decorative. They are drawn from the waters of the Well of Eternity, which means every one of them is a piece of the thing whose destruction broke this world apart, kept and tended by the people who caused it.",
-			"They heal, and they sustain the forest around them. In a zone being logged from one end and held by satyrs at the other, three of them is a reason the night elves will not give Ashenvale up.",
+			"The dryad Shael'dryn stands beside a moonwell east of Iris Lake. Another lies near the western bank of the Falfarren River, south of the main road.",
+			"The moonwells hold water from the Well of Eternity. Druids make use of its properties, and the Sentinels revere these pools as shrines to Elune.",
 		},
-		readMore = { "Wowpedia: Moonwell", "Wowpedia: Well of Eternity", "Wowpedia: Ashenvale" },
+		readMore = { "Wowpedia: Moonwell (Ashenvale)", "Wowpedia: Raene's Cleansing", "Wowpedia: Crown of the Earth", "Wowpedia: The Sacred Flame (quest)" },
 	},
 })

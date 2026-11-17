@@ -159,11 +159,11 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Mystic Ward", faction = "Alliance",
-		hook = "The ward where dwarves do magic, a discipline they came to late.",
+		hook = "Ironforge's district for arcane study and the service of the Light.",
 		lore = {
-			"The Mystic Ward holds Ironforge's arcane and holy training. Dwarves came to magic late compared with humans and elves.",
-			"Their shamanistic tradition is older and has mostly been lost. The Wildhammers kept it; the Bronzebeards did not.",
+			"The Mystic Ward occupies the northwestern part of Ironforge. Its Hall of Mysteries houses trainers for mages, priests and paladins, with shops selling magical supplies nearby.",
 		},
+		readMore = { "Wowpedia: Mystic Ward", "Wowpedia: Hall of Mysteries" },
 	},
 	{
 		name = "Gates of Ironforge", faction = "Alliance",

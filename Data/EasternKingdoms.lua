@@ -1119,9 +1119,10 @@ SubsOf("Alterac Mountains", {
 		name = "Ruins of Alterac", parent = "Alterac Mountains", faction = "Hostile",
 		hook = "The capital of a kingdom that was taken off the map for treason.",
 		lore = {
-			"This was Alterac's seat of government. After Perenolde's betrayal was exposed, the kingdom was broken up and the city was left to rot rather than resettled.",
-			"The Syndicate holds the ruins now. For them it is not a ruin, it is a claim.",
+			"This was Alterac's seat of government. The Alliance attacked the city after Perenolde's betrayal in the Second War. Its abandoned buildings now shelter the Crushridge ogres.",
+			"Mug'thol leads the ogres here. Southshore offers bounties on the Crushridge and sends adventurers into the ruined capital to fight their warmongers.",
 		},
+		readMore = { "Wowpedia: Ruins of Alterac", "Wowpedia: Crushridge Warmongers", "Wowpedia: The Crown of Will" },
 	},
 	{
 		name = "Strahnbrad", parent = "Alterac Mountains", faction = "Hostile",
@@ -1141,11 +1142,11 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Sofera's Naze", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "A hilltop ruin with a Syndicate camp and an unusually literate ghost problem.",
+		hook = "A Syndicate camp on one of the four ridges above Hillsbrad.",
 		lore = {
-			"The naze is a rocky outcrop with old Alterac stonework on it, now used by the Syndicate. The dead here have not settled.",
-			"Alterac's collapse left a great many people unburied and a great many grievances unresolved, and the mountains show it.",
+			"The Syndicate holds Sofera's Naze. Southshore has identified this camp and the one at Corrahn's Dagger as positions held by the thieves and their leaders, nobles of the fallen kingdom of Alterac.",
 		},
+		readMore = { "Wowpedia: Sofera's Naze", "Wowpedia: Syndicate Assassins" },
 	},
 	{
 		name = "Gavin's Naze", parent = "Alterac Mountains", faction = "Contested",
@@ -2448,10 +2449,9 @@ SubsOf("Tirisfal Glades", {
 		hook = "The crypt in the Deathknell graves where the Forsaken wake up.",
 		lore = {
 			"Shadow Grave sits at the top of a slope in the graves above Deathknell, with a path running down into the village. New Forsaken wake in here.",
-			"That is the whole of the Forsaken condition in one room. They were buried as Lordaeron's dead, raised by the Scourge as its property, and then freed when Sylvanas Windrunner broke the Lich King's hold on a part of his own army.",
-			"Free is a strained word for it. They remember who they were, their families are alive and want nothing to do with them, and the Church of the Holy Light considers them an abomination. Waking in a crypt is the gentlest part of the arrangement.",
+			"Mordo, the caretaker, greets those who wake and sends them to the chapel below. Shadow Priest Sarvis explains their freedom from the Lich King and the war their new leader Sylvanas is fighting against the Scourge.",
 		},
-		readMore = { "Wowpedia: Deathknell", "Wowpedia: Forsaken", "Wowpedia: Sylvanas Windrunner" },
+		readMore = { "Wowpedia: Shadow Grave", "Wowpedia: Rude Awakening" },
 	},
 	{
 		name = "Agamand Family Crypt", parent = "Tirisfal Glades", faction = "Hostile",
@@ -3249,13 +3249,12 @@ SubsOf("Stranglethorn Vale", {
 SubsOf("Swamp of Sorrows", {
 	{
 		name = "Misty Reed Strand", parent = "Swamp of Sorrows", faction = "Contested",
-		hook = "The swamp's coastline, and there is almost nothing on it.",
+		hook = "The gloomy coastline of the Swamp of Sorrows.",
 		lore = {
-			"The Misty Reed Strand is the beach along the Swamp of Sorrows: a long stretch of very little, with driftwood, debris, crocolisks, crabs and murlocs.",
-			"The gloom is the swamp's own. This was good country before the Dark Portal opened inland and the land turned, and the coast went with the rest of it.",
-			"Stonard keeps a picket out towards the southern end at the Misty Reed Post, hoping for a tower. Nothing else is competing for the shoreline.",
+			"The Misty Reed Strand is the beach along the Swamp of Sorrows, with driftwood, debris, crocolisks, crabs and murlocs.",
+			"Stonard keeps a post towards the southern end. Along the beach, Horde adventurers hunt murlocs while Alliance visitors gather driftwood and hunt crabs.",
 		},
-		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Swamp of Sorrows", "Wowpedia: Stonard" },
+		readMore = { "Wowpedia: Misty Reed Strand", "Wowpedia: Misty Reed Post" },
 	},
 })
 
@@ -3295,13 +3294,11 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "South Tide's Run", parent = "Silverpine Forest", faction = "Contested",
-		hook = "The matching shore in the south-west, and the quieter of the two.",
+		hook = "Silverpine's southwestern shore along the Great Sea.",
 		lore = {
-			"South Tide's Run is the counterpart to the northern one: the south-western coast of Silverpine along the Great Sea.",
-			"The pair of them are the zone's whole seaboard. Silverpine is mostly forest, Forsaken holdings and the road down from Lordaeron's ruin, and the coast is the edge nobody contests.",
-			"Pyrewood Village and the Greymane Wall are further south from here. The wall is the one Gilneas built to shut itself away from the Alliance, and nothing has come through it in years.",
+			"South Tide's Run is the southwestern coast of Silverpine Forest. It forms the southern counterpart to North Tide's Run along the Great Sea.",
 		},
-		readMore = { "Wowpedia: South Tide's Run", "Wowpedia: Silverpine Forest", "Wowpedia: Greymane Wall" },
+		readMore = { "Wowpedia: South Tide's Run" },
 	},
 })
 
