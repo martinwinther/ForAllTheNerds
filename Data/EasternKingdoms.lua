@@ -225,7 +225,7 @@ SubsOf("Dun Morogh", {
 			"It worked on the troggs. It also irradiated the gnomes. Something like four-fifths of the gnomish population died or was warped into leper gnomes, and Thermaplugg sealed himself inside and took the city for himself. The survivors fled to Ironforge, where the dwarves took them in.",
 			"The gnomes have not given up on retaking it. Mekkatorque is openly recruiting anyone willing to go down into the irradiated levels, and the entrance is crawling with takers.",
 		},
-		didYouKnow = "In Tinker Town it is said, carefully and not too loudly, that Thermaplugg knew what the radiation would do before he proposed it. The gnomes would much rather that stayed a rumour.",
+		didYouKnow = "Nobody in Tinker Town is being delicate about it. Mekkatorque says outright that he trusted Thermaplugg and was betrayed, calls him a madman and the king of nothing, and what he asks of anyone who volunteers is to kill the betrayer and take the city back.",
 		readMore = { "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
 	},
 	{
@@ -267,8 +267,8 @@ SubsOf("Tirisfal Glades", {
 		name = "Deathknell", faction = "Horde", levels = "1-5",
 		hook = "A ruined village the Forsaken use to work out which of their new dead can still think.",
 		lore = {
-			"Deathknell was an ordinary Lordaeron hamlet. It is now the place where newly risen Forsaken wake up, and where Undercity's deathguards sort the ones who have their minds back from the ones who are simply animate.",
-			"The distinction matters enormously to the Forsaken. Free will is the only thing separating them from the Scourge, and they test for it the moment someone sits up.",
+			"Deathknell was an ordinary Lordaeron hamlet. It is now where newly risen Forsaken wake up, in the crypt, and the test is simply whether they wake at all. Mordo is the caretaker down there, and what he tells someone who sits up is that they were nearly tossed into the fire with the others.",
+			"The others are still outside. Mindless and wretched zombies wander the fields around the village, risen and never come back, and the distinction between them and the Forsaken who did is the whole of what the Forsaken have. Free will is the only thing separating them from the Scourge.",
 		},
 	},
 	{
@@ -332,10 +332,11 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Balnir Farmstead", parent = "Tirisfal Glades", faction = "Horde",
-		hook = "A Tirisfal farm still being worked, after a fashion, by the dead family that owned it.",
+		hook = "A Tirisfal farm the Scourge has taken, with the flowers still coming up in it.",
 		lore = {
-			"Some Forsaken went back to their own homes and carried on. The Balnir farmstead is one of the places where that happened, and the horses are still being bred.",
-			"It is one of the few sights in Tirisfal that is quietly sad rather than horrifying. Forsaken tend not to comment on it.",
+			"Nobody works the Balnir place now. The Forsaken call it a haven for interloping Scourge and send patrols east from the Bulwark to deal with what gathers there, and what gathers there is bleeding horrors and wandering spirits, with Fellicent's shade among them.",
+			"The Scarlet Crusade is the other half of the problem. Captain Vachon raids from the ruined tower just along from the farm with his friars and zealots, so the ground between them belongs to neither.",
+			"The snapdragons are still growing in the beds. They are named for the family and they are the only thing on the farm that has carried on as before.",
 		},
 	},
 	{
@@ -543,10 +544,10 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Alexston Farmstead", parent = "Westfall", faction = "Hostile",
-		hook = "An abandoned farm the Defias use as a forward camp.",
+		hook = "An abandoned farm the Defias are stripping, with the harvest golems still walking it.",
 		lore = {
-			"Another emptied Westfall holding, now occupied. The Defias have taken over enough farmsteads to garrison the countryside between them.",
-			"The farms were not destroyed. They were simply left, and somebody else moved in.",
+			"Another emptied Westfall holding. The militia on Sentinel Hill names three places the Defias pillagers are working over, and this is one of them, along with the Gold Coast Quarry and Moonbrook.",
+			"The farm was left rather than destroyed, and it shows. There are sacks of oats still stacked where somebody put them, harvest watchers and a Foe Reaper still walking the fields, and the Defias are carrying off what they can lift.",
 		},
 	},
 })
@@ -1106,8 +1107,9 @@ SubsOf("Alterac Mountains", {
 		name = "Dalaran Crater", parent = "Alterac Mountains", faction = "Hostile",
 		hook = "What is left of the Kirin Tor's city after a demon lord stepped on it.",
 		lore = {
-			"Dalaran was the magocracy, home of the Kirin Tor and the finest centre of arcane learning in the world. Its Violet Citadel trained Medivh, Khadgar, Jaina Proudmoore, Kel'Thuzad and most of the archmages whose decisions shaped the last two wars.",
-			"During the Legion's invasion, Archimonde destroyed it. The mages threw everything they had into a magical shield and he simply broke it and crushed the city. What remains is a crater under a containment dome, patrolled by the surviving Kirin Tor to keep people out and whatever is left in.",
+			"Dalaran was the magocracy, home of the Kirin Tor and the finest centre of arcane learning in the world. Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied in its Violet Citadel, and most of the archmages whose decisions shaped the last two wars with them.",
+			"During the Legion's invasion, Archimonde destroyed it. The mages threw everything they had into a magical shield and he simply broke it and crushed the city. What remains is a crater under a dome.",
+			"Kirin Tor are still on the ground outside it, and they are not only standing guard. Dalaran summoners and theurgists work the crater with elemental slaves bound to them, and nobody is in a position to question the liberty.",
 			"The Kirin Tor has not disbanded. Its archmages are scattered and it has no city, but the order still considers itself responsible for magic in this world.",
 		},
 		didYouKnow = "Kel'Thuzad was a Kirin Tor archmage before he founded the Cult of the Damned. Dalaran expelled him for studying necromancy. He went to Northrend, found the Lich King, and brought back the plague that destroyed Lordaeron.",
@@ -1153,7 +1155,7 @@ SubsOf("Alterac Mountains", {
 			"Three of them carry a person's name and not one of those people is recorded anywhere. Alterac was dissolved after the Second War and its archives went with it, so the hills keep the names of Sofera, Corrahn and Gavin and nothing explains any of them.",
 			"The Syndicate took Sofera's Naze and Corrahn's Dagger, the Crushridge ogres took the holds further east, and this one is the most defensible of the four. Nothing is on it. The mountain lions have it.",
 		},
-		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She wanders the length of Hillsbrad and surfaces about once a day. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
+		didYouKnow = "One of those lions is Araga, who has a coat no other cat in the world shares. She does not roam: she holds one spot up here among the ordinary mountain lions, and she is rarely there when anybody looks. No animal in the Eastern Kingdoms is harder for a hunter to find, never mind tame.",
 		readMore = { "Wowpedia: Gavin's Naze", "Wowpedia: Alterac Mountains" },
 	},
 	{
@@ -1422,10 +1424,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Jaguero Isle", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "An island off the southern coast, with a stranded noblewoman and a very large ape.",
+		hook = "An island off the southern coast, with a chained troll princess and the ape who chained her.",
 		lore = {
 			"Jaguero is a small island south of Booty Bay, reachable only by swimming. It is isolated enough to have its own ecology and its own problems.",
-			"A shipwrecked Stormwind noblewoman is stuck there, and the island's dominant resident is an enormous gorilla that stands between her and the shore.",
+			"Princess Poobah is on it, and she is not shipwrecked. King Mukla of the Skymane keeps her there in a shackle, he commands the beasts of the island, and the key to the chain is on him. She has got word out in a bottle and offers whoever frees her a place among her own tribe.",
 		},
 	},
 	{
@@ -1532,10 +1534,10 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Agmond's End", parent = "Badlands", faction = "Contested",
-		hook = "Another field of giant bones, and the end of whoever Agmond was.",
+		hook = "A field of giant bones in the south, named for a dwarf who died in it.",
 		lore = {
-			"Agmond's End is a bone field in the southern Badlands. The name suggests somebody died finding it. The zone does nothing to argue otherwise.",
-			"Dark Iron and Horde scouts both pass through, and neither is interested in the palaeontology.",
+			"Agmond was a dwarf working the Badlands dig, and he is the Agmond of the name. He went missing, and what the search found was a trail: bloody smears across rock and sand where he had crawled some distance, and then the place he stopped.",
+			"He left a word behind him. Roughly scrawled in the sandstone where he died is the name Murdaloc, a Stonevault trogg. The bonesnappers and shamans of that tribe hold the ground all around the spot, and nobody has gone out to settle it.",
 		},
 	},
 	{
@@ -2923,7 +2925,7 @@ SubsOf("Wetlands", {
 		name = "Deepwater Tavern", parent = "Wetlands", faction = "Alliance",
 		hook = "Menethil Harbor's tavern, and the usual site of the bar fight.",
 		lore = {
-			"The Deepwater is the hub of Menethil Harbor: quests, a first aid trainer, vendors, and everyone passing through on their way to Kalimdor.",
+			"The Deepwater is the hub of Menethil Harbor: quests, vendors, and everyone passing through on their way to Kalimdor. Archaeologist Flagongut has been holed up in it for a while, waiting on an escort out to Whelgar's dig with a fossil he believes has a power in it.",
 			"It is also where the fights happen, and a good proportion of them are started by Tapoke \"Slim\" Jahn. He is a known quantity in the harbour and nobody appears to have done anything about him.",
 			"Menethil is the Alliance's western port, named for Lordaeron's royal house, run by dwarves, and jammed with people waiting for a boat. A tavern with a reliable brawl in it is the natural result.",
 		},
@@ -3115,7 +3117,7 @@ SubsOf("Wetlands", {
 		name = "Baradin Bay", parent = "Wetlands", faction = "Neutral",
 		hook = "The stretch of the Great Sea off the continent's west coast, patrolled once by Kul Tiras.",
 		lore = {
-			"Baradin Bay is the water off the western side of the central Eastern Kingdoms, reaching from Dun Morogh's north-west down the coast. Menethil Harbor is on it, and so are Stromgarde Keep and Southshore.",
+			"Baradin Bay is the water off the Wetlands coast, and Menethil Harbor sits on it. Everything that sails for Kalimdor or Theramore leaves across it.",
 			"The Kul Tiran armada patrolled this bay during the Second War and after it. Kul Tiras supplied the Alliance's entire navy in that war, under Daelin Proudmoore, and the bay was effectively theirs to keep.",
 			"Their wrecks are still down there. The friendship did not survive Daelin's death at Theramore, and the Alliance has been short of hulls on this coast ever since.",
 		},

@@ -136,10 +136,10 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Bloodhoof Village", faction = "Horde", levels = "5-12",
-		hook = "Cairne Bloodhoof's own village, and the heart of the tauren nation below Thunder Bluff.",
+		hook = "The Bloodhoof tribe's own village, with Cairne's son running it.",
 		lore = {
-			"Bloodhoof Village is named for the tribe and the chieftain who leads it. Cairne Bloodhoof is High Chieftain of the tauren and one of Thrall's closest allies, and this is where his people's everyday business happens.",
-			"The village is also where the Venture Company's intrusion into Mulgore is being managed. Goblins have been drilling and cutting on tauren land, and the tauren response has been patient up to a point.",
+			"Bloodhoof Village is named for the tribe, and the tribe's name is the High Chieftain's: Cairne Bloodhoof, one of Thrall's closest allies. Cairne himself rules from Thunder Bluff, up on the mesas. What is down here is his son, Baine, and the everyday business of Mulgore.",
+			"Two things are on Baine's desk. The Palemane gnolls have settled south of the village and in a cave to the west and are killing Mulgore's wildlife without restraint, and attempts to talk to them have been thrown back. And there are dwarves cutting a quarry to the north-west. For both of them he has run out of words.",
 		},
 	},
 	{
@@ -348,10 +348,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Ameth'Aran", parent = "Darkshore", faction = "Hostile",
-		hook = "A ruined night elf town whose dead have not left it.",
+		hook = "A ruined Highborne town whose dead have not left it.",
 		lore = {
-			"Ameth'Aran fell in the Sundering with its people in it. Night elf spirits still occupy the ruins, and none of them are at peace.",
-			"Ten thousand years is a long time to be restless. The night elves know exactly who these ghosts were.",
+			"Ameth'Aran was a place where the servants of Azshara practised their magic freely, and the restless spirits in the ruins are the Highborne who lived there. Ten thousand years is a long time to be restless.",
+			"How any of this is known is two stone tablets lying in the ruins, carrying the lay of Ameth'Aran and the account of its fall. A Sentinel sent to read them was set on by the spirits and had to leave. Records from the years around the destruction of the Well of Eternity are thin, so the tablets are worth the trouble.",
 		},
 	},
 	{
@@ -414,10 +414,10 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Blackwood Den", parent = "Darkshore", faction = "Hostile",
-		hook = "A furbolg den in the northern woods.",
+		hook = "A furbolg den south of Auberdine, and what is getting into the river.",
 		lore = {
-			"The Blackwood furbolgs hold this den, and like the Gnarlpine on Teldrassil they have turned hostile.",
-			"Furbolg corruption across the northern zones is widespread enough that the night elves treat it as a single phenomenon rather than a series of local problems.",
+			"The Blackwood furbolgs hold this den, and like the Gnarlpine on Teldrassil they have turned hostile. Theirs is the camp the Sentinels name as the biggest threat to Auberdine.",
+			"The corruption in them is going downstream. The Cliffspring River has begun to turn foul on its way to Mist's Edge, the Blackwood up-river are taken to be the cause, and the night elves looking into it suspect the furbolgs are not the root of it either.",
 		},
 	},
 })
@@ -564,10 +564,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Grol'dom Farm", parent = "The Barrens", faction = "Horde",
-		hook = "A Horde farm in the southern Barrens, raided by quilboar.",
+		hook = "A Horde farm in the southern Barrens, working thin ground.",
 		lore = {
-			"Grol'dom is one of the Horde's attempts at agriculture in the Barrens. Farming here is hard work for thin returns.",
-			"The Razorfen quilboar raid it regularly, and the farm is as much a border post as a food source.",
+			"Grol'dom is one of the Horde's attempts at agriculture in the Barrens. Farming here is hard work for thin returns, and the farm is a long way south of the Crossroads.",
+			"The quilboar warrens are the nearest neighbours. Razorfen Kraul lies south-west of the farm and the Downs beyond it, which is reason enough to build a palisade around a field.",
 		},
 	},
 	{
@@ -886,7 +886,7 @@ SubsOf("Thousand Needles", {
 		hook = "A wyvern roost on the western mesas.",
 		lore = {
 			"Highperch is a wyvern nesting site. Wyverns are native to Kalimdor and the Horde uses them as flying mounts, which the wild populations have not consented to.",
-			"The mesas' tops are the only safe nesting ground in the canyon. Wyverns and tauren both want them.",
+			"The nests are up on the mesa tops, with the egg shells scattered on the ground below them. The shells are sun-scorched by the time they are collected, and worth something to an armoursmith, which is the usual reason anyone climbs up here.",
 		},
 	},
 	{
@@ -995,7 +995,7 @@ SubsOf("Desolace", {
 		hook = "Where Kalimdor's kodo go to die, and something is interfering with it.",
 		lore = {
 			"Kodo travel to this place when they are dying. The behaviour is real, and the tauren treat it with reverence.",
-			"The bones are being harvested and the site disturbed. The tauren call it desecration and mean it. Kodo are central to tauren life and this is their animals' resting place.",
+			"The bones are being carted off. A goblin at Kormek's Hut on the road north buys them ten at a time and a caravan takes them to the coast, where they are made into furniture, instruments and blasting powder. Kodo are central to tauren life and this is their animals' resting place, so the trade is not a small thing to them.",
 		},
 	},
 	{
@@ -1088,10 +1088,10 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Alcaz Island", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "An island off the coast, held by naga, with a very important prisoner.",
+		hook = "An island off the coast, held by naga, with a goblin scientist living among them.",
 		lore = {
-			"Alcaz Island sits off Dustwallow's eastern shore and is held by naga and their allies. It is not a place anyone visits casually.",
-			"Something is being held on that island. The Horde and the Alliance have both noticed and neither has been able to get onto it in force.",
+			"Alcaz Island sits off Dustwallow's eastern shore and the Strashaz naga hold it, under Tidelord Rrurgaz. Their myrmidons, serpent guards, sirens and hydras are a match for a party rather than a person, so nobody visits casually.",
+			"Doctor Weavil is also on the island, with his flying machine and a crew of minions, and the naga have not moved him off. What outsiders come for is the bloodkelp the naga keep in baskets there, and the going rate for fetching it is high.",
 		},
 	},
 	{
@@ -1723,7 +1723,7 @@ SubsOf("Winterspring", {
 		name = "Everlook", faction = "Neutral", levels = "55-60",
 		hook = "A goblin town in the snow, selling to anyone who gets this far north.",
 		lore = {
-			"Everlook is the Steamwheedle Cartel's northern outpost and the only settlement of any size in Winterspring. Inn, flight path, auctioneer, bruisers.",
+			"Everlook is the Steamwheedle Cartel's northern outpost and the only settlement of any size in Winterspring. An inn, an auctioneer, a stable, fifteen bruisers to keep order, and two flight masters: a hippogryph for one side and a wind rider for the other, standing within sight of each other.",
 			"The cartel put a town here because the zone has resources and nobody else was going to. Goblin commercial instinct is the only thing that reliably reaches Kalimdor's extremities.",
 		},
 	},
@@ -2170,7 +2170,7 @@ SubsOf("Desolace", {
 		lore = {
 			"Desolace earns the name. It is grey, broken, mostly dead ground, fought over by centaur clans who have been killing each other since their founding.",
 			"The tauren are here anyway, and the reason is partly that the centaur are. Generations of centaur raiding drove the tauren across Kalimdor, and a camp in Desolace is a people who have decided to stop retreating.",
-			"The Burning Blade and the Kolkar both hold ground within reach of the post, and neither is a problem that gets solved so much as held at arm's length.",
+			"The Burning Blade and the Kolkar both hold ground within reach of the post, and neither is a problem that gets solved so much as held at arm's length. The post itself is small: a few braves, a macecrafter and a leatherworker, with the kodo graveyard away to the south and the dying animals walking past on their way to it.",
 		},
 		readMore = { "Wowpedia: Ghost Walker Post", "Wowpedia: Tauren", "Wowpedia: Centaur" },
 	},
@@ -2280,9 +2280,9 @@ SubsOf("Mulgore", {
 		name = "Bael'dun Digsite", parent = "Mulgore", faction = "Hostile",
 		hook = "A dwarven quarry cut into Mulgore, against every warning the tauren gave.",
 		lore = {
-			"This is the Bael Modan expedition digging on the western edge of Mulgore, and it is a large quarry rather than a trial trench. The Explorers' League does not dig idly: since Uldaman, Ironforge has believed the dwarves were shaped from living stone by the titans, and every site is read as more of that record.",
-			"Baine Bloodhoof warned them off. To the tauren the land is the Earth Mother, and cutting a quarry into her is not a property dispute but a desecration. Diplomacy was tried and it failed.",
-			"So the Bloodhoof tribe settled on taking the diggers' pickaxes and breaking them, which is a restrained answer by the standards of this continent. The dwarves kept digging.",
+			"Bael'dun diggers and appraisers are cutting a quarry north-west of Bloodhoof Village, and it is a large one rather than a trial trench. The dwarves do not dig idly: since Uldaman, Ironforge has believed its people were shaped from living stone by the titans, and every site is read as more of that record.",
+			"Baine Bloodhoof warned them off. To the tauren the land is the Earth Mother, and hollowing it is no way to earn its teachings, and those are his own words. His other objection is practical: the digging will enrage the kodos of Mulgore.",
+			"What he asks for is the diggers' picks, collected and taken to a forge and smashed, which is a restrained answer by the standards of this continent. The dwarves kept digging.",
 		},
 		didYouKnow = "Both sides are entirely sincere. The dwarves are looking for the origin of their own species and the tauren are watching foreigners tear open sacred ground. Neither reading leaves room for the other.",
 		readMore = { "Wowpedia: Bael'dun Digsite", "Wowpedia: Bael Modan", "Wowpedia: Explorers' League" },
@@ -2702,8 +2702,8 @@ SubsOf("Stonetalon Mountains", {
 		hook = "A kobold mine chasing a purple crystal with titan magic in it.",
 		lore = {
 			"The Boulderslide kobolds nest at the end of Boulderslide Ravine, and they are mining. What they are after is resonite: a rare glowing purple crystal, and they guard it with everything they have.",
-			"The crystal carries a trace of earthen magic. The earthen were the titans' work, living stone shaped before there were dwarves, and anything with their magic in it means something titan-built is close.",
-			"Kobolds are the least regarded creatures on this world and are generally treated as vermin with candles. They have found something in this cavern that nobody else noticed.",
+			"There is more in the cave than ore. Deep in it stands a resonite cask, and what is sealed inside the cask is an earthen, asleep, by the name of Goggeroc. The earthen were the titans' work, living stone shaped before there were dwarves.",
+			"Kobolds are the least regarded creatures on this world and are generally treated as vermin with candles. They have been mining around a sleeping titan-made giant, and the shaman who worked out what the crystals were is not pleased about it.",
 		},
 		readMore = { "Wowpedia: Boulderslide Cavern", "Wowpedia: Kobold", "Wowpedia: Earthen" },
 	},
@@ -2881,7 +2881,7 @@ SubsOf("Ashenvale", {
 		lore = {
 			"The Falfarren runs north-east to south-west across Ashenvale, and it is the nearest thing this zone has to a border: night elf country under Astranaar to the west, orc country under Splintertree Post to the east.",
 			"It is not much of a river. Not deep, not wide, and it swells after rain. Nobody could hold it as a line even if both sides agreed it was one.",
-			"Bog beasts move under the surface near Felfire Hill, and they are the other reason to use the bridges. A frontier that can be waded is the most honest description of the war in Ashenvale.",
+			"A frontier that can be waded is the most honest description of the war in Ashenvale.",
 		},
 		readMore = { "Wowpedia: Falfarren River", "Wowpedia: Astranaar", "Wowpedia: Ashenvale" },
 	},

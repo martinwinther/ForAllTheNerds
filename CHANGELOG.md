@@ -1,5 +1,104 @@
 # Changelog
 
+## 1.2.12
+
+Two more rounds of the vanilla-era sweep: 50 entries reviewed and 29 corrected,
+with nothing removed this time. These were the smaller places, the farms and
+lakes and single huts, and the errors in them were mostly invented colour rather
+than the wrong expansion. Several of the fixes turned two entries into one story.
+
+**Fixed**
+
+- The Balnir Farmstead in Tirisfal was being worked, after a fashion, by the dead
+  family that owned it, with the horses still bred. It is a Scourge haven, which
+  is what the Forsaken call it themselves, and they send patrols east from the
+  Bulwark against the bleeding horrors and wandering spirits in it. The Scarlet
+  Crusade raids from the ruined tower alongside. The snapdragons in the beds are
+  the only thing on the farm carrying on as before.
+- Bathran's Haunt in Ashenvale was satyr ground, with two paragraphs on where
+  satyrs come from. The Forsaken are there: an apothecary with herbalists, seekers
+  and a few thugs, and the night elf who hears about it calls that very troubling
+  indeed. The ruins are named for a plant that grew in them and cured ailments of
+  the spirit, which is a reasonable thing for an apothecary to want.
+- Bloodhoof Village was Cairne's. Cairne rules from Thunder Bluff; the one in the
+  village is his son Baine, and what is on his desk is the Palemane gnolls south
+  and west of it and the dwarven quarry to the north-west, not the Venture Company.
+- Camp Aparaje was a tauren camp putting its effort into harpies. It is three
+  people with a campfire and a rack of smoked meat, a troll butcher among them,
+  ringed by Grimtotem, and a rescued tauren is walked back to it.
+- Jaguero Isle had a shipwrecked Stormwind noblewoman. Princess Poobah is a troll,
+  who speaks of her tribe and her ancestors, and she is not shipwrecked: King
+  Mukla of the Skymane keeps her in a shackle and carries the key himself.
+- Alcaz Island had a very important prisoner on it. In this period it is the
+  Strashaz naga under Tidelord Rrurgaz, with Doctor Weavil and his flying machine
+  living among them, and what outsiders come for is bloodkelp.
+- Baradin Bay was drawn across half a continent, with Stromgarde Keep and
+  Southshore on it. It is the water off the Wetlands coast with Menethil Harbor on
+  it and nothing else. Southshore is inland on Lordamere Lake.
+- Agmond's End said only that the name suggests somebody died finding it. The game
+  says who and how: Agmond was a dwarf off the Badlands dig, the search found the
+  bloody smears where he had crawled, and the word scrawled in the sandstone where
+  he stopped is the name of the trogg that killed him.
+- Boulderslide Cavern had the kobolds' crystals carrying a trace of earthen magic.
+  There is a resonite cask standing deep in the cave with an earthen asleep inside
+  it, by name, and the kobolds have been mining around him.
+- Kormek's Hut was a single hut with nothing else in Desolace between Nijel's
+  Point and Shadowprey. Ghost Walker Post is also in Desolace, and the hut itself
+  is a trade: a goblin buys kodo bones ten at a time out of the graveyard to the
+  south, a caravan takes them to the coast, and they come back as furniture,
+  musical instruments and blasting powder.
+- The Kodo Graveyard said the bones were being harvested without saying by whom.
+  It is the same trade, named now, which makes the tauren view of it easier to
+  take seriously.
+- Direforge Hill was a Dark Iron foothold in the highlands with Ironforge doing
+  nothing about it. The hill is in the Wetlands, Balgaras the Foul holds it, and
+  the dwarves who looked into him put a price on his ear.
+- Gnomeregan had it whispered in Tinker Town that Thermaplugg knew what the
+  radiation would do. Mekkatorque says it outright: he trusted the man, he was
+  betrayed, and what he asks of volunteers is to kill the betrayer.
+- Galak Hold called itself the Galak clan's seat, and Splithoof Crag is their
+  stronghold. The hold is one of their positions.
+- Gavin's Naze had the rare lion Araga wandering the length of Hillsbrad. She
+  holds one spot up on the ridge among the ordinary mountain lions, in the Alterac
+  Mountains.
+- The Ruins of Kel'Theril had the Sundering destroying the city, and its Highborne
+  haunting it by choice rather than under a curse. It is a curse and they earned
+  it: the highborne there stole the Crystal of Zin-Malor meaning to siphon its
+  power, it shattered, and the pieces went under the ice of the lake. They are
+  still looking for them, and the elf who can mend the crystal is a continent away
+  outside Quel'Lithien Lodge.
+- The Dalaran Crater entry had the Violet Citadel training Medivh, which nothing
+  in this period says of him. What it says now is who did study there, and that
+  the Kirin Tor outside the crater are summoners working with bound elementals.
+- Blackrock Depths called Moira the Dark Iron empress. Her own nameplate reads
+  Princess of Ironforge, and what holds her at Thaurissan's side is a spell.
+- Twelve more entries had a claim with no source behind it, each now replaced by
+  what the game does say. Alexston Farmstead is being plundered rather than
+  garrisoned, with the sacks of oats still stacked in it. Amberstill Ranch loses
+  rams to one named worg on the hillside, not to Frostmane raids. Ameth'Aran's
+  night elves do not know exactly who its ghosts were; they have two stone tablets
+  and few other records. Blackwood Den's furbolgs are fouling the Cliffspring
+  River, and the night elves suspect they are not the root of it. The Circle of
+  West Binding has a stone at its centre, and three of the four circles hold keys
+  meant for the fourth. Corrahn's Dagger is in the Alterac Mountains, not the
+  Hillsbrad hills. Deathknell's risen are sorted by the crypt's own undertaker,
+  and those who do not wake go into the fire. The Falfarren River has no bog
+  beasts in it. Frostfire Hot Springs has a researcher who cannot find the source
+  of the water and Winterfall furbolgs drawn to it, rather than shaman. Grol'dom
+  Farm's quilboar raids are not recorded; the warrens are simply its nearest
+  neighbours. Highperch's wyvern nests have sun-scorched egg shells under them,
+  which is what anyone climbs up for. And the Bael'dun Digsite was right that the
+  tauren answer is to break the diggers' picks, but the diggers are Bael'dun's own
+  rather than the Bael Modan expedition, and Baine's second objection is that the
+  digging will enrage Mulgore's kodos.
+- Smaller additions, where an entry was true but thin: Everlook has two flight
+  masters, one for each side, standing within sight of each other; the Deepwater
+  Tavern has an archaeologist waiting in it for an escort out to Whelgar's dig;
+  Ghost Walker Post is a few braves with a macecrafter and a leatherworker, and
+  dying kodo walk past it on their way south; Elder Rise seats Magatha Grimtotem
+  as elder crone; and Menethil Keep is held for Ironforge by Captain Stoutfist and
+  the Menethil sentries.
+
 ## 1.2.11
 
 Two more rounds of the vanilla-era sweep: 50 entries reviewed, 39 of them

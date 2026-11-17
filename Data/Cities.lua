@@ -339,7 +339,7 @@ SubsOf("Thunder Bluff", {
 		name = "Elder Rise", faction = "Horde",
 		hook = "The druids' mesa, and where the tauren keep their histories.",
 		lore = {
-			"Elder Rise holds the tauren's druid trainers and their elders. Tauren oral history is extensive and carefully kept, and this is where it lives.",
+			"Elder Rise holds the tauren's druid trainers and their elders. Tauren oral history is extensive and carefully kept, and this is where it lives. Magatha Grimtotem sits up here too, as elder crone, which is a strange seat for the tribe that refused Cairne's alliance.",
 			"The tauren's understanding of Kalimdor's natural order is older and more complete than anything the Horde's other peoples brought with them.",
 		},
 	},
