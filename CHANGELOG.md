@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.2.13
+
+Two more rounds of the vanilla-era sweep: 50 entries reviewed and 47 corrected,
+with nothing removed. The sweep now covers 450 of the 917 vanilla entries.
+
+**Fixed**
+
+- Oneiros no longer borrows Dreamer's Rest from Cataclysm. The Ruins of Alterac
+  belong to Mug'thol and the Crushridge ogres, and Noonshade Ruins to the
+  Wastewander bandits.
+- Stonemaul Ruins describes the Firemane dragonkin who drove the ogres out.
+  Stagalbog's caves house murlocs. The Altar of Zul is a separate Vilebranch
+  site, not the summit of Jintha'Alor.
+- Mirror Lake Orchard acknowledges its Defias occupants and is marked hostile.
+  Southpoint Tower describes the Horde reconnaissance post and Deathstalker
+  Lesh, with its faction corrected to Horde.
+- Stromgarde's account includes the supplies sent from Southshore. The
+  Apothecarium's plague research names both its human and Scourge targets.
+- Lakeridge Highway, Starfall Village and Steamwheedle Port have corrected
+  geography. The Green Belt describes the Wetlands marsh and the Greenwarden,
+  rather than borrowing the nearby excavation's story.
+- Sen'jin Village's history distinguishes the trolls' original island home from
+  the Echo Isles. Terrordale includes Augustus, Egan and the spirits there.
+- Other entries replace unsupported motives, sweeping claims and invented
+  history with details from vanilla quests, creatures and locations, including
+  the Headland, the Dark Portal, the Great Lift and the Great Forge.
+
 ## 1.2.12
 
 Two more rounds of the vanilla-era sweep: 50 entries reviewed and 29 corrected,
