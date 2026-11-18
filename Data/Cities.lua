@@ -473,13 +473,12 @@ Zone{
 Zone{
 	name = "Champions' Hall", continent = EK, faction = "Alliance", levels = "Capital",
 	aliases = { "Champions Hall", "The Champions' Hall" },
-	hook = "Stormwind's hall for its war heroes, off the Old Town.",
+	hook = "Stormwind's officers' barracks, reserved for soldiers of Knight rank and above.",
 	lore = {
-		"The Champions' Hall is where Stormwind honours the Alliance's ranking soldiers. Entry depends on rank earned in the war against the Horde, and what is inside is quartermasters and recognition rather than lore.",
-		"The ranks themselves are the interesting part. The Alliance's field hierarchy runs from Private up through Knight and Marshal to Grand Marshal, and the Horde's mirror of it runs from Scout to High Warlord. Those titles were invented for a war that neither side is formally fighting.",
-		"Azeroth is not at war. The Alliance and the Horde have no declared conflict after the Third War, and both maintain a full promotion ladder for killing each other anyway.",
+		"The Champions' Hall lies in the southern part of Old Town in Stormwind. Its portal admits Alliance soldiers who have attained the rank of Knight or higher.",
+		"The quartermasters inside sell equipment and supplies earned through military rank. The Hall of Legends in Orgrimmar serves the Horde in the same way.",
 	},
-	readMore = { "Wowpedia: Champions' Hall", "Wowpedia: Honor system" },
+	readMore = { "Wowpedia: Champions' Hall", "Wowpedia: Honor system (Classic)" },
 }
 
 Zone{

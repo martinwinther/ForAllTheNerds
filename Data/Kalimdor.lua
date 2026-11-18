@@ -265,11 +265,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Ban'ethil Barrow Den", parent = "Teldrassil", faction = "Hostile",
-		hook = "A druid barrow den under the tree, with its sleepers disturbed.",
+		hook = "A druid barrow den overrun by the Gnarlpine.",
 		lore = {
-			"Barrow dens are where night elf druids sleep while their minds walk the Emerald Dream. Night elf druids spent most of the last ten thousand years in dens like this one.",
-			"Ban'ethil has been broken into by the Gnarlpine, and the druids sleeping there are vulnerable in a way that is difficult to overstate. A druid's body left untended is simply a body.",
+			"Ban'ethil Barrow Den shelters sleeping Druids of the Talon in Teldrassil. Gnarlpine invaders have ravaged the den, leaving the druids trapped in their hibernation.",
+			"Athridas Bearmantle in Dolanaar seeks the Relics of Wakening stored in sacred chests inside. Without them, he cannot prepare the ritual to wake the sleepers.",
 		},
+		readMore = { "Wowpedia: Ban'ethil Barrow Den", "Wowpedia: The Relics of Wakening" },
 	},
 	{
 		name = "Starbreeze Village", parent = "Teldrassil", faction = "Hostile",
@@ -702,11 +703,12 @@ Zone{
 SubsOf("Ashenvale", {
 	{
 		name = "Astranaar", faction = "Alliance", levels = "18-30",
-		hook = "The Sentinels' town on the lake, and the night elves' command post in Ashenvale.",
+		hook = "A night elf town on a lake in central Ashenvale.",
 		lore = {
-			"Astranaar is built on an island in a lake in central Ashenvale and it is the Sentinel army's base for the whole forest. The Sentinels are the night elves' standing military, almost entirely female, and they have been fighting for these woods continuously since the Horde arrived.",
-			"The town handles the war against the Warsong, the satyr problem, and the furbolgs. It is the busiest Alliance settlement in Kalimdor outside Darnassus.",
+			"Astranaar stands on an island along the main road through Ashenvale, connected to the shore by two bridges. It offers an inn, merchants and a flight master to Alliance travellers.",
+			"Raene Wolfrunner watches the growing Thistlefur threat north of town. Her scouts fear that the furbolgs may gather enough strength to attack Astranaar directly.",
 		},
+		readMore = { "Wowpedia: Astranaar", "Wowpedia: Culling the Threat" },
 	},
 	{
 		name = "Splintertree Post", faction = "Horde", levels = "25-35",
@@ -755,11 +757,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Zoram'gar Outpost", faction = "Horde", levels = "18-30",
-		hook = "A Horde camp on the Zoram Strand, cut off from the rest of the forest.",
+		hook = "A Horde camp on the Zoram Strand, threatened by naga from the sea.",
 		lore = {
-			"Zoram'gar sits on Ashenvale's western coast, isolated from the Horde's other positions and surrounded by night elf territory and naga.",
-			"The Zoram Strand was part of a night elf city before the Sundering. The ruins along the beach are what is left of it.",
+			"Zoram'gar Outpost stands on Ashenvale's western coast. It is one of the Horde's two outposts in the forest, alongside Splintertree Post.",
+			"Naga attack the camp, and the hydra Vorsha the Lasher has also struck it. Je'neu Sancrea, a member of the Earthen Ring, studies the corruption of the elements from here.",
 		},
+		readMore = { "Wowpedia: Zoram'gar Outpost", "Wowpedia: Je'neu Sancrea", "Wowpedia: Vorsha the Lasher (quest)" },
 	},
 	{
 		name = "Blackfathom Deeps", parent = "Ashenvale", faction = "Hostile", levels = "20-30",
@@ -788,11 +791,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Bough Shadow", parent = "Ashenvale", faction = "Hostile",
-		hook = "One of the four Emerald Dream portals, guarded by green dragons.",
+		hook = "An Emerald Dream portal in northeastern Ashenvale, guarded by green dragonkin.",
 		lore = {
-			"Bough Shadow in eastern Ashenvale is one of the four great Dream portals, with Seradane, Twilight Grove and the Dream Bough.",
-			"The green dragonflight guards all four and is not coping. Something has been going wrong in the Dream, and the dragons posted at these portals have become hostile to everyone, including each other.",
+			"Bough Shadow lies beyond Forest Song, in the northeastern corner of Ashenvale. Its great tree holds a portal to the Emerald Dream.",
+			"Green drakes and dragonspawn guard the approach. Phantim and Dreamstalker are among the formidable creatures found here.",
 		},
+		readMore = { "Wowpedia: Bough Shadow" },
 	},
 	{
 		name = "Maestra's Post", faction = "Alliance", levels = "18-25",
@@ -1486,11 +1490,11 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Bitter Reaches", parent = "Azshara", faction = "Hostile",
-		hook = "The eastern coast, held by naga.",
+		hook = "Remote ground in northeastern Azshara, with giants along its northern edge.",
 		lore = {
-			"The Bitter Reaches are Azshara's eastern shore, and the naga have made it theirs.",
-			"This is the stretch of coast nearest to where Zin-Azshari went under, and the naga have gathered accordingly.",
+			"The Bitter Reaches lie in northeastern Azshara. Hippogryphs, oozes and chimaeras inhabit the area, while powerful mountain giants occupy its northern edge.",
 		},
+		readMore = { "Wowpedia: Bitter Reaches" },
 	},
 	{
 		name = "Forlorn Ridge", parent = "Azshara", faction = "Hostile",
@@ -1828,21 +1832,22 @@ Zone{
 SubsOf("Silithus", {
 	{
 		name = "Cenarion Hold", faction = "Neutral", levels = "55-60",
-		hook = "The Cenarion Circle's fortress in the desert, holding the line nobody else will.",
+		hook = "The Cenarion Circle's stronghold against the silithid in Silithus.",
 		lore = {
-			"Cenarion Hold is the druids' fortified camp in Silithus, and the only organised settlement in the zone. The Cenarion Circle runs it as neutral ground open to Alliance and Horde alike.",
-			"Their job is to watch the hives, fight the Twilight Hammer and prepare for the gates opening. They are undermanned and they know what is underneath them.",
+			"Cenarion Hold is the Cenarion Circle's fortified settlement in Silithus. It recruits both Alliance and Horde adventurers to fight the expanding silithid threat.",
+			"The hold also investigates the Twilight's Hammer. Geologist Larksbane seeks fragments of a tablet from a ruined cultist camp to the northwest.",
+			"Commander Mar'alith's soldiers are spread thin. Alongside his duties at the outpost, he is searching for his missing wife, Natalia.",
 		},
+		readMore = { "Wowpedia: Cenarion Hold", "Wowpedia: Taking Back Silithus (Alliance)", "Wowpedia: Taking Back Silithus (Horde)", "Wowpedia: The Twilight Mystery", "Wowpedia: Dearest Natalia" },
 	},
 	{
 		name = "Ahn'Qiraj", parent = "Silithus", faction = "Hostile", levels = "60",
-		hook = "The qiraji city, sealed behind a wall, with an Old God at the bottom of it.",
+		hook = "The qiraji city beyond the Scarab Wall, with an Old God beneath it.",
 		lore = {
-			"Ahn'Qiraj is the qiraji empire's capital, built over C'Thun's prison. The qiraji are insectoid, intelligent, and wholly devoted to the Old God beneath them.",
-			"The night elves and the bronze dragonflight sealed the city behind the Scarab Wall after the War of the Shifting Sands, and the seal has held for a thousand years. It is weakening.",
-			"What is inside is not an army alone. C'Thun is an Old God, one of the entities the titans themselves could only imprison, and the qiraji are its instrument.",
+			"Ahn'Qiraj lies at the southern end of Silithus. Its qiraji serve C'Thun, the Old God beneath the city.",
+			"At the end of the War of the Shifting Sands, the night elves and the dragonflights sealed the qiraji behind the Scarab Wall. The ruins and temple beyond the wall still hold the forces of that ancient enemy.",
 		},
-		readMore = { "Wowpedia: Ahn'Qiraj", "Wowpedia: C'Thun" },
+		readMore = { "Wowpedia: Ahn'Qiraj", "Wowpedia: The War of the Shifting Sands (short story)" },
 	},
 	{
 		name = "The Scarab Wall", parent = "Silithus", faction = "Contested",
@@ -1902,12 +1907,14 @@ SubsOf("Silithus", {
 		},
 	},
 	{
-		name = "Bronzebeard Encampment", parent = "Silithus", faction = "Alliance",
-		hook = "A dwarven camp in the desert, digging where it probably should not.",
+		name = "Bronzebeard Encampment", parent = "Silithus", faction = "Neutral",
+		hook = "A dwarven research camp studying the silithid hives.",
 		lore = {
-			"The Explorers' League has a camp in Silithus, because of course it does. The titan connection to Ahn'Qiraj and the Old Gods is exactly the sort of thing Ironforge cannot leave alone.",
-			"The Cenarion Circle's view of the dig is not enthusiastic. The druids are holding a line against an Old God's prison, and a dwarven team digging exploratory trenches next to it strikes them as the worst possible use of the ground.",
+			"Bronzebeard Encampment stands in southern Silithus, east of the Scarab Wall. Rutgar Glyphshaper and Frankal Stonebridge work here.",
+			"Rutgar needs rubbings of the glyphs on crystals inside the three silithid hives. Frankal is gathering material for an elixir he hopes will help decipher the language.",
+			"The researchers also have information about the missing Natalia. Commander Mar'alith sends adventurers from Cenarion Hold to question them.",
 		},
+		readMore = { "Wowpedia: Bronzebeard Encampment", "Wowpedia: Glyph Chasing", "Wowpedia: Breaking the Code", "Wowpedia: Dearest Natalia" },
 	},
 	{
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
@@ -2017,13 +2024,12 @@ SubsOf("Azshara", {
 SubsOf("The Barrens", {
 	{
 		name = "Bael Modan", parent = "The Barrens", faction = "Alliance",
-		hook = "A dwarven dig in the southern Barrens, sunk into ground the tauren consider theirs.",
+		hook = "A dwarven excavation on land taken from the Stonespire tauren.",
 		lore = {
-			"Bael Modan is an Explorers' League excavation, and the League digs for one reason: after Uldaman, Ironforge believes the dwarves were shaped from living stone by the titans, and every site is read as more of that record.",
-			"The difficulty is where this one is. The southern Barrens is tauren country and Horde ground, and a fortified dwarven dig in the middle of it is not read as archaeology by anybody living nearby.",
-			"Both positions are sincere, and that is what makes it intractable. The dwarves are looking for their own origins and the tauren are watching foreigners fortify their land.",
+			"Bael Modan is a dwarven dig in the southern Barrens, defended by a keep. The excavation is directed by Prospector Khazgorm, a member of the Explorers' League.",
+			"Gann Stonespire says the dwarves killed or drove off many of his people and tore into their ancestral lands with machines and explosives. His attempts at diplomacy failed, and he now seeks help driving the excavators out.",
 		},
-		readMore = { "Wowpedia: Bael Modan", "Wowpedia: Explorers' League", "Wowpedia: Uldaman" },
+		readMore = { "Wowpedia: Bael Modan", "Wowpedia: Gann's Reclamation" },
 	},
 })
 
@@ -2759,13 +2765,12 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Bones of Grakkarond", parent = "Silithus", faction = "Contested",
-		hook = "A bronze dragon's skeleton, kept as a holy site by the things that killed him.",
+		hook = "A fallen dragon's skeleton, sacred to the anubisath.",
 		lore = {
-			"Grakkarond was a bronze dragon and he was killed here by Ossirian the Unscarred during the War of the Shifting Sands. His bones are still in the sand in central Silithus and they are enormous.",
-			"The bronze flight fought that war beside the night elves, and it went so badly that the best available ending was the Scarab Wall and a sealed gate. A dragon of Nozdormu's own flight dying in this desert is part of the price of that.",
-			"The Anubisath hold the bones sacred. They are qiraji constructs, stone-made and old, and they treat the skeleton of a dragon their side brought down as a place of reverence.",
+			"The enormous bones of Grakkarond lie in central Silithus. During the War of the Shifting Sands, Ossirian brought the dragon down by hurling a sword through his wing.",
+			"Grakkarond nearly killed Ossirian, but the anubisath and qiraji overwhelmed the grounded dragon. The anubisath revere the bones as a monument to their victory.",
 		},
-		readMore = { "Wowpedia: Bones of Grakkarond", "Wowpedia: War of the Shifting Sands", "Wowpedia: Anubisath" },
+		readMore = { "Wowpedia: Bones of Grakkarond", "Wowpedia: Game Guide/Monsters of Ahn'Qiraj" },
 	},
 	{
 		name = "The Swarming Pillar", parent = "Silithus", faction = "Hostile",

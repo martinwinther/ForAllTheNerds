@@ -1,7 +1,7 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P4, Winterhoof Water Well onwards, 25 entries.
-475 of 916 surviving vanilla entries covered; see run 19 for counting details.
+IN PROGRESS. Next: P4, Craftsmen's Terrace onwards, 25 entries.
+499 of 915 surviving vanilla entries covered; see run 19 for counting details.
 
 One bounded chunk per run. The point of the sweep is to replace a blacklist of
 era mistakes somebody happened to think of with a ledger that fails on anything
@@ -9,7 +9,7 @@ unproven. `tools/era-audit.md` records the six errors already found and how
 they got in. Read it before touching an entry, and do not repeat that analysis
 here.
 
-The current corpus is 916 vanilla entries and 74 Forever ones, from `lua
+The current corpus is 915 vanilla entries and 74 Forever ones, from `lua
 tools/dump-prose.lua`. Only the vanilla ones are in scope. A Forever entry is
 judged against Forever's own sources and is correctly absent from every 1.12
 oracle. Never flag it for that.
@@ -58,7 +58,7 @@ Every boat, ferry, zeppelin and flight claim in the prose was checked against
 `TaxiNodes` for `wow_classic_era` and the `transports` table of the 1.12
 database. Five were wrong. See the log.
 
-**P4. Claim review, 25 entries per run. IN PROGRESS, 475 of 916 surviving entries covered.**
+**P4. Claim review, 25 entries per run. IN PROGRESS, 499 of 915 surviving entries covered.**
 The only tier that catches a sentence where every word is vanilla and the state
 is not, as at the Headland. For each vanilla entry, read the `(Classic)`
 article for its place and ask one question: does the entry assert anything that
@@ -2893,3 +2893,186 @@ Winterfall Village, Winterspring, Yojamba Isle, Zul'Farrak, Zul'Gurub.
 Next: P4, the next 25 entry records by the recomputed ranking, beginning with
 Winterhoof Water Well. Count duplicate names as separate entries when present.
 P5 covers run 19 onwards; this run has not shipped.
+
+
+### 2026-11-18, P4, run 20 of about 37
+
+Reviewed the next 25 vanilla entries, Winterhoof Water Well through Circle of
+Outer Binding, after recomputing the remaining article ranking. All 25 names
+have one vanilla entry each. Revised 24 and removed Witherbark Caverns, a
+planned beta location. Coverage is now 499 of 915 surviving vanilla entries,
+with 416 left. The cumulative 499-name list also records four removed names;
+duplicate surviving entries account for the difference, as explained in run 19.
+No Forever entry was changed. No separate Classic article existed for any of
+these 25 place titles. The database, parsed tables with schemas, and wiki
+extracts remain in temporary storage.
+
+**Every entry checked.** The following also records the supported parts that
+were retained. Quest and creature ids refer to cmangos 1.12.1.
+
+| Entry | Finding and disposition | Evidence |
+|---|---|---|
+| Winterhoof Water Well | Kept the southern well; replaced invented ownership customs with goblin poisoning, guards and cleansing preparations | Quests 748 and 754; place article separates later Grimtotem poisoning. No ritual outcome disclosed |
+| Witherbark Caverns | Removed the entry. The village's real cave remains described under Witherbark Village | Place article is explicitly Removedfrombeta; identifying it with the village cave is labelled speculation. No separate seed or ledger row existed |
+| Witherbark Village | Kept trolls and their village; removed invented historical grievance and replaced it with the lake, cave and alliance against Hammerfall | Quest 677; village article's original geography and inhabitants |
+| Zoram'gar Outpost | Kept the Horde coastal camp; replaced the absolute isolation claim with its documented threats and research | Quests 235, 824 and 6641; creature 12736. No later harbour, inn or commander imported |
+| Zul'Mashar | Corrected wholesale Scourge occupation to living Mossflayer trolls threatened by infection | Quest 6024; creature spawns around 10822 include humanoid scouts, cannibals and shadowhunters, plus undead Infiltrator Hameya. Hameya's plea supplies the threat without revealing a quest outcome |
+| Zun'watha | Corrected abandoned ruins to an occupied Witherbark settlement; described Nimboya's stated grievance | Quest 2932; original hideskinner and venomblood spawns near creature 8219. The article's abandonment claim cites Cataclysm |
+| Ahn'Qiraj | Kept the city, C'Thun and historical sealing. Removed the absolute currently-sealed state, invented weakening and claim that titans could only imprison Old Gods | Place article's original game section and The War of the Shifting Sands short story; no gate-opening or raid outcome disclosed |
+| Astranaar | Kept island, lake and Alliance services. Removed forest-wide command and busiest-settlement claims; added the immediate furbolg threat | Quest 1054; place article's original geography and facilities |
+| Bael Modan | Kept dwarven excavation and tauren conflict. Removed universal archaeological motives and the claim of equally sincere positions; used Gann's actual account | Quests 843 and 846; creature 3392 is Prospector Khazgorm of the Explorers' League |
+| Balia'mah Ruins | Corrected Bloodscalp occupants to Skullsplitters. Removed the unsupported antiquity and strategic effects of the tribal war | Quest 585 explicitly locates Skullsplitter trophy skulls at Balia'mah; place geography |
+| Ban'ethil Barrow Den | Kept Gnarlpine invasion and endangered sleeping druids. Replaced broad history with the Relics of Wakening needed for their ritual | Quests 475 and 483; creature 2078. No awakening outcome disclosed |
+| Bitter Reaches | Corrected naga-held coast to northeastern terrain with wildlife and giants. Removed speculative proximity to Zin-Azshari | Place article's pre-Cataclysm description; creatures 6146-6148 have elite rank in 1.12 |
+| Blackrock Pass | Kept the Redridge-Steppes route and border gate. Removed invented Stonewatch construction purpose and its claimed effect on the pass | Place article, with its pre-2.3.0 elite-area history |
+| Bladefist Bay | Kept the bay's position near Skull Rock. Removed the later harbour and Kargath's later-published gladiator escape account | Place article dates harbour construction to Cataclysm; Kargath article sources the detailed slave revolt to Lords of War |
+| Bones of Grakkarond | Kept the bones, battle and anubisath reverence. Clarified that Ossirian grounded the dragon and the gathered forces killed him; removed the unsupported construct-origin claim | Original Game Guide/Monsters of Ahn'Qiraj account; quest 8315 confirms the bones in Silithus. Did not import Grakkarond's later projection NPC |
+| Bough Shadow | Kept the Dream portal and green guardians. Removed the unsupported claim that they attack one another; described original drakes | Place article; creatures 5314 and 12498 are elite dragonkin, with original spawns; no Nightmare Incursion or later tree-origin story |
+| Boulderfist Hall | Kept ogre occupation. Removed largest-power and collapse-causation claims; described Kor'gresh's stolen wand | Quest 693 and creature 2793. No elite or roaming claim added for Kor'gresh |
+| Bronzebeard Encampment | Replaced invented Cenarion objections and titan digging with glyph research and enquiries about Natalia. Corrected faction from Alliance to Neutral | Quests 8304, 8309 and 8310; creatures 15170 and 15171 both faction 35; article dates camp to 1.8.0 |
+| Browman Mill | Corrected grain mill to lumber mill; removed invented involvement in plague shipments. Kept haunted Scourge occupation | Place article; original undead spawns north of Light's Hope Chapel. Stephen Browman is absent from the 1.12 creature table and his article explicitly dates him to 4.0.3a, so he was not added |
+| Burning Blade Coven | Kept cult, cave and new recruits. Removed speculative faction motives and relative military strength; described demons, Yarrog and the medallion task | Quests 794 and 805; creature 3183 and original cave inhabitants |
+| Cenarion Hold | Kept neutral recruitment, silithid defense and thinly spread forces. Removed only-settlement and gate-opening assumptions; described Larksbane's research and the commander's concern | Quests 8275, 8276, 8284 and 8304; Dearest Natalia's original dialogue identifies his missing wife |
+| Champions' Hall | Kept rank-dependent access and quartermasters; removed invented diplomacy and title-origin claims. Specified Knight rank for the portal | Place article dates removal of rank requirement to 2.0.1; Honor system (Classic); original hall vendors |
+| Circle of East Binding | Corrected Witherbark guardians to water elementals; removed invented pre-Arathor dating | Quest 651; fourteen Cresting Exile spawns at the binding stone; original circle article |
+| Circle of Inner Binding | Replaced unknown purpose and arcane speculation with the strongest binding stone and earth guardians | Quest 651; Rumbling Exile spawns at the stone; original circle article |
+| Circle of Outer Binding | Corrected cultists and unguarded power to air elemental guardians and the binding key | Quest 651; twelve Thundering Exile spawns at the stone. No later quest resolution revealed in any circle entry |
+
+**Ledger and checks.** Added 49 vanilla rows and one grammatical fragment,
+Titles. All 50 were absent before addition and the validator reported them as
+missing. The fragment surfaced in Corrahn's Dagger after the lowercase use in
+Champions' Hall was removed; that existing entry was not edited. Names have
+specific creature, quest or original-area evidence, including full character
+names as well as the shortened forms the extractor reads. The ledger now has
+1,907 rows. No row was deleted or re-verdict changed, no new check was added,
+and no rate budget changed, so no new negative test was required.
+
+Gates: default validation and all nine CI configurations pass with Lua 5.4.8,
+with no warnings. check-gaps passes with 43 explained gaps. Touched-file prose
+lint has no new findings: Cities, the ledger and this log are clean; Eastern
+Kingdoms remains at 8 RHYTHM findings, Locales at 2, and Kalimdor falls from 6
+to 5. git diff --check is clean.
+
+Martin has explicitly requested the next 1.2.x release after this dev push.
+The release preparation will record runs 19 and 20 in the changelog and update
+the shipped-run summary so P5 does not repeat them. The sweep itself remains
+unfinished; no P5 work is claimed by this release.
+
+**Entries covered so far (499 place names).**
+Addle's Stead, Aerie Peak, Agama'gor, Agamand Mills, Agmond's End,
+Ahn'Qiraj, Alcaz Island, Alexston Farmstead, Alterac Mountains, Alterac
+Valley, Alther's Mill, Ambermill, Amberstill Ranch, Ameth'Aran, Andorhal,
+Angerfang Encampment, Anvilmar, Apocryphan's Rest, Arathi Basin, Arathi
+Highlands, Ashenvale, Astranaar, Auberdine, Azshara, Azurelode Mine,
+Badlands, Bael Modan, Bael'dun Digsite, Balia'mah Ruins, Balnir Farmstead,
+Ban'Thallow Barrow Den, Ban'ethil Barrow Den, Baradin Bay, Bashal'Aran,
+Bathran's Haunt, Bay of Storms, Beezil's Wreck, Beggar's Haunt, Beren's
+Peril, Bitter Reaches, Blackfathom Deeps, Blackrock Depths, Blackrock
+Mountain, Blackrock Pass, Blackrock Spire, Blackthorn Ridge, Blackwater
+Cove, Blackwing Lair, Blackwolf River, Blackwood Den, Bladefist Bay,
+Blasted Lands, Bloodhoof Village, Bloodvenom Post, Bogen's Ledge, Bolgan's
+Hole, Bones of Grakkarond, Booty Bay, Bough Shadow, Boulderfist Hall,
+Boulderslide Cavern, Brackenwall Village, Brackwell Pumpkin Patch,
+Brambleblade Ravine, Bramblescar, Brewnall Village, Brill, Brill Town Hall,
+Bronzebeard Encampment, Browman Mill, Burning Blade Coven, Burning Steppes,
+Caer Darrow, Camp Aparaje, Camp Boff, Camp E'thok, Camp Mojache, Camp
+Taurajo, Camp Wurg, Cathedral Square, Cenarion Enclave, Cenarion Hold,
+Champions' Hall, Chill Breeze Valley, Chillwind Camp, Circle of East
+Binding, Circle of Inner Binding, Circle of Outer Binding, Circle of West
+Binding, Cleft of Shadow, Coldridge Pass, Coldridge Valley, Corrahn's
+Dagger, Crown Guard Tower, Dalaran Crater, Dalson's Tears, Dandred's Fold,
+Darkshire, Darkshore, Darkwhisper Gorge, Darnassus, Deadeye Shore, Deadwind
+Pass, Deadwood Village, Deathknell, Deeprun Tram, Deepwater Tavern,
+Desolace, Diamondhead River, Dire Maul, Direforge Hill, Dolanaar,
+Draco'dar, Draenil'dur Village, Dragonmaw Gates, Dreadmaul Hold, Dreadmaul
+Rock, Dun Garok, Dun Modr, Dun Morogh, Durnholde Keep, Durotar, Duskwood,
+Dustfire Valley, Dustwallow Marsh, Dwarven District, East Pillar, Eastern
+Plaguelands, Eastvale Logging Camp, Eastwall Tower, Echo Isles, Echo Ridge
+Mine, Elder Rise, Elwynn Forest, Emberstrife's Den, Emerald Sanctuary,
+Ethel Rethor, Everlook, Faldir's Cove, Falfarren River, Feathermoon
+Stronghold, Felpaw Village, Felwood, Feralas, Field of Giants, Flame Crest,
+Forest Song, Forlorn Ridge, Fray Island, Freewind Post, Frostfire Hot
+Springs, Frostmane Hold, Frostwhisper Gorge, Furlbrow's Pumpkin Farm,
+Gadgetzan, Galak Hold, Gallows' End Tavern, Garren's Haunt, Garrison
+Armory, Gates of Ahn'Qiraj, Gavin's Naze, Gelkis Village, Ghost Walker
+Post, Gnomeregan, Gol'Bolar Quarry, Gold Coast Quarry, Gold Road, Greenpaw
+Village, Grim Batol, Grimtotem Post, Grol'dom Farm, Grom'gol Base Camp,
+Grommash Hold, Grove of the Ancients, Gunstan's Post, Haldarr Encampment,
+Hall of Legends, Hammerfall, Hearthglen, Helm's Bed Lake, Hetaera's Clutch,
+High Rise, Highperch, Hillsbrad, Hillsbrad Fields, Hillsbrad Foothills,
+Hiri'watha, Honor's Stand, Hunter Rise, Idlewind Lake, Iris Lake,
+Ironforge, Ironstone Camp, Isle of Dread, Itharius's Cave, Jadefire Run,
+Jademir Lake, Jaggedswine Farm, Jaguero Isle, Janeiro's Point, Jangolode
+Mine, Jerod's Landing, Jintha'Alor, Kargath, Kharanos, Kodo Graveyard, Kodo
+Rock, Kolkar Crag, Kolkar Village, Kormek's Hut, Lake Everstill, Lake
+Falathim, Lake Mennar, Lakeridge Highway, Lakeshire, Lakkari Tar Pits,
+Land's End Beach, Lethlor Ravine, Light's Hope Chapel, Loch Modan,
+Lordamere Internment Camp, Lushwater Oasis, Maestra's Post, Magram Village,
+Malaka'jin, Malden's Orchard, Maraudon, Mardenholde Keep, Marshal's Refuge,
+Menethil Bay, Menethil Harbor, Menethil Keep, Mirage Flats, Mirage Raceway,
+Mirkfallon Lake, Mirror Lake Orchard, Misty Pine Refuge, Misty Reed Post,
+Misty Reed Strand, Misty Valley, Molten Core, Moonbrook, Moonwell, Mor'shan
+Rampart, Morgan's Vigil, Mosshide Fen, Mulgore, Mystic Ward, Naxxramas,
+Nesingwary's Expedition, Night Web's Hollow, Nighthaven, Noonshade Ruins,
+North Tide's Hollow, Northfold Manor, Northpass Tower, Northridge Lumber
+Camp, Northshire Valley, Northshire Vineyards, Northwatch Hold, Old Town,
+Olsen's Farthing, Oneiros, Onyxia's Lair, Orgrimmar, Pestilent Scar, Pool
+of Tears, Purgation Isle, Pyrewood Village, Quel'Danil Lodge, Quel'Lithien
+Lodge, Ragefire Chasm, Ranazjar Isle, Raptor Grounds, Ratchet, Raven Hill,
+Raven Hill Cemetery, Ravenholdt Manor, Razorfen Downs, Razorfen Kraul,
+Razormane Grounds, Rebel Camp, Red Cloud Mesa, Redridge Canyons, Redridge
+Mountains, Refuge Pointe, Remtravel's Excavation, Render's Valley, Rethress
+Sanctum, Roguefeather Den, Roland's Doom, Ruins of Aboraz, Ruins of
+Ahn'Qiraj, Ruins of Alterac, Ruins of Andorhal, Ruins of Constellas, Ruins
+of Lordaeron, Ruins of Mathystra, Rut'theran Village, Sandsorrow Watch,
+Sardor Isle, Scalebeard's Cave, Scarlet Monastery, Scarlet Watch Post,
+Scholomance, Scuttle Coast, Searing Gorge, Sen'jin Village, Sentinel Hill,
+Seradane, Shadow Grave, Shadowfang Keep, Shadowsong Shrine, Shadra'Alor,
+Shalzaru's Lair, Shok'Thokar, Silithus, Silverpine Forest, Silverwind
+Refuge, Silverwing Outpost, Sishir Canyon, Skull Rock, Sofera's Naze,
+Solliden Farmstead, Sorrow Hill, Sorrowmurk, South Gate Outpost, South
+Tide's Run, Southbreak Shore, Southern Barrens, Southern Gold Road,
+Southern Savage Coast, Southfury River, Southpoint Tower, Southshore,
+Splintertree Post, Splithoof Crag, Splithoof Hold, Stagalbog, Stagalbog
+Cave, Starfall Village, Steamwheedle Port, Stillwater Pond, Stonard,
+Stonemaul Ruins, Stonesplinter Valley, Stonetalon Mountains, Stonetalon
+Peak, Stonewatch, Stonewatch Keep, Stonewrought Dam, Stonewrought Pass,
+Stormwind City, Stormwind Keep, Stranglethorn Vale, Stratholme, Stromgarde
+Keep, Sun Rock Retreat, Swamp of Sorrows, Tahonda Ruins, Talonbranch Glade,
+Talrendis Point, Tanaris, Tanner Camp, Tarren Mill, Teldrassil, Temple of
+Arkkoran, Temple of the Moon, Terror Wing Path, Terrordale, Thalanaar,
+Thalassian Base Camp, Thandol Span, The Altar of Zul, The Apothecarium, The
+Barrens, The Bulwark, The Charred Vale, The Crystal Shore, The Dagger
+Hills, The Dark Portal, The Dead Field, The Deadmines, The Decrepit Ferry,
+The Drag, The Dry Hills, The Farstrider Lodge, The Forgotten Coast, The
+Forgotten Pools, The Great Forge, The Great Lift, The Green Belt, The
+Greymane Wall, The Harborage, The Headland, The High Seat, The Hinterlands,
+The Hushed Bank, The Infectis Scar, The Jansen Stead, The Loch, The Mage
+Quarter, The Magic Quarter, The Marris Stead, The Master's Cellar, The
+Maul, The Merchant Coast, The Mor'shan Rampart, The Noxious Glade, The
+Park, The Pillar of Ash, The Red Reaches, The Royal Quarter, The Ruins of
+Kel'Theril, The Rustmaul Dig Site, The Scarab Dais, The Screeching Canyon,
+The Sepulcher, The Shattered Strand, The Shimmering Flats, The Shrine of
+Aessina, The Stagnant Oasis, The Stockade, The Tainted Scar, The Talon Den,
+The Talondeep Path, The Temple Gardens, The Temple of Atal'Hakkar, The
+Tower of Arathor, The Trade Quarter, The Tundrid Hills, The Twin Colossals,
+The War Quarter, The Weathered Nook, The Writhing Haunt, The Yorgen
+Farmstead, Theramore Isle, Thieves Camp, Thistleshrub Valley, Thondroril
+River, Thousand Needles, Three Corners, Thunder Bluff, Thunder Ridge,
+Thunderhorn Water Well, Tinker Town, Tiragarde Keep, Tirisfal Glades,
+Tor'kren Farm, Tower of Althalaxx, Tower of Azora, Trade District, Tyr's
+Hand, Uldaman, Uldum, Un'Goro Crater, Undercity, Ursolan, Uther's Tomb,
+Valley of Bones, Valley of Fangs, Valley of Heroes, Valley of Honor, Valley
+of Spears, Valley of Spirits, Valley of Strength, Valley of Trials, Valley
+of Wisdom, Valley of the Watchers, Valormok, Venture Co. Base Camp, Wailing
+Caverns, Warrior's Terrace, Warsong Gulch, Waterspring Field, Wavestrider
+Beach, Weazel's Crater, Webwinder Path, West Pillar, Western Plaguelands,
+Westfall, Wetlands, Whelgar's Excavation Site, Whisperwind Grove,
+Whitereach Post, Wildbend River, Windbreak Canyon, Windshear Crag,
+Winterfall Village, Winterhoof Water Well, Winterspring, Witherbark
+Caverns, Witherbark Village, Yojamba Isle, Zoram'gar Outpost, Zul'Farrak,
+Zul'Gurub, Zul'Mashar, Zun'watha.
+
+Next: P4, the next 25 entry records by the recomputed ranking, starting with
+Craftsmen's Terrace. P5 remains pending. The separately authorized release
+will include runs 19 and 20.

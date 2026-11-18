@@ -120,19 +120,21 @@ SubsOf("Alterac Mountains", {
 SubsOf("Arathi Highlands", {
 	{
 		name = "Circle of East Binding", faction = "Contested",
-		hook = "One of four standing circles in the Highlands, this one watched by Witherbark trolls.",
+		hook = "A stone circle guarded by water elementals near Hammerfall.",
 		lore = {
-			"Four of these circles stand in the Arathi Highlands: East, West, Outer and Inner Binding. They are deliberate work and they are old, and nothing in the Arathorian record claims them, which puts them before Thoradin.",
-			"Witherbark trolls hold the ground around this one. Amani presence in the Highlands predates every human claim, so if anybody alive has an inherited opinion about who raised the circles, it is them.",
+			"The Circle of East Binding stands in eastern Arathi Highlands, near Hammerfall. Cresting Exiles guard the Stone of East Binding at its centre.",
+			"This is one of four binding circles in the Highlands. The stone holds the Cresting Key, one of the keys needed to unlock the strongest binding stone.",
 		},
+		readMore = { "Wowpedia: Circle of East Binding", "Wowpedia: Stones of Binding" },
 	},
 	{
 		name = "Circle of Outer Binding", faction = "Contested",
-		hook = "A standing circle in the open Highlands, and a reliable place to find a cultist.",
+		hook = "A circle of binding stones guarded by air elementals.",
 		lore = {
-			"Arcane energy pools at the Binding circles. Whoever raised them was working with ley lines, and the effect has outlasted any explanation of the purpose.",
-			"That makes the circles useful to people the Highlands would be better off without. Syndicate magicians and worse have been found working at them, drawn by power nobody is maintaining and nobody is guarding.",
+			"The Circle of Outer Binding lies in central Arathi Highlands, near Refuge Pointe. Thundering Exiles guard the Stone of Outer Binding.",
+			"The stone holds the Thundering Key, one of three keys needed to unlock the Stone of Inner Binding.",
 		},
+		readMore = { "Wowpedia: Circle of Outer Binding", "Wowpedia: Stones of Binding" },
 	},
 	{
 		name = "Circle of West Binding", faction = "Contested",
@@ -256,11 +258,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Balia'mah Ruins", faction = "Hostile",
-		hook = "A Gurubashi ruin reoccupied by the Bloodscalp, living in their ancestors' stonework.",
+		hook = "Ancient troll ruins occupied by the Skullsplitter tribe.",
 		lore = {
-			"The Bloodscalp hold Balia'mah. They are Gurubashi descendants camped in Gurubashi architecture, the ordinary condition of troll life in this jungle rather than an irony anybody remarks on.",
-			"Their war with the Skullsplitter in the south is older than any human kingdom, and it has done more to keep both tribes off the roads than Booty Bay's bruisers or Stormwind's patrols ever managed.",
+			"Balia'mah Ruins lie east-southeast of Grom'gol Base Camp, on the eastern side of the river. Skullsplitter trolls occupy the old stonework.",
+			"The Bloodscalp are their enemies. The Skullsplitters keep trophy skulls at these ruins, as they do at their other settlements farther south.",
 		},
+		readMore = { "Wowpedia: Balia'mah Ruins", "Wowpedia: Speaking with Nezzliok (Classic)" },
 	},
 	{
 		name = "Ziata'jai Ruins", faction = "Hostile",
@@ -411,11 +414,12 @@ SubsOf("Eastern Plaguelands", {
 SubsOf("Durotar", {
 	{
 		name = "Burning Blade Coven", faction = "Hostile",
-		hook = "A cave of Burning Blade cultists, chasing the power that broke their own race.",
+		hook = "A demon-infested cave at the northern edge of the Valley of Trials.",
 		lore = {
-			"The Burning Blade want the old Horde's strength back: the demon blood, the warlock pacts, the thing that made the clans unstoppable and then unmade them. Thrall outlawed all of it.",
-			"The cults keep forming anyway. Gul'dan's Horde really was more powerful than the one Thrall built, and there are orcs who would take that trade. Recruits out of the Valley of Trials are sent here partly so they understand what they have joined and what they have not.",
+			"The Burning Blade Coven lies in the mountains along the northern edge of the Valley of Trials. The cave holds imps and felstalkers, with Yarrog Baneshadow deep inside.",
+			"Recruits are sent to recover a powerful medallion from the coven. The discovery of the Burning Blade here raises fears that a larger threat is spreading through Durotar.",
 		},
+		readMore = { "Wowpedia: Burning Blade Coven", "Wowpedia: Burning Blade Medallion (Classic)", "Wowpedia: Report to Sen'jin Village (Classic)" },
 	},
 	{
 		name = "Rocktusk Farm", faction = "Hostile",
@@ -1330,14 +1334,6 @@ SubsOf("Arathi Highlands", {
 			"They are Alterac's dispossessed nobility and their retainers. The kingdom was broken up for King Aiden Perenolde's dealings with the Horde, and they have been funding a grudge ever since.",
 		},
 	},
-	{
-		name = "Witherbark Caverns", faction = "Hostile",
-		hook = "Forest troll caves in the eastern Highlands.",
-		lore = {
-			"The Witherbark hold these caves as they hold their village further north. They are Amani forest trolls, and their presence in the Highlands is older than any human claim on it.",
-			"Arathor's founding war was fought against the Amani Empire, with high elven help. The trolls lost and have never accepted the result.",
-		},
-	},
 })
 
 SubsOf("Stranglethorn Vale", {
@@ -1475,11 +1471,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Browman Mill", faction = "Hostile",
-		hook = "A Lordaeron mill in the east, still standing and badly occupied.",
+		hook = "A haunted lumber mill north of Light's Hope Chapel.",
 		lore = {
-			"The mill worked grain for the eastern settlements before the plague. Given what the Cult of the Damned later did with Lordaeron's grain, it was a grim trade to have been in.",
-			"Andorhal was where the infected shipments went out from. Everything downstream of that, including mills like this one, handled it without knowing.",
+			"Browman Mill stands just north of Light's Hope Chapel in the Eastern Plaguelands. Scourge undead occupy the mill and its surroundings.",
 		},
+		readMore = { "Wowpedia: Browman Mill" },
 	},
 })
 
@@ -1522,11 +1518,11 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Bladefist Bay", faction = "Horde",
-		hook = "Orgrimmar's harbour, named for an orc who cut off his own hand.",
+		hook = "The bay on Durotar's northeastern coast, near Skull Rock.",
 		lore = {
-			"The bay serves Orgrimmar and carries what shipping the Horde has on this coast. It is named for Kargath Bladefist, chieftain of the Shattered Hand.",
-			"Kargath was held in a gladiator pit and severed his own hand to get free of the shackle, replacing it with a blade. His clan took its name from the act.",
+			"Bladefist Bay lies east of Orgrimmar, around Skull Rock on the northeastern Durotar coast. The southern coast of Azshara is visible across the water.",
 		},
+		readMore = { "Wowpedia: Bladefist Bay" },
 	},
 	{
 		name = "Southfury River", faction = "Contested",
@@ -1542,11 +1538,12 @@ SubsOf("Durotar", {
 SubsOf("Mulgore", {
 	{
 		name = "Winterhoof Water Well", faction = "Horde",
-		hook = "One of Mulgore's three tribal wells, kept by the Winterhoof.",
+		hook = "A sacred well in southern Mulgore, poisoned and guarded by goblins.",
 		lore = {
-			"Three wells stand on the Mulgore plains, one for each of the tauren tribes that settled here with the Bloodhoof. Water on open grassland is not a small thing.",
-			"The wells are tended rather than owned. Tauren practice treats the land as something held in trust, and the Earthmother's teachings run through how they use it.",
+			"The Winterhoof Water Well stands southeast of Bloodhoof Village, at the edge of the Rolling Plains. Goblins and their servants have tainted its water.",
+			"Mull Thunderhorn is preparing a cleansing totem and asks for paws from prairie wolves and talons from adult plainstriders. The goblins guarding the well must also be faced before its waters can be used again.",
 		},
+		readMore = { "Wowpedia: Winterhoof Water Well", "Wowpedia: Poison Water (Classic)", "Wowpedia: Winterhoof Cleansing (Classic)" },
 	},
 	{
 		name = "Thunderhorn Water Well", faction = "Horde",
