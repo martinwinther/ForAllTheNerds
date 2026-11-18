@@ -1212,11 +1212,12 @@ SubsOf("Loch Modan", {
 		name = "Dun Algaz", faction = "Hostile",
 		-- The client also reports this pass as "Algaz Gate".
 		aliases = { "Algaz Gate", "The Algaz Gate" },
-		hook = "The tunnel pass between Loch Modan and the Wetlands, and it is not securely held.",
+		hook = "The tunnel pass between Loch Modan and the Wetlands, threatened by Dragonmaw orcs.",
 		lore = {
-			"Dun Algaz is a dwarven-cut pass through the mountains, and it is the land link between Loch Modan and the coast. The dwarves built it, fortified it, and have been fighting over it since.",
-			"Dragonmaw orcs use the tunnels. The clan that enslaved the red dragonflight in the Second War scattered afterwards, and a hard core of them ended up in these hills.",
+			"Dun Algaz carries the road through the mountains between Loch Modan and the Wetlands. The Dragonmaw have expanded into the pass, threatening to cut off the dwarven homeland from Menethil Harbor.",
+			"Mountaineers recruit travellers to fight their way through and report to the port beyond.",
 		},
+		readMore = { "Wowpedia: Dun Algaz", "Wowpedia: The Algaz Gauntlet" },
 	},
 })
 
@@ -1309,11 +1310,11 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Gallows' Corner", faction = "Contested",
-		hook = "A crossroads in the southern mountains with an unencouraging name.",
+		hook = "An Alterac crossroads patrolled by Crushridge ogres.",
 		lore = {
-			"The corner is where the roads through southern Alterac meet, on the way between Hillsbrad and the Arathi Highlands.",
-			"Alterac has no law. The Syndicate works these roads and the Crushridge ogres work the high ground above them, and the name predates both.",
+			"Gallows' Corner lies near the Ruins of Alterac. Crushridge ogres hold the crossroads and patrol around its ruined scout tower.",
 		},
+		readMore = { "Wowpedia: Gallows' Corner" },
 	},
 	{
 		name = "Misty Shore", faction = "Contested",
@@ -1832,11 +1833,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Gordunni Outpost", faction = "Hostile",
-		hook = "An ogre camp in the central jungle, flying Gordunni colours.",
+		hook = "An ogre camp in the hills of Feralas.",
 		lore = {
-			"The Gordunni are the ogre clan spread across Feralas outside Dire Maul, and outposts like this one hold the ground between the ruins.",
-			"Dire Maul was Eldre'Thalas, a night elf city and a centre of Highborne magical study. The Gordok ogres hold it now, putting an ogre king in one of the great libraries of the old empire.",
+			"Gordunni ogres occupy the hills north of Lariss Pavilion. Their presence has scarred the surrounding forest, and the Horde seeks to stop their expansion.",
+			"The ogres bury cobalt at the outpost. An interested collector at Camp Mojache offers a shovel to anyone willing to dig it up.",
 		},
+		readMore = { "Wowpedia: Gordunni Outpost", "Wowpedia: The Ogres of Feralas (1)", "Wowpedia: Gordunni Cobalt" },
 	},
 	{
 		name = "Sardor Isle", faction = "Contested",

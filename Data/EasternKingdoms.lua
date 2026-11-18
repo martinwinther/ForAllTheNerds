@@ -45,12 +45,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Goldshire", faction = "Alliance", levels = "5-12",
-		hook = "A lumber town on the crossroads, and the first real tavern most Stormwind soldiers ever drink in.",
+		hook = "A crossroads town in Elwynn Forest, home to the Lion's Pride Inn.",
 		lore = {
-			"Goldshire exists because of the crossroads. The road from Stormwind to Westfall meets the road south to Duskwood here, and the forest around it is good timber. It is a working town: a smith, a mill, an inn, a militia barracks, and the magistrate who handles everything from land disputes to the standing bounty on a gnoll named Hogger.",
-			"The Lion's Pride Inn is the social centre of the whole region. Soldiers posted to Elwynn, caravan guards, and anybody walking south toward the dark woods all stop here first. Innkeeper Farley has heard every rumour in the kingdom twice.",
+			"Goldshire stands at the junction of the roads through central Elwynn Forest. Travellers can find an inn, a forge and trade trainers here.",
+			"Marshal Dughan is responsible for local security. He seeks help with threats in the surrounding forest, including murlocs and the Riverpaw gnolls.",
 		},
-		didYouKnow = "The town's militia is badly understrength. Most of Stormwind's veterans died in the First War or never came home from Draenor after the Second, and the kingdom has been short of soldiers ever since.",
+		readMore = { "Wowpedia: Goldshire", "Wowpedia: Riverpaw Gnoll Bounty", "Wowpedia: A Fishy Peril" },
 	},
 	{
 		name = "Lion's Pride Inn", parent = "Elwynn Forest", faction = "Alliance",
@@ -78,11 +78,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Crystal Lake", parent = "Elwynn Forest", faction = "Contested",
-		hook = "Elwynn's largest lake, clear enough to be named for it and murloc-infested enough to be avoided.",
+		hook = "A lake east of Goldshire, with murlocs along its shores.",
 		lore = {
-			"The lake feeds the streams that water half of Elwynn's farmland. The murloc problem is more than cosmetic. Murlocs came up the rivers from the coast and established nests on the shoreline. They defend territory with a vigour the local fishermen find unreasonable.",
-			"Nobody is quite sure where murlocs come from or what they want. They build, they speak something, they use crude tools, and they appear on coastlines and lakeshores across the world with no obvious origin. Stormwind's scholars have mostly settled on not thinking about it.",
+			"Crystal Lake lies just east of Goldshire in Elwynn Forest. Murlocs inhabit its shores, making the water dangerous for inexperienced travellers.",
+			"William Pestle seeks crystal kelp from these murlocs for an invisibility liquor. The plant usually grows in the ocean, but murlocs sometimes collect it.",
 		},
+		readMore = { "Wowpedia: Crystal Lake", "Wowpedia: Collecting Kelp" },
 	},
 	{
 		name = "Stone Cairn Lake", parent = "Elwynn Forest", faction = "Contested",
@@ -419,11 +420,12 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "Fenris Isle", parent = "Silverpine Forest", faction = "Hostile",
-		hook = "An island keep in Lordamere Lake, held by worgen and whatever else washed up.",
+		hook = "An island in Lordamere Lake occupied by the Rot Hide gnolls.",
 		lore = {
-			"Fenris Keep sits on an island in Lordamere Lake and was another Lordaeron holding. The worgen reached it, and it has been theirs ever since.",
-			"Its isolation suits people who would rather not be found, and it has drawn an assortment of Scourge, worgen and worse.",
+			"Fenris Isle lies in Lordamere Lake, east of the Decrepit Ferry. The Rot Hide gnolls occupy the island and its keep, making it a Scourge stronghold in Silverpine Forest.",
+			"The Forsaken investigate the strange ichor within the gnolls before preparing an assault on their master, Thule Ravenclaw.",
 		},
+		readMore = { "Wowpedia: Fenris Isle", "Wowpedia: Rot Hide Ichor", "Wowpedia: Assault on Fenris Isle" },
 	},
 	{
 		name = "Beren's Peril", parent = "Silverpine Forest", faction = "Hostile",
@@ -435,11 +437,12 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "Deep Elem Mine", parent = "Silverpine Forest", faction = "Hostile",
-		hook = "A worked-out Lordaeron mine where the Forsaken are quietly digging for something else.",
+		hook = "A Silverpine mine occupied by worgen under its tainted foreman.",
 		lore = {
-			"The mine was a legitimate Lordaeron operation that has been abandoned, reoccupied and fought over since the plague. Dark iron, undead and Forsaken interests have all overlapped here.",
-			"The Forsaken's Royal Apothecary Society has a habit of taking over disused mines. They are large, defensible, and nobody asks what the smell is.",
+			"Arugal's magic has spread to Deep Elem Mine in the hills of Silverpine Forest. Worgen inhabit the workings under Grimson the Pale, the mine's former foreman.",
+			"The Forsaken want the mine for Varimathras' advance. Dalar Dawnweaver sends adventurers against Grimson before they can claim it.",
 		},
+		readMore = { "Wowpedia: Deep Elem Mine", "Wowpedia: Arugal's Folly (3)" },
 	},
 	{
 		name = "Malden's Orchard", parent = "Silverpine Forest", faction = "Contested",
@@ -1181,11 +1184,12 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Growless Cave", parent = "Alterac Mountains", faction = "Contested",
-		hook = "A bear cave in the western hills, named by somebody with a sense of humour.",
+		hook = "A yeti cave in the Alterac Mountains, sheltering a ceremonial flame.",
 		lore = {
-			"The cave is a den for the mountains' bears, which are large, numerous, and the least political threat in Alterac.",
-			"In a zone defined by treason, exile and organised crime, the bears come as something of a relief.",
+			"Mountain yeti inhabit Growless Cave. Inside stands the Flame of Uzel, one of three ceremonial pyres created by Helcular for his ritual.",
+			"The elusive yeti Frostmaw is also sought by hunters in these mountains.",
 		},
+		readMore = { "Wowpedia: Growless Cave", "Wowpedia: Helcular's Revenge (2)", "Wowpedia: Frostmaw (quest)" },
 	},
 })
 
@@ -1271,12 +1275,13 @@ SubsOf("Arathi Highlands", {
 		},
 	},
 	{
-		name = "Go'Shek Farm", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "A Highlands farm taken over by the Syndicate as a staging post.",
+		name = "Go'Shek Farm", parent = "Arathi Highlands", faction = "Horde",
+		hook = "A Horde-held farm in eastern Arathi, watched by Alliance investigators.",
 		lore = {
-			"Go'Shek was a working farm serving Stromgarde. The Syndicate took it, and it now supports their operations across the central Highlands.",
-			"The Highlands' farms are the clearest measure of Stromgarde's decline. They were feeding a kingdom; now they are feeding bandits.",
+			"Orcs and Forsaken occupy Go'Shek Farm near Witherbark Village. Hammerfall grunts guard the farm, where Apothecary Jorell conducts alchemical research.",
+			"Alliance agents investigate the Forsaken activity here and its connection to a courier travelling toward Tarren Mill.",
 		},
+		readMore = { "Wowpedia: Go'Shek Farm", "Wowpedia: Hints of a New Plague? (2)", "Wowpedia: Hints of a New Plague? (3)" },
 	},
 	{
 		name = "Faldir's Cove", parent = "Arathi Highlands", faction = "Contested",
@@ -1304,20 +1309,22 @@ SubsOf("Arathi Highlands", {
 		},
 	},
 	{
-		name = "Dabyrie's Farmstead", parent = "Arathi Highlands", faction = "Contested",
-		hook = "A working Highlands farm, holding out between the Syndicate and the Horde.",
+		name = "Dabyrie's Farmstead", parent = "Arathi Highlands", faction = "Alliance",
+		hook = "A human farm in northern Arathi, guarded by its own militia.",
 		lore = {
-			"The Dabyrie family still farm this land in the middle of a three-cornered war. It takes a particular sort of nerve.",
-			"Their position on the central road means everyone passes through and nobody protects them.",
+			"The Dabyrie family still farms this land in the northern Arathi Highlands. Labourers work the fields and militia guard the farmstead.",
+			"Genavie Callow bears a bitter grudge against the family. She accuses them of stealing the few precious belongings she had left after the plague and seeks revenge.",
 		},
+		readMore = { "Wowpedia: Dabyrie's Farmstead", "Wowpedia: To Steal From Thieves" },
 	},
 	{
 		name = "Drywhisker Gorge", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "A kobold-infested mine gorge in the east, close to Hammerfall.",
+		hook = "A kobold-held gorge and cave in eastern Arathi.",
 		lore = {
-			"Drywhisker is a mining gorge whose kobold population has become a real problem for the Horde at Hammerfall rather than a nuisance.",
-			"Kobolds spread wherever there are tunnels and candles, and the Highlands have both.",
+			"Drywhisker Gorge cuts into the mountains near Hammerfall. Drywhisker kobolds inhabit the cave at its end, where a crystal shard allows Myzrael to speak with the surface world.",
+			"The cave also contains bloodstone ore. Krazek in Booty Bay seeks samples from miners willing to make the journey.",
 		},
+		readMore = { "Wowpedia: Drywhisker Gorge", "Wowpedia: The Princess Trapped", "Wowpedia: Favor for Krazek" },
 	},
 })
 
@@ -1519,11 +1526,12 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Hammertoe's Digsite", parent = "Badlands", faction = "Alliance",
-		hook = "An Explorers' League dig outside Uldaman, and the survivors are not having a good time.",
+		hook = "A Badlands excavation overrun by Dark Iron dwarves.",
 		lore = {
-			"Hammertoe's team was excavating the approaches to Uldaman when things went badly. Troggs and Dark Iron interference have left the dig in a poor state.",
-			"The League's losses in the Badlands are substantial and Ironforge keeps sending more dwarves. The vault is considered worth it.",
+			"Hammertoe's Digsite lies in the northern Badlands, outside Uldaman. Dark Iron attackers seized the excavation and killed many of its workers.",
+			"A survivor nearby has lost his lucky pick to the attackers and asks for help recovering it.",
 		},
+		readMore = { "Wowpedia: Hammertoe's Digsite", "Wowpedia: A Dwarf and His Tools" },
 	},
 	{
 		name = "Apocryphan's Rest", parent = "Badlands", faction = "Contested",
@@ -1831,19 +1839,21 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "Grimesilt Dig Site", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A Dark Iron excavation run with press-ganged labour.",
+		hook = "A dwarven excavation seized by the Dark Irons.",
 		lore = {
-			"The Grimesilt dig is a Dark Iron operation, and the Dark Irons do not pay wages. The site runs on coerced labour and the overseers are not interested in complaints.",
-			"What they are digging for is not advertised. In a zone created by a botched summoning, that is a worrying omission.",
+			"The Dark Irons have taken over Grimesilt Dig Site in Searing Gorge. Dorius Stonetender lies badly injured at the bottom of the pit and asks for help returning to Ironforge.",
+			"Another worker has hidden in a nearby outhouse. Dark Iron geologists spotted him and locked him inside.",
 		},
+		readMore = { "Wowpedia: Grimesilt Dig Site", "Wowpedia: Suntara Stones", "Wowpedia: Caught!" },
 	},
 	{
 		name = "Firewatch Ridge", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A Dark Iron position on the northern ridge, full of fire magic.",
+		hook = "A Dark Iron camp overlooking the Cauldron.",
 		lore = {
-			"Firewatch Ridge is held by Dark Iron sorcerers and elementalists working directly in Ragnaros' service.",
-			"Dark Iron magic runs to fire and binding. They are not shamans; they compel elementals rather than ask them, and the elements in this region are correspondingly hostile.",
+			"Firewatch Ridge overlooks the great excavation in Searing Gorge. Dark Iron dwarves, mechanical golems and flame spiders occupy the ridge.",
+			"A cave in its northwestern reaches houses Twilight's Hammer cultists, including elite fire guards and geomancers.",
 		},
+		readMore = { "Wowpedia: Firewatch Ridge" },
 	},
 	{
 		name = "The Slag Pit", parent = "Searing Gorge", faction = "Hostile",
@@ -2033,19 +2043,21 @@ SubsOf("Western Plaguelands", {
 	},
 	{
 		name = "Gahrron's Withering", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "Another of the four plague farms, still in operation.",
+		hook = "A Scourge-held farm near the eastern edge of the Western Plaguelands.",
 		lore = {
-			"Gahrron's was a farm with a name and a family. It is now a Scourge blight works like its three neighbours.",
-			"The Argent Dawn's long-term campaign in this zone comes down to shutting these four farms down.",
+			"A plague cauldron stands in the fields at Gahrron's Withering. Wraiths and ghosts guard this farm near the border with the Eastern Plaguelands.",
+			"Researchers seek a sample of the cauldron's toxins to prepare counteragents. It is one of four cauldrons targeted in the campaign against the Scourge.",
 		},
+		readMore = { "Wowpedia: Gahrron's Withering", "Wowpedia: Target: Gahrron's Withering (Alliance)" },
 	},
 	{
 		name = "Felstone Field", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "The westernmost of the four plague farms.",
+		hook = "The westernmost of the four plague farms, still under the Scourge.",
 		lore = {
-			"Felstone Field completes the set of four with Dalson's Tears, Gahrron's Withering and the Writhing Haunt.",
-			"Each has a cauldron at its centre. Destroying them is the Argent Dawn's standing request to anyone passing through.",
+			"Felstone Field lies northwest of Andorhal. A plague cauldron stands in the fields, guarded by Scourge undead.",
+			"The campaign against the cauldrons begins with samples of their poisons. Researchers need these to develop counteragents that can be introduced into the mixture.",
 		},
+		readMore = { "Wowpedia: Felstone Field", "Wowpedia: Target: Felstone Field (Alliance)", "Wowpedia: Return to Chillwind Camp" },
 	},
 	{
 		name = "Dalson's Tears", parent = "Western Plaguelands", faction = "Hostile",
@@ -2368,13 +2380,12 @@ SubsOf("Blasted Lands", {
 SubsOf("Eastern Plaguelands", {
 	{
 		name = "Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A village the Scourge destroyed, with its dead still standing in it.",
+		hook = "A ruined village whose dead still haunt the Eastern Plaguelands.",
 		lore = {
-			"Darrowshire was an ordinary village in what was then Lordaeron's eastern countryside. When the Scourge came through during the Third War it was destroyed, and the militia that stood to meet it was killed to the last.",
-			"What is left is foundations, and the dead. The Plaguelands are full of places like this; Darrowshire is the one the living still argue about, because enough of the story survived for people to want it settled.",
-			"That argument is a thing to walk into rather than be told. The village is quiet now, and it is not empty.",
+			"Darrowshire lies in the southern hills of the Eastern Plaguelands. The Scourge destroyed the village during the Third War, and many of its defenders now serve as undead elsewhere in the region.",
+			"Pamela Redpath remains among the ruins. Her surviving family is searching for news of her.",
 		},
-		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Eastern Plaguelands" },
+		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Sister Pamela", "Wowpedia: Defenders of Darrowshire" },
 	},
 })
 
@@ -2394,13 +2405,12 @@ SubsOf("Tirisfal Glades", {
 SubsOf("Silverpine Forest", {
 	{
 		name = "Fenris Keep", parent = "Silverpine Forest", faction = "Hostile",
-		hook = "A keep on an island in Lordamere Lake, taken by a Kirin Tor mage who went over to the Scourge.",
+		hook = "A former Lordaeron keep held by Thule Ravenclaw and the Rot Hide gnolls.",
 		lore = {
-			"Fenris Keep stands on Fenris Isle, out in Lordamere Lake, and it mattered: a sizeable part of Lordaeron's standing military was quartered here.",
-			"It fell in the Third War, and not to an army. Thule Ravenclaw was a young and ambitious mage of the Kirin Tor who threw in with the Scourge, took the keep, and made himself master of the local gnolls. The Rot Hide are his doing.",
-			"An ambitious apprentice deciding the Scourge was the better offer was not unusual. Kel'Thuzad made the same calculation at the top of the Kirin Tor, and Dalaran is a ruin inside a dome because of it.",
+			"Fenris Keep stands on Fenris Isle in Lordamere Lake. Thule Ravenclaw, a mage who betrayed his brethren and allied with the Scourge, commands the Rot Hide gnolls here.",
+			"His former servant Alaric is among the victims of his magic. What Thule promised as protection from the plague instead left him trapped in undeath.",
 		},
-		readMore = { "Wowpedia: Fenris Keep", "Wowpedia: Thule Ravenclaw", "Wowpedia: Rot Hide" },
+		readMore = { "Wowpedia: Fenris Keep", "Wowpedia: Thule Ravenclaw (quest)", "Wowpedia: Resting in Pieces" },
 	},
 })
 

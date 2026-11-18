@@ -424,11 +424,11 @@ SubsOf("Darnassus", {
 	},
 	{
 		name = "Craftsmen's Terrace", faction = "Alliance",
-		hook = "The city's workshops, in a culture that does not much like manufacturing.",
+		hook = "Darnassus' northern district of workshops, trainers and shops.",
 		lore = {
-			"The Craftsmen's Terrace holds Darnassus' trade trainers and workshops.",
-			"Night elf craft tends toward the grown rather than the built. Their architecture is shaped from living material where possible. Darnassus looks nothing like Stormwind or Ironforge for that reason.",
+			"The Craftsmen's Terrace holds many of Darnassus' trade trainers and shops. Leatherworkers and enchanters work here, and travellers can stay at the district's inn.",
 		},
+		readMore = { "Wowpedia: Craftsmen's Terrace" },
 	},
 	{
 		name = "Tradesmen's Terrace", faction = "Alliance",

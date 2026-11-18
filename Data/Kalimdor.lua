@@ -257,11 +257,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Gnarlpine Hold", parent = "Teldrassil", faction = "Hostile",
-		hook = "A furbolg camp where a friendly people have gone mad.",
+		hook = "A furbolg stronghold in southwestern Teldrassil.",
 		lore = {
-			"The Gnarlpine were allies. Furbolgs and night elves share a long history of mutual respect, and the Gnarlpine's corruption is recent and specific.",
-			"Something in Teldrassil is doing this to them. They have taken to dark rituals and have stolen night elf relics, and the night elves are killing them while knowing exactly what they are killing.",
+			"Gnarlpine Hold lies in southwestern Teldrassil. Ursal the Mauler is found here among the hostile Gnarlpine furbolgs.",
+			"Athridas Bearmantle names Ursal as the creature responsible for disrupting the awakening of the Druids of the Talon. He asks for help against Ursal while preparing the ritual for the sleeping druids.",
 		},
+		readMore = { "Wowpedia: Gnarlpine Hold", "Wowpedia: Ursal the Mauler (quest)" },
 	},
 	{
 		name = "Ban'ethil Barrow Den", parent = "Teldrassil", faction = "Hostile",
@@ -738,14 +739,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Demon Fall Canyon", parent = "Ashenvale", faction = "Hostile",
-		hook = "The canyon where Grom Hellscream killed Mannoroth and freed his race.",
+		hook = "The canyon where Grom Hellscream killed Mannoroth and broke the blood curse.",
 		lore = {
-			"Mannoroth was the pit lord whose blood Gul'dan fed to the orcish clans, binding them to the Burning Legion. Grom Hellscream drank it first, and in the Third War he was corrupted by it a second time in these woods.",
-			"Thrall freed him. Together they hunted Mannoroth down to this canyon, and Grom struck the killing blow with the pit lord's own death throes taking him with it. Every orc alive was released from the blood curse in that moment.",
-			"Grom's tomb is here. It is the single most important place in orcish history, sitting in a night elf forest the Horde is fighting to log.",
+			"Demon Fall Canyon lies in southeastern Ashenvale. Here Thrall and Grom Hellscream confronted Mannoroth, the pit lord whose blood had bound the orcs to the Burning Legion. Grom's killing blow destroyed the demon, but the explosion also took his own life.",
+			"A monument honours Grom's sacrifice. During the Harvest Festival, Horde travellers bring offerings to its base.",
 		},
-		didYouKnow = "Thrall named the Horde's beachhead in Stranglethorn Grom'gol after him, and the Warsong clan's continued aggression in this forest is carried out in his name whether he would have wanted it or not.",
-		readMore = { "Wowpedia: Demon Fall Canyon", "Wowpedia: Grom Hellscream" },
+		readMore = { "Wowpedia: Demon Fall Canyon", "Wowpedia: Honoring a Hero (Horde)" },
 	},
 	{
 		name = "Silverwing Grove", parent = "Ashenvale", faction = "Alliance",
@@ -808,11 +807,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Fire Scar Shrine", parent = "Ashenvale", faction = "Hostile",
-		hook = "A night elf shrine taken by satyrs.",
+		hook = "A corrupted shrine in southwestern Ashenvale, occupied by demons.",
 		lore = {
-			"The shrine was a night elf site and the satyrs have taken it over for their own rituals.",
-			"Satyr practice is demonic, and turning Elune's shrines to that use is a deliberate provocation rather than mere convenience.",
+			"Fire Scar Shrine lies southwest of Astranaar. Demons inhabit the area, and the orc warlock Ilkrud Magthrull makes his home here.",
+			"His activities have drawn the attention of those investigating the Tower of Althalaxx. Adventurers are sent to confront him at the shrine.",
 		},
+		readMore = { "Wowpedia: Fire Scar Shrine", "Wowpedia: The Tower of Althalaxx (5)" },
 	},
 	{
 		name = "Mystral Lake", parent = "Ashenvale", faction = "Contested",
@@ -900,11 +900,12 @@ SubsOf("Thousand Needles", {
 	},
 	{
 		name = "Darkcloud Pinnacle", parent = "Thousand Needles", faction = "Hostile",
-		hook = "A Grimtotem tauren stronghold on a mesa.",
+		hook = "A Grimtotem settlement spread across the mesas of Thousand Needles.",
 		lore = {
-			"Darkcloud Pinnacle is held by the Grimtotem, the tauren tribe that rejected the Horde.",
-			"Their presence on a mesa top, the same tactic Freewind Post uses, makes them as hard to remove as the loyal tauren are.",
+			"Darkcloud Pinnacle stands east of the Great Lift. Rope bridges connect its inhabited mesas, and guards watch the approaches.",
+			"The Grimtotem keep secret correspondence in guarded chests here. Their dealings with visitors of unknown origin have drawn the attention of Freewind Post.",
 		},
+		readMore = { "Wowpedia: Darkcloud Pinnacle", "Wowpedia: Grimtotem Spying" },
 	},
 	{
 		name = "Splithoof Crag", parent = "Thousand Needles", faction = "Hostile",
@@ -1860,11 +1861,11 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Hive'Ashi", parent = "Silithus", faction = "Hostile",
-		hook = "One of three silithid hives in the open desert.",
+		hook = "A silithid hive in northern Silithus.",
 		lore = {
-			"Hive'Ashi is one of the three surface hives in Silithus, with Hive'Regal and Hive'Zora. Each is a silithid colony outside the sealed city.",
-			"That three hives exist outside the Scarab Wall is the clearest evidence that the seal is not holding.",
+			"Hive'Ashi is one of the three silithid hives in the open desert, alongside Hive'Regal and Hive'Zora. Its insects also infest the nearby Swarming Pillar.",
 		},
+		readMore = { "Wowpedia: Hive'Ashi" },
 	},
 	{
 		name = "Hive'Regal", parent = "Silithus", faction = "Hostile",
@@ -2072,13 +2073,11 @@ SubsOf("Tanaris", {
 SubsOf("Feralas", {
 	{
 		name = "Dream Bough", parent = "Feralas", faction = "Neutral",
-		hook = "A way into the Emerald Dream, and the Dream is no place for visitors.",
+		hook = "An Emerald Dream portal guarded by green dragons in northern Feralas.",
 		lore = {
-			"The Dream Bough is one of the points where the Emerald Dream touches this world. The Dream is Azeroth as it would have been without any of us: the green dragonflight's charge, and Ysera's.",
-			"Night elf druids sleep there. That is what the barrow dens are for, and Malfurion Stormrage has spent most of recorded history in it rather than awake.",
-			"Ways in are guarded for good reason. Something has been wrong in the Dream for a long while, and the dragons who are meant to watch it have not been forthcoming about what.",
+			"Dream Bough stands on a small island in Jademir Lake. A great tree shelters one of the portals to the Emerald Dream, and the green dragonflight guards the site.",
 		},
-		readMore = { "Wowpedia: Emerald Dream", "Wowpedia: Ysera", "Wowpedia: Green dragonflight" },
+		readMore = { "Wowpedia: Dream Bough" },
 	},
 	{
 		name = "The Maul", parent = "Feralas", faction = "Hostile",
