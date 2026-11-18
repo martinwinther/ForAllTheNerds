@@ -74,10 +74,11 @@ not tag and do not publish: releases are Martin's call.
 
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
-in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, and runs 17 and 18 in 1.2.13**, all released
+in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
+in 1.2.13, and runs 19 and 20 in 1.2.14**, all released
 mid-sweep at Martin's explicit instruction. Their player-facing lines are already
-in the changelog under those eight headings, so do not write them again. P5 now
-covers only P4 run 19 onwards, plus `tools/era-audit.md`, still not updated for
+in the changelog under those nine headings, so do not write them again. P5 now
+covers only P4 run 21 onwards, plus `tools/era-audit.md`, still not updated for
 anything since the original four errors.
 
 ## Oracles, in order of preference
@@ -3076,3 +3077,25 @@ Zul'Gurub, Zul'Mashar, Zun'watha.
 Next: P4, the next 25 entry records by the recomputed ranking, starting with
 Craftsmen's Terrace. P5 remains pending. The separately authorized release
 will include runs 19 and 20.
+
+
+### 2026-11-18, release 1.2.14
+
+Martin explicitly requested one further bounded pass, followed by a dev push,
+a merge into main and the next 1.2.x release. This release includes P4 runs 19
+and 20: 50 entries reviewed, 47 revised, two removed and one cleared unchanged.
+Both version strings are 1.2.14. CHANGELOG.md records only these previously
+unreleased runs; P5 must not repeat them and now covers run 21 onwards.
+
+The sweep remains in progress at 499 of 915 surviving vanilla entries.
+Craftsmen's Terrace is next, with 416 entries left. P5 has not started.
+Release preparation follows PUBLISHING.md: validate all nine configurations,
+check gaps and touched-file prose, build and inspect the zip, push dev and
+confirm CI for its exact SHA, then merge to main and publish the annotated tag.
+
+Release checks passed on all nine client configurations, with 43 explained
+gaps and clean prose lint on the release files. One existing Core.lua comment
+was rephrased to clear its comma-so rate finding; runtime behavior is unchanged.
+The local 1.2.14 zip passed the package checks and contains the matching TOC,
+Core version and license, with no development tools. Sweep commit d34239d
+passed GitHub Checks for that exact SHA before release preparation.
