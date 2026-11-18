@@ -7,7 +7,7 @@ local addonName, ns = ...
 local U = ns.U
 
 ns.NAME      = addonName
-ns.VERSION   = "1.2.13"
+ns.VERSION   = "1.2.14"
 ns.TITLE     = "ForAllTheNerds"
 
 -- ---------------------------------------------------------------------------
@@ -191,7 +191,7 @@ function ns.RecordUnknown(zone, sub)
 		return
 	end
 
-	-- Cap it, so a long session cannot grow the saved variables without limit.
+	-- Cap it to prevent unbounded growth of saved variables during long sessions.
 	local n = 0
 	for _ in pairs(db.unknown) do n = n + 1 end
 	if n >= UNKNOWN_CAP then return end

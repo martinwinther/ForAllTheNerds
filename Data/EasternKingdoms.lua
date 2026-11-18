@@ -110,11 +110,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Tower of Azora", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "A mage's tower on the eastern road, home to Stormwind's most distractible arcane scholar.",
+		hook = "Theocritus' tower in Elwynn, watching a rival in Redridge.",
 		lore = {
-			"Azora is a working arcanist's tower rather than an institution. Theocritus and his apprentices study here, far enough from Stormwind's Mage Quarter to do as they like and close enough to send for supplies.",
-			"Independent towers like this one were far more common before the Second War. The Kirin Tor's consolidation of magical study in Dalaran pulled most serious practitioners north, and the ones who stayed south tended to be eccentrics, specialists, or both.",
+			"The Tower of Azora stands east of Goldshire, along the road through Elwynn Forest. Theocritus lives here with the gnomish servants of Azora; merchants and an enchanting trainer also work inside.",
+			"His rival Morganth occupies the Tower of Ilgalar in Redridge. Theocritus sends adventurers to place a magical glyph near that tower so he can study his enemy's thoughts.",
 		},
+		readMore = { "Wowpedia: Tower of Azora", "Wowpedia: A Watchful Eye" },
 	},
 	{
 		name = "Mirror Lake", parent = "Elwynn Forest", faction = "Alliance",
@@ -1245,19 +1246,21 @@ SubsOf("Arathi Highlands", {
 	},
 	{
 		name = "Boulderfist Hall", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "The Boulderfist ogres' hold, and one of the three claimants to Stromgarde.",
+		hook = "An ogre stronghold east of Thandol Span.",
 		lore = {
-			"The Boulderfist clan is the largest ogre power in the Highlands and the reason Stromgarde's collapse became a rout. They have numbers and they have taken part of the city.",
-			"Ogres in the Eastern Kingdoms are the Horde's old leavings: brought over by Gul'dan during the Second War and left behind when it ended.",
+			"Boulderfist Hall lies in southern Arathi Highlands, east of Thandol Span. Boulderfist ogres occupy its caves.",
+			"Kor'gresh Coldrage has acquired a wand belonging to Trelane and uses blasts of ice to keep his fellows in line. Skuerto at Refuge Pointe wants the stolen wand recovered.",
 		},
+		readMore = { "Wowpedia: Boulderfist Hall", "Wowpedia: Wand over Fist" },
 	},
 	{
 		name = "Witherbark Village", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "A forest troll village, descendants of the empire Arathor broke.",
+		hook = "A forest troll village in southeastern Arathi, allied with the nearby ogres.",
 		lore = {
-			"The Witherbark are Amani forest trolls, and their presence here is older than any human claim. Arathor's entire founding war was against the Amani Empire, which once held this whole region.",
-			"The trolls lost that war and never accepted the result. From their perspective Stromgarde's ruin is a long-overdue correction.",
+			"Witherbark Village stands around a small lake in the southeastern Arathi Highlands. Trolls occupy the settlement and the cave behind it.",
+			"The Witherbark and the Boulderfist ogres are working together against Hammerfall. Drum Fel recruits adventurers to strike at the trolls south of the outpost.",
 		},
+		readMore = { "Wowpedia: Witherbark Village", "Wowpedia: Call to Arms (1)" },
 	},
 	{
 		name = "Thandol Span", parent = "Arathi Highlands", faction = "Contested",
@@ -1285,11 +1288,12 @@ SubsOf("Arathi Highlands", {
 	},
 	{
 		name = "Circle of Inner Binding", parent = "Arathi Highlands", faction = "Contested",
-		hook = "One of four ancient stone circles ringing the Highlands, and nobody is sure who raised them.",
+		hook = "The strongest binding stone in Arathi, guarded by earth elementals.",
 		lore = {
-			"Four circles stand in the Highlands: Inner, Outer, East and West Binding. They are clearly deliberate and clearly old, and most who study them come away thinking they predate Arathor.",
-			"Mages and cultists both take an interest in them. Arcane energy collects at the circles. That has attracted exactly the people you would not want collecting arcane energy.",
+			"The Circle of Inner Binding lies in southern Arathi Highlands, near Stromgarde Keep. Rumbling Exiles surround the Stone of Inner Binding.",
+			"It is the strongest of the four binding stones. Opening it requires keys from the other three circles.",
 		},
+		readMore = { "Wowpedia: Circle of Inner Binding", "Wowpedia: Stones of Binding" },
 	},
 	{
 		name = "Northfold Manor", parent = "Arathi Highlands", faction = "Hostile",
@@ -1759,11 +1763,12 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Zun'watha", parent = "The Hinterlands", faction = "Hostile",
-		hook = "Overgrown troll ruins in the western woods.",
+		hook = "Witherbark troll ruins in the southwestern Hinterlands.",
 		lore = {
-			"Another of the Hinterlands' abandoned Amani sites, now mostly trees and fallen stone.",
-			"The density of troll ruins here is a measure of how much of this continent the Amani Empire once held.",
+			"Zun'watha is a Witherbark settlement in the southwestern Hinterlands. Its hideskinners and venombloods occupy the ruins.",
+			"Nimboya sends adventurers against the Witherbark here and at Hiri'watha, seeking to punish what he calls the tribe's betrayal of Thrall.",
 		},
+		readMore = { "Wowpedia: Zun'watha", "Wowpedia: Grim Message" },
 	},
 	{
 		name = "Skulk Rock", parent = "The Hinterlands", faction = "Hostile",
@@ -1959,11 +1964,11 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Blackrock Pass", parent = "Burning Steppes", faction = "Contested",
-		hook = "The road between the Burning Steppes and Redridge.",
+		hook = "The gated route between Redridge and the Burning Steppes.",
 		lore = {
-			"Blackrock Pass is the route down out of the Steppes toward Redridge and, beyond it, Elwynn and Stormwind. It is the road the Blackrock orcs use.",
-			"Stonewatch Keep at the far end was built to close this pass. The orcs took Stonewatch, so the pass is open.",
+			"Blackrock Pass links the Redridge Mountains to the Burning Steppes. A gate marks the border, beyond which the road enters the scorched lands to the north.",
 		},
+		readMore = { "Wowpedia: Blackrock Pass" },
 	},
 })
 
@@ -2171,11 +2176,12 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Zul'Mashar", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "Troll ruins in the northeast, now Scourge-infested.",
+		hook = "A Mossflayer troll settlement threatened by the plague of undeath.",
 		lore = {
-			"Zul'Mashar is an Amani troll site, predating everything human in this region by a long way. The Scourge has taken it like everything else.",
-			"The trolls' holdings in the north were already in decline before the plague. The Scourge simply finished the job.",
+			"Zul'Mashar lies in the northeastern Eastern Plaguelands. Mossflayer scouts, cannibals and shadowhunters still occupy the settlement, with Warlord Thresh'jin among them.",
+			"The plague threatens the trolls from within. Hameya has written a desperate plea after infection began to overcome his will.",
 		},
+		readMore = { "Wowpedia: Zul'Mashar", "Wowpedia: Hameya's Plea" },
 	},
 	{
 		name = "The Noxious Glade", parent = "Eastern Plaguelands", faction = "Hostile",
@@ -2485,14 +2491,13 @@ SubsOf("Eastern Plaguelands", {
 
 SubsOf("Arathi Highlands", {
 	{
-		name = "The Tower of Arathor", parent = "Arathi Highlands", faction = "Alliance",
-		hook = "A tower named for the empire every human kingdom broke off from.",
+		name = "The Tower of Arathor", parent = "Arathi Highlands", faction = "Hostile",
+		hook = "A mage tower in fallen Stromgarde, occupied by ogres.",
 		lore = {
-			"Arathor was the first human nation, founded at Strom when the scattered tribes united under the Arathi. Every human kingdom since is a piece of it: Stormwind, Lordaeron, Alterac, Gilneas, Kul Tiras and Dalaran were all Arathorian colonies that outgrew the parent.",
-			"Strom became Stromgarde, and Stromgarde is a ruin in these highlands held in three parts by its own army, the Syndicate and the Boulderfist ogres. The kingdom that invented human unity could not hold its own capital.",
-			"Arathor's other legacy is the magi. The Arathi taught high elves' magic to a hundred selected humans and founded Dalaran on the result, and that bargain is behind a great deal of what followed.",
+			"The Tower of Arathor stands in the southwestern part of Stromgarde Keep. The archmage Trelane tried to defend it during the siege, but fled and left his possessions behind.",
+			"Boulderfist ogres now occupy the tower. Trelane has asked his former apprentice, the archmage Malin, to help recover the items he lost.",
 		},
-		readMore = { "Wowpedia: Arathor", "Wowpedia: Stromgarde", "Wowpedia: Strom" },
+		readMore = { "Wowpedia: Tower of Arathor", "Wowpedia: Malin's Request" },
 	},
 })
 

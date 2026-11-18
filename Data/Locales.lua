@@ -20,14 +20,6 @@ local SubsOf = ns.SubsOf
 
 SubsOf("Elwynn Forest", {
 	{
-		name = "Thieves Camp", faction = "Hostile", levels = "8-12",
-		hook = "A Defias camp inside Elwynn itself, further than the Brotherhood should ever have got.",
-		lore = {
-			"The Defias are supposed to be a Westfall problem. This camp sits in the southwestern corner of Elwynn, on the wrong side of the Westbrook Garrison, and its presence says more about the Brotherhood's reach than Stormwind would care to hear.",
-			"The men camped here are not career bandits. Most were masons, carters and labourers a few years ago, and they are within a day's walk of the city they rebuilt and were never paid for.",
-		},
-	},
-	{
 		name = "Heroes' Vigil", faction = "Alliance",
 		hook = "A hilltop monument east of Goldshire, raised for soldiers the kingdom could not bring home.",
 		lore = {
@@ -128,19 +120,21 @@ SubsOf("Alterac Mountains", {
 SubsOf("Arathi Highlands", {
 	{
 		name = "Circle of East Binding", faction = "Contested",
-		hook = "One of four standing circles in the Highlands, this one watched by Witherbark trolls.",
+		hook = "A stone circle guarded by water elementals near Hammerfall.",
 		lore = {
-			"Four of these circles stand in the Arathi Highlands: East, West, Outer and Inner Binding. They are deliberate work and they are old, and nothing in the Arathorian record claims them, which puts them before Thoradin.",
-			"Witherbark trolls hold the ground around this one. Amani presence in the Highlands predates every human claim, so if anybody alive has an inherited opinion about who raised the circles, it is them.",
+			"The Circle of East Binding stands in eastern Arathi Highlands, near Hammerfall. Cresting Exiles guard the Stone of East Binding at its centre.",
+			"This is one of four binding circles in the Highlands. The stone holds the Cresting Key, one of the keys needed to unlock the strongest binding stone.",
 		},
+		readMore = { "Wowpedia: Circle of East Binding", "Wowpedia: Stones of Binding" },
 	},
 	{
 		name = "Circle of Outer Binding", faction = "Contested",
-		hook = "A standing circle in the open Highlands, and a reliable place to find a cultist.",
+		hook = "A circle of binding stones guarded by air elementals.",
 		lore = {
-			"Arcane energy pools at the Binding circles. Whoever raised them was working with ley lines, and the effect has outlasted any explanation of the purpose.",
-			"That makes the circles useful to people the Highlands would be better off without. Syndicate magicians and worse have been found working at them, drawn by power nobody is maintaining and nobody is guarding.",
+			"The Circle of Outer Binding lies in central Arathi Highlands, near Refuge Pointe. Thundering Exiles guard the Stone of Outer Binding.",
+			"The stone holds the Thundering Key, one of three keys needed to unlock the Stone of Inner Binding.",
 		},
+		readMore = { "Wowpedia: Circle of Outer Binding", "Wowpedia: Stones of Binding" },
 	},
 	{
 		name = "Circle of West Binding", faction = "Contested",
@@ -264,11 +258,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Balia'mah Ruins", faction = "Hostile",
-		hook = "A Gurubashi ruin reoccupied by the Bloodscalp, living in their ancestors' stonework.",
+		hook = "Ancient troll ruins occupied by the Skullsplitter tribe.",
 		lore = {
-			"The Bloodscalp hold Balia'mah. They are Gurubashi descendants camped in Gurubashi architecture, the ordinary condition of troll life in this jungle rather than an irony anybody remarks on.",
-			"Their war with the Skullsplitter in the south is older than any human kingdom, and it has done more to keep both tribes off the roads than Booty Bay's bruisers or Stormwind's patrols ever managed.",
+			"Balia'mah Ruins lie east-southeast of Grom'gol Base Camp, on the eastern side of the river. Skullsplitter trolls occupy the old stonework.",
+			"The Bloodscalp are their enemies. The Skullsplitters keep trophy skulls at these ruins, as they do at their other settlements farther south.",
 		},
+		readMore = { "Wowpedia: Balia'mah Ruins", "Wowpedia: Speaking with Nezzliok (Classic)" },
 	},
 	{
 		name = "Ziata'jai Ruins", faction = "Hostile",
@@ -419,11 +414,12 @@ SubsOf("Eastern Plaguelands", {
 SubsOf("Durotar", {
 	{
 		name = "Burning Blade Coven", faction = "Hostile",
-		hook = "A cave of Burning Blade cultists, chasing the power that broke their own race.",
+		hook = "A demon-infested cave at the northern edge of the Valley of Trials.",
 		lore = {
-			"The Burning Blade want the old Horde's strength back: the demon blood, the warlock pacts, the thing that made the clans unstoppable and then unmade them. Thrall outlawed all of it.",
-			"The cults keep forming anyway. Gul'dan's Horde really was more powerful than the one Thrall built, and there are orcs who would take that trade. Recruits out of the Valley of Trials are sent here partly so they understand what they have joined and what they have not.",
+			"The Burning Blade Coven lies in the mountains along the northern edge of the Valley of Trials. The cave holds imps and felstalkers, with Yarrog Baneshadow deep inside.",
+			"Recruits are sent to recover a powerful medallion from the coven. The discovery of the Burning Blade here raises fears that a larger threat is spreading through Durotar.",
 		},
+		readMore = { "Wowpedia: Burning Blade Coven", "Wowpedia: Burning Blade Medallion (Classic)", "Wowpedia: Report to Sen'jin Village (Classic)" },
 	},
 	{
 		name = "Rocktusk Farm", faction = "Hostile",
@@ -714,11 +710,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Waterspring Field", faction = "Contested",
-		hook = "Water in the middle of Tanaris, which makes it the most valuable ground here.",
+		hook = "Desert water towers seized by the Wastewander bandits.",
 		lore = {
-			"Waterspring Field holds one of the few reliable sources in the desert. In Tanaris that outranks ore, ruins and territory.",
-			"Gadgetzan rests on the same arithmetic. The Steamwheedle Cartel built a town in the middle of a desert because the desert gets crossed by people who need things, and the cartel sells things.",
+			"The water towers at Waterspring Field draw on underground reserves in Tanaris. Built to supply Gadgetzan's operations, they have been seized by the Wastewander bandits.",
+			"The Gadgetzan Water Company is hiring adventurers to fight the bandits and recover stolen water. Without access to its wells, the town faces a dwindling supply.",
 		},
+		readMore = { "Wowpedia: Waterspring Field", "Wowpedia: Wastewander Justice", "Wowpedia: Water Pouch Bounty" },
 	},
 	{
 		name = "Zalashji's Den", faction = "Hostile",
@@ -733,11 +730,11 @@ SubsOf("Tanaris", {
 SubsOf("Azshara", {
 	{
 		name = "Ursolan", faction = "Hostile",
-		hook = "A ruined night elf site in Azshara, taken over by furbolgs.",
+		hook = "Timbermaw furbolg ground in northern Azshara.",
 		lore = {
-			"Ursolan is highborne work from before the Sundering, and furbolgs hold it now. Azshara is the largest ruin field on the continent and almost none of it has been surveyed.",
-			"This was Queen Azshara's own country. Her palace at Zin-Azshari stood in the region and her court of highborne nobles ran an empire from it, until she made contact with Sargeras and the War of the Ancients followed.",
+			"Ursolan lies in northern Azshara, east of Timbermaw Hold. Timbermaw furbolgs occupy the area.",
 		},
+		readMore = { "Wowpedia: Ursolan" },
 	},
 	{
 		name = "Bay of Storms", faction = "Hostile",
@@ -850,11 +847,12 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "The Merchant Coast", faction = "Contested",
-		hook = "The southeastern coast, worked by pirates and named with some optimism.",
+		hook = "The Barrens coast south of Ratchet, troubled by Southsea pirates.",
 		lore = {
-			"The Merchant Coast runs along the Barrens' southeastern shore, and the name describes an intention rather than a condition. Southsea pirates work this water.",
-			"Ratchet is a short way north, and the boat from Ratchet to Booty Bay is the main cross-faction sea route in the world. Pirates on a coast that busy are a structural feature rather than an accident.",
+			"The Merchant Coast follows the eastern shore of the Barrens, with Ratchet on the coast and Fray Island offshore. Southsea pirates occupy the beaches south of the port.",
+			"Ratchet needs help against the pirates. They have stolen cargo, and the port is offering work to adventurers willing to confront them.",
 		},
+		readMore = { "Wowpedia: Merchant Coast", "Wowpedia: Southsea Freebooters (quest)" },
 	},
 	{
 		name = "Agama'gor", faction = "Hostile",
@@ -1020,11 +1018,12 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "The Tundrid Hills", faction = "Contested",
-		hook = "Open snow between Kharanos and the eastern road.",
+		hook = "A stretch of hills west of Gol'Bolar Quarry, inhabited by hostile wildlife.",
 		lore = {
-			"The Tundrid Hills are the rolling ground in the middle of Dun Morogh, crossed by anyone travelling between Kharanos and the Gates of Ironforge.",
-			"Wolves and boars work the hills, and the Frostmane come down out of the ridges to the west. The road is patrolled; the hills either side of it are not.",
+			"The Tundrid Hills lie in south-central Dun Morogh, west of Gol'Bolar Quarry. Hostile wildlife makes travel through them dangerous.",
+			"The hills offer a shortcut between Coldridge Valley and eastern Dun Morogh, away from the road through Kharanos.",
 		},
+		readMore = { "Wowpedia: Tundrid Hills" },
 	},
 	{
 		name = "Chill Breeze Valley", faction = "Contested",
@@ -1185,11 +1184,12 @@ SubsOf("Westfall", {
 SubsOf("Loch Modan", {
 	{
 		name = "The Loch", faction = "Alliance",
-		hook = "The lake the valley is named for, held in place by dwarven engineering.",
+		hook = "The lake at the heart of Loch Modan, held behind the Stonewrought Dam.",
 		lore = {
-			"The Loch fills the middle of the valley and exists in its present shape because the Stonewrought Dam holds it there. Without the dam this would be a river.",
-			"Fishing it is a serious local industry and the water feeds everything downstream into the Wetlands. Dwarves do not build things like the dam for ornament.",
+			"The Loch fills the middle of Loch Modan, with the Stonewrought Dam holding back its waters at the northern end.",
+			"Crocolisks occupy the islands. Hunters seek their skins and meat, but the beasts make that trade dangerous.",
 		},
+		readMore = { "Wowpedia: The Loch", "Wowpedia: Stonewrought Dam", "Wowpedia: Crocolisk Hunting" },
 	},
 	{
 		name = "Stonesplinter Valley", faction = "Hostile",
@@ -1334,14 +1334,6 @@ SubsOf("Arathi Highlands", {
 			"They are Alterac's dispossessed nobility and their retainers. The kingdom was broken up for King Aiden Perenolde's dealings with the Horde, and they have been funding a grudge ever since.",
 		},
 	},
-	{
-		name = "Witherbark Caverns", faction = "Hostile",
-		hook = "Forest troll caves in the eastern Highlands.",
-		lore = {
-			"The Witherbark hold these caves as they hold their village further north. They are Amani forest trolls, and their presence in the Highlands is older than any human claim on it.",
-			"Arathor's founding war was fought against the Amani Empire, with high elven help. The trolls lost and have never accepted the result.",
-		},
-	},
 })
 
 SubsOf("Stranglethorn Vale", {
@@ -1479,11 +1471,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Browman Mill", faction = "Hostile",
-		hook = "A Lordaeron mill in the east, still standing and badly occupied.",
+		hook = "A haunted lumber mill north of Light's Hope Chapel.",
 		lore = {
-			"The mill worked grain for the eastern settlements before the plague. Given what the Cult of the Damned later did with Lordaeron's grain, it was a grim trade to have been in.",
-			"Andorhal was where the infected shipments went out from. Everything downstream of that, including mills like this one, handled it without knowing.",
+			"Browman Mill stands just north of Light's Hope Chapel in the Eastern Plaguelands. Scourge undead occupy the mill and its surroundings.",
 		},
+		readMore = { "Wowpedia: Browman Mill" },
 	},
 })
 
@@ -1517,19 +1509,20 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Tor'kren Farm", faction = "Horde",
-		hook = "A Horde farm in western Durotar, which is harder work than it sounds.",
+		hook = "A farm northwest of Razor Hill, where a mother waits for news.",
 		lore = {
-			"Farming Durotar is a deliberate act of stubbornness. The orcs picked arid country on purpose, having been handed fertile land before as a gift with a leash attached, and they intend to owe nobody.",
-			"The farm's problems are the zone's: Razormane quilboar in the hills, who were here long before the Horde crossed the sea and do not recognise the claim.",
+			"Misha Tor'kren lives at this farm in northwestern Durotar. Her son Kron went to hunt crocolisks along the Southfury River and has not returned.",
+			"Misha warned him about the beasts before he left. Now she asks travellers to search for him, or bring back some sign of his fate.",
 		},
+		readMore = { "Wowpedia: Tor'kren Farm", "Wowpedia: Lost But Not Forgotten (Classic)" },
 	},
 	{
 		name = "Bladefist Bay", faction = "Horde",
-		hook = "Orgrimmar's harbour, named for an orc who cut off his own hand.",
+		hook = "The bay on Durotar's northeastern coast, near Skull Rock.",
 		lore = {
-			"The bay serves Orgrimmar and carries what shipping the Horde has on this coast. It is named for Kargath Bladefist, chieftain of the Shattered Hand.",
-			"Kargath was held in a gladiator pit and severed his own hand to get free of the shackle, replacing it with a blade. His clan took its name from the act.",
+			"Bladefist Bay lies east of Orgrimmar, around Skull Rock on the northeastern Durotar coast. The southern coast of Azshara is visible across the water.",
 		},
+		readMore = { "Wowpedia: Bladefist Bay" },
 	},
 	{
 		name = "Southfury River", faction = "Contested",
@@ -1545,19 +1538,21 @@ SubsOf("Durotar", {
 SubsOf("Mulgore", {
 	{
 		name = "Winterhoof Water Well", faction = "Horde",
-		hook = "One of Mulgore's three tribal wells, kept by the Winterhoof.",
+		hook = "A sacred well in southern Mulgore, poisoned and guarded by goblins.",
 		lore = {
-			"Three wells stand on the Mulgore plains, one for each of the tauren tribes that settled here with the Bloodhoof. Water on open grassland is not a small thing.",
-			"The wells are tended rather than owned. Tauren practice treats the land as something held in trust, and the Earthmother's teachings run through how they use it.",
+			"The Winterhoof Water Well stands southeast of Bloodhoof Village, at the edge of the Rolling Plains. Goblins and their servants have tainted its water.",
+			"Mull Thunderhorn is preparing a cleansing totem and asks for paws from prairie wolves and talons from adult plainstriders. The goblins guarding the well must also be faced before its waters can be used again.",
 		},
+		readMore = { "Wowpedia: Winterhoof Water Well", "Wowpedia: Poison Water (Classic)", "Wowpedia: Winterhoof Cleansing (Classic)" },
 	},
 	{
 		name = "Thunderhorn Water Well", faction = "Horde",
-		hook = "The Thunderhorn tribe's well, out on the eastern plains.",
+		hook = "A sacred well north of Bloodhoof Village, tainted by goblins.",
 		lore = {
-			"The Thunderhorn keep this one, as the Winterhoof and the Wildmane keep theirs. Between them the three wells water the herds across Mulgore.",
-			"The tauren have only been settled here a few years. Before Thrall's Horde helped them break the centaur they followed the kodo and kept nothing permanent at all.",
+			"The Thunderhorn Water Well stands by the north road between Bloodhoof Village and Thunder Bluff. Goblins and their servants have poisoned the sacred wells of Mulgore.",
+			"Mull Thunderhorn is preparing cleansing totems. For this well, he needs claws from prairie stalkers and flatland cougars before the cleansing ritual can begin.",
 		},
+		readMore = { "Wowpedia: Thunderhorn Water Well", "Wowpedia: Thunderhorn Totem (Classic)", "Wowpedia: Thunderhorn Cleansing (Classic)" },
 	},
 	{
 		name = "Wildmane Water Well", faction = "Horde",
@@ -1607,11 +1602,11 @@ SubsOf("Teldrassil", {
 SubsOf("Darkshore", {
 	{
 		name = "Wildbend River", faction = "Contested",
-		hook = "A river crossing the southern coast, running down to the sea.",
+		hook = "A tainted river near the Grove of the Ancients.",
 		lore = {
-			"The Wildbend cuts across Darkshore's southern stretch on its way to the water, below the Grove of the Ancients.",
-			"The Ancients in that grove are enormous sentient trees and allies of the night elves since the War of the Ancients. They fought at Mount Hyjal, and they are not decorative.",
+			"Wildbend River crosses southern Darkshore near the Grove of the Ancients. It continues the course of Bloodvenom River from Felwood, flowing down from the mountains towards the sea.",
 		},
+		readMore = { "Wowpedia: Wildbend River" },
 	},
 })
 
@@ -1688,11 +1683,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Shrine of Aessina", faction = "Contested",
-		hook = "A shrine in the eastern forest to one of the wild gods.",
+		hook = "A forest shrine west of Astranaar.",
 		lore = {
-			"Aessina belongs to the older layer of night elf worship, the demigods and wild gods that predate anything organised. Shrines to them are scattered through Kalimdor's forests.",
-			"Cenarius was the greatest of that company and the one who taught Malfurion Stormrage the first druidic magic. He was killed in these woods during the Third War.",
+			"The Shrine of Aessina stands in southwestern Ashenvale, west of Astranaar and southwest of Maestra's Post.",
+			"Therysil lives at the shrine. Her sister Therylune has been trapped by cultists at the Master's Glaive in Darkshore and needs help escaping.",
 		},
+		readMore = { "Wowpedia: Shrine of Aessina", "Wowpedia: Therylune's Escape" },
 	},
 	{
 		name = "Fallen Sky Lake", faction = "Contested",
@@ -1922,11 +1918,11 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "The Shattered Strand", faction = "Hostile",
-		hook = "A broken coastline in the north, naga-held.",
+		hook = "The shore along the northern side of the Bay of Storms.",
 		lore = {
-			"The strand is the northern shore, where the land gives out in pieces rather than a line. The Sundering did that.",
-			"Naga hold it, as they hold most of Azshara's coast. What comes ashore here is, in a strict sense, the local population returning.",
+			"The Shattered Strand lines the north side of the Bay of Storms in Azshara. The Temple of Arkkoran and the Tower of Eldara stand along this coast. Hydras, sea giants, makrura and murlocs inhabit the shore.",
 		},
+		readMore = { "Wowpedia: Shattered Strand" },
 	},
 })
 

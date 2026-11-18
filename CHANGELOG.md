@@ -1,5 +1,40 @@
 # Changelog
 
+## 1.2.14
+
+Two more rounds of the vanilla-era sweep: 50 entries reviewed, 47 corrected
+and two removed. After accounting for duplicate entries, the sweep covers
+499 of the 915 remaining vanilla entries.
+
+**Fixed**
+
+- Thunder Bluff correctly places Forsaken trainers in the Pools of Vision.
+  Its two entries now agree on the city's founding and inhabitants.
+- The Tower of Arathor describes its ogre occupation and is marked hostile.
+  Bronzebeard Encampment describes its silithid research and is marked neutral.
+- Balia'mah Ruins belongs to the Skullsplitter trolls. Zun'watha is inhabited
+  by Witherbark trolls, and Zul'Mashar still has living Mossflayer inhabitants
+  threatened by the plague.
+- The eastern, inner and outer binding circles describe their water, earth
+  and air elemental guardians. Browman Mill is a lumber mill.
+- Thunderhorn and Winterhoof Water Wells describe their poisoned water and
+  cleansing preparations. Tor'kren Farm describes Misha's search for her son.
+- Bladefist Bay no longer claims a later harbour. Bitter Reaches describes
+  wildlife and mountain giants, and the Shrine of Aessina is correctly placed
+  west of Astranaar.
+- Wailing Caverns takes its name from steam fissures, and its account includes
+  the disciples trying to wake Naralex. The Maul no longer invents a connection
+  between arena ownership and ogre kingship.
+- Other entries replace unsupported motives, historical claims and superlatives
+  with details from vanilla sources, including Astranaar, Bael Modan, Cenarion
+  Hold, Champions' Hall and the Undercity quarters.
+
+**Removed**
+
+- Thieves Camp and Witherbark Caverns were planned beta locations. Their
+  unsupported entries have been removed; Witherbark Village still describes
+  its actual cave.
+
 ## 1.2.13
 
 Two more rounds of the vanilla-era sweep: 50 entries reviewed and 47 corrected,
