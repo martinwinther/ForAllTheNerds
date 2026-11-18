@@ -136,11 +136,12 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Tinker Town", faction = "Alliance",
-		hook = "The gnomes' quarter, housing a refugee nation and the tram station.",
+		hook = "The gnomes' quarter, housing their court in exile and the tram station.",
 		lore = {
-			"Tinker Town is the gnomish district of Ironforge, and the gnomes' capital in exile in all but name. High Tinker Mekkatorque leads from here.",
-			"It also holds the Deeprun Tram to Stormwind. The gnomes arrived as refugees after Gnomeregan was irradiated, and the dwarves took them in without much argument.",
+			"Tinker Town is the gnomish district of Ironforge. High Tinker Mekkatorque leads from here, and the Deeprun Tram connects the city to Stormwind.",
+			"After the loss of Gnomeregan, the dwarves took in the gnomish refugees. Gnomes here still seek help recovering equipment and investigating what happened to their home.",
 		},
+		readMore = { "Wowpedia: Tinker Town", "Wowpedia: Klockmort's Essentials" },
 	},
 	{
 		name = "The Commons", faction = "Alliance",
@@ -197,9 +198,10 @@ SubsOf("Undercity", {
 		name = "The Royal Quarter", faction = "Horde",
 		hook = "Sylvanas' throne room, with a dreadlord standing beside it.",
 		lore = {
-			"The Royal Quarter is the Banshee Queen's court, at the Undercity's heart.",
-			"Varimathras attends her. He is a dreadlord of the Burning Legion, one of three brothers sent to oversee the Scourge, and Sylvanas spared him in exchange for his service. Keeping a demon as an advisor is the sort of decision the Forsaken make without blinking.",
+			"The Royal Quarter houses Sylvanas Windrunner's court in the Undercity. Varimathras attends her, and Royal Dreadguards protect the chamber.",
+			"During the struggle for Lordaeron after Arthas departed, Sylvanas defeated Varimathras and spared him in exchange for his service. The dreadlord now serves the queen he once opposed.",
 		},
+		readMore = { "Wowpedia: Royal Quarter", "Wowpedia: Varimathras" },
 	},
 	{
 		name = "The Apothecarium", faction = "Horde",
@@ -212,27 +214,28 @@ SubsOf("Undercity", {
 	},
 	{
 		name = "The Trade Quarter", faction = "Horde",
-		hook = "The Undercity's commercial ring, around a central well.",
+		hook = "The Undercity's commercial ring, around its bank.",
 		lore = {
-			"The Trade Quarter holds the bank, the auction house and the Undercity's general business, arranged around the central chamber.",
-			"The Forsaken trade with the living Horde out of necessity on both sides. It works better than anyone expected.",
+			"The Trade Quarter is the central hub of the Undercity, just beyond the lifts from the Ruins of Lordaeron. Shops surround the bank on several levels, and passages lead out towards the other quarters.",
+			"The auction house stands on the outer ring. An inn and the city's bat handler serve travellers passing through.",
 		},
+		readMore = { "Wowpedia: Trade Quarter" },
 	},
 	{
 		name = "The Magic Quarter", faction = "Horde",
-		hook = "Where the Forsaken train mages and warlocks, with no squeamishness at all.",
+		hook = "The Undercity's quarter for mage and warlock training.",
 		lore = {
-			"The Magic Quarter handles the Forsaken's arcane and shadow training. Many Forsaken were mages in life, including Kirin Tor-trained ones.",
-			"The Forsaken have no cultural restraints on necromancy or shadow magic, having been on the receiving end of both.",
+			"The Magic Quarter occupies the northeastern part of the Undercity. Inside its great temple are mage and warlock trainers, with tailoring trainers and suppliers nearby.",
 		},
+		readMore = { "Wowpedia: Magic Quarter" },
 	},
 	{
 		name = "The War Quarter", faction = "Horde",
-		hook = "The Forsaken's barracks and training ground.",
+		hook = "The Forsaken's military quarter, with priest and warrior trainers.",
 		lore = {
-			"The War Quarter trains the deathguards and the Forsaken's warriors. They are fighting the Scourge in the Plaguelands and the Alliance in Hillsbrad simultaneously.",
-			"Forsaken soldiers do not tire and do not fear death. They are far more effective than their numbers suggest.",
+			"The War Quarter occupies the northwestern part of the Undercity. Its priest and warrior trainers work alongside the city's weapon master, blacksmithing trainers and mining trainers.",
 		},
+		readMore = { "Wowpedia: War Quarter" },
 	},
 	{
 		name = "The Rogues' Quarter", faction = "Horde",
@@ -326,14 +329,13 @@ SubsOf("Orgrimmar", {
 
 Zone{
 	name = "Thunder Bluff", continent = KA, faction = "Horde", levels = "Capital",
-	hook = "Four mesas joined by rope bridges, the first city a nomadic people ever needed.",
+	hook = "The tauren capital, built on four mesas joined by rope bridges.",
 	lore = {
-		"Thunder Bluff stands on four connected mesas above Mulgore. It is the tauren capital, and within living memory the first permanent city they have ever had.",
-		"They were nomads. For generations the tauren followed the kodo herds across Kalimdor and fought a losing war against the centaur, who hunted them. Thrall's Horde arrived, helped Cairne Bloodhoof break the centaur, and the tauren settled Mulgore in return for an alliance.",
-		"Cairne rules as High Chieftain. The city holds the tauren's druids, their shaman, and the Pools of Vision where their spirit-walkers work. There are no walls. For a people who spent their history being chased, building an open city on top of a cliff was the point.",
+		"Thunder Bluff stands above the grasslands of northern Mulgore. Bridges of wood and rope connect its mesas, and lifts carry visitors up from the plains.",
+		"With Thrall's help, Cairne Bloodhoof and his people drove back the centaur and claimed Mulgore. Cairne built Thunder Bluff as a refuge where tauren of every tribe were welcome.",
+		"Cairne rules as High Chieftain. Druids and shaman have their places in the city, while the Forsaken keep mage and priest trainers in the Pools of Vision beneath Spirit Rise.",
 	},
-	didYouKnow = "Tauren druids were taught by Cenarius himself, in a tradition separate from the night elves'. When the Cenarion Circle reopened after the Third War, the two traditions met properly for the first time.",
-	readMore = { "Wowpedia: Thunder Bluff", "Wowpedia: Cairne Bloodhoof" },
+	readMore = { "Wowpedia: Thunder Bluff", "Wowpedia: Pools of Vision" },
 }
 
 SubsOf("Thunder Bluff", {

@@ -216,6 +216,7 @@ Brine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristleback	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bristlebacks	vanilla	plural of a 1.12 name (Bristleback)	cmangos 1.12.1	cs
+Broken Commons	out-of-era	Named subzone added in patch 4.0.3a; do not import the later courtyard name into vanilla arena prose	https://warcraft.wiki.gg/wiki/Broken_Commons	cs
 Broken Isles	out-of-era	Legion	tools/validate.lua, 1.2.5	ci
 Bronzebeard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bronzebeards	vanilla	plural of a 1.12 name (Bronzebeard)	cmangos 1.12.1	cs
@@ -433,6 +434,7 @@ Dreamer's Rest	out-of-era	Feralas camp added in patch 4.0.3a	https://warcraft.wi
 Drek'Thar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Drowned Reef	vanilla	AreaTable row	wow_classic_era	cs
 Druids	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Druids of the Fang	vanilla	Quest 914 names the corrupted druid order and its plan for the Barrens	cmangos 1.12.1 quest_template	cs
 Dry Hills	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Drygulch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Drywhisker	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -642,6 +644,7 @@ Go'Shek	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Goaz Stone	vanilla	named in 1.12 quest text, the tablet Whelgar dug up	cmangos 1.12.1	cs
 Goggeroc	vanilla	named in 1.12 game text, the earthen in the resonite cask	cmangos 1.12.1	cs
 Gol'Bolar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Gol'Bolar Quarry	vanilla	Original Dun Morogh quarry; place article separates Cataclysm changes	https://warcraft.wiki.gg/wiki/Gol%27Bolar_Quarry	cs
 Golakka Hot Springs	vanilla	AreaTable row	wow_classic_era	cs
 Gold Coast	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gold Coast Quarry	vanilla	AreaTable row, and named in 1.12 quest text	wow_classic_era	cs
@@ -871,6 +874,7 @@ Kormok	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kosh	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kraul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Krol'dok Stronghold	forever	used only by Forever entries	Forever	cs
+Kron	vanilla	Quest 816 names Misha's missing son and his crocolisk hunt	cmangos 1.12.1 quest_template	cs
 Kul Tiran	vanilla	Kul Tiras is named in 1.12 game text; this is its demonym	cmangos 1.12.1	cs
 Kul Tiras	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kurdran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -955,6 +959,7 @@ Malden	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malevolent	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malfurion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malfurion Stormrage	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Malin	vanilla	Quest 690 is Malin's Request; quest 697 names Archmage Malin	cmangos 1.12.1 quest_template	cs
 Malor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malorne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malygos	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1004,6 +1009,7 @@ Mirkfallon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mirkfallon Lake	vanilla	quests 1134 and 6301 name the lake	cmangos 1.12.1	cs
 Mirror Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Misha	vanilla	named in 1.12 game text, Rexxar's bear	cmangos 1.12.1	cs
+Misha Tor'kren	vanilla	Creature 3193; quest 816 names her farm and missing son	cmangos 1.12.1 creature_template and quest_template	cs
 Mist's Edge	vanilla	AreaTable row, and named in 1.12 quest text	wow_classic_era	cs
 Mistmantles	vanilla	plural of a 1.12 name (Mistmantle)	cmangos 1.12.1	cs
 Mistvale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1048,6 +1054,7 @@ Muad	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mug'thol	vanilla	creature_template 2257; quest 518 places his ogres in Alterac	cmangos 1.12.1	cs
 Mugglefin	vanilla	a 1.12 rare, at Lake Falathim	cmangos 1.12.1	cs
 Mulgore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Mull Thunderhorn	vanilla	Creature 2948 and quests 748, 756 and 758	cmangos 1.12.1 creature_template and quest_template	cs
 Muradin Bronzebeard	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Murdaloc	vanilla	named in 1.12 game text, a Stonevault trogg	cmangos 1.12.1	cs
 Mystic Ward	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1254,6 +1261,7 @@ Rot Hide	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rotting Orchard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rowe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Royal Apothecary Society	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Royal Dreadguards	vanilla	Plural of Royal Dreadguard, creature 13839, Rank 1; guards in the Royal Quarter	cmangos 1.12.1 creature_template and creature	cs
 Royal Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rudra Amberstill	vanilla	named in 1.12 game text, at the ram ranch	cmangos 1.12.1	cs
 Ruined Reaches	vanilla	AreaTable row	wow_classic_era	cs
@@ -1356,6 +1364,7 @@ Shandris Feathermoon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shaol'watha	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shatter Scar Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shattered Hand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shattered Strand	vanilla	Northern shore of the Bay of Storms; original Azshara subzone 1228, before the goblin arrival	https://warcraft.wiki.gg/wiki/Shattered_Strand	cs
 Shen'dar	forever	used only by Forever entries	Forever	cs
 Shen'dar Village	forever	used only by Forever entries	Forever	cs
 Shen'dralar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1588,6 +1597,8 @@ Theramore Isle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Theramore's Horde	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Therazane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thermaplugg	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Therylune	vanilla	Quest 945, Therylune's Escape, names the captive and her sister at the shrine	cmangos 1.12.1 quest_template	cs
+Therysil	vanilla	Creature 3585; quest 945 places her at the Shrine of Aessina	cmangos 1.12.1 creature_template and quest_template	cs
 Third War	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Third Wars	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Thistlefur	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1617,6 +1628,7 @@ Thunderbrew	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thunderbrew Distillery	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thunderbrews	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Thunderhorn	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Thunderhorn Water Well	vanilla	Quest 758 names the tainted well north of Bloodhoof Village	cmangos 1.12.1 quest_template	cs
 Tichondrius	history	dreadlord of the Third War	warcraft.wiki.gg	cs
 Tidefury Cove	vanilla	AreaTable row	wow_classic_era	cs
 Tidehunter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1640,13 +1652,16 @@ Tortheldrin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tortusk	out-of-era	added in patch 4.0.3a. Thorn Hill has no named leader at 1.12	warcraft.wiki.gg	ci
 Touched	vanilla	name or title component of creature_template 12384	cmangos 1.12.1	cs
 Tower of Althalaxx	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Tower of Arathor	vanilla	Quests 690 and 694 name the tower lost to ogres	cmangos 1.12.1 quest_template	cs
 Tower of Azora	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Tower of Eldara	vanilla	Original Azshara tower, subzone 1229, at the northeast tip of the Bay of Storms	https://warcraft.wiki.gg/wiki/Tower_of_Eldara	cs
 Tower of Ilgalar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade District	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Traders	vanilla	plural of a 1.12 name (Trader)	cmangos 1.12.1	cs
 Tradesmen's Terrace	vanilla	AreaTable row	wow_classic_era	cs
 Transport	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Trelane	vanilla	Quest 690 names Archmage Trelane and his failed defense of the tower	cmangos 1.12.1 quest_template	cs
 Tribe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trollbane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trollbanes	vanilla	plural of a 1.12 name (Trollbane)	cmangos 1.12.1	cs
@@ -1741,6 +1756,7 @@ Warrior's Terrace	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Warsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Warsong Gulch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Warsong Lumber Camp	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Warsong Outriders	vanilla	Quest 8372 names the faction fighting the Silverwing Sentinels	cmangos 1.12.1 quest_template	cs
 Wartorn Land	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Wastewander	vanilla	quests 1690 and 1691 name the Tanaris nomads	cmangos 1.12.1	cs
 Watch	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

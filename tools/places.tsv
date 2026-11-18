@@ -10,7 +10,6 @@
 #   python3 tools/generate.py prompt --limit 10 > /tmp/batch.md
 
 # --- Eastern Kingdoms: places not yet written -----------------------------
-sub	Thieves Camp	Elwynn Forest	Hostile	8-12	Defias camp in the southwest of Elwynn, on the Westfall border; early sign of the Brotherhood reaching into the capital's home county
 sub	Heroes' Vigil	Elwynn Forest	Alliance		Hilltop monument east of Goldshire commemorating fallen Stormwind soldiers
 sub	Demont's Place	Westfall	Hostile		Abandoned Westfall farmhouse used by a Defias magician
 sub	Longshore	Westfall	Contested		Westfall's northern coastline; murlocs and shipwrecks

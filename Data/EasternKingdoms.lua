@@ -110,11 +110,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Tower of Azora", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "A mage's tower on the eastern road, home to Stormwind's most distractible arcane scholar.",
+		hook = "Theocritus' tower in Elwynn, watching a rival in Redridge.",
 		lore = {
-			"Azora is a working arcanist's tower rather than an institution. Theocritus and his apprentices study here, far enough from Stormwind's Mage Quarter to do as they like and close enough to send for supplies.",
-			"Independent towers like this one were far more common before the Second War. The Kirin Tor's consolidation of magical study in Dalaran pulled most serious practitioners north, and the ones who stayed south tended to be eccentrics, specialists, or both.",
+			"The Tower of Azora stands east of Goldshire, along the road through Elwynn Forest. Theocritus lives here with the gnomish servants of Azora; merchants and an enchanting trainer also work inside.",
+			"His rival Morganth occupies the Tower of Ilgalar in Redridge. Theocritus sends adventurers to place a magical glyph near that tower so he can study his enemy's thoughts.",
 		},
+		readMore = { "Wowpedia: Tower of Azora", "Wowpedia: A Watchful Eye" },
 	},
 	{
 		name = "Mirror Lake", parent = "Elwynn Forest", faction = "Alliance",
@@ -2485,14 +2486,13 @@ SubsOf("Eastern Plaguelands", {
 
 SubsOf("Arathi Highlands", {
 	{
-		name = "The Tower of Arathor", parent = "Arathi Highlands", faction = "Alliance",
-		hook = "A tower named for the empire every human kingdom broke off from.",
+		name = "The Tower of Arathor", parent = "Arathi Highlands", faction = "Hostile",
+		hook = "A mage tower in fallen Stromgarde, occupied by ogres.",
 		lore = {
-			"Arathor was the first human nation, founded at Strom when the scattered tribes united under the Arathi. Every human kingdom since is a piece of it: Stormwind, Lordaeron, Alterac, Gilneas, Kul Tiras and Dalaran were all Arathorian colonies that outgrew the parent.",
-			"Strom became Stromgarde, and Stromgarde is a ruin in these highlands held in three parts by its own army, the Syndicate and the Boulderfist ogres. The kingdom that invented human unity could not hold its own capital.",
-			"Arathor's other legacy is the magi. The Arathi taught high elves' magic to a hundred selected humans and founded Dalaran on the result, and that bargain is behind a great deal of what followed.",
+			"The Tower of Arathor stands in the southwestern part of Stromgarde Keep. The archmage Trelane tried to defend it during the siege, but fled and left his possessions behind.",
+			"Boulderfist ogres now occupy the tower. Trelane has asked his former apprentice, the archmage Malin, to help recover the items he lost.",
 		},
-		readMore = { "Wowpedia: Arathor", "Wowpedia: Stromgarde", "Wowpedia: Strom" },
+		readMore = { "Wowpedia: Tower of Arathor", "Wowpedia: Malin's Request" },
 	},
 })
 

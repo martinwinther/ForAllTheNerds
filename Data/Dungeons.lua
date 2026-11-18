@@ -161,13 +161,12 @@ Instance{
 
 Instance{
 	name = "Warsong Gulch", continent = "Kalimdor", faction = "Contested", levels = "10-60",
-	hook = "The logging war in Ashenvale, fought over a single valley the night elves want back.",
+	hook = "A valley on the Ashenvale border, fought over for its forest.",
 	lore = {
-		"Warsong Gulch is a single valley in Ashenvale carrying the whole of that forest's argument. The Warsong clan is cutting timber for the Horde; the Silverwing Sentinels want them out of the woods.",
-		"The Warsong were Grom Hellscream's clan. They are the Horde's most aggressive element and they have never been fully controlled by Orgrimmar, including when Thrall has told them to stop.",
-		"The night elves spent ten thousand years as these forests' guardians. From their side this is not a border dispute, it is desecration. From the Horde's side, a nation given no land has to take timber from somewhere.",
+		"Warsong Gulch lies between Ashenvale and the Barrens. The Warsong Outriders cut timber for the Horde, while the Silverwing Sentinels fight to drive them from the forest.",
+		"The trees also form a defensive barrier. Alliance commanders warn that losing the forest would leave Astranaar exposed to a larger attack.",
 	},
-	readMore = { "Wowpedia: Warsong Gulch" },
+	readMore = { "Wowpedia: Warsong Gulch", "Wowpedia: Fight for Warsong Gulch (level 19)" },
 }
 
 Instance{

@@ -145,13 +145,13 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Thunder Bluff", faction = "Horde", levels = "Capital",
-		hook = "Four mesas joined by rope bridges, the first city the tauren ever built.",
+		hook = "The tauren capital, built on four mesas joined by rope bridges.",
 		lore = {
-			"Thunder Bluff sits on top of four connected mesas in northern Mulgore, reachable by lift or by wing. It holds the tauren's leadership, their druids, their shaman and the Pools of Vision where their spirit-walkers work.",
-			"For a people who were nomads within living memory, a permanent capital is a profound change. The city is deliberately open: no walls, few gates, and the sky on all sides.",
-			"It is also the Horde's intellectual centre. The tauren keep histories, and their understanding of Kalimdor's natural order is older and better than anything Orgrimmar has.",
+			"Thunder Bluff stands above the grasslands of northern Mulgore. Bridges of wood and rope connect its mesas, and lifts carry visitors up from the plains.",
+			"With Thrall's help, Cairne Bloodhoof and his people drove back the centaur and claimed Mulgore. Cairne built Thunder Bluff as a refuge where tauren of every tribe were welcome.",
+			"Cairne rules as High Chieftain. Druids and shaman have their places in the city, while the Forsaken keep mage and priest trainers in the Pools of Vision beneath Spirit Rise.",
 		},
-		readMore = { "Wowpedia: Thunder Bluff" },
+		readMore = { "Wowpedia: Thunder Bluff", "Wowpedia: Pools of Vision" },
 	},
 	{
 		name = "The Golden Plains", parent = "Mulgore", faction = "Horde",
@@ -468,11 +468,11 @@ SubsOf("The Barrens", {
 		name = "Wailing Caverns", parent = "The Barrens", faction = "Hostile", levels = "15-25",
 		hook = "A cave system where a druid's dream of restoring the Barrens turned into a nightmare.",
 		lore = {
-			"The druid Naralex came here to do something ambitious: enter the Emerald Dream and use it to bring water and life back to the Barrens. The caverns are built around that attempt.",
-			"He reached the Dream and found the Nightmare instead. The corruption poured back through him into the caves, warping the local wildlife, driving his own disciples mad, and leaving Naralex trapped in a sleep he cannot wake from. His screaming carries through the tunnels.",
-			"His disciples are still down there, now serpentine and hostile, and the Cenarion Circle wants him recovered.",
+			"Naralex entered the Emerald Dream hoping to restore the Barrens to a lush forest. His dream became a nightmare, and corrupt creatures began to inhabit the caverns.",
+			"Some of his disciples are trying to wake him. Others have become the Druids of the Fang, seeking to reshape the Barrens according to their own twisted dreams.",
+			"The caverns take their name from the mournful sounds of steam escaping through fissures in the rock.",
 		},
-		readMore = { "Wowpedia: Wailing Caverns", "Wowpedia: Naralex" },
+		readMore = { "Wowpedia: Wailing Caverns", "Wowpedia: Deviate Eradication", "Wowpedia: Leaders of the Fang" },
 	},
 	{
 		name = "Razorfen Kraul", parent = "The Barrens", faction = "Hostile", levels = "25-35",
@@ -675,11 +675,11 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Webwinder Path", parent = "Stonetalon Mountains", faction = "Hostile",
-		hook = "A spider-infested path through the northern mountains.",
+		hook = "A mountain road from Malaka'jin towards Mirkfallon Lake.",
 		lore = {
-			"The path is one of the main routes through the range and the spiders along it have made it expensive.",
-			"Travellers going between the Barrens and Desolace have little alternative.",
+			"Webwinder Path runs through Stonetalon Mountains from Malaka'jin towards Mirkfallon Lake. Spiders inhabit the ground along the route.",
 		},
+		readMore = { "Wowpedia: Webwinder Path" },
 	},
 })
 
@@ -2076,13 +2076,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "The Maul", parent = "Feralas", faction = "Hostile",
-		hook = "The Gordok ogres' arena, inside the city the Highborne sealed themselves into.",
+		hook = "An open arena among the ruins of Dire Maul.",
 		lore = {
-			"The Maul is the arena at the centre of Dire Maul, and Dire Maul is Eldre'Thalas: the Highborne city whose scholars refused to give up the arcane after the Sundering and locked themselves in with their library rather than submit.",
-			"The Gordok ogres hold the city around them. Ogre politics are settled by single combat, and the arena is where that happens, so whoever holds the Maul is the ogre king until somebody takes it off him.",
-			"Which leaves the oldest surviving library in the world sitting behind a wall, with the succession of an ogre clan being decided in the courtyard.",
+			"The Maul is a fighting pit outside the three dungeon wings of Dire Maul. Combat inside the arena is allowed even between members of the same faction.",
+			"A tunnel on the western side leads past sleeping Gordok hyenas into the pit. Fighters can also drop into the arena from above, but the tunnel is the way out.",
 		},
-		readMore = { "Wowpedia: Dire Maul", "Wowpedia: Gordok", "Wowpedia: Shen'dralar" },
+		readMore = { "Wowpedia: Maul (subzone)" },
 	},
 })
 
