@@ -345,11 +345,11 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "The Creeping Ruin", faction = "Hostile",
-		hook = "A troll ruin in the southern woods, being taken apart by the forest itself.",
+		hook = "A troll ruin in the Hinterlands, overrun by slimes.",
 		lore = {
-			"The name is descriptive. Roots have got into the stonework and are finishing a job the Amani's enemies started a long time ago.",
-			"Wildhammer rangers use the site as a marker and do not camp in it. Hinterlands ruins have a way of still being occupied by something, including the ones that look finished.",
+			"The Creeping Ruin lies in the central Hinterlands. Slimes inhabit the old forest troll ruins.",
 		},
+		readMore = { "Wowpedia: The Creeping Ruin" },
 	},
 })
 
@@ -868,11 +868,12 @@ SubsOf("The Barrens", {
 SubsOf("Silithus", {
 	{
 		name = "Staghelm Point", faction = "Contested",
-		hook = "A tower on the desert's edge carrying the Staghelm name, for reasons nobody wrote down.",
+		hook = "A night elf tower on a peak in northeastern Silithus.",
 		lore = {
-			"Which Staghelm the point was named for is not recorded. Archdruid Fandral Staghelm led the night elf armies in the War of the Shifting Sands, fought against the qiraji in this desert a thousand years ago, and his son Valstann fell in it.",
-			"Fandral now leads the Cenarion Circle in Malfurion Stormrage's absence, and he is the archdruid who pushed hardest for Teldrassil and for recovering the night elves' lost immortality. Whichever Staghelm the tower stands for, the family's business in Silithus ended badly.",
+			"Staghelm Point stands above northeastern Silithus. Ralo'shan the Eternal Watcher resides at the tower, while a bronze drake circles overhead.",
+			"Twilight's Run lies down the road from the peak. Twilight cultists occupy the cave and a camp outside its entrance.",
 		},
+		readMore = { "Wowpedia: Staghelm Point" },
 	},
 	{
 		name = "The Scarab Dais", faction = "Contested",
@@ -1670,11 +1671,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Ruins of Ordil'Aran", faction = "Hostile",
-		hook = "A night elf ruin in the west, from before the Sundering.",
+		hook = "Night elf ruins in northwestern Ashenvale, occupied by the Cult of the Dark Strand.",
 		lore = {
-			"Ordil'Aran is old night elf work, left from the empire that covered this continent before the Well of Eternity collapsed and broke it apart.",
-			"Ashenvale is full of these. The Sentinels fighting for this forest are fighting over ground that already holds their own civilisation's wreckage.",
+			"The Ruins of Ordil'Aran lie northeast of Maestra's Post. The Cult of the Dark Strand has established itself here, and Delgren the Purifier seeks a soul gem carried by one of its members.",
+			"The heartswood tree also grows among the ruins. Warlocks tell of two lovers who fell together in the War of the Ancients, and of the tree that grew where they died.",
 		},
+		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: The Tower of Althalaxx (4)", "Wowpedia: Heartswood (quest)" },
 	},
 	{
 		name = "Bathran's Haunt", faction = "Hostile",
@@ -1757,11 +1759,12 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Sargeron", faction = "Hostile",
-		hook = "Ruins in the eastern waste, older than anything else standing in Desolace.",
+		hook = "Ancient night elf ruins in northeastern Desolace, occupied by Hatefury satyrs.",
 		lore = {
-			"Sargeron is a ruin field in the east of the zone, and like Tethris Aran further west it predates the land becoming what it is.",
-			"Desolace was green inside night elf memory. Ruins of this age are the strongest argument that something killed the region rather than it always having been dead.",
+			"Sargeron stands in northeastern Desolace. Hatefury satyrs inhabit the remains of the night elf settlement.",
+			"Their horns, claws and blood are sought as magical reagents. Researchers also seek a shadowstalker's scalp to break the wards concealing a demon lord.",
 		},
+		readMore = { "Wowpedia: Sargeron", "Wowpedia: Reagents for Reclaimers Inc. (quest)", "Wowpedia: The Corrupter (2)" },
 	},
 })
 

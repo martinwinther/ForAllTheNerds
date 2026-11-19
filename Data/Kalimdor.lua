@@ -35,11 +35,12 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Razor Hill", faction = "Horde", levels = "5-12",
-		hook = "Durotar's garrison town, holding the road while the quilboar and the Alliance both test it.",
+		hook = "An orcish settlement at the crossroads of central Durotar.",
 		lore = {
-			"Razor Hill is the Horde's main settlement outside Orgrimmar: a barracks, an inn, a smith and the administration for eastern Durotar. Orgrimmar's reach ends roughly where Razor Hill's patrols do.",
-			"Its problems are the Razormane quilboar in the hills, the Kolkar centaur raiding from the Barrens, and the shipwrecked Kul Tiras marines who dug in at Tiragarde Keep and have never surrendered.",
+			"Razor Hill stands on the road between Orgrimmar and Sen'jin Village. A western road crosses the Southfury River into the Barrens.",
+			"Gar'Thok commands the settlement and seeks recruits to confront the humans at Tiragarde Keep. Orgnil Soulscar investigates the Burning Blade cult's foothold in Durotar.",
 		},
+		readMore = { "Wowpedia: Razor Hill", "Wowpedia: Vanquish the Betrayers", "Wowpedia: Report to Orgnil" },
 	},
 	{
 		name = "Sen'jin Village", faction = "Horde", levels = "5-12",
@@ -446,11 +447,12 @@ Zone{
 SubsOf("The Barrens", {
 	{
 		name = "The Crossroads", faction = "Horde", levels = "10-20",
-		hook = "A Horde waystation at the centre of Kalimdor's road network, attacked constantly.",
+		hook = "A Horde settlement where the roads of the Barrens meet.",
 		lore = {
-			"The Crossroads is exactly what its name says: the point where the Barrens' north-south and east-west roads meet. The Horde fortified it because holding it means holding Kalimdor's interior.",
-			"It is raided by centaur, by the Alliance out of Northwatch Hold, and by anyone else with an interest in the roads. For a generation of Horde players, the cry for help from the Crossroads is the sound of the Barrens.",
+			"The Crossroads stands at the junction of the main north-south road and the route between Ratchet and the Stonetalon Mountains. Its inn and wind rider master make it a gathering place for Horde travellers.",
+			"Sergra Darkthorn receives recruits sent into the Barrens. The settlement's guards have troubles of their own: raptors have stolen a shipment of silver meant for their pay.",
 		},
+		readMore = { "Wowpedia: The Crossroads", "Wowpedia: Crossroads Conscription", "Wowpedia: Raptor Thieves" },
 	},
 	{
 		name = "Ratchet", faction = "Neutral", levels = "10-25",
@@ -834,11 +836,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Raynewood Retreat", parent = "Ashenvale", faction = "Alliance",
-		hook = "A night elf tower in the eastern forest, pressed hard by the Horde.",
+		hook = "A great tree in Ashenvale, watched by dryads and Cenarion protectors.",
 		lore = {
-			"Raynewood Retreat is a Sentinel and druid position in eastern Ashenvale, close to the Horde's Splintertree Post.",
-			"It is one of the places where the forest's war is at its most immediate, with both sides within a short march of each other.",
+			"Raynewood Retreat stands in north-central Ashenvale. Dryads, blink dragons and Cenarion protectors inhabit the grounds around its great tree.",
+			"Keeper Ordanus, a son of Cenarius, resides at the top. A moonwell lies to the east, tended by Shael'dryn.",
 		},
+		readMore = { "Wowpedia: Raynewood Retreat", "Wowpedia: Ordanus (quest)" },
 	},
 })
 
@@ -1245,11 +1248,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Ruins of Ravenwind", parent = "Feralas", faction = "Hostile",
-		hook = "Night elf ruins taken by harpies.",
+		hook = "Ancient night elf ruins in northern Feralas, held by Northspring harpies.",
 		lore = {
-			"Ravenwind is another lost night elf site, now held by harpies in the central jungle.",
-			"Harpies' preference for occupying night elf ruins has fed the story that they were night elves once, which they will neither confirm nor discuss.",
+			"The Ruins of Ravenwind lie in northern Feralas. Northspring harpies occupy the broken buildings and surrounding ground.",
+			"An altar and four magical flames remain among the ruins. They are part of a mystery surrounding an ancient staff found in Feralas.",
 		},
+		readMore = { "Wowpedia: Ruins of Ravenwind", "Wowpedia: The Stave of Equinex" },
 	},
 	{
 		name = "The Dream Bough", parent = "Feralas", faction = "Hostile",
@@ -1447,11 +1451,12 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Ruins of Eldarath", parent = "Azshara", faction = "Hostile",
-		hook = "A highborne city's remains, now full of satyrs and naga.",
+		hook = "An ancient night elf city in Azshara, occupied by the Spitelash naga.",
 		lore = {
-			"Eldarath was a city of the highborne, the night elf nobility who served Azshara's court and pursued the arcane without restraint.",
-			"What is left is held by satyrs and naga: the two things the highborne became. It is as complete a judgement on that era as the landscape can manage.",
+			"The Ruins of Eldarath lie in central Azshara. Spitelash naga hold the fallen city, with Warlord Krellian based in the Temple of Zin-Malor.",
+			"Ancient mages left tablets here recording their knowledge of the arcane. Researchers from the Explorers' League seek rubbings of these inscriptions despite the naga occupation.",
 		},
+		readMore = { "Wowpedia: Ruins of Eldarath", "Wowpedia: Arcane Runes" },
 	},
 	{
 		name = "Temple of Arkkoran", parent = "Azshara", faction = "Hostile",
@@ -1564,11 +1569,12 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Shadow Hold", parent = "Felwood", faction = "Hostile",
-		hook = "The cult's underground base beneath Jaedenar.",
+		hook = "The Shadow Council's underground stronghold within Jaedenar.",
 		lore = {
-			"Shadow Hold is the Jaedenar cult's cave complex, and where the warlocks and demons running the operation actually sit.",
-			"The Shadow Council was the warlock cabal behind the Old Horde, and it has never been fully destroyed. This is one of its surviving limbs.",
+			"Shadow Hold lies beneath Jaedenar in western Felwood. Warlocks and their demonic servants occupy its passages, including the dreadlord Lord Banehollow.",
+			"Magical braziers shield the stronghold from attempts to spy on it. Investigators seek a way to extinguish those protections and expose the Council's activities.",
 		},
+		readMore = { "Wowpedia: Shadow Hold", "Wowpedia: Dousing the Flames of Protection (Classic)", "Wowpedia: Lord Banehollow (Classic)" },
 	},
 	{
 		name = "Deadwood Village", parent = "Felwood", faction = "Hostile",
@@ -1596,11 +1602,12 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Shatter Scar Vale", parent = "Felwood", faction = "Hostile",
-		hook = "A crater field where infernals came down during the Third War.",
+		hook = "A scarred stretch of Felwood where infernals fell during the Third War.",
 		lore = {
-			"Shatter Scar Vale is pocked with impact craters from the Legion's infernals, the burning constructs the demons rain down from the sky.",
-			"The infernals are still there, and the craters are among the most concentrated sources of corruption in the forest.",
+			"Shatter Scar Vale lies north of Bloodvenom Falls, east of the road through Felwood. Infernals called down during the Third War left the craters that mark its ground.",
+			"Demons still inhabit the vale. Researchers want to know whether entropic elementals remain there and whether corrupted water still fills the craters.",
 		},
+		readMore = { "Wowpedia: Shatter Scar Vale", "Wowpedia: Verifying the Corruption" },
 	},
 	{
 		name = "Ruins of Constellas", parent = "Felwood", faction = "Hostile",
@@ -1902,11 +1909,12 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Southwind Village", parent = "Silithus", faction = "Hostile",
-		hook = "A village the silithid took, with its people still in it.",
+		hook = "A ruined night elf settlement in Silithus, haunted by its former defenders.",
 		lore = {
-			"Southwind Village was a settlement in Silithus before the silithid reached it. The inhabitants did not get out.",
-			"It is the most direct illustration available of what happens when a hive expands into occupied ground.",
+			"Southwind Village was once a night elf base in Silithus. Silithids overran it, and the tortured spirits of druids and sentinels now wander its ruins.",
+			"Layo Starstrike sends adventurers from Valor's Rest to investigate the village and release the suffering spirits.",
 		},
+		readMore = { "Wowpedia: Southwind Village", "Wowpedia: The Spirits of Southwind" },
 	},
 	{
 		name = "Valor's Rest", parent = "Silithus", faction = "Contested",
@@ -1970,11 +1978,12 @@ SubsOf("Moonglade", {
 	},
 	{
 		name = "Stormrage Barrow Dens", parent = "Moonglade", faction = "Neutral",
-		hook = "The barrow where Malfurion Stormrage's body sleeps while he walks the Dream.",
+		hook = "Sacred druid barrow dens in Moonglade, named for Malfurion Stormrage.",
 		lore = {
-			"The Stormrage Barrow Dens are the most important barrow in the world. Malfurion's physical body rests here, tended by the Circle, while his consciousness is in the Emerald Dream.",
-			"He has been there a long time and something is keeping him. The Nightmare spreading through the Dream and the trouble at the four Dream portals are presumed to be connected to his absence.",
+			"The Stormrage Barrow Dens lie in Moonglade. They are a resting place for night elf druids whose spirits enter the Emerald Dream.",
+			"During the Third War, Tyrande Whisperwind sought Malfurion here while Tichondrius' forces threatened his sleeping body. His awakening brought him back to the fight against the Burning Legion.",
 		},
+		readMore = { "Wowpedia: Stormrage Barrow Dens", "Wowpedia: The Awakening of Stormrage (WC3 Night Elf)" },
 	},
 	{
 		name = "Lake Elune'ara", parent = "Moonglade", faction = "Neutral",
@@ -2019,14 +2028,12 @@ Zone{
 SubsOf("Azshara", {
 	{
 		name = "Temple of Zin-Malor", parent = "Azshara", faction = "Hostile",
-		hook = "A temple to Elune in the Ruins of Eldarath, held now by naga.",
+		hook = "A temple in the Ruins of Eldarath, occupied by Warlord Krellian.",
 		lore = {
-			"The Temple of Zin-Malor stands in the Ruins of Eldarath, and it was built to worship Elune. Its design is close to the nearby Temple of Arkkoran and closer still to the Temple of the Moon in Darnassus, the surviving example of the same architecture.",
-			"Azshara is named for the queen whose capital stood here, and the Highborne were her court. The naga are what became of them: dragged under with the Sundering and changed, and still hers.",
-			"The Spitelash hold this temple now, under Warlord Krellian. A night elf temple to the moon goddess, occupied by the descendants of the night elves who served the queen who broke the world.",
+			"The Temple of Zin-Malor stands among the fallen night elf buildings of Eldarath in Azshara. Spitelash naga occupy the temple under Warlord Krellian.",
+			"A mage's scrying has detected a powerful magical artifact in Krellian's possession. He seeks someone willing to confront the warlord and his guards.",
 		},
-		didYouKnow = "The Crystal of Zin-Malor was kept here. It was stolen, and it went to Kel'Theril in Winterspring, another ruin of the same vanished empire.",
-		readMore = { "Wowpedia: Temple of Zin-Malor", "Wowpedia: Eldarath", "Wowpedia: Naga", "Wowpedia: Azshara" },
+		readMore = { "Wowpedia: Temple of Zin-Malor", "Wowpedia: Warlord Krellian (quest)" },
 	},
 })
 
@@ -2147,13 +2154,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Dor'Danil Barrow Den", parent = "Ashenvale", faction = "Hostile",
-		hook = "A barrow den where the sleepers did not wake well.",
+		hook = "A druid resting place in Ashenvale, corrupted by Forsaken poison.",
 		lore = {
-			"Barrow dens are where night elf druids sleep, and sleeping is not a figure of speech for them: the body stays in the den for years or centuries while the druid walks the Emerald Dream.",
-			"That is the arrangement Malfurion Stormrage made and the reason he has been absent from his own people's history for most of it. The dens were built on the assumption that someone would be awake to guard the ones who were not.",
-			"Something has gone wrong in the Dream. The sleepers in these dens have been disturbed by it, and Dor'Danil is one of the places where that shows.",
+			"The Dor'Danil Barrow Den lies south of Splintertree Post. Forsaken agents occupy the passages alongside the restless spirits of night elf druids.",
+			"Kayneth Stillwind describes a vision of the druids poisoned by the undead, their spirits severed from their bodies and driven mad. He seeks help putting the den's former leaders to rest.",
 		},
-		readMore = { "Wowpedia: Dor'Danil Barrow Den", "Wowpedia: Emerald Dream", "Wowpedia: Malfurion Stormrage" },
+		readMore = { "Wowpedia: The Dor'Danil Barrow Den", "Wowpedia: Insane Druids" },
 	},
 })
 
