@@ -75,10 +75,10 @@ not tag and do not publish: releases are Martin's call.
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
 in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
-in 1.2.13, and runs 19 and 20 in 1.2.14**, all released
+in 1.2.13, runs 19 and 20 in 1.2.14, and runs 21 and 22 in 1.2.15**, all released
 mid-sweep at Martin's explicit instruction. Their player-facing lines are already
-in the changelog under those nine headings, so do not write them again. P5 now
-covers only P4 run 21 onwards, plus `tools/era-audit.md`, still not updated for
+in the changelog under those ten headings, so do not write them again. P5 now
+covers only P4 run 23 onwards, plus `tools/era-audit.md`, still not updated for
 anything since the original four errors.
 
 ## Oracles, in order of preference
@@ -3468,3 +3468,25 @@ Isle, Zoram'gar Outpost, Zul'Farrak, Zul'Gurub, Zul'Mashar, Zun'watha.
 
 Next: P4, the next 25 entry records by the recomputed ranking, starting with
 Raynewood Retreat. Count duplicate names as separate records. P5 remains pending.
+
+### 2026-11-19, release 1.2.15
+
+Martin explicitly requested a merge of dev into main and the next 1.2.x
+release. This release includes P4 runs 21 and 22: 50 vanilla entries reviewed
+and corrected, with no removals. Both version strings are 1.2.15, and
+CHANGELOG.md records these previously unshipped findings. P5 must not repeat
+them and now covers run 23 onwards.
+
+The sweep remains in progress at 549 of 915 surviving vanilla entries.
+Raynewood Retreat is next, with 366 entries left. P5 has not started.
+Release preparation follows PUBLISHING.md: validate all nine client
+configurations, check gaps and touched-file prose, build and inspect the zip,
+push dev and verify CI for its exact SHA, then merge to main and publish the
+annotated version tag.
+
+Release checks passed on all nine client configurations with zero errors or
+warnings. The gap check reports 43 explained gaps, release-file prose lint
+is clean, and git diff --check passes. The local 1.2.15 zip passed its package
+checks, contains matching TOC and Core versions plus LICENSE, and excludes
+development tools. The preceding sweep commit 03ecafe passed CI for its exact
+SHA before release preparation.
