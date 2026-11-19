@@ -373,11 +373,12 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "Pools of Vision", faction = "Horde",
-		hook = "Sacred pools on Spirit Rise where the tauren speak with the dead.",
+		hook = "The Forsaken enclave beneath Spirit Rise in Thunder Bluff.",
 		lore = {
-			"The Pools of Vision are where tauren spirit-walkers do their work, communing with ancestors and the elemental spirits.",
-			"The tauren treat the dead as present rather than gone, and the pools are the formal mechanism for that.",
+			"The Pools of Vision lie in caves beneath Spirit Rise. Forsaken mage and priest trainers work here, alongside Apothecary Zamah.",
+			"Zamah receives alchemical samples from her colleagues beyond Thunder Bluff. Couriers must find the concealed path into the caves before their mixtures lose potency.",
 		},
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah (quest)" },
 	},
 })
 

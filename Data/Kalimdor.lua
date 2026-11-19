@@ -283,11 +283,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Pools of Arlithrien", parent = "Teldrassil", faction = "Contested",
-		hook = "A set of pools in the western woods, sacred and intruded upon.",
+		hook = "Pools and a moonwell in western Teldrassil, threatened by the Gnarlpine.",
 		lore = {
-			"The pools are a site of some significance to the night elves, and like the moonwells they are tied to water the night elves consider holy.",
-			"The Gnarlpine have reached here too. That sentence recurs in any account of Teldrassil.",
+			"The Pools of Arlithrien lie south of the entrance to Darnassus. A moonwell stands on their shores.",
+			"Gnarlpine attacks have made Sentinel patrols difficult. Travellers sent to collect water from the well are warned to keep their weapons close.",
 		},
+		readMore = { "Wowpedia: Pools of Arlithrien", "Wowpedia: Crown of the Earth (4)" },
 	},
 	{
 		name = "Oracle Glade", parent = "Teldrassil", faction = "Contested",
@@ -307,11 +308,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Lake Al'Ameth", parent = "Teldrassil", faction = "Alliance",
-		hook = "A lake on the tree's southern slopes, with a village on its shore.",
+		hook = "A lake south of Dolanaar, with angry timberlings along its shores.",
 		lore = {
-			"Al'Ameth is Teldrassil's largest body of water, and the night elves have settled lightly around it.",
-			"Night elf building practice is to disturb as little as possible. Much of Teldrassil looks unoccupied when it is not.",
+			"Lake Al'Ameth lies south of Dolanaar in Teldrassil. Timberlings inhabit its shores, and their growing anger troubles Denalan.",
+			"He suspects the soil is involved and asks for timberling seeds to test his methods of nurturing plants. He also wants dangerous new sprouts cleared from around the water.",
 		},
+		readMore = { "Wowpedia: Lake Al'Ameth", "Wowpedia: Timberling Seeds", "Wowpedia: Timberling Sprouts" },
 	},
 })
 
@@ -960,11 +962,12 @@ Zone{
 SubsOf("Desolace", {
 	{
 		name = "Nijel's Point", faction = "Alliance", levels = "30-40",
-		hook = "An Alliance outpost in the northern hills, watching a zone nobody wants.",
+		hook = "An Alliance outpost in the northern mountains of Desolace.",
 		lore = {
-			"Nijel's Point is the Alliance's garrison in Desolace, held by night elves and humans working together on the centaur problem.",
-			"The posting is grim. Desolace offers no resources worth taking and the Alliance holds it mainly to deny it to the Horde.",
+			"Nijel's Point shelters Alliance soldiers and members of the Cenarion Circle. Captain Pentigast watches the wars between the centaur clans.",
+			"He fears that the victorious clan will threaten Alliance strongholds. To learn how to defeat the centaurs, he seeks an alliance with one clan against another.",
 		},
+		readMore = { "Wowpedia: Nijel's Point", "Wowpedia: Brutal Politics", "Wowpedia: Strange Alliance" },
 	},
 	{
 		name = "Shadowprey Village", faction = "Horde", levels = "30-40",
@@ -1147,11 +1150,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Lost Point", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "An abandoned Alliance position in the southern marsh, overrun.",
+		hook = "An abandoned Theramore watchtower occupied by deserters.",
 		lore = {
-			"Lost Point was a Theramore outpost. It is not any more, and the name reflects what happened.",
-			"The southern marsh is the least controlled part of Dustwallow and the dragonkin presence there is heaviest.",
+			"Lost Point is a ruined watchtower in western Dustwallow Marsh. Deserters from Theramore have taken shelter here under Balos Jacken.",
+			"Theramore's officers want information from their lieutenant. The outpost is part of an investigation into the deserters' activities in the marsh.",
 		},
+		readMore = { "Wowpedia: Lost Point" },
 	},
 	{
 		name = "Darkmist Cavern", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -1551,11 +1555,12 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Jaedenar", parent = "Felwood", faction = "Hostile",
-		hook = "A cult town named after the Burning Legion's chief strategist.",
+		hook = "A Shadow Council stronghold in the corrupted forests of Felwood.",
 		lore = {
-			"Jaedenar is a settlement of the Shadow Council's successors, built in corrupted Felwood and named for Kil'jaeden.",
-			"The cult is not merely living with the corruption; it is cultivating it. Shadow Hold beneath the town is where their serious work happens.",
+			"The Shadow Council occupies Jaedenar's ruins and corrupted barrow dens. Its cultists plot with the Burning Legion, while demons move among them.",
+			"Shadow Hold lies deep within the settlement. Magical braziers protect the Council's lair from attempts to spy on its activities.",
 		},
+		readMore = { "Wowpedia: Jaedenar", "Wowpedia: Forces of Jaedenar (Classic)", "Wowpedia: Collection of the Corrupt Water" },
 	},
 	{
 		name = "Shadow Hold", parent = "Felwood", faction = "Hostile",
@@ -1750,11 +1755,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Mazthoril", parent = "Winterspring", faction = "Hostile",
-		hook = "A cave of blue dragons beneath Frostsaber Rock.",
+		hook = "An icy cavern in central Winterspring, held by the blue dragonflight.",
 		lore = {
-			"Mazthoril is a blue dragonflight site in Winterspring. The blues are the dragonflight charged with magic and arcane order, and their Aspect is Malygos.",
-			"Malygos has not been right for a very long time. He was driven close to madness when Deathwing betrayed the Aspects and then nearly exterminated the blue flight, and the blues have been without coherent direction since.",
+			"Mazthoril lies near Lake Kel'Theril in central Winterspring. Blue dragonkin occupy the cavern and its approaches.",
+			"Haleh, their matron, can be reached through cobalt runes on the cavern floor. Visitors seeking her must first pass through the dragons' domain.",
 		},
+		readMore = { "Wowpedia: Mazthoril", "Wowpedia: The Matron Protectorate" },
 	},
 	{
 		name = "Frostsaber Rock", parent = "Winterspring", faction = "Contested",
@@ -1806,11 +1812,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Owl Wing Thicket", parent = "Winterspring", faction = "Hostile",
-		hook = "A thicket of owlbeasts in the central valley.",
+		hook = "Owlbeast caves in southern Winterspring, watched by a night elf researcher.",
 		lore = {
-			"Owlbeasts, or owlkin, are native to Kalimdor's forests and the Winterspring population holds this thicket.",
-			"They are associated with the night elves' moon worship in ways the night elves understand and rarely explain.",
+			"Owl Wing Thicket lies in southern Winterspring. Wildkin inhabit the caves and the ground around them.",
+			"Ranshalla is studying the site and believes an altar of Elune stands at the top of the ridge. She seeks help investigating its torches and inscriptions.",
 		},
+		readMore = { "Wowpedia: Owl Wing Thicket", "Wowpedia: Guardians of the Altar", "Wowpedia: Find Ranshalla" },
 	},
 })
 
@@ -1869,19 +1876,21 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Hive'Regal", parent = "Silithus", faction = "Hostile",
-		hook = "The southern hive, and the largest of the three.",
+		hook = "A silithid hive in southern Silithus, watched by Cenarion scouts.",
 		lore = {
-			"Hive'Regal is the most developed of the surface hives, in Silithus' south.",
-			"The hives are expanding. The Cenarion Circle maps them and the maps keep needing revision.",
+			"Hive'Regal is one of the three silithid hives in the open desert of Silithus. Its tunnels extend beneath the southern sands.",
+			"Cenarion Scout Landion has been watching the hive's movements. The Cenarion Circle seeks his written report before acting on what he has learned.",
 		},
+		readMore = { "Wowpedia: Hive'Regal", "Wowpedia: Hive'Regal Scout Report (quest)" },
 	},
 	{
 		name = "Hive'Zora", parent = "Silithus", faction = "Hostile",
-		hook = "The northern hive, nearest the route into Un'Goro.",
+		hook = "A silithid hive in western Silithus.",
 		lore = {
-			"Hive'Zora sits in northern Silithus, closest to the Un'Goro border and the Slithering Scar beyond it.",
-			"The silithid in Un'Goro's Slithering Scar came through from here. The tunnels connect.",
+			"Hive'Zora lies in western Silithus. Silithid tunnelers, wasps and reavers occupy the hive.",
+			"Cenarion Scout Azenel watches the insects' movements from within. The Cenarion Circle sends adventurers to collect her report.",
 		},
+		readMore = { "Wowpedia: Hive'Zora", "Wowpedia: Hive'Zora Scout Report (quest)" },
 	},
 	{
 		name = "Twilight Base Camp", parent = "Silithus", faction = "Hostile",
@@ -1933,14 +1942,13 @@ SubsOf("Silithus", {
 
 Zone{
 	name = "Moonglade", continent = KA, faction = "Neutral", levels = "Any",
-	hook = "The druids' sanctuary, where no faction fights and Cenarius' son keeps watch.",
+	hook = "A sanctuary shared by tauren and night elf druids.",
 	lore = {
-		"Moonglade is a protected valley in northern Kalimdor, reachable through the Timbermaw tunnels or by druidic travel, and home to the Cenarion Circle. No fighting happens here. Alliance and Horde druids share the same village.",
-		"Keeper Remulos holds it. He is a son of Cenarius, the demigod who taught Malfurion Stormrage the first druidic magic and who was killed by Grom Hellscream's corrupted Warsong clan during the Third War. Remulos tends the glade and the Stormrage barrow dens, where Malfurion's body lies while his mind is in the Emerald Dream.",
-		"Nighthaven is the village at the centre. The Circle reopened to all races after the Third War, which is why tauren druids trained by the night elves are now a normal sight, and why Moonglade is the one place where the two factions' druids simply get on with the work.",
+		"Moonglade is a sheltered valley in northern Kalimdor and a home of the Cenarion Circle. The land route passes through Timbermaw Hold, while druids learn a spell that brings them directly to the glade.",
+		"Keeper Remulos watches over the druids who hibernate here. Nighthaven welcomes tauren and night elves alike, and its wardens defend the settlement.",
+		"That welcome does not mean the Circle is free of disagreements. Druid teachers speak of tensions between Remulos and Fandral Staghelm even as they send their pupils to train here.",
 	},
-	didYouKnow = "Malfurion Stormrage is the first mortal druid and arguably the single most important figure in night elf history, and he is not available. He has been in the Emerald Dream for years and the Circle under Fandral Staghelm has been making decisions in his absence that he would not approve of.",
-	readMore = { "Wowpedia: Moonglade", "Wowpedia: Cenarion Circle", "Wowpedia: Malfurion Stormrage" },
+	readMore = { "Wowpedia: Moonglade", "Wowpedia: Moonglade (Alliance)", "Wowpedia: Moonglade (Horde)" },
 }
 
 SubsOf("Moonglade", {
@@ -3078,13 +3086,12 @@ SubsOf("Tanaris", {
 SubsOf("Winterspring", {
 	{
 		name = "Moon Horror Den", parent = "Winterspring", faction = "Hostile",
-		hook = "An owlbeast cave a short walk from Everlook's gates.",
+		hook = "A cave of raging owlbeasts northeast of Everlook.",
 		lore = {
-			"The Moon Horror Den is a small cave north-east of Everlook, close enough to the goblin town's gates to walk. Raging owlbeasts live in it.",
-			"Owlbeasts are a night elf problem that got out. They were made, or shaped, in the service of Elune's own and they have not stayed where they were put; Winterspring is full of them.",
-			"Winterfall Village looks close on a map and is not, because the mountain is in the way. Winterspring is a zone where everything is a long ride from everything else, and Everlook is the only place to buy anything.",
+			"Moon Horror Den lies a short distance northeast of Everlook. Raging owlbeasts inhabit the cave.",
+			"Winterfall Village is close on the map, but the mountain blocks a direct route between the two places.",
 		},
-		readMore = { "Wowpedia: Moon Horror Den", "Wowpedia: Everlook", "Wowpedia: Owlbeast" },
+		readMore = { "Wowpedia: Moon Horror Den", "Wowpedia: Wild Guardians" },
 	},
 })
 

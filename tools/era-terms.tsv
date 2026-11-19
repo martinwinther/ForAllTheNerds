@@ -1939,3 +1939,39 @@ Thule	vanilla	Named in 1.12 creature_template 1947 (Thule Ravenclaw)	cmangos 1.1
 Ursal	vanilla	Named in 1.12 creature_template 2039 (Ursal the Mauler)	cmangos 1.12.1 creature_template 2039	cs
 William Pestle	vanilla	Named in 1.12 creature_template 253 (William Pestle)	cmangos 1.12.1 creature_template 253	cs
 Wraiths	fragment	Sentence-opening common creature noun; quest 5225 names wraiths and ghosts	cmangos quest_template 5225	cs
+Apothecary Zamah	vanilla	Name or shortened form of Apothecary Zamah	cmangos 1.12.1 creature_template 3419	cs
+Balos Jacken	vanilla	Name or shortened form of Balos Jacken	cmangos 1.12.1 creature_template 5089	cs
+Blue	fragment	Colour adjective before dragonkin	prose grammar	cs
+Captain Pentigast	vanilla	Name or shortened form of Captain Pentigast	cmangos 1.12.1 creature_template 5396	cs
+Cenarion Scout Azenel	vanilla	Name or shortened form of Cenarion Scout Azenel	cmangos 1.12.1 creature_template 15610	cs
+Cenarion Scout Landion	vanilla	Name or shortened form of Cenarion Scout Landion	cmangos 1.12.1 creature_template 15609	cs
+Council	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 5157	cs
+Couriers	fragment	Common noun for messengers opening two sentences	prose grammar	cs
+Darkspears	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Denalan	vanilla	Name or shortened form of Denalan	cmangos 1.12.1 creature_template 2080	cs
+Haleh	vanilla	Name or shortened form of Haleh	cmangos 1.12.1 creature_template 10929	cs
+Huge	fragment	Ordinary adjective opening the sea-creature sentence	prose grammar	cs
+Irontree Cavern	vanilla	Original cave and its Warpwood inhabitants	warcraft.wiki.gg/wiki/Irontree_Cavern	cs
+Lake Al'Ameth	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 918	cs
+Magmar Fellhew	vanilla	Name or shortened form of Magmar Fellhew	cmangos 1.12.1 creature_template 1345	cs
+Mai'Zoth	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Manor Mistmantle	vanilla	Original stead of Stalvan Mistmantle, north of Darkshire	warcraft.wiki.gg/wiki/Manor_Mistmantle	cs
+Mind's Eye	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Morgan's Plot	vanilla	Original church and graveyard behind Karazhan	warcraft.wiki.gg/wiki/Morgan's_Plot	cs
+Needler	vanilla	Name or shortened form of Ressan the Needler	cmangos 1.12.1 creature_template 10357	cs
+Nightmare Vale	vanilla	Original Tirisfal valley with darkhounds and bats	warcraft.wiki.gg/wiki/Nightmare_Vale	cs
+Owl Wing Thicket	vanilla	Original southern Winterspring caves with Ranshalla	warcraft.wiki.gg/wiki/Owl_Wing_Thicket	cs
+Owlbeast	vanilla	Name or shortened form of Vicious Owlbeast	cmangos 1.12.1 creature_template 2927	cs
+Pools	fragment	Common noun opening the Pools of Arlithrien hook	prose grammar	cs
+Pools of Arlithrien	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 933	cs
+Ranshalla	vanilla	Name or shortened form of Ranshalla	cmangos 1.12.1 creature_template 10300	cs
+Razormaw Matriarch	vanilla	Name or shortened form of Razormaw Matriarch	cmangos 1.12.1 creature_template 1140	cs
+Ressan	vanilla	Name or shortened form of Ressan the Needler	cmangos 1.12.1 creature_template 10357	cs
+Ridge	vanilla	Component of the original place name Raptor Ridge	warcraft.wiki.gg/wiki/Raptor_Ridge	cs
+Scarlet Watchtower	vanilla	Original tower east of Nightmare Vale	warcraft.wiki.gg/wiki/Scarlet_Watchtower	cs
+Stalvan Mistmantle	vanilla	Name or shortened form of Stalvan Mistmantle	cmangos 1.12.1 creature_template 315	cs
+Stranglethorn Vale	vanilla	Original zone name; quest 581 names it	warcraft.wiki.gg/wiki/Stranglethorn_Vale	cs
+Unliving	vanilla	Component of Unliving Resident, the original Deadwind Pass undead	cmangos 1.12.1 creature_template 12380	cs
+Warpwood	vanilla	Name or shortened form of Warpwood Moss Flayer	cmangos 1.12.1 creature_template 7100	cs
+Wildkin	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 4741	cs
+Zamah	vanilla	Name or shortened form of Apothecary Zamah	cmangos 1.12.1 creature_template 3419	cs

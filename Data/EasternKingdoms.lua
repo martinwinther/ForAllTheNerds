@@ -36,12 +36,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Northshire Abbey", faction = "Alliance", levels = "1-5",
-		hook = "Home of the Brotherhood of Northshire, healers who ended up fighting the First War with the Light.",
+		hook = "The home of the Brotherhood of Northshire and a training ground for recruits.",
 		lore = {
-			"The Abbey belongs to the Brotherhood of Northshire, a clerical order of priests and paladins, and the Church of the Holy Light in the southern kingdoms grew out of it. During the First War its clerics were sent to war as healers and found themselves turning the Light on the orcish Horde as well. They were not soldiers and the war went badly for them.",
-			"The orcs destroyed the Abbey in the First War and the brotherhood was devastated with it. Archbishop Alonsus Faol oversaw the rebuilding, and Faol went on to found the Knights of the Silver Hand as the Church's fighting arm, with Uther named the first of the paladins. The order that grew out of the Second War owes more to him than to anyone.",
+			"Northshire Abbey stands in Northshire Valley, among the foothills of Elwynn Forest. Its clerics served the kingdom of Stormwind during the First War, and the abbey fell to the invading orcs.",
+			"The rebuilt abbey now houses trainers and receives recruits for the defence of the kingdom. Kobolds and Defias bandits threaten the surrounding valley.",
 		},
-		didYouKnow = "Recruits are still trained here, under the eye of an order that the First War very nearly finished off. Archbishop Benedictus runs the Church from the Cathedral in Stormwind these days; the Abbey is where it started.",
+		readMore = { "Wowpedia: Northshire Abbey", "Wowpedia: Northshire Abbey (WC1 Orc)", "Wowpedia: A Threat Within", "Wowpedia: Brotherhood of Thieves" },
 	},
 	{
 		name = "Goldshire", faction = "Alliance", levels = "5-12",
@@ -592,11 +592,12 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Ironband's Excavation Site", parent = "Loch Modan", faction = "Alliance",
-		hook = "The Explorers' League's main dig in the valley, and the troggs are already in it.",
+		hook = "An archaeological dig in southeastern Loch Modan, overrun by troggs.",
 		lore = {
-			"Prospector Ironband's team is digging into what they believe is a titan-built structure. The finds have been good enough to justify the expense and dangerous enough to justify the guards.",
-			"The guards have not been sufficient. Troggs broke into the lower works, the standard outcome of digging anywhere in these mountains.",
+			"Prospector Ironband's team is excavating ancient ruins southeast of the Loch. Troggs have driven the workers from the site and taken the carved idols they uncovered.",
+			"The idols seem to send the troggs berserk. Magmar Fellhew wants them recovered for study, while Ironband seeks more blastpowder to continue the excavation.",
 		},
+		readMore = { "Wowpedia: Ironband's Excavation Site", "Wowpedia: Excavation Progress Report" },
 	},
 	{
 		name = "The Farstrider Lodge", parent = "Loch Modan", faction = "Alliance",
@@ -608,11 +609,12 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Mo'grosh Stronghold", parent = "Loch Modan", faction = "Hostile",
-		hook = "An ogre hold in the northern hills, where something is making the ogres organised.",
+		hook = "An ogre stronghold in northeastern Loch Modan.",
 		lore = {
-			"The Mo'grosh clan have held this ground for a long time without being much of a threat, because ogres are strong and stupid in roughly equal measure. That has changed. They have started raiding with intent.",
-			"The dwarves' working theory is that the clan has got hold of something it does not understand. Ogres with an artefact is a worse problem than ogres with a club.",
+			"Mo'grosh Stronghold is a group of caves occupied by ogres in northeastern Loch Modan. Brutes, enforcers, shamans and mystics defend the stronghold.",
+			"The ogres mine rare crystals. Dwarven investigators need one as an ingredient in a mixture that can disarm Dark Iron explosives.",
 		},
+		readMore = { "Wowpedia: Mo'grosh Stronghold", "Wowpedia: A Dark Threat Looms (5)" },
 	},
 	{
 		name = "Silver Stream Mine", parent = "Loch Modan", faction = "Hostile",
@@ -795,11 +797,12 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Manor Mistmantle", parent = "Duskwood", faction = "Contested",
-		hook = "A noble family's manor on the hill, emptied by whatever happened to the rest of the county.",
+		hook = "A haunted stead north of Darkshire, occupied by Stalvan Mistmantle.",
 		lore = {
-			"The Mistmantles were local gentry. Their manor stands above Darkshire and is no longer occupied by anyone the family would recognise.",
-			"Duskwood's abandoned estates are a recurring feature. The money left when the sun did.",
+			"Manor Mistmantle lies north of Darkshire in Duskwood. Stalvan Mistmantle, a former schoolteacher now among the undead, inhabits the property with ghouls.",
+			"The town's records connect his name to the schoolhouse in Moonbrook. Investigators in Darkshire are trying to piece together his past.",
 		},
+		readMore = { "Wowpedia: Manor Mistmantle", "Wowpedia: The Legend of Stalvan" },
 	},
 	{
 		name = "Addle's Stead", parent = "Duskwood", faction = "Hostile",
@@ -974,11 +977,11 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Raptor Ridge", parent = "Wetlands", faction = "Hostile",
-		hook = "A ridge full of raptors, which in the Wetlands means very large raptors.",
+		hook = "A raptor-infested ridge in the eastern Wetlands.",
 		lore = {
-			"The ridge holds the zone's densest raptor population. Khaz Modan's raptors are smaller than Stranglethorn's but considerably more numerous here.",
-			"The Explorers' League's interest in the local bone beds and the living raptors on the ridge are probably related, and the League is working on it.",
+			"Raptor Ridge lies northwest of the Dragonmaw Gates in the eastern Wetlands. Raptors inhabit the ridge and its cavern. The rare Razormaw Matriarch can be encountered here.",
 		},
+		readMore = { "Wowpedia: Raptor Ridge", "Wowpedia: Razormaw Matriarch" },
 	},
 })
 
@@ -1424,11 +1427,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Mosh'Ogg Ogre Mound", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "An ogre mound in the eastern jungle, holding ground nobody else wants badly enough.",
+		hook = "An ogre stronghold in eastern Stranglethorn Vale.",
 		lore = {
-			"The Mosh'Ogg have established themselves in the eastern vale, among the trolls and the Venture Company's logging operations.",
-			"They are a third party in a jungle that already had too many, and their main contribution is making the eastern road worse.",
+			"Mosh'Ogg ogres occupy the mound in eastern Stranglethorn Vale. Deep inside, the ogre mage Mai'Zoth holds a powerful relic known as the Mind's Eye.",
+			"A troll who knew Mai'Zoth when the Darkspears lived in the vale warns that the relic could make his already formidable magic stronger.",
 		},
+		readMore = { "Wowpedia: Mosh'Ogg Ogre Mound", "Wowpedia: The Mind's Eye (Horde)" },
 	},
 	{
 		name = "Venture Co. Base Camp", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -2139,11 +2143,12 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Plaguewood", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A dead forest under Naxxramas, which is floating overhead.",
+		hook = "A blighted forest beneath the floating necropolis of Naxxramas.",
 		lore = {
-			"Plaguewood is the blighted forest in the zone's north, and Kel'Thuzad's necropolis Naxxramas hangs in the air above it.",
-			"Naxxramas is a flying fortress of the Scourge and Kel'Thuzad's personal seat. It sits there in plain view from the road, and nobody has been able to do a thing about it.",
+			"Plaguewood lies south of Stratholme in the Eastern Plaguelands. Scourge forces occupy its ziggurats and slaughterhouses, while Naxxramas hangs above the forest.",
+			"A rune portal in the woods provides an entrance to the necropolis. The Argent Dawn has devised an arcane disguise to pass its wards and offers assistance to those who have earned its trust.",
 		},
+		readMore = { "Wowpedia: Plaguewood", "Wowpedia: The Dread Citadel - Naxxramas" },
 	},
 	{
 		name = "Ruins of Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
@@ -2250,13 +2255,12 @@ Zone{
 SubsOf("Deadwind Pass", {
 	{
 		name = "Karazhan", parent = "Deadwind Pass", faction = "Hostile",
-		hook = "The last Guardian's tower, sealed, and still not quiet.",
+		hook = "Medivh's abandoned tower in southern Deadwind Pass.",
 		lore = {
-			"Karazhan was Medivh's home and workshop, built where ley lines converge. The Guardians of Tirisfal placed it here on purpose; the tower is a magical instrument as much as a residence.",
-			"Medivh died in it. Nobody has successfully claimed it since, and the few expeditions that have gone in have not come back with a coherent account of what is inside.",
-			"Mages and the Kirin Tor's remnants watch the tower from a distance. There is general agreement that someone will eventually have to go in and find out what Medivh left behind.",
+			"Karazhan stands in southern Deadwind Pass. It was the home of Medivh, the last Guardian of Tirisfal, and the place where Khadgar served as his apprentice.",
+			"Medivh died here during the First War. The tower still stands above the deserted settlement at its foot.",
 		},
-		didYouKnow = "Medivh's mother Aegwynn was Guardian before him, and she killed an avatar of Sargeras in Northrend. Binding his spirit into her unborn son was his revenge for it.",
+		readMore = { "Wowpedia: Karazhan", "Wowpedia: The Last Guardian" },
 	},
 	{
 		name = "Deadwind Ravine", parent = "Deadwind Pass", faction = "Contested",
@@ -2295,11 +2299,12 @@ Zone{
 SubsOf("Blasted Lands", {
 	{
 		name = "Nethergarde Keep", faction = "Alliance", levels = "45-55",
-		hook = "A Kirin Tor fortress built to watch the Dark Portal and never stand down.",
+		hook = "An Alliance fortress built to watch the Dark Portal.",
 		lore = {
-			"Archmage Khadgar wanted a permanent watch on the Dark Portal and would not let the subject drop, so the kingdoms of the Alliance of Lordaeron paid for one. The Kirin Tor staffed it. The stonework is the Stonemasons' Guild's, raised under a foreman named Edwin VanCleef. Hold on to that if you have been anywhere near Westfall.",
-			"The posting is thankless. The mages and soldiers here have spent years watching a broken gate, fighting off demons from the Tainted Scar, and receiving very little attention from a world with newer problems.",
+			"After the Second War, the Kirin Tor built Nethergarde to watch the rift left at the ruined Dark Portal. The fortress still stands in the northeastern Blasted Lands.",
+			"Mages here study the portal and depend on frequent supplies. Couriers face a dangerous route from Stormwind and are needed when a shipment cannot wait for the next caravan.",
 		},
+		readMore = { "Wowpedia: Nethergarde Keep", "Wowpedia: Warcraft II: Beyond the Dark Portal manual", "Wowpedia: Vital Supplies (quest)", "Wowpedia: Supplies for Nethergarde" },
 	},
 	{
 		name = "The Dark Portal", parent = "Blasted Lands", faction = "Hostile",

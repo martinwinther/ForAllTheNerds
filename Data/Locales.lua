@@ -496,11 +496,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Mist's Edge", faction = "Contested",
-		hook = "The southern shoreline, where Darkshore's fog finally gives out.",
+		hook = "A long stretch of Darkshore coast, littered with wrecks and stranded sea creatures.",
 		lore = {
-			"Mist's Edge marks the bottom of the coast, where the grey lifts a little and Ashenvale's forest starts to show. Night elves pass through rather than stop.",
-			"Ruins run the length of this shore. Ameth'Aran and Bashal'Aran were towns with populations, caught where they stood when the Sundering came, and their dead have not settled in all the time since.",
+			"Mist's Edge stretches north along Darkshore from near Auberdine. Murlocs inhabit the coast, and crabs scuttle across its beaches.",
+			"Huge sea creatures have washed ashore, leaving carcasses for the murlocs to scavenge. Researchers in Auberdine seek samples to investigate what has happened.",
 		},
+		readMore = { "Wowpedia: Mist's Edge", "Wowpedia: Beached Sea Creature" },
 	},
 	{
 		name = "Cliffspring River", faction = "Contested",
@@ -1046,11 +1047,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Nightmare Vale", faction = "Hostile",
-		hook = "A stretch of blighted ground west of Brill, named by people who had to cross it.",
+		hook = "A withered valley in southwestern Tirisfal, stalked by darkhounds and bats.",
 		lore = {
-			"The vale is one of the places in Tirisfal where the plague went deepest into the soil. What grows here is wrong and what lives here is worse.",
-			"Lordaeron's farmland was the best in the north. That it now produces this is the single most complete thing the Scourge managed anywhere.",
+			"Nightmare Vale lies in southwestern Tirisfal Glades, west of the Scarlet Watchtower. Darkhounds and vampire bats inhabit the dying woodland.",
+			"A rare white bat, Ressan the Needler, can also be found here.",
 		},
+		readMore = { "Wowpedia: Nightmare Vale" },
 	},
 	{
 		name = "Venomweb Vale", faction = "Hostile",
@@ -1491,11 +1493,11 @@ SubsOf("Deadwind Pass", {
 	},
 	{
 		name = "Morgan's Plot", faction = "Contested",
-		hook = "A graveyard in the pass, which raises the question of who buried them.",
+		hook = "A ruined church and graveyard behind Karazhan.",
 		lore = {
-			"The plot is a burial ground in a canyon with no living population. There was a village in Deadwind Pass once, and the records on what happened to it are thin.",
-			"Karazhan stands above all of it. Medivh's tower has been sealed since he died in it, and the few expeditions that have gone in have not come back with a coherent account.",
+			"Morgan's Plot lies behind Karazhan in Deadwind Pass. A small church stands beside the graveyard and its crypt. Unliving residents haunt the church and the nearby slope.",
 		},
+		readMore = { "Wowpedia: Morgan's Plot" },
 	},
 })
 
@@ -1939,11 +1941,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Irontree Cavern", faction = "Hostile",
-		hook = "A cave under the northern woods, where the corruption has had somewhere to pool.",
+		hook = "A cave in northern Felwood, inhabited by corrupted treants.",
 		lore = {
-			"The cavern sits beneath the Irontree Woods, where the trees themselves have turned.",
-			"Corrupted treants are the part of Felwood the Cenarion Circle finds hardest. Treants were allies, and a hostile forest in the literal sense is not something the druids have a precedent for.",
+			"Irontree Cavern lies in the Irontree Woods. Warpwood shredders and moss flayers inhabit its depths, part of the corruption afflicting the northern forest.",
 		},
+		readMore = { "Wowpedia: Irontree Cavern" },
 	},
 	{
 		name = "Jadefire Run", faction = "Hostile",
