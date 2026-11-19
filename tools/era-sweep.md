@@ -3681,3 +3681,19 @@ Zun'watha.
 
 Next: P4, the next 25 entry records by the recomputed ranking, starting with
 The Dustbowl. Count duplicate names as separate records. P5 remains pending.
+
+### 2026-11-19, release 1.2.16
+
+Martin requested a merge of dev into main and the next 1.2.x release.
+Release 1.2.16 includes P4 run 23: 25 vanilla entries reviewed and corrected,
+with none removed. Both version strings are 1.2.16. CHANGELOG.md records
+these findings; P5 must not repeat them and now covers run 24 onwards.
+
+The sweep remains in progress at 574 of 915 surviving vanilla entries.
+The Dustbowl is next, with 341 entries left. P5 has not started.
+
+Release checks passed on all nine client configurations with zero errors or
+warnings. Gap checking reports 43 explained gaps, release-file prose lint
+is clean, and git diff --check passes. The local zip contains matching TOC
+and Core versions plus LICENSE, and excludes development tools. The preceding
+sweep commit c80118e passed CI for its exact SHA before release preparation.
