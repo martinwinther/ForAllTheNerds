@@ -3485,7 +3485,7 @@ push dev and verify CI for its exact SHA, then merge to main and publish the
 annotated version tag.
 
 Release checks passed on all nine client configurations with zero errors or
-warnings. The gap check reports 43 explained gaps, release-file prose lint
+warnings. Gap checking reports 43 explained gaps, release-file prose lint
 is clean, and git diff --check passes. The local 1.2.15 zip passed its package
 checks, contains matching TOC and Core versions plus LICENSE, and excludes
 development tools. The preceding sweep commit 03ecafe passed CI for its exact
