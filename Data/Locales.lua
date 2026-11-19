@@ -496,11 +496,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Mist's Edge", faction = "Contested",
-		hook = "The southern shoreline, where Darkshore's fog finally gives out.",
+		hook = "A long stretch of Darkshore coast, littered with wrecks and stranded sea creatures.",
 		lore = {
-			"Mist's Edge marks the bottom of the coast, where the grey lifts a little and Ashenvale's forest starts to show. Night elves pass through rather than stop.",
-			"Ruins run the length of this shore. Ameth'Aran and Bashal'Aran were towns with populations, caught where they stood when the Sundering came, and their dead have not settled in all the time since.",
+			"Mist's Edge stretches north along Darkshore from near Auberdine. Murlocs inhabit the coast, and crabs scuttle across its beaches.",
+			"Huge sea creatures have washed ashore, leaving carcasses for the murlocs to scavenge. Researchers in Auberdine seek samples to investigate what has happened.",
 		},
+		readMore = { "Wowpedia: Mist's Edge", "Wowpedia: Beached Sea Creature" },
 	},
 	{
 		name = "Cliffspring River", faction = "Contested",
@@ -1046,11 +1047,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Nightmare Vale", faction = "Hostile",
-		hook = "A stretch of blighted ground west of Brill, named by people who had to cross it.",
+		hook = "A withered valley in southwestern Tirisfal, stalked by darkhounds and bats.",
 		lore = {
-			"The vale is one of the places in Tirisfal where the plague went deepest into the soil. What grows here is wrong and what lives here is worse.",
-			"Lordaeron's farmland was the best in the north. That it now produces this is the single most complete thing the Scourge managed anywhere.",
+			"Nightmare Vale lies in southwestern Tirisfal Glades, west of the Scarlet Watchtower. Darkhounds and vampire bats inhabit the dying woodland.",
+			"A rare white bat, Ressan the Needler, can also be found here.",
 		},
+		readMore = { "Wowpedia: Nightmare Vale" },
 	},
 	{
 		name = "Venomweb Vale", faction = "Hostile",
@@ -1212,11 +1214,12 @@ SubsOf("Loch Modan", {
 		name = "Dun Algaz", faction = "Hostile",
 		-- The client also reports this pass as "Algaz Gate".
 		aliases = { "Algaz Gate", "The Algaz Gate" },
-		hook = "The tunnel pass between Loch Modan and the Wetlands, and it is not securely held.",
+		hook = "The tunnel pass between Loch Modan and the Wetlands, threatened by Dragonmaw orcs.",
 		lore = {
-			"Dun Algaz is a dwarven-cut pass through the mountains, and it is the land link between Loch Modan and the coast. The dwarves built it, fortified it, and have been fighting over it since.",
-			"Dragonmaw orcs use the tunnels. The clan that enslaved the red dragonflight in the Second War scattered afterwards, and a hard core of them ended up in these hills.",
+			"Dun Algaz carries the road through the mountains between Loch Modan and the Wetlands. The Dragonmaw have expanded into the pass, threatening to cut off the dwarven homeland from Menethil Harbor.",
+			"Mountaineers recruit travellers to fight their way through and report to the port beyond.",
 		},
+		readMore = { "Wowpedia: Dun Algaz", "Wowpedia: The Algaz Gauntlet" },
 	},
 })
 
@@ -1309,11 +1312,11 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Gallows' Corner", faction = "Contested",
-		hook = "A crossroads in the southern mountains with an unencouraging name.",
+		hook = "An Alterac crossroads patrolled by Crushridge ogres.",
 		lore = {
-			"The corner is where the roads through southern Alterac meet, on the way between Hillsbrad and the Arathi Highlands.",
-			"Alterac has no law. The Syndicate works these roads and the Crushridge ogres work the high ground above them, and the name predates both.",
+			"Gallows' Corner lies near the Ruins of Alterac. Crushridge ogres hold the crossroads and patrol around its ruined scout tower.",
 		},
+		readMore = { "Wowpedia: Gallows' Corner" },
 	},
 	{
 		name = "Misty Shore", faction = "Contested",
@@ -1490,11 +1493,11 @@ SubsOf("Deadwind Pass", {
 	},
 	{
 		name = "Morgan's Plot", faction = "Contested",
-		hook = "A graveyard in the pass, which raises the question of who buried them.",
+		hook = "A ruined church and graveyard behind Karazhan.",
 		lore = {
-			"The plot is a burial ground in a canyon with no living population. There was a village in Deadwind Pass once, and the records on what happened to it are thin.",
-			"Karazhan stands above all of it. Medivh's tower has been sealed since he died in it, and the few expeditions that have gone in have not come back with a coherent account.",
+			"Morgan's Plot lies behind Karazhan in Deadwind Pass. A small church stands beside the graveyard and its crypt. Unliving residents haunt the church and the nearby slope.",
 		},
+		readMore = { "Wowpedia: Morgan's Plot" },
 	},
 })
 
@@ -1832,11 +1835,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Gordunni Outpost", faction = "Hostile",
-		hook = "An ogre camp in the central jungle, flying Gordunni colours.",
+		hook = "An ogre camp in the hills of Feralas.",
 		lore = {
-			"The Gordunni are the ogre clan spread across Feralas outside Dire Maul, and outposts like this one hold the ground between the ruins.",
-			"Dire Maul was Eldre'Thalas, a night elf city and a centre of Highborne magical study. The Gordok ogres hold it now, putting an ogre king in one of the great libraries of the old empire.",
+			"Gordunni ogres occupy the hills north of Lariss Pavilion. Their presence has scarred the surrounding forest, and the Horde seeks to stop their expansion.",
+			"The ogres bury cobalt at the outpost. An interested collector at Camp Mojache offers a shovel to anyone willing to dig it up.",
 		},
+		readMore = { "Wowpedia: Gordunni Outpost", "Wowpedia: The Ogres of Feralas (1)", "Wowpedia: Gordunni Cobalt" },
 	},
 	{
 		name = "Sardor Isle", faction = "Contested",
@@ -1937,11 +1941,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Irontree Cavern", faction = "Hostile",
-		hook = "A cave under the northern woods, where the corruption has had somewhere to pool.",
+		hook = "A cave in northern Felwood, inhabited by corrupted treants.",
 		lore = {
-			"The cavern sits beneath the Irontree Woods, where the trees themselves have turned.",
-			"Corrupted treants are the part of Felwood the Cenarion Circle finds hardest. Treants were allies, and a hostile forest in the literal sense is not something the druids have a precedent for.",
+			"Irontree Cavern lies in the Irontree Woods. Warpwood shredders and moss flayers inhabit its depths, part of the corruption afflicting the northern forest.",
 		},
+		readMore = { "Wowpedia: Irontree Cavern" },
 	},
 	{
 		name = "Jadefire Run", faction = "Hostile",

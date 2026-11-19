@@ -1906,3 +1906,72 @@ Zul'Mamwe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zul'Mashar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zun'watha	vanilla	AreaTable row, and named in 1.12 game text	wow_classic_era	cs
 Zuuldaia	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Alaric	vanilla	Named by his own plea as Thule Ravenclaw's former servant and bodyguard	cmangos 1.12.1 quest_template 460	cs
+Apothecary Jorell	vanilla	Named in 1.12 creature_template 2733 (Apothecary Jorell)	cmangos 1.12.1 creature_template 2733	cs
+Dalar Dawnweaver	vanilla	Named in 1.12 creature_template 1938 (Dalar Dawnweaver)	cmangos 1.12.1 creature_template 1938	cs
+Decrepit Ferry	vanilla	Named in 1.12 quest_template 438 (The Decrepit Ferry)	cmangos 1.12.1 quest_template 438	cs
+Deep	fragment	Sentence-opening adverb in existing Feralas, Dire Maul and Boulderslide Cavern prose	prose grammar	cs
+Deep Elem Mine	vanilla	Named in 1.12 quest_template 424 (Arugal\'s Folly)	cmangos 1.12.1 quest_template 424	cs
+Dorius Stonetender	vanilla	Named in 1.12 creature_template 8284 (Dorius Stonetender)	cmangos 1.12.1 creature_template 8284	cs
+Drywhisker Gorge	vanilla	Named in 1.12 quest_template 627 (Favor for Krazek)	cmangos 1.12.1 quest_template 627	cs
+Flame of Uzel	vanilla	Named in 1.12 quest_template 553 (Helcular\'s Revenge)	cmangos 1.12.1 quest_template 553	cs
+Frostmaw	vanilla	Named in 1.12 creature_template 4504 (Frostmaw)	cmangos 1.12.1 creature_template 4504	cs
+Gallows' Corner	vanilla	Original Alterac crossroads with Crushridge ogres and ruined scout tower	warcraft.wiki.gg/wiki/Gallows%27_Corner	cs
+Genavie Callow	vanilla	Named in 1.12 creature_template 4486 (Genavie Callow)	cmangos 1.12.1 creature_template 4486	cs
+Gnarlpine Hold	vanilla	Named in 1.12 quest_template 486 (Ursal the Mauler)	cmangos 1.12.1 quest_template 486	cs
+Go'Shek Farm	vanilla	Original area and Horde farm described in quest 659	cmangos quest_template 659; Go'Shek Farm original-game section	cs
+Grimesilt Dig Site	vanilla	Original excavation with Dorius Stonetender and the outhouse quest	Grimesilt Dig Site; cmangos quests 3367 and 4449	cs
+Grimson	vanilla	Short form of Grimson the Pale, the tainted foreman at Deep Elem Mine	cmangos 1.12.1 creature_template 1972; quest_template 424	cs
+Growless Cave	vanilla	Original yeti cave with Flame of Uzel; quest 553 describes the cave	Growless Cave; cmangos quest_template 553	cs
+Hammertoe's Digsite	vanilla	Original Badlands excavation attacked by Dark Iron dwarves	Hammertoe's Digsite; cmangos quest 719	cs
+Harvest	vanilla	Harvest Golem is creature 36; existing Dust Plains prose uses the shortened name	cmangos creature_template 36	cs
+Harvest Festival	vanilla	Named in 1.12 quest_template 8149 (Honoring a Hero)	cmangos 1.12.1 quest_template 8149	cs
+Ilkrud Magthrull	vanilla	Named in 1.12 creature_template 3664 (Ilkrud Magthrull)	cmangos 1.12.1 creature_template 3664	cs
+Krazek	vanilla	Named in 1.12 creature_template 773 (Krazek)	cmangos 1.12.1 creature_template 773	cs
+Labourers	fragment	Sentence-opening common noun for workers	prose grammar	cs
+Marshal Dughan	vanilla	Named in 1.12 creature_template 240 (Marshal Dughan)	cmangos 1.12.1 creature_template 240	cs
+Mauler	vanilla	Component of Ursal the Mauler, named at Gnarlpine Hold	cmangos 1.12.1 creature_template 2039; quest_template 486	cs
+Myzrael	vanilla	Named in 1.12 creature_template 2755 (Myzrael)	cmangos 1.12.1 creature_template 2755	cs
+Pale	vanilla	Named in 1.12 creature_template 1972 (Grimson the Pale)	cmangos 1.12.1 creature_template 1972	cs
+Pamela Redpath	vanilla	Named in 1.12 creature_template 10926 (Pamela Redpath)	cmangos 1.12.1 creature_template 10926	cs
+Ruins of Alterac	vanilla	Original ruined city in Alterac Mountains	warcraft.wiki.gg/wiki/Ruins_of_Alterac	cs
+Thule	vanilla	Named in 1.12 creature_template 1947 (Thule Ravenclaw)	cmangos 1.12.1 creature_template 1947	cs
+Ursal	vanilla	Named in 1.12 creature_template 2039 (Ursal the Mauler)	cmangos 1.12.1 creature_template 2039	cs
+William Pestle	vanilla	Named in 1.12 creature_template 253 (William Pestle)	cmangos 1.12.1 creature_template 253	cs
+Wraiths	fragment	Sentence-opening common creature noun; quest 5225 names wraiths and ghosts	cmangos quest_template 5225	cs
+Apothecary Zamah	vanilla	Name or shortened form of Apothecary Zamah	cmangos 1.12.1 creature_template 3419	cs
+Balos Jacken	vanilla	Name or shortened form of Balos Jacken	cmangos 1.12.1 creature_template 5089	cs
+Blue	fragment	Colour adjective before dragonkin	prose grammar	cs
+Captain Pentigast	vanilla	Name or shortened form of Captain Pentigast	cmangos 1.12.1 creature_template 5396	cs
+Cenarion Scout Azenel	vanilla	Name or shortened form of Cenarion Scout Azenel	cmangos 1.12.1 creature_template 15610	cs
+Cenarion Scout Landion	vanilla	Name or shortened form of Cenarion Scout Landion	cmangos 1.12.1 creature_template 15609	cs
+Council	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 5157	cs
+Couriers	fragment	Common noun for messengers opening two sentences	prose grammar	cs
+Darkspears	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Denalan	vanilla	Name or shortened form of Denalan	cmangos 1.12.1 creature_template 2080	cs
+Haleh	vanilla	Name or shortened form of Haleh	cmangos 1.12.1 creature_template 10929	cs
+Huge	fragment	Ordinary adjective opening the sea-creature sentence	prose grammar	cs
+Irontree Cavern	vanilla	Original cave and its Warpwood inhabitants	warcraft.wiki.gg/wiki/Irontree_Cavern	cs
+Lake Al'Ameth	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 918	cs
+Magmar Fellhew	vanilla	Name or shortened form of Magmar Fellhew	cmangos 1.12.1 creature_template 1345	cs
+Mai'Zoth	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Manor Mistmantle	vanilla	Original stead of Stalvan Mistmantle, north of Darkshire	warcraft.wiki.gg/wiki/Manor_Mistmantle	cs
+Mind's Eye	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 591	cs
+Morgan's Plot	vanilla	Original church and graveyard behind Karazhan	warcraft.wiki.gg/wiki/Morgan's_Plot	cs
+Needler	vanilla	Name or shortened form of Ressan the Needler	cmangos 1.12.1 creature_template 10357	cs
+Nightmare Vale	vanilla	Original Tirisfal valley with darkhounds and bats	warcraft.wiki.gg/wiki/Nightmare_Vale	cs
+Owl Wing Thicket	vanilla	Original southern Winterspring caves with Ranshalla	warcraft.wiki.gg/wiki/Owl_Wing_Thicket	cs
+Owlbeast	vanilla	Name or shortened form of Vicious Owlbeast	cmangos 1.12.1 creature_template 2927	cs
+Pools	fragment	Common noun opening the Pools of Arlithrien hook	prose grammar	cs
+Pools of Arlithrien	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 933	cs
+Ranshalla	vanilla	Name or shortened form of Ranshalla	cmangos 1.12.1 creature_template 10300	cs
+Razormaw Matriarch	vanilla	Name or shortened form of Razormaw Matriarch	cmangos 1.12.1 creature_template 1140	cs
+Ressan	vanilla	Name or shortened form of Ressan the Needler	cmangos 1.12.1 creature_template 10357	cs
+Ridge	vanilla	Component of the original place name Raptor Ridge	warcraft.wiki.gg/wiki/Raptor_Ridge	cs
+Scarlet Watchtower	vanilla	Original tower east of Nightmare Vale	warcraft.wiki.gg/wiki/Scarlet_Watchtower	cs
+Stalvan Mistmantle	vanilla	Name or shortened form of Stalvan Mistmantle	cmangos 1.12.1 creature_template 315	cs
+Stranglethorn Vale	vanilla	Original zone name; quest 581 names it	warcraft.wiki.gg/wiki/Stranglethorn_Vale	cs
+Unliving	vanilla	Component of Unliving Resident, the original Deadwind Pass undead	cmangos 1.12.1 creature_template 12380	cs
+Warpwood	vanilla	Name or shortened form of Warpwood Moss Flayer	cmangos 1.12.1 creature_template 7100	cs
+Wildkin	vanilla	Named in original quest text	cmangos 1.12.1 quest_template 4741	cs
+Zamah	vanilla	Name or shortened form of Apothecary Zamah	cmangos 1.12.1 creature_template 3419	cs

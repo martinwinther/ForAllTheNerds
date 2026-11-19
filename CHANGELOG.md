@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.2.15
+
+Two more rounds of the vanilla-era sweep: 50 entries reviewed and corrected,
+with nothing removed. The sweep now covers 549 of the 915 vanilla entries.
+
+**Fixed**
+
+- Go'Shek Farm correctly describes its Horde occupants and is marked Horde.
+  Dabyrie's Farmstead describes its militia and is marked Alliance.
+- Deep Elem Mine houses worgen under Grimson the Pale. Fenris Isle is held by
+  Rot Hide gnolls, and Fire Scar Shrine describes its demons and orc warlock.
+- Growless Cave houses yeti. Lost Point describes Theramore deserters, and
+  Manor Mistmantle describes Stalvan and the undead on his property.
+- Hive'Zora is in western Silithus; its invented tunnel connection to Un'Goro
+  is gone. Mazthoril, Mist's Edge and Owl Wing Thicket have corrected geography.
+- Felstone Field and Gahrron's Withering describe poison sampling and
+  counteragent research instead of simply destroying their plague cauldrons.
+- The Pools of Vision entry now agrees with Thunder Bluff's account of its
+  Forsaken trainers and apothecary. Moonglade welcomes both druid races without
+  claiming that fighting or internal disagreements never occur there.
+- Demon Fall Canyon correctly describes Grom's monument. Karazhan,
+  Northshire Abbey and Nethergarde Keep no longer include unsupported history
+  or details drawn from later sources.
+- Other entries replace invented motives, superlatives and creature behaviour
+  with details from vanilla quests and locations, including the silithid hives,
+  Ironband's excavation, Jaedenar, Plaguewood and Raptor Ridge.
+
 ## 1.2.14
 
 Two more rounds of the vanilla-era sweep: 50 entries reviewed, 47 corrected

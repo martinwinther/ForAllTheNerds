@@ -373,11 +373,12 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "Pools of Vision", faction = "Horde",
-		hook = "Sacred pools on Spirit Rise where the tauren speak with the dead.",
+		hook = "The Forsaken enclave beneath Spirit Rise in Thunder Bluff.",
 		lore = {
-			"The Pools of Vision are where tauren spirit-walkers do their work, communing with ancestors and the elemental spirits.",
-			"The tauren treat the dead as present rather than gone, and the pools are the formal mechanism for that.",
+			"The Pools of Vision lie in caves beneath Spirit Rise. Forsaken mage and priest trainers work here, alongside Apothecary Zamah.",
+			"Zamah receives alchemical samples from her colleagues beyond Thunder Bluff. Couriers must find the concealed path into the caves before their mixtures lose potency.",
 		},
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah (quest)" },
 	},
 })
 
@@ -424,11 +425,11 @@ SubsOf("Darnassus", {
 	},
 	{
 		name = "Craftsmen's Terrace", faction = "Alliance",
-		hook = "The city's workshops, in a culture that does not much like manufacturing.",
+		hook = "Darnassus' northern district of workshops, trainers and shops.",
 		lore = {
-			"The Craftsmen's Terrace holds Darnassus' trade trainers and workshops.",
-			"Night elf craft tends toward the grown rather than the built. Their architecture is shaped from living material where possible. Darnassus looks nothing like Stormwind or Ironforge for that reason.",
+			"The Craftsmen's Terrace holds many of Darnassus' trade trainers and shops. Leatherworkers and enchanters work here, and travellers can stay at the district's inn.",
 		},
+		readMore = { "Wowpedia: Craftsmen's Terrace" },
 	},
 	{
 		name = "Tradesmen's Terrace", faction = "Alliance",
