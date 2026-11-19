@@ -508,11 +508,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Saldean's Farm", parent = "Westfall", faction = "Alliance",
-		hook = "A working farm near Sentinel Hill, supplying the militia that protects it.",
+		hook = "A Westfall farm whose owners refuse to leave their overrun fields.",
 		lore = {
-			"The Saldeans are among the holdouts who still feed Westfall's defenders. The arrangement is informal and mutual: the militia keeps the Defias off the farm, the farm keeps the militia fed.",
-			"No kingdom features anywhere in that arrangement, and Westfall has got used to the fact.",
+			"Farmer Saldean and Salma Saldean remain on their farm while other families flee Westfall. Harvest Watchers have taken over their fields, and the farmer offers pay to anyone who clears them out.",
+			"Salma seeks ingredients for Westfall stew. A neighbouring farmer's wife sends her the recipe while preparing to leave the region herself.",
 		},
+		readMore = { "Wowpedia: Saldean's Farm", "Wowpedia: The Killing Fields", "Wowpedia: Westfall Stew (Classic 2)" },
 	},
 	{
 		name = "The Jansen Stead", parent = "Westfall", faction = "Contested",
@@ -1136,11 +1137,12 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Strahnbrad", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "A hill town raided so often that the Syndicate effectively administers it.",
+		hook = "A ruined town in the Alterac Mountains, occupied by the Syndicate.",
 		lore = {
-			"Strahnbrad was an ordinary Alterac town. Its position in the hills made it a natural target and the Syndicate has been working it over for years.",
-			"Anyone remembering the Third War will recognise the name: Strahnbrad was one of the first places Arthas was sent to defend when the orcish raids began, long before the plague.",
+			"Strahnbrad lies east of the ruins of Alterac and west of Chillwind Point. The Syndicate holds the abandoned town and keeps prisoners in its cells.",
+			"Shortly before the Third War, Arthas defended Strahnbrad against Blackrock orcs. The town was one of his early battlefields while he still served Lordaeron.",
 		},
+		readMore = { "Wowpedia: Strahnbrad", "Wowpedia: The Defense of Strahnbrad (WC3 Human)", "Wowpedia: Gol'dir (quest)" },
 	},
 	{
 		name = "Crushridge Hold", parent = "Alterac Mountains", faction = "Hostile",
@@ -1452,11 +1454,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Cape of Stranglethorn", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The southern tip of the continent, where the jungle finally runs into the sea.",
+		hook = "The southern reaches of Stranglethorn Vale, around Booty Bay.",
 		lore = {
-			"The cape is the far southern end of the Eastern Kingdoms, and Booty Bay is built into it. Beyond here is open water and the Great Sea.",
-			"It is the most southerly ground an adventurer can stand on in this half of the world, a natural stop for people who collect such things.",
+			"The cape forms the southern end of Stranglethorn Vale. Booty Bay shelters within its coast, while the jungle contains old troll ruins and the settlements of hostile bands.",
+			"The Crystal Shore and the Ruins of Aboraz lie along this coast. Zanzil the Outcast and his followers inhabit Aboraz and the nearby ruins of Jubuwal.",
 		},
+		readMore = { "Wowpedia: The Cape of Stranglethorn", "Wowpedia: Saving Yenniku (Classic)", "Wowpedia: Zanzil's Secret (Classic)" },
 	},
 	{
 		name = "Lake Nazferiti", parent = "Stranglethorn Vale", faction = "Contested",
@@ -1726,11 +1729,12 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Revantusk Village", faction = "Horde", levels = "40-50",
-		hook = "A forest troll village that joined the Horde, on a coast full of trolls who did not.",
+		hook = "A forest troll village on the Hinterlands coast, allied with the Horde.",
 		lore = {
-			"The Revantusk are forest trolls who allied with Thrall's Horde, which makes them unusual twice over: forest trolls have little love for orcs, and the Amani tribes have little love for anyone.",
-			"Their village on the eastern coast is the Horde's only real presence in the Hinterlands, and it exists because the Revantusk decided the Vilebranch and the dwarves were worse options.",
+			"The Revantusk trolls live on the southeastern coast of the Hinterlands. They are allies of Thrall's Horde, at odds with the Vilebranch trolls and the Wildhammer dwarves.",
+			"Fishing brings problems of its own. Katoom the Angler complains that saltwater snapjaws steal his bait and break his lines, and seeks help clearing them from the coast.",
 		},
+		readMore = { "Wowpedia: Revantusk Village", "Wowpedia: Snapjaws, Mon!", "Wowpedia: Troll Compendium/Forest Troll Tribes" },
 	},
 	{
 		name = "Quel'Danil Lodge", parent = "The Hinterlands", faction = "Hostile",
@@ -1922,11 +1926,12 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Ruins of Thaurissan", parent = "Burning Steppes", faction = "Hostile",
-		hook = "The surface remains of the Dark Iron capital, burned by its own emperor's summoning.",
+		hook = "The remains of the Dark Iron capital destroyed by Ragnaros' summoning.",
 		lore = {
-			"Thaurissan was the Dark Iron clan's city after they fled south from Ironforge. Emperor Dagran Thaurissan ruled it, and his summoning of Ragnaros destroyed it.",
-			"What you see on the Steppes is the part that stayed above ground. The rest went down with the mountain and is now Blackrock Depths, where the emperor's line still holds court.",
+			"The Dark Iron clan founded Thaurissan after its exile from Ironforge. During the War of the Three Hammers, their sorcerer-thane called upon the powers beneath the earth and unleashed Ragnaros, destroying his own city.",
+			"Its ruins remain in the Burning Steppes. Royal Historian Archesonus seeks information from relics scattered among them, but assassins guard the site.",
 		},
+		readMore = { "Wowpedia: Ruins of Thaurissan", "Wowpedia: War of the Three Hammers (History of Warcraft)", "Wowpedia: The Smoldering Ruins of Thaurissan (2)" },
 	},
 	{
 		name = "Flame Crest", faction = "Horde", levels = "50-58",
@@ -2341,11 +2346,12 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Serpent's Coil", parent = "Blasted Lands", faction = "Contested",
-		hook = "A coiled rock formation in the east, infested with basilisks.",
+		hook = "A winding cave in the eastern Blasted Lands, occupied by the Shadowsworn.",
 		lore = {
-			"The Serpent's Coil is a natural formation, and the basilisks that live in it are among the few creatures that have adapted to the Blasted Lands rather than being imported into them.",
-			"The zone's native wildlife is scarce, strange and uniformly hostile. Nothing here is accidental.",
+			"Serpent's Coil is a labyrinth of caves in the eastern Blasted Lands. Archmage Allistarj operates here with his Shadowsworn followers.",
+			"The Fallen Hero of the Horde remembers being imprisoned and tortured by Allistarj alongside Lieutenant Kirith. He seeks news of his missing companion within the caves.",
 		},
+		readMore = { "Wowpedia: Serpent's Coil", "Wowpedia: Kirith (quest)" },
 	},
 	{
 		name = "Dreadmaul Post", parent = "Blasted Lands", faction = "Hostile",
@@ -2529,13 +2535,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Ruins of Jubuwal", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "Gurubashi stonework on the coast, from an empire that covered this whole jungle.",
+		hook = "Troll ruins east of the Gurubashi Arena, occupied by Zanzil's followers.",
 		lore = {
-			"The Gurubashi were the great troll empire of the south, and Stranglethorn was the heart of it. The ruins scattered through this jungle are all theirs, and there are a great many of them.",
-			"What broke the empire was internal. The Gurubashi split in a war over the worship of Hakkar the Soulflayer, a blood god the Atal'ai priesthood wanted to summon bodily into the world. The empire tore itself apart over it and the Atal'ai were exiled.",
-			"They did not give up. The Temple of Atal'Hakkar in the Swamp of Sorrows was their attempt at finishing the job, and Zul'Gurub is where the argument was finally won by the wrong side.",
+			"The Ruins of Jubuwal lie beside the main road through southern Stranglethorn Vale. Zanzil the Outcast's followers occupy the ruins here and at nearby Aboraz.",
+			"Zanzil uses a mixture of jungle plants to suppress his followers' wills and strengthen their bodies. A buyer in Booty Bay is interested in samples of the concoction.",
 		},
-		readMore = { "Wowpedia: Gurubashi", "Wowpedia: Hakkar the Soulflayer", "Wowpedia: Atal'ai" },
+		readMore = { "Wowpedia: Ruins of Jubuwal", "Wowpedia: Zanzil's Secret (Classic)" },
 	},
 })
 
@@ -2859,13 +2864,11 @@ SubsOf("Duskwood", {
 SubsOf("Westfall", {
 	{
 		name = "Stendel's Pond", parent = "Westfall", faction = "Contested",
-		hook = "A pond with gnolls round it, two graves beside it, and bones in the shallows.",
+		hook = "A small pond southwest of Sentinel Hill, occupied by gnolls.",
 		lore = {
-			"Stendel's Pond sits south-west of Sentinel Hill. There are gnolls around it, scattered remains, and two graves.",
-			"The water is probably not drinkable. Nobody has posted a notice; the graves are the notice.",
-			"Westfall was Stormwind's breadbasket and is now the place the kingdom forgot. The farms are empty, the Defias have the mill country, and a poisoned pond with two burials beside it does not rate as news here.",
+			"Stendel's Pond lies southwest of Sentinel Hill in Westfall. Gnolls inhabit the ground around the water, with skeletons and two graves nearby.",
 		},
-		readMore = { "Wowpedia: Stendel's Pond", "Wowpedia: Westfall" },
+		readMore = { "Wowpedia: Stendel's Pond" },
 	},
 })
 
@@ -2935,13 +2938,11 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "The Dawning Isles", parent = "Silverpine Forest", faction = "Hostile",
-		hook = "Low islands in Lordamere Lake that the plague reached and the murlocs took.",
+		hook = "Low islands in Lordamere Lake, inhabited by murlocs and bog beasts.",
 		lore = {
-			"The Dawning Isles were a set of low keys rising out of Lordamere Lake, and by every account they were lovely.",
-			"Then the Plague of Undeath got into them. The trees turned sickly, bog beasts moved through, and the islands stopped being anywhere anyone went.",
-			"The Vile Fin murlocs now hold them outright, having left the Shining Strand to do it. Their numbers on the isles are considerable, and nothing else is competing for the ground.",
+			"The Dawning Isles rise from Lordamere Lake beside Silverpine Forest. The plague has sickened their trees, and murlocs and bog beasts inhabit the islands.",
 		},
-		readMore = { "Wowpedia: Dawning Isles", "Wowpedia: Plague of Undeath", "Wowpedia: Vile Fin" },
+		readMore = { "Wowpedia: The Dawning Isles" },
 	},
 })
 
@@ -3173,13 +3174,12 @@ SubsOf("Alterac Mountains", {
 SubsOf("Arathi Highlands", {
 	{
 		name = "The Drowned Reef", parent = "Arathi Highlands", faction = "Hostile",
-		hook = "A reef off the southern shore with a sunken elven city under it.",
+		hook = "A reef off the Arathi coast, strewn with wrecks and guarded by naga.",
 		lore = {
-			"The Drowned Reef has taken a great many ships. The Maiden's Folly and the Spirit of Silverpine are both down there, and they are the ones anybody remembers the names of.",
-			"Underneath the water there is a city. It is elven, it is ancient, and it is ruined, and the Daggerspine naga live in it now.",
-			"Which puts the Arathi Highlands in the same story as half of Kalimdor. The Sundering drowned coastline everywhere, the naga are the Highborne who went down with it, and they are coming back up wherever there is a ruin to occupy.",
+			"The Drowned Reef lies off the southern shore of the Arathi Highlands. The Maiden's Folly and Spirit of Silverpine sank here after striking submerged ruins as the tide suddenly fell.",
+			"Naga infest the waters, and sailors at Faldir's Cove seek the wrecks' charts and logs. Elven gems lie on the sea floor, calcified after a long time underwater.",
 		},
-		readMore = { "Wowpedia: Drowned Reef", "Wowpedia: Daggerspine", "Wowpedia: Naga" },
+		readMore = { "Wowpedia: The Drowned Reef", "Wowpedia: Deep Sea Salvage", "Wowpedia: Sunken Treasure (2)" },
 	},
 })
 

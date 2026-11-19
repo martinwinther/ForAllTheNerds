@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.2.16
+
+Another 25 vanilla entries reviewed and corrected, bringing the sweep to
+574 of 915 entries. No entries were removed.
+
+**Fixed**
+
+- Serpent's Coil describes caves occupied by Allistarj and the Shadowsworn,
+  replacing the incorrect basilisk rock formation.
+- The Ruins of Thaurissan distinguish the sorcerer-thane who summoned Ragnaros
+  from Emperor Dagran. The claim that the city sank into Blackrock Depths is gone.
+- Dor'Danil describes Forsaken poisoning and the druids' severed spirits.
+  Stormrage Barrow Dens uses the Third War account of Malfurion's awakening.
+- Raynewood Retreat describes its great tree and original guardians. Ravenwind
+  is correctly placed in northern Feralas, and Jubuwal beside the inland road.
+- Revantusk Village describes its alliance with the Horde. The Crossroads no
+  longer includes the later Northwatch attack, and the Dawning Isles retain
+  their original bog beasts alongside the murlocs.
+- Staghelm Point describes its original watcher and bronze drake. Stendel's
+  Pond no longer presents speculation about poisoned water as fact.
+- Other entries replace unsupported history, motives and superlatives with
+  details from original quests, including Eldarath, Ordil'Aran, Saldean's Farm,
+  Sargeron, Shadow Hold, Southwind Village and the Drowned Reef.
+
 ## 1.2.15
 
 Two more rounds of the vanilla-era sweep: 50 entries reviewed and corrected,
