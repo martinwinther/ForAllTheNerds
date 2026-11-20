@@ -206,7 +206,7 @@ SubsOf("Burning Steppes", {
 		name = "Blackrock Stronghold", faction = "Hostile",
 		hook = "A Blackrock orc fortification on the Steppes, outside the mountain's gates.",
 		lore = {
-			"Not all of the Dark Horde lives inside Blackrock Mountain. This stronghold holds the ground outside it, and an army coming up from Redridge would have to deal with it first.",
+			"Not all of the Dark Horde lives inside Blackrock Mountain. This stronghold holds the ground outside it, and an army coming up from Redridge would have to deal with it first. Blackrock battlemasters and sorcerers work the ash, with obsidian elementals and a scalding broodling among them, and Grark Lorkrub is held here.",
 			"These orcs answer to Rend Blackhand, son of the Horde's first warchief, who has never accepted that the Second War ended and still styles himself warchief. Orgrimmar does not recognise the title and can do very little about the claim.",
 		},
 	},
@@ -250,11 +250,13 @@ SubsOf("Badlands", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "Bal'lal Ruins", faction = "Hostile",
-		hook = "Gurubashi stonework in the northern jungle, with the trees most of the way through it.",
+		hook = "Gurubashi stonework in the northern jungle, reoccupied by the Bloodscalp.",
 		lore = {
 			"Bal'lal is one of a chain of Gurubashi ruins across the vale. Taken together they show what this jungle used to be: not a city with a hinterland, but a dense built empire covering the whole of it.",
-			"The Gurubashi broke apart after their own priests summoned Hakkar the Soulflayer and the empire had to fight a war to contain him. Everything standing in Stranglethorn dates from before that, and nothing has been built here since.",
+			"These ruins are held rather than empty. Bloodscalp shamans and axe throwers work the stones with warriors behind them, and tigers and raptors take the ground between the ruins. A book has been left lying open among the stonework.",
+			"The Gurubashi broke apart after their own priests summoned Hakkar the Soulflayer and the empire had to fight a war to contain him. What stands here was raised before that and the trolls living in it are the descendants of the people who raised it.",
 		},
+		readMore = { "Wowpedia: Bal'lal Ruins", "Wowpedia: Bloodscalp tribe", "Wowpedia: Gurubashi" },
 	},
 	{
 		name = "Balia'mah Ruins", faction = "Hostile",
@@ -647,11 +649,13 @@ SubsOf("Desolace", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Wyrmbog", faction = "Hostile",
-		hook = "The southern marsh, thick with black dragonkin for an obvious reason.",
+		hook = "The southern marsh, with two black dragons' doors opening into it.",
 		lore = {
-			"Wyrmbog is the least controlled part of Dustwallow and the most heavily patrolled by things with wings. Onyxia's lair opens into this stretch of the marsh.",
-			"Onyxia is a daughter of Deathwing and her choice of ground was not sentimental. A lair within easy reach of Theramore, the Alliance's only real city on this continent, is deliberate positioning rather than convenience.",
+			"Wyrmbog is the south of Dustwallow, below the Dragonmurk, and the black dragonflight is at home in it. Two entrances open off this bog: Onyxia's Lair and Emberstrife's Den. Everything in the bog is elite ground.",
+			"The brood is on the surface as well as under it. Firemane flamecallers and scalebanes patrol the water with searing whelps and hatchlings behind them, and eggs of Onyxia are lying about the mud in numbers. Onyxia's Gate stands at the end of it.",
+			"Onyxia is a daughter of Deathwing, and a lair this close to Theramore, the Alliance's only real city on this continent, reads as a choice rather than a convenience.",
 		},
+		readMore = { "Wowpedia: Wyrmbog", "Wowpedia: Onyxia's Lair", "Wowpedia: Emberstrife" },
 	},
 	{
 		name = "The Quagmire", faction = "Contested",
@@ -1245,7 +1249,7 @@ SubsOf("Loch Modan", {
 		hook = "A dwarven post at the northern gate, watching the road down into the Wetlands.",
 		lore = {
 			"Algaz Station guards the approach to Dun Algaz, the pass that carries the road from Loch Modan down into the Wetlands. Everything moving between Khaz Modan's interior and the coast comes through.",
-			"The Dragonmaw orcs in the Wetlands make that road worth watching properly, and the garrison here is not decorative.",
+			"The Dragonmaw orcs in the Wetlands make that road worth watching, and what is watching it is three mountaineers and an armourer. The post is small for the job it has.",
 		},
 	},
 	{
@@ -1305,11 +1309,12 @@ SubsOf("Duskwood", {
 SubsOf("Wetlands", {
 	{
 		name = "Black Channel Marsh", faction = "Hostile",
-		hook = "A stretch of dark water in the southern marsh, murloc-held.",
+		hook = "Dark water in the south-west, with raptor lairs close to the road.",
 		lore = {
-			"The Black Channel runs through the southern Wetlands and the murlocs along it are a standing nuisance to anything using the road.",
-			"Everything in this zone eventually becomes swamp. The dwarves who built the roads here knew that and built them raised.",
+			"The Black Channel runs through the south-west of the Wetlands and travellers mostly meet it on the road down to Menethil Harbor. The warning given to anyone new is about the raptors: the marsh holds a number of their lairs and the hungrier ones come right up to the roadside.",
+			"Mottled raptors and screechers work the banks with crocolisks in the channel itself, and the fen dwellers are no friendlier. Everything in this zone eventually becomes swamp, and the dwarves who built these roads knew it and built them raised.",
 		},
+		readMore = { "Wowpedia: Black Channel Marsh", "Wowpedia: Wetlands" },
 	},
 	{
 		name = "Menethil Bay", faction = "Alliance",
@@ -1424,11 +1429,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Bloodsail Compound", faction = "Hostile",
-		hook = "A pirate camp on the southern coast, run by the Bloodsail Buccaneers.",
+		hook = "A loose Bloodsail camp halfway up the western coast.",
 		lore = {
-			"The Bloodsail work this water and they have a particular quarrel with Booty Bay. Baron Revilgaz runs the port and the Bloodsail would like to run it instead.",
-			"Booty Bay's neutrality is commercial rather than principled, and the Steamwheedle Cartel enforces it with bruisers. Pirates who threaten the business find out how seriously the cartel takes it.",
+			"The compound is not a fortress. It is a loose camp on the western shore of the vale, around the middle of the coast, with warlocks and swashbucklers in it and jungle stalkers prowling the treeline behind.",
+			"The Bloodsail work this water and their quarrel is with Booty Bay down the coast. Baron Revilgaz runs that port and they would like to run it instead. Booty Bay's neutrality is commercial rather than principled, and the Steamwheedle Cartel enforces it with bruisers.",
 		},
+		readMore = { "Wowpedia: Bloodsail Compound", "Wowpedia: Bloodsail Buccaneers" },
 	},
 	{
 		name = "Kal'ai Ruins", faction = "Hostile",
@@ -1496,11 +1502,13 @@ SubsOf("Western Plaguelands", {
 SubsOf("Eastern Plaguelands", {
 	{
 		name = "Blackwood Lake", faction = "Contested",
-		hook = "A lake in the western Plaguelands, fed by water nobody should drink.",
+		hook = "A polluted lake with a drowned town under it, and a head at the bottom.",
 		lore = {
-			"Blackwood sits in the western half of the zone, between the Thondroril crossing and the Fungal Vale.",
-			"Water in the Plaguelands carries the blight the way the soil does. The Argent Dawn's people bring their own.",
+			"Blackwood Lake sits in the Eastern Plaguelands and the water in it is foul. There was a town of the same name here once, and the lake is what is left of the ground it stood on.",
+			"On the shore, spectral betrayers and defenders stand without moving, and plaguebats, plaguehounds and carrion grubs work the banks around them. The annals of Darrowshire put the head of Horgus the Ravager at the bottom of this lake, and his skull is down there.",
+			"The Argent Dawn keeps a small camp on the lake with a medic in it. Water in the Plaguelands carries the blight the way the soil does, so they bring their own.",
 		},
+		readMore = { "Wowpedia: Blackwood Lake", "Wowpedia: Eastern Plaguelands", "Wowpedia: Argent Dawn" },
 	},
 	{
 		name = "Pestilent Scar", faction = "Hostile",
@@ -1646,7 +1654,8 @@ SubsOf("Teldrassil", {
 		hook = "The hollow above the barrow den, with Gnarlpine furbolgs in it.",
 		lore = {
 			"The hollow sits over the Ban'ethil Barrow Den, where night elf druids sleep while their minds walk the Emerald Dream.",
-			"The Gnarlpine have broken into the den below. A druid's body left untended is just a body, and the furbolgs were allies until something on this tree drove them mad.",
+			"The Gnarlpine hold the hollow and have got into the den below, defenders and shamans and augurs of theirs through the whole of it, with fel cones scattered where the satyr have been. A druid's body left untended is just a body: Oben Rageclaw's is down in the den under an enchantment the Gnarlpine shaman work with a charm, and his spirit cannot do anything about it from where it is.",
+			"The furbolgs were allies until something on this tree drove them mad. Two moonwells still stand in the hollow and say what the place was before they came.",
 		},
 	},
 })
@@ -1988,11 +1997,13 @@ SubsOf("Azshara", {
 SubsOf("Felwood", {
 	{
 		name = "Bloodvenom River", faction = "Hostile",
-		hook = "The river through the forest, carrying the corruption downstream.",
+		hook = "The corrupted river through central Felwood, and it does not stay in the zone.",
 		lore = {
-			"The Bloodvenom runs the length of Felwood, past the Horde's waypoint at Bloodvenom Post, and nothing in it is drinkable.",
+			"The Bloodvenom runs through the middle of Felwood, past the Horde's waypoint at Bloodvenom Post, and nothing in it is drinkable. The banks crawl with noxious oozes and the rest of the forest's corrupted wildlife.",
+			"It carries the corruption out. The river comes off these mountains and becomes the tainted Wildbend River in Darkshore, which is how a zone that had nothing to do with the Legion ends up drinking Felwood's water.",
 			"When the Burning Legion was broken at Mount Hyjal the demonic energy in this region did not disperse. It went into the ground and the water, and the trees and wildlife followed.",
 		},
+		readMore = { "Wowpedia: Bloodvenom River", "Wowpedia: Felwood", "Wowpedia: Wildbend River" },
 	},
 	{
 		name = "Irontree Cavern", faction = "Hostile",

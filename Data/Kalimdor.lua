@@ -512,11 +512,13 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Bael'dun Keep", parent = "The Barrens", faction = "Hostile",
-		hook = "A dwarven dig fortified against the Horde that owns the land.",
+		hook = "A dwarven dig fortified against the tauren it displaced.",
 		lore = {
-			"The dwarves of the Explorers' League are excavating here, and they built a keep around the dig because the Horde objected.",
-			"Ironforge's archaeology has a habit of becoming a diplomatic incident. The dwarves' position is that the past belongs to everyone; the Horde's position is that the ground belongs to them.",
+			"The keep stands over the Bael Modan excavation and Prospector Khazgorm leads the work. Excavators and foremen do the digging and the walls are there because of who was here first.",
+			"Gann Stonespire's account is not about archaeology. Tauren were killed or driven off ancestral land when the dwarves of Bael Modan arrived, he wants the ground back, and what he asks for is the dwarves driven out by force and their leader's journal brought to him.",
+			"Ironforge's digging has a habit of becoming somebody else's eviction. This is the clearest case of it on either continent.",
 		},
+		readMore = { "Wowpedia: Bael'dun Keep", "Wowpedia: Gann's Reclamation", "Wowpedia: Explorers' League" },
 	},
 	{
 		name = "The Sludge Fen", parent = "The Barrens", faction = "Hostile",
@@ -1152,11 +1154,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Bluefen", parent = "Dustwallow Marsh", faction = "Contested",
-		hook = "A stretch of open marsh in the north, full of things that bite.",
+		hook = "The open marsh in the north, between the ogres and the Barrens road.",
 		lore = {
-			"Bluefen is the northern marsh, between Brackenwall and the Barrens road. Crocolisks and worse live in it.",
-			"The marsh's wildlife is one of the main reasons Dustwallow has stayed thinly settled by both factions.",
+			"Bluefen is the northern stretch of the marsh, running up from Brackenwall Village toward the Barrens road. The water puts up withervine creepers and mire beasts, darkmist spiders hold the trees, and drywallow crocolisks and snappers work the channels, with Drogoth the Roamer ranging over the lot.",
+			"It is also where Theramore does its quiet work. Infiltrators of theirs are out in this marsh well north of the city, which is a long way from the island for people who are not supposed to be there.",
 		},
+		readMore = { "Wowpedia: Bluefen", "Wowpedia: Dustwallow Marsh" },
 	},
 	{
 		name = "Lost Point", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -1272,11 +1275,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Woodpaw Hills", parent = "Feralas", faction = "Hostile",
-		hook = "Gnoll country in the southern jungle.",
+		hook = "Gnoll country in the south-east, and the gnolls are being pushed out of it.",
 		lore = {
-			"The Woodpaw gnolls hold the southern hills and are the most numerous hostile population in Feralas.",
-			"They are better organised than gnolls usually manage, and Camp Mojache suspects somebody else is giving them direction.",
+			"The Woodpaw clan holds these hills in the south-east of Feralas, in numbers and under its own alphas. What they are not doing is holding them comfortably: the bugs have come up through the ground at the far end of the hills, in the ground now called the Writhing Deep, and the gnolls are being driven out of their own country.",
+			"Camp Mojache has noticed the difference. Hadoken Swiftstrider calls them a constant threat to the camp's existence rather than a nuisance, and what the camp wants is their plans: gnolls are not subtle, but these ones keep a written strategy, and a battle map of theirs would say what has them so worked up.",
 		},
+		readMore = { "Wowpedia: Woodpaw Hills", "Wowpedia: Woodpaw Investigation", "Wowpedia: The Writhing Deep" },
 	},
 	{
 		name = "Rage Scar Hold", parent = "Feralas", faction = "Hostile",
@@ -1403,11 +1407,13 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Abyssal Sands", parent = "Tanaris", faction = "Hostile",
-		hook = "An open stretch of sand where elementals have broken through.",
+		hook = "A dune sea with the silithid tunnelling under it.",
 		lore = {
-			"The Abyssal Sands hold elemental incursions, which in Tanaris means the planes pressing close to the surface.",
-			"Kalimdor has a number of these thin places. The Cenarion Circle and the Horde's shaman both monitor them.",
+			"The Abyssal Sands are open desert in the middle of Tanaris, and what is said of them is that the sand-dwelling silithid live in hive tunnels just under the surface, waiting on whoever walks over. Greater flayers of theirs come up out of it.",
+			"Fire rocs ride the thermals above the dunes, blisterpaw hyenas and scorpids work the flats, and glasshide basilisks sun themselves on the rock. Gahz'ridian turns up in the sand here as it does in the ruins south of here.",
+			"The anubisath have come out this far too, and resonating crystals stand in the open where the silithid war is being prepared for. Whatever is under Silithus has a reach.",
 		},
+		readMore = { "Wowpedia: Abyssal Sands", "Wowpedia: Silithid", "Wowpedia: Tanaris" },
 	},
 	{
 		name = "Thistleshrub Valley", parent = "Tanaris", faction = "Contested",
@@ -1503,11 +1509,12 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Bear's Head", parent = "Azshara", faction = "Contested",
-		hook = "A rock formation in the northern hills, and a furbolg site.",
+		hook = "A remote corner of the south-eastern mountains, with a mage's tower on the cliff.",
 		lore = {
-			"Bear's Head is a landmark in northern Azshara with a furbolg presence around it.",
-			"The zone's furbolgs are in better condition than those in Felwood and Ashenvale, which is a low bar.",
+			"Bear's Head sits by the south-eastern edge of Azshara's mountains, and the name comes from the furbolg villages scattered across it. Those villages are Timbermaw, outposts of the hold further north and of Ursolan, which makes these the furbolgs who kept their minds rather than the ones who did not.",
+			"Archmage Xylem keeps a tower on a cliff in the same ground, with apprentices and associates up there, high elves among them. He has no interest in the furbolgs or in anybody else's war.",
 		},
+		readMore = { "Wowpedia: Bear's Head", "Wowpedia: Archmage Xylem", "Wowpedia: Timbermaw tribe" },
 	},
 	{
 		name = "Bitter Reaches", parent = "Azshara", faction = "Hostile",
@@ -2281,7 +2288,7 @@ SubsOf("Ashenvale", {
 		hook = "A furbolg camp west of the Falfarren, and the tribe in it has been got at.",
 		lore = {
 			"Ran Bloodtooth leads the furbolgs here, and they are corrupted. Every one of them is hostile, and that is not how furbolgs are supposed to be.",
-			"The furbolgs were the night elves' oldest allies on this continent, and the collapse of that friendship is one of the quieter tragedies in Kalimdor. Tribe after tribe has been turned, and the night elves have gone from treating them as neighbours to treating them as a problem.",
+			"The judgement on him did not come from the Sentinels. A furbolg asked for it: he blames the elves for a great deal and says so, and holds in the same breath that his own people are still answerable for what they do and must police their own. Ran Bloodtooth is what he meant by that, and Raene Wolfrunner in Astranaar is who the skull went to.",
 			"Not all of them. The Timbermaw in the north are uncorrupted and still dealing with outsiders. They show what the rest have lost.",
 		},
 		readMore = { "Wowpedia: Bloodtooth Camp", "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold" },
@@ -2675,7 +2682,7 @@ SubsOf("Teldrassil", {
 		lore = {
 			"Aldrassil is both a tree and a village: the night elves have built into it, and Tenaron Stormgrip leads Shadowglen from a room at the very top.",
 			"It stands on Teldrassil, and Teldrassil is a difficulty. Fandral Staghelm pushed for a second World Tree after Nordrassil was spent killing Archimonde, and he planted it without the dragon Aspects' blessing, which Nordrassil had.",
-			"Malfurion Stormrage opposed it. Ysera withheld her blessing. The tree went up anyway, and there is already something wrong in its roots. New night elves begin their lives in a tree that their own Archdruid thinks should not exist.",
+			"Malfurion was not there to argue: he never came back from the Emerald Dream. Nozdormu refused his blessing and chided Staghelm for the arrogance of asking, and Alexstrasza refused with him. The tree went up anyway, and there is already something wrong in its roots. New night elves begin their lives at the top of a World Tree that no Aspect would bless.",
 		},
 		readMore = { "Wowpedia: Aldrassil", "Wowpedia: Teldrassil", "Wowpedia: Fandral Staghelm", "Wowpedia: Nordrassil" },
 	},
@@ -2899,7 +2906,7 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"The Bloodfen raptors nest in this cave in concentration, and raptors in numbers are not a thing to walk into.",
 			"Just outside the entrance there is what is left of a settlement. Somebody built here, and the raptors took it apart.",
-			"Part of Cortello's Riddle is in the burrow, so the pirates who scattered that riddle across the coast came in here too and presumably had the same problem.",
+			"Part of Cortello's Riddle is in the burrow. The riddle's Kalimdor verse sends people to a cave in the south-west of this marsh, so the pirates who scattered it came in here too and presumably had the same problem with the tenants.",
 		},
 		readMore = { "Wowpedia: Bloodfen Burrow", "Wowpedia: Dustwallow Marsh" },
 	},

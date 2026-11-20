@@ -975,7 +975,8 @@ SubsOf("Wetlands", {
 		hook = "A murloc territory on the coast that the Alliance port would rather not have next door.",
 		lore = {
 			"The Bluegill murlocs hold the coastal marsh west of the main road and raid toward Menethil Harbor. They are organised enough to have a name and a hierarchy. Most murloc populations do not get that far.",
-			"Menethil's garrison treats them as a permanent chore rather than a war.",
+			"Menethil's garrison treats them as a permanent chore rather than a war. Mirelow is the one of them worth avoiding.",
+			"The tide does the murlocs' collecting for them. Battered footlockers are strewn across this marsh by the dozen, along with half-buried barrels and broken crates, and cursed sailors and marines off the Lost Fleet wander in from the wrecks to the north.",
 		},
 	},
 	{
@@ -1532,7 +1533,8 @@ SubsOf("Badlands", {
 		name = "Angor Fortress", parent = "Badlands", faction = "Hostile",
 		hook = "A Dark Iron fortress overlooking the road to Uldaman.",
 		lore = {
-			"Angor Fortress is the Dark Iron dwarves' position in the Badlands, and its purpose is Uldaman. The Dark Irons want the vault's contents as badly as Ironforge does.",
+			"Angor Fortress is the Shadowforge dwarves' base of operations in the Badlands, and its purpose is Uldaman. Ironforge's reading is that striking the fortress is what would slow their presence in the vault. That is as close to a compliment as the Dark Iron get.",
+			"Shadowforge warriors and chanters hold the walls in numbers with stone golems among them, a commander somewhere inside, and Ambassador Infernus standing about as a reminder of whose service the clan is in.",
 			"The Dark Iron clan lost the War of the Three Hammers, fled south, and bound themselves to the fire lord Ragnaros. They have been the Bronzebeards' enemy ever since, and any dwarven dig site attracts them.",
 		},
 	},
@@ -1786,11 +1788,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Agol'watha", parent = "The Hinterlands", faction = "Hostile",
-		hook = "Troll ruins in the northern forest.",
+		hook = "A troll temple in the north-east, with Vilebranch in it and oozes under it.",
 		lore = {
-			"Agol'watha is one of several smaller Amani sites scattered through the Hinterlands' woods, part of the network that supported Jintha'Alor.",
-			"The '-watha' sites are ruins rather than living settlements, and the forest has been taking them back for a long time.",
+			"Agol'watha was a temple, one of the sites in the north-east of the zone that stand with Shaol'watha nearby. It is not abandoned: Vilebranch scalpers and soothsayers hold it, and Revantusk Village wants the numbers brought down.",
+			"Slime has the lower ground. Green sludges and jade oozes work the stonework the way they do at Skulk Rock along the same stretch, and the crates the Old Horde left in this corner of the forest are still standing among them.",
+			"The '-watha' sites are the measure of what the Amani Empire once was. The network that supported Jintha'Alor reached across the whole of these woods.",
 		},
+		readMore = { "Wowpedia: Agol'watha", "Wowpedia: Cannibalistic Cousins", "Wowpedia: Vilebranch tribe" },
 	},
 	{
 		name = "Zun'watha", parent = "The Hinterlands", faction = "Hostile",
@@ -1892,11 +1896,12 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "Blackchar Cave", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A cave of fire elementals on the Gorge's edge.",
+		hook = "A hot cave on the Gorge's edge, worked by slaves under a fire lord's overmaster.",
 		lore = {
-			"Blackchar is one of several places in the Gorge where the elemental plane of fire presses close enough that its inhabitants simply walk through.",
-			"Ragnaros' presence under this mountain has thinned the boundary, and the Dark Irons have made no attempt to repair it.",
+			"Blackchar is one of the places in the Gorge where the fire comes up to meet you. The cave is held by inferno elementals and greater lava spiders, Smoldar is somewhere in it, and the walls carry dark iron along with the mithril and truesilver.",
+			"The Dark Iron work it the way they work the Slag Pit, with quarry slaves down here under Overmaster Pyron, as everywhere the clan digs.",
 		},
+		readMore = { "Wowpedia: Blackchar Cave", "Wowpedia: Searing Gorge" },
 	},
 	{
 		name = "The Sea of Cinders", parent = "Searing Gorge", faction = "Contested",
@@ -2512,7 +2517,8 @@ SubsOf("Tirisfal Glades", {
 		name = "Agamand Family Crypt", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "A farming family's tomb, with the family still in it and still moving.",
 		lore = {
-			"The Agamands held the mills north of Brill for generations, and the crypt is where they buried their own. The Scourge came through Tirisfal and raised the lot of them.",
+			"The Agamands were the most prosperous family in Tirisfal and held the mills north of Brill, and the crypt just north of those mills is where they buried their own. When the Scourge first came they fortified the house and persuaded the people in their employ to stay and help defend it, which went the way such decisions went in this region.",
+			"Captain Dargol settled in the crypt afterwards and woke every corpse and spirit in it. The Agamands attack anyone who comes in unbidden.",
 			"They are hostile to the Forsaken, which is the detail worth knowing. Not every corpse the Scourge raised was freed when Sylvanas broke away, and the ones still under the Lich King's will treat the Forsaken as traitors.",
 			"So the first enemies most Forsaken fight are their own neighbours' dead.",
 		},
@@ -2582,14 +2588,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Battle Ring", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The floor of the Gurubashi Arena, where the sand used to be muddy with troll blood.",
+		hook = "The floor of the Gurubashi Arena, and the only part of it where anything goes.",
 		lore = {
-			"The Battle Ring is the arena floor itself, inside the Gurubashi Arena north of Booty Bay. The arena is Gurubashi work, left from the empire that held most of the southern Eastern Kingdoms.",
-			"In its own time the fights here were to the death, and the accounts describe the sand as muddy with it. Once a generation the best troll fighters from across the world came to this ring to settle who they were.",
-			"What happens in it now is run by a goblin called Short John Mithril and is a good deal less lethal. An empire's proving ground is a prize-fighting pit with an entry fee.",
+			"The Battle Ring is the arena floor itself, inside the Gurubashi Arena north of Booty Bay. The arena is Gurubashi work, left from the empire that held most of the southern Eastern Kingdoms, and the ring is where the fighting is permitted: the stands and the entrance ramp are not part of it.",
+			"What runs in it now is a goblin's event. It is run by Short John Mithril, a goblin Bloodsail captain turned arena master, who starts a scrap over a chest of treasure every three hours on the clock, and whoever gets it open keeps what is inside.",
+			"Fighters who keep coming back collect trinkets off the floor and a title to go with them. An empire's proving ground is a prize-fighting pit with a timetable.",
 		},
-		didYouKnow = "The arena has a story attached: find a blood-red amulet here at midnight and a demon will have eaten your soul by sunrise. Nobody at Booty Bay discourages the telling of it.",
-		readMore = { "Wowpedia: Gurubashi Arena", "Wowpedia: Gurubashi" },
+		readMore = { "Wowpedia: Gurubashi Arena", "Wowpedia: Short John Mithril", "Wowpedia: Arena Master" },
 	},
 	{
 		name = "Wild Shore", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -3070,13 +3075,13 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("Deadwind Pass", {
 	{
 		name = "Ariden's Camp", parent = "Deadwind Pass", faction = "Hostile",
-		hook = "The deserted camp of the man who led the Dark Riders, before the curse took him.",
+		hook = "A deserted campsite by the road through the pass, and nobody is saying whose.",
 		lore = {
-			"Ariden set this camp up just north of the road through the pass, and it is empty now. What he was doing from it was selling forged Medivh artefacts.",
-			"Then he was cursed, and he became the leader of the Dark Riders. They are the horsemen who ride out of Deadwind Pass, and it was their arrival in Duskwood, after the Scythe of Elune changed hands at Roland's Doom, that helped put that forest under permanent dark.",
-			"So the camp is where a fraudster set up shop next to Karazhan and got exactly what selling Medivh's name in Medivh's shadow had always been going to get him.",
+			"The camp sits just north of the road that carries travellers through Deadwind Pass from Duskwood to the Swamp of Sorrows. Whoever pitched it is gone and the site has been left standing.",
+			"What the pass is known for is the riders. Dark Riders came out of Deadwind Pass and killed Sven Yorgen's family on their farm over in Duskwood while he was away, and a shadowy figure was seen burying something near the barn afterwards. He has been hunting them since, and what he has learned is that the riders were seen speaking with the wizard Morbent Fel at the Forlorn Rowe.",
+			"Karazhan stands over all of it, a short way further into the pass, and that is as much explanation as anyone in Duskwood needs for why the riders come from here.",
 		},
-		readMore = { "Wowpedia: Ariden's Camp", "Wowpedia: Dark Riders", "Wowpedia: Karazhan", "Wowpedia: Medivh" },
+		readMore = { "Wowpedia: Ariden's Camp", "Wowpedia: Sven's Revenge", "Wowpedia: Deadwind Pass" },
 	},
 	{
 		name = "Sleeping Gorge", parent = "Deadwind Pass", faction = "Contested",
@@ -3319,7 +3324,7 @@ SubsOf("Tirisfal Glades", {
 		lore = {
 			"The Whispering Shore is a short stretch of coast in western Tirisfal, just up from the Solliden Farmstead. People used to fish here.",
 			"Nobody does now. A band of murlocs under one called Muad has the beach and goes for anyone who comes near, and the water offshore is cold and dark with nothing left in it worth catching.",
-			"The farmstead below is empty too. Tirisfal is full of small pleasant uses of land that stopped when the plague came through, and a fishing beach is one of the plainer ones.",
+			"The farmstead below is empty too. Tirisfal is full of small pleasant uses of land that stopped when the plague came through, and a fishing beach is one of the plainer ones. Nothing remains of what this coast used to be worth.",
 		},
 		readMore = { "Wowpedia: Whispering Shore", "Wowpedia: Tirisfal Glades" },
 	},
