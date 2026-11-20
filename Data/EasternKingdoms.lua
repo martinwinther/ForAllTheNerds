@@ -87,11 +87,13 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Stone Cairn Lake", parent = "Elwynn Forest", faction = "Contested",
-		hook = "A lake ringed by old standing stones, with a Riverpaw gnoll camp squatting among them.",
+		hook = "A ring-shaped lake in the north-east, with a war memorial on its island.",
 		lore = {
-			"The cairns are older than the Kingdom of Azeroth and nobody has a convincing explanation for them. Guesses run to the earliest human settlers, or to whoever was here before them. Ironforge's Explorers' League would like a look, but has more interesting digs elsewhere.",
-			"The Riverpaw gnolls have made camp here because it is defensible and close to the roads. Gnolls are opportunists, organised just enough to raid and never enough to hold ground.",
+			"The lake takes its name from the cairn on the island at its centre, which is Heroes' Vigil: the monument raised for the dead of the First War. People used to come out here on pilgrimage.",
+			"They do not now. Defias rogue wizards have settled the island and hold it, and a murloc tribe has put crude huts up along the southern bank. The Stone of Remembrance still stands among them.",
+			"Guard Thomas sent Rolf and Malakai up the river to see what the murlocs were doing and neither came back. Their remains are on the shore, and the report that went to Marshal Dughan said plainly that the troops in eastern Elwynn are not enough to contain the problem.",
 		},
+		readMore = { "Wowpedia: Stone Cairn Lake", "Wowpedia: Heroes' Vigil", "Wowpedia: Find the Lost Guards" },
 	},
 	{
 		name = "Brackwell Pumpkin Patch", parent = "Elwynn Forest", faction = "Contested",
@@ -188,11 +190,13 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Thunderbrew Distillery", parent = "Dun Morogh", faction = "Alliance",
-		hook = "The Thunderbrew family's brewery, and a pillar of the dwarven economy.",
+		hook = "The Thunderbrew family's brewery at Kharanos, and it has two sets of rivals.",
 		lore = {
-			"Dwarven brewing is not a joke to dwarves. The Thunderbrews are one of several families whose stout is exported across the Alliance, and the distillery at Kharanos is their flagship operation.",
-			"Beer here occupies roughly the position that tea occupies elsewhere: it is how business gets done, how disputes get settled, and how an Ironforge dwarf judges whether a stranger is worth talking to.",
+			"The distillery stands in Kharanos and Ragnar Thunderbrew runs it. What comes out of it is Thunder Ale, and there are barrels of it in the basement.",
+			"The Barleybrews brew in the same zone and do not accept that the Thunderbrews make the only decent drink in Dun Morogh. One of them will hand over a barrel of Barleybrew Scalder and ask for it to be swapped quietly for a barrel of Thunder Ale, guard or no guard.",
+			"The other rivalry is not a joke. Ragnar has had one of the family recipes stolen, and he blames the Dark Iron, of whom he says he had cause enough to think badly already.",
 		},
+		readMore = { "Wowpedia: Thunderbrew Distillery", "Wowpedia: Bitter Rivals", "Wowpedia: Ragnar Thunderbrew (quest)" },
 	},
 	{
 		name = "Gol'Bolar Quarry", parent = "Dun Morogh", faction = "Alliance",
@@ -232,11 +236,13 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "The Grizzled Den", parent = "Dun Morogh", faction = "Contested",
-		hook = "A bear cave east of Kharanos, and a rite of passage for Ironforge's hunters.",
+		hook = "A wendigo cave south-west of Kharanos, and a test of nerve for new adventurers.",
 		lore = {
-			"The Den is exactly what it sounds like and has been used as a training ground by Ironforge hunters for generations. Dun Morogh's bears are large, bad-tempered and plentiful.",
-			"It is also where young dwarves are sent to prove they can handle themselves without a gun crew backing them up.",
+			"The Grizzled Den is a large cave system south-west of Kharanos. Wendigo hold it, young and full-grown, and Old Icebeard is somewhere at the back.",
+			"What people come down here for is wendigo manes. Pilot Stonegear wants a heap of them to line the inside deck of his siege engine Trollplow, and couriers on the road have been chased off their loads by wendigo coming out of the den.",
+			"Old Icebeard has Tundra MacGrann's meat locker, a month of salted meat that MacGrann had locked away for the cold season. The thorium held where MacGrann's door latch did not.",
 		},
+		readMore = { "Wowpedia: Grizzled Den", "Wowpedia: Tundra MacGrann's Stolen Stash" },
 	},
 	{
 		name = "Misty Pine Refuge", parent = "Dun Morogh", faction = "Alliance",
@@ -687,11 +693,13 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Tower of Ilgalar", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "A mage tower on the lake's south shore, whose occupant is doing something he will not explain.",
+		hook = "A mage tower in the eastern foothills, and its occupant commands the local gnolls.",
 		lore = {
-			"Ilgalar is another of the independent arcane towers that dot the southern kingdoms. Its current master, Morganth, arrived with credentials and has since made himself extremely unwelcome.",
-			"The suspicion in Lakeshire is that he is involved in whatever the orcs and the gnolls are coordinating. That would make him the only person in Redridge with a plan.",
+			"The tower stands in the eastern part of Redridge, and Morganth holds it. He was exiled from Stormwind's Mage Quarter for his use of dark magic and came out here to carry on with it.",
+			"He is not suspected of anything. Lakeshire knows what he is doing: the Shadowhide gnoll clan takes his orders, Lieutenant Fangore leads them for him, and the pendants the gnolls carry are how he sends those orders. Magistrate Solomon has made aiding him a capital matter.",
+			"Theocritus, the high mage of the Tower of Azora over in Elwynn, is his rival and watches him from a distance through a device called the Eye of Azora. Morganth keeps servants of his own in the tower, and a copy of Ur's treatise on shadow magic.",
 		},
+		readMore = { "Wowpedia: Tower of Ilgalar", "Wowpedia: Morganth", "Wowpedia: Solomon's Law" },
 	},
 	{
 		name = "Lake Everstill", parent = "Redridge Mountains", faction = "Contested",
@@ -784,7 +792,7 @@ SubsOf("Duskwood", {
 		hook = "A green clearing in a dead forest, and a doorway into the Emerald Dream.",
 		lore = {
 			"Twilight Grove is one of the Great Trees' groves, a place where the Emerald Dream presses against the waking world. It should be the healthiest ground in Duskwood. It is not.",
-			"The green dragon set to watch over it has been corrupted, and the Nightmare leaking through the portal is a strong candidate for what soured these woods in the first place. Druids who understand what they are looking at here do not stay long.",
+			"A moonwell stands in the clearing and the ground around it is green, which nothing else in this county manages. The Nightmare presses through from the other side of the portal, and Nightbane worgen work the treeline. Druids who understand what they are looking at here do not stay long.",
 		},
 		readMore = { "Wowpedia: Twilight Grove", "Wowpedia: Emerald Dream" },
 	},
@@ -954,18 +962,21 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "The Lost Fleet", parent = "Wetlands", faction = "Contested",
-		hook = "A graveyard of wrecked ships on the northern shore, and nobody agrees whose they were.",
+		hook = "The wrecks of the Kul Tiras Third Fleet, with its crew still walking them.",
 		lore = {
-			"A substantial number of vessels came to grief on this coastline and the hulls are still there, half in the water. Candidates include Second War transports and Alliance ships lost in the storms off Khaz Modan.",
-			"Murlocs and worse have colonised the wrecks. The salvage is good and the odds are not.",
+			"The hulls lie half in the water off the northern coast. They are the Third Fleet of Kul Tiras, the Doomed Fleet, burned and sunk on its last voyage by red dragons under orcish control.",
+			"First Mate Fitzsimmons, off the Wave Mistress, is the only man of that fleet still breathing, and he is not the only one still walking. Cursed sailors and cursed marines crew the wrecks, First Mate Snellig among them, and Captain Halyndor walks his own ship, the Intrepid, with its strongbox still locked aboard.",
+			"Bluegill murlocs have colonised the hulls and hammerhead sharks work the water around them. Battered footlockers still lie scattered through the shallows.",
 		},
+		readMore = { "Wowpedia: Lost Fleet", "Wowpedia: The Third Fleet", "Wowpedia: The Cursed Crew" },
 	},
 	{
 		name = "Bluegill Marsh", parent = "Wetlands", faction = "Hostile",
 		hook = "A murloc territory on the coast that the Alliance port would rather not have next door.",
 		lore = {
 			"The Bluegill murlocs hold the coastal marsh west of the main road and raid toward Menethil Harbor. They are organised enough to have a name and a hierarchy. Most murloc populations do not get that far.",
-			"Menethil's garrison treats them as a permanent chore rather than a war.",
+			"Menethil's garrison treats them as a permanent chore rather than a war. Mirelow is the one of them worth avoiding.",
+			"The tide does the murlocs' collecting for them. Battered footlockers are strewn across this marsh by the dozen, along with half-buried barrels and broken crates, and cursed sailors and marines off the Lost Fleet wander in from the wrecks to the north.",
 		},
 	},
 	{
@@ -1055,10 +1066,11 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Thoradin's Wall", parent = "Hillsbrad Foothills", faction = "Contested",
-		hook = "The ancient wall Arathor built against the trolls, still standing across the hills.",
+		hook = "The ancient wall Arathor built against the trolls, battered but still across the hills.",
 		lore = {
-			"Thoradin's Wall was raised by the Arathorian Empire to hold back the Amani trolls. Few human structures anywhere are older. It marks the border between Hillsbrad and the Arathi Highlands.",
+			"Thoradin ordered the wall raised soon after Arathor was founded, to shield his people from Amani incursions. It separates the Arathi Highlands from the Hillsbrad Foothills and it is gigantic and badly damaged.",
 			"The empire that raised it has been gone for millennia and the wall has not. Arathor built to last, whatever else it failed at.",
+			"Somebody is still using it. The dwarves of Dun Garok have put a barracks up against the wall in south-eastern Hillsbrad, which the Horde at Tarren Mill treats as a standing provocation.",
 		},
 		didYouKnow = "Thoradin was the first human to unite the tribes into one nation. Every human kingdom, including Stormwind, descends from the empire he founded at Strom.",
 	},
@@ -1148,7 +1160,8 @@ SubsOf("Alterac Mountains", {
 		name = "Crushridge Hold", parent = "Alterac Mountains", faction = "Hostile",
 		hook = "An ogre hold in the eastern mountains, squatting in Alterac's abandoned stonework.",
 		lore = {
-			"The Crushridge ogres moved into the vacuum left when Alterac was dissolved, and they have been fighting the Syndicate for the hills ever since.",
+			"The Crushridge ogres moved into the vacuum left when Alterac was dissolved, and they have been fighting the Syndicate for the hills ever since. Lo'Grosh is the one of them worth knowing about, and the hold's maulers and mages are harder going than ogres usually are.",
+			"The hill is also a mine, and iron, mithril, gold, silver and truesilver all come out of this ground in quantity, and a goblin named Rizz Loosebolt sells engineering supplies in the middle of an ogre hold rather than miss the trade.",
 			"Ogres taking over a dead kingdom's buildings is a recurring image in the Eastern Kingdoms. They rarely maintain the plumbing.",
 		},
 	},
@@ -1173,11 +1186,13 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Chillwind Point", parent = "Alterac Mountains", faction = "Contested",
-		hook = "A high pass on the Plaguelands border, watched by whoever can spare the men.",
+		hook = "A small rise on the eastern edge of the mountains, with a troll ruin on it.",
 		lore = {
-			"Chillwind Point sits where the Alterac Mountains meet the Western Plaguelands: the obvious place to watch for Scourge coming west.",
-			"It changes hands and garrisons. The Alliance keeps trying to hold the line here because the alternative is the Scourge in Hillsbrad.",
+			"Chillwind Point is a low rise at the far eastern edge of the Alterac Mountains, and what stands on it is a small ancient troll ruin. The name comes from the cold winds that come down the nearby ravine out of the Western Plaguelands to the north. This pass was part of Lordaeron once.",
+			"Bath'rah the Windwatcher lives up here, a jungle troll who is friendly to anyone who climbs it. The rest of this region does not offer that.",
+			"It is not the Alliance position people take it for. Chillwind Camp, the outpost holding the road into the Plaguelands, is a separate place to the north and the confusion is easily made.",
 		},
+		readMore = { "Wowpedia: Chillwind Point", "Wowpedia: Bath'rah the Windwatcher", "Wowpedia: Chillwind Camp" },
 	},
 	{
 		name = "Slaughter Hollow", parent = "Alterac Mountains", faction = "Hostile",
@@ -1379,11 +1394,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Kurzen's Compound", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Stormwind expedition's base, now held by the colonel who stopped taking orders.",
+		hook = "A Stormwind expedition's base, held by the half of it that stayed loyal.",
 		lore = {
-			"The compound was built by Colonel Kurzen's expedition as a legitimate Alliance operation in the jungle. It is now a fortified camp of troops loyal to a commander the Alliance considers a liability.",
-			"Kurzen's forces include trolls and jungle creatures as well as human soldiers. Stormwind has speculated endlessly about what exactly happened to him.",
+			"The compound sits east of the Rebel Camp and was built by Colonel Kurzen's expedition on Stormwind's business. Kurzen lost his mind in the jungle, part of his force deserted over it, and the two halves have been killing each other since. He is still in here.",
+			"What holds the ground is his own army turned jungle warband: commandos and jungle fighters, medicine men, headshrinkers, witch doctors and a shadow hunter, with war panthers and war tigers penned alongside them. A lumber mill runs at the front and the fighters keep their equipment in a stockpile at the back.",
+			"Bookie Herod runs a book in the middle of it and keeps written records of it. That is its own comment on the state of discipline out here.",
 		},
+		readMore = { "Wowpedia: Kurzen's Compound", "Wowpedia: Colonel Kurzen", "Wowpedia: Rebel Camp" },
 	},
 	{
 		name = "Zul'Gurub", parent = "Stranglethorn Vale", faction = "Hostile", levels = "60",
@@ -1519,7 +1536,8 @@ SubsOf("Badlands", {
 		name = "Angor Fortress", parent = "Badlands", faction = "Hostile",
 		hook = "A Dark Iron fortress overlooking the road to Uldaman.",
 		lore = {
-			"Angor Fortress is the Dark Iron dwarves' position in the Badlands, and its purpose is Uldaman. The Dark Irons want the vault's contents as badly as Ironforge does.",
+			"Angor Fortress is the Shadowforge dwarves' base of operations in the Badlands, and its purpose is Uldaman. Ironforge's reading is that striking the fortress is what would slow their presence in the vault. That is as close to a compliment as the Dark Iron get.",
+			"Shadowforge warriors and chanters hold the walls in numbers with stone golems among them, a commander somewhere inside, and Ambassador Infernus standing about as a reminder of whose service the clan is in.",
 			"The Dark Iron clan lost the War of the Three Hammers, fled south, and bound themselves to the fire lord Ragnaros. They have been the Bronzebeards' enemy ever since, and any dwarven dig site attracts them.",
 		},
 	},
@@ -1568,7 +1586,7 @@ SubsOf("Badlands", {
 		name = "Camp Kosh", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp on the northern road.",
 		lore = {
-			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how.",
+			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
 			"These are leftovers of the Second War Horde, like most ogres east of the sea, with no leadership and no plan beyond the next caravan.",
 		},
 	},
@@ -1576,17 +1594,19 @@ SubsOf("Badlands", {
 		name = "Camp Cagg", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp in the western Badlands, close enough to Kargath to be a Horde problem.",
 		lore = {
-			"Camp Cagg sits close to the Horde's outpost. Clearing it is Kargath's standing chore.",
+			"Camp Cagg sits close to the Horde's outpost in the west of the zone, and clearing it is Kargath's standing chore. Dustbelcher maulers and ogre mages hold it under Boss Tho'grun, with a lord among them and greater rock elementals walking the same ground.",
 			"The ogres have no strategic goal. They are simply in the way and difficult to move.",
 		},
 	},
 	{
 		name = "The Dustbowl", parent = "Badlands", faction = "Contested",
-		hook = "The open flats at the heart of the Badlands, with nothing in them at all.",
+		hook = "The open flats at the heart of the Badlands, with gnomes camped on them.",
 		lore = {
-			"The Dustbowl is the emptiest ground in a zone made of empty ground. There is no water, no cover and no reason to stop.",
-			"Travellers cross it because the alternative is going around, and the Badlands are wider than they look.",
+			"The Dustbowl is the arid middle of the zone, between Kargath and the Valley of Fangs, and it is not as empty as it looks. Crag coyotes and ridge stalkers work the flats, lesser rock elementals rise out of them, giant buzzards circle above, and Dustbelcher ogres come down off the higher ground.",
+			"Lotwil Veriatus has stopped out here to work on his shackles of elemental binding, which he means to let mages summon stronger elementals than they can now. Lucien Tosselwrench is camped with him and is laying in an invisibility potion and a healing potion against the day Lotwil gets it working.",
+			"A handful of siege golems stand on the flats near their camp, and they are the largest things on this ground by a long way.",
 		},
+		readMore = { "Wowpedia: Dustbowl", "Wowpedia: Lotwil Veriatus", "Wowpedia: Lucien Tosselwrench" },
 	},
 })
 
@@ -1771,11 +1791,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Agol'watha", parent = "The Hinterlands", faction = "Hostile",
-		hook = "Troll ruins in the northern forest.",
+		hook = "A troll temple in the north-east, with Vilebranch in it and oozes under it.",
 		lore = {
-			"Agol'watha is one of several smaller Amani sites scattered through the Hinterlands' woods, part of the network that supported Jintha'Alor.",
-			"The '-watha' sites are ruins rather than living settlements, and the forest has been taking them back for a long time.",
+			"Agol'watha was a temple, one of the sites in the north-east of the zone that stand with Shaol'watha nearby. It is not abandoned: Vilebranch scalpers and soothsayers hold it, and Revantusk Village wants the numbers brought down.",
+			"Slime has the lower ground. Green sludges and jade oozes work the stonework the way they do at Skulk Rock along the same stretch, and the crates the Old Horde left in this corner of the forest are still standing among them.",
+			"The '-watha' sites are the measure of what the Amani Empire once was. The network that supported Jintha'Alor reached across the whole of these woods.",
 		},
+		readMore = { "Wowpedia: Agol'watha", "Wowpedia: Cannibalistic Cousins", "Wowpedia: Vilebranch tribe" },
 	},
 	{
 		name = "Zun'watha", parent = "The Hinterlands", faction = "Hostile",
@@ -1788,11 +1810,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Skulk Rock", parent = "The Hinterlands", faction = "Hostile",
-		hook = "A cave of very large spiders, a short walk from the trolls' shrines to the spider loa.",
+		hook = "A forest troll ruin overrun by oozes, with an abandoned Horde base in it.",
 		lore = {
-			"Skulk Rock holds a substantial spider population, close to the Vilebranch's shrines to the spider loa.",
-			"The trolls' relationship with these spiders is religious. The spiders' relationship with travellers is simpler.",
+			"Skulk Rock is a troll ruin with a cave in it, at the head of the river in the north-east of the zone. The Old Horde put a base here during the Second War and lost it when the Alliance of Lordaeron drove them out.",
+			"What holds the ruin now is slime: jade oozes and green sludges stick to the stonework in numbers, and the rumour is that something bigger is leading them. The crates the orcs left behind are still there with cases of Hinterlands honey ripple in them.",
+			"It is also one of the few places anywhere that ghost mushrooms grow, which is reason enough for people to come and take their chances with the oozes.",
 		},
+		readMore = { "Wowpedia: Skulk Rock", "Wowpedia: A Sticky Situation", "Wowpedia: Ghost Mushroom" },
 	},
 	{
 		name = "Plaguemist Ravine", parent = "The Hinterlands", faction = "Contested",
@@ -1865,27 +1889,32 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "The Slag Pit", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A waste pit of molten slag, with things living in it.",
+		hook = "A mine deep inside the Cauldron, worked by Dark Iron slaves.",
 		lore = {
-			"The Slag Pit is where the Gorge's industry dumps what it cannot use. Fire elementals and worse have taken up residence in the runoff.",
-			"The Dark Irons regard this as acceptable. They regard most things as acceptable.",
+			"The Slag Pit lies deep within the Cauldron excavation. It is a sweltering mine, and the Dark Iron work it with slave labour: taskmasters and slavers stand over the slave workers, Slave Master Blackheart among them, and Overseer Maltorius commands the crew.",
+			"Dorius Stonetender's archaeology unit was taken down here, and his dying request was that his men be freed rather than avenged. Incendosaurs live in the lower reaches, and the altar of Suntara stands in the pit itself.",
+			"The Dark Iron are hostile to anyone who interferes with the mining, which is most of what they do here. The deposits in the walls are their own ore.",
 		},
+		readMore = { "Wowpedia: Slag Pit", "Wowpedia: Dwarven Justice", "Wowpedia: The Cauldron" },
 	},
 	{
 		name = "Blackchar Cave", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A cave of fire elementals on the Gorge's edge.",
+		hook = "A hot cave on the Gorge's edge, worked by slaves under a fire lord's overmaster.",
 		lore = {
-			"Blackchar is one of several places in the Gorge where the elemental plane of fire presses close enough that its inhabitants simply walk through.",
-			"Ragnaros' presence under this mountain has thinned the boundary, and the Dark Irons have made no attempt to repair it.",
+			"Blackchar is one of the places in the Gorge where the fire comes up to meet you. The cave is held by inferno elementals and greater lava spiders, Smoldar is somewhere in it, and the walls carry dark iron along with the mithril and truesilver.",
+			"The Dark Iron work it the way they work the Slag Pit, with quarry slaves down here under Overmaster Pyron, as everywhere the clan digs.",
 		},
+		readMore = { "Wowpedia: Blackchar Cave", "Wowpedia: Searing Gorge" },
 	},
 	{
 		name = "The Sea of Cinders", parent = "Searing Gorge", faction = "Contested",
-		hook = "A plain of ash where nothing has grown since the mountain broke.",
+		hook = "A flat of ash in the southern gorge, just north of Blackrock Mountain.",
 		lore = {
-			"The Sea of Cinders is the ash field left by Thaurissan's summoning. It has not recovered in all the years since and shows no sign of starting.",
-			"It is the clearest physical record of what happened here, and the Dark Irons walk across it daily without comment.",
+			"The Sea of Cinders is a level stretch at the south end of the gorge, below Blackrock Mountain. Fire and wind have been over it and nothing lives on it. The ground still smoulders, and cinders and ash come off it into the air the whole time.",
+			"It is the clearest physical record of what Thaurissan's summoning did to this country. What crosses it now is the Scarshield Legion, whose sentries and grunts hold the ash in force, with lava spiders and magma elementals in the cracks and a Blackrock drake overhead.",
+			"A few people have business out here anyway. Bodley keeps to himself among the cinders, and Nilith Lokrav has a guardian standing over him.",
 		},
+		readMore = { "Wowpedia: Sea of Cinders", "Wowpedia: Searing Gorge", "Wowpedia: Scarshield Legion" },
 	},
 	{
 		name = "Dustfire Valley", parent = "Searing Gorge", faction = "Contested",
@@ -1959,11 +1988,12 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Altar of Storms", parent = "Burning Steppes", faction = "Hostile",
-		hook = "A demonic altar left over from the Horde's warlock era.",
+		hook = "A Second War altar in the shadow of Blackrock Mountain, still in use.",
 		lore = {
-			"The Altar of Storms is one of several such sites raised by orcish warlocks during the Horde's campaigns, when the Shadow Council and Gul'dan's influence ran the clans.",
-			"Thrall's Horde has outlawed warlock practice of this kind, but the altars are still standing and still being used by people who do not take orders from Orgrimmar.",
+			"The altars of storms were cut from captured elven runestones and used to pervert the magic in them. What the Old Horde got out of them was the ogre magi, who were given their spells at altars like this one.",
+			"This altar sits below Blackrock Mountain, and the Blackrock clan has never stopped using it. Blackrock warlocks work here, with Mor'zul Bloodbringer and Gorzeeki Wildeyes keeping to themselves nearby and an alchemy set standing out in the open.",
 		},
+		readMore = { "Wowpedia: Altar of Storms", "Wowpedia: Ogre magi", "Wowpedia: Blackrock clan" },
 	},
 	{
 		name = "Terror Wing Path", parent = "Burning Steppes", faction = "Hostile",
@@ -2175,8 +2205,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "Corin's Crossing", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A crossroads market town, now a Scourge staging post.",
 		lore = {
-			"Corin's Crossing was a trading village at the junction of the zone's roads. The Scourge holds it and uses it as the hub it always was.",
-			"Its position means almost everyone travelling the Eastern Plaguelands has to deal with it.",
+			"Corin's Crossing was a trading village at the junction of the zone's roads, and the signposts still standing in it point five ways: Quel'Thalas, Tyr's Hand, Darrowshire, Stratholme and Andorhal. Its position means almost everyone travelling the Eastern Plaguelands has to deal with it.",
+			"The Scourge holds it and uses it as the hub it always was. Hate shriekers and gibbering ghouls work the streets with stitched horrors among them, and the Cult of the Damned is here in person: vile tutors and dark summoners, teaching and raising in the open.",
 		},
 	},
 	{
@@ -2271,7 +2301,7 @@ SubsOf("Deadwind Pass", {
 		name = "Deadwind Ravine", parent = "Deadwind Pass", faction = "Contested",
 		hook = "The canyon floor, with an ogre camp and a very long silence.",
 		lore = {
-			"The ravine carries the only road through the pass. Deadwind ogres have camped along it, the closest thing this zone has to a population.",
+			"The ravine is a craggy cleft running south through the mountains toward Karazhan, and the western road runs through it on the upper level, ending at the southern bridge below the tower. Deadwind ogres have camped along it, the closest thing this zone has to a population: brutes and maulers, with warlocks and an ogre mage among them.",
 			"There is no inn, no flight path and no settlement in Deadwind Pass. Travellers go through without stopping. That is the pass's entire character.",
 		},
 	},
@@ -2371,11 +2401,12 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Altar of Storms", parent = "Blasted Lands", faction = "Hostile",
-		hook = "One of the old orcish demonic altars, in the shadow of the portal.",
+		hook = "One of the old altars of storms, north-east of the Dark Portal.",
 		lore = {
-			"The Horde's warlocks raised altars like this across their conquests, and this one sits close to where they first arrived.",
-			"The Shadow Council that ran the Old Horde through Gul'dan was a warlock cabal. Altars like this one were its infrastructure.",
+			"The Old Horde raised altars like this across the lands it took, and this one stands on the ground where it first came through. Gul'dan meant to use their power against the elves' defences at Quel'Thalas, because the altars were made from the elves' own runestones.",
+			"Lady Sevine holds this one now with her servants, and a stone of binding stands beside it. The Shadow Council that ran the Old Horde through Gul'dan was a warlock cabal, and altars like this one were its working equipment.",
 		},
+		readMore = { "Wowpedia: Altar of Storms", "Wowpedia: Lady Sevine", "Wowpedia: Shadow Council" },
 	},
 })
 
@@ -2405,9 +2436,9 @@ SubsOf("Tirisfal Glades", {
 		name = "Faol's Rest", parent = "Tirisfal Glades", faction = "Contested",
 		hook = "The grave of the archbishop who founded the Silver Hand, now untended.",
 		lore = {
-			"Alonsus Faol was Archbishop of the Church of the Holy Light and the man who answered the Second War by inventing an answer to it. With Uther at his side he founded the Knights of the Silver Hand, the first paladins, and trained the generation who fought the orcs to a standstill.",
+			"Alonsus Faol was Archbishop of the Church of the Holy Light. With Uther at his side he founded the Knights of the Silver Hand, the first paladins, and trained the generation who fought the orcs to a standstill.",
 			"He died before the Scourge came and was spared the sight of what his own best student became: Arthas Menethil was raised in that tradition, and took up Frostmourne regardless.",
-			"The grave sits in eastern Tirisfal, a short way from the Scarlet Monastery. It was a place of pilgrimage once. Nobody tends it now, and the ground around it belongs to the Forsaken and the Scarlet Crusade, neither of whom have any use for a shrine to the other side's saint.",
+			"The grave sits in eastern Tirisfal, a short way south-west of the Scarlet Monastery. It drew mourners in numbers before the plague. Nobody tends it now, and the ground around it belongs to the Forsaken and the Scarlet Crusade, neither of whom have any use for a shrine to the other side's saint. The Scarlet raid out of a ruined tower further north, past the grave.",
 		},
 		readMore = { "Wowpedia: Alonsus Faol", "Wowpedia: Knights of the Silver Hand" },
 	},
@@ -2489,7 +2520,8 @@ SubsOf("Tirisfal Glades", {
 		name = "Agamand Family Crypt", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "A farming family's tomb, with the family still in it and still moving.",
 		lore = {
-			"The Agamands held the mills north of Brill for generations, and the crypt is where they buried their own. The Scourge came through Tirisfal and raised the lot of them.",
+			"The Agamands were the most prosperous family in Tirisfal and held the mills north of Brill, and the crypt just north of those mills is where they buried their own. When the Scourge first came they fortified the house and persuaded the people in their employ to stay and help defend it, which went the way such decisions went in this region.",
+			"Captain Dargol settled in the crypt afterwards and woke every corpse and spirit in it. The Agamands attack anyone who comes in unbidden.",
 			"They are hostile to the Forsaken, which is the detail worth knowing. Not every corpse the Scourge raised was freed when Sylvanas broke away, and the ones still under the Lich King's will treat the Forsaken as traitors.",
 			"So the first enemies most Forsaken fight are their own neighbours' dead.",
 		},
@@ -2559,14 +2591,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Battle Ring", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The floor of the Gurubashi Arena, where the sand used to be muddy with troll blood.",
+		hook = "The floor of the Gurubashi Arena, and the only part of it where anything goes.",
 		lore = {
-			"The Battle Ring is the arena floor itself, inside the Gurubashi Arena north of Booty Bay. The arena is Gurubashi work, left from the empire that held most of the southern Eastern Kingdoms.",
-			"In its own time the fights here were to the death, and the accounts describe the sand as muddy with it. Once a generation the best troll fighters from across the world came to this ring to settle who they were.",
-			"What happens in it now is run by a goblin called Short John Mithril and is a good deal less lethal. An empire's proving ground is a prize-fighting pit with an entry fee.",
+			"The Battle Ring is the arena floor itself, inside the Gurubashi Arena north of Booty Bay. The arena is Gurubashi work, left from the empire that held most of the southern Eastern Kingdoms, and the ring is where the fighting is permitted: the stands and the entrance ramp are not part of it.",
+			"What runs in it now is a goblin's event. It is run by Short John Mithril, a goblin Bloodsail captain turned arena master, who starts a scrap over a chest of treasure every three hours on the clock, and whoever gets it open keeps what is inside.",
+			"Fighters who keep coming back collect trinkets off the floor and a title to go with them. An empire's proving ground is a prize-fighting pit with a timetable.",
 		},
-		didYouKnow = "The arena has a story attached: find a blood-red amulet here at midnight and a demon will have eaten your soul by sunrise. Nobody at Booty Bay discourages the telling of it.",
-		readMore = { "Wowpedia: Gurubashi Arena", "Wowpedia: Gurubashi" },
+		readMore = { "Wowpedia: Gurubashi Arena", "Wowpedia: Short John Mithril", "Wowpedia: Arena Master" },
 	},
 	{
 		name = "Wild Shore", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -2600,13 +2631,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Riptide", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "The third Bloodsail frigate, on the last stretch of coast before the open sea.",
+		hook = "The westernmost of the three Bloodsail frigates anchored off the Wild Shore.",
 		lore = {
-			"The Riptide is moored with the Crimson Veil and the Damsel's Luck off the Wild Shore, at the bottom end of the Eastern Kingdoms.",
-			"The position is the point. Everything sailing between Kalimdor and the Eastern Kingdoms passes this cape, and Booty Bay exists because the goblins worked that out first. The Bloodsail worked it out second and arrived with hulls instead of a harbour.",
-			"Stranglethorn was Gurubashi country, then Stormwind's southern frontier, and now it is neither. Three pirate frigates on the southern beach is what the absence of a government looks like.",
+			"The Riptide is moored with the Crimson Veil and the Damsel's Luck off the Wild Shore, at the bottom end of the Eastern Kingdoms. Fleet Master Firallon runs the fleet from below decks on the Crimson Veil, with Captain Keelhaul and Captain Stillwater aboard alongside him.",
+			"The Bloodsail keep their southern command post on the shore itself, and Booty Bay would like to know what is being planned there. Fleet Master Seahorn, who speaks for the Blackwater Raiders, pays for word of a raid on the port and reckons anyone who tries it may as well throw themselves off the Overlook Cliffs.",
+			"Stranglethorn was Gurubashi country, then Stormwind's southern frontier, and now it is neither. Three pirate frigates anchored off the southern beach is what that has left.",
 		},
-		readMore = { "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Stranglethorn Vale" },
+		readMore = { "Wowpedia: The Riptide", "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Stranglethorn Vale" },
 	},
 	{
 		name = "Venture Co. Operations Center", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -2735,13 +2766,13 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("Badlands", {
 	{
 		name = "The Maker's Terrace", parent = "Badlands", faction = "Hostile",
-		hook = "The excavation outside Uldaman's door, patrolled by Dark Irons.",
+		hook = "The excavation outside Uldaman's door, dug and held by Dark Iron.",
 		lore = {
-			"The Terrace is the dig outside the entrance to Uldaman, and for anyone coming into the Badlands from Loch Modan it is the first thing on the road.",
-			"\"The Maker\" is the titans. Uldaman is one of their vaults, and what the Explorers' League found inside it was the Discs of Norgannon and the record of the earthen: living stone, shaped by the titans, and the dwarves' own ancestors. Ironforge has not been the same since reading it.",
-			"The Dark Iron patrol the Terrace now. They are dwarves too, and the same record is theirs, which does not appear to have made them any friendlier about who gets to read it.",
+			"The Terrace is the dig outside the entrance to Uldaman, and for anyone coming into the Badlands from Loch Modan it is the first thing on the road. Uldaman itself is a vault older than any dwarven work.",
+			"Agmond's diggers turned up carved stone urns at this site before Agmond died out here, and Prospector Ironband thinks the urns are what stirred the troggs up. They are still standing on the terrace.",
+			"The Dark Iron hold the ground now. Shadowforge diggers, surveyors and ruffians work it in force and every one of them is elite, with war golems and an obsidian golem among them.",
 		},
-		readMore = { "Wowpedia: Maker's Terrace", "Wowpedia: Uldaman", "Wowpedia: Titan", "Wowpedia: Earthen" },
+		readMore = { "Wowpedia: Maker's Terrace", "Wowpedia: Uldaman", "Wowpedia: Agmond's Fate" },
 	},
 })
 
@@ -2840,9 +2871,9 @@ SubsOf("Elwynn Forest", {
 		name = "The Maclure Vineyards", parent = "Elwynn Forest", faction = "Alliance",
 		hook = "The other half of the feud, and the one with the grapes.",
 		lore = {
-			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms.",
-			"The quarrel is inherited rather than reasoned, and both households are entirely committed to it. Meanwhile their children have made other arrangements.",
-			"Elwynn does have real problems: the Defias are in the hills, kobolds are in the mines, and Hogger is in the woods. The vineyard feud is not one of them, and it is the one the neighbours talk about.",
+			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms. Joshua Maclure is the vintner and Pa Maclure holds the farm.",
+			"The rivalry runs on small grievances. Bernice Stonefield is sure that Billy Maclure took her necklace, and the pie that goes back across to him is sent with the wish that he chokes on it. Their children, Maybell Maclure and Tommy Joe Stonefield, have made other arrangements of their own.",
+			"Elwynn's real problems are elsewhere: the Defias are in the hills, kobolds are in the Fargodeep Mine almost due south of Goldshire between the two homesteads, and Hogger is in the woods. Over a dozen boars root about the vineyards.",
 		},
 		readMore = { "Wowpedia: Maclure Vineyards", "Wowpedia: Elwynn Forest" },
 	},
@@ -3047,13 +3078,13 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("Deadwind Pass", {
 	{
 		name = "Ariden's Camp", parent = "Deadwind Pass", faction = "Hostile",
-		hook = "The deserted camp of the man who led the Dark Riders, before the curse took him.",
+		hook = "A deserted campsite by the road through the pass, and nobody is saying whose.",
 		lore = {
-			"Ariden set this camp up just north of the road through the pass, and it is empty now. What he was doing from it was selling forged Medivh artefacts.",
-			"Then he was cursed, and he became the leader of the Dark Riders. They are the horsemen who ride out of Deadwind Pass, and it was their arrival in Duskwood, after the Scythe of Elune changed hands at Roland's Doom, that helped put that forest under permanent dark.",
-			"So the camp is where a fraudster set up shop next to Karazhan and got exactly what selling Medivh's name in Medivh's shadow had always been going to get him.",
+			"The camp sits just north of the road that carries travellers through Deadwind Pass from Duskwood to the Swamp of Sorrows. Whoever pitched it is gone and the site has been left standing.",
+			"What the pass is known for is the riders. Dark Riders came out of Deadwind Pass and killed Sven Yorgen's family on their farm over in Duskwood while he was away, and a shadowy figure was seen burying something near the barn afterwards. He has been hunting them since, and what he has learned is that the riders were seen speaking with the wizard Morbent Fel at the Forlorn Rowe.",
+			"Karazhan stands over all of it, a short way further into the pass, and that is as much explanation as anyone in Duskwood needs for why the riders come from here.",
 		},
-		readMore = { "Wowpedia: Ariden's Camp", "Wowpedia: Dark Riders", "Wowpedia: Karazhan", "Wowpedia: Medivh" },
+		readMore = { "Wowpedia: Ariden's Camp", "Wowpedia: Sven's Revenge", "Wowpedia: Deadwind Pass" },
 	},
 	{
 		name = "Sleeping Gorge", parent = "Deadwind Pass", faction = "Contested",
@@ -3161,13 +3192,13 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "The Foothill Caverns", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "The cave where Helcular made himself a lich after a mob had killed him.",
+		hook = "The cave where Helcular was killed before he could finish becoming a lich.",
 		lore = {
-			"The Foothill Caverns lie in Darrow Hill, and Helcular used them. He was working on turning himself into a lich, and he had a ritual site up in the hills until a human lynch mob found it and beat him to death.",
-			"Dying did not stop the project. He finished it in this cave instead, which is the sort of outcome a lynch mob does not plan for.",
-			"The Flame of Azel and the Flame of Veraz were kept down here too. Hillsbrad looks like farmland with a feud in it, and a good deal of what is actually going on is underground.",
+			"The Foothill Caverns open at Darrow Hill, in the ground where Hillsbrad runs up into the Alterac Mountains. Helcular used them as his lair while he worked on turning himself into a lich, and he was almost finished when a human lynch mob found his ritual site in the hills and beat him to death.",
+			"He never completed it. What he left behind is down here: the Flame of Azel and the Flame of Veraz, two of the three ceremonial pyres he built for his most powerful spell. The third, the Flame of Uzel, burns in a cave further north in the mountains.",
+			"Yetis took the lair afterwards, and cave yeti and ferocious yeti hold the tunnels now. The caverns are also one of the places Alterac granite comes out of the ground.",
 		},
-		readMore = { "Wowpedia: Foothill Caverns", "Wowpedia: Helcular", "Wowpedia: Lich" },
+		readMore = { "Wowpedia: Foothill Caverns", "Wowpedia: Helcular", "Wowpedia: Helcular's Revenge" },
 	},
 })
 
@@ -3248,7 +3279,7 @@ SubsOf("Elwynn Forest", {
 		hook = "The river out of the mountains that becomes Crystal Lake.",
 		lore = {
 			"The Northshire River comes down out of the mountains east of Stormwind, runs through Northshire Valley past the Abbey, and empties into Crystal Lake.",
-			"Every human the Alliance fields from this kingdom starts beside it. Northshire Abbey is where new recruits are taught, the valley is the first ground they walk, and the river is the thing running through all of it.",
+			"Northshire Abbey is where Stormwind's new recruits are taught, the valley is the first ground they walk, and the river runs through all of it. The subzone has no label on the map, so most of them never learn it has a name.",
 			"The falls near the Abbey are the pleasant part of a zone that also contains the Defias, kobolds in the mines and Hogger. Elwynn is a working forest, not an idyll, but it does have this.",
 		},
 		readMore = { "Wowpedia: Northshire River", "Wowpedia: Northshire Abbey", "Wowpedia: Crystal Lake" },
@@ -3284,7 +3315,7 @@ SubsOf("Tirisfal Glades", {
 		name = "The North Coast", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "Tirisfal's northern beach, with dead sea creatures rotting on it.",
 		lore = {
-			"The North Coast runs along the top edge of Tirisfal where the glades meet the Great Sea. Murlocs have most of it, along with whatever marine life is still moving.",
+			"The North Coast runs along the top edge of Tirisfal where the glades meet the Great Sea. Vile Fin murlocs have most of it, with their spawning grounds just off shore and tadpoles around the huts, and Deeb stands idle somewhere on the sand.",
 			"The plague reached the water. Since the Plague of Undeath went through this region the coast has gone dark and cold, and there are dead sea creatures lying along the tideline rotting.",
 			"That is the detail worth carrying away from Tirisfal. The Scourge did not only kill the people here; it got into the soil, the lakes and the sea, and the land has not recovered in the years since.",
 		},
@@ -3296,7 +3327,7 @@ SubsOf("Tirisfal Glades", {
 		lore = {
 			"The Whispering Shore is a short stretch of coast in western Tirisfal, just up from the Solliden Farmstead. People used to fish here.",
 			"Nobody does now. A band of murlocs under one called Muad has the beach and goes for anyone who comes near, and the water offshore is cold and dark with nothing left in it worth catching.",
-			"The farmstead below is empty too. Tirisfal is full of small pleasant uses of land that stopped when the plague came through, and a fishing beach is one of the plainer ones.",
+			"The farmstead below is empty too. Tirisfal is full of small pleasant uses of land that stopped when the plague came through, and a fishing beach is one of the plainer ones. Nothing remains of what this coast used to be worth.",
 		},
 		readMore = { "Wowpedia: Whispering Shore", "Wowpedia: Tirisfal Glades" },
 	},

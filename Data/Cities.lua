@@ -241,9 +241,11 @@ SubsOf("Undercity", {
 		name = "The Rogues' Quarter", faction = "Horde",
 		hook = "Where the Forsaken train the skills that do not get written down.",
 		lore = {
-			"The Rogues' Quarter handles the Forsaken's less public work. The Deathstalkers, Sylvanas' intelligence service, operate out of this part of the city.",
-			"The Deathstalkers are among the best spies in the world, for the simple reason that a Forsaken agent can go places the living cannot.",
+			"The Rogues' Quarter is the south-eastern corner of the Undercity and it holds the rogues' guild: three rogue trainers, a poison vendor, and leatherworking, skinning, engineering and first aid trainers alongside them.",
+			"It also handles the Forsaken's less public work. Mennet Carkad sits in this quarter and summons prospective Deathstalkers, and he does not expect a summons of his to be ignored. Estelle Gendry outfits them with tools before they go out.",
+			"The work Carkad hands down is done in Lord Varimathras's name.",
 		},
+		readMore = { "Wowpedia: Rogues' Quarter", "Wowpedia: Mennet Carkad", "Wowpedia: Deathstalkers" },
 	},
 })
 

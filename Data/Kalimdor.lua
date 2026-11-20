@@ -69,11 +69,13 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Drygulch Ravine", parent = "Durotar", faction = "Hostile",
-		hook = "A ravine full of harpies in northern Durotar.",
+		hook = "A ravine north of Razor Hill, held by harpies who rob the caravans.",
 		lore = {
-			"Drygulch is a dry canyon north of Razor Hill, held by harpies. Harpies are everywhere in Kalimdor. The story told about them is that they are cursed descendants of night elves, a subject on which no harpy has ever been drawn.",
-			"They raid the roads around Orgrimmar, keeping the Horde's patrols busy and making the ravine a standard early assignment.",
+			"Drygulch is a dry canyon north of Razor Hill. The only way in, short of falling into it from above, is from Razorwind Canyon through a small cave.",
+			"The Dustwind harpies have it. They have taken to banditry, stopping the caravans that supply the orcs here and hoarding the sacks on their cliffs, and the most powerful of them stand over the nests. Orcs lived in the ravine before them and a river still feeds it.",
+			"Burning Blade cultists work the same ground, neophytes and thugs among them. Margoz is camped between the ravine and the coast, and the Horde thinks his counsel worth hearing before anyone goes after the cult.",
 		},
+		readMore = { "Wowpedia: Drygulch Ravine", "Wowpedia: Winds in the Desert", "Wowpedia: Margoz" },
 	},
 	{
 		name = "Thunder Ridge", parent = "Durotar", faction = "Contested",
@@ -132,8 +134,9 @@ SubsOf("Mulgore", {
 		name = "Camp Narache", faction = "Horde", levels = "1-6",
 		hook = "A starting camp on Red Cloud Mesa, with the Bristleback quilboar already a problem.",
 		lore = {
-			"Camp Narache is the first village a young tauren knows. It is small and traditional, and under constant low-level pressure from the Bristleback quilboar in the hills.",
-			"Quilboar and tauren have been fighting over Mulgore's plains for a very long time, and the quilboar were here first.",
+			"Camp Narache is the first village a young tauren knows, a small and traditional place under Chief Hawkwind on Red Cloud Mesa. Plainstriders and mountain cougars cover the ground around it and Palemane gnolls work the edges of it.",
+			"The pressure comes from the east. The Bristleback quilboar of Brambleblade Ravine are encroaching on tribal land, ambushing hunting parties and stealing from the village after dark, and they train the battleboars that come at it by day. Their warchief has gone further than raiding: the plans found on them are for an extended siege of the camp.",
+			"Quilboar and tauren have been fighting over Mulgore's plains for a very long time, and the first thing any tauren is asked to do here is prove they can fight.",
 		},
 	},
 	{
@@ -156,11 +159,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "The Golden Plains", parent = "Mulgore", faction = "Horde",
-		hook = "Open grassland in central Mulgore, and the kodo herds' main range.",
+		hook = "The grassland basin south-east of Thunder Bluff, and a favoured hunting ground.",
 		lore = {
-			"The Golden Plains are the heart of Mulgore's grassland and the reason the tauren stopped here. The kodo herds graze them, and kodo are central to tauren life as beasts of burden, as food and as a measure of wealth.",
-			"The plains are also where the tauren's relationship with the land is most visible. Nothing is fenced and nothing is farmed intensively.",
+			"The Golden Plains are the large basin that wraps around Thunder Bluff on its south-eastern side, and they are among the most treasured parts of the tauren homeland.",
+			"They are hunting ground rather than pasture. Plainstriders work the grass in numbers, elders among them, and flatland prowlers, flatland cougars, prairie stalkers and prairie wolf alphas hunt across it. Overhead, swoops drop on anything small enough.",
 		},
+		readMore = { "Wowpedia: Golden Plains", "Wowpedia: Mulgore" },
 	},
 	{
 		name = "Red Rocks", parent = "Mulgore", faction = "Contested",
@@ -276,11 +280,13 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Starbreeze Village", parent = "Teldrassil", faction = "Hostile",
-		hook = "A night elf village overrun by furbolgs and spiders.",
+		hook = "A night elf village south-east of Shadowglen, overrun by Gnarlpine furbolgs.",
 		lore = {
-			"Starbreeze was a small night elf settlement. The Gnarlpine took it, and the night elves have not retaken it.",
+			"Starbreeze was a handful of small houses south-east of Shadowglen and east of Dolanaar. The corrupted Gnarlpine took it, and the night elves have not retaken it. Webwood spiders work the ground around it and the village moonwell is still there.",
+			"Ferocitas the Dream Eater keeps to the outskirts and Uruson patrols the village itself. Zenn Foulhoof, a satyr, has set himself up nearby and is scattering fel cones about.",
 			"It is a measure of how thinly the Sentinels are spread. Teldrassil is supposed to be the night elves' sanctuary and they cannot hold all of it.",
 		},
+		readMore = { "Wowpedia: Starbreeze Village", "Wowpedia: Gnarlpine tribe" },
 	},
 	{
 		name = "Pools of Arlithrien", parent = "Teldrassil", faction = "Contested",
@@ -370,13 +376,13 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "The Master's Glaive", parent = "Darkshore", faction = "Hostile",
-		hook = "A colossal blade buried in the earth, with Old God cultists camped around it.",
+		hook = "A colossal blade driven into the earth, with Twilight's Hammer cultists camped around it.",
 		lore = {
-			"The Glaive is an enormous weapon driven point-first into the ground at the mouth of a valley. Nobody knows who wielded it or what they used it on, and the scale rules out anything mortal.",
-			"The Twilight Hammer cult gathers here. They worship the Old Gods, the ancient horrors the titans imprisoned beneath this world, and their presence at the Glaive suggests they believe one of the titans' prisons is nearby.",
-			"The cult is small, fanatical and spread across Kalimdor. Where they show up, it is usually because something is buried.",
+			"The Glaive is an enormous weapon driven point-first into the ground in the south of Darkshore, and the scale of it rules out anything mortal. Its wielder is not named. Onu, the Ancient of Lore in the Grove of the Ancients, says this is a place where one of the old lords of the earth fell, long ago.",
+			"The Twilight's Hammer has the ground now, and that cult worships those same old lords. What it wants at the Glaive is not known, which is why Onu sends people into the camp to look for anything that would say. Twilight thugs and disciples hold the tents, with twilight tomes among their gear.",
+			"Onu finds it strange enough that the naga are in Darkshore at all. Blackwood furbolgs and moonstalkers work the valley around the blade, and Therylune wandered in here and was surrounded by cultists before she could get back out.",
 		},
-		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: Old Gods" },
+		readMore = { "Wowpedia: Master's Glaive", "Wowpedia: Twilight's Hammer", "Wowpedia: The Master's Glaive (quest)" },
 	},
 	{
 		name = "Tower of Althalaxx", parent = "Darkshore", faction = "Hostile",
@@ -396,11 +402,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Cliffspring Falls", parent = "Darkshore", faction = "Contested",
-		hook = "A waterfall in the northern cliffs, with a cave behind it.",
+		hook = "The waterfall the Cliffspring River comes out of, and the region drinks from.",
 		lore = {
-			"The falls are a landmark on Darkshore's northern stretch, and the cave system behind them has acquired the usual tenants.",
-			"Darkshore's caves tend to connect further than they look, and finding that out has gone badly more than once.",
+			"The falls are the origin of the Cliffspring River and the principal source of drinking water for the whole of Darkshore, and that makes the cave behind them matter more than a cave usually would.",
+			"That cave has been corrupted. Something is reaching the spring at its source, and the argument locally is whether it is seeping across from Felwood or being done deliberately: members of the Twilight's Hammer have been found deep inside, at the water's source, which does not settle it but does not help their case either.",
 		},
+		readMore = { "Wowpedia: Cliffspring Falls", "Wowpedia: Twilight's Hammer", "Wowpedia: Darkshore" },
 	},
 	{
 		name = "Remtravel's Excavation", parent = "Darkshore", faction = "Alliance",
@@ -507,11 +514,13 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Bael'dun Keep", parent = "The Barrens", faction = "Hostile",
-		hook = "A dwarven dig fortified against the Horde that owns the land.",
+		hook = "A dwarven dig fortified against the tauren it displaced.",
 		lore = {
-			"The dwarves of the Explorers' League are excavating here, and they built a keep around the dig because the Horde objected.",
-			"Ironforge's archaeology has a habit of becoming a diplomatic incident. The dwarves' position is that the past belongs to everyone; the Horde's position is that the ground belongs to them.",
+			"The keep stands over the Bael Modan excavation and Prospector Khazgorm leads the work. Excavators and foremen do the digging and the walls are there because of who was here first.",
+			"Gann Stonespire's account is not about archaeology. Tauren were killed or driven off ancestral land when the dwarves of Bael Modan arrived, he wants the ground back, and what he asks for is the dwarves driven out by force and their leader's journal brought to him.",
+			"Ironforge's digging has a habit of becoming somebody else's eviction. This is the clearest case of it on either continent.",
 		},
+		readMore = { "Wowpedia: Bael'dun Keep", "Wowpedia: Gann's Reclamation", "Wowpedia: Explorers' League" },
 	},
 	{
 		name = "The Sludge Fen", parent = "The Barrens", faction = "Hostile",
@@ -664,11 +673,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Boulderslide Ravine", parent = "Stonetalon Mountains", faction = "Hostile",
-		hook = "A ravine full of kobolds and worse, under the southern slopes.",
+		hook = "A ravine in the far south, with rock keepers above and a kobold mine below.",
 		lore = {
-			"Boulderslide Ravine is a cave and ravine complex in the southern mountains, infested and avoided.",
-			"Stonetalon's caves connect further than they should, and the Venture Company's digging has made that worse.",
+			"The ravine runs through the southern end of Stonetalon and the cave at the end of it is Boulderslide Cavern, where the kobolds are frantically mining a rare crystal called resonite. Resonite is lying loose through the ravine as well.",
+			"Above the cave the ground is held by Gogger rock keepers, geomancers and a stonepounder: a telling set of neighbours given what is asleep in a resonite cask down in the cavern and what its name is.",
 		},
+		readMore = { "Wowpedia: Boulderslide Ravine", "Wowpedia: Boulderslide Cavern", "Wowpedia: Resonite Crystal" },
 	},
 	{
 		name = "Malaka'jin", parent = "Stonetalon Mountains", faction = "Horde",
@@ -725,11 +735,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Warsong Lumber Camp", parent = "Ashenvale", faction = "Hostile",
-		hook = "The logging camp that is the entire reason for the war in this forest.",
+		hook = "The Warsong clan's logging camp, and the reason for the war in this forest.",
 		lore = {
-			"The Warsong clan cuts timber here, and the timber goes to Orgrimmar. Grom Hellscream's clan took the name Warsong for their battle chants and they have never been the Horde's moderating influence.",
-			"Thrall has restrained them and they have resumed. The camp is both a practical necessity for the Horde and the clearest evidence that Orgrimmar does not fully control its own clans.",
+			"The Warsong cut timber here. The clan works it with peons on the piles, grunts and shamans holding the ground, and deforesters and shredders doing the felling, with a kennel and Kargathia Keep to fall back on.",
+			"It runs on a supply line rather than on conquest. Saw blades come up from Splintertree Post and axes by ship from Booty Bay, and the oil and rope are the difficult part: the Thistlefur and Foulweald furbolgs take the rope and the satyrs intercept the rest.",
+			"Grom Hellscream led this clan and the Horde honours him for it, with a monument in Demon Fall Canyon not far from here. The camp is what the night elves are fighting about.",
 		},
+		readMore = { "Wowpedia: Warsong Lumber Camp", "Wowpedia: Warsong Supplies", "Wowpedia: Warsong clan" },
 	},
 	{
 		name = "Warsong Labor Camp", parent = "Ashenvale", faction = "Hostile",
@@ -1003,7 +1015,7 @@ SubsOf("Desolace", {
 		hook = "A fortress held by the Burning Blade, in the middle of the zone.",
 		lore = {
 			"Thunder Axe Fortress is a Burning Blade stronghold: orcs pursuing demonic power inside a zone that already has demons in it.",
-			"The cult's presence in Desolace is better organised than elsewhere, probably because the Mannoroc Coven gives them something to organise around.",
+			"The cult's felsworn, reavers, augurs and adepts hold the walls, with a shadowmage and a seer among them and thunder lizards raging outside. A crystal called the Hand of Iruxos sits inside. Tyranis Malem holds Dalinda Malem here, and she is the one thing anybody comes to the fortress to put right.",
 		},
 	},
 	{
@@ -1145,11 +1157,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Bluefen", parent = "Dustwallow Marsh", faction = "Contested",
-		hook = "A stretch of open marsh in the north, full of things that bite.",
+		hook = "The open marsh in the north, between the ogres and the Barrens road.",
 		lore = {
-			"Bluefen is the northern marsh, between Brackenwall and the Barrens road. Crocolisks and worse live in it.",
-			"The marsh's wildlife is one of the main reasons Dustwallow has stayed thinly settled by both factions.",
+			"Bluefen is the northern stretch of the marsh, running up from Brackenwall Village toward the Barrens road. The water puts up withervine creepers and mire beasts, darkmist spiders hold the trees, and drywallow crocolisks and snappers work the channels, with Drogoth the Roamer ranging over the lot.",
+			"It is also where Theramore does its quiet work. Infiltrators of theirs are out in this marsh well north of the city, which is a long way from the island for people who are not supposed to be there.",
 		},
+		readMore = { "Wowpedia: Bluefen", "Wowpedia: Dustwallow Marsh" },
 	},
 	{
 		name = "Lost Point", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -1162,11 +1175,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Darkmist Cavern", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "A spider cave in the eastern marsh.",
+		hook = "A small mine in the north-west, overrun by very large spiders.",
 		lore = {
-			"Darkmist Cavern holds a large spider population, and Dustwallow's spiders run to size.",
-			"The marsh's caves are numerous and most of them hold something worth avoiding.",
+			"Darkmist Cavern is a mine in the north-west of the marsh that has been taken over completely by the Darkmist spiders, and Dustwallow's spiders run to size. Nobody out here agrees whether the spiders are named after the cavern or the cavern after the spiders.",
+			"There are ruins of small houses outside the mouth of it, so somebody was living here before the tenants changed.",
+			"What brings anyone in is soup. \"Swamp Eye\" Jarl wants unpopped Darkmist eyes by the score, on the grounds that most creatures only have two eyes and spiders have lots, and that the juice is smooth and salty.",
 		},
+		readMore = { "Wowpedia: Darkmist Cavern", "Wowpedia: Jarl Needs Eyes" },
 	},
 })
 
@@ -1265,11 +1280,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Woodpaw Hills", parent = "Feralas", faction = "Hostile",
-		hook = "Gnoll country in the southern jungle.",
+		hook = "Gnoll country in the south-east, and the gnolls are being pushed out of it.",
 		lore = {
-			"The Woodpaw gnolls hold the southern hills and are the most numerous hostile population in Feralas.",
-			"They are better organised than gnolls usually manage, and Camp Mojache suspects somebody else is giving them direction.",
+			"The Woodpaw clan holds these hills in the south-east of Feralas, in numbers and under its own alphas. What they are not doing is holding them comfortably: the bugs have come up through the ground at the far end of the hills, in the ground now called the Writhing Deep, and the gnolls are being driven out of their own country.",
+			"Camp Mojache has noticed the difference. Hadoken Swiftstrider calls them a constant threat to the camp's existence rather than a nuisance, and what the camp wants is their plans: gnolls are not subtle, but these ones keep a written strategy, and a battle map of theirs would say what has them so worked up.",
 		},
+		readMore = { "Wowpedia: Woodpaw Hills", "Wowpedia: Woodpaw Investigation", "Wowpedia: The Writhing Deep" },
 	},
 	{
 		name = "Rage Scar Hold", parent = "Feralas", faction = "Hostile",
@@ -1281,11 +1297,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Lariss Pavilion", parent = "Feralas", faction = "Contested",
-		hook = "A night elf pavilion by a waterfall, still standing.",
+		hook = "A night elf pavilion just north of Camp Mojache, with an exile living in it.",
 		lore = {
-			"Lariss Pavilion is one of the better-preserved night elf structures in Feralas, beside a waterfall in the eastern jungle.",
-			"It shows what these ruins looked like intact, and that makes it the most melancholy spot in the zone.",
+			"Lariss Pavilion is a large open night elf building north of Camp Mojache, and one of the few in Feralas still standing as it was built. The dryads nearby were peaceful until the Nightmare reached them and now attack anyone.",
+			"Azj'Tordin lives here. He is a Highborne who fell out with the fallen prince in Dire Maul and got out through a back way under this pavilion, and on the way an imp called Pusillin robbed him of his book of incantations and the key to Eldre'Thalas. He wants both back.",
 		},
+		readMore = { "Wowpedia: Lariss Pavilion", "Wowpedia: Azj'Tordin", "Wowpedia: Pusillin and the Elder Azj'Tordin" },
 	},
 	{
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
@@ -1352,19 +1369,22 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Lost Rigger Cove", parent = "Tanaris", faction = "Hostile",
-		hook = "A pirate harbour on the eastern coast.",
+		hook = "The Southsea pirates' port on the eastern coast, with a hull on the stocks.",
 		lore = {
-			"Lost Rigger Cove is the Southsea pirates' base in Tanaris: a working pirate port rather than a hideout.",
-			"The Steamwheedle Cartel would like it gone. The pirates are, inconveniently, also customers.",
+			"Lost Rigger Cove sits on the eastmost peninsula of the desert coast, shut in by mountains on three sides. It is a working port and not a hideout: dock workers unload stolen cargo, swashbucklers and freebooters hold the quays, Andre Firebeard and Kregg Keelhaul are among the names, and a new vessel is going up in the shipyard.",
+			"The arrangement with the goblins is not what it looks like. Steamwheedle Port pays the pirates protection money, and the pirates have lately been taking the money and ignoring what it was for. Security Chief Bilgewhizzle would rather hire that out than deal with it himself.",
 		},
+		readMore = { "Wowpedia: Lost Rigger Cove", "Wowpedia: Southsea Shakedown", "Wowpedia: Aquementas" },
 	},
 	{
 		name = "The Noxious Lair", parent = "Tanaris", faction = "Hostile",
-		hook = "A silithid hive in the eastern desert.",
+		hook = "A silithid hive in the south-west of the desert, sitting where water used to be.",
 		lore = {
-			"The Noxious Lair is a silithid colony. Silithid are insectoid, they are spreading across southern Kalimdor, and they answer to something in Silithus.",
-			"Their appearance in Tanaris, Un'Goro and the Barrens is not three separate infestations. It is one expansion.",
+			"The Noxious Lair is the Centipaar hive, in the south-west of Tanaris overlooking Un'Goro Crater. The ground is slightly sunk, as though a broad river or a shallow lake stood here once, and what the Gadgetzan Water Co. knows is that the silithid have drained the pools that used to be on this spot.",
+			"Centipaar stingers, wasps, workers, tunnelers and sandreavers work the surface and the tunnels under it, with Soriid the Devourer somewhere inside. Large claws stick up out of the sand where something bigger lies buried. Dunemaul ogres and blisterpaw hyenas range the edges.",
+			"What the bugs are is the part nobody in Gadgetzan can answer. The company would settle for knowing who the enemy is before it worries about the water.",
 		},
+		readMore = { "Wowpedia: Noxious Lair", "Wowpedia: Noxious Lair Investigation" },
 	},
 	{
 		name = "Dunemaul Compound", parent = "Tanaris", faction = "Hostile",
@@ -1392,11 +1412,13 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Abyssal Sands", parent = "Tanaris", faction = "Hostile",
-		hook = "An open stretch of sand where elementals have broken through.",
+		hook = "A dune sea with the silithid tunnelling under it.",
 		lore = {
-			"The Abyssal Sands hold elemental incursions, which in Tanaris means the planes pressing close to the surface.",
-			"Kalimdor has a number of these thin places. The Cenarion Circle and the Horde's shaman both monitor them.",
+			"The Abyssal Sands are open desert in the middle of Tanaris, and what is said of them is that the sand-dwelling silithid live in hive tunnels just under the surface, waiting on whoever walks over. Greater flayers of theirs come up out of it.",
+			"Fire rocs ride the thermals above the dunes, blisterpaw hyenas and scorpids work the flats, and glasshide basilisks sun themselves on the rock. Gahz'ridian turns up in the sand here as it does in the ruins south of here.",
+			"The anubisath have come out this far too, and resonating crystals stand in the open where the silithid war is being prepared for. Whatever is under Silithus has a reach.",
 		},
+		readMore = { "Wowpedia: Abyssal Sands", "Wowpedia: Silithid", "Wowpedia: Tanaris" },
 	},
 	{
 		name = "Thistleshrub Valley", parent = "Tanaris", faction = "Contested",
@@ -1492,11 +1514,12 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Bear's Head", parent = "Azshara", faction = "Contested",
-		hook = "A rock formation in the northern hills, and a furbolg site.",
+		hook = "A remote corner of the south-eastern mountains, with a mage's tower on the cliff.",
 		lore = {
-			"Bear's Head is a landmark in northern Azshara with a furbolg presence around it.",
-			"The zone's furbolgs are in better condition than those in Felwood and Ashenvale, which is a low bar.",
+			"Bear's Head sits by the south-eastern edge of Azshara's mountains, and the name comes from the furbolg villages scattered across it. Those villages are Timbermaw, outposts of the hold further north and of Ursolan, which makes these the furbolgs who kept their minds rather than the ones who did not.",
+			"Archmage Xylem keeps a tower on a cliff in the same ground, with apprentices and associates up there, high elves among them. He has no interest in the furbolgs or in anybody else's war.",
 		},
+		readMore = { "Wowpedia: Bear's Head", "Wowpedia: Archmage Xylem", "Wowpedia: Timbermaw tribe" },
 	},
 	{
 		name = "Bitter Reaches", parent = "Azshara", faction = "Hostile",
@@ -1551,10 +1574,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Timbermaw Hold", faction = "Neutral", levels = "48-60",
-		hook = "A furbolg tunnel-hold that stayed sane, and the only road between three zones.",
+		hook = "The Timbermaw capital, and the only road between three zones.",
 		lore = {
-			"The Timbermaw are the furbolg tribe that resisted the corruption, and their hold is a tunnel complex connecting Felwood, Winterspring and Moonglade.",
-			"They are suspicious of everyone, with reason: most of their kin have gone mad and most outsiders have treated furbolgs as monsters. Earning their trust takes real effort and it is the only way to use their tunnels.",
+			"The hold is the Timbermaw tribe's capital, in north-eastern Felwood, and the tunnel through it is the one way between Felwood, Winterspring and Moonglade. The signposts at the junction point to all of those and to Ashenvale, Jaedenar and Talonbranch Glade.",
+			"The Timbermaw are the furbolgs who came through the Legion's corruption with their minds. They are suspicious of everyone, with reason: most of their kin have gone mad and most outsiders have treated furbolgs as monsters. Earning their trust takes real effort and it is the only way to use their tunnels.",
+			"The corrupted are at the door. Deadwood avengers, shamans and den watchers press on the Felwood side under Chieftain Bloodmaw, and the Timbermaw keep warders and a gatekeeper on the gates rather than guides.",
 		},
 		didYouKnow = "Furbolgs were long-standing allies of the night elves before the corruption spread. The Timbermaw are what the whole race used to be.",
 	},
@@ -1662,11 +1686,13 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Fire Plume Ridge", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A volcanic ridge at the crater's centre, with fire elementals on it.",
+		hook = "The volcano at the crater's centre, with lava running down it.",
 		lore = {
-			"Fire Plume Ridge is the volcano at the crater's centre, and still active. Fire elementals and worse have taken up residence on its slopes.",
-			"The volcano may be what keeps the crater warm enough for the jungle. Nobody at Marshal's Refuge will commit to it.",
+			"Fire Plume Ridge is the volcano in the middle of Un'Goro and it is still working. Lava runs down the sides and the elementals are in it: living blazes, scorching elementals and blazing invaders, with Baron Charr on the slopes and Blazerunner, the strongest of them, in a cave at the peak.",
+			"The heat is not only the mountain's own. Shallow magma runs under the floor of the crater and warms the pools and geysers out across it, which is the best answer anyone has for why a jungle grows in a desert belt.",
+			"Krakle built a thermometer to settle it and hands it out to anyone willing to take readings on the ridge, in degrees Kraklenheit. Ringo went up to have a look, got lost, and is still up there with heat exhaustion.",
 		},
+		readMore = { "Wowpedia: Fire Plume Ridge", "Wowpedia: Finding the Source", "Wowpedia: Blazerunner" },
 	},
 	{
 		name = "The Slithering Scar", parent = "Un'Goro Crater", faction = "Hostile",
@@ -1811,11 +1837,13 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Lake Kel'Theril", parent = "Winterspring", faction = "Hostile",
-		hook = "A frozen lake over a night elf ruin, with its dead still on the ice.",
+		hook = "A frozen lake in the middle of Winterspring, with a Highborne city under it.",
 		lore = {
-			"Kel'Theril was a night elf site, and the lake froze over it. The spirits of the night elves who died here are still present.",
-			"They died in the War of the Ancients era, in fighting among the night elves themselves over the arcane. Even this far north, the empire's collapse left bodies.",
+			"Kel'Theril was a Highborne city before the Sundering brought it down to a lake, and the water froze over it in the years after. Pillars still stand partly above the ice.",
+			"The Highborne are still here, suffering and anguished and bound to it. What they did is set out at the ruins on the shore: they stole a sacred artefact meaning to siphon its power into themselves, and the fragments went down under this ice when it shattered. They are looking for them yet.",
+			"Shardtooth bears and chillwind chimaeras work the shore, cobalt whelps circle the ice, and when the elements turn on the world Princess Tempestria rises out of the lake.",
 		},
+		readMore = { "Wowpedia: Lake Kel'Theril", "Wowpedia: The Ruins of Kel'Theril (quest)", "Wowpedia: Highborne" },
 	},
 	{
 		name = "Owl Wing Thicket", parent = "Winterspring", faction = "Hostile",
@@ -1918,11 +1946,13 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Valor's Rest", parent = "Silithus", faction = "Contested",
-		hook = "A memorial to the night elves who died sealing the gates.",
+		hook = "A camp and graveyard at the way into Silithus, used by both sides.",
 		lore = {
-			"Valor's Rest honours the dead of the War of the Shifting Sands, the night elves and dragons who fought the qiraji to a standstill and paid for the seal with their lives.",
-			"It is a thousand years old and the war it commemorates is about to restart.",
+			"Valor's Rest is the first thing anyone sees on the way up out of the north-west corner of Un'Goro Crater, and both the Alliance and the Horde use it. Its graveyard is the final resting spot for the fallen of the wastes.",
+			"The Cenarion Circle keeps people here. Layo Starstrike is one of their agents in Silithus and will not take a stranger on trust without a letter, which is a reasonable way to behave in this zone.",
+			"An ancient war was fought in these wastes between the night elves and a malign, alien power, and the evil was sealed rather than killed. The Circle's worry is that something is now working to stir it.",
 		},
+		readMore = { "Wowpedia: Valor's Rest", "Wowpedia: Wasteland (quest)", "Wowpedia: Cenarion Circle" },
 	},
 	{
 		name = "Bronzebeard Encampment", parent = "Silithus", faction = "Neutral",
@@ -2263,7 +2293,7 @@ SubsOf("Ashenvale", {
 		hook = "A furbolg camp west of the Falfarren, and the tribe in it has been got at.",
 		lore = {
 			"Ran Bloodtooth leads the furbolgs here, and they are corrupted. Every one of them is hostile, and that is not how furbolgs are supposed to be.",
-			"The furbolgs were the night elves' oldest allies on this continent, and the collapse of that friendship is one of the quieter tragedies in Kalimdor. Tribe after tribe has been turned, and the night elves have gone from treating them as neighbours to treating them as a problem.",
+			"The judgement on him did not come from the Sentinels. A furbolg asked for it: he blames the elves for a great deal and says so, and holds in the same breath that his own people are still answerable for what they do and must police their own. Ran Bloodtooth is what he meant by that, and Raene Wolfrunner in Astranaar is who the skull went to.",
 			"Not all of them. The Timbermaw in the north are uncorrupted and still dealing with outsiders. They show what the rest have lost.",
 		},
 		readMore = { "Wowpedia: Bloodtooth Camp", "Wowpedia: Furbolg", "Wowpedia: Timbermaw Hold" },
@@ -2395,7 +2425,7 @@ SubsOf("Tirisfal Glades", {
 		name = "Crusader Outpost", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "A Scarlet Crusade watchtower over the glades road, covering the Monastery's flank.",
 		lore = {
-			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades and can come down on the flank of anyone moving against the Scarlet Monastery.",
+			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades south of the hills and can come down on the flank of anyone moving against the Scarlet Monastery. Friars and zealots hold the ground under him, with darkhounds and duskbats through the scrub around it.",
 			"The Scarlet Crusade began as the remnant of the Silver Hand and the Church, the people who stayed when Lordaeron fell. What they became is a movement that cannot tell the difference between the undead and the living any more, and kills both.",
 			"They are not wrong that the Forsaken are walking corpses. They are wrong about almost everything that follows from it, and the Monastery behind this tower is where that went furthest.",
 		},
@@ -2657,7 +2687,7 @@ SubsOf("Teldrassil", {
 		lore = {
 			"Aldrassil is both a tree and a village: the night elves have built into it, and Tenaron Stormgrip leads Shadowglen from a room at the very top.",
 			"It stands on Teldrassil, and Teldrassil is a difficulty. Fandral Staghelm pushed for a second World Tree after Nordrassil was spent killing Archimonde, and he planted it without the dragon Aspects' blessing, which Nordrassil had.",
-			"Malfurion Stormrage opposed it. Ysera withheld her blessing. The tree went up anyway, and there is already something wrong in its roots. New night elves begin their lives in a tree that their own Archdruid thinks should not exist.",
+			"Malfurion was not there to argue: he never came back from the Emerald Dream. Nozdormu refused his blessing and chided Staghelm for the arrogance of asking, and Alexstrasza refused with him. The tree went up anyway, and there is already something wrong in its roots. New night elves begin their lives at the top of a World Tree that no Aspect would bless.",
 		},
 		readMore = { "Wowpedia: Aldrassil", "Wowpedia: Teldrassil", "Wowpedia: Fandral Staghelm", "Wowpedia: Nordrassil" },
 	},
@@ -2667,9 +2697,9 @@ SubsOf("Teldrassil", {
 		lore = {
 			"The Oracle Glade is in Teldrassil's north-west, and the moonwell here is the first and the most powerful on the tree. Moonwells are drawn from the Well of Eternity's remaining waters, so every one of them is a fragment of the thing whose destruction broke the world.",
 			"The Oracle Tree stands over it, with a wide trunk and boughs grown into the shape of a great eagle perched on a bear. It is said to have been raised by nature magic rather than planted, and it has watched Teldrassil grow alongside the druids.",
-			"Malfurion Stormrage comes here to meditate. Bloodfeather harpies have nested nearby and are a threat to the tree, and a small group of Sentinels has been sent to push them back.",
+			"Bloodfeather harpies have nested nearby and are a threat to the tree. Sentinel Arynia Cloudsbreak has a small party out here to push them back, and a satyr hides on a branch at the outskirts of the glade.",
 		},
-		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Malfurion Stormrage" },
+		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Crown of the Earth" },
 	},
 })
 
@@ -2698,7 +2728,7 @@ SubsOf("Felwood", {
 		name = "Bloodvenom Falls", parent = "Felwood", faction = "Hostile",
 		hook = "A poisoned waterfall, and the head of a river that carries the poison out of the zone.",
 		lore = {
-			"The falls are high in Felwood and they are corrupted. They are also the source of the Bloodvenom River, which is the problem with them.",
+			"The falls are high in Felwood and they are corrupted, with tainted oozes on the bank below them and Jaedenar cultists working the ground around. They are also the source of the Bloodvenom River, which is the problem with them.",
 			"The corruption does not stay here. The river comes down off these mountains and becomes the Wildbend River in Darkshore, carrying Felwood's poison into a zone that had nothing to do with it.",
 			"That is the argument for Felwood mattering to anyone outside it. The Legion's damage to this forest is not contained by the forest, and it runs downhill.",
 		},
@@ -2745,13 +2775,13 @@ SubsOf("Stonetalon Mountains", {
 SubsOf("Thunder Bluff", {
 	{
 		name = "The Pools of Vision", parent = "Thunder Bluff", faction = "Horde",
-		hook = "A tunnel under Spirit Rise, and the Forsaken's quarters in Thunder Bluff.",
+		hook = "A tunnel under Spirit Rise, and the Forsaken's base of operations in Thunder Bluff.",
 		lore = {
-			"The Pools of Vision are in a tunnel system just below the cap of Spirit Rise, reached from the bridge up from Lower Rise. They are also where the Forsaken keep their business in Thunder Bluff.",
-			"That arrangement is worth sitting with. Thunder Bluff is the most spiritually serious city in the Horde, the tauren read the land as the Earth Mother, and their allies in this building are walking corpses raised by the Scourge.",
-			"Cairne Bloodhoof accepted them because Thrall did, and Thrall accepted them because Sylvanas brought an army. The Forsaken quarter being in a cave under the spirit rise rather than out on the mesa is about as diplomatic as that compromise gets.",
+			"The Pools of Vision are a tunnel system just below the cap of Spirit Rise. Its entrance is off the bridge up from Lower Rise and is well hidden. The tauren keep shaman training down here beside the Hall of Spirits, and the Forsaken work out of the same cave: mage and priest trainers, and Apothecary Zamah, an emissary of the Royal Apothecary Society, as their scholar here.",
+			"That arrangement is worth sitting with. The tauren read the land as the Earth Mother, and the allies they house in this cave are walking corpses raised by the Scourge.",
+			"Not every tauren is easy about it. One of them writes that the Forsaken have a history wrought with deceit and that the pact was made too hastily. Zamah is aware of the distance: her heart beats no longer, and she says she still feels sorrow for the spirits of Stonetalon.",
 		},
-		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Thunder Bluff", "Wowpedia: Forsaken" },
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah", "Wowpedia: Forsaken" },
 	},
 })
 
@@ -2816,7 +2846,7 @@ SubsOf("Durotar", {
 		hook = "The beach the Darkspear trolls came ashore on.",
 		lore = {
 			"This is where the Darkspear landed. They had been driven off the Echo Isles and they came onto this strand with what they could carry; Sen'jin Village, a few yards inland, is where they gathered afterwards.",
-			"Thrall found them on a different island altogether, besieged by murlocs and a sea witch, and took them in. Vol'jin's people have been Horde ever since, and they are the reason the Horde has shadow hunters and a claim on anything south of Durotar.",
+			"Thrall found them on a different island altogether, besieged by murlocs and a sea witch, and took them in. Vol'jin's people have been Horde ever since, and they are the reason the Horde has shadow hunters at all.",
 			"A beach is a thin place to start a nation from. The orcs did the same thing a short way north of here.",
 		},
 		readMore = { "Wowpedia: Darkspear Strand", "Wowpedia: Darkspear tribe", "Wowpedia: Vol'jin", "Wowpedia: Sen'jin Village" },
@@ -2870,6 +2900,7 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"Tidefury Cove is at the end of Dustwallow Bay, south of Theramore and off the Wyrmbog coast. It is full of small islands and reefs and it is a bad place to bring a ship.",
 			"Two of them did not make it. Both are broken on the shallows with makrura moving through the wreckage.",
+			"The cove is at the Wyrmbog end of the marsh and the water is worked by Mirefin murlocs and snapjaws, and that is the other reason not to swim it.",
 			"Nat Pagle lives out here, on an islet called Nat's Landing. He is the most accomplished fisherman anybody knows of and he has chosen to do it from a rock in a cove full of reefs, which is probably the point.",
 		},
 		readMore = { "Wowpedia: Tidefury Cove", "Wowpedia: Nat Pagle", "Wowpedia: Dustwallow Marsh" },
@@ -2880,7 +2911,7 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"The Bloodfen raptors nest in this cave in concentration, and raptors in numbers are not a thing to walk into.",
 			"Just outside the entrance there is what is left of a settlement. Somebody built here, and the raptors took it apart.",
-			"Part of Cortello's Riddle is in the burrow, so the pirates who scattered that riddle across the coast came in here too and presumably had the same problem.",
+			"Part of Cortello's Riddle is in the burrow. The riddle's Kalimdor verse sends people to a cave in the south-west of this marsh, so the pirates who scattered it came in here too and presumably had the same problem with the tenants.",
 		},
 		readMore = { "Wowpedia: Bloodfen Burrow", "Wowpedia: Dustwallow Marsh" },
 	},
@@ -2937,8 +2968,8 @@ SubsOf("Desolace", {
 		hook = "A hidden Burning Blade haven with a summoning circle in it.",
 		lore = {
 			"Shadowbreak Ravine is tucked into the mountains in Desolace's south-east and it is well enough hidden to be missed. The Burning Blade are in it.",
-			"What they have built is the part that matters: structures, giant mushrooms, and a summoning circle with heavy chains set into it. Chains on a summoning circle mean they expected to bring through something that would need holding down.",
-			"The Burning Blade are orcs who kept the demonic bargain after Thrall renounced it. A clan still working the Legion's craft, in a ravine in the worst country on the continent, is the Horde's own unfinished business.",
+			"What they have built is the part that matters: structures, giant mushrooms, and a summoning circle with giant chains set into it. Summoners and invokers work the circle and there are nightmares loose in the ravine already.",
+			"The horses are the other tell. They pen stallions here and work on them until they are fit to carry a warlock, and ley hunters range the ground around the pens. The Burning Blade are orcs who kept the demonic bargain the rest of the Horde gave up, and this is where they practise it.",
 		},
 		readMore = { "Wowpedia: Shadowbreak Ravine", "Wowpedia: Burning Blade clan", "Wowpedia: Desolace" },
 	},
@@ -3013,7 +3044,7 @@ SubsOf("Feralas", {
 		hook = "The great forest of western Feralas, from the coast to the Verdantis.",
 		lore = {
 			"The High Wilderness is the forest itself, running from the Forgotten Coast across to the Verdantis River. It is the largest single thing in Feralas.",
-			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods.",
+			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods. The groddoc apes are here too, which they will not be for ever.",
 			"Feralas is the wettest, greenest, least ruined part of Kalimdor, and the night elves held all of it once. The wilderness is what the zone looks like where nobody has arrived to argue about it yet.",
 		},
 		readMore = { "Wowpedia: High Wilderness", "Wowpedia: Feralas" },
@@ -3050,7 +3081,7 @@ SubsOf("Stonetalon Mountains", {
 		lore = {
 			"The Greatwood Vale is one of the green parts of Stonetalon, down in the foothills, and the way in is along the Webwinder Path.",
 			"Malaka'jin lies south of it. That is a troll holding, and trolls in Stonetalon are a reminder that the Darkspear are not the only ones on this continent.",
-			"Stonetalon has woods worth the name and the Venture Company are cutting them. A vale called Greatwood is the sort of place that gets noticed by a logging concern.",
+			"Seereth Stonebreak camps near the vale, sent up from the Horde to answer the deforestation further on. The Venture Company's cutting is not in the vale itself: it is north-west of here, through to Windshear Crag, and the vale is on the road to it.",
 		},
 		readMore = { "Wowpedia: Greatwood Vale", "Wowpedia: Stonetalon Mountains" },
 	},
