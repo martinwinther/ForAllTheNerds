@@ -1,5 +1,97 @@
 # Changelog
 
+## 1.2.17
+
+Five more rounds of the vanilla-era sweep: 126 entry records reviewed and
+123 of them corrected, with nothing removed. The sweep now covers 700 of the 915 vanilla
+entries. This batch turned up an unusual number of places whose entry named the
+wrong occupants entirely, and a run of entries that quietly disagreed with each
+other.
+
+**Fixed**
+
+- The Slag Pit is the slave-worked Dark Iron mine inside the Cauldron, with
+  Overseer Maltorius over the crew, rather than a waste pit of molten slag.
+- The Grizzled Den is a wendigo cave south-west of Kharanos, not a bear cave
+  east of it, and the invented Ironforge hunter tradition is gone.
+- Six places had the wrong tenants: Kal'ai Ruins hold Murkgill murlocs, not
+  Bloodscalp trolls; the Nek'mani Wellspring is guarded by naga; the Ravaged
+  Caravan is the Venture Company's own wreck; Southmoon Ruins are held by
+  Dunemaul ogres; Stone Cairn Lake has Defias rogue wizards on its island; and
+  Timbermaw Post is in the hands of the corrupted Winterfall, which is the
+  point of the place.
+- Skulk Rock is an ooze-ridden forest troll ruin with an abandoned Second War
+  Horde base in it, not a cave of spiders.
+- Crystalvein Mine is held by basilisks behind a sign telling people to keep
+  out, not by Colonel Kurzen's forces. Kurzen's Compound now says plainly that
+  he lost his mind and half his force deserted over it.
+- Several places moved to where they actually are: the Noxious Lair to
+  south-western Tanaris, the Marshlands to the crater's south-east, the High
+  Wilderness to a forest in western Feralas held by Gordunni ogres, Venomweb
+  Vale to eastern Tirisfal below the Scarlet Monastery, the Skittering Dark to
+  a mine in northern Silverpine, the Rotting Orchard to southern Duskwood, the
+  Dawning Wood Catacombs to beneath Raven Hill Cemetery, Darkmist Cavern to a
+  mine in the north-west of Dustwallow, Cragpool Lake to Windshear Crag, Bear's
+  Head to Azshara's south-eastern mountains, Blackwood Lake to the Eastern
+  Plaguelands, and Darrow Hill to the south-west of Tarren Mill.
+- Chillwind Point is a small rise with an ancient troll ruin and Bath'rah the
+  Windwatcher on it. The job it used to be given belongs to Chillwind Camp.
+- The Foothill Caverns no longer have Helcular finishing his transformation
+  into a lich. The lynch mob killed him before he could.
+- The Lost Fleet is named: the Third Fleet of Kul Tiras, burned and sunk by red
+  dragons under orcish control, with First Mate Fitzsimmons the only survivor
+  and Captain Halyndor still walking the Intrepid.
+- Lost Rigger Cove has the arrangement the right way round. The Steamwheedle
+  cartel pays the pirates protection money, and the pirates have stopped
+  honouring what it bought.
+- The Tower of Ilgalar is in the eastern foothills of Redridge, and Morganth
+  commands the Shadowhide gnolls outright rather than being suspected of it.
+- Cold Hearth Manor is a central Tirisfal farmstead whose people all died of
+  the plague, with two Forsaken tailors now trading out of the farmhouse.
+- Lake Kel'Theril, Valor's Rest, the Ravencrest Monument, Lariss Pavilion, the
+  Broken Pillar, Bael'dun Keep, Camp Narache, Corin's Crossing, Darrowmere Lake,
+  the Golden Plains, the Hidden Grove, the Ivar Patch, the Weeping Cave, the
+  Abyssal Sands, Black Channel Marsh, the Agamand Family Crypt, Boulder'gor,
+  Brightwater Lake, Brightwood Grove, Bluefen, Crushridge Hold, the Battle Ring,
+  the Bloodsail Compound, the Sea of Cinders, Shaol'watha, Agol'watha,
+  Boulderslide Ravine, the Thunderbrew Distillery, Wyrmbog and others replace
+  invented history, motives and superlatives with what the places hold.
+
+**Removed**
+
+- The Oracle Glade no longer has Malfurion Stormrage meditating in it. That
+  comes from a novel published years after this period.
+- The Battle Ring's once-a-generation troll rite and its blood-red amulet
+  legend are gone. Both come from a book published in 2020. What replaced them
+  is the arena as it works here: the fighting is confined to the floor, and a
+  chest is fought over every three hours.
+- Ariden's Camp no longer carries a biography of Ariden. He is named nowhere in
+  this period, and what the camp has instead is the Dark Riders as Duskwood
+  actually knows them.
+- The Maker's Terrace no longer gives away what the Explorers' League found
+  inside Uldaman, which is a questline's ending.
+- Invented practices and institutions that no source supports are gone from the
+  Fungal Vale, the Weeping Cave, the Marshlands, the Pools of Vision, the
+  Rogues' Quarter, the Quagmire, Bluefen, Bal'lal Ruins and Stone Cairn Lake.
+
+**Changed**
+
+- Nine pairs of entries that contradicted each other have been reconciled.
+  Wellspring Lake and Wellspring River had the water running opposite ways, and
+  the river runs out of the lake. Lake Kel'Theril disagreed with the Ruins of
+  Kel'Theril about why the Highborne are cursed there. Stone Cairn Lake invented
+  mysterious cairns when the lake is named for Heroes' Vigil, which has its own
+  entry. Aldrassil disagreed with Darnassus and Teldrassil about which Aspects
+  refused to bless the tree. Darrowmere Lake had the Barov estate changing hands
+  the wrong way round. Chillwind Point had Chillwind Camp's job. Cliffspring
+  Falls and Cliffspring River now agree about which feeds which, Boulderslide
+  Ravine points at the cavern at its end instead of repeating it, and Timbermaw
+  Hold and Timbermaw Post no longer say the same two sentences.
+- Where one invention had been copied into a second entry, both are now gone:
+  the Argent Dawn blight-mapping practice, Stranglethorn's claim that nothing
+  has been built there since the Gurubashi, and Dustwallow's wildlife as the
+  reason the zone stayed thinly settled.
+
 ## 1.2.16
 
 Another 25 vanilla entries reviewed and corrected, bringing the sweep to

@@ -76,11 +76,12 @@ not tag and do not publish: releases are Martin's call.
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
 in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
-in 1.2.13, runs 19 and 20 in 1.2.14, and runs 21 and 22 in 1.2.15**, all released
-mid-sweep at Martin's explicit instruction. Their player-facing lines are already
-in the changelog under those ten headings, so do not write them again. P5 now
-covers only P4 runs 23 to 28 onwards, plus `tools/era-audit.md`, still not
-updated for anything since the original four errors.
+in 1.2.13, runs 19 and 20 in 1.2.14, runs 21 and 22 in 1.2.15, run 23 in 1.2.16,
+and runs 24 to 28 in 1.2.17**, all released mid-sweep at Martin's explicit
+instruction. Their player-facing lines are already in the changelog under those
+twelve headings, so do not write them again. P5 now covers only P4 run 29
+onwards, plus `tools/era-audit.md`, still not updated for anything since the
+original four errors.
 
 ## Oracles, in order of preference
 
@@ -5066,3 +5067,25 @@ Eastern Pylon is in that range and is one of the fourteen names with no wiki
 article, so it is the next chance to look at that list. Count duplicate names
 as separate records: Darnassus, South Gate Pass, The Bulwark, The Talondeep Path
 and Thunder Bluff are each two entries. P5 remains pending.
+
+### 2026-11-20, release 1.2.17
+
+Martin asked for dev to be merged to main and the next 1.2.x released. Release
+1.2.17 carries P4 runs 24 to 28, which is 126 entry records reviewed and 123
+corrected, and the fix to the flaky `FTN_NO_TEMPLATES=1` configuration of
+`tools/validate.lua`. No entries were removed and no Forever entry was touched
+in any of the five runs. Both version strings are 1.2.17.
+
+`CHANGELOG.md` records the findings under the 1.2.17 heading, in three
+sections: the corrections, the claims removed as undateable or out of era, and
+the pairs of entries that contradicted each other. P5 must not write those
+again and now covers run 29 onwards.
+
+Release checks before preparing: default validation and all nine CI
+configurations pass with zero errors and warnings, check-gaps reports 43
+explained gaps, prose lint is clean on the changelog, and git diff --check
+passes. `tools/build-zip.sh` produces `ForAllTheNerds-1.2.17.zip` with the toc
+at `ForAllTheNerds/ForAllTheNerds.toc`, declaring interface 16001 and 11509,
+both version strings reading 1.2.17, `LICENSE` present and no tooling in the
+package. The preceding sweep commit 147a660 passed CI for its exact SHA before
+release preparation began.
