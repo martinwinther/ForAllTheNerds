@@ -840,6 +840,19 @@ out(string.format("%d resolution checks passed, %d failed", passed, failed))
 
 section("Behaviour")
 
+-- The exhaustive sweep above walked every entry, so the player is left standing
+-- in whichever place `pairs()` happened to yield last, with that place's toast
+-- still up and D.entry still pointing at it. Both leak into the checks below.
+-- If the last place was Darkshire, arriving at Darkshire here is not a change,
+-- so nothing is announced and nothing is stamped, the arrival check passes on
+-- the stale toast, and the cooldown check then fails on the second entry
+-- because there is no stamp to suppress it. Lua randomises string hashing per
+-- process, so that happened about once in a thousand runs: 1 in 987 entries is
+-- Darkshire. Start these checks from a known place with the toast down.
+mock.moveTo({ zone = "Elwynn Forest", realzone = "Elwynn Forest", subzone = "" })
+mock.advance(3)
+ns.Toast:Hide()
+
 ns.db.onlyFirstVisit = false
 ns.db.repeatCooldown = 900
 ns.db.seen, ns.db.lastShown = {}, {}

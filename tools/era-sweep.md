@@ -4024,9 +4024,8 @@ in the captured output, then passed 580 consecutive times on the same bytes. It
 also passed 80 consecutive times at the run 24 commit, so it is not clearly
 something this run introduced. It is worth a look on its own: a gate that fails
 about once in several hundred runs will eventually fail a CI build for no
-reason, and the checks near the end of `tools/validate.lua` that assert on
-`ns.db.unknown` after simulated zone entry are the place to start. Nothing in
-`Data/` depends on it.
+reason. Nothing in `Data/` depends on it. **Chased and fixed the same day; see
+the next entry.** The guess about `ns.db.unknown` was wrong.
 
 **Entries covered so far (624 place names).**
 Addle's Stead, Aerie Peak, Agama'gor, Agamand Mills, Agmond's End,
@@ -4187,3 +4186,65 @@ Village, Stone Cairn Lake, the Rotting Orchard and the Sea of Cinders among
 them. Recompute rather than trusting this list. Count duplicate names as
 separate records: Darnassus, South Gate Pass, The Bulwark, The Talondeep Path
 and Thunder Bluff are each two entries. P5 remains pending.
+
+### 2026-11-20, the flaky validator run
+
+Not a sweep run. Martin asked for the intermittent `FTN_NO_TEMPLATES=1`
+failure that run 25 recorded, so this entry is about `tools/validate.lua` and
+touches no entry prose.
+
+**What it was.** The failing assertion is "Darkshire re-announced inside the
+repeat cooldown", in the Behaviour section. Reproducing it took 2,400 parallel
+runs for the first capture; the rate is roughly one in 1,300. Diffing a failing
+run against a passing one showed the cooldown stamp for Darkshire reading 954
+instead of 952, meaning the second arrival had announced and re-stamped rather
+than being suppressed.
+
+**Why.** Wrapping `ns.ShouldAnnounce` and `ns.MarkSeen` with logging showed the
+first arrival never stamped anything at all. The cause is two sections away.
+The exhaustive resolution sweep calls `mock.moveTo` for every entry through
+`ns.EachEntry`, which walks the index with `pairs()`, so the player is left
+standing in whichever place the hash order yielded last, with that place's
+toast still up and `D.entry` still pointing at it. `D:Update` only announces
+when `entry ~= self.entry`. If the sweep's last place was Darkshire, then:
+
+- arriving at Darkshire is not a change, so nothing is announced and nothing is
+  stamped;
+- the arrival check passes anyway, because the stale toast from the sweep is
+  still shown, so it was asserting nothing;
+- the second arrival is a change, finds no stamp, announces, and fails the
+  cooldown check.
+
+Lua 5.4 randomises string hashing per process, so which entry comes last varies
+per run. One of 987 entries is Darkshire, which is the observed rate.
+
+**Proof rather than inference.** Forcing the precondition, by moving to
+Darkshire immediately before the section, reproduces the failure every single
+time on the old file and passes every time on the fixed one. That is the whole
+mechanism, confirmed both directions, without waiting on the rare event.
+
+**The fix.** Three lines at the top of the section: move to Elwynn Forest,
+drain pending timers, hide the toast. The checks now start from a known place
+with nothing on screen, so neither `D.entry` nor a stale toast carries in from
+whatever the sweep did last.
+
+Two latent defects are closed by that, not one. The cooldown check no longer
+fails spuriously, and the arrival check is no longer able to pass on a toast it
+did not cause. Both were verified by deliberate breakage: disabling the
+cooldown line in `Core.lua` fails with "Darkshire re-announced inside the
+repeat cooldown", and making `ns.ShouldAnnounce` always return false fails with
+"no toast shown on arriving at Darkshire", which the old arrival check would
+have missed whenever the sweep ended on Darkshire. `Core.lua` was restored
+exactly both times, confirmed with `git diff`.
+
+The rest of the toast assertions in the file were audited for the same pattern.
+Every other one already hides the toast first; the arrival check was the only
+one missing it.
+
+Checks: default validation and all nine CI configurations pass, check-gaps
+passes with 43 explained gaps, `lint-prose` on `tools/validate.lua` holds at
+its pre-existing 40 findings from reading Lua as prose, and git diff --check
+passes. The diff is 13 added lines in one file.
+
+Next: P4 run 26, 25 records by the recomputed ranking, which is now a flat
+field of score 1. P5 remains pending.
