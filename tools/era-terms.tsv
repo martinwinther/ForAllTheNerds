@@ -39,6 +39,7 @@ Alliance's Kalimdor	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Alonsus Faol	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Altar of Storms	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Altar of Zul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Altar of the Tides	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Alterac	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Alterac Mountains	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Alterac Valley	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -73,6 +74,7 @@ Apothecarium	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Apothecary Falthis	vanilla	named in 1.12 game text, at Bathran's Haunt	cmangos 1.12.1	cs
 Araga	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Araj	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Arathandris Silversky	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arathi	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arathi Basin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Arathi Highlands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -106,6 +108,7 @@ Aurora Skycaller	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Aviana	history	demigod of the War of the Ancients, long dead by this period	warcraft.wiki.gg	cs
 Azerite	out-of-era	Battle for Azeroth	tools/validate.lua, 1.2.5	ci
 Azeroth	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Azj'Tordin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Azjol	history	from Azjol-Nerub, the nerubian empire, a Warcraft III subject	warcraft.wiki.gg	cs
 Azora	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Azshara	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -147,6 +150,7 @@ Bathran's Hair	vanilla	a 1.12 item, and named in quest text	cmangos 1.12.1	cs
 Battered	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Battle Ring	vanilla	AreaTable row	wow_classic_era	cs
 Battle of Mount Hyjal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Bay	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Bay of Storms	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bayne	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Beer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -165,6 +169,7 @@ Blackchar	vanilla	AreaTable row	wow_classic_era	cs
 Blackfathom Deeps	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackhand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackmoore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Blackmoss	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Blackrock	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackrock Depths	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Blackrock Mountain	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -199,10 +204,12 @@ Blue Dragonflight	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bluefen	vanilla	AreaTable row	wow_classic_era	cs
 Bluegill	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Boar God	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Bodley	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Boff	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bolder'ok	forever	used only by Forever entries	Forever	cs
 Bolgan's Hole	vanilla	AreaTable row	wow_classic_era	cs
 Bonds	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Bookie Herod	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Booty Bay	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Boss Tho'grun	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Bough Shadow	vanilla	AreaTable row	wow_classic_era	cs
@@ -333,6 +340,7 @@ Corrahn	vanilla	AreaTable row	wow_classic_era	cs
 Corrahn's Dagger	vanilla	AreaTable row	wow_classic_era	cs
 Cortello's Riddle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Council of Six	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
+Council of Tirisfal	history	the order of mages that empowered the Guardian of Tirisfal; pre-WoW, and absent from 1.12 game text	warcraft.wiki.gg	cs
 Craftsmen's Terrace	vanilla	AreaTable row	wow_classic_era	cs
 Crag	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Cragpool	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -361,6 +369,7 @@ Daelin Proudmoore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dagger Hills	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Daggerspine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dalaran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Dalinda Malem	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dalson	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dalson's Tears	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Damsel's Luck	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -464,6 +473,7 @@ Dreadmist Peak	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dreadmurk Shore	vanilla	AreaTable row	wow_classic_era	cs
 Dream	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Dream Bough	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Dream Eater	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Dreamer's Rest	out-of-era	Feralas camp added in patch 4.0.3a	https://warcraft.wiki.gg/wiki/Dreamer%27s_Rest	cs
 Dreamstalker	vanilla	Named in creature 12498: Dreamstalker	cmangos 1.12.1 creature_template	cs
 Drek'Thar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -593,6 +603,8 @@ Fenris Isle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fenris Keep	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Feral Scar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Feralas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Ferocitas	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
+Fetid	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Field of Giants	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Fire Plume Ridge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -644,6 +656,7 @@ Fray Island	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Frayfeather	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Freewind Post	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Frostfire	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Frostfire Hot Springs	vanilla	AreaTable row	wow_classic_era	cs
 Frostmane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Frostmourne	history	the runeblade Arthas took in Warcraft III	warcraft.wiki.gg	cs
 Frostsaber Rock	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -688,6 +701,7 @@ Gilneas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gilveradin Sunchaser	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Glaive	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gloomrise	forever	used only by Forever entries	Forever	cs
+Gluggle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gnarlpine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gnasher	vanilla	name or title component of creature_template 1206	cmangos 1.12.1	cs
 Gnawbone	vanilla	a 1.12 rare, in Mosshide Fen	cmangos 1.12.1	cs
@@ -753,6 +767,7 @@ Grove	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Grove of the Ancients	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Grundig Darkcloud	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Gryan Stoutmantle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Guard Thomas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Guardian	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Guardian of Tirisfal	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Guardians of Tirisfal	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -778,6 +793,7 @@ Hameya	vanilla	Named in creature 12248: Infiltrator Hameya	cmangos 1.12.1 creatu
 Hammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hammerfall	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hammertoe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Hand of Iruxos	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Harborage	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hatchlings	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hatecrest	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -790,6 +806,7 @@ Helcular	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Helm's Bed	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Helm's Bed Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hemet Nesingwary	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Heroes' Vigil	vanilla	AreaTable row	wow_classic_era	cs
 Hetaera	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Hetaera's Clutch	vanilla	AreaTable row	wow_classic_era	cs
 Hezrul Bloodmark	vanilla	quest 852 names the Kolkar leader at Lushwater Oasis	cmangos 1.12.1	cs
@@ -949,6 +966,7 @@ Krakle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kraklenheit	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Kraul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kregg Keelhaul	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Krethis Shadowspinner	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Krol'dok Stronghold	forever	used only by Forever entries	Forever	cs
 Kron	vanilla	Quest 816 names Misha's missing son and his crocolisk hunt	cmangos 1.12.1 quest_template	cs
 Kul Tiran	vanilla	Kul Tiras is named in 1.12 game text; this is its demonym	cmangos 1.12.1	cs
@@ -957,6 +975,7 @@ Kul Tiras Third Fleet	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_temp
 Kurdran	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kurdran Wildhammer	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Kurzen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Lady Sathrah	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lady Sevine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lady of Theramore	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Lake Elune'ara	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -985,6 +1004,7 @@ Lethlor	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lethlor Ravine	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lich King	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lieutenant Fangore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Lieutenant Sanders	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Light	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Light's Hope	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Light's Hope Chapel	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1002,6 +1022,7 @@ Lord Jorach Ravenholdt	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Kazzak	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Kur'talos Ravencrest	history	commanded the night elf host in the War of the Ancients	warcraft.wiki.gg	cs
 Lord Melenas	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Lord Sakrasis	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Lord Varimathras	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Lord of Hearthglen	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Lord of Mardenholde Keep	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
@@ -1041,6 +1062,7 @@ Majordomo Executus	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Maker	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mal'Ganis	history	dreadlord who drew Arthas to Northrend in Warcraft III	warcraft.wiki.gg	cs
 Malaka'jin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Malakai	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Malden	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malevolent	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Malfurion	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1150,6 +1172,7 @@ Mulgore	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mull Thunderhorn	vanilla	Creature 2948 and quests 748, 756 and 758	cmangos 1.12.1 creature_template and quest_template	cs
 Muradin Bronzebeard	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Murdaloc	vanilla	named in 1.12 game text, a Stonevault trogg	cmangos 1.12.1	cs
+Murkgill	vanilla	name or title component of creature_template 4460	cmangos 1.12.1 creature_template	cs
 Mystic Ward	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Mystral Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 N'Zoth	out-of-era	Battle for Azeroth	tools/validate.lua, 1.2.5	ci
@@ -1180,6 +1203,7 @@ Nighthaven	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nightmare	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nightsong	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nijel's Point	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Nilith Lokrav	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Nimboya	vanilla	Named in creature 2497: Nimboya	cmangos 1.12.1 creature_template	cs
 Noonshade	vanilla	AreaTable row	wow_classic_era	cs
 Nordrassil	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1272,6 +1296,7 @@ Prince Galen Trollbane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Prince Tortheldrin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Princess Moira Bronzebeard	vanilla	named in 1.12 game text, titled Princess of Ironforge	cmangos 1.12.1	cs
 Princess Poobah	vanilla	named in 1.12 game text, chained on Jaguero Isle	cmangos 1.12.1	cs
+Princess Tempestria	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Princess Theradras	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Private	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Prospector Gunstan	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1280,6 +1305,7 @@ Prospector Khazgorm	vanilla	Named in creature 3392: Prospector Khazgorm	cmangos 
 Prospector Remtravel of the Explorers' League	vanilla	every part named in 1.12 sources	cmangos 1.12.1	cs
 Purgation Isle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Purifier	vanilla	the title in Delgren the Purifier	cmangos 1.12.1	cs
+Pusillin	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Pyrewood	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Pyrewood Village	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Qiaga	vanilla	name or title component of creature_template 7996	cmangos 1.12.1	cs
@@ -1369,6 +1395,7 @@ Roguefeather Den	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rogues' Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Rohash	forever	used only by Forever entries	Forever	cs
 Roland's Doom	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Rolf	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Rolling Plains	vanilla	AreaTable row	wow_classic_era	cs
 Romeo	fragment	Shakespeare, a real-world comparison in the Stonefield Farm entry	our prose	cs
 Rosalind Ashwood	forever	used only by Forever entries	Forever	cs
@@ -1400,6 +1427,7 @@ Sacred	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sacred Flame	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sailors	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Saldeans	vanilla	plural of a 1.12 name (Saldean)	cmangos 1.12.1	cs
+Saltscale	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Saltspittle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Saltspray Glen	vanilla	AreaTable row	wow_classic_era	cs
 Saltstone	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1423,6 +1451,7 @@ Scarlet	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scarlet Crusade	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scarlet Monastery	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scarlet Onslaught	out-of-era	Wrath of the Lich King	tools/validate.lua, 1.2.5	ci
+Scarshield Legion	vanilla	creature subname in 1.12 game text (creature_template 9043)	cmangos 1.12.1 creature_template	cs
 Scepter of the Shifting Sands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scholomance	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Scourge	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1486,6 +1515,7 @@ Shalzaru's Lair	vanilla	AreaTable row	wow_classic_era	cs
 Shandris	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shandris Feathermoon	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shaol'watha	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Shardtooth	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Shatter Scar Vale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shattered Hand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Shattered Strand	vanilla	Northern shore of the Bay of Storms; original Azshara subzone 1228, before the goblin arrival	https://warcraft.wiki.gg/wiki/Shattered_Strand	cs
@@ -1586,6 +1616,7 @@ Splintertree	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Splintertree Post	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Splithoof Crag	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Splithoof Hold	vanilla	named in 1.12 quest text	cmangos 1.12.1	cs
+Sri'skulk	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stagalbog	vanilla	AreaTable row	wow_classic_era	cs
 Stagalbog Cave	vanilla	AreaTable row	wow_classic_era	cs
 Staghelm	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1613,6 +1644,7 @@ Stone Guard	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stone of East Binding	vanilla	Named in quest 651: Stones of Binding	cmangos 1.12.1 quest_template	cs
 Stone of Inner Binding	vanilla	Named in quest 651: Stones of Binding	cmangos 1.12.1 quest_template	cs
 Stone of Outer Binding	vanilla	Named in quest 651: Stones of Binding	cmangos 1.12.1 quest_template	cs
+Stone of Remembrance	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stonebull Lake	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stonefield	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Stonefields	vanilla	plural of a 1.12 name (Stonefield)	cmangos 1.12.1	cs
@@ -1665,6 +1697,7 @@ Sunnyglade	forever	used only by Forever entries	Forever	cs
 Sunscale	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Suntara	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Sunwell	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Supervisor Fizsprocket	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Sven Yorgen	vanilla	name or title component of creature_template 311	cmangos 1.12.1	cs
 Swamp Eye	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Swamp Talker	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1806,6 +1839,7 @@ Trade District	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trade Quarter	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Traders	vanilla	plural of a 1.12 name (Trader)	cmangos 1.12.1	cs
 Tradesmen's Terrace	vanilla	AreaTable row	wow_classic_era	cs
+Tranquil Gardens Cemetery	vanilla	AreaTable row	wow_classic_era	cs
 Transport	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Trelane	vanilla	Quest 690 names Archmage Trelane and his failed defense of the tower	cmangos 1.12.1 quest_template	cs
 Tribe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1831,6 +1865,7 @@ Twisting Nether	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tyr's Hand	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tyrande	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Tyrande Whisperwind	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Tyranis Malem	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Uldaman	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Uldum	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ultham Ironhorn	vanilla	named in 1.12 game text, the ram riding instructor	cmangos 1.12.1	cs
@@ -1842,9 +1877,11 @@ Undercroft	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Unliving Caretaker	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Unliving Resident	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Unscarred	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Unseen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Uplands	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Upstream	fragment	an ordinary word	our prose	cs
 Ursolan	vanilla	AreaTable row	wow_classic_era	cs
+Uruson	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Uther	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Vagash	vanilla	a 1.12 elite above Amberstill Ranch	cmangos 1.12.1	cs
 Valaar's Berth	out-of-era	the Azuremyst Isle landing, patch 2.0.1	warcraft.wiki.gg	ci
@@ -1922,6 +1959,7 @@ Weeping Cave	vanilla	AreaTable row	wow_classic_era	cs
 Well	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Well of Eternity	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Wellspring	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Wellspring Lake	vanilla	AreaTable row	wow_classic_era	cs
 Wellspring River	vanilla	AreaTable row	wow_classic_era	cs
 West	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 West Binding	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1987,6 +2025,7 @@ Yarrog Baneshadow	vanilla	Named in creature 3183: Yarrog Baneshadow	cmangos 1.12
 Yenniku	vanilla	named in 1.12 game text, a Darkspear hostage	cmangos 1.12.1	cs
 Yojamba Isle	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Yorgen	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Yorgen Farmstead	vanilla	AreaTable row	wow_classic_era	cs
 Yowler	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Ysera	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zaetar	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
@@ -1994,6 +2033,7 @@ Zalazane	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zandalar Tribe	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zandalari	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zanzil	vanilla	Zanzil the Outcast and his minions	cmangos 1.12.1	cs
+Zenn Foulhoof	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Zephras	forever	used only by Forever entries	Forever	cs
 Zephras Isle	forever	used only by Forever entries	Forever	cs
 Ziata'jai	vanilla	named in 1.12 game text	cmangos 1.12.1	cs

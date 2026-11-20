@@ -87,11 +87,13 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Stone Cairn Lake", parent = "Elwynn Forest", faction = "Contested",
-		hook = "A lake ringed by old standing stones, with a Riverpaw gnoll camp squatting among them.",
+		hook = "A ring-shaped lake in the north-east, with a war memorial on its island.",
 		lore = {
-			"The cairns are older than the Kingdom of Azeroth and nobody has a convincing explanation for them. Guesses run to the earliest human settlers, or to whoever was here before them. Ironforge's Explorers' League would like a look, but has more interesting digs elsewhere.",
-			"The Riverpaw gnolls have made camp here because it is defensible and close to the roads. Gnolls are opportunists, organised just enough to raid and never enough to hold ground.",
+			"The lake takes its name from the cairn on the island at its centre, which is Heroes' Vigil: the monument raised for the dead of the First War. People used to come out here on pilgrimage.",
+			"They do not now. Defias rogue wizards have settled the island and hold it, and a murloc tribe has put crude huts up along the southern bank. The Stone of Remembrance still stands among them.",
+			"Guard Thomas sent Rolf and Malakai up the river to see what the murlocs were doing and neither came back. Their remains are on the shore, and the report that went to Marshal Dughan said plainly that the troops in eastern Elwynn are not enough to contain the problem.",
 		},
+		readMore = { "Wowpedia: Stone Cairn Lake", "Wowpedia: Heroes' Vigil", "Wowpedia: Find the Lost Guards" },
 	},
 	{
 		name = "Brackwell Pumpkin Patch", parent = "Elwynn Forest", faction = "Contested",
@@ -790,7 +792,7 @@ SubsOf("Duskwood", {
 		hook = "A green clearing in a dead forest, and a doorway into the Emerald Dream.",
 		lore = {
 			"Twilight Grove is one of the Great Trees' groves, a place where the Emerald Dream presses against the waking world. It should be the healthiest ground in Duskwood. It is not.",
-			"The green dragon set to watch over it has been corrupted, and the Nightmare leaking through the portal is a strong candidate for what soured these woods in the first place. Druids who understand what they are looking at here do not stay long.",
+			"A moonwell stands in the clearing and the ground around it is green, which nothing else in this county manages. The Nightmare presses through from the other side of the portal, and Nightbane worgen work the treeline. Druids who understand what they are looking at here do not stay long.",
 		},
 		readMore = { "Wowpedia: Twilight Grove", "Wowpedia: Emerald Dream" },
 	},
@@ -1388,11 +1390,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Kurzen's Compound", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Stormwind expedition's base, now held by the colonel who stopped taking orders.",
+		hook = "A Stormwind expedition's base, held by the half of it that stayed loyal.",
 		lore = {
-			"The compound was built by Colonel Kurzen's expedition as a legitimate Alliance operation in the jungle. It is now a fortified camp of troops loyal to a commander the Alliance considers a liability.",
-			"Kurzen's forces include trolls and jungle creatures as well as human soldiers. Stormwind has speculated endlessly about what exactly happened to him.",
+			"The compound sits east of the Rebel Camp and was built by Colonel Kurzen's expedition on Stormwind's business. Kurzen lost his mind in the jungle, part of his force deserted over it, and the two halves have been killing each other since. He is still in here.",
+			"What holds the ground is his own army turned jungle warband: commandos and jungle fighters, medicine men, headshrinkers, witch doctors and a shadow hunter, with war panthers and war tigers penned alongside them. A lumber mill runs at the front and the fighters keep their equipment in a stockpile at the back.",
+			"Bookie Herod runs a book in the middle of it and keeps written records of it. That is its own comment on the state of discipline out here.",
 		},
+		readMore = { "Wowpedia: Kurzen's Compound", "Wowpedia: Colonel Kurzen", "Wowpedia: Rebel Camp" },
 	},
 	{
 		name = "Zul'Gurub", parent = "Stranglethorn Vale", faction = "Hostile", levels = "60",
@@ -1896,11 +1900,13 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "The Sea of Cinders", parent = "Searing Gorge", faction = "Contested",
-		hook = "A plain of ash where nothing has grown since the mountain broke.",
+		hook = "A flat of ash in the southern gorge, just north of Blackrock Mountain.",
 		lore = {
-			"The Sea of Cinders is the ash field left by Thaurissan's summoning. It has not recovered in all the years since and shows no sign of starting.",
-			"It is the clearest physical record of what happened here, and the Dark Irons walk across it daily without comment.",
+			"The Sea of Cinders is a level stretch at the south end of the gorge, below Blackrock Mountain. Fire and wind have been over it and nothing lives on it. The ground still smoulders, and cinders and ash come off it into the air the whole time.",
+			"It is the clearest physical record of what Thaurissan's summoning did to this country. What crosses it now is the Scarshield Legion, whose sentries and grunts hold the ash in force, with lava spiders and magma elementals in the cracks and a Blackrock drake overhead.",
+			"A few people have business out here anyway. Bodley keeps to himself among the cinders, and Nilith Lokrav has a guardian standing over him.",
 		},
+		readMore = { "Wowpedia: Sea of Cinders", "Wowpedia: Searing Gorge", "Wowpedia: Scarshield Legion" },
 	},
 	{
 		name = "Dustfire Valley", parent = "Searing Gorge", faction = "Contested",

@@ -291,11 +291,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Vile Reef", faction = "Hostile",
-		hook = "A reef off the Stranglethorn coast, with murlocs living in drowned troll ruins.",
+		hook = "A coral reef off the west coast, with murlocs living in drowned troll ruins.",
 		lore = {
-			"The Vile Reef lies off the vale's shore, and there is Gurubashi stonework down there. Murlocs have made their homes in the sunken ruins among the coral, which is the usual murloc instinct for occupying somebody else's architecture.",
-			"How much Gurubashi building ended up underwater says something about how far this coastline has moved. Troll construction runs right down to the waterline all along the vale and then carries on past it.",
+			"The reef lies off the vale's western shore near Grom'gol, and there is troll stonework down among the coral. The Saltscale murlocs have made their homes in the sunken ruins, which is the usual murloc instinct for occupying somebody else's architecture, and every one of them is tougher than it looks.",
+			"The Altar of the Tides stands down there. Giant clams are scattered through the coral in numbers and are said to hold blue pearls, and wreckage floats along the whole coast.",
 		},
+		readMore = { "Wowpedia: Vile Reef", "Wowpedia: Stranglethorn Vale" },
 	},
 	{
 		name = "Crystalvein Mine", faction = "Hostile",
@@ -463,11 +464,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Ravaged Caravan", faction = "Contested",
-		hook = "A wrecked caravan on the Mulgore grass, with gnolls going through it.",
+		hook = "A burnt-out Venture Company caravan on the shore of Stonebull Lake.",
 		lore = {
-			"Something took this caravan apart and the Palemane gnolls have been working the wreckage since. Gnolls turn up wherever there is a road worth robbing, on both continents.",
-			"The tauren class them as vermin rather than as an enemy, a distinction the gnolls have not earned and do not benefit from.",
+			"The caravan was the Venture Company's, carrying supplies up to Supervisor Fizsprocket's mine. The tauren saw the company moving freely through Mulgore and put a stop to this load. What is left sits on a mound with black smoke still coming off it.",
+			"The company has not given it up. The laborers and taskmasters who survived the wrecking are camped on the remains and defend the cargo aggressively. That is the whole of their answer to being told to leave.",
 		},
+		readMore = { "Wowpedia: Ravaged Caravan", "Wowpedia: Venture Company", "Wowpedia: Mulgore" },
 	},
 })
 
@@ -482,11 +484,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Wellspring River", faction = "Alliance",
-		hook = "A river running down Teldrassil's northern slopes, feeding the lake below.",
+		hook = "The river out of Wellspring Lake, falling off the edge of the tree.",
 		lore = {
-			"The Wellspring comes off the tree's high ground, and the night elves have built lightly along it in the way they build everywhere.",
-			"Water matters more here than the geography suggests. Moonwells are drawn from the Well of Eternity's waters and they are the night elves' source of healing and renewal, so every spring on this tree is something to watch for change.",
+			"The water starts from a natural spring deep inside Teldrassil. The river runs north out of Wellspring Lake and goes over the tree's edge in a great waterfall to the sea far below, which is as clear a view of what Teldrassil actually is as the tree offers anywhere.",
+			"Crazed timberlings patrol the banks and go for anyone who comes near, so the walk along it is not the quiet one it looks like.",
 		},
+		readMore = { "Wowpedia: Wellspring River", "Wowpedia: Teldrassil" },
 	},
 })
 
@@ -720,11 +723,13 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Southmoon Ruins", faction = "Hostile",
-		hook = "A second set of unattributed ruins in the sand, south of the road.",
+		hook = "Troll ruins in the southern sand, held by Dunemaul ogres.",
 		lore = {
-			"Southmoon is the southern member of the set, in the same condition as the others: stone, sand, and trolls living in it.",
-			"The Sandfury are desert trolls, a separate branch from the jungle tribes of Stranglethorn and the forest tribes of the Hinterlands. Zul'Farrak in the west is their city, and they take no interest in either faction's business.",
+			"Southmoon is the southern member of the set of troll ruins in this desert, just north of the Valley of the Watchers, and the trolls who raised it are long gone.",
+			"The Dunemaul have it instead. Ogres, enforcers, brutes, warlocks and an ogre mage hold the stonework, with rabid blisterpaws and glasshide basilisks working the sand around them.",
+			"What brings people out here is underfoot. Gahz'ridian lies buried all through these ruins, and digging it out is the one reason to risk the ogres.",
 		},
+		readMore = { "Wowpedia: Southmoon Ruins", "Wowpedia: Dunemaul clan", "Wowpedia: Gahz'ridian" },
 	},
 	{
 		name = "Waterspring Field", faction = "Contested",
@@ -764,11 +769,13 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Ravencrest Monument", faction = "Contested",
-		hook = "A monument carrying the Ravencrest name, and nobody has established which Ravencrest.",
+		hook = "The legs of a colossal night elf statue on the cliffs at Azshara's southern tip.",
 		lore = {
-			"The monument gives the name and nothing else. The obvious candidate is Lord Kur'talos Ravencrest, who led the first kaldorei resistance in the War of the Ancients, but the link has never been confirmed and the stone may predate that war and honour somebody else of the line.",
-			"Either way the name belongs to the era this region is named for. Azshara ruled the night elf empire from a palace in this country and had given her loyalty to Sargeras. Ravencrest was no Highborne, and the resistance he raised was against what she had let in.",
+			"What is left of the monument is the broken-off legs of an enormous night elf statue, standing on the cliffs at the southern point of the zone with the Great Sea below and the rest of it scattered on the ground or gone under the water. It is south-east of the Ruins of Eldarath and cannot be reached from the sea at all.",
+			"The Spitelash naga have the ruins now, battlemasters and enchantresses among the stones, with wavethrashers in the water below.",
+			"The name belongs to the era this region is named for. Azshara ruled the night elf empire from a palace in this country and had given her loyalty to Sargeras, and the Ravencrest line stood outside her Highborne court.",
 		},
+		readMore = { "Wowpedia: Ravencrest Monument", "Wowpedia: Azshara", "Wowpedia: House of Ravencrest" },
 	},
 	{
 		name = "Hetaera's Clutch", faction = "Hostile",
@@ -784,11 +791,13 @@ SubsOf("Azshara", {
 SubsOf("Felwood", {
 	{
 		name = "Morlos'Aran", faction = "Hostile",
-		hook = "A corrupted site in southern Felwood, where the taint has had longest to work.",
+		hook = "A night elf ruin at Felwood's southern edge, older than the Sundering.",
 		lore = {
-			"Morlos'Aran carries a night elf name, which places it in the forest this was before the Third War. Felwood was Ashenvale's northern woodland and entirely ordinary.",
-			"When the Burning Legion was broken at Mount Hyjal the demonic energy here did not disperse. It went into the ground, and the trees, the water and the wildlife have been wrong ever since.",
+			"Morlos'Aran was a great night elf settlement long before the Sundering, at what is now the southern edge of Felwood. It is one of a family of them: Ameth'Aran and Bashal'Aran down in Darkshore, and Ordil'Aran over in Ashenvale. They were thriving cities once, and are now the same heap of stones in four zones.",
+			"When the Burning Legion was broken at Mount Hyjal the demonic energy here did not disperse. It went into the ground, and the trees, the water and the wildlife have been wrong ever since: the wolves and bears around these ruins are angerclaw and felpaw now, and even the rats and roaches are tainted.",
+			"Arathandris Silversky, of the Emerald Circle, keeps a post at the ruins, which is what the druids' answer to all this amounts to on the ground.",
 		},
+		readMore = { "Wowpedia: Morlos'Aran", "Wowpedia: Felwood", "Wowpedia: Emerald Circle" },
 	},
 })
 
@@ -832,11 +841,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Timbermaw Post", faction = "Neutral",
-		hook = "A Timbermaw outpost in the snow, held by the furbolgs who stayed sane.",
+		hook = "A furbolg camp that the Timbermaw are named for and no longer hold.",
 		lore = {
-			"The Timbermaw are the furbolg tribe that resisted the corruption, and their tunnel-hold connects Felwood, Winterspring and Moonglade. Posts like this one are how they watch their own ground.",
-			"They are suspicious of everyone, with cause. Most of their kin have gone mad and most outsiders have treated furbolgs as monsters on sight. Earning their trust takes real work, and it is the only way to use their tunnels.",
+			"The post sits across the road south-east of the Frostfire Hot Springs, west of Lake Kel'Theril. The name says Timbermaw and the camp is not theirs: the corrupted Winterfall tribe has complete control of it, pathfinders and totemics and a den watcher in the snow.",
+			"That is the shape of the furbolg problem in one camp. The Timbermaw held their minds and their hold through the Legion's corruption, and the tribes around them did not, so ground with a Timbermaw name on it can turn out to be held by exactly what they came through.",
 		},
+		readMore = { "Wowpedia: Timbermaw Post", "Wowpedia: Winterfall tribe", "Wowpedia: Timbermaw tribe" },
 	},
 })
 
@@ -1076,11 +1086,13 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Venomweb Vale", faction = "Hostile",
-		hook = "Spider country in the northwest, and the spiders are not the size they were.",
+		hook = "A valley in the east below the Scarlet Monastery, named for what crawls in it.",
 		lore = {
-			"Venomweb Vale holds one of the larger spider populations in Tirisfal, and the plague has not made them smaller.",
-			"Much of what lives in these glades now is bigger and meaner than it was when this was farmland. The Forsaken have stopped treating that as remarkable.",
+			"The vale is a wide valley in eastern Tirisfal, just south of the Scarlet Monastery. People hunted deer and rabbits here when the grass was green. What it holds now is poisonous spiders under Sri'skulk, which is where the name came from, with ravenous darkhounds and vampiric duskbats through the rest of it.",
+			"The Scarlet Crusade is camped in the northern part of the valley under Lieutenant Sanders, friars and zealots on the ground and scouts out on the road, so the approach to their monastery runs through both of them.",
+			"Before any of that this was the meeting place of the Council of Tirisfal, and the ground where the first Guardian was given their power. The glades carry the council's name and almost nobody who fights over them knows it.",
 		},
+		readMore = { "Wowpedia: Venomweb Vale", "Wowpedia: Council of Tirisfal", "Wowpedia: Scarlet Crusade" },
 	},
 	{
 		name = "Brightwater Lake", faction = "Contested",
@@ -1146,11 +1158,12 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "The Skittering Dark", faction = "Hostile",
-		hook = "A cave of spiders in the southern forest, and the name is a warning.",
+		hook = "An abandoned mine in the north of the forest, and the name is a warning.",
 		lore = {
-			"The Skittering Dark is a spider cave on the way south toward the Greymane Wall. Silverpine's spiders were a problem before any of the zone's other problems arrived.",
-			"The Forsaken keep the road nominally clear and the spiders keep disagreeing with them about it.",
+			"The Skittering Dark is a worked-out mine in northern Silverpine with the spiders in possession. Moss stalkers and mist creepers hold the tunnels, grizzled bears share them, and Krethis Shadowspinner is somewhere outside.",
+			"Silverpine's spiders were a problem before any of the zone's other problems arrived, and the zone has since collected plenty: a son of Arugal's magic ranges past the mine mouth, a different kind of trouble on the same road.",
 		},
+		readMore = { "Wowpedia: Skittering Dark", "Wowpedia: Silverpine Forest" },
 	},
 	{
 		name = "Valgan's Field", faction = "Hostile",
@@ -1271,11 +1284,13 @@ SubsOf("Redridge Mountains", {
 SubsOf("Duskwood", {
 	{
 		name = "The Rotting Orchard", faction = "Hostile",
-		hook = "An orchard behind Raven Hill that has not produced anything edible in years.",
+		hook = "An orchard in the south of the county, with the Nightbane pack living in it.",
 		lore = {
-			"The orchard stands near the cemetery and has gone the way of everything else in this part of the county. Nothing grown in Duskwood since the dark came has been worth harvesting.",
-			"The Night Watch patrols the road past it and does not go in. Their standing practice is to write off anything more than a patrol's reach from the road.",
+			"The orchard lies in southern Duskwood, east of the Yorgen Farmstead and west of the Tranquil Gardens Cemetery, south-west of Darkshire. Nothing grown here since the dark came has been worth harvesting.",
+			"The worgen have it. The Nightbane pack occupies the dilapidated buildings and camps among the trees, dark runners in numbers and shadow weavers working their magic in the open, with the tainted ones and vile fangs among them and Nefaru somewhere in the rows.",
+			"Something else is here too. The Unseen move through the orchard and are a great deal older and stronger than anything the pack has, and nobody in Darkshire has an account of them.",
 		},
+		readMore = { "Wowpedia: Rotting Orchard", "Wowpedia: Nightbane pack", "Wowpedia: Duskwood" },
 	},
 	{
 		name = "Dawning Wood Catacombs", faction = "Hostile",
@@ -1383,11 +1398,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Nek'mani Wellspring", faction = "Hostile",
-		hook = "A spring in the southern jungle, built around by the trolls who found it.",
+		hook = "A holy spring high in the cliffs, and every race claims the water was made for them.",
 		lore = {
-			"Fresh water in Stranglethorn meant the same to the Gurubashi as it does to anyone, and they built where it was. The wellspring is one of those places.",
-			"Skullsplitter trolls hold the southern vale now, squatting in their own ancestors' stonework, and their war with the Bloodscalp in the north is older than any human kingdom.",
+			"The wellspring sits high above the bluffs on the western side of the cape, overlooking the Southern Savage Coast. What comes out of it is the only clean fresh water south of Duskwood, and that is the smaller part of why anyone cares.",
+			"The spring is the subject of great conflict among religious and mystical scholars, because every race in Azeroth claims the waters were made divine for its own people. Water from this spring turns up in enchantments on this continent and in a dwarf's still over in Westfall.",
+			"Holding it at the moment is an expedition of naga explorers, who guard the spring ferociously and have Lord Sakrasis over them.",
 		},
+		readMore = { "Wowpedia: Nek'mani Wellspring", "Wowpedia: Mok'thardin's Enchantment", "Wowpedia: Holy Spring Water" },
 	},
 	{
 		name = "Mistvale Valley", faction = "Hostile",
@@ -1415,11 +1432,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Kal'ai Ruins", faction = "Hostile",
-		hook = "A Gurubashi ruin in the northern jungle, held by Bloodscalp trolls.",
+		hook = "Half-sunken troll ruins in the northern jungle, with murlocs in them.",
 		lore = {
-			"Kal'ai is another of the empire's sites, reoccupied by its own descendants. The Bloodscalp hold the northern end of the vale from ruins like this one.",
-			"Nothing has been built in Stranglethorn since the Gurubashi broke apart. Every stone structure in the jungle predates that collapse.",
+			"Kal'ai is one of the old troll sites in the north of the vale and a good part of it is under water now. The trolls who built it are not the ones in it.",
+			"The Murkgill murlocs live in the ruins: warriors and foragers through the stonework, an oracle and a lord among them, and Gluggle somewhere in the shallows. Stranglethorn tigers and lashtail raptors work the ground above the waterline.",
+			"It is worth noticing which way the occupation runs. The Bloodscalp and the Skullsplitter hold their ancestors' ground elsewhere in this jungle, and here the stonework went to something that was never troll at all.",
 		},
+		readMore = { "Wowpedia: Kal'ai Ruins", "Wowpedia: Murkgill tribe" },
 	},
 	{
 		name = "Mizjah Ruins", faction = "Hostile",
@@ -1615,11 +1634,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Wellspring Lake", faction = "Alliance",
-		hook = "The lake the Wellspring River feeds, in the tree's north.",
+		hook = "The lake that feeds the Wellspring River, in the tree's north.",
 		lore = {
-			"The lake collects the water running off Teldrassil's upper slopes, with the Oracle Glade beyond it.",
-			"Night elves watch their water. Moonwells are drawn from the Well of Eternity's waters and are the source of their healing and renewal, so a change in any spring on this tree gets noticed.",
+			"The lake lies in Teldrassil's north with the Oracle Glade over to the west of it, and the Wellspring River runs north out of it to the tree's edge. The water comes from a spring deep inside the tree rather than off the slopes above.",
+			"The banks are not quiet. Timberlings have gone crazed and work the shore in numbers, webwood spiders are in the trees with Lady Sathrah among them, and Blackmoss the Fetid is out in the shallows.",
 		},
+		readMore = { "Wowpedia: Wellspring Lake", "Wowpedia: Teldrassil" },
 	},
 	{
 		name = "Ban'ethil Hollow", faction = "Hostile",
@@ -1947,11 +1967,13 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Tower of Eldara", faction = "Hostile",
-		hook = "A highborne tower on the eastern coast, still standing.",
+		hook = "A night elf tower on the far eastern point, shut and abandoned.",
 		lore = {
-			"Eldara is one of the better-preserved structures in Azshara, out on the eastern shore. Eldarath, the highborne city, is not far inland.",
-			"The highborne were Azshara's nobility and her arcane scholars, and their pursuit of magic is what let her reach Sargeras at all. Everything in this region traces back to that.",
+			"The tower stands on the tip of land north-east of the Bay of Storms and was part of the night elf civilisation that covered most of what is now called Azshara. It is closed and empty, and nobody has got it open.",
+			"The beaches below it are patrolled rather than deserted. Storm Bay warriors work the sand with makrura scrabblers and coralshell lurkers, and wavethrashers take the shallows.",
+			"Eldarath, the highborne city, lies inland from here. The highborne were Azshara's nobility and her arcane scholars, and their pursuit of magic is what let her reach Sargeras at all. Everything in this region traces back to that.",
 		},
+		readMore = { "Wowpedia: Tower of Eldara", "Wowpedia: Azshara", "Wowpedia: Highborne" },
 	},
 	{
 		name = "The Shattered Strand", faction = "Hostile",

@@ -279,11 +279,13 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Starbreeze Village", parent = "Teldrassil", faction = "Hostile",
-		hook = "A night elf village overrun by furbolgs and spiders.",
+		hook = "A night elf village south-east of Shadowglen, overrun by Gnarlpine furbolgs.",
 		lore = {
-			"Starbreeze was a small night elf settlement. The Gnarlpine took it, and the night elves have not retaken it.",
+			"Starbreeze was a handful of small houses south-east of Shadowglen and east of Dolanaar. The corrupted Gnarlpine took it, and the night elves have not retaken it. Webwood spiders work the ground around it and the village moonwell is still there.",
+			"Ferocitas the Dream Eater keeps to the outskirts and Uruson patrols the village itself. Zenn Foulhoof, a satyr, has set himself up nearby and is scattering fel cones about.",
 			"It is a measure of how thinly the Sentinels are spread. Teldrassil is supposed to be the night elves' sanctuary and they cannot hold all of it.",
 		},
+		readMore = { "Wowpedia: Starbreeze Village", "Wowpedia: Gnarlpine tribe" },
 	},
 	{
 		name = "Pools of Arlithrien", parent = "Teldrassil", faction = "Contested",
@@ -1008,7 +1010,7 @@ SubsOf("Desolace", {
 		hook = "A fortress held by the Burning Blade, in the middle of the zone.",
 		lore = {
 			"Thunder Axe Fortress is a Burning Blade stronghold: orcs pursuing demonic power inside a zone that already has demons in it.",
-			"The cult's presence in Desolace is better organised than elsewhere, probably because the Mannoroc Coven gives them something to organise around.",
+			"The cult's felsworn, reavers, augurs and adepts hold the walls, with a shadowmage and a seer among them and thunder lizards raging outside. A crystal called the Hand of Iruxos sits inside. Tyranis Malem holds Dalinda Malem here, and she is the one thing anybody comes to the fortress to put right.",
 		},
 	},
 	{
@@ -1286,11 +1288,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Lariss Pavilion", parent = "Feralas", faction = "Contested",
-		hook = "A night elf pavilion by a waterfall, still standing.",
+		hook = "A night elf pavilion just north of Camp Mojache, with an exile living in it.",
 		lore = {
-			"Lariss Pavilion is one of the better-preserved night elf structures in Feralas, beside a waterfall in the eastern jungle.",
-			"It shows what these ruins looked like intact, and that makes it the most melancholy spot in the zone.",
+			"Lariss Pavilion is a large open night elf building north of Camp Mojache, and one of the few in Feralas still standing as it was built. The dryads nearby were peaceful until the Nightmare reached them and now attack anyone.",
+			"Azj'Tordin lives here. He is a Highborne who fell out with the fallen prince in Dire Maul and got out through a back way under this pavilion, and on the way an imp called Pusillin robbed him of his book of incantations and the key to Eldre'Thalas. He wants both back.",
 		},
+		readMore = { "Wowpedia: Lariss Pavilion", "Wowpedia: Azj'Tordin", "Wowpedia: Pusillin and the Elder Azj'Tordin" },
 	},
 	{
 		name = "Isle of Dread", parent = "Feralas", faction = "Hostile",
@@ -1559,10 +1562,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Timbermaw Hold", faction = "Neutral", levels = "48-60",
-		hook = "A furbolg tunnel-hold that stayed sane, and the only road between three zones.",
+		hook = "The Timbermaw capital, and the only road between three zones.",
 		lore = {
-			"The Timbermaw are the furbolg tribe that resisted the corruption, and their hold is a tunnel complex connecting Felwood, Winterspring and Moonglade.",
-			"They are suspicious of everyone, with reason: most of their kin have gone mad and most outsiders have treated furbolgs as monsters. Earning their trust takes real effort and it is the only way to use their tunnels.",
+			"The hold is the Timbermaw tribe's capital, in north-eastern Felwood, and the tunnel through it is the one way between Felwood, Winterspring and Moonglade. The signposts at the junction point to all of those and to Ashenvale, Jaedenar and Talonbranch Glade.",
+			"The Timbermaw are the furbolgs who came through the Legion's corruption with their minds. They are suspicious of everyone, with reason: most of their kin have gone mad and most outsiders have treated furbolgs as monsters. Earning their trust takes real effort and it is the only way to use their tunnels.",
+			"The corrupted are at the door. Deadwood avengers, shamans and den watchers press on the Felwood side under Chieftain Bloodmaw, and the Timbermaw keep warders and a gatekeeper on the gates rather than guides.",
 		},
 		didYouKnow = "Furbolgs were long-standing allies of the night elves before the corruption spread. The Timbermaw are what the whole race used to be.",
 	},
@@ -1821,11 +1825,13 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Lake Kel'Theril", parent = "Winterspring", faction = "Hostile",
-		hook = "A frozen lake over a night elf ruin, with its dead still on the ice.",
+		hook = "A frozen lake in the middle of Winterspring, with a Highborne city under it.",
 		lore = {
-			"Kel'Theril was a night elf site, and the lake froze over it. The spirits of the night elves who died here are still present.",
-			"They died in the War of the Ancients era, in fighting among the night elves themselves over the arcane. Even this far north, the empire's collapse left bodies.",
+			"Kel'Theril was a Highborne city before the Sundering brought it down to a lake, and the water froze over it in the years after. Pillars still stand partly above the ice.",
+			"The Highborne are still here, suffering and anguished and bound to it. What they did is set out at the ruins on the shore: they stole a sacred artefact meaning to siphon its power into themselves, and the fragments went down under this ice when it shattered. They are looking for them yet.",
+			"Shardtooth bears and chillwind chimaeras work the shore, cobalt whelps circle the ice, and when the elements turn on the world Princess Tempestria rises out of the lake.",
 		},
+		readMore = { "Wowpedia: Lake Kel'Theril", "Wowpedia: The Ruins of Kel'Theril (quest)", "Wowpedia: Highborne" },
 	},
 	{
 		name = "Owl Wing Thicket", parent = "Winterspring", faction = "Hostile",
@@ -2882,6 +2888,7 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"Tidefury Cove is at the end of Dustwallow Bay, south of Theramore and off the Wyrmbog coast. It is full of small islands and reefs and it is a bad place to bring a ship.",
 			"Two of them did not make it. Both are broken on the shallows with makrura moving through the wreckage.",
+			"The cove is at the Wyrmbog end of the marsh and the water is worked by Mirefin murlocs and snapjaws, and that is the other reason not to swim it.",
 			"Nat Pagle lives out here, on an islet called Nat's Landing. He is the most accomplished fisherman anybody knows of and he has chosen to do it from a rock in a cove full of reefs, which is probably the point.",
 		},
 		readMore = { "Wowpedia: Tidefury Cove", "Wowpedia: Nat Pagle", "Wowpedia: Dustwallow Marsh" },
