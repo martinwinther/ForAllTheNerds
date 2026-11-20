@@ -339,11 +339,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Shaol'watha", faction = "Hostile",
-		hook = "An abandoned Amani site in the woods, with the forest most of the way in.",
+		hook = "A former temple in the north-east, held by the Vilebranch.",
 		lore = {
-			"Shaol'watha is one of the Hinterlands' empty troll sites rather than one of its occupied ones. The Amani network supporting Jintha'Alor was extensive, and a good part of it has gone back to the trees.",
+			"Shaol'watha was a temple once. It stands in the north-east of the zone with Agol'watha nearby, and the Vilebranch hold both: scalpers in the open and soothsayers among the stones, with Grimungous somewhere in the trees.",
+			"Revantusk Village wants them out. The village smith has had his tools stolen and taken up here, and the village mystic simply wants the numbers brought down.",
 			"How many of these ruins there are is the measure of what the Amani Empire once was. Troll civilisation held most of this continent before there were humans on it to notice.",
 		},
+		readMore = { "Wowpedia: Shaol'watha", "Wowpedia: Cannibalistic Cousins", "Wowpedia: Vilebranch tribe" },
 	},
 	{
 		name = "The Creeping Ruin", faction = "Hostile",
@@ -582,11 +584,13 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Cragpool Lake", faction = "Contested",
-		hook = "A lake high in the northern mountains, above the logging and the burning both.",
+		hook = "A small lake in Windshear Crag, with a goblin water wheel built over it.",
 		lore = {
-			"Cragpool sits near the top of the range. From it you can see the two things being done to Stonetalon: the Horde's timber camps below to the east, and the Charred Vale's ash to the south.",
+			"The lake lies in Windshear Crag at the head of the Blackwolf River. An enormous Venture Company structure runs above the water, a water wheel reached by a tower of scaffolding, and Gerenzo Wrenchwhistle oversaw the crag's operation from up there.",
+			"The lumber mill is just south of the lake. What the Horde wants out of it is the engineering plans for the shredders, on the grounds that knowing how the machines work is worth more than smashing a few of them.",
 			"The Cenarion Circle keeps a presence in these mountains trying to stop the argument turning into a war. Tauren at Sun Rock Retreat take the same line, which puts them awkwardly across their own faction.",
 		},
+		readMore = { "Wowpedia: Cragpool Lake", "Wowpedia: Windshear Crag", "Wowpedia: Gerenzo Wrenchwhistle" },
 	},
 	{
 		name = "Camp Aparaje", faction = "Horde",
@@ -658,11 +662,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Dreadmurk Shore", faction = "Hostile",
-		hook = "The eastern shore, looking out at an island nobody has managed to take.",
+		hook = "The eastern coast and its islands, thick with murlocs.",
 		lore = {
-			"Dreadmurk Shore faces Alcaz Island across a short stretch of water. Naga and their allies hold the island and have repelled everything sent at it.",
-			"Something is being held on Alcaz. The Horde and the Alliance have both noticed and neither has got onto it in force, an unusual thing for them to have in common.",
+			"Dreadmurk Shore is the coastline and the islands between Theramore Isle and Northwatch Hold. The Mirefin murlocs have the run of it, coastrunners in the shallows and the rest camped above the tideline, and sea turtles and snapjaws work the water with them.",
+			"The Defias have been wrecked out here, somewhere between this shore and Alcaz Island, and have made camps on a few of the islands and the beach beside them. Theramore has sentries on the ground and an interest in what the Defias were carrying.",
+			"Alcaz Island itself lies off this coast and is not a place anyone walks onto casually.",
 		},
+		readMore = { "Wowpedia: Dreadmurk Shore", "Wowpedia: Mirefin tribe", "Wowpedia: Alcaz Island" },
 	},
 })
 
@@ -677,11 +683,13 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Grimtotem Compound", faction = "Hostile",
-		hook = "A Grimtotem camp in the jungle, loyal to no faction and no chieftain.",
+		hook = "A Grimtotem village east of Dire Maul, with sprite darters in a cage.",
 		lore = {
-			"The Grimtotem refused Cairne Bloodhoof's alliance with the orcs. Magatha Grimtotem leads them, her ambitions are her own, and camps like this one are spread from Stonetalon to Thousand Needles.",
-			"They are hostile to Horde and Alliance alike, making them one of the few subjects Camp Mojache and Feathermoon Stronghold can agree on.",
+			"The compound is a large village in two parts, east of Dire Maul. Grimtotem shamans hold it, and camps of theirs stand from Stonetalon down to Thousand Needles. They are hostile to Horde and Alliance alike, which makes them one of the few things Camp Mojache and Feathermoon Stronghold agree about.",
+			"The southern part has a large cage in it with sprite darters penned inside. Kindal Moonweaver is out here with a key and no patience, ready to go in after them and unwilling to wait long once the cage is open. Jer'kai Moonweaver stays back.",
+			"The gnolls have a few camps of their own east of the northern part, which the Grimtotem appear to tolerate.",
 		},
+		readMore = { "Wowpedia: Grimtotem Compound", "Wowpedia: Freedom for All Creatures", "Wowpedia: Grimtotem tribe" },
 	},
 	{
 		name = "Jademir Lake", faction = "Contested",
@@ -967,7 +975,7 @@ SubsOf("Elwynn Forest", {
 		hook = "Where Elwynn's trees give out and Westfall's dust begins.",
 		lore = {
 			"The change is abrupt. On one side the forest is green and worked; on the other the soil thins out and the farms stop. Anyone walking west sees the kingdom's problem laid out in a few hundred paces.",
-			"Westbrook Garrison watches this ground, mostly for gnolls coming out of the hills and increasingly for Defias coming the other way.",
+			"Westbrook Garrison stands on this ground and watches it, with a morale officer, a weaponsmith and an armourer behind the walls. What comes at them is gnolls out of the hills, and Hogger is the one of those with a name.",
 		},
 	},
 	{
@@ -1084,11 +1092,13 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Cold Hearth Manor", faction = "Hostile",
-		hook = "A gentry house in the northern glades, empty of anyone who would recognise it.",
+		hook = "A farmstead in the central glades, named for the warmth it used to have.",
 		lore = {
-			"The manor belonged to one of Lordaeron's lesser noble families. Houses like it are scattered across Tirisfal, and almost none of them are occupied by their owners now.",
-			"The Forsaken use some of these buildings and leave others. Which is which tends to depend on how structurally sound the roof is rather than on sentiment.",
+			"The manor stands on the road east out of the Deathknell crossroads, on the way to Brill. It was known for a warm house and good crops, and the Plague of Undeath killed everyone who lived or worked here.",
+			"The fields have gone barren and the Scourge walks them: rotting dead and ravaged corpses in the furrows, cursed darkhounds and duskbats around the buildings, and gloom weed growing where the crops were.",
+			"The Forsaken took the farmhouse itself and made something of it. Two tailors, Bowen and Constance Brisboise, work out of it and sell to whoever is passing on the road, which is more than most of Tirisfal's empty houses get.",
 		},
+		readMore = { "Wowpedia: Cold Hearth Manor", "Wowpedia: Tirisfal Glades", "Wowpedia: Plague of Undeath" },
 	},
 	{
 		name = "Crusader's Outpost", faction = "Hostile",
@@ -1446,11 +1456,13 @@ SubsOf("The Hinterlands", {
 SubsOf("Western Plaguelands", {
 	{
 		name = "The Weeping Cave", faction = "Hostile",
-		hook = "A cave in the western hills, and the name is not decorative.",
+		hook = "A cave in the north-east of the zone, filled with oozes.",
 		lore = {
-			"The cave sits in the hills above the plague farms, and what is in it belongs to the same operation as the cauldrons below.",
-			"The Argent Dawn maps the places in this zone where the blight is being actively maintained rather than merely lingering. Something keeping it going is a worse problem than something left over.",
+			"The Weeping Cave is in the north-east of the Western Plaguelands, just west of the Thondroril River. Nothing in it is working to any plan: it is full of slime.",
+			"The cave holds vile slimes and devouring oozes, with rotting behemoths and a decaying horror among them, and an elemental called The Husk turns up here and nowhere else.",
+			"Plaguebloom grows at the mouth of it, which is the only reason most people come this far east along the river.",
 		},
+		readMore = { "Wowpedia: Weeping Cave", "Wowpedia: Western Plaguelands", "Wowpedia: The Husk" },
 	},
 	{
 		name = "Darrowmere Lake", faction = "Contested",
@@ -1585,11 +1597,13 @@ SubsOf("Mulgore", {
 SubsOf("Teldrassil", {
 	{
 		name = "Fel Rock", faction = "Hostile",
-		hook = "A cave near Shadowglen with things in it that should not be on this tree.",
+		hook = "A corrupted cave north of Dolanaar, with a satyr and his grells in it.",
 		lore = {
-			"Fel Rock sits close to the night elves' training glade. What is inside it becomes a problem for every recruit who passes.",
+			"Fel Rock is a cave just north of Dolanaar that was beautiful once and is not now. Grells have infested it in numbers and Lord Melenas has gathered them, a satyr on a tree that is supposed to have none.",
+			"Tallonkai Swiftroot in Dolanaar wants him dealt with and wants it kept quiet. The satyr are an embarrassment to the night elves already and this one is far too close to home.",
 			"Teldrassil was grown to win back the immortality the night elves spent destroying Archimonde at Mount Hyjal. It was planted without the dragon Aspects' blessings, it is sick, and caves like this one are part of how that shows.",
 		},
+		readMore = { "Wowpedia: Fel Rock", "Wowpedia: Twisted Hatred", "Wowpedia: Lord Melenas" },
 	},
 	{
 		name = "The Cleft", faction = "Contested",

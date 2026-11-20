@@ -188,11 +188,13 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Thunderbrew Distillery", parent = "Dun Morogh", faction = "Alliance",
-		hook = "The Thunderbrew family's brewery, and a pillar of the dwarven economy.",
+		hook = "The Thunderbrew family's brewery at Kharanos, and it has two sets of rivals.",
 		lore = {
-			"Dwarven brewing is not a joke to dwarves. The Thunderbrews are one of several families whose stout is exported across the Alliance, and the distillery at Kharanos is their flagship operation.",
-			"Beer here occupies roughly the position that tea occupies elsewhere: it is how business gets done, how disputes get settled, and how an Ironforge dwarf judges whether a stranger is worth talking to.",
+			"The distillery stands in Kharanos and Ragnar Thunderbrew runs it. What comes out of it is Thunder Ale, and there are barrels of it in the basement.",
+			"The Barleybrews brew in the same zone and do not accept that the Thunderbrews make the only decent drink in Dun Morogh. One of them will hand over a barrel of Barleybrew Scalder and ask for it to be swapped quietly for a barrel of Thunder Ale, guard or no guard.",
+			"The other rivalry is not a joke. Ragnar has had one of the family recipes stolen, and he blames the Dark Iron, of whom he says he had cause enough to think badly already.",
 		},
+		readMore = { "Wowpedia: Thunderbrew Distillery", "Wowpedia: Bitter Rivals", "Wowpedia: Ragnar Thunderbrew (quest)" },
 	},
 	{
 		name = "Gol'Bolar Quarry", parent = "Dun Morogh", faction = "Alliance",
@@ -689,11 +691,13 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Tower of Ilgalar", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "A mage tower on the lake's south shore, whose occupant is doing something he will not explain.",
+		hook = "A mage tower in the eastern foothills, and its occupant commands the local gnolls.",
 		lore = {
-			"Ilgalar is another of the independent arcane towers that dot the southern kingdoms. Its current master, Morganth, arrived with credentials and has since made himself extremely unwelcome.",
-			"The suspicion in Lakeshire is that he is involved in whatever the orcs and the gnolls are coordinating. That would make him the only person in Redridge with a plan.",
+			"The tower stands in the eastern part of Redridge, and Morganth holds it. He was exiled from Stormwind's Mage Quarter for his use of dark magic and came out here to carry on with it.",
+			"He is not suspected of anything. Lakeshire knows what he is doing: the Shadowhide gnoll clan takes his orders, Lieutenant Fangore leads them for him, and the pendants the gnolls carry are how he sends those orders. Magistrate Solomon has made aiding him a capital matter.",
+			"Theocritus, the high mage of the Tower of Azora over in Elwynn, is his rival and watches him from a distance through a device called the Eye of Azora. Morganth keeps servants of his own in the tower, and a copy of Ur's treatise on shadow magic.",
 		},
+		readMore = { "Wowpedia: Tower of Ilgalar", "Wowpedia: Morganth", "Wowpedia: Solomon's Law" },
 	},
 	{
 		name = "Lake Everstill", parent = "Redridge Mountains", faction = "Contested",
@@ -1059,10 +1063,11 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Thoradin's Wall", parent = "Hillsbrad Foothills", faction = "Contested",
-		hook = "The ancient wall Arathor built against the trolls, still standing across the hills.",
+		hook = "The ancient wall Arathor built against the trolls, battered but still across the hills.",
 		lore = {
-			"Thoradin's Wall was raised by the Arathorian Empire to hold back the Amani trolls. Few human structures anywhere are older. It marks the border between Hillsbrad and the Arathi Highlands.",
+			"Thoradin ordered the wall raised soon after Arathor was founded, to shield his people from Amani incursions. It separates the Arathi Highlands from the Hillsbrad Foothills and it is gigantic and badly damaged.",
 			"The empire that raised it has been gone for millennia and the wall has not. Arathor built to last, whatever else it failed at.",
+			"Somebody is still using it. The dwarves of Dun Garok have put a barracks up against the wall in south-eastern Hillsbrad, which the Horde at Tarren Mill treats as a standing provocation.",
 		},
 		didYouKnow = "Thoradin was the first human to unite the tribes into one nation. Every human kingdom, including Stormwind, descends from the empire he founded at Strom.",
 	},
@@ -1794,11 +1799,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Skulk Rock", parent = "The Hinterlands", faction = "Hostile",
-		hook = "A cave of very large spiders, a short walk from the trolls' shrines to the spider loa.",
+		hook = "A forest troll ruin overrun by oozes, with an abandoned Horde base in it.",
 		lore = {
-			"Skulk Rock holds a substantial spider population, close to the Vilebranch's shrines to the spider loa.",
-			"The trolls' relationship with these spiders is religious. The spiders' relationship with travellers is simpler.",
+			"Skulk Rock is a troll ruin with a cave in it, at the head of the river in the north-east of the zone. The Old Horde put a base here during the Second War and lost it when the Alliance of Lordaeron drove them out.",
+			"What holds the ruin now is slime: jade oozes and green sludges stick to the stonework in numbers, and the rumour is that something bigger is leading them. The crates the orcs left behind are still there with cases of Hinterlands honey ripple in them.",
+			"It is also one of the few places anywhere that ghost mushrooms grow, which is reason enough for people to come and take their chances with the oozes.",
 		},
+		readMore = { "Wowpedia: Skulk Rock", "Wowpedia: A Sticky Situation", "Wowpedia: Ghost Mushroom" },
 	},
 	{
 		name = "Plaguemist Ravine", parent = "The Hinterlands", faction = "Contested",
@@ -1871,11 +1878,13 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "The Slag Pit", parent = "Searing Gorge", faction = "Hostile",
-		hook = "A waste pit of molten slag, with things living in it.",
+		hook = "A mine deep inside the Cauldron, worked by Dark Iron slaves.",
 		lore = {
-			"The Slag Pit is where the Gorge's industry dumps what it cannot use. Fire elementals and worse have taken up residence in the runoff.",
-			"The Dark Irons regard this as acceptable. They regard most things as acceptable.",
+			"The Slag Pit lies deep within the Cauldron excavation. It is a sweltering mine, and the Dark Iron work it with slave labour: taskmasters and slavers stand over the slave workers, Slave Master Blackheart among them, and Overseer Maltorius commands the crew.",
+			"Dorius Stonetender's archaeology unit was taken down here, and his dying request was that his men be freed rather than avenged. Incendosaurs live in the lower reaches, and the altar of Suntara stands in the pit itself.",
+			"The Dark Iron are hostile to anyone who interferes with the mining, which is most of what they do here. The deposits in the walls are their own ore.",
 		},
+		readMore = { "Wowpedia: Slag Pit", "Wowpedia: Dwarven Justice", "Wowpedia: The Cauldron" },
 	},
 	{
 		name = "Blackchar Cave", parent = "Searing Gorge", faction = "Hostile",
@@ -1965,11 +1974,12 @@ SubsOf("Burning Steppes", {
 	},
 	{
 		name = "Altar of Storms", parent = "Burning Steppes", faction = "Hostile",
-		hook = "A demonic altar left over from the Horde's warlock era.",
+		hook = "A Second War altar in the shadow of Blackrock Mountain, still in use.",
 		lore = {
-			"The Altar of Storms is one of several such sites raised by orcish warlocks during the Horde's campaigns, when the Shadow Council and Gul'dan's influence ran the clans.",
-			"Thrall's Horde has outlawed warlock practice of this kind, but the altars are still standing and still being used by people who do not take orders from Orgrimmar.",
+			"The altars of storms were cut from captured elven runestones and used to pervert the magic in them. What the Old Horde got out of them was the ogre magi, who were given their spells at altars like this one.",
+			"This altar sits below Blackrock Mountain, and the Blackrock clan has never stopped using it. Blackrock warlocks work here, with Mor'zul Bloodbringer and Gorzeeki Wildeyes keeping to themselves nearby and an alchemy set standing out in the open.",
 		},
+		readMore = { "Wowpedia: Altar of Storms", "Wowpedia: Ogre magi", "Wowpedia: Blackrock clan" },
 	},
 	{
 		name = "Terror Wing Path", parent = "Burning Steppes", faction = "Hostile",
@@ -2377,11 +2387,12 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Altar of Storms", parent = "Blasted Lands", faction = "Hostile",
-		hook = "One of the old orcish demonic altars, in the shadow of the portal.",
+		hook = "One of the old altars of storms, north-east of the Dark Portal.",
 		lore = {
-			"The Horde's warlocks raised altars like this across their conquests, and this one sits close to where they first arrived.",
-			"The Shadow Council that ran the Old Horde through Gul'dan was a warlock cabal. Altars like this one were its infrastructure.",
+			"The Old Horde raised altars like this across the lands it took, and this one stands on the ground where it first came through. Gul'dan meant to use their power against the elves' defences at Quel'Thalas, because the altars were made from the elves' own runestones.",
+			"Lady Sevine holds this one now with her servants, and a stone of binding stands beside it. The Shadow Council that ran the Old Horde through Gul'dan was a warlock cabal, and altars like this one were its working equipment.",
 		},
+		readMore = { "Wowpedia: Altar of Storms", "Wowpedia: Lady Sevine", "Wowpedia: Shadow Council" },
 	},
 })
 
@@ -2411,9 +2422,9 @@ SubsOf("Tirisfal Glades", {
 		name = "Faol's Rest", parent = "Tirisfal Glades", faction = "Contested",
 		hook = "The grave of the archbishop who founded the Silver Hand, now untended.",
 		lore = {
-			"Alonsus Faol was Archbishop of the Church of the Holy Light and the man who answered the Second War by inventing an answer to it. With Uther at his side he founded the Knights of the Silver Hand, the first paladins, and trained the generation who fought the orcs to a standstill.",
+			"Alonsus Faol was Archbishop of the Church of the Holy Light. With Uther at his side he founded the Knights of the Silver Hand, the first paladins, and trained the generation who fought the orcs to a standstill.",
 			"He died before the Scourge came and was spared the sight of what his own best student became: Arthas Menethil was raised in that tradition, and took up Frostmourne regardless.",
-			"The grave sits in eastern Tirisfal, a short way from the Scarlet Monastery. It was a place of pilgrimage once. Nobody tends it now, and the ground around it belongs to the Forsaken and the Scarlet Crusade, neither of whom have any use for a shrine to the other side's saint.",
+			"The grave sits in eastern Tirisfal, a short way south-west of the Scarlet Monastery. It drew mourners in numbers before the plague. Nobody tends it now, and the ground around it belongs to the Forsaken and the Scarlet Crusade, neither of whom have any use for a shrine to the other side's saint. The Scarlet raid out of a ruined tower further north, past the grave.",
 		},
 		readMore = { "Wowpedia: Alonsus Faol", "Wowpedia: Knights of the Silver Hand" },
 	},
@@ -3254,7 +3265,7 @@ SubsOf("Elwynn Forest", {
 		hook = "The river out of the mountains that becomes Crystal Lake.",
 		lore = {
 			"The Northshire River comes down out of the mountains east of Stormwind, runs through Northshire Valley past the Abbey, and empties into Crystal Lake.",
-			"Every human the Alliance fields from this kingdom starts beside it. Northshire Abbey is where new recruits are taught, the valley is the first ground they walk, and the river is the thing running through all of it.",
+			"Northshire Abbey is where Stormwind's new recruits are taught, the valley is the first ground they walk, and the river runs through all of it. The subzone has no label on the map, so most of them never learn it has a name.",
 			"The falls near the Abbey are the pleasant part of a zone that also contains the Defias, kobolds in the mines and Hogger. Elwynn is a working forest, not an idyll, but it does have this.",
 		},
 		readMore = { "Wowpedia: Northshire River", "Wowpedia: Northshire Abbey", "Wowpedia: Crystal Lake" },

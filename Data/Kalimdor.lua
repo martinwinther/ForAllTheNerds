@@ -69,11 +69,13 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Drygulch Ravine", parent = "Durotar", faction = "Hostile",
-		hook = "A ravine full of harpies in northern Durotar.",
+		hook = "A ravine north of Razor Hill, held by harpies who rob the caravans.",
 		lore = {
-			"Drygulch is a dry canyon north of Razor Hill, held by harpies. Harpies are everywhere in Kalimdor. The story told about them is that they are cursed descendants of night elves, a subject on which no harpy has ever been drawn.",
-			"They raid the roads around Orgrimmar, keeping the Horde's patrols busy and making the ravine a standard early assignment.",
+			"Drygulch is a dry canyon north of Razor Hill. The only way in, short of falling into it from above, is from Razorwind Canyon through a small cave.",
+			"The Dustwind harpies have it. They have taken to banditry, stopping the caravans that supply the orcs here and hoarding the sacks on their cliffs, and the most powerful of them stand over the nests. Orcs lived in the ravine before them and a river still feeds it.",
+			"Burning Blade cultists work the same ground, neophytes and thugs among them. Margoz is camped between the ravine and the coast, and the Horde thinks his counsel worth hearing before anyone goes after the cult.",
 		},
+		readMore = { "Wowpedia: Drygulch Ravine", "Wowpedia: Winds in the Desert", "Wowpedia: Margoz" },
 	},
 	{
 		name = "Thunder Ridge", parent = "Durotar", faction = "Contested",
@@ -726,11 +728,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Warsong Lumber Camp", parent = "Ashenvale", faction = "Hostile",
-		hook = "The logging camp that is the entire reason for the war in this forest.",
+		hook = "The Warsong clan's logging camp, and the reason for the war in this forest.",
 		lore = {
-			"The Warsong clan cuts timber here, and the timber goes to Orgrimmar. Grom Hellscream's clan took the name Warsong for their battle chants and they have never been the Horde's moderating influence.",
-			"Thrall has restrained them and they have resumed. The camp is both a practical necessity for the Horde and the clearest evidence that Orgrimmar does not fully control its own clans.",
+			"The Warsong cut timber here. The clan works it with peons on the piles, grunts and shamans holding the ground, and deforesters and shredders doing the felling, with a kennel and Kargathia Keep to fall back on.",
+			"It runs on a supply line rather than on conquest. Saw blades come up from Splintertree Post and axes by ship from Booty Bay, and the oil and rope are the difficult part: the Thistlefur and Foulweald furbolgs take the rope and the satyrs intercept the rest.",
+			"Grom Hellscream led this clan and the Horde honours him for it, with a monument in Demon Fall Canyon not far from here. The camp is what the night elves are fighting about.",
 		},
+		readMore = { "Wowpedia: Warsong Lumber Camp", "Wowpedia: Warsong Supplies", "Wowpedia: Warsong clan" },
 	},
 	{
 		name = "Warsong Labor Camp", parent = "Ashenvale", faction = "Hostile",
@@ -1353,11 +1357,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Lost Rigger Cove", parent = "Tanaris", faction = "Hostile",
-		hook = "A pirate harbour on the eastern coast.",
+		hook = "The Southsea pirates' port on the eastern coast, with a hull on the stocks.",
 		lore = {
-			"Lost Rigger Cove is the Southsea pirates' base in Tanaris: a working pirate port rather than a hideout.",
-			"The Steamwheedle Cartel would like it gone. The pirates are, inconveniently, also customers.",
+			"Lost Rigger Cove sits on the eastmost peninsula of the desert coast, shut in by mountains on three sides. It is a working port and not a hideout: dock workers unload stolen cargo, swashbucklers and freebooters hold the quays, Andre Firebeard and Kregg Keelhaul are among the names, and a new vessel is going up in the shipyard.",
+			"The arrangement with the goblins is not what it looks like. Steamwheedle Port pays the pirates protection money, and the pirates have lately been taking the money and ignoring what it was for. Security Chief Bilgewhizzle would rather hire that out than deal with it himself.",
 		},
+		readMore = { "Wowpedia: Lost Rigger Cove", "Wowpedia: Southsea Shakedown", "Wowpedia: Aquementas" },
 	},
 	{
 		name = "The Noxious Lair", parent = "Tanaris", faction = "Hostile",
@@ -1665,11 +1670,13 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Fire Plume Ridge", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A volcanic ridge at the crater's centre, with fire elementals on it.",
+		hook = "The volcano at the crater's centre, with lava running down it.",
 		lore = {
-			"Fire Plume Ridge is the volcano at the crater's centre, and still active. Fire elementals and worse have taken up residence on its slopes.",
-			"The volcano may be what keeps the crater warm enough for the jungle. Nobody at Marshal's Refuge will commit to it.",
+			"Fire Plume Ridge is the volcano in the middle of Un'Goro and it is still working. Lava runs down the sides and the elementals are in it: living blazes, scorching elementals and blazing invaders, with Baron Charr on the slopes and Blazerunner, the strongest of them, in a cave at the peak.",
+			"The heat is not only the mountain's own. Shallow magma runs under the floor of the crater and warms the pools and geysers out across it, which is the best answer anyone has for why a jungle grows in a desert belt.",
+			"Krakle built a thermometer to settle it and hands it out to anyone willing to take readings on the ridge, in degrees Kraklenheit. Ringo went up to have a look, got lost, and is still up there with heat exhaustion.",
 		},
+		readMore = { "Wowpedia: Fire Plume Ridge", "Wowpedia: Finding the Source", "Wowpedia: Blazerunner" },
 	},
 	{
 		name = "The Slithering Scar", parent = "Un'Goro Crater", faction = "Hostile",
@@ -1921,11 +1928,13 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Valor's Rest", parent = "Silithus", faction = "Contested",
-		hook = "A memorial to the night elves who died sealing the gates.",
+		hook = "A camp and graveyard at the way into Silithus, used by both sides.",
 		lore = {
-			"Valor's Rest honours the dead of the War of the Shifting Sands, the night elves and dragons who fought the qiraji to a standstill and paid for the seal with their lives.",
-			"It is a thousand years old and the war it commemorates is about to restart.",
+			"Valor's Rest is the first thing anyone sees on the way up out of the north-west corner of Un'Goro Crater, and both the Alliance and the Horde use it. Its graveyard is the final resting spot for the fallen of the wastes.",
+			"The Cenarion Circle keeps people here. Layo Starstrike is one of their agents in Silithus and will not take a stranger on trust without a letter, which is a reasonable way to behave in this zone.",
+			"An ancient war was fought in these wastes between the night elves and a malign, alien power, and the evil was sealed rather than killed. The Circle's worry is that something is now working to stir it.",
 		},
+		readMore = { "Wowpedia: Valor's Rest", "Wowpedia: Wasteland (quest)", "Wowpedia: Cenarion Circle" },
 	},
 	{
 		name = "Bronzebeard Encampment", parent = "Silithus", faction = "Neutral",
@@ -2701,7 +2710,7 @@ SubsOf("Felwood", {
 		name = "Bloodvenom Falls", parent = "Felwood", faction = "Hostile",
 		hook = "A poisoned waterfall, and the head of a river that carries the poison out of the zone.",
 		lore = {
-			"The falls are high in Felwood and they are corrupted. They are also the source of the Bloodvenom River, which is the problem with them.",
+			"The falls are high in Felwood and they are corrupted, with tainted oozes on the bank below them and Jaedenar cultists working the ground around. They are also the source of the Bloodvenom River, which is the problem with them.",
 			"The corruption does not stay here. The river comes down off these mountains and becomes the Wildbend River in Darkshore, carrying Felwood's poison into a zone that had nothing to do with it.",
 			"That is the argument for Felwood mattering to anyone outside it. The Legion's damage to this forest is not contained by the forest, and it runs downhill.",
 		},
@@ -2940,8 +2949,8 @@ SubsOf("Desolace", {
 		hook = "A hidden Burning Blade haven with a summoning circle in it.",
 		lore = {
 			"Shadowbreak Ravine is tucked into the mountains in Desolace's south-east and it is well enough hidden to be missed. The Burning Blade are in it.",
-			"What they have built is the part that matters: structures, giant mushrooms, and a summoning circle with heavy chains set into it. Chains on a summoning circle mean they expected to bring through something that would need holding down.",
-			"The Burning Blade are orcs who kept the demonic bargain after Thrall renounced it. A clan still working the Legion's craft, in a ravine in the worst country on the continent, is the Horde's own unfinished business.",
+			"What they have built is the part that matters: structures, giant mushrooms, and a summoning circle with giant chains set into it. Summoners and invokers work the circle and there are nightmares loose in the ravine already.",
+			"The horses are the other tell. They pen stallions here and work on them until they are fit to carry a warlock, and ley hunters range the ground around the pens. The Burning Blade are orcs who kept the demonic bargain the rest of the Horde gave up, and this is where they practise it.",
 		},
 		readMore = { "Wowpedia: Shadowbreak Ravine", "Wowpedia: Burning Blade clan", "Wowpedia: Desolace" },
 	},
@@ -3016,7 +3025,7 @@ SubsOf("Feralas", {
 		hook = "The great forest of western Feralas, from the coast to the Verdantis.",
 		lore = {
 			"The High Wilderness is the forest itself, running from the Forgotten Coast across to the Verdantis River. It is the largest single thing in Feralas.",
-			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods.",
+			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods. The groddoc apes are here too, which they will not be for ever.",
 			"Feralas is the wettest, greenest, least ruined part of Kalimdor, and the night elves held all of it once. The wilderness is what the zone looks like where nobody has arrived to argue about it yet.",
 		},
 		readMore = { "Wowpedia: High Wilderness", "Wowpedia: Feralas" },
@@ -3053,7 +3062,7 @@ SubsOf("Stonetalon Mountains", {
 		lore = {
 			"The Greatwood Vale is one of the green parts of Stonetalon, down in the foothills, and the way in is along the Webwinder Path.",
 			"Malaka'jin lies south of it. That is a troll holding, and trolls in Stonetalon are a reminder that the Darkspear are not the only ones on this continent.",
-			"Stonetalon has woods worth the name and the Venture Company are cutting them. A vale called Greatwood is the sort of place that gets noticed by a logging concern.",
+			"Seereth Stonebreak camps near the vale, sent up from the Horde to answer the deforestation further on. The Venture Company's cutting is not in the vale itself: it is north-west of here, through to Windshear Crag, and the vale is on the road to it.",
 		},
 		readMore = { "Wowpedia: Greatwood Vale", "Wowpedia: Stonetalon Mountains" },
 	},
