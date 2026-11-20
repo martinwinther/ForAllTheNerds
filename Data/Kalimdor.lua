@@ -156,11 +156,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "The Golden Plains", parent = "Mulgore", faction = "Horde",
-		hook = "Open grassland in central Mulgore, and the kodo herds' main range.",
+		hook = "The grassland basin south-east of Thunder Bluff, and a favoured hunting ground.",
 		lore = {
-			"The Golden Plains are the heart of Mulgore's grassland and the reason the tauren stopped here. The kodo herds graze them, and kodo are central to tauren life as beasts of burden, as food and as a measure of wealth.",
-			"The plains are also where the tauren's relationship with the land is most visible. Nothing is fenced and nothing is farmed intensively.",
+			"The Golden Plains are the large basin that wraps around Thunder Bluff on its south-eastern side, and they are among the most treasured parts of the tauren homeland.",
+			"They are hunting ground rather than pasture. Plainstriders work the grass in numbers, elders among them, and flatland prowlers, flatland cougars, prairie stalkers and prairie wolf alphas hunt across it. Overhead, swoops drop on anything small enough.",
 		},
+		readMore = { "Wowpedia: Golden Plains", "Wowpedia: Mulgore" },
 	},
 	{
 		name = "Red Rocks", parent = "Mulgore", faction = "Contested",
@@ -370,13 +371,13 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "The Master's Glaive", parent = "Darkshore", faction = "Hostile",
-		hook = "A colossal blade buried in the earth, with Old God cultists camped around it.",
+		hook = "A colossal blade driven into the earth, with Twilight's Hammer cultists camped around it.",
 		lore = {
-			"The Glaive is an enormous weapon driven point-first into the ground at the mouth of a valley. Nobody knows who wielded it or what they used it on, and the scale rules out anything mortal.",
-			"The Twilight Hammer cult gathers here. They worship the Old Gods, the ancient horrors the titans imprisoned beneath this world, and their presence at the Glaive suggests they believe one of the titans' prisons is nearby.",
-			"The cult is small, fanatical and spread across Kalimdor. Where they show up, it is usually because something is buried.",
+			"The Glaive is an enormous weapon driven point-first into the ground in the south of Darkshore, and the scale of it rules out anything mortal. Its wielder is not named. Onu, the Ancient of Lore in the Grove of the Ancients, says this is a place where one of the old lords of the earth fell, long ago.",
+			"The Twilight's Hammer has the ground now, and that cult worships those same old lords. What it wants at the Glaive is not known, which is why Onu sends people into the camp to look for anything that would say. Twilight thugs and disciples hold the tents, with twilight tomes among their gear.",
+			"Onu finds it strange enough that the naga are in Darkshore at all. Blackwood furbolgs and moonstalkers work the valley around the blade, and Therylune wandered in here and was surrounded by cultists before she could get back out.",
 		},
-		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: Old Gods" },
+		readMore = { "Wowpedia: Master's Glaive", "Wowpedia: Twilight's Hammer", "Wowpedia: The Master's Glaive (quest)" },
 	},
 	{
 		name = "Tower of Althalaxx", parent = "Darkshore", faction = "Hostile",
@@ -1360,11 +1361,13 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "The Noxious Lair", parent = "Tanaris", faction = "Hostile",
-		hook = "A silithid hive in the eastern desert.",
+		hook = "A silithid hive in the south-west of the desert, sitting where water used to be.",
 		lore = {
-			"The Noxious Lair is a silithid colony. Silithid are insectoid, they are spreading across southern Kalimdor, and they answer to something in Silithus.",
-			"Their appearance in Tanaris, Un'Goro and the Barrens is not three separate infestations. It is one expansion.",
+			"The Noxious Lair is the Centipaar hive, in the south-west of Tanaris overlooking Un'Goro Crater. The ground is slightly sunk, as though a broad river or a shallow lake stood here once, and what the Gadgetzan Water Co. knows is that the silithid have drained the pools that used to be on this spot.",
+			"Centipaar stingers, wasps, workers, tunnelers and sandreavers work the surface and the tunnels under it, with Soriid the Devourer somewhere inside. Large claws stick up out of the sand where something bigger lies buried. Dunemaul ogres and blisterpaw hyenas range the edges.",
+			"What the bugs are is the part nobody in Gadgetzan can answer. The company would settle for knowing who the enemy is before it worries about the water.",
 		},
+		readMore = { "Wowpedia: Noxious Lair", "Wowpedia: Noxious Lair Investigation" },
 	},
 	{
 		name = "Dunemaul Compound", parent = "Tanaris", faction = "Hostile",
@@ -2667,9 +2670,9 @@ SubsOf("Teldrassil", {
 		lore = {
 			"The Oracle Glade is in Teldrassil's north-west, and the moonwell here is the first and the most powerful on the tree. Moonwells are drawn from the Well of Eternity's remaining waters, so every one of them is a fragment of the thing whose destruction broke the world.",
 			"The Oracle Tree stands over it, with a wide trunk and boughs grown into the shape of a great eagle perched on a bear. It is said to have been raised by nature magic rather than planted, and it has watched Teldrassil grow alongside the druids.",
-			"Malfurion Stormrage comes here to meditate. Bloodfeather harpies have nested nearby and are a threat to the tree, and a small group of Sentinels has been sent to push them back.",
+			"Bloodfeather harpies have nested nearby and are a threat to the tree. Sentinel Arynia Cloudsbreak has a small party out here to push them back, and a satyr hides on a branch at the outskirts of the glade.",
 		},
-		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Malfurion Stormrage" },
+		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Crown of the Earth" },
 	},
 })
 
@@ -2745,13 +2748,13 @@ SubsOf("Stonetalon Mountains", {
 SubsOf("Thunder Bluff", {
 	{
 		name = "The Pools of Vision", parent = "Thunder Bluff", faction = "Horde",
-		hook = "A tunnel under Spirit Rise, and the Forsaken's quarters in Thunder Bluff.",
+		hook = "A tunnel under Spirit Rise, and the Forsaken's base of operations in Thunder Bluff.",
 		lore = {
-			"The Pools of Vision are in a tunnel system just below the cap of Spirit Rise, reached from the bridge up from Lower Rise. They are also where the Forsaken keep their business in Thunder Bluff.",
-			"That arrangement is worth sitting with. Thunder Bluff is the most spiritually serious city in the Horde, the tauren read the land as the Earth Mother, and their allies in this building are walking corpses raised by the Scourge.",
-			"Cairne Bloodhoof accepted them because Thrall did, and Thrall accepted them because Sylvanas brought an army. The Forsaken quarter being in a cave under the spirit rise rather than out on the mesa is about as diplomatic as that compromise gets.",
+			"The Pools of Vision are a tunnel system just below the cap of Spirit Rise. Its entrance is off the bridge up from Lower Rise and is well hidden. The tauren keep shaman training down here beside the Hall of Spirits, and the Forsaken work out of the same cave: mage and priest trainers, and Apothecary Zamah, an emissary of the Royal Apothecary Society, as their scholar here.",
+			"That arrangement is worth sitting with. The tauren read the land as the Earth Mother, and the allies they house in this cave are walking corpses raised by the Scourge.",
+			"Not every tauren is easy about it. One of them writes that the Forsaken have a history wrought with deceit and that the pact was made too hastily. Zamah is aware of the distance: her heart beats no longer, and she says she still feels sorrow for the spirits of Stonetalon.",
 		},
-		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Thunder Bluff", "Wowpedia: Forsaken" },
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah", "Wowpedia: Forsaken" },
 	},
 })
 

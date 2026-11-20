@@ -232,11 +232,13 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "The Grizzled Den", parent = "Dun Morogh", faction = "Contested",
-		hook = "A bear cave east of Kharanos, and a rite of passage for Ironforge's hunters.",
+		hook = "A wendigo cave south-west of Kharanos, and a test of nerve for new adventurers.",
 		lore = {
-			"The Den is exactly what it sounds like and has been used as a training ground by Ironforge hunters for generations. Dun Morogh's bears are large, bad-tempered and plentiful.",
-			"It is also where young dwarves are sent to prove they can handle themselves without a gun crew backing them up.",
+			"The Grizzled Den is a large cave system south-west of Kharanos. Wendigo hold it, young and full-grown, and Old Icebeard is somewhere at the back.",
+			"What people come down here for is wendigo manes. Pilot Stonegear wants a heap of them to line the inside deck of his siege engine Trollplow, and couriers on the road have been chased off their loads by wendigo coming out of the den.",
+			"Old Icebeard has Tundra MacGrann's meat locker, a month of salted meat that MacGrann had locked away for the cold season. The thorium held where MacGrann's door latch did not.",
 		},
+		readMore = { "Wowpedia: Grizzled Den", "Wowpedia: Tundra MacGrann's Stolen Stash" },
 	},
 	{
 		name = "Misty Pine Refuge", parent = "Dun Morogh", faction = "Alliance",
@@ -954,11 +956,13 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "The Lost Fleet", parent = "Wetlands", faction = "Contested",
-		hook = "A graveyard of wrecked ships on the northern shore, and nobody agrees whose they were.",
+		hook = "The wrecks of the Kul Tiras Third Fleet, with its crew still walking them.",
 		lore = {
-			"A substantial number of vessels came to grief on this coastline and the hulls are still there, half in the water. Candidates include Second War transports and Alliance ships lost in the storms off Khaz Modan.",
-			"Murlocs and worse have colonised the wrecks. The salvage is good and the odds are not.",
+			"The hulls lie half in the water off the northern coast. They are the Third Fleet of Kul Tiras, the Doomed Fleet, burned and sunk on its last voyage by red dragons under orcish control.",
+			"First Mate Fitzsimmons, off the Wave Mistress, is the only man of that fleet still breathing, and he is not the only one still walking. Cursed sailors and cursed marines crew the wrecks, First Mate Snellig among them, and Captain Halyndor walks his own ship, the Intrepid, with its strongbox still locked aboard.",
+			"Bluegill murlocs have colonised the hulls and hammerhead sharks work the water around them. Battered footlockers still lie scattered through the shallows.",
 		},
+		readMore = { "Wowpedia: Lost Fleet", "Wowpedia: The Third Fleet", "Wowpedia: The Cursed Crew" },
 	},
 	{
 		name = "Bluegill Marsh", parent = "Wetlands", faction = "Hostile",
@@ -1582,11 +1586,13 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "The Dustbowl", parent = "Badlands", faction = "Contested",
-		hook = "The open flats at the heart of the Badlands, with nothing in them at all.",
+		hook = "The open flats at the heart of the Badlands, with gnomes camped on them.",
 		lore = {
-			"The Dustbowl is the emptiest ground in a zone made of empty ground. There is no water, no cover and no reason to stop.",
-			"Travellers cross it because the alternative is going around, and the Badlands are wider than they look.",
+			"The Dustbowl is the arid middle of the zone, between Kargath and the Valley of Fangs, and it is not as empty as it looks. Crag coyotes and ridge stalkers work the flats, lesser rock elementals rise out of them, giant buzzards circle above, and Dustbelcher ogres come down off the higher ground.",
+			"Lotwil Veriatus has stopped out here to work on his shackles of elemental binding, which he means to let mages summon stronger elementals than they can now. Lucien Tosselwrench is camped with him and is laying in an invisibility potion and a healing potion against the day Lotwil gets it working.",
+			"A handful of siege golems stand on the flats near their camp, and they are the largest things on this ground by a long way.",
 		},
+		readMore = { "Wowpedia: Dustbowl", "Wowpedia: Lotwil Veriatus", "Wowpedia: Lucien Tosselwrench" },
 	},
 })
 
@@ -2600,13 +2606,13 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Riptide", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "The third Bloodsail frigate, on the last stretch of coast before the open sea.",
+		hook = "The westernmost of the three Bloodsail frigates anchored off the Wild Shore.",
 		lore = {
-			"The Riptide is moored with the Crimson Veil and the Damsel's Luck off the Wild Shore, at the bottom end of the Eastern Kingdoms.",
-			"The position is the point. Everything sailing between Kalimdor and the Eastern Kingdoms passes this cape, and Booty Bay exists because the goblins worked that out first. The Bloodsail worked it out second and arrived with hulls instead of a harbour.",
-			"Stranglethorn was Gurubashi country, then Stormwind's southern frontier, and now it is neither. Three pirate frigates on the southern beach is what the absence of a government looks like.",
+			"The Riptide is moored with the Crimson Veil and the Damsel's Luck off the Wild Shore, at the bottom end of the Eastern Kingdoms. Fleet Master Firallon runs the fleet from below decks on the Crimson Veil, with Captain Keelhaul and Captain Stillwater aboard alongside him.",
+			"The Bloodsail keep their southern command post on the shore itself, and Booty Bay would like to know what is being planned there. Fleet Master Seahorn, who speaks for the Blackwater Raiders, pays for word of a raid on the port and reckons anyone who tries it may as well throw themselves off the Overlook Cliffs.",
+			"Stranglethorn was Gurubashi country, then Stormwind's southern frontier, and now it is neither. Three pirate frigates anchored off the southern beach is what that has left.",
 		},
-		readMore = { "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Stranglethorn Vale" },
+		readMore = { "Wowpedia: The Riptide", "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Stranglethorn Vale" },
 	},
 	{
 		name = "Venture Co. Operations Center", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -2735,13 +2741,13 @@ SubsOf("Swamp of Sorrows", {
 SubsOf("Badlands", {
 	{
 		name = "The Maker's Terrace", parent = "Badlands", faction = "Hostile",
-		hook = "The excavation outside Uldaman's door, patrolled by Dark Irons.",
+		hook = "The excavation outside Uldaman's door, dug and held by Dark Iron.",
 		lore = {
-			"The Terrace is the dig outside the entrance to Uldaman, and for anyone coming into the Badlands from Loch Modan it is the first thing on the road.",
-			"\"The Maker\" is the titans. Uldaman is one of their vaults, and what the Explorers' League found inside it was the Discs of Norgannon and the record of the earthen: living stone, shaped by the titans, and the dwarves' own ancestors. Ironforge has not been the same since reading it.",
-			"The Dark Iron patrol the Terrace now. They are dwarves too, and the same record is theirs, which does not appear to have made them any friendlier about who gets to read it.",
+			"The Terrace is the dig outside the entrance to Uldaman, and for anyone coming into the Badlands from Loch Modan it is the first thing on the road. Uldaman itself is a vault older than any dwarven work.",
+			"Agmond's diggers turned up carved stone urns at this site before Agmond died out here, and Prospector Ironband thinks the urns are what stirred the troggs up. They are still standing on the terrace.",
+			"The Dark Iron hold the ground now. Shadowforge diggers, surveyors and ruffians work it in force and every one of them is elite, with war golems and an obsidian golem among them.",
 		},
-		readMore = { "Wowpedia: Maker's Terrace", "Wowpedia: Uldaman", "Wowpedia: Titan", "Wowpedia: Earthen" },
+		readMore = { "Wowpedia: Maker's Terrace", "Wowpedia: Uldaman", "Wowpedia: Agmond's Fate" },
 	},
 })
 
@@ -2840,9 +2846,9 @@ SubsOf("Elwynn Forest", {
 		name = "The Maclure Vineyards", parent = "Elwynn Forest", faction = "Alliance",
 		hook = "The other half of the feud, and the one with the grapes.",
 		lore = {
-			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms.",
-			"The quarrel is inherited rather than reasoned, and both households are entirely committed to it. Meanwhile their children have made other arrangements.",
-			"Elwynn does have real problems: the Defias are in the hills, kobolds are in the mines, and Hogger is in the woods. The vineyard feud is not one of them, and it is the one the neighbours talk about.",
+			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms. Joshua Maclure is the vintner and Pa Maclure holds the farm.",
+			"The rivalry runs on small grievances. Bernice Stonefield is sure that Billy Maclure took her necklace, and the pie that goes back across to him is sent with the wish that he chokes on it. Their children, Maybell Maclure and Tommy Joe Stonefield, have made other arrangements of their own.",
+			"Elwynn's real problems are elsewhere: the Defias are in the hills, kobolds are in the Fargodeep Mine almost due south of Goldshire between the two homesteads, and Hogger is in the woods. Over a dozen boars root about the vineyards.",
 		},
 		readMore = { "Wowpedia: Maclure Vineyards", "Wowpedia: Elwynn Forest" },
 	},
@@ -3161,13 +3167,13 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "The Foothill Caverns", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "The cave where Helcular made himself a lich after a mob had killed him.",
+		hook = "The cave where Helcular was killed before he could finish becoming a lich.",
 		lore = {
-			"The Foothill Caverns lie in Darrow Hill, and Helcular used them. He was working on turning himself into a lich, and he had a ritual site up in the hills until a human lynch mob found it and beat him to death.",
-			"Dying did not stop the project. He finished it in this cave instead, which is the sort of outcome a lynch mob does not plan for.",
-			"The Flame of Azel and the Flame of Veraz were kept down here too. Hillsbrad looks like farmland with a feud in it, and a good deal of what is actually going on is underground.",
+			"The Foothill Caverns open at Darrow Hill, in the ground where Hillsbrad runs up into the Alterac Mountains. Helcular used them as his lair while he worked on turning himself into a lich, and he was almost finished when a human lynch mob found his ritual site in the hills and beat him to death.",
+			"He never completed it. What he left behind is down here: the Flame of Azel and the Flame of Veraz, two of the three ceremonial pyres he built for his most powerful spell. The third, the Flame of Uzel, burns in a cave further north in the mountains.",
+			"Yetis took the lair afterwards, and cave yeti and ferocious yeti hold the tunnels now. The caverns are also one of the places Alterac granite comes out of the ground.",
 		},
-		readMore = { "Wowpedia: Foothill Caverns", "Wowpedia: Helcular", "Wowpedia: Lich" },
+		readMore = { "Wowpedia: Foothill Caverns", "Wowpedia: Helcular", "Wowpedia: Helcular's Revenge" },
 	},
 })
 
@@ -3284,7 +3290,7 @@ SubsOf("Tirisfal Glades", {
 		name = "The North Coast", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "Tirisfal's northern beach, with dead sea creatures rotting on it.",
 		lore = {
-			"The North Coast runs along the top edge of Tirisfal where the glades meet the Great Sea. Murlocs have most of it, along with whatever marine life is still moving.",
+			"The North Coast runs along the top edge of Tirisfal where the glades meet the Great Sea. Vile Fin murlocs have most of it, with their spawning grounds just off shore and tadpoles around the huts, and Deeb stands idle somewhere on the sand.",
 			"The plague reached the water. Since the Plague of Undeath went through this region the coast has gone dark and cold, and there are dead sea creatures lying along the tideline rotting.",
 			"That is the detail worth carrying away from Tirisfal. The Scourge did not only kill the people here; it got into the soil, the lakes and the sea, and the land has not recovered in the years since.",
 		},

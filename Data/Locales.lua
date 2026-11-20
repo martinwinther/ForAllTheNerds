@@ -329,11 +329,13 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "The Overlook Cliffs", faction = "Contested",
-		hook = "Cliffs above the eastern sea, over the one troll village that joined the Horde.",
+		hook = "Cliffs above the eastern sea, with the Hinterlands' river falling off them.",
 		lore = {
-			"The Overlook Cliffs drop away to the water at the Hinterlands' eastern edge, with Revantusk Village below them. The Revantusk are forest trolls who allied with Thrall, unusual on both counts.",
-			"Forest trolls have little love for orcs and the Amani tribes have little for anyone. The Revantusk judged the Vilebranch and the dwarves to be worse options, and the Horde's only foothold in this zone rests on that calculation.",
+			"The Overlook Cliffs are the drop from the mountainous Hinterlands to the eastern shoreline, and they are known for their height. The big river that runs through the zone ends here, pouring over the edge in a waterfall.",
+			"Revantusk Village sits at their foot and is the Horde's only foothold in this zone. The Revantusk are forest trolls who agreed a pact of friendship and mutual assistance with Thrall's Horde, and they are the last forest troll tribe serving it.",
+			"Saltwater snapjaws work the water below in numbers and break the lines of anyone fishing off the rocks, with Gammerita among them. Rin'ji keeps something hidden on a small deserted island off these cliffs.",
 		},
+		readMore = { "Wowpedia: Overlook Cliffs", "Wowpedia: Revantusk Village", "Wowpedia: Troll Compendium/Forest Troll Tribes" },
 	},
 	{
 		name = "Shaol'watha", faction = "Hostile",
@@ -383,11 +385,12 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Fungal Vale", faction = "Hostile",
-		hook = "A blighted vale in the west, where the ground itself has started producing.",
+		hook = "A blighted vale in the west, where the ground has gone purple under a haze.",
 		lore = {
-			"The Fungal Vale is one of the places in the Plaguelands where corruption has stopped being damage and become an ecology. What grows here was not planted and is not natural.",
-			"Pockets like this one get mapped carefully by the Argent Dawn. They mark where the blight is being actively maintained rather than merely lingering, and something maintaining it is a worse problem than something left over.",
+			"The Fungal Vale lies north of the Marris Stead and Crown Guard Tower, in the western part of the zone. The ground is a dark purple and a murky haze sits over it, and this is one of the places where the Plague of Undeath took the firmest hold.",
+			"The Scourge holds the vale. Eyeless watchers and death singers work it, with diseased flayers and an abomination among them, and scourge champions walk here for anyone sent to hunt them.",
 		},
+		readMore = { "Wowpedia: Fungal Vale", "Wowpedia: Plague of Undeath" },
 	},
 	{
 		name = "The Infectis Scar", faction = "Hostile",
@@ -488,11 +491,13 @@ SubsOf("Teldrassil", {
 SubsOf("Darkshore", {
 	{
 		name = "The Long Wash", faction = "Contested",
-		hook = "Darkshore's northern beach, where the sea keeps returning things.",
+		hook = "The short stretch of coast south of Auberdine, where the sea keeps returning things.",
 		lore = {
-			"The Long Wash takes whatever the water brings: wreckage, naga, and pieces of a civilisation that went under ten thousand years ago.",
-			"This coast was inland once. The Well of Eternity collapsed, Kalimdor broke apart, and the sea came in over night elf territory. What washes up on this beach is sometimes night elf work.",
+			"The Long Wash runs south from Auberdine to a point due west of Ameth'Aran, and in spite of the name it is the shortest stretch of coast in Darkshore. A wash is the part of a shore the waves work over.",
+			"The beach is gloomy under Darkshore's overcast and littered with debris and the carcasses of dead sea animals. Greymist murlocs have been coming ashore along it in greater numbers, and tide crawlers, reef crawlers and Darkshore threshers work the shallows.",
+			"This coast was dry land once. The Well of Eternity collapsed, Kalimdor broke apart and the sea came in over night elf ground, and the ruins it drowned are still standing inland at Ameth'Aran.",
 		},
+		readMore = { "Wowpedia: Long Wash", "Wowpedia: Darkshore" },
 	},
 	{
 		name = "Mist's Edge", faction = "Contested",
@@ -524,11 +529,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Howling Vale", faction = "Hostile",
-		hook = "A vale in northern Ashenvale with worgen in it, which should not be possible.",
+		hook = "A cave in northern Ashenvale named for wolf-men nobody can account for.",
 		lore = {
-			"Worgen were summoned into this world by the archmage Arugal, in Silverpine, on the other continent, as weapons against the Scourge. How they reached a vale in Ashenvale has not been answered by anyone.",
-			"The Howling Vale holds furbolgs too, and northern Ashenvale's furbolgs have been going the way the Gnarlpine and the Blackwood went. The night elves are fighting former allies here and are aware of it.",
+			"The Howling Vale lies in the north of Ashenvale, near the Felwood border. Terrowulf fleshrippers and shadow weavers hold it along with ghostpaw alphas, and the chilling calls they make at night are what gave the place its name.",
+			"The night elves have no account of where the wolf-men came from. The vale holds the ruined shrine of Mel'Thandris, with an ancient inscription praising Elune in front of it, and the Tome of Mel'Thandris kept at the shrine may say why they came.",
+			"Withered and crazed ancients walk through the vale, and elder shadowhorn stags still graze in it.",
 		},
+		readMore = { "Wowpedia: Howling Vale", "Wowpedia: The Howling Vale (quest)" },
 	},
 	{
 		name = "Greenpaw Village", faction = "Hostile",
@@ -643,9 +650,11 @@ SubsOf("Dustwallow Marsh", {
 		name = "The Quagmire", faction = "Contested",
 		hook = "The central bog, crossed by anyone travelling between Theramore and Brackenwall.",
 		lore = {
-			"The Quagmire is the middle of the marsh, and the route between the Alliance city and the Horde's ogre village runs through it. Both sides use the tracks and neither patrols them properly.",
-			"Dustwallow's wildlife is the main reason this zone stayed thinly settled. Crocolisks, spiders and worse make the marsh expensive to cross and pointless to garrison.",
+			"The Quagmire is the middle of the marsh, running from Lost Point in the west to Dustwallow Bay in the east and from Brackenwall Village in the north to the Dragonmurk in the south. Signposts for Theramore Isle, Brackenwall Village and the Barrens stand along the tracks through it.",
+			"The water is held by drywallow crocolisks and snappers, the ground by darkfang creepers and giant darkfang spiders, and swamp oozes move through both. The Rot and Ripscale are somewhere in it.",
+			"Tabetha keeps a farm out in the middle of all this, and Theramore deserters have scattered across the bog around her.",
 		},
+		readMore = { "Wowpedia: Quagmire", "Wowpedia: Dustwallow Marsh" },
 	},
 	{
 		name = "Dreadmurk Shore", faction = "Hostile",
@@ -778,11 +787,13 @@ SubsOf("Felwood", {
 SubsOf("Un'Goro Crater", {
 	{
 		name = "The Marshlands", faction = "Hostile",
-		hook = "Wetland in the crater's northwest, holding an ecology the desert outside cannot.",
+		hook = "The wet ground in the crater's south-east, and the first of it most people see.",
 		lore = {
-			"The Marshlands are wet ground inside a crater that sits in a desert belt. Whatever keeps Un'Goro's climate running keeps this corner of it waterlogged.",
-			"Pterrordax nest in the soft ground and devilsaurs come down to drink. Marshal's Refuge advises working the northwest in the morning and being out of it by the afternoon.",
+			"The Marshlands cover much of the south-east of the crater, and they are usually the first part of it anyone walks into: coming in anywhere else from Tanaris tends to end badly.",
+			"Raptors own the marsh. Ravasaur hunters and runners work it in numbers, venomhide ravasaurs are among them, and the Ravasaur Matriarch is somewhere in the wet ground. Bloodpetal threshers and lashers grow out of it and oozes move through it.",
+			"Torwa Pathfinder keeps to a mound in the middle of the marsh, which is as close to dry footing as this corner of the crater offers.",
 		},
+		readMore = { "Wowpedia: Marshlands", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Eastern Pylon", faction = "Contested",
@@ -1149,11 +1160,13 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "The Ivar Patch", faction = "Hostile",
-		hook = "A smallholding north of the Sepulcher, worked by whatever is left of the Ivars.",
+		hook = "A pumpkin patch north of the Sepulcher, with two Deathstalkers pinned down in it.",
 		lore = {
-			"The Ivar patch is one of Silverpine's smaller farms, and like most of them it has outlived the people who kept it.",
-			"Some of Tirisfal's Forsaken went back to their own land and carried on. Silverpine's did not, mostly because Silverpine's dead did not come back with their minds.",
+			"The Ivar Patch was a prosperous farm before the Scourge went through Lordaeron, and Ivar kept farmhands and servants on it. Neither he nor his household survived the Plague of Undeath, and Ivar the Foul is still here and no longer among the living.",
+			"Rane and Quinn Yorick were sent through northern Silverpine on a reconnaissance mission and were not heard from again. Both are still on the patch with Deathstalker Erland, Quinn hurt and in need of a potion, and Ivar waits in the barn for their guard to drop.",
+			"The fields around the farm are run by mottled worgs, and Gorefang is among them. A signpost at the patch still points the way to the Sepulcher, Pyrewood Village and Tirisfal.",
 		},
+		readMore = { "Wowpedia: Ivar Patch", "Wowpedia: Ivar the Foul", "Wowpedia: Lost Deathstalkers" },
 	},
 })
 
@@ -1162,9 +1175,10 @@ SubsOf("Westfall", {
 		name = "The Molsen Farm", faction = "Hostile",
 		hook = "An abandoned farmstead in the north, taken over by the Defias.",
 		lore = {
-			"The Molsens left like most of Westfall's tenants, and the Brotherhood moved into the buildings. Several of the zone's farms have gone the same way.",
-			"The farms were not destroyed. They were left standing and empty, and useful to an organisation that needed somewhere to be.",
+			"These lands were farmed by good folk once and the thieves drove them all off, the Molsens with the rest. The Defias Brotherhood moved into the buildings, and Gryan Stoutmantle's scouts report Defias trappers here and at Furlbrow's Pumpkin Farm.",
+			"The fields did not stop working when the people left. Harvest watchers and harvest golems still walk them, with the Foe Reaper 4000 among the machines, and sacks of oats are stacked where they were set down. Off the open ground, goretusks and fleshrippers have come in.",
 		},
+		readMore = { "Wowpedia: Molsen Farm", "Wowpedia: The People's Militia" },
 	},
 	{
 		name = "Jangolode Mine", faction = "Hostile",
@@ -1814,11 +1828,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "The High Wilderness", faction = "Hostile",
-		hook = "The high ground in the east, above the jungle canopy.",
+		hook = "A vast forest in the west of the zone, with the Gordunni ogres holding the ruins in it.",
 		lore = {
-			"The High Wilderness is the raised eastern edge of Feralas, below the Frayfeather highlands and above everything else.",
-			"Harpies work the heights and raid down off them. Across Kalimdor they show a preference for occupying night elf ruins that the night elves consider deliberate.",
+			"The High Wilderness stretches from the Forgotten Coast to the Verdantis River across western Feralas. Abandoned and ruined structures stand in the trees on ground that belonged to the night elves once, and the Gordunni ogres have taken that ground over. They do not take kindly to anyone who walks into it.",
+			"The forest itself is busy. Groddoc apes, ironfur bears, feral scar yetis and frayfeather hippogryphs work it, Old Grizzlegut and Antilus the Soarer are somewhere in the trees, and hippogryph eggs sit in nests on the ground.",
 		},
+		readMore = { "Wowpedia: High Wilderness", "Wowpedia: The High Wilderness (quest)" },
 	},
 	{
 		name = "Verdantis River", faction = "Contested",
@@ -1882,11 +1897,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "The Gaping Chasm", faction = "Hostile",
-		hook = "A silithid hive sunk into the southern sand.",
+		hook = "A Hazzali silithid hive sunk into the sand of the south-eastern desert.",
 		lore = {
-			"The chasm opens into a silithid colony in southern Tanaris. Silithid are insectoid and they are spreading across the south of this continent.",
-			"Their appearance in Tanaris, Un'Goro and the Barrens is one expansion rather than three infestations, and what it expands from is underneath Silithus.",
+			"The chasm opens into several large hive complexes in the south-east of Tanaris, and the silithid in them are Hazzali: wasps, swarmers, workers, stingers, tunnelers and sandreavers, with Haarka the Ravenous somewhere inside.",
+			"The Gadgetzan Water Co. sent its best surveyor out here and lost him. Junior Surveyor Scrimshank's gear is still lying in the chasm, and what worries Senior Surveyor Fizzledowser is that the bugs now appear to have infested two major regions of the desert rather than one.",
 		},
+		readMore = { "Wowpedia: Gaping Chasm", "Wowpedia: The Scrimshank Redemption" },
 	},
 })
 
@@ -1971,11 +1987,12 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "The Hidden Grove", faction = "Neutral",
-		hook = "A sheltered grove in the northern valley, kept quiet on purpose.",
+		hook = "A walled crater in the north-east of the zone, held by hostile owlbeasts.",
 		lore = {
-			"The grove sits away from Everlook's roads in the northern part of the zone, and it is tended rather than wild.",
-			"Winterspring's druids and the Timbermaw both have reasons to keep somewhere out of the way. The furbolgs of this tribe resisted the corruption that took their kin and are suspicious of everybody with cause.",
+			"The Hidden Grove is a forested crater in north-eastern Winterspring, ringed on all sides by high cliffs and close to inaccessible. One cave on the south-eastern face of the ridge leads in.",
+			"Owlbeasts hold it, and they are extremely hostile. The moontouched, the crazed and the berserk among them are thick on the ground, with chillwind ravagers, elder shardtooths and winterspring screechers alongside, and most adventurers do not attempt the grove at all.",
 		},
+		readMore = { "Wowpedia: Hidden Grove", "Wowpedia: Winterspring" },
 	},
 	{
 		name = "Ban'Thallow Barrow Den", faction = "Hostile",
