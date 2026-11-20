@@ -59,11 +59,12 @@ SubsOf("Westfall", {
 SubsOf("Duskwood", {
 	{
 		name = "Brightwood Grove", faction = "Hostile",
-		hook = "Woodland in Duskwood's northeast, thick with spiders and increasingly with worgen.",
+		hook = "Woodland in Duskwood's north-east, and the Nightbane pack has all of it.",
 		lore = {
-			"Brightwood keeps a name from before the darkness came. Nothing about the grove has earned it since.",
-			"The spiders here are large and the worgen are new. Duskwood's worgen population has grown without anybody establishing how they reached this far south from Silverpine, and the Night Watch has stopped asking and started patrolling.",
+			"Brightwood keeps a name from before the darkness came and nothing about the grove has earned it since. What holds it is worgen: Nightbane dark runners and shadow weavers in numbers, with Fenros and Lupos ranging through them and black ravagers hunting the same ground.",
+			"How Duskwood came to have so many worgen is not established. Nobody has accounted for their reaching this far south of Silverpine, and the Night Watch patrols the road past the grove rather than asking.",
 		},
+		readMore = { "Wowpedia: Brightwood Grove", "Wowpedia: Nightbane pack" },
 	},
 	{
 		name = "The Hushed Bank", faction = "Contested",
@@ -90,9 +91,9 @@ SubsOf("Redridge Mountains", {
 SubsOf("Hillsbrad Foothills", {
 	{
 		name = "Darrow Hill", faction = "Contested",
-		hook = "High ground east of Tarren Mill, valuable to whoever is holding it this week.",
+		hook = "High ground south-west of Tarren Mill, with yeti in the rock under it.",
 		lore = {
-			"Darrow Hill overlooks the eastern approach to Tarren Mill. In a war fought between two towns a short walk apart, a hill with a view gets taken, and it has changed hands more than once.",
+			"Darrow Hill rises south-west of Tarren Mill, and nobody is holding it. Starving mountain lions and vicious gray bears work the slopes, cave yeti and ferocious yeti come up out of the Foothill Caverns underneath, and the signpost at the foot of it points four ways: Durnholde Keep, Hillsbrad, Tarren Mill and Southshore. Alterac granite comes out of this ground.",
 			"The name belongs to the same Lordaeron family as Darrowmere Lake and the village of Darrowshire off in the Plaguelands. Very little that the Darrow name was attached to is still standing.",
 		},
 	},
@@ -148,8 +149,9 @@ SubsOf("Arathi Highlands", {
 		name = "Boulder'gor", faction = "Hostile",
 		hook = "A Boulderfist ogre camp in the west, part of the force taking Stromgarde apart.",
 		lore = {
-			"The Boulderfist are the largest ogre power in Arathi and one of three parties carving up Stromgarde. Camps like this one hold the open country between the city and Refuge Pointe.",
-			"Ogres east of the sea are the Old Horde's leavings, brought over by Gul'dan during the Second War and abandoned when it ended. They have had no leadership and no purpose since, and the Highlands have offered them neither.",
+			"The Boulderfist are one of the parties carving up Stromgarde, and camps like this one hold the open country rather than the city. Their camp shares its ground with highland thrashers and striders.",
+			"So do the Witherbark. Trolls of theirs stand about this camp alongside the ogres, and that is two of the three claimants on the Highlands keeping company instead of fighting over it.",
+			"Ogres east of the sea came through the Dark Portal with the Horde in the Second War and were left behind when it ended. They have had no leadership and no purpose since, and the Highlands have offered them neither.",
 		},
 	},
 })
@@ -302,11 +304,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Crystalvein Mine", faction = "Hostile",
-		hook = "A mine in the jungle interior, worked by troops who stopped taking orders.",
+		hook = "A mine on the western coast with a sign on it and basilisks inside.",
 		lore = {
-			"Crystalvein is held by Colonel Kurzen's forces. Kurzen was sent into Stranglethorn on Stormwind's business and something in the jungle took him, and his loyalists now hold a compound and several outlying positions like this one.",
-			"Soldiers who would not follow him broke away and camped on the northern road, where they are fighting their own former commander. Stormwind has sent nobody to resolve it.",
+			"Crystalvein is a worked mine down the western side of the vale, and there is a sign on it telling people to keep out. Nobody is enforcing that: the basilisks have it.",
+			"The shaft is held in numbers by ironjaw and thrashtail basilisks with Scale Belly somewhere at the back of it, and iron, silver and gold are still in the walls for anyone willing to get past them.",
 		},
+		readMore = { "Wowpedia: Crystalvein Mine", "Wowpedia: Stranglethorn Vale" },
 	},
 })
 
@@ -517,11 +520,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Cliffspring River", faction = "Contested",
-		hook = "A river coming down the northern cliffs, drawing everything that needs to drink.",
+		hook = "The river out of Cliffspring Falls, and what Darkshore drinks.",
 		lore = {
-			"Cliffspring River drops off Darkshore's high ground to the beach below, running fast and cold the whole way.",
-			"Fresh water reaching the sea is scarce on this coast, so the river pulls in wildlife and the wildlife pulls in everything else. Auberdine sends people up it for water and sends them in pairs.",
+			"The river rises at Cliffspring Falls up in the cliffs and runs down to the beach below, fast and cold the whole way. It is the principal source of drinking water for the region, which on a coast with little fresh water reaching the sea that makes it the most useful thing in Darkshore.",
+			"That also makes it a liability. The cave at the river's source has been corrupted and the Twilight's Hammer have been found inside it, so what Auberdine draws comes down past whatever they are doing up there.",
 		},
+		readMore = { "Wowpedia: Cliffspring River", "Wowpedia: Cliffspring Falls" },
 	},
 })
 
@@ -867,7 +871,7 @@ SubsOf("The Barrens", {
 		name = "Boulder Lode Mine", faction = "Hostile",
 		hook = "A Venture Company mine in the north, extracting without having asked.",
 		lore = {
-			"Boulder Lode is a goblin operation. The Venture Company works without any pretence of neutrality or restraint, and it has mines, camps and sludge works across the Barrens.",
+			"Boulder Lode is a goblin operation in the north of the zone, run by Boss Copperplug with enforcers and overseers under him and a company strongbox kept on site. The Venture Company works without any pretence of neutrality or restraint, and it has mines, camps and sludge works across the Barrens.",
 			"The Horde wants it stopped. Venture Co. has no central authority to pressure and no reputation to protect, and the same firm is doing the same thing in Mulgore, Stonetalon and Stranglethorn.",
 		},
 	},
@@ -1100,11 +1104,13 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Brightwater Lake", faction = "Contested",
-		hook = "A lake east of Brill with a name from before the plague.",
+		hook = "A lake east of Brill with a name from before the plague, and Vile Fin murlocs in it.",
 		lore = {
 			"Brightwater was named when the name fitted. It sits east of Brill, in what used to be some of the most productive country in Lordaeron.",
-			"The Forsaken have not renamed anything in Tirisfal. Deathknell is the exception, and it was named after rather than before.",
+			"The water is held by Vile Fin murlocs, muckdwellers and minor oracles of theirs through the shallows, with Deeb somewhere among them. The shore belongs to cursed darkhounds and vampiric duskbats, and the hungering dead and a shambling horror or two walk the bank.",
+			"Gunther Arcanus keeps to the lakeside with his books, well above the level of anything else out here, which raises the question of what a mage of that standing is doing on a murloc lake.",
 		},
+		readMore = { "Wowpedia: Brightwater Lake", "Wowpedia: Gunther Arcanus" },
 	},
 	{
 		name = "Cold Hearth Manor", faction = "Hostile",
@@ -1118,11 +1124,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Crusader's Outpost", faction = "Hostile",
-		hook = "A Scarlet Crusade post on the eastern road, watching the Forsaken.",
+		hook = "The Crusade's westernmost ground in Tirisfal, a long way from the Monastery.",
 		lore = {
-			"The Crusade holds a string of positions on the eastern side of Tirisfal, between Brill and the Monastery. This is one of them.",
-			"They treat anybody possibly infected as already lost, which in practice means anybody at all. Refugees have been executed at posts like this one on suspicion alone.",
+			"The Crusade does not only hold the east. Scarlet warriors and missionaries work the western glades out by the Solliden Farmstead. That is as far west as the order reaches anywhere in Lordaeron, and a long way from anything that could reinforce them.",
+			"They treat anybody possibly infected as already lost, which in practice means anybody at all. A post this isolated, surrounded by Forsaken ground and by the Scourge, has nothing to gain from making that distinction carefully.",
 		},
+		readMore = { "Wowpedia: Scarlet Crusade", "Wowpedia: Tirisfal Glades" },
 	},
 	{
 		name = "Scarlet Watch Post", faction = "Hostile",
@@ -1298,11 +1305,13 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Dawning Wood Catacombs", faction = "Hostile",
-		hook = "Catacombs in the eastern woods, which in Duskwood is a specific kind of problem.",
+		hook = "The catacombs under Raven Hill Cemetery, holding the county's worst dead.",
 		lore = {
-			"The catacombs are an old burial site in the eastern half of the forest, well away from Darkshire and well outside what the Night Watch can cover.",
+			"The catacombs run beneath Raven Hill Cemetery, out at the western end of the forest and well away from Darkshire. What is down there is the most powerful undead in the region, in numbers that overwhelm anyone who goes in alone.",
+			"There are two ways in. The eastern entrance opens into a den of ghouls, the worst and most diseased of them, and the western one goes into the halls.",
 			"Duskwood's dead do not reliably stay buried, and the county has a great many places like this one. The town's funeral customs have changed accordingly.",
 		},
+		readMore = { "Wowpedia: Dawning Wood Catacombs", "Wowpedia: Raven Hill Cemetery" },
 	},
 })
 
@@ -1494,7 +1503,8 @@ SubsOf("Western Plaguelands", {
 		hook = "The lake around Caer Darrow, with a school of necromancy on the island in it.",
 		lore = {
 			"Darrowmere separates Caer Darrow from the shore. The island held the Barov family's estate, a wealthy and entirely respectable holding before Kel'Thuzad took an interest in it.",
-			"He promised the family immortality, murdered them for it, and turned the crypts under the manor into Scholomance. The Barovs' surviving relatives on both sides of the faction divide are still litigating the deeds.",
+			"He talked them into it rather than taking it. Kel'Thuzad promised immortality to anyone who would serve the Lich King, the Barovs believed him and handed over the keep and its crypts, and the cultists killed them afterwards. The crypts became Scholomance, and the family's ghosts are still on the island.",
+			"The lake carries what is left of the rest of them. Caer Darrow's citizens, guardsmen and horsemen stand about the water as spirits, and the Barovs' surviving relatives on both sides of the faction divide are still litigating the deeds.",
 		},
 	},
 })
@@ -1927,7 +1937,8 @@ SubsOf("Tanaris", {
 		hook = "A fallen column in the middle of the desert, used as a landmark.",
 		lore = {
 			"The pillar stands, or rather lies, in central Tanaris, and travellers navigate by it because there is very little else to navigate by.",
-			"Who raised it is not established. Tanaris holds three sets of unattributed ruins and a sealed titan gate, and the Explorers' League would rather be working on the gate.",
+			"Who raised it is not a mystery. The trolls held this land long before anyone else and left ruins across the whole desert, and the gold ornaments buried through them, the gahz'ridian, were modelled after Gahz'rilla, a hydra they worshipped as a god.",
+			"Marvon Rivetseeker is the one working on it. He is a goblin who calls himself a scientist and a treasure hunter in the same breath, he left Ratchet to study these ruins, and he has a camp out by the pillar with the desert's scorpids and hyenas for company.",
 		},
 	},
 	{

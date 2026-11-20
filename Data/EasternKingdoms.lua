@@ -1160,7 +1160,8 @@ SubsOf("Alterac Mountains", {
 		name = "Crushridge Hold", parent = "Alterac Mountains", faction = "Hostile",
 		hook = "An ogre hold in the eastern mountains, squatting in Alterac's abandoned stonework.",
 		lore = {
-			"The Crushridge ogres moved into the vacuum left when Alterac was dissolved, and they have been fighting the Syndicate for the hills ever since.",
+			"The Crushridge ogres moved into the vacuum left when Alterac was dissolved, and they have been fighting the Syndicate for the hills ever since. Lo'Grosh is the one of them worth knowing about, and the hold's maulers and mages are harder going than ogres usually are.",
+			"The hill is also a mine, and iron, mithril, gold, silver and truesilver all come out of this ground in quantity, and a goblin named Rizz Loosebolt sells engineering supplies in the middle of an ogre hold rather than miss the trade.",
 			"Ogres taking over a dead kingdom's buildings is a recurring image in the Eastern Kingdoms. They rarely maintain the plumbing.",
 		},
 	},
@@ -1185,11 +1186,13 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Chillwind Point", parent = "Alterac Mountains", faction = "Contested",
-		hook = "A high pass on the Plaguelands border, watched by whoever can spare the men.",
+		hook = "A small rise on the eastern edge of the mountains, with a troll ruin on it.",
 		lore = {
-			"Chillwind Point sits where the Alterac Mountains meet the Western Plaguelands: the obvious place to watch for Scourge coming west.",
-			"It changes hands and garrisons. The Alliance keeps trying to hold the line here because the alternative is the Scourge in Hillsbrad.",
+			"Chillwind Point is a low rise at the far eastern edge of the Alterac Mountains, and what stands on it is a small ancient troll ruin. The name comes from the cold winds that come down the nearby ravine out of the Western Plaguelands to the north. This pass was part of Lordaeron once.",
+			"Bath'rah the Windwatcher lives up here, a jungle troll who is friendly to anyone who climbs it. The rest of this region does not offer that.",
+			"It is not the Alliance position people take it for. Chillwind Camp, the outpost holding the road into the Plaguelands, is a separate place to the north and the confusion is easily made.",
 		},
+		readMore = { "Wowpedia: Chillwind Point", "Wowpedia: Bath'rah the Windwatcher", "Wowpedia: Chillwind Camp" },
 	},
 	{
 		name = "Slaughter Hollow", parent = "Alterac Mountains", faction = "Hostile",
@@ -1583,7 +1586,7 @@ SubsOf("Badlands", {
 		name = "Camp Kosh", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp on the northern road.",
 		lore = {
-			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how.",
+			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
 			"These are leftovers of the Second War Horde, like most ogres east of the sea, with no leadership and no plan beyond the next caravan.",
 		},
 	},
@@ -1591,7 +1594,7 @@ SubsOf("Badlands", {
 		name = "Camp Cagg", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp in the western Badlands, close enough to Kargath to be a Horde problem.",
 		lore = {
-			"Camp Cagg sits close to the Horde's outpost. Clearing it is Kargath's standing chore.",
+			"Camp Cagg sits close to the Horde's outpost in the west of the zone, and clearing it is Kargath's standing chore. Dustbelcher maulers and ogre mages hold it under Boss Tho'grun, with a lord among them and greater rock elementals walking the same ground.",
 			"The ogres have no strategic goal. They are simply in the way and difficult to move.",
 		},
 	},
@@ -2202,8 +2205,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "Corin's Crossing", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A crossroads market town, now a Scourge staging post.",
 		lore = {
-			"Corin's Crossing was a trading village at the junction of the zone's roads. The Scourge holds it and uses it as the hub it always was.",
-			"Its position means almost everyone travelling the Eastern Plaguelands has to deal with it.",
+			"Corin's Crossing was a trading village at the junction of the zone's roads, and the signposts still standing in it point five ways: Quel'Thalas, Tyr's Hand, Darrowshire, Stratholme and Andorhal. Its position means almost everyone travelling the Eastern Plaguelands has to deal with it.",
+			"The Scourge holds it and uses it as the hub it always was. Hate shriekers and gibbering ghouls work the streets with stitched horrors among them, and the Cult of the Damned is here in person: vile tutors and dark summoners, teaching and raising in the open.",
 		},
 	},
 	{
@@ -2298,7 +2301,7 @@ SubsOf("Deadwind Pass", {
 		name = "Deadwind Ravine", parent = "Deadwind Pass", faction = "Contested",
 		hook = "The canyon floor, with an ogre camp and a very long silence.",
 		lore = {
-			"The ravine carries the only road through the pass. Deadwind ogres have camped along it, the closest thing this zone has to a population.",
+			"The ravine is a craggy cleft running south through the mountains toward Karazhan, and the western road runs through it on the upper level, ending at the southern bridge below the tower. Deadwind ogres have camped along it, the closest thing this zone has to a population: brutes and maulers, with warlocks and an ogre mage among them.",
 			"There is no inn, no flight path and no settlement in Deadwind Pass. Travellers go through without stopping. That is the pass's entire character.",
 		},
 	},

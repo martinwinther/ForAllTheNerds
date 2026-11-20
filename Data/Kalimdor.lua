@@ -134,8 +134,9 @@ SubsOf("Mulgore", {
 		name = "Camp Narache", faction = "Horde", levels = "1-6",
 		hook = "A starting camp on Red Cloud Mesa, with the Bristleback quilboar already a problem.",
 		lore = {
-			"Camp Narache is the first village a young tauren knows. It is small and traditional, and under constant low-level pressure from the Bristleback quilboar in the hills.",
-			"Quilboar and tauren have been fighting over Mulgore's plains for a very long time, and the quilboar were here first.",
+			"Camp Narache is the first village a young tauren knows, a small and traditional place under Chief Hawkwind on Red Cloud Mesa. Plainstriders and mountain cougars cover the ground around it and Palemane gnolls work the edges of it.",
+			"The pressure comes from the east. The Bristleback quilboar of Brambleblade Ravine are encroaching on tribal land, ambushing hunting parties and stealing from the village after dark, and they train the battleboars that come at it by day. Their warchief has gone further than raiding: the plans found on them are for an extended siege of the camp.",
+			"Quilboar and tauren have been fighting over Mulgore's plains for a very long time, and the first thing any tauren is asked to do here is prove they can fight.",
 		},
 	},
 	{
@@ -401,11 +402,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Cliffspring Falls", parent = "Darkshore", faction = "Contested",
-		hook = "A waterfall in the northern cliffs, with a cave behind it.",
+		hook = "The waterfall the Cliffspring River comes out of, and the region drinks from.",
 		lore = {
-			"The falls are a landmark on Darkshore's northern stretch, and the cave system behind them has acquired the usual tenants.",
-			"Darkshore's caves tend to connect further than they look, and finding that out has gone badly more than once.",
+			"The falls are the origin of the Cliffspring River and the principal source of drinking water for the whole of Darkshore, and that makes the cave behind them matter more than a cave usually would.",
+			"That cave has been corrupted. Something is reaching the spring at its source, and the argument locally is whether it is seeping across from Felwood or being done deliberately: members of the Twilight's Hammer have been found deep inside, at the water's source, which does not settle it but does not help their case either.",
 		},
+		readMore = { "Wowpedia: Cliffspring Falls", "Wowpedia: Twilight's Hammer", "Wowpedia: Darkshore" },
 	},
 	{
 		name = "Remtravel's Excavation", parent = "Darkshore", faction = "Alliance",
@@ -671,11 +673,12 @@ SubsOf("Stonetalon Mountains", {
 	},
 	{
 		name = "Boulderslide Ravine", parent = "Stonetalon Mountains", faction = "Hostile",
-		hook = "A ravine full of kobolds and worse, under the southern slopes.",
+		hook = "A ravine in the far south, with rock keepers above and a kobold mine below.",
 		lore = {
-			"Boulderslide Ravine is a cave and ravine complex in the southern mountains, infested and avoided.",
-			"Stonetalon's caves connect further than they should, and the Venture Company's digging has made that worse.",
+			"The ravine runs through the southern end of Stonetalon and the cave at the end of it is Boulderslide Cavern, where the kobolds are frantically mining a rare crystal called resonite. Resonite is lying loose through the ravine as well.",
+			"Above the cave the ground is held by Gogger rock keepers, geomancers and a stonepounder: a telling set of neighbours given what is asleep in a resonite cask down in the cavern and what its name is.",
 		},
+		readMore = { "Wowpedia: Boulderslide Ravine", "Wowpedia: Boulderslide Cavern", "Wowpedia: Resonite Crystal" },
 	},
 	{
 		name = "Malaka'jin", parent = "Stonetalon Mountains", faction = "Horde",
@@ -1172,11 +1175,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Darkmist Cavern", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "A spider cave in the eastern marsh.",
+		hook = "A small mine in the north-west, overrun by very large spiders.",
 		lore = {
-			"Darkmist Cavern holds a large spider population, and Dustwallow's spiders run to size.",
-			"The marsh's caves are numerous and most of them hold something worth avoiding.",
+			"Darkmist Cavern is a mine in the north-west of the marsh that has been taken over completely by the Darkmist spiders, and Dustwallow's spiders run to size. Nobody out here agrees whether the spiders are named after the cavern or the cavern after the spiders.",
+			"There are ruins of small houses outside the mouth of it, so somebody was living here before the tenants changed.",
+			"What brings anyone in is soup. \"Swamp Eye\" Jarl wants unpopped Darkmist eyes by the score, on the grounds that most creatures only have two eyes and spiders have lots, and that the juice is smooth and salty.",
 		},
+		readMore = { "Wowpedia: Darkmist Cavern", "Wowpedia: Jarl Needs Eyes" },
 	},
 })
 
@@ -2420,7 +2425,7 @@ SubsOf("Tirisfal Glades", {
 		name = "Crusader Outpost", parent = "Tirisfal Glades", faction = "Hostile",
 		hook = "A Scarlet Crusade watchtower over the glades road, covering the Monastery's flank.",
 		lore = {
-			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades and can come down on the flank of anyone moving against the Scarlet Monastery.",
+			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades south of the hills and can come down on the flank of anyone moving against the Scarlet Monastery. Friars and zealots hold the ground under him, with darkhounds and duskbats through the scrub around it.",
 			"The Scarlet Crusade began as the remnant of the Silver Hand and the Church, the people who stayed when Lordaeron fell. What they became is a movement that cannot tell the difference between the undead and the living any more, and kills both.",
 			"They are not wrong that the Forsaken are walking corpses. They are wrong about almost everything that follows from it, and the Monastery behind this tower is where that went furthest.",
 		},
@@ -2841,7 +2846,7 @@ SubsOf("Durotar", {
 		hook = "The beach the Darkspear trolls came ashore on.",
 		lore = {
 			"This is where the Darkspear landed. They had been driven off the Echo Isles and they came onto this strand with what they could carry; Sen'jin Village, a few yards inland, is where they gathered afterwards.",
-			"Thrall found them on a different island altogether, besieged by murlocs and a sea witch, and took them in. Vol'jin's people have been Horde ever since, and they are the reason the Horde has shadow hunters and a claim on anything south of Durotar.",
+			"Thrall found them on a different island altogether, besieged by murlocs and a sea witch, and took them in. Vol'jin's people have been Horde ever since, and they are the reason the Horde has shadow hunters at all.",
 			"A beach is a thin place to start a nation from. The orcs did the same thing a short way north of here.",
 		},
 		readMore = { "Wowpedia: Darkspear Strand", "Wowpedia: Darkspear tribe", "Wowpedia: Vol'jin", "Wowpedia: Sen'jin Village" },
