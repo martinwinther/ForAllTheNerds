@@ -133,8 +133,8 @@ SubsOf("Elwynn Forest", {
 		name = "Ridgepoint Tower", parent = "Elwynn Forest", faction = "Alliance",
 		hook = "A watchtower on the Redridge border, built to warn the kingdom about orcs coming down the pass.",
 		lore = {
-			"The eastern border of Elwynn is the line where the forest meets the Redridge Mountains, and Redridge has a Blackrock orc problem. Ridgepoint is one of a chain of towers meant to see trouble coming and get word to Stormwind before it arrives.",
-			"The chain is undermanned. Most of the towers hold a handful of guards and a signal fire, and the kingdom is relying on the orcs of Redridge being too disorganised to push west in force.",
+			"The eastern border of Elwynn is the line where the forest meets the Redridge Mountains, and Ridgepoint is one of the Stormwind Guard's scout towers along it, held properly rather than nominally.",
+			"It is not only watching for orcs. The gnolls and the Blackrock come from Redridge in the east, the undead come up out of Duskwood to the south, and the Defias have camps close enough that the tower counts them as a third direction.",
 		},
 	},
 	{
@@ -737,9 +737,9 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Render's Camp", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "A Blackrock orc camp in the hills, openly flying the Dark Horde's colours.",
+		hook = "A Blackrock camp in Redridge's north-west, on the way out to the Burning Steppes.",
 		lore = {
-			"The camp is one of several Blackrock positions in Redridge's high ground, and the orcs here are not hiding. They are holding ground and waiting on orders.",
+			"The camp sits in the north-western hills near the entrance to the Burning Steppes, and what is in it is not a raiding party. Blackrock renegades and outrunners with summoners, shadowcasters, trackers and champions behind them, and Kazon somewhere among the tents.",
 			"The Dark Horde's interest in Redridge is the road. Through Redridge lies Elwynn, and through Elwynn lies Stormwind.",
 		},
 	},
@@ -1130,6 +1130,7 @@ Zone{
 SubsOf("Alterac Mountains", {
 	{
 		name = "Dalaran Crater", parent = "Alterac Mountains", faction = "Hostile",
+		aliases = { "Dalaran", "Old Dalaran Ruins" },
 		hook = "What is left of the Kirin Tor's city after a demon lord stepped on it.",
 		lore = {
 			"Dalaran was the magocracy, home of the Kirin Tor and the finest centre of arcane learning in the world. Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied in its Violet Citadel, and most of the archmages whose decisions shaped the last two wars with them.",
@@ -1432,18 +1433,19 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Ruins of Zul'Kunda", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Bloodscalp troll city on the northern coast, built on Gurubashi stonework.",
+		hook = "The Bloodscalp capital on the northern coast, built on Gurubashi stonework.",
 		lore = {
-			"Zul'Kunda is one of the old Gurubashi cities, now occupied by the Bloodscalp tribe. The trolls living in it are the empire's descendants squatting in their own ancestors' architecture.",
-			"The Bloodscalp are the northern power in the jungle and they are at war with the Skullsplitter in the south, and that feud has done more to keep the trolls off the roads than any Alliance patrol.",
+			"Zul'Kunda is one of the old Gurubashi cities and the Bloodscalp tribe has it, so they are the empire's descendants squatting in their own ancestors' architecture. Their headhunters work this coast and the ruins of Zuuldaia along it.",
+			"Gan'zulah is the chief and Nezzliok is his witchdoctor, and both of them sit deep inside the ruins. Between them they know what happened to a Darkspear child the tribe took, and that is why Grom'gol keeps a cauldron and a standing interest in their heads.",
+			"The Bloodscalp are the northern power in the jungle and the Skullsplitter are the southern one, and the two are hereditary enemies. The feud is older than any human kingdom and neither tribe will say a useful word about the other without being paid in the other's skulls.",
 		},
 	},
 	{
 		name = "Ruins of Zul'Mamwe", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Skullsplitter city in the southern jungle, half swallowed by the trees.",
+		hook = "The Skullsplitter seat, in the hills south of the Mosh'Ogg mound.",
 		lore = {
-			"Zul'Mamwe is the Skullsplitter tribe's seat, another reoccupied Gurubashi ruin in the south of the vale.",
-			"The Skullsplitter are the Bloodscalp's mirror image and their hereditary enemy. The feud is older than any human kingdom.",
+			"Zul'Mamwe is another reoccupied Gurubashi ruin, south of the Mosh'Ogg ogre mound and ringed by mountains on every side but the north. Ana'thek is the chieftain, cruel enough that the Bloodscalp chief uses the word, and the tribe keeps a pile of trophy skulls here as it does at Balia'mah and Ziata'jai.",
+			"The Skullsplitter are the Bloodscalp's mirror image and their hereditary enemy. Those skulls are currency in that quarrel: a Bloodscalp will trade what he knows for three of them, so that his spirit has slaves in the Nether.",
 		},
 	},
 	{
@@ -1823,10 +1825,10 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Plaguemist Ravine", parent = "The Hinterlands", faction = "Contested",
-		hook = "A ravine where the Plaguelands' corruption is leaking over the border.",
+		hook = "A pass out of the Hinterlands' north-west, with the blight coming down it.",
 		lore = {
-			"The ravine sits on the Hinterlands' northwestern edge, nearest the Plaguelands, and the blight has started reaching into it.",
-			"The Wildhammers are watching it closely. What happened to Lordaeron is not something they intend to let spread into their forest.",
+			"The ravine is a pathway rather than a place, running north out of the Hinterlands towards Caer Darrow, and the entrance to it is in the woods west of Quel'Danil Lodge on the far side of the mountain.",
+			"Nothing lives in it. A silvermane or an owlbeast wanders through and that is the whole population, which is unusual enough in this forest to be the point: the mist coming down the pass is plague, and it is the one stretch of the Hinterlands that smells like the Plaguelands rather than like itself.",
 		},
 	},
 	{
@@ -2189,14 +2191,6 @@ SubsOf("Eastern Plaguelands", {
 		readMore = { "Wowpedia: Plaguewood", "Wowpedia: The Dread Citadel - Naxxramas" },
 	},
 	{
-		name = "Ruins of Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A village destroyed in a battle its dead are still fighting.",
-		lore = {
-			"Darrowshire was a village that made a stand against the Scourge and lost. The battle was a massacre on both sides, and it has not stopped.",
-			"The dead of Darrowshire are still in the village, still fighting the same fight. Laying them to rest is one of the Argent Dawn's long-standing concerns, and it requires knowing exactly who did what on the day.",
-		},
-	},
-	{
 		name = "Tyr's Hand", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "An intact cathedral town held top to bottom by the Scarlet Crusade.",
 		lore = {
@@ -2363,10 +2357,11 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Rise of the Defiler", parent = "Blasted Lands", faction = "Hostile",
-		hook = "A rise held by the demon Razelikh and his ogre servants.",
+		hook = "Craggy high ground in the middle of the Blasted Lands, held by a demon lord.",
 		lore = {
-			"Razelikh the Defiler is a demon who has carved out his own territory here, served by the Dreadmaul ogres who worship him.",
-			"The Blasted Lands have become a place where individual demons set up principalities. That is what becomes of a region nobody has the resources to hold.",
+			"Razelikh the Defiler keeps these mountains, and Razelikh is not his name. The name is Rakh'likh, and getting hold of it is a piece of work in itself.",
+			"He does not hold the Blasted Lands alone. Three subordinates, Sevine and Allistarj and Grol, each wear a third of an amulet he made, attuned to its wearer's lifeforce, and while they stay inside the Blasted Lands none of the three can be killed at all. The same amulet, whole, is what summons him.",
+			"The cost of that arrangement is paid by other people. There are eighteen stones scattered across the zone holding men bound as servants to the four of them, in what one of the bound describes as eternal torture, and they have to be broken one at a time.",
 		},
 	},
 	{
@@ -2425,9 +2420,11 @@ SubsOf("Blasted Lands", {
 SubsOf("Eastern Plaguelands", {
 	{
 		name = "Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A ruined village whose dead still haunt the Eastern Plaguelands.",
+		aliases = { "Ruins of Darrowshire" },
+		hook = "A village destroyed in a battle its dead are still fighting.",
 		lore = {
-			"Darrowshire lies in the southern hills of the Eastern Plaguelands. The Scourge destroyed the village during the Third War, and many of its defenders now serve as undead elsewhere in the region.",
+			"Darrowshire lies in the southern hills of the Eastern Plaguelands. The village made a stand against the Scourge during the Third War and lost, the battle was a massacre on both sides, and many of its defenders now serve as undead elsewhere in the region.",
+			"It has not stopped. The dead of Darrowshire are still in the village fighting the same fight, and laying them to rest is one of the Argent Dawn's long-standing concerns. Doing it requires knowing exactly who did what on the day, which means the heroes, the defenders, the villains and the marauders all have to be accounted for separately.",
 			"Pamela Redpath remains among the ruins. Her surviving family is searching for news of her.",
 		},
 		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Sister Pamela", "Wowpedia: Defenders of Darrowshire" },
@@ -2482,16 +2479,6 @@ SubsOf("Alterac Mountains", {
 			"So two outfits of thieves hold the same mountains, and the older one is the one with the pedigree.",
 		},
 		readMore = { "Wowpedia: Ravenholdt", "Wowpedia: Syndicate", "Wowpedia: Alterac" },
-	},
-	{
-		name = "Old Dalaran Ruins", parent = "Alterac Mountains", faction = "Contested",
-		hook = "What is left outside the dome, where the magocracy used to stand.",
-		lore = {
-			"Dalaran was the greatest school of arcane learning in the world, and Archimonde destroyed it in an afternoon at the end of the Third War. He broke the city to get at what the Kirin Tor had been keeping and then marched on Hyjal, where he died.",
-			"The surviving magi raised a dome over the worst of it. These ruins are the ground outside that, left uncovered.",
-			"The city brought a great deal of this on itself. Kel'Thuzad was one of its own, the Cult of the Damned was founded by a member of the Council of Six, and the Kirin Tor's habit of studying things it should have destroyed is the thread running through all of it.",
-		},
-		readMore = { "Wowpedia: Dalaran", "Wowpedia: Archimonde", "Wowpedia: Kel'Thuzad" },
 	},
 })
 
@@ -2732,8 +2719,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "Northdale", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A destroyed town where a paladin gave up the Silver Hand.",
 		lore = {
-			"Northdale lies north of Light's Hope Chapel, below the way into Quel'Thalas, and it is wreckage. Banshees hold it, with eyeless watchers that cannot be seen, and the lake beside it has corrupted elementals in it.",
-			"Taelan Fordring renounced the Order of the Silver Hand here and went to the Scarlet Crusade. He was Tirion Fordring's son, and Tirion had already been stripped of his own title and exiled for sparing the life of an orc.",
+			"Northdale lies in the north-east of the Plaguelands, north of Light's Hope Chapel and short of the way into Quel'Thalas, and it is wreckage. Banshees hold it, with eyeless watchers that cannot be seen, and the lake beside it has corrupted elementals in it.",
+			"The Order of the Silver Hand was decimated when Uther was killed, and Taelan Fordring was pushed back to this hamlet and made his last stand in it. His own account of the moment is that he wondered whether any of the Silver Hand were left alive and whether it mattered, and then threw down its standard and renounced everything he had known. The symbol is still on the ground where he dropped it, and his father has asked for it back. Tirion Fordring had already been stripped of his own title and exiled for sparing the life of an orc.",
 			"So a father disgraced for showing mercy, and a son who decided mercy was the problem. The Scarlet Crusade is full of people who made that calculation while looking at ground like this.",
 		},
 		readMore = { "Wowpedia: Northdale", "Wowpedia: Taelan Fordring", "Wowpedia: Tirion Fordring", "Wowpedia: Scarlet Crusade" },
@@ -3107,7 +3094,7 @@ SubsOf("Redridge Mountains", {
 		lore = {
 			"Render's Rock is a large cave near where Redridge meets the Burning Steppes, and it is full of Blackrock orcs.",
 			"\"Render\" is Rend Blackhand, son of Blackhand, who was warchief of the Old Horde before Orgrim Doomhammer killed him. Rend never accepted the Second War's end, holds Blackrock Spire with his brother's old clan, and calls his people the true Horde.",
-			"Corporal Keeshan is in that cave too, in a bad way, and needs getting back to Lakeshire. Redridge's problems all come down the pass from this direction.",
+			"Corporal Keeshan is in that cave too. He was taken prisoner after the fighting at Stonewatch Keep and dragged up here, and he needs walking back down to Lakeshire rather than carried. Redridge's problems all come down the pass from this direction.",
 		},
 		readMore = { "Wowpedia: Render's Rock", "Wowpedia: Rend Blackhand", "Wowpedia: Dark Horde" },
 	},

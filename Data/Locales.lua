@@ -185,10 +185,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Saltspray Glen", faction = "Hostile",
-		hook = "A northern stretch of coast given over to murlocs.",
+		hook = "A raptor nesting ground in the north-west of the Wetlands.",
 		lore = {
-			"Saltspray Glen is murloc ground on the Wetlands' northern shore. They came up out of the sea, they built, and they have not been moved since.",
-			"Murlocs raid along this coast and retreat into the water, which makes them impossible to finish and easy enough to survive. The dwarves have learned to live beside them, in the sense that they have stopped counting.",
+			"Saltspray Glen sits in the north-western Wetlands with Bluegill Marsh below it, Ironbeard's Tomb to the east and Baradin Bay on two sides. The glen is named for how readily the bay throws seawater inland across it when the wind is up.",
+			"What nests here is raptors. Highland razormaws, scytheclaws and lashtails, in the numbers this zone manages everywhere it has standing water, with Mosshide gnolls and crocolisks working the same ground and Gnawbone somewhere in it.",
 		},
 	},
 })
@@ -436,10 +436,10 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Rocktusk Farm", faction = "Hostile",
-		hook = "A quilboar farm in western Durotar, worked by people who were here first.",
+		hook = "The Horde's pig farm, just down the western road out of Orgrimmar.",
 		lore = {
-			"The Razormane farm this ground. Orcs did not expect farming from quilboar, and the surprise is a fair part of why the two have never come to an arrangement. Durotar was not empty land waiting to be settled.",
-			"Quilboar trace themselves to Agamaggan, a boar demigod killed fighting the Burning Legion in the War of the Ancients. Their warrens, their thorns and their claim on this coast all start there.",
+			"Rocktusk Farm is a pen of swine a short way down the road west of Orgrimmar's gates, with mottled boars in the scrub around it and a couple of benches to sit on. It feeds the city, and in Durotar that is not a small job: there is no farmland in this zone worth the name.",
+			"The quilboar are not here, whatever the name suggests. The Razormane hold their own ground in the middle of the zone, battleguards and dustrunners and scouts, a long way south of the pigs.",
 		},
 	},
 	{
@@ -926,10 +926,11 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Ortell's Hideout", faction = "Hostile",
-		hook = "A Twilight Hammer hideout in the rocks, run by a cultist with a grievance.",
+		hook = "A cave in the mountains where a Twilight's Hammer deserter is hiding.",
 		lore = {
-			"The Twilight Hammer keep camps and hideouts across Silithus, and their aim is stated rather than suspected: they want C'Thun free. They worship the Old Gods and hold that this world should end.",
-			"Places like this one house the people doing the quiet work. The Cenarion Circle has been rolling up cultists in this desert for years without getting to the bottom of the organisation.",
+			"Ortell left the Twilight's Hammer and lives in the mountains south of Southwind Village as a hermit. His own account of the decision is that the cult is not kind to those who leave its ranks and that they hunt him to this day like some sort of beast, so an enemy of theirs is a friend of his. Anyone who finds the cave is asked at once who they are and whether they were followed.",
+			"What he can do is read the cult's writing. The Twilight Lexicon is the book their scribes encode with, kept in three chapters in three places by officers called Twilight Keepers, and with all three in hand Ortell will work through a tablet out loud, swapping every third word against the second chapter and every other word against the first, and then wonder whether he has it backwards.",
+			"He also wants their post. The cult circulates an encoded bulletin called the True Believer once a month, and it will say whether they are still looking for him or have given up. Anything else useful in it he is willing to share.",
 		},
 	},
 })
@@ -1280,10 +1281,11 @@ SubsOf("Loch Modan", {
 SubsOf("Redridge Mountains", {
 	{
 		name = "Rethban Caverns", faction = "Hostile",
-		hook = "A mine in the western cliffs, worked for ore and infested with kobolds.",
+		hook = "A cavern system in the foothills north of Lakeshire, full of gnolls.",
 		lore = {
-			"Rethban was dug for the red ore the mountains are named for. Kobolds have the run of it now, the standard fate of an abandoned shaft anywhere near Elwynn.",
-			"Lakeshire would like it back. Lakeshire would like a great many things back, and is currently holding a bridge with volunteers.",
+			"Rethban ore is named after the man who first found it, Bart Rethban. It smelts weaker than iron, but the ore has a dark flat colour that scribes mix into their dyes, and the Northshire library buys it by the load.",
+			"Redridge gnolls live in the caverns now and their drudgers are gathering the ore themselves. Lakeshire's foreman will tell anyone asking for a delivery that the town is busy fortifying itself and repairing orc damage, so they can go down and get it themselves.",
+			"Somebody has made a game of the place. The Rethban Gauntlet, which is Yorus Barleybrew's, is to drink a Barleybrew Scalder, go in as far as the first fork and come back out inside the hour, through whole heaps of gnolls, without dying.",
 		},
 	},
 	{
@@ -1390,11 +1392,13 @@ SubsOf("Alterac Mountains", {
 
 SubsOf("Arathi Highlands", {
 	{
-		name = "O'Breen's Encampment", faction = "Hostile",
-		hook = "A Syndicate camp on the southern road through the Highlands.",
+		name = "O'Breen's Camp", faction = "Contested",
+		aliases = { "O'Breen's Encampment" },
+		hook = "What is left of the treasure expedition, camped on the sand at Faldir's Cove.",
 		lore = {
-			"The Syndicate works the Highlands as thoroughly as it works Hillsbrad, and camps like this one sit on the roads between Refuge Pointe and the coast.",
-			"They are Alterac's dispossessed nobility and their retainers. The kingdom was broken up for King Aiden Perenolde's dealings with the Horde, and they have been funding a grudge ever since.",
+			"Captain O'Breen led three ships into Faldir's Cove after a sunken elven treasure and got one of them docked. The camp on the beach is his, and it is where the survivors ended up.",
+			"His own crew's account of the night is that the tide simply dropped. The Maiden's Folly and the Spirit of Silverpine ran aground on something in the reef, a temple by the look of it, and went down fast enough that the naga killed the men who made it into the water. O'Breen reached shore; most of his sailors did not.",
+			"Nobody is leaving in a hurry. The logs and charts went down with the two ships and he wants them back before any of this reaches other eyes, and the Daggerspine are still massing offshore.",
 		},
 	},
 })
