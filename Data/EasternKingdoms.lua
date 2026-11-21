@@ -70,10 +70,10 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Jasperlode Mine", parent = "Elwynn Forest", faction = "Hostile",
-		hook = "A narrow mine east of Crystal Lake where the kobold tunnels run deeper than the survey maps admit.",
+		hook = "A kobold mine in the foothills north of the Tower of Azora, with something worse at the bottom of it.",
 		lore = {
-			"Jasperlode was dug for gemstone rather than ore, hence the tight, winding shafts. The surveyors who mapped it never finished the job, and the kobolds have since extended it well past anything on record.",
-			"Stormwind's standing instruction to the Goldshire militia is to keep the entrance clear and not pursue them in. Recruits are sent here precisely because the mouth of the mine is safe and the depths are somebody else's problem.",
+			"The way to Jasperlode is east along the road as far as the Tower of Azora and then north into the foothills. Marshal Dughan sends a scout rather than a patrol: go through it, confirm whether the kobolds are in it, come back and say so. They are. The gold dust they carry has a buyer in Goldshire, and William Pestle wants their large candles for the wax.",
+			"The kobolds are not the deepest thing in there. A colony of mine spiders holds the far end of the workings and treats them as food, with Mother Fang at the back of it. The spiders do not come far from the nest. That is the only reason the mouth of the mine is a reasonable place to send a recruit.",
 		},
 	},
 	{
@@ -217,10 +217,11 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Iceflow Lake", parent = "Dun Morogh", faction = "Contested",
-		hook = "A frozen lake west of Kharanos, with a Frostmane camp on the shore and a shipwreck under the ice.",
+		hook = "The frozen lake west of Kharanos, with Brewnall Village fishing through the ice.",
 		lore = {
-			"Iceflow is the largest body of water in Dun Morogh and stays frozen most of the year. The dwarves fish it through the ice and the Frostmane trolls raid the fishermen. That exchange is the basic rhythm of life in this zone.",
-			"The lake sits on the road west toward Gnomeregan. The traffic through here has become much stranger since the city fell.",
+			"Iceflow is the largest water in Dun Morogh and the altitude keeps it frozen. Brewnall Village sits on the west bank and keeps a hole cut in the ice for fresh water and for fishing. Paxton Ganter works it and Gretta Ganter sells the tackle. The road to it runs north out of Kharanos and then follows the frozen river west.",
+			"The islands out in the middle are the part to leave alone. A pack of winter wolves holds them, some of them starving, with the worg Timber at the head of it.",
+			"Frostmane Hold is south-west of the village and it is full of trolls. The dwarf who found the cave is behind on his report about it: he got as far as the mouth, saw how many were inside and did not go in.",
 		},
 	},
 	{
@@ -641,10 +642,10 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Grizzlepaw Ridge", parent = "Loch Modan", faction = "Contested",
-		hook = "Bear country on the loch's southern slopes.",
+		hook = "The bear hills above Thelsamar, and the one bear the Farstrider Lodge could not kill.",
 		lore = {
-			"The ridge is the densest bear population in the valley and a long-standing hunting ground for the Farstrider Lodge.",
-			"Loch Modan's bears are a staple of the local economy: hide, meat and a steady supply of stories.",
+			"Grizzlepaw Ridge runs through the hills south of Thelsamar, east of Stonesplinter Valley. It is held by grizzled and elder black bears, with cliff lurkers and mangy mountain boars among them.",
+			"Ol' Sooty has his lair up here and he is the reason hunters come. The Farstrider Lodge went after him for a year and none of them had any luck. A younger hunter called Daryl tried his own hand against the bear and came away with the scar he still carries over his eye. Vyrin Swiftwind would like the head brought in, and says plainly that it would leave Daryl speechless for once.",
 		},
 	},
 	{
@@ -954,10 +955,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Ironbeard's Tomb", parent = "Wetlands", faction = "Contested",
-		hook = "A dwarven tomb in the marsh, looted by everything with hands.",
+		hook = "A dwarven crypt in the marsh, north-east of Menethil, full of oozes.",
 		lore = {
-			"The tomb honours a dwarf whose name has outlasted his story. It is one of several dwarven burial sites scattered through the lowlands from the days when this was securely Khaz Modan's territory.",
-			"It has been thoroughly robbed. The Explorers' League would call that a tragedy; the Dark Irons would call it Tuesday.",
+			"The tomb sits west of the road to Dun Modr, in the north-central Wetlands, with a graveyard and a dwarf's statue beside the crypt, and grave moss over the lot of it. The dwarf the place is named for has outlasted his own story, and nothing out here says who Ironbeard was.",
+			"Oozes have the crypt now, black and crimson and monstrous, and nobody brings their dead here any more. Sida still walks out from Menethil Harbor every week. On one of those visits the oozes came at her, she panicked and threw her bag at one, and it absorbed the bag whole. That bought her the moment she needed to get away. She would like the contents back and cannot tell one ooze from another.",
 		},
 	},
 	{
@@ -1416,8 +1417,8 @@ SubsOf("Stranglethorn Vale", {
 		name = "Gurubashi Arena", parent = "Stranglethorn Vale", faction = "Contested",
 		hook = "A troll fighting pit on the coast, now a free-for-all with a prize chest.",
 		lore = {
-			"The arena is genuine Gurubashi construction, built for the empire's blood sports. The trolls took combat as a religious as well as a political matter.",
-			"It has been repurposed. Goblins run a periodic open brawl here with a chest for whoever is left standing: a very Booty Bay solution to an ancient monument.",
+			"The arena is Gurubashi construction, built for combat and standing on the west coast of the empire's own vale. Jungle stalkers have the ground around it, and Tethis works the rocks above.",
+			"It has been repurposed. Short John Mithril runs the event now, and what he runs it with is a chest that opens for whoever is left standing. One trinket out of it buys the title of arena master, and twelve buys grandmaster of the Gurubashi Arena. He is glad of the blood it took.",
 		},
 	},
 	{
@@ -1480,10 +1481,11 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Lake Nazferiti", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The great jungle lake at Stranglethorn's heart, with Gurubashi ruins on every shore.",
+		hook = "The big lake in northern Stranglethorn, with a Venture Company camp on its shore.",
 		lore = {
-			"Nazferiti is the vale's largest body of fresh water and the Gurubashi built all around it. The ruins ringing the lake were a dense part of the empire.",
-			"The lake is now troll territory, raptor territory and crocolisk territory in roughly equal measure.",
+			"Nazferiti is the largest fresh water in the vale, up in the north of the zone, and the Venture Company has its base camp on the shore. Geologists, mechanics and lumberjacks work out of it under a workboss, with Foreman Cozzle in the house.",
+			"What the goblins have out on the lake is shredders, and those shredders have been fitted with a new model of fuel regulator. The Mirage Raceway would like the blueprints. The foreman keeps them in his house under lock and key, and he has turned out to be cleverer than the goblin who sent you expected.",
+			"The water is no friendlier than the camp. There are snapjaw crocolisks and sharptooth frenzies in it, and lashtail raptors and mistvale gorillas come down to drink at it.",
 		},
 	},
 	{
@@ -2824,9 +2826,8 @@ SubsOf("Deadwind Pass", {
 		name = "Grosh'gok Compound", parent = "Deadwind Pass", faction = "Hostile",
 		hook = "The largest of the Vice's caves, held by the Deadwind ogres.",
 		lore = {
-			"The Vice is a run of caves in Deadwind Pass, and the Grosh'gok Compound is the southernmost and the biggest. Ogres hold it.",
+			"The Vice is the side canyon off the main road, and the Grosh'gok Compound is the southernmost and largest of the caves in it. Ogres hold it: Deadwind brutes and maulers, with warlocks and ogre magi behind them.",
 			"Ogres in the Eastern Kingdoms are what the Old Horde left behind. Gul'dan brought them through the Dark Portal during the Second War and the collapse abandoned them here with no masters and no way home.",
-			"A pass with Karazhan at one end and an ogre mound at the other, and almost nobody living in between. Nothing has been resolved in Deadwind Pass; it has simply been left.",
 		},
 		readMore = { "Wowpedia: Grosh'gok Compound", "Wowpedia: Ogre", "Wowpedia: Deadwind Pass" },
 	},
@@ -2835,10 +2836,10 @@ SubsOf("Deadwind Pass", {
 SubsOf("Dun Morogh", {
 	{
 		name = "Ironband's Compound", parent = "Dun Morogh", faction = "Hostile",
-		hook = "A dig south of Helm's Bed Lake that the Dark Iron have taken over.",
+		hook = "A blacksmith's compound south of Helm's Bed Lake, taken by the Dark Iron.",
 		lore = {
-			"Sturgy Ironband had this compound in eastern Dun Morogh, and it is Dark Iron ground now. They attack anyone who comes close.",
-			"Dark Irons this far into Bronzebeard country is not a raid, it is a presence, and Ironforge wants evidence of it. That is the sort of errand the city hands to whoever is willing.",
+			"Sturgy Ironband taught blacksmithing here, south of Helm's Bed Lake in eastern Dun Morogh, and he was the best there was at it. Then one of his students brought him a load of strange ore. He called it umbral ore and was eager to work with it, and a band of Dark Iron dwarves came for the compound not long after it arrived and killed everyone in the place.",
+			"The Dark Iron hold it now and go for anyone who comes close. One of his students wants the ore back and the master answered for. Ironforge wants something colder: Muiredon Battleforge is after a Dark Iron script, because dwarves dug in this far into Bronzebeard country, with a leader handing out orders, is a presence and not a raid.",
 			"The Dark Iron are the third clan from the War of the Three Hammers, the one that lost twice: beaten for the throne, then bound to Ragnaros by their own emperor's summoning. They have spent the time since trying to get back into the mountain.",
 		},
 		readMore = { "Wowpedia: Ironband's Compound", "Wowpedia: Dark Iron clan", "Wowpedia: War of the Three Hammers" },
@@ -3114,8 +3115,8 @@ SubsOf("Redridge Mountains", {
 		hook = "The valley with the Tower of Ilgalar in it, where Morganth lives.",
 		lore = {
 			"Galardell Valley is in Redridge's north-east, and the Tower of Ilgalar stands in it. Morganth is in the tower.",
-			"He is the warlock who brought the Blackrock orcs into Redridge to take Stonewatch and then turned on them once the keep was his. A tower in a gnoll-infested valley is where that leaves him.",
-			"The gnolls are a problem in their own right, and Lieutenant Fangore among them will call every one within earshot. Lakeshire is dealing with orcs on one side and this on the other.",
+			"The gnolls filling the valley are his. Morganth gives the Shadowhide clan its orders through the pendants they wear, Magistrate Solomon has ruled that helping him is punishable by death, and Lakeshire's bounty is on the pendants themselves. Lieutenant Fangore leads the clan and will call every gnoll within earshot.",
+			"He is also in conflict with the orcs holding Stonewatch, and nobody in Lakeshire has worked out why. What Theocritus has worked out, watching the tower from Elwynn through the Eye of Azora, is worse than the gnolls: Morganth is hunting the Scythe of Elune and may already have found it.",
 		},
 		readMore = { "Wowpedia: Galardell Valley", "Wowpedia: Morganth", "Wowpedia: Tower of Ilgalar" },
 	},

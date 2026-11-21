@@ -1353,9 +1353,9 @@ SubsOf("Tanaris", {
 		name = "Gates of Uldum", parent = "Tanaris", faction = "Contested",
 		hook = "An enormous sealed titan door at the desert's edge, and nobody has got it open.",
 		lore = {
-			"The Gates of Uldum are a titan structure in southeastern Tanaris: colossal doors flanked by watchers, shut tight.",
-			"After Uldaman, Ironforge knows what titan installations contain: records, machinery and the history of how this world was shaped. Uldum is presumably the same and much larger.",
-			"The Explorers' League has a camp nearby and no way in. The watchers at the gate are still functioning and still following their original instructions.",
+			"The Gates stand in the Valley of the Watchers, in southern Tanaris: colossal doors with stone watchers either side of them, shut tight, and a pedestal in front of them. The only Alliance presence in the valley is Gunstan's Post, and it has no way in either.",
+			"The platinum discs out of Uldaman are what got anyone this far. The keeper of knowledge down there said the Creators' synthesis of the Earthen had been chronicled in the Discs of Norgannon, and the portable copy of that record went to the League in Ironforge and to the sages of Thunder Bluff. Bring it to this pedestal and a second watcher appears, calls itself a guardian of entry, and refuses: the set is missing the Plates of Uldum.",
+			"Nobody knows where those plates are, so both expeditions have stopped here. The two of them do not want the same thing from the door either. Ironforge wants to walk into the place the Creators worked without having to bring a shovel. Thunder Bluff's reading is that the secrets the earth keeps would destroy us all and had better stay secrets.",
 		},
 	},
 	{
@@ -1620,8 +1620,8 @@ SubsOf("Felwood", {
 		name = "Irontree Woods", parent = "Felwood", faction = "Hostile",
 		hook = "Northern woods where the trees themselves have turned.",
 		lore = {
-			"The Irontree Woods hold corrupted treants and worse. When Felwood's taint reaches plant life that was already sentient, the result is a hostile forest in the literal sense.",
-			"The Cenarion Circle finds this the most disturbing part of the zone, because treants were allies.",
+			"The Irontree Woods are in northern Felwood, and the trees are the hostile part. The ground is worked by irontree stompers in numbers, with wanderers and toxic horrors among them and angerclaw bears through the timber.",
+			"The Cenarion work here is done one plant at a time. The whipper root and the night dragon's breath growing in these woods come up corrupted, and a dose of Cenarion plant salve turns a corrupted plant back into a healthy one. Making the salve takes what Felwood has already spoiled, so every cleansed plant is paid for with fel creep, tainted vitriol or a corrupted soul shard taken off something that had to be put down.",
 		},
 	},
 	{
@@ -1712,10 +1712,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Golakka Hot Springs", parent = "Un'Goro Crater", faction = "Contested",
-		hook = "Hot springs in the northwest, with elementals in the water.",
+		hook = "Geothermal pools on the crater's western side, with a goblin taking their temperature.",
 		lore = {
-			"The Golakka Hot Springs are geothermal pools on the crater's western side.",
-			"Together with Fire Plume Ridge they suggest the crater sits on something volcanically active, which may be why a jungle survives here in the middle of a desert belt.",
+			"The Golakka Hot Springs are geothermal pools in the west of Un'Goro, north of Terror Run. The ground around them is worked by frenzied pterrordax and elder diemetradon, with glutinous oozes in the water and bloodpetal trappers in between.",
+			"Krakle is camped at the pools and wants to know where the heat comes from. His guess is Fire Plume Ridge, directly east of here, and he has built a thermometer to go and test it against the hot spots on the ridge. It reads in degrees Kraklenheit.",
 		},
 	},
 	{
@@ -1736,10 +1736,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Ironstone Plateau", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A raised plateau in the east, held by stone creatures.",
+		hook = "Bare rock on the crater's north-eastern rim, with young pterrordax on it.",
 		lore = {
-			"The Ironstone Plateau is high ground in eastern Un'Goro with an elemental and stone-creature population.",
-			"Un'Goro has elemental activity out of all proportion to its size: fire on the ridge, earth on this plateau, water at the springs. The expedition has not worked out whether that is cause or effect.",
+			"The Ironstone Plateau is high ground in north-eastern Un'Goro, stretches of bare stone tucked against the crater wall. What lives up here is fledgling pterrordax and young diemetradon, with bloodpetal lashers and threshers through the growth at its edges.",
+			"The plateau is also where the crystals come up. Power crystals in all four colours sit on it, red and blue and green and yellow, and those four are what the expedition's pylons read. A stone guardian comes through on its round.",
 		},
 	},
 	{
@@ -1821,10 +1821,10 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Ice Thistle Hills", parent = "Winterspring", faction = "Hostile",
-		hook = "Yeti country in the eastern hills.",
+		hook = "The yeti hills south-east of Everlook, and the trade in what comes off them.",
 		lore = {
-			"The Ice Thistle Hills hold Winterspring's main yeti population, large even by yeti standards.",
-			"The zone's wildlife is its dominant feature. Everlook's economy runs substantially on what can be taken off it.",
+			"The Ice Thistle Hills are south-east of Everlook, and the ice thistle yeti live in and around a cave part way up them. The patriarchs and matriarchs carry the biggest horns.",
+			"Everlook uses all of it. Umi Rumplesnicker wants thick yeti fur to cover the moving parts of a mechanical yeti she has drawn up to startle her friends with, and two horns for it with nothing broken about them. Witch Doctor Mau'ari wants the e'ko: his reading of the yeti is that they move slowly and still dodge a great deal, because of what the fur takes off a blow, and whoever carries his cache can be given the same trick.",
 		},
 	},
 	{
@@ -2019,8 +2019,8 @@ SubsOf("Moonglade", {
 		name = "Lake Elune'ara", parent = "Moonglade", faction = "Neutral",
 		hook = "The lake at Moonglade's centre, named for the moon goddess.",
 		lore = {
-			"Lake Elune'ara is the water Moonglade is built around, and the night elves hold it sacred.",
-			"The glade's protection is not just a treaty between factions. The place itself is warded, and the Circle maintains that.",
+			"Lake Elune'ara is the water Moonglade is built around, and Nighthaven sits on it. The night elves hold it sacred.",
+			"Young druids are sent into it. The first trial is to go down and find a shrine bauble, get back out, and reach the Shrine of Remulos in the north-west of the glade before the thing decays in your hands, usually with other druids in the water hunting baubles of their own. Tajarri, one of the glade's wardens, is the one waiting at the shrine.",
 		},
 	},
 })
@@ -2270,9 +2270,9 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Kargathia Keep", parent = "Ashenvale", faction = "Horde",
-		hook = "The Warsong officers' stronghold, placed where Orgrimmar can reinforce it.",
+		hook = "The Warsong stronghold at the eastern end of the lumber camp.",
 		lore = {
-			"Kargathia Keep sits in the eastern part of the Warsong lumber operation, near the Southfury River, and it is where the clan's officers work. The position is chosen: if Ashenvale turns into a proper war, reinforcements come up from Orgrimmar along this line.",
+			"Kargathia Keep stands in the eastern part of the Warsong lumber operation in Ashenvale, close to the Southfury River and the line back to Durotar. What is around it is the operation itself: peons and deforesters working the trees with shredders among them, and grunts, shamans and scouts standing over the work.",
 			"The name is Kargath Bladefist's. He was chieftain of the Shattered Hand, the orc who cut off his own shackled hand and replaced it with a blade, and the Old Horde treated him as a figure to live up to. Kargath in the Badlands and Bladefist Bay in Durotar carry the name too.",
 			"Which is a particular choice for a logging camp in night elf country. The clan cutting Ashenvale down has named its command post after an orc famous for mutilating himself to get free.",
 		},
@@ -2389,6 +2389,7 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Galak Camp", parent = "Mulgore", faction = "Hostile",
+		era = "forever", spoiler = true,
 		hook = "Galak centaur camped on the Mulgore plains, a long way from any ground of theirs.",
 		lore = {
 			"The Galak are a Thousand Needles tribe. Thousand Needles is on the other side of the Barrens, and yet here they are on the grass in Mulgore with a camp pitched.",
@@ -2716,11 +2717,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Jadefire Glen", parent = "Felwood", faction = "Hostile",
-		hook = "A satyr camp in the south, speaking the Legion's own language.",
+		hook = "The Jadefire satyrs' own ground in southern Felwood.",
 		lore = {
-			"Xavathras holds the Jadefire Glen in southern Felwood, and the satyrs here answer to the Burning Legion directly rather than to themselves.",
-			"The detail worth noticing is the language. The satyrs of the Jadefire speak Eredun, the Legion's tongue, not Darnassian. They were night elves once, and they have given up even that.",
-			"Felwood is the forest the Legion ruined and the night elves could not clean. Most of the zone's work is killing satyrs, and there are always more.",
+			"The Jadefire Glen is in southern Felwood and the satyrs it is named for fill it, jadefire satyrs and felsworn, with felpaw wolves and angerclaw bears around them. Mongress and Alshirr Banebreath are both up here.",
+			"The Jadefire's working camp is next door at the Ruins of Constellas, and that is where the point of all this sits. A moonwell stands in those ruins. It was a night elf thing once, a place of renewal, and the satyrs have corrupted it and are using it to bring more of themselves into the world.",
+			"Xavathras runs the ruins and is cruel enough that Eridan Bluewind sends people after him by name for the Emerald Circle. He is not the top of it. The moonwell was a supply operation, and the spoils were going north to Xavaric.",
 		},
 		readMore = { "Wowpedia: Jadefire Glen", "Wowpedia: Satyr", "Wowpedia: Eredun" },
 	},
@@ -2865,8 +2866,8 @@ SubsOf("Durotar", {
 		name = "Hidden Path", parent = "Durotar", faction = "Horde",
 		hook = "A route through the mountains that new shaman are told to find for themselves.",
 		lore = {
-			"The Hidden Path goes up through the mountains ringing the Valley of Trials, and the first thing an aspiring shaman is asked to do is find it. Nobody draws them a map.",
-			"It leads to Spirit Rock. From the top of it there is a clear view out over the Barrens, which is the first time most new orcs see how much of this continent there is.",
+			"The Hidden Path goes up through the mountains ringing the Valley of Trials, and the only direction a young shaman is given is south-west. It comes out at Spirit Rock. The high point of it looks out over the Barrens.",
+			"The reason to find it is the sapta. A sapta is a drink made to bind a spirit to one of the elements, and only a few shaman know the recipe. Drunk in a holy place it lets the strong-willed see that element as nobody else can, and the shaman who hands it over says it is drunk in a holy place and never anywhere else.",
 			"Setting the search itself as the test is deliberate. A shaman's work is paying attention to the land, and a path that has to be noticed rather than followed is a reasonable way to begin.",
 		},
 		readMore = { "Wowpedia: Hidden Path", "Wowpedia: Valley of Trials", "Wowpedia: Spirit Rock" },

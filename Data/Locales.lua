@@ -21,10 +21,11 @@ local SubsOf = ns.SubsOf
 SubsOf("Elwynn Forest", {
 	{
 		name = "Heroes' Vigil", faction = "Alliance",
-		hook = "A hilltop monument east of Goldshire, raised for soldiers the kingdom could not bring home.",
+		hook = "The monument on the island in Stone Cairn Lake, held by Defias wizards.",
 		lore = {
-			"The vigil marks Stormwind's war dead, and there are a great many of them. The First War killed most of a generation, the Second took the survivors north to Lordaeron and then across the sea, and the Alliance Expedition through the Dark Portal took the best of what was left.",
-			"None of that expedition came back. Turalyon, Khadgar, Danath Trollbane, Kurdran Wildhammer and Alleria Windrunner were on the Draenor side when the portal was destroyed, and Stormwind has had no word since. Monuments like this one are what a kingdom raises instead of holding funerals.",
+			"Heroes' Vigil is the middle of the island in Stone Cairn Lake, in north-eastern Elwynn. The Stone of Remembrance stands on it, raised for the people killed when the orcs came through this country in the First War.",
+			"Nobody is tending it. Defias rogue wizards have the island, a dozen of them and more, which is a long way inside the kingdom's borders for the Brotherhood to be standing.",
+			"Two men came out here to prove exactly that and take the proof to the king's advisors. They found a pair of Defias going over documents and attacked, and more of the mages came. Henze Faulk is still lying on the island. His companion got away because Henze held them off.",
 		},
 	},
 })
@@ -410,10 +411,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Lake Mereldar", faction = "Contested",
-		hook = "A lake in the southeast, close enough to Light's Hope to be almost safe.",
+		hook = "A polluted lake south of Corin's Crossing, with the plague living in the water.",
 		lore = {
-			"Mereldar sits near the Argent Dawn's chapel, in the one corner of the Eastern Plaguelands the Scourge has not managed to settle. The water is not clean, but it is water.",
-			"Light's Hope holds because of what lies under it: a great many of the Silver Hand's dead, and ground the undead cannot press into. Land around the chapel benefits by association, and the Dawn has used that margin to build the only working organisation in the region.",
+			"Lake Mereldar is in the south-east of the Eastern Plaguelands, south of Corin's Crossing. The water is not clean and what lives in it is what the plague made of water: blighted surges and plague ravagers. There are the ruins of a house on the bank, and a shack and a ferry that belonged to the farm.",
+			"The Scarlet Crusade works this shore as well, out of Tyr's Hand to the east, and its wardens and clerics and enchanters are no friendlier to anyone standing here than the Scourge is.",
+			"What the lake is actually good for is grim. Its shore grows Blood of Heroes, out of ground a great many people died on, and the smiths who forge against the chromatic flight ask for it ten at a time.",
 		},
 	},
 })
@@ -1971,10 +1973,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Jagged Reef", faction = "Hostile",
-		hook = "A reef off the coast, with naga on and under it.",
+		hook = "Azshara's northern shore, with naga coming out of the shallows.",
 		lore = {
-			"The reef sits off Azshara's shoreline, close to where the sea took the queen's palace at Zin-Azshari.",
-			"Azshara did not die in the Sundering. She and her closest followers became the naga, and the concentration of them along this coast follows from where they went down.",
+			"The Jagged Reef is the northern coast of Azshara: sand broken up by jets of stone, with rocks and shallows under the water that make going along it slow work. Storm Bay naga come up onto the beach, with makrinni and coralshell tortoises on it, and a mammoth shark works the deeper water.",
+			"The naga did not come from anywhere else. Azshara did not die in the Sundering: she and the followers closest to her became the naga, and the zone that still carries her name is where most of them are.",
 		},
 	},
 	{

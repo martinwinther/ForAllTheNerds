@@ -10,7 +10,7 @@
 #   python3 tools/generate.py prompt --limit 10 > /tmp/batch.md
 
 # --- Eastern Kingdoms: places not yet written -----------------------------
-sub	Heroes' Vigil	Elwynn Forest	Alliance		Hilltop monument east of Goldshire commemorating fallen Stormwind soldiers
+sub	Heroes' Vigil	Elwynn Forest	Alliance		Stone of Remembrance on the island in Stone Cairn Lake, held by Defias rogue wizards
 sub	Demont's Place	Westfall	Hostile		Dead Westfall farmstead west of Moonbrook, held by Riverpaw gnolls
 sub	Longshore	Westfall	Contested		Westfall's northern coastline; murlocs and shipwrecks
 sub	The Dust Plains	Westfall	Contested		The driest part of Westfall, south of Moonbrook; the failed farmland at its worst
@@ -40,7 +40,7 @@ sub	Eastwall Tower	Eastern Plaguelands	Contested		One of the four Lordaeron watc
 sub	Crown Guard Tower	Eastern Plaguelands	Contested		Another of the four Eastern Plaguelands towers
 sub	The Fungal Vale	Eastern Plaguelands	Hostile		Blighted vale in the western Eastern Plaguelands
 sub	The Infectis Scar	Eastern Plaguelands	Hostile		Scourge-held scar of corrupted ground in the south
-sub	Lake Mereldar	Eastern Plaguelands	Contested		Lake in the southeast near Light's Hope Chapel
+sub	Lake Mereldar	Eastern Plaguelands	Contested		Polluted lake south of Corin's Crossing, with blighted surges and plague ravagers in it
 sub	Bal'lal Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in northern Stranglethorn
 sub	Balia'mah Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin held by Bloodscalp trolls
 sub	Ziata'jai Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in the central jungle
