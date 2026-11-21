@@ -6674,3 +6674,32 @@ Darnassus, South Gate Pass, The Bulwark, The Talondeep Path and Thunder Bluff ar
 each two entries. Five names still have no wiki article: Stormwind Gates,
 Thalassian Vanguard Camp, The Dream Bough, The Sanctum and Western Pylon, and the
 last of those is already settled by 1.12 quest 4288. P5 remains pending.
+
+### 2026-11-21, release 1.2.18
+
+Martin asked for dev to be merged to main and the next 1.2.x released. Release
+1.2.18 carries P4 runs 29 to 32, which is 100 entry records reviewed and 93
+corrected. Three records were deleted as duplicates of entries the addon already
+had, two were moved out of the vanilla corpus as Forever's own places, one was
+renamed to the spelling the client reports, and three held up with no change.
+The vanilla corpus is 910 entries and the Forever one is 76. Both version strings
+are 1.2.18.
+
+`CHANGELOG.md` records the findings under the 1.2.18 heading, in the same three
+sections 1.2.17 used: the corrections, the claims removed, and the structural
+changes, which this time include the three merges, the two Forever tags and the
+rename. P5 must not write any of runs 29 to 32 again and now covers run 33
+onwards. The other half of P5, writing the findings into `tools/era-audit.md`,
+is still outstanding and was not touched by this release.
+
+Release checks before preparing: default validation and all nine CI
+configurations pass with zero errors and warnings, check-gaps reports 43
+explained gaps, prose lint is clean on the changelog, the CurseForge description
+and the README, and git diff --check passes. `tools/build-zip.sh` produces
+`ForAllTheNerds-1.2.18.zip` with the toc at `ForAllTheNerds/ForAllTheNerds.toc`,
+declaring interface 16001 and 11509, both version strings reading 1.2.18,
+`LICENSE` present, 26 entries packaged and no tooling, media or dotfiles in it.
+The upload label override `-n ":{package-name}-{project-version}"` is still in
+`.github/workflows/release.yml`, so the file lists as `ForAllTheNerds-1.2.18`
+rather than a bare number. The preceding sweep commit cc3e00e passed CI for its
+exact SHA before release preparation began.
