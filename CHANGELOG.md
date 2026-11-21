@@ -1,5 +1,108 @@
 # Changelog
 
+## 1.2.18
+
+Four more rounds of the vanilla-era sweep: 100 entry records reviewed and 93 of
+them corrected. The sweep now covers 795 of the 910 vanilla entries. This batch
+turned up something new, three entries that were duplicates of entries the addon
+already had, and two places that exist only in Forever and had been written up as
+though they were vanilla.
+
+**Fixed**
+
+- Seventeen places had the wrong occupants. The Frayfeather are hippogryphs, not
+  harpies. Fallow Sanctuary is the Lost Ones' village. Eastmoon Ruins are
+  troll-built with a wandering Dunemaul party in them. Demont's Place is a
+  Riverpaw gnoll camp, and the Defias camp the entry described belongs to the
+  Dagger Hills. The Ironstone Plateau holds fledgling pterrordax and all four
+  power crystals, not elementals. Lake Nazferiti has the Venture Company's base
+  camp on it. The Jagged Reef is Azshara's northern coast itself, with Storm Bay
+  naga coming up onto the beach. Nethander Stead is abandoned and held by Mudsnout
+  gnolls, with mushrooms growing in its fields. The Mizjah Ruins are held by
+  Mosh'Ogg ogres ambushing Grom'gol's caravans to Stonard. Mystral Lake is full of
+  befouled water elementals, not furbolgs. Mirror Lake has Defias in the trees,
+  not kobolds. Mazra'Alor is the ziggurat at the heart of Zul'Mashar, held by
+  Mossflayer trolls. Saltspray Glen is a raptor nesting ground. The Ruins of
+  Isildien are held by the Gordunni in clan strength. Rocktusk Farm is the Horde's
+  pig farm west of Orgrimmar, and the Razormane are a zone away. Rethban Caverns
+  have Redridge gnolls in them. The Ruins of Solarsal stand on Sardor Isle with
+  Hatecrest naga on them.
+- Heroes' Vigil is the monument on the island in Stone Cairn Lake, held by Defias
+  rogue wizards, rather than a hilltop raised for the soldiers of the Alliance
+  Expedition.
+- The Oracle Glade's oracle is a tree. The Oracle Tree reports by shedding its
+  bark for somebody to carry to Darnassus, the first and most powerful of
+  Teldrassil's moonwells is under its boughs, and the harpies nesting round the
+  glade killed a runner carrying one of those reports.
+- Eleven places moved to where they actually are: Dustbelch Grotto to the
+  south-western Badlands, Dustwind Gulch to the east by Lethlor Ravine, Frostsaber
+  Rock and Dun Mandarr to northern and southern Winterspring, Fungal Rock to the
+  crater's north-eastern wall, Golakka Hot Springs to the west, the Ice Thistle
+  Hills to south-east of Everlook, Grizzlepaw Ridge to the hills above Thelsamar,
+  Jasperlode Mine to the foothills north of the Tower of Azora, the Lower Wilds to
+  the eastern end of Feralas, and Nightsong Woods to the eastern half of Ashenvale.
+- The Eastern Strand looks at Daggerspine naga, not at Purgation Isle, which is at
+  the far other end of the Hillsbrad coast. Lake Mereldar is south of Corin's
+  Crossing with the Scarlet Crusade on its shore, not beside Light's Hope Chapel.
+  North Gate Pass connects Loch Modan with Dun Morogh, which is what our own North
+  Gate Outpost entry had been saying all along.
+- Dreadmist Den is a cave on Dreadmist Peak rather than under it, and the Dunemaul
+  Compound's leader is Gor'marok the Ravager.
+- Ironforge's Military Ward trains warriors and hunters in the Hall of Arms.
+  Paladins are taught in the Mystic Ward and the gryphons come from the
+  Wildhammers.
+
+**Removed**
+
+- Fallen Sky Lake is no longer an impact crater with the Legion raining infernals
+  across Ashenvale. The name has a better reason: night elves gathered moonstones
+  here until the shadethicket came, and the treants' oracle has the fallen stones
+  on the island.
+- Foothold Citadel no longer has the room where Jaina's father died. That account
+  comes from a novel published in 2011. What the keep does have is Captain Garran
+  Vimes, the guard rolls and the deserters still loyal to the admiral.
+- Iceflow Lake's shipwreck under the ice is gone, and so are Jasperlode Mine's
+  exhausted gemstone seams and unfinished survey, Fargodeep's abandoned richer
+  seams, the tower on Dreadmist Peak, and Lake Elune'ara's wards.
+- The Gates of Ironforge are no longer the only way into the city. The Deeprun
+  Tram has run under the mountains from Stormwind since launch.
+- The Gurubashi Arena is not run by goblins. Short John Mithril runs the event,
+  and the game calls him the pirate who runs it.
+- Invented history, motives and institutions are gone from the Jadefire Glen, the
+  Lion's Pride Inn, Maclure Vineyards, Longshore, Nightsong Woods, Red Rocks,
+  Plaguemist Ravine, Ridgepoint Tower and Razorwind Canyon. Among them: the lion
+  on the inn's sign standing for Anduin Lothar, a feud nobody can explain,
+  Wildhammers watching a ravine that nothing lives in, and harpies descended from
+  Aviana's servants.
+
+**Changed**
+
+- Three entries were duplicates of entries that already existed, and each has been
+  merged into the one the game's own name matches. Legashi Encampment is folded
+  into Legash Encampment, the Ruins of Darrowshire into Darrowshire, and the Old
+  Dalaran Ruins into Dalaran Crater. All three old names are kept as aliases, so
+  `/ftn` still answers to them.
+- Galak Camp and Legashi Stronghold are Forever's own places rather than vanilla
+  ones, and are now marked as Forever content, which means they are hidden by
+  default with the rest of it.
+- O'Breen's Encampment is renamed O'Breen's Camp, which is what the game calls it,
+  and is now the stranded treasure expedition's camp at Faldir's Cove rather than
+  a Syndicate camp.
+- Several entries gained what the game actually gives them. The Gates of Uldum have
+  the pedestal, the Stone Watcher that refuses entry and the missing Plates of
+  Uldum. The Hall of Explorers has its library, Prospector Stormpike and the Discs
+  of Norgannon brought back from Uldaman. Ironband's Compound has the umbral ore
+  and what happened to Sturgy Ironband's students. Ortell's Hideout has a
+  Twilight's Hammer deserter decoding his old sect's post. The Rise of the Defiler
+  has Razelikh's triad, the amulet that keeps all three of them alive and the
+  eighteen stones that hold men bound to them. Zul'Kunda and Zul'Mamwe have the two
+  halves of the Bloodscalp and Skullsplitter feud.
+- Entries that contradicted each other or repeated each other have been reconciled:
+  Camp Kosh counts four Badlands ogre camps rather than three, Dustwallow Bay no
+  longer repeats Tidefury Cove's paragraph, the Western Pylon drops the clause the
+  Eastern one had already lost, Grosh'gok Compound stops restating Deadwind Pass,
+  and Rage Scar Hold stops restating the Lower Wilds.
+
 ## 1.2.17
 
 Five more rounds of the vanilla-era sweep: 126 entry records reviewed and

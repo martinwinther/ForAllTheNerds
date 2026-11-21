@@ -21,10 +21,11 @@ local SubsOf = ns.SubsOf
 SubsOf("Elwynn Forest", {
 	{
 		name = "Heroes' Vigil", faction = "Alliance",
-		hook = "A hilltop monument east of Goldshire, raised for soldiers the kingdom could not bring home.",
+		hook = "The monument on the island in Stone Cairn Lake, held by Defias wizards.",
 		lore = {
-			"The vigil marks Stormwind's war dead, and there are a great many of them. The First War killed most of a generation, the Second took the survivors north to Lordaeron and then across the sea, and the Alliance Expedition through the Dark Portal took the best of what was left.",
-			"None of that expedition came back. Turalyon, Khadgar, Danath Trollbane, Kurdran Wildhammer and Alleria Windrunner were on the Draenor side when the portal was destroyed, and Stormwind has had no word since. Monuments like this one are what a kingdom raises instead of holding funerals.",
+			"Heroes' Vigil is the middle of the island in Stone Cairn Lake, in north-eastern Elwynn. The Stone of Remembrance stands on it, raised for the people killed when the orcs came through this country in the First War.",
+			"Nobody is tending it. Defias rogue wizards have the island, a dozen of them and more, which is a long way inside the kingdom's borders for the Brotherhood to be standing.",
+			"Two men came out here to prove exactly that and take the proof to the king's advisors. They found a pair of Defias going over documents and attacked, and more of the mages came. Henze Faulk is still lying on the island. His companion got away because Henze held them off.",
 		},
 	},
 })
@@ -32,18 +33,18 @@ SubsOf("Elwynn Forest", {
 SubsOf("Westfall", {
 	{
 		name = "Demont's Place", faction = "Hostile",
-		hook = "An abandoned farmhouse in the dust, taken over by a Defias spellcaster.",
+		hook = "A dead farmstead west of Moonbrook, with a gnoll camp on it.",
 		lore = {
-			"Demont's was an ordinary Westfall holding before the farms failed. A Brotherhood magician works out of it now. The Defias were never only masons: the guild that rebuilt Stormwind employed engineers, surveyors and a few people who could do rather more than survey.",
-			"Dealing with a hostile spellcaster in a fortified farmhouse is beyond the People's Militia, in numbers and in training both, so it has not been dealt with.",
+			"Demont's was an ordinary Westfall holding before the farms failed, and like the Dead Acre there is little of it left. Riverpaw gnolls have the ground now: brutes, mongrels and herbalists, camped around a fire with the farm's own sacks of oats stacked beside it.",
+			"The gnolls are half of what has gone wrong out here and the Defias Brotherhood is the other. Moonbrook, the Gold Coast Quarry and the Alexston Farmstead have all been plundered, and the People's Militia at Sentinel Hill is recruiting pledges off the road to answer for it.",
 		},
 	},
 	{
 		name = "Longshore", faction = "Contested",
-		hook = "Westfall's northern beach, strewn with wrecks and worked over by murlocs.",
+		hook = "The whole Westfall coast, strewn with wrecks and worked over by murlocs.",
 		lore = {
-			"The coast north of the lighthouse has taken a steady toll of shipping, and the hulls are still on the sand where they came ashore. Nobody salvages them properly. Murlocs got there first and have stayed.",
-			"Stormwind's merchant traffic runs close in along this shore on the way to the harbour. Sentinel Hill has no boats and no coastal patrol, so what happens on the beach stays on the beach.",
+			"Longshore is not a stretch of the coast, it is the coast: the entire western shoreline of Westfall, and one of the longest beaches anywhere. Hulls and anchors lie along it where they came ashore and in the shallows off it, and nobody salvages them properly, because the murlocs got there first and have stayed. Old Murk-Eye ranges the beach among them.",
+			"Two things on it are worth the walk. A lockbox beside a wreck off the northern end holds half of the Pendant of the Sea Lion, which is what an Alliance druid needs before anyone will teach them an aquatic form. And at the far southern end, past the lighthouse, there is a farmhouse looking out at the water: Daphne Stilwell holds it alone while her husband is away working with the dwarves in Ironforge, in country the Defias have all but taken over.",
 		},
 	},
 	{
@@ -184,10 +185,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Saltspray Glen", faction = "Hostile",
-		hook = "A northern stretch of coast given over to murlocs.",
+		hook = "A raptor nesting ground in the north-west of the Wetlands.",
 		lore = {
-			"Saltspray Glen is murloc ground on the Wetlands' northern shore. They came up out of the sea, they built, and they have not been moved since.",
-			"Murlocs raid along this coast and retreat into the water, which makes them impossible to finish and easy enough to survive. The dwarves have learned to live beside them, in the sense that they have stopped counting.",
+			"Saltspray Glen sits in the north-western Wetlands with Bluegill Marsh below it, Ironbeard's Tomb to the east and Baradin Bay on two sides. The glen is named for how readily the bay throws seawater inland across it when the wind is up.",
+			"What nests here is raptors. Highland razormaws, scytheclaws and lashtails, in the numbers this zone manages everywhere it has standing water, with Mosshide gnolls and crocolisks working the same ground and Gnawbone somewhere in it.",
 		},
 	},
 })
@@ -241,10 +242,10 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Dustbelch Grotto", faction = "Hostile",
-		hook = "An ogre cave in the northern Badlands, attached to one of the road camps.",
+		hook = "The main Dustbelcher camp, an ogre mound in the south-west of the zone.",
 		lore = {
-			"Dustbelch Grotto is where the ogres of the northern Badlands shelter. Three ogre camps are strung across this zone holding the roads, and the grotto is where they go when the sun is at its worst.",
-			"They have no strategic aim. Caravans pass, the ogres take what they can, and the dwarves and the Horde both file it under weather.",
+			"Dustbelch Grotto is the large ogre mound in the south-western Badlands, and the dwarves working the digs call it the main ogre camp in the zone. Dustbelcher maulers, shamans, lords and ogre mages hold the ground around it, with Camp Cagg on the same corner of the map.",
+			"What the dwarves want off them is scrap metal. The ogres carry more of it than ogres have any business carrying, enough that the old stories about siege engines in the Badlands get another hearing, and a dig camp short of material will take ogre scrap and build its defences out of that.",
 		},
 	},
 })
@@ -410,10 +411,11 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Lake Mereldar", faction = "Contested",
-		hook = "A lake in the southeast, close enough to Light's Hope to be almost safe.",
+		hook = "A polluted lake south of Corin's Crossing, with the plague living in the water.",
 		lore = {
-			"Mereldar sits near the Argent Dawn's chapel, in the one corner of the Eastern Plaguelands the Scourge has not managed to settle. The water is not clean, but it is water.",
-			"Light's Hope holds because of what lies under it: a great many of the Silver Hand's dead, and ground the undead cannot press into. Land around the chapel benefits by association, and the Dawn has used that margin to build the only working organisation in the region.",
+			"Lake Mereldar is in the south-east of the Eastern Plaguelands, south of Corin's Crossing. The water is not clean and what lives in it is what the plague made of water: blighted surges and plague ravagers. There are the ruins of a house on the bank, and a shack and a ferry that belonged to the farm.",
+			"The Scarlet Crusade works this shore as well, out of Tyr's Hand to the east, and its wardens and clerics and enchanters are no friendlier to anyone standing here than the Scourge is.",
+			"What the lake is actually good for is grim. Its shore grows Blood of Heroes, out of ground a great many people died on, and the smiths who forge against the chromatic flight ask for it ten at a time.",
 		},
 	},
 })
@@ -434,10 +436,10 @@ SubsOf("Durotar", {
 	},
 	{
 		name = "Rocktusk Farm", faction = "Hostile",
-		hook = "A quilboar farm in western Durotar, worked by people who were here first.",
+		hook = "The Horde's pig farm, just down the western road out of Orgrimmar.",
 		lore = {
-			"The Razormane farm this ground. Orcs did not expect farming from quilboar, and the surprise is a fair part of why the two have never come to an arrangement. Durotar was not empty land waiting to be settled.",
-			"Quilboar trace themselves to Agamaggan, a boar demigod killed fighting the Burning Legion in the War of the Ancients. Their warrens, their thorns and their claim on this coast all start there.",
+			"Rocktusk Farm is a pen of swine a short way down the road west of Orgrimmar's gates, with mottled boars in the scrub around it and a couple of benches to sit on. It feeds the city, and in Durotar that is not a small job: there is no farmland in this zone worth the name.",
+			"The quilboar are not here, whatever the name suggests. The Razormane hold their own ground in the middle of the zone, battleguards and dustrunners and scouts, a long way south of the pigs.",
 		},
 	},
 	{
@@ -532,10 +534,11 @@ SubsOf("Darkshore", {
 SubsOf("Ashenvale", {
 	{
 		name = "Nightsong Woods", faction = "Contested",
-		hook = "The old-growth heart of Ashenvale, and the reason both sides want this forest.",
+		hook = "The eastern half of Ashenvale, and the ground both sides are fighting over.",
 		lore = {
-			"Nightsong is what the Ashenvale war is actually about. These are trees the night elves have watched over for ten thousand years, and they are also the best timber within reach of Orgrimmar.",
-			"The Warsong are cutting at the edges. Thrall has restrained them more than once and they have resumed more than once, and the Sentinels at Astranaar have drawn the obvious conclusion about what Orgrimmar's word on the subject is worth.",
+			"Nightsong Woods is the eastern part of the forest, running from Raynewood Retreat and the Felwood road all the way out to Azshara, with the Falfarren River through the middle of it. Most of the cross-faction fighting in Ashenvale happens in here, and the southern reaches are where the Warsong have been cutting.",
+			"The Horde's account of that is plain enough: under the guise of protecting a forest that does not belong to them, the Alliance is trying to deny the Horde one of its largest sources of lumber. The Silverwing Sentinels hold the other end of the argument.",
+			"Not everything in the woods is about timber. Kayneth Stillwind keeps the shrine at Forest Song and wants reports on what is happening along the coast and around Astranaar, because he thinks a corruption is moving through Ashenvale and he is not wrong.",
 		},
 	},
 	{
@@ -566,17 +569,18 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Felfire Hill", faction = "Hostile",
-		hook = "A hill in eastern Ashenvale still burning from the Third War.",
+		hook = "A hill in eastern Ashenvale where the Legion's infernals came down.",
 		lore = {
-			"Felfire Hill holds demons that were never cleared after the Legion was broken at Mount Hyjal. They were cut off rather than destroyed, and they have been sitting on this hill since.",
+			"Infernals landed on this hill during the Third War and the ground has not recovered. The hill still carries searing infernals, with felguards and mannoroc lashers among them, and the Horde has Splintertree Post north-west of it and the Warsong Lumber Camp north-east.",
 			"Demon Fall Canyon is nearby, where Grom Hellscream killed the pit lord Mannoroth and freed every orc alive from the blood curse. In this forest the Legion's leavings and the Horde's redemption are a short walk apart.",
 		},
 	},
 	{
 		name = "Night Run", faction = "Hostile",
-		hook = "Eastern woodland held by satyrs, who were night elves before they chose otherwise.",
+		hook = "The smallest of Ashenvale's three satyr sites, up on a naze nobody can climb.",
 		lore = {
-			"Satyrs hold the Night Run. They descend from night elves who sided with the Burning Legion during the War of the Ancients and were transformed for it, and Satyrnaar is their settlement a short way east.",
+			"The Felmusk hold the Night Run, in east-central Ashenvale between Raynewood Retreat and Splintertree Post. Of the three satyr settlements in this forest, with Satyrnaar and Xavian, it is by far the smallest: a few broken pillars and some ruined stonework for shelter. It is also the hardest to reach, sitting on a naze with cliffs nobody climbs, so the way in is along the Falfarren and then west.",
+			"The satyrs here are doing more than holding ground. A Warsong delivery of oil was intercepted on its way to the lumber camp, and it is being used for rituals in this place and in the other two.",
 			"Night elf accounts of the satyrs read unlike their accounts of anything else in these woods. There is no puzzlement in them. Xavius, the first satyr, was one of Queen Azshara's own highborne, and the night elves know exactly what was chosen and by whom.",
 		},
 	},
@@ -686,9 +690,9 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Feralas", {
 	{
 		name = "Feral Scar Vale", faction = "Hostile",
-		hook = "A yeti vale in central Feralas, where the wildlife outnumbers every claim on it.",
+		hook = "A yeti vale in the High Wilderness, inland of the Forgotten Coast.",
 		lore = {
-			"Feral Scar is yeti country. Feralas' yeti run large and numerous and bad-tempered even by the standards of yeti elsewhere, and this vale holds a good share of them.",
+			"Feral Scar is yeti country. The vale and its tunnels hold the Feral Scar yeti in numbers, with groddoc apes on the same slopes, and the leatherworkers at Feathermoon Stronghold and Camp Mojache both send people out here for thick yeti hide. A gnomish homing robot is stuck at the back of the first tunnel, waiting for somebody carrying its distress beacon.",
 			"Both factions' outposts in this jungle are small. Feathermoon Stronghold sits on an island and Camp Mojache is a tauren camp, and between them they hold rather less of Feralas than the gorillas, the yeti and the Woodpaw gnolls do.",
 		},
 	},
@@ -712,10 +716,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Frayfeather Highlands", faction = "Hostile",
-		hook = "Harpy highlands in the east, above the jungle and the ruins both.",
+		hook = "Hippogryph highlands in the High Wilderness, above the jungle and the ruins both.",
 		lore = {
-			"The Frayfeather hold the high ground in eastern Feralas and raid down off it. Harpies show a preference for occupying night elf ruins that the night elves consider deliberate.",
-			"What the Frayfeather want from the stonework is unclear. They are not scholars and they do not build, and yet across Kalimdor it is night elf ruins they settle in rather than caves.",
+			"The Frayfeather are hippogryphs and the highlands are theirs. Frayfeather hippogryphs and stagwings hold this high ground in the middle of Feralas, and their nests are up here with eggs in them.",
+			"Hippogryphs have been night elf companions for a long time and Feathermoon Stronghold keeps them, but the Frayfeather answer to nobody. The traffic in this corner of the zone is a goblin business instead: a machine in Gadgetzan weighs, measures and packages any hippogryph egg brought to it, and about half of what comes out of it hatches.",
 		},
 	},
 })
@@ -825,7 +829,7 @@ SubsOf("Un'Goro Crater", {
 		hook = "The eastern pylon on the crater rim, one of three nobody can account for.",
 		lore = {
 			"Three crystal pylons stand on rises around Un'Goro: northern, eastern and western. They react to the crystals found across the crater floor and do something when fed.",
-			"Who raised them has not been established. The guesses at Marshal's Refuge run from measuring instruments to something holding the crater shut, and the expedition has no way to test either.",
+			"Who raised them has not been established. The expedition at Marshal's Refuge went looking for this one on rumour alone, and its working guess is that the pylons have something to do with the crystals turning up all over the crater floor.",
 		},
 	},
 	{
@@ -833,7 +837,7 @@ SubsOf("Un'Goro Crater", {
 		hook = "The third pylon, on the crater's western rim above the hot springs.",
 		lore = {
 			"The western pylon completes the ring with the northern and eastern ones. All three are the same work and all three are equally unexplained.",
-			"Un'Goro is walled the whole way round, holds a jungle in a desert belt, has a live volcano at its centre and three unattributed devices on its rim. The expedition's working position is that those four facts are related, and that they have no way to demonstrate it.",
+			"Un'Goro is walled the whole way round, holds a jungle in a desert belt, has a live volcano at its centre and three unattributed devices on its rim. What the expedition can show is narrower than that: the pylons take the crater's power crystals, and combining them at a pylon table does something a manual at Marshal's Refuge sets out.",
 		},
 	},
 })
@@ -922,10 +926,11 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Ortell's Hideout", faction = "Hostile",
-		hook = "A Twilight Hammer hideout in the rocks, run by a cultist with a grievance.",
+		hook = "A cave in the mountains where a Twilight's Hammer deserter is hiding.",
 		lore = {
-			"The Twilight Hammer keep camps and hideouts across Silithus, and their aim is stated rather than suspected: they want C'Thun free. They worship the Old Gods and hold that this world should end.",
-			"Places like this one house the people doing the quiet work. The Cenarion Circle has been rolling up cultists in this desert for years without getting to the bottom of the organisation.",
+			"Ortell left the Twilight's Hammer and lives in the mountains south of Southwind Village as a hermit. His own account of the decision is that the cult is not kind to those who leave its ranks and that they hunt him to this day like some sort of beast, so an enemy of theirs is a friend of his. Anyone who finds the cave is asked at once who they are and whether they were followed.",
+			"What he can do is read the cult's writing. The Twilight Lexicon is the book their scribes encode with, kept in three chapters in three places by officers called Twilight Keepers, and with all three in hand Ortell will work through a tablet out loud, swapping every third word against the second chapter and every other word against the first, and then wonder whether he has it backwards.",
+			"He also wants their post. The cult circulates an encoded bulletin called the True Believer once a month, and it will say whether they are still looking for him or have given up. Anything else useful in it he is willing to share.",
 		},
 	},
 })
@@ -958,10 +963,11 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Maclure Vineyards", faction = "Alliance",
-		hook = "One of two vineyards south of Goldshire, and one half of a feud nobody can explain.",
+		hook = "One of two vineyards south of Goldshire, and one half of a feud with a romance in it.",
 		lore = {
-			"The Maclures grow grapes on the southern slopes, as the Stonefields do a short walk away. Between them they supply most of the wine in this part of the kingdom.",
-			"The two families have been at each other for years over a dispute whose origins depend entirely on which farmhouse you ask in. Goldshire's magistrate has stopped trying to settle it.",
+			"The Maclures grow grapes on the southern slopes, with the Stonefields a short walk away, and the two families cannot stand each other. Fargodeep Mine lies almost due south of Goldshire between the two homesteads, and that is how most people learn where both of them are.",
+			"The feud has a hole in the middle of it. Maybell Maclure and Tommy Joe Stonefield are in love, and getting her off the vineyard to meet him has taken a note to William Pestle at the inn, a trip to the murlocs at Crystal Lake for crystal kelp, and a bottle of invisibility liquor brewed out of it.",
+			"The rest of the family's business is smaller. Billy Maclure is accused by an old widow of taking her necklace and is usually to be found scuttling about the vines, a pork belly pie improves his mood, and the Brackwell prize sow comes over to eat the vegetables often enough that somebody has put a price on her collar.",
 		},
 	},
 	{
@@ -1275,10 +1281,11 @@ SubsOf("Loch Modan", {
 SubsOf("Redridge Mountains", {
 	{
 		name = "Rethban Caverns", faction = "Hostile",
-		hook = "A mine in the western cliffs, worked for ore and infested with kobolds.",
+		hook = "A cavern system in the foothills north of Lakeshire, full of gnolls.",
 		lore = {
-			"Rethban was dug for the red ore the mountains are named for. Kobolds have the run of it now, the standard fate of an abandoned shaft anywhere near Elwynn.",
-			"Lakeshire would like it back. Lakeshire would like a great many things back, and is currently holding a bridge with volunteers.",
+			"Rethban ore is named after the man who first found it, Bart Rethban. It smelts weaker than iron, but the ore has a dark flat colour that scribes mix into their dyes, and the Northshire library buys it by the load.",
+			"Redridge gnolls live in the caverns now and their drudgers are gathering the ore themselves. Lakeshire's foreman will tell anyone asking for a delivery that the town is busy fortifying itself and repairing orc damage, so they can go down and get it themselves.",
+			"Somebody has made a game of the place. The Rethban Gauntlet, which is Yorus Barleybrew's, is to drink a Barleybrew Scalder, go in as far as the first fork and come back out inside the hour, through whole heaps of gnolls, without dying.",
 		},
 	},
 	{
@@ -1347,10 +1354,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Eastern Strand", faction = "Contested",
-		hook = "The beach east of Southshore, looking out toward Purgation Isle.",
+		hook = "The south-eastern beach, held by Daggerspine naga.",
 		lore = {
-			"The eastern strand faces the small islands off the Hillsbrad coast. Purgation Isle is the nearest of them.",
-			"What the Scarlet Crusade does on that island is well outside anything the Church of the Holy Light would sanction, and the name is not a metaphor.",
+			"The Eastern Strand is the coast in the south-east of Hillsbrad, and the Daggerspine naga are on it: shorehunters and shorestalkers on the sand, sirens in the water. The Western Strand at the other end of the same coast has the same trouble.",
+			"Southshore treats them as a military matter rather than a nuisance. Marshal Redpath has his lieutenant working the strand, with orders to report the results in person.",
 		},
 	},
 })
@@ -1358,10 +1365,11 @@ SubsOf("Hillsbrad Foothills", {
 SubsOf("Alterac Mountains", {
 	{
 		name = "Lordamere Lake", faction = "Contested",
-		hook = "The great lake below the mountains, with a drowned past on its shores.",
+		hook = "The great lake below the mountains, with a dead past under it.",
 		lore = {
-			"Lordamere separates the Alterac Mountains from Silverpine and the Hillsbrad lowlands. Fenris Isle sits out in it, and Dalaran's crater is not far from its southern shore.",
-			"The lake kept its name when the kingdoms around it stopped keeping theirs. Alterac was dismantled for treason and Lordaeron was destroyed outright.",
+			"Lordamere separates the Alterac Mountains from Silverpine and the Hillsbrad lowlands, with Dalaran a little back from its southern shore. Fenris Isle sits out in it, and east of that the Dawning Isles, overrun by Vile Fin murlocs. Snapjaw turtles work the shallows, and Southshore's cooks will pay for the meat.",
+			"Nothing else lives in the water. An ancient plague killed off the lake's aquatic life a very long time ago, and Apothecary Berard was studying it until Arugal's magic took his mind; the Royal Apothecary Society went looking for his journal afterwards, because a plague that emptied a lake is exactly the research it wants.",
+			"The lake kept its name when the kingdoms around it stopped keeping theirs. Alterac was dismantled for treason, and Lord Aliden Perenolde's manor still stands on this shore. Lordaeron was destroyed outright. Dalaran's wizards used to quarantine people at an internment camp on the water, and they are not running it any more either.",
 		},
 	},
 	{
@@ -1374,21 +1382,23 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Misty Shore", faction = "Contested",
-		hook = "The lake shore below the mountains, under more or less permanent fog.",
+		hook = "Lordamere's southern waterline, under more or less permanent fog.",
 		lore = {
-			"The shore runs along Lordamere's northern edge beneath the Alterac peaks. The fog off the lake rarely lifts entirely.",
-			"Dalaran's crater sits behind this coast under its containment dome, and it does nothing good for the weather or for anything living nearby.",
+			"The Misty Shore runs along the lake under the Alterac peaks, from Dandred's Fold east towards Dalaran. The fog off the water rarely lifts entirely, and what is on the shore is mostly turtles.",
+			"Fenris Keep can be made out from here, standing on its island with the Dawning Isles beyond it. The ruins of Dalaran are a short way inland behind the beach, shut under their dome.",
 		},
 	},
 })
 
 SubsOf("Arathi Highlands", {
 	{
-		name = "O'Breen's Encampment", faction = "Hostile",
-		hook = "A Syndicate camp on the southern road through the Highlands.",
+		name = "O'Breen's Camp", faction = "Contested",
+		aliases = { "O'Breen's Encampment" },
+		hook = "What is left of the treasure expedition, camped on the sand at Faldir's Cove.",
 		lore = {
-			"The Syndicate works the Highlands as thoroughly as it works Hillsbrad, and camps like this one sit on the roads between Refuge Pointe and the coast.",
-			"They are Alterac's dispossessed nobility and their retainers. The kingdom was broken up for King Aiden Perenolde's dealings with the Horde, and they have been funding a grudge ever since.",
+			"Captain O'Breen led three ships into Faldir's Cove after a sunken elven treasure and got one of them docked. The camp on the beach is his, and it is where the survivors ended up.",
+			"His own crew's account of the night is that the tide simply dropped. The Maiden's Folly and the Spirit of Silverpine ran aground on something in the reef, a temple by the look of it, and went down fast enough that the naga killed the men who made it into the water. O'Breen reached shore; most of his sailors did not.",
+			"Nobody is leaving in a hurry. The logs and charts went down with the two ships and he wants them back before any of this reaches other eyes, and the Daggerspine are still massing offshore.",
 		},
 	},
 })
@@ -1422,10 +1432,11 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Mistvale Valley", faction = "Hostile",
-		hook = "A valley in the southern jungle, thick with gorillas.",
+		hook = "A valley east of Booty Bay, thick with gorillas.",
 		lore = {
-			"Mistvale holds one of the larger gorilla populations in the vale, which in Stranglethorn means something worth taking seriously.",
-			"Hemet Nesingwary's expedition came to this jungle for exactly this. The dwarf hunts the largest animals he can find and has made a career of it across the world.",
+			"Mistvale Valley is in the south of the vale, and the elder Mistvale gorillas forage across it with a silverback patriarch among them. Nothing else much lives up here.",
+			"Everything the valley produces, somebody in Booty Bay wants. Gorilla fangs and the rare aged sinew go into enchantments; giblets go to a bookmaker who sends them to a man behind on his gambling debts without mentioning where they came from.",
+			"Witch Doctor Unbagwa keeps a hidden cave on the cape and is the only one who can call up the white beast Mokk. A man dying of Stranglethorn fever needs the heart of that beast and nothing else will do. The witch doctor will start the spirit talking for a gorilla fang, and asks to be protected from the other gorilla-beasts while he does it.",
 		},
 	},
 	{
@@ -1457,10 +1468,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Mizjah Ruins", faction = "Hostile",
-		hook = "Ruins on the eastern side of the vale, overgrown past the point of use.",
+		hook = "Troll ruins south-east of Grom'gol, held by Mosh'Ogg ogres.",
 		lore = {
-			"Mizjah sits in the eastern jungle and the trees have had their way with it more thoroughly than with most.",
-			"The Gurubashi collapse is usually dated to the war their own priests started by summoning Hakkar the Soulflayer. The empire had to fight to contain what it had called up, and it did not survive the effort.",
+			"The ruins are Gurubashi work and the ogres have them now. Mosh'Ogg brutes and witch doctors are camped in the stonework, with Roloch somewhere among them, and crocolisks and raptors in the water below.",
+			"They are there for the road. Grom'gol's job in this jungle is keeping Stonard supplied, and the ogres have gone on ambushing the supply caravans after being warned off, so clearing them out of the ruins is less about the ruins than about sending a firm message.",
 		},
 	},
 })
@@ -1530,10 +1541,10 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Mazra'Alor", faction = "Hostile",
-		hook = "An Amani troll site in the northeast, taken by the Scourge.",
+		hook = "The ziggurat at the heart of Zul'Mashar, held by Mossflayer trolls.",
 		lore = {
-			"Mazra'Alor is troll work, part of the Amani presence that predates everything human in this region. Zul'Mashar is close by.",
-			"The trolls' holdings in the north were already in decline before the plague arrived. The Scourge finished the job and kept the buildings.",
+			"Mazra'Alor is the large ziggurat in the middle of Zul'Mashar, in the north-east of the Plaguelands, and it is forest troll work. The Mossflayer hold it: scouts, cannibals and shadowhunters, with their own dead walking among them as zombies. That is what the plague has made of a tribe that was here before any of this.",
+			"What they are keeping is worth more than the building. Two of the six Tablets of Mosh'aru are in Mossflayer hands, and the tablets are the record of how Hakkar's essence was contained. A troll who wanted only the first two of them was not telling the whole truth about why.",
 		},
 	},
 	{
@@ -1700,10 +1711,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Dreadmist Den", faction = "Hostile",
-		hook = "The cave under Dreadmist Peak, where the Burning Blade work.",
+		hook = "The Burning Blade's cave on Dreadmist Peak, with the Demon Seed in it.",
 		lore = {
-			"The den sits beneath the peak in the northern Barrens, and the Burning Blade hold both. They are orcs chasing the demonic power Thrall outlawed.",
-			"The old Horde under Gul'dan was genuinely stronger than the one Thrall built, and there are orcs who would take that trade. The cults keep forming for that reason.",
+			"The den is a cave on the peak itself, and what the Burning Blade keep in it is the Demon Seed, standing above an altar of fire. The cult rallies around that one object, and Orgrimmar knows where it is and wants it destroyed.",
+			"They are orcs chasing the demonic power Thrall outlawed. Gul'dan traded the orcs' shamanism for warlock craft and the Legion's favour, and there are orcs who would take that trade again. A demon called Rathorian is in the den some of the time.",
 		},
 	},
 	{
@@ -1764,10 +1775,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Fallen Sky Lake", faction = "Contested",
-		hook = "A lake in a crater in the eastern forest, and the name explains itself.",
+		hook = "A small lake in the south-east, where moonstones used to be gathered.",
 		lore = {
-			"The lake fills an impact crater. During the Third War the Burning Legion rained infernals down across these forests, and the ground still carries the marks.",
-			"Felwood took the worst of it. When the Legion was broken at Mount Hyjal the demonic energy in that region went into the soil instead of dispersing, and it has been wrong ever since.",
+			"Night elves gathered moonstones at Fallen Sky Lake until the shadethicket came. The treants hold the water now, and their oracle has collected up the fallen stones and sits on the island in the middle of the lake with them.",
+			"Astranaar sends out for a moonstone when somebody is too weak to mend on their own, and this is where the stones were. The lake lies south-east of the village, below Silverwing Outpost, and the errand is no longer a short one.",
 		},
 	},
 })
@@ -1838,10 +1849,10 @@ SubsOf("Desolace", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "North Point Tower", faction = "Alliance",
-		hook = "A Theramore watchtower on the northern coast.",
+		hook = "Theramore's northern watchtower, on a well-travelled stretch of road.",
 		lore = {
-			"North Point watches the marsh's northern shore for Jaina Proudmoore's city. Theramore's outposts are few and thinly held.",
-			"Jaina led the refugees out of Lordaeron when the plague took it, on Medivh's warning, and built the city they landed at. It is the Alliance's only real holding on this continent outside the night elf lands.",
+			"North Point is one of the scout towers Theramore keeps out in the marsh, with Sentry Point and West Point Tower, and it stands in the north near the road. Theramore's own sentries garrison it.",
+			"The quieter work out this way is done by the infiltrators camped in tents along the road, who are watching Brackenwall Village and anything else that might come at the border. The men in the towers are Kul Tiras marines, paid at the start of every month and inclined to go somewhere else with it.",
 		},
 	},
 	{
@@ -1873,10 +1884,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Lower Wilds", faction = "Hostile",
-		hook = "The southern jungle, where the wildlife outnumbers everyone's claim.",
+		hook = "The eastern end of Feralas, where the forest runs out into Thousand Needles.",
 		lore = {
-			"The Lower Wilds are thick jungle running south from the Twin Colossals. Gorillas, yeti and great cats hold most of it.",
-			"Both factions' outposts in Feralas are small. Between them they hold rather less of this zone than the animals do.",
+			"The Lower Wilds are the eastern section of Feralas, the ground the road crosses on its way out to Thousand Needles. Longtooth runners and ironfur bears hold most of it, in numbers, with gravelsnout troggs and needles cougars coming in from the dry country at the far end.",
+			"Thalanaar is at that far end, where Falfindel Waywarder keeps the road and Thyssiana keeps the hippogryphs. Both factions' holdings in Feralas are small. Between them they hold rather less of this zone than the animals do.",
 		},
 	},
 	{
@@ -1971,10 +1982,10 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Jagged Reef", faction = "Hostile",
-		hook = "A reef off the coast, with naga on and under it.",
+		hook = "Azshara's northern shore, with naga coming out of the shallows.",
 		lore = {
-			"The reef sits off Azshara's shoreline, close to where the sea took the queen's palace at Zin-Azshari.",
-			"Azshara did not die in the Sundering. She and her closest followers became the naga, and the concentration of them along this coast follows from where they went down.",
+			"The Jagged Reef is the northern coast of Azshara: sand broken up by jets of stone, with rocks and shallows under the water that make going along it slow work. Storm Bay naga come up onto the beach, with makrinni and coralshell tortoises on it, and a mammoth shark works the deeper water.",
+			"The naga did not come from anywhere else. Azshara did not die in the Sundering: she and the followers closest to her became the naga, and the zone that still carries her name is where most of them are.",
 		},
 	},
 	{
@@ -2037,10 +2048,10 @@ SubsOf("Felwood", {
 SubsOf("Winterspring", {
 	{
 		name = "Dun Mandarr", faction = "Hostile",
-		hook = "Ruins in the northern snow, with a dwarven name on them.",
+		hook = "A wrecked dwarf camp in southern Winterspring, taken over by wildkin.",
 		lore = {
-			"Dun Mandarr carries a dwarven name in a zone with no dwarven settlement. That is the interesting thing about it.",
-			"Winterspring is thinly held by anyone. Everlook is a goblin town, Starfall Village is a small night elf post, and the rest belongs to the wildlife and the cold.",
+			"The dwarven name on the map is Jaron Stoneshaper's. He is Explorers' League, he put a camp up beside a cave in the south of Winterspring, and the wildkin drove him off it. He got clear and one of his party did not, and his supplies and his wagon are still out in the snow where the owlbeasts left them.",
+			"He had unearthed something at the dig and the wildkin came for it. Jaron is at Starfall Village now. Winterspring is thinly held either way: Everlook is a goblin town, Starfall Village is a small night elf post, and the rest belongs to the wildlife and the cold.",
 		},
 	},
 	{

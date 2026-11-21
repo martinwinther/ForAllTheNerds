@@ -54,26 +54,27 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Lion's Pride Inn", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "Goldshire's inn, under a lion sigil, and the busiest crossroads tavern in the kingdom.",
+		hook = "Goldshire's inn, under a lion sigil, with a motto and a guest list.",
 		lore = {
-			"The lion is Stormwind's own sigil, and that is as much as the inn's sign actually tells you. Lion of Azeroth was Sir Anduin Lothar's name among his own soldiers, earned in the Second War from the sight of his shield cutting through the orc ranks; he had covered the retreat from Stormwind in the First and he died at Blackrock Spire in the Second. Whether the innkeeper had him in mind is not recorded.",
-			"Practically, it is the last comfortable bed between Stormwind and the Dark Woods, so everybody stops. The gossip here is the closest thing Elwynn has to a newspaper.",
+			"Innkeeper Farley runs the inn, and the motto he greets people with is rest and relaxation for the tired and cold. Mention the right friend in Northshire and he will knock something off the food and drink. Barkeep Dobbins works the bar, there are trainers for half a dozen trades sitting in the common room, and William Pestle lodges here with his potions while he collects candle wax for the apothecary he and his brother run in Stormwind.",
+			"The lion is Stormwind's own sigil, and the sign does not say more than that.",
+			"Not everyone who passes through is a traveller. When a trail of old addresses out of Duskwood was followed up, the registry had a second entry under the name Stalvan, half scratched out, and it pointed here. Asking after that name in the common room is how a good many people have spent an evening in Goldshire.",
 		},
 	},
 	{
 		name = "Fargodeep Mine", parent = "Elwynn Forest", faction = "Hostile",
-		hook = "A worked-out Stormwind mine, now a kobold warren nobody has bothered to clear properly.",
+		hook = "An abandoned Stormwind gold mine south of Goldshire, full of kobolds.",
 		lore = {
-			"Fargodeep was a legitimate Stormwind mining operation, one of several shallow workings in the Elwynn hills. When the richer seams gave out the kingdom walked away, and kobolds moved into the empty tunnels the way they always do.",
-			"Kobolds are not an invasion so much as a persistent infestation. They are drawn to candles and dark places, they dig compulsively, and they breed faster than the militia can clear them. Every few years somebody declares the mine cleaned out. It never lasts.",
+			"Fargodeep was a Stormwind gold mine and a clan of kobolds has the workings now. It lies almost due south of Goldshire, between the Stonefield and Maclure homesteads, and a lower level runs deeper than that. A rare taskmaster called Narg turns up at the back of it, and a gold-toothed kobold dens above the mine with other people's property about him.",
+			"Kobolds are not an invasion so much as a persistent infestation. They are drawn to candles and dark places and they dig compulsively, and Goldshire has turned that into a trade: gold dust bought off them by the ounce, candle wax collected for a Stormwind apothecary, and Marshal Dughan sending people down to confirm the reports he keeps getting.",
 		},
 	},
 	{
 		name = "Jasperlode Mine", parent = "Elwynn Forest", faction = "Hostile",
-		hook = "A narrow mine east of Crystal Lake where the kobold tunnels run deeper than the survey maps admit.",
+		hook = "A kobold mine in the foothills north of the Tower of Azora, with something worse at the bottom of it.",
 		lore = {
-			"Jasperlode was dug for gemstone rather than ore, hence the tight, winding shafts. The surveyors who mapped it never finished the job, and the kobolds have since extended it well past anything on record.",
-			"Stormwind's standing instruction to the Goldshire militia is to keep the entrance clear and not pursue them in. Recruits are sent here precisely because the mouth of the mine is safe and the depths are somebody else's problem.",
+			"The way to Jasperlode is east along the road as far as the Tower of Azora and then north into the foothills. Marshal Dughan sends a scout rather than a patrol: go through it, confirm whether the kobolds are in it, come back and say so. They are. The gold dust they carry has a buyer in Goldshire, and William Pestle wants their large candles for the wax.",
+			"The kobolds are not the deepest thing in there. A colony of mine spiders holds the far end of the workings and treats them as food, with Mother Fang at the back of it. The spiders do not come far from the nest. That is the only reason the mouth of the mine is a reasonable place to send a recruit.",
 		},
 	},
 	{
@@ -122,18 +123,18 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Mirror Lake", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "The still lake west of the Tower of Azora, with an orchard that supplies half of Stormwind's cider.",
+		hook = "A small lake with a waterfall, south-west of the Stormwind gates.",
 		lore = {
-			"Mirror Lake and its orchard are among the most productive bits of land in Elwynn, which is why the kobolds working their way out of the nearby hills are treated as a serious nuisance rather than a curiosity.",
-			"The name is literal and old. Few places in Elwynn carry one that came through the First War unchanged.",
+			"Mirror Lake sits in western Elwynn with the Mirror Lake Orchard beside it. It would be the obvious place in the forest to swim or fish, and the Defias in the trees around it are the reason nobody does.",
+			"The water is also under suspicion. Jennea Cannon sends mages out from Stormwind to fill a flask at the foot of the waterfall, because the mystic struggles of the last few years tore magic out of channels that used to be stable and nobody knows yet what has come through into this lake. Her working fear is for anyone who drinks from it long enough.",
 		},
 	},
 	{
 		name = "Ridgepoint Tower", parent = "Elwynn Forest", faction = "Alliance",
 		hook = "A watchtower on the Redridge border, built to warn the kingdom about orcs coming down the pass.",
 		lore = {
-			"The eastern border of Elwynn is the line where the forest meets the Redridge Mountains, and Redridge has a Blackrock orc problem. Ridgepoint is one of a chain of towers meant to see trouble coming and get word to Stormwind before it arrives.",
-			"The chain is undermanned. Most of the towers hold a handful of guards and a signal fire, and the kingdom is relying on the orcs of Redridge being too disorganised to push west in force.",
+			"The eastern border of Elwynn is the line where the forest meets the Redridge Mountains, and Ridgepoint is one of the Stormwind Guard's scout towers along it, held properly rather than nominally.",
+			"It is not only watching for orcs. The gnolls and the Blackrock come from Redridge in the east, the undead come up out of Duskwood to the south, and the Defias have camps close enough that the tower counts them as a third direction.",
 		},
 	},
 	{
@@ -217,10 +218,11 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Iceflow Lake", parent = "Dun Morogh", faction = "Contested",
-		hook = "A frozen lake west of Kharanos, with a Frostmane camp on the shore and a shipwreck under the ice.",
+		hook = "The frozen lake west of Kharanos, with Brewnall Village fishing through the ice.",
 		lore = {
-			"Iceflow is the largest body of water in Dun Morogh and stays frozen most of the year. The dwarves fish it through the ice and the Frostmane trolls raid the fishermen. That exchange is the basic rhythm of life in this zone.",
-			"The lake sits on the road west toward Gnomeregan. The traffic through here has become much stranger since the city fell.",
+			"Iceflow is the largest water in Dun Morogh and the altitude keeps it frozen. Brewnall Village sits on the west bank and keeps a hole cut in the ice for fresh water and for fishing. Paxton Ganter works it and Gretta Ganter sells the tackle. The road to it runs north out of Kharanos and then follows the frozen river west.",
+			"The islands out in the middle are the part to leave alone. A pack of winter wolves holds them, some of them starving, with the worg Timber at the head of it.",
+			"Frostmane Hold is south-west of the village and it is full of trolls. The dwarf who found the cave is behind on his report about it: he got as far as the mouth, saw how many were inside and did not go in.",
 		},
 	},
 	{
@@ -641,18 +643,18 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Grizzlepaw Ridge", parent = "Loch Modan", faction = "Contested",
-		hook = "Bear country on the loch's southern slopes.",
+		hook = "The bear hills above Thelsamar, and the one bear the Farstrider Lodge could not kill.",
 		lore = {
-			"The ridge is the densest bear population in the valley and a long-standing hunting ground for the Farstrider Lodge.",
-			"Loch Modan's bears are a staple of the local economy: hide, meat and a steady supply of stories.",
+			"Grizzlepaw Ridge runs through the hills south of Thelsamar, east of Stonesplinter Valley. It is held by grizzled and elder black bears, with cliff lurkers and mangy mountain boars among them.",
+			"Ol' Sooty has his lair up here and he is the reason hunters come. The Farstrider Lodge went after him for a year and none of them had any luck. A younger hunter called Daryl tried his own hand against the bear and came away with the scar he still carries over his eye. Vyrin Swiftwind would like the head brought in, and says plainly that it would leave Daryl speechless for once.",
 		},
 	},
 	{
 		name = "North Gate Pass", parent = "Loch Modan", faction = "Contested",
-		hook = "The northern road out of the valley, watched because of what uses it.",
+		hook = "The upper of the two passes between Loch Modan and Dun Morogh.",
 		lore = {
-			"North Gate carries traffic out of Loch Modan toward the Badlands road and the eastern mountains. It is the route the Mo'grosh use to come down out of the hills.",
-			"The dwarves garrison the gates and accept that the ogres will keep trying.",
+			"North Gate Pass runs through the north-west corner of the Loch and comes out in Dun Morogh, high in the mountains on the far side. It is the route most people take to and from the Wetlands, because it is the closest pass to the descent out of the Loch.",
+			"The dwarves keep North Gate Outpost in the middle of it, and the trouble the garrison deals with is wildlife rather than anybody's army.",
 		},
 	},
 })
@@ -735,9 +737,9 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Render's Camp", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "A Blackrock orc camp in the hills, openly flying the Dark Horde's colours.",
+		hook = "A Blackrock camp in Redridge's north-west, on the way out to the Burning Steppes.",
 		lore = {
-			"The camp is one of several Blackrock positions in Redridge's high ground, and the orcs here are not hiding. They are holding ground and waiting on orders.",
+			"The camp sits in the north-western hills near the entrance to the Burning Steppes, and what is in it is not a raiding party. Blackrock renegades and outrunners with summoners, shadowcasters, trackers and champions behind them, and Kazon somewhere among the tents.",
 			"The Dark Horde's interest in Redridge is the road. Through Redridge lies Elwynn, and through Elwynn lies Stormwind.",
 		},
 	},
@@ -954,10 +956,10 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Ironbeard's Tomb", parent = "Wetlands", faction = "Contested",
-		hook = "A dwarven tomb in the marsh, looted by everything with hands.",
+		hook = "A dwarven crypt in the marsh, north-east of Menethil, full of oozes.",
 		lore = {
-			"The tomb honours a dwarf whose name has outlasted his story. It is one of several dwarven burial sites scattered through the lowlands from the days when this was securely Khaz Modan's territory.",
-			"It has been thoroughly robbed. The Explorers' League would call that a tragedy; the Dark Irons would call it Tuesday.",
+			"The tomb sits west of the road to Dun Modr, in the north-central Wetlands, with a graveyard and a dwarf's statue beside the crypt, and grave moss over the lot of it. The dwarf the place is named for has outlasted his own story, and nothing out here says who Ironbeard was.",
+			"Oozes have the crypt now, black and crimson and monstrous, and nobody brings their dead here any more. Sida still walks out from Menethil Harbor every week. On one of those visits the oozes came at her, she panicked and threw her bag at one, and it absorbed the bag whole. That bought her the moment she needed to get away. She would like the contents back and cannot tell one ooze from another.",
 		},
 	},
 	{
@@ -1076,10 +1078,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Nethander Stead", parent = "Hillsbrad Foothills", faction = "Contested",
-		hook = "A Hillsbrad farm caught between two armies and farming anyway.",
+		hook = "An abandoned Hillsbrad farm, with gnolls in the fields and mushrooms growing in them.",
 		lore = {
-			"The Nethander place is one of the holdings still being worked in the middle of the Southshore-Tarren Mill war. The farmers' position is that the crops do not care who is winning.",
-			"Hillsbrad's farmland is good. Both sides want the hills and neither will burn them.",
+			"The stead lies east of Southshore and south of Tarren Mill, across the river, and nobody farms it any more. Mudsnout gnolls have it, along with their shamans, and this is the only ground in the world that tribe is found on.",
+			"What grows in the fields now is giant white mushrooms. Apothecary Lydon wants six of them in Tarren Mill, for an elixir of agony he is building towards the Forsaken's next plague, and his own view of the gnolls is that at least they are good for something.",
 		},
 	},
 	{
@@ -1128,6 +1130,7 @@ Zone{
 SubsOf("Alterac Mountains", {
 	{
 		name = "Dalaran Crater", parent = "Alterac Mountains", faction = "Hostile",
+		aliases = { "Dalaran", "Old Dalaran Ruins" },
 		hook = "What is left of the Kirin Tor's city after a demon lord stepped on it.",
 		lore = {
 			"Dalaran was the magocracy, home of the Kirin Tor and the finest centre of arcane learning in the world. Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied in its Violet Citadel, and most of the archmages whose decisions shaped the last two wars with them.",
@@ -1416,8 +1419,8 @@ SubsOf("Stranglethorn Vale", {
 		name = "Gurubashi Arena", parent = "Stranglethorn Vale", faction = "Contested",
 		hook = "A troll fighting pit on the coast, now a free-for-all with a prize chest.",
 		lore = {
-			"The arena is genuine Gurubashi construction, built for the empire's blood sports. The trolls took combat as a religious as well as a political matter.",
-			"It has been repurposed. Goblins run a periodic open brawl here with a chest for whoever is left standing: a very Booty Bay solution to an ancient monument.",
+			"The arena is Gurubashi construction, built for combat and standing on the west coast of the empire's own vale. Jungle stalkers have the ground around it, and Tethis works the rocks above.",
+			"It has been repurposed. Short John Mithril runs the event now, and what he runs it with is a chest that opens for whoever is left standing. One trinket out of it buys the title of arena master, and twelve buys grandmaster of the Gurubashi Arena. He is glad of the blood it took.",
 		},
 	},
 	{
@@ -1430,18 +1433,19 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Ruins of Zul'Kunda", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Bloodscalp troll city on the northern coast, built on Gurubashi stonework.",
+		hook = "The Bloodscalp capital on the northern coast, built on Gurubashi stonework.",
 		lore = {
-			"Zul'Kunda is one of the old Gurubashi cities, now occupied by the Bloodscalp tribe. The trolls living in it are the empire's descendants squatting in their own ancestors' architecture.",
-			"The Bloodscalp are the northern power in the jungle and they are at war with the Skullsplitter in the south, and that feud has done more to keep the trolls off the roads than any Alliance patrol.",
+			"Zul'Kunda is one of the old Gurubashi cities and the Bloodscalp tribe has it, so they are the empire's descendants squatting in their own ancestors' architecture. Their headhunters work this coast and the ruins of Zuuldaia along it.",
+			"Gan'zulah is the chief and Nezzliok is his witchdoctor, and both of them sit deep inside the ruins. Between them they know what happened to a Darkspear child the tribe took, and that is why Grom'gol keeps a cauldron and a standing interest in their heads.",
+			"The Bloodscalp are the northern power in the jungle and the Skullsplitter are the southern one, and the two are hereditary enemies. The feud is older than any human kingdom and neither tribe will say a useful word about the other without being paid in the other's skulls.",
 		},
 	},
 	{
 		name = "Ruins of Zul'Mamwe", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A Skullsplitter city in the southern jungle, half swallowed by the trees.",
+		hook = "The Skullsplitter seat, in the hills south of the Mosh'Ogg mound.",
 		lore = {
-			"Zul'Mamwe is the Skullsplitter tribe's seat, another reoccupied Gurubashi ruin in the south of the vale.",
-			"The Skullsplitter are the Bloodscalp's mirror image and their hereditary enemy. The feud is older than any human kingdom.",
+			"Zul'Mamwe is another reoccupied Gurubashi ruin, south of the Mosh'Ogg ogre mound and ringed by mountains on every side but the north. Ana'thek is the chieftain, cruel enough that the Bloodscalp chief uses the word, and the tribe keeps a pile of trophy skulls here as it does at Balia'mah and Ziata'jai.",
+			"The Skullsplitter are the Bloodscalp's mirror image and their hereditary enemy. Those skulls are currency in that quarrel: a Bloodscalp will trade what he knows for three of them, so that his spirit has slaves in the Nether.",
 		},
 	},
 	{
@@ -1480,10 +1484,11 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Lake Nazferiti", parent = "Stranglethorn Vale", faction = "Contested",
-		hook = "The great jungle lake at Stranglethorn's heart, with Gurubashi ruins on every shore.",
+		hook = "The big lake in northern Stranglethorn, with a Venture Company camp on its shore.",
 		lore = {
-			"Nazferiti is the vale's largest body of fresh water and the Gurubashi built all around it. The ruins ringing the lake were a dense part of the empire.",
-			"The lake is now troll territory, raptor territory and crocolisk territory in roughly equal measure.",
+			"Nazferiti is the largest fresh water in the vale, up in the north of the zone, and the Venture Company has its base camp on the shore. Geologists, mechanics and lumberjacks work out of it under a workboss, with Foreman Cozzle in the house.",
+			"What the goblins have out on the lake is shredders, and those shredders have been fitted with a new model of fuel regulator. The Mirage Raceway would like the blueprints. The foreman keeps them in his house under lock and key, and he has turned out to be cleverer than the goblin who sent you expected.",
+			"The water is no friendlier than the camp. There are snapjaw crocolisks and sharptooth frenzies in it, and lashtail raptors and mistvale gorillas come down to drink at it.",
 		},
 	},
 	{
@@ -1568,10 +1573,10 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Dustwind Gulch", parent = "Badlands", faction = "Contested",
-		hook = "A dry gulch near Kargath, picked over by scavengers and scorpids.",
+		hook = "A dry gulch west of Lethlor Ravine, worked over by coyotes and troggs.",
 		lore = {
-			"The gulch is typical Badlands ground: no water, hard rock, and a wildlife population that has adapted to both.",
-			"It sits on the route between Kargath and the Uldaman road, so it sees more traffic than it deserves.",
+			"The gulch is typical Badlands ground: no water, hard rock, and a wildlife population that has adapted to both. Crag coyotes hunt it, ridge stalkers work the air above it, and starving buzzards clean up after both.",
+			"Stonevault troggs have come down into the gulch as well, seers and bashers together. It lies in the east of the zone, out toward Lethlor Ravine, and nobody has a claim on it worth defending.",
 		},
 	},
 	{
@@ -1586,7 +1591,7 @@ SubsOf("Badlands", {
 		name = "Camp Kosh", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp on the northern road.",
 		lore = {
-			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
+			"Camp Kosh is one of four ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
 			"These are leftovers of the Second War Horde, like most ogres east of the sea, with no leadership and no plan beyond the next caravan.",
 		},
 	},
@@ -1688,10 +1693,10 @@ SubsOf("Swamp of Sorrows", {
 	},
 	{
 		name = "Fallow Sanctuary", parent = "Swamp of Sorrows", faction = "Hostile",
-		hook = "A troll settlement in the southern swamp.",
+		hook = "The Lost Ones' village, in the north of the swamp.",
 		lore = {
-			"The sanctuary holds forest trolls in the swamp's south, another fragment of the troll presence that long predates the orcs or the humans here.",
-			"Trolls were on this continent first, everywhere, and the swamp is no exception.",
+			"The sanctuary is a village of Lost Ones, the draenei who came through the Dark Portal and went feral in this swamp. Huts, campfires and a cauldron stand among the trees in the swamp's north-east, with a chieftain and a cook among them and Ongeku on the same ground. They catch or kill anyone who wanders near.",
+			"What they have that others want is draenethyst, crystals sacred to their kind and taken from the Lost Ones at the Harborage who kept their minds. A caravan bound for Nethergarde Keep lost a wagon to the sanctuary as well, dragged in with a chest of wizards' reagents still aboard.",
 		},
 	},
 	{
@@ -1820,10 +1825,10 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Plaguemist Ravine", parent = "The Hinterlands", faction = "Contested",
-		hook = "A ravine where the Plaguelands' corruption is leaking over the border.",
+		hook = "A pass out of the Hinterlands' north-west, with the blight coming down it.",
 		lore = {
-			"The ravine sits on the Hinterlands' northwestern edge, nearest the Plaguelands, and the blight has started reaching into it.",
-			"The Wildhammers are watching it closely. What happened to Lordaeron is not something they intend to let spread into their forest.",
+			"The ravine is a pathway rather than a place, running north out of the Hinterlands towards Caer Darrow, and the entrance to it is in the woods west of Quel'Danil Lodge on the far side of the mountain.",
+			"Nothing lives in it. A silvermane or an owlbeast wanders through and that is the whole population, which is unusual enough in this forest to be the point: the mist coming down the pass is plague, and it is the one stretch of the Hinterlands that smells like the Plaguelands rather than like itself.",
 		},
 	},
 	{
@@ -2186,14 +2191,6 @@ SubsOf("Eastern Plaguelands", {
 		readMore = { "Wowpedia: Plaguewood", "Wowpedia: The Dread Citadel - Naxxramas" },
 	},
 	{
-		name = "Ruins of Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A village destroyed in a battle its dead are still fighting.",
-		lore = {
-			"Darrowshire was a village that made a stand against the Scourge and lost. The battle was a massacre on both sides, and it has not stopped.",
-			"The dead of Darrowshire are still in the village, still fighting the same fight. Laying them to rest is one of the Argent Dawn's long-standing concerns, and it requires knowing exactly who did what on the day.",
-		},
-	},
-	{
 		name = "Tyr's Hand", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "An intact cathedral town held top to bottom by the Scarlet Crusade.",
 		lore = {
@@ -2360,10 +2357,11 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Rise of the Defiler", parent = "Blasted Lands", faction = "Hostile",
-		hook = "A rise held by the demon Razelikh and his ogre servants.",
+		hook = "Craggy high ground in the middle of the Blasted Lands, held by a demon lord.",
 		lore = {
-			"Razelikh the Defiler is a demon who has carved out his own territory here, served by the Dreadmaul ogres who worship him.",
-			"The Blasted Lands have become a place where individual demons set up principalities. That is what becomes of a region nobody has the resources to hold.",
+			"Razelikh the Defiler keeps these mountains, and Razelikh is not his name. The name is Rakh'likh, and getting hold of it is a piece of work in itself.",
+			"He does not hold the Blasted Lands alone. Three subordinates, Sevine and Allistarj and Grol, each wear a third of an amulet he made, attuned to its wearer's lifeforce, and while they stay inside the Blasted Lands none of the three can be killed at all. The same amulet, whole, is what summons him.",
+			"The cost of that arrangement is paid by other people. There are eighteen stones scattered across the zone holding men bound as servants to the four of them, in what one of the bound describes as eternal torture, and they have to be broken one at a time.",
 		},
 	},
 	{
@@ -2385,10 +2383,10 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Dreadmaul Post", parent = "Blasted Lands", faction = "Hostile",
-		hook = "An ogre camp on the road, taxing the route to the portal.",
+		hook = "The Dreadmaul clan's mound in the middle of the Blasted Lands.",
 		lore = {
-			"Dreadmaul Post sits on the main road through the Blasted Lands and the ogres there make travelling it expensive.",
-			"The Nethergarde garrison clears the road periodically. The ogres come back.",
+			"Dreadmaul Post sits in the centre of the zone, on the ground between Nethergarde Keep and the Dark Portal, and the ogres on it are the heaviest the clan puts out: maulers and warlocks rather than the brutes at Dreadmaul Hold in the north. A cauldron is going in the middle of the camp.",
+			"The Dreadmaul came through the Dark Portal from Draenor and never went far from it. They are still here two wars later, and felbeasts out of the Tainted Scar drift through the post from the south.",
 		},
 	},
 	{
@@ -2422,9 +2420,11 @@ SubsOf("Blasted Lands", {
 SubsOf("Eastern Plaguelands", {
 	{
 		name = "Darrowshire", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A ruined village whose dead still haunt the Eastern Plaguelands.",
+		aliases = { "Ruins of Darrowshire" },
+		hook = "A village destroyed in a battle its dead are still fighting.",
 		lore = {
-			"Darrowshire lies in the southern hills of the Eastern Plaguelands. The Scourge destroyed the village during the Third War, and many of its defenders now serve as undead elsewhere in the region.",
+			"Darrowshire lies in the southern hills of the Eastern Plaguelands. The village made a stand against the Scourge during the Third War and lost, the battle was a massacre on both sides, and many of its defenders now serve as undead elsewhere in the region.",
+			"It has not stopped. The dead of Darrowshire are still in the village fighting the same fight, and laying them to rest is one of the Argent Dawn's long-standing concerns. Doing it requires knowing exactly who did what on the day, which means the heroes, the defenders, the villains and the marauders all have to be accounted for separately.",
 			"Pamela Redpath remains among the ruins. Her surviving family is searching for news of her.",
 		},
 		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Sister Pamela", "Wowpedia: Defenders of Darrowshire" },
@@ -2479,16 +2479,6 @@ SubsOf("Alterac Mountains", {
 			"So two outfits of thieves hold the same mountains, and the older one is the one with the pedigree.",
 		},
 		readMore = { "Wowpedia: Ravenholdt", "Wowpedia: Syndicate", "Wowpedia: Alterac" },
-	},
-	{
-		name = "Old Dalaran Ruins", parent = "Alterac Mountains", faction = "Contested",
-		hook = "What is left outside the dome, where the magocracy used to stand.",
-		lore = {
-			"Dalaran was the greatest school of arcane learning in the world, and Archimonde destroyed it in an afternoon at the end of the Third War. He broke the city to get at what the Kirin Tor had been keeping and then marched on Hyjal, where he died.",
-			"The surviving magi raised a dome over the worst of it. These ruins are the ground outside that, left uncovered.",
-			"The city brought a great deal of this on itself. Kel'Thuzad was one of its own, the Cult of the Damned was founded by a member of the Council of Six, and the Kirin Tor's habit of studying things it should have destroyed is the thread running through all of it.",
-		},
-		readMore = { "Wowpedia: Dalaran", "Wowpedia: Archimonde", "Wowpedia: Kel'Thuzad" },
 	},
 })
 
@@ -2729,8 +2719,8 @@ SubsOf("Eastern Plaguelands", {
 		name = "Northdale", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A destroyed town where a paladin gave up the Silver Hand.",
 		lore = {
-			"Northdale lies north of Light's Hope Chapel, below the way into Quel'Thalas, and it is wreckage. Banshees hold it, with eyeless watchers that cannot be seen, and the lake beside it has corrupted elementals in it.",
-			"Taelan Fordring renounced the Order of the Silver Hand here and went to the Scarlet Crusade. He was Tirion Fordring's son, and Tirion had already been stripped of his own title and exiled for sparing the life of an orc.",
+			"Northdale lies in the north-east of the Plaguelands, north of Light's Hope Chapel and short of the way into Quel'Thalas, and it is wreckage. Banshees hold it, with eyeless watchers that cannot be seen, and the lake beside it has corrupted elementals in it.",
+			"The Order of the Silver Hand was decimated when Uther was killed, and Taelan Fordring was pushed back to this hamlet and made his last stand in it. His own account of the moment is that he wondered whether any of the Silver Hand were left alive and whether it mattered, and then threw down its standard and renounced everything he had known. The symbol is still on the ground where he dropped it, and his father has asked for it back. Tirion Fordring had already been stripped of his own title and exiled for sparing the life of an orc.",
 			"So a father disgraced for showing mercy, and a son who decided mercy was the problem. The Scarlet Crusade is full of people who made that calculation while looking at ground like this.",
 		},
 		readMore = { "Wowpedia: Northdale", "Wowpedia: Taelan Fordring", "Wowpedia: Tirion Fordring", "Wowpedia: Scarlet Crusade" },
@@ -2824,9 +2814,8 @@ SubsOf("Deadwind Pass", {
 		name = "Grosh'gok Compound", parent = "Deadwind Pass", faction = "Hostile",
 		hook = "The largest of the Vice's caves, held by the Deadwind ogres.",
 		lore = {
-			"The Vice is a run of caves in Deadwind Pass, and the Grosh'gok Compound is the southernmost and the biggest. Ogres hold it.",
+			"The Vice is the side canyon off the main road, and the Grosh'gok Compound is the southernmost and largest of the caves in it. Ogres hold it: Deadwind brutes and maulers, with warlocks and ogre magi behind them.",
 			"Ogres in the Eastern Kingdoms are what the Old Horde left behind. Gul'dan brought them through the Dark Portal during the Second War and the collapse abandoned them here with no masters and no way home.",
-			"A pass with Karazhan at one end and an ogre mound at the other, and almost nobody living in between. Nothing has been resolved in Deadwind Pass; it has simply been left.",
 		},
 		readMore = { "Wowpedia: Grosh'gok Compound", "Wowpedia: Ogre", "Wowpedia: Deadwind Pass" },
 	},
@@ -2835,10 +2824,10 @@ SubsOf("Deadwind Pass", {
 SubsOf("Dun Morogh", {
 	{
 		name = "Ironband's Compound", parent = "Dun Morogh", faction = "Hostile",
-		hook = "A dig south of Helm's Bed Lake that the Dark Iron have taken over.",
+		hook = "A blacksmith's compound south of Helm's Bed Lake, taken by the Dark Iron.",
 		lore = {
-			"Sturgy Ironband had this compound in eastern Dun Morogh, and it is Dark Iron ground now. They attack anyone who comes close.",
-			"Dark Irons this far into Bronzebeard country is not a raid, it is a presence, and Ironforge wants evidence of it. That is the sort of errand the city hands to whoever is willing.",
+			"Sturgy Ironband taught blacksmithing here, south of Helm's Bed Lake in eastern Dun Morogh, and he was the best there was at it. Then one of his students brought him a load of strange ore. He called it umbral ore and was eager to work with it, and a band of Dark Iron dwarves came for the compound not long after it arrived and killed everyone in the place.",
+			"The Dark Iron hold it now and go for anyone who comes close. One of his students wants the ore back and the master answered for. Ironforge wants something colder: Muiredon Battleforge is after a Dark Iron script, because dwarves dug in this far into Bronzebeard country, with a leader handing out orders, is a presence and not a raid.",
 			"The Dark Iron are the third clan from the War of the Three Hammers, the one that lost twice: beaten for the throne, then bound to Ragnaros by their own emperor's summoning. They have spent the time since trying to get back into the mountain.",
 		},
 		readMore = { "Wowpedia: Ironband's Compound", "Wowpedia: Dark Iron clan", "Wowpedia: War of the Three Hammers" },
@@ -2949,8 +2938,8 @@ SubsOf("Duskwood", {
 		hook = "A dark hill over Raven Hill Cemetery, with a necromancer's house on top.",
 		lore = {
 			"The Rowe is a hill on the northern edge of Raven Hill Cemetery, and it is darker than the rest of Duskwood, and that takes some doing.",
-			"Morbent Fel lives on it. He is a necromancer, and the undead throughout these woods answer to him; the graveyard below is his supply.",
-			"He cannot be put down with ordinary weapons, and a detail like that turns a local problem into a campaign. Duskwood has the worgen, the Nightbane pack, the Scythe of Elune and the Dark Riders, and this is the quieter half of its trouble.",
+			"Morbent Fel lives on it. He is a necromancer, and the undead throughout these woods answer to him.",
+			"He cannot be put down with ordinary weapons, and a detail like that turns a local problem into a campaign. The Dark Riders have been seen on this hill in conversation with him, so Duskwood's troubles are less separate than they look: the worgen, the Nightbane pack, the Scythe of Elune and the riders.",
 		},
 		readMore = { "Wowpedia: Forlorn Rowe", "Wowpedia: Morbent Fel", "Wowpedia: Raven Hill Cemetery" },
 	},
@@ -3105,7 +3094,7 @@ SubsOf("Redridge Mountains", {
 		lore = {
 			"Render's Rock is a large cave near where Redridge meets the Burning Steppes, and it is full of Blackrock orcs.",
 			"\"Render\" is Rend Blackhand, son of Blackhand, who was warchief of the Old Horde before Orgrim Doomhammer killed him. Rend never accepted the Second War's end, holds Blackrock Spire with his brother's old clan, and calls his people the true Horde.",
-			"Corporal Keeshan is in that cave too, in a bad way, and needs getting back to Lakeshire. Redridge's problems all come down the pass from this direction.",
+			"Corporal Keeshan is in that cave too. He was taken prisoner after the fighting at Stonewatch Keep and dragged up here, and he needs walking back down to Lakeshire rather than carried. Redridge's problems all come down the pass from this direction.",
 		},
 		readMore = { "Wowpedia: Render's Rock", "Wowpedia: Rend Blackhand", "Wowpedia: Dark Horde" },
 	},
@@ -3114,8 +3103,8 @@ SubsOf("Redridge Mountains", {
 		hook = "The valley with the Tower of Ilgalar in it, where Morganth lives.",
 		lore = {
 			"Galardell Valley is in Redridge's north-east, and the Tower of Ilgalar stands in it. Morganth is in the tower.",
-			"He is the warlock who brought the Blackrock orcs into Redridge to take Stonewatch and then turned on them once the keep was his. A tower in a gnoll-infested valley is where that leaves him.",
-			"The gnolls are a problem in their own right, and Lieutenant Fangore among them will call every one within earshot. Lakeshire is dealing with orcs on one side and this on the other.",
+			"The gnolls filling the valley are his. Morganth gives the Shadowhide clan its orders through the pendants they wear, Magistrate Solomon has ruled that helping him is punishable by death, and Lakeshire's bounty is on the pendants themselves. Lieutenant Fangore leads the clan and will call every gnoll within earshot.",
+			"He is also in conflict with the orcs holding Stonewatch, and nobody in Lakeshire has worked out why. What Theocritus has worked out, watching the tower from Elwynn through the Eye of Azora, is worse than the gnolls: Morganth is hunting the Scythe of Elune and may already have found it.",
 		},
 		readMore = { "Wowpedia: Galardell Valley", "Wowpedia: Morganth", "Wowpedia: Tower of Ilgalar" },
 	},
@@ -3144,11 +3133,11 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Featherbeard's Hovel", parent = "The Hinterlands", faction = "Alliance",
-		hook = "A house beside Aerie Peak that was somebody's and now is not.",
+		hook = "A house beside Aerie Peak with a dead dwarf's journal still in it.",
 		lore = {
-			"The hovel sits next to Aerie Peak and it was Featherbeard's home. That is the whole of the record.",
+			"The hovel sits next to Aerie Peak and it was Featherbeard's home. He is not in it. His journal is still there and his remains lie out in the hills to the south-east, and that is the whole of the record.",
 			"Wildhammer names run to this sort of thing, and the dwarves of Aerie Peak keep gryphons rather than rams and answer to themselves rather than Ironforge. A hovel on the slope below the keep is the ordinary housing of that arrangement.",
-			"Whatever Featherbeard did, it is finished, and the place is just a house now. Not everything in these mountains has a war in it.",
+			"Whatever Featherbeard was doing out in those hills, it finished badly, and his house is standing empty with his notes in it. Not everything in these mountains has a war in it.",
 		},
 		readMore = { "Wowpedia: Featherbeard's Hovel", "Wowpedia: Aerie Peak" },
 	},
@@ -3339,8 +3328,8 @@ SubsOf("Silverpine Forest", {
 		hook = "Silverpine's north-western shore, with a half-sunken ship on it.",
 		lore = {
 			"North Tide's Run is the name for the north-western shoreline of Silverpine, the beach and a thin band of the Great Sea beyond it.",
-			"The thing anybody remembers is the ship. It lies partly submerged at the water's edge, and nobody has moved it or explained it.",
-			"Wallace the Blind keeps a small campfire down by the water. Silverpine is Forsaken country with worgen in the woods and the Scarlet Crusade pushing in, so a man sitting alone on a beach beside a wreck is doing better than most.",
+			"The thing anybody remembers is the ship. A Horde vessel lies partly submerged at the water's edge, and nobody has moved it or explained it. Wallace the Blind keeps a campfire beside it and sells weapons off the beach, which is a living of sorts in a forest with worgen in it and the Scarlet Crusade pushing in.",
+			"Druids come here too. One half of the Pendant of the Sea Lion is in a lockbox out by the wreck, and a young druid who wants an aquatic form has to be told by somebody in Moonglade which coast to look on.",
 		},
 		readMore = { "Wowpedia: North Tide's Run", "Wowpedia: Silverpine Forest" },
 	},
@@ -3360,9 +3349,9 @@ SubsOf("Westfall", {
 		aliases = { "Westfall Lighthouse", "The Lighthouse" },
 		hook = "A lighthouse on the southern coast, kept now by its own keeper's ghost.",
 		lore = {
-			"The lighthouse stands just off Westfall's far southern shore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
-			"They came back and relit the flame. Old Murk-Eye then put the murlocs onto the lighthouse directly, and that was the end of the family.",
-			"Captain Grayson is still outside it. He is a ghost, he is entirely lucid about what happened, and what he wants is the murlocs along this coast dealt with. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
+			"The lighthouse stands on Westfall's far southern shore, at the end of the Longshore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
+			"They came back and relit the flame. Old Murk-Eye talked the weaker-minded murlocs into raiding the lighthouse with him a second time, and that was the end of the family.",
+			"Captain Grayson is still outside it. His own life ended on the rocks below, he is entirely lucid about all of it, and with nobody left to watch the flame he has taken the job himself: oil carried up from the harvest golems inland, and the murlocs along this coast dealt with by anyone willing. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
 		},
 		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Old Murk-Eye", "Wowpedia: Westfall" },
 	},

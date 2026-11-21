@@ -168,17 +168,17 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Red Rocks", parent = "Mulgore", faction = "Contested",
-		hook = "The tauren burial ground, and somebody has been disturbing it.",
+		hook = "The tauren burial ground in north-eastern Mulgore, and the quilboar are in it.",
 		lore = {
-			"Red Rocks is where the tauren lay their honoured dead. It is sacred ground and treated as such.",
-			"It has been interfered with. For the tauren there is hardly a graver offence. The Grimtotem and outside necromancy have both been suspected.",
+			"Red Rocks is red sandstone in the north-east of Mulgore, and it is where the tauren send their honoured dead to the Earth Mother by cleansing flame. Only the most valiant are laid to rest here, the ones who helped found and defend Thunder Bluff. Lorekeeper Raintotem keeps the ground and an ancestral spirit walks it.",
+			"Bristleback quilboar have come up into it. They are logged on a nameplate as interlopers, the politest word anyone in Thunder Bluff is using: for the tauren there is hardly a graver offence than fouling this particular ground, and a burial cannot proceed while they are standing on it.",
 		},
 	},
 	{
 		name = "Palemane Rock", parent = "Mulgore", faction = "Hostile",
-		hook = "A gnoll den in western Mulgore, stealing tauren hides.",
+		hook = "A gnoll cave in western Mulgore, worked by tanners and skinners.",
 		lore = {
-			"The Palemane gnolls have made a camp in the western hills and have been raiding tauren leather and supplies.",
+			"Palemane Rock is a cave in the western hills that runs a fair way into the mountainside, with the gnolls living inside it and in a camp outside. Their own trades are what they are named for on a nameplate: tanners and skinners, working hides they did not take off their own kills.",
 			"Gnolls turn up on both continents wherever there is a road worth robbing. The tauren treat them as vermin rather than as an enemy.",
 		},
 	},
@@ -299,10 +299,11 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "Oracle Glade", parent = "Teldrassil", faction = "Contested",
-		hook = "A glade in the north where the night elves seek counsel.",
+		hook = "The glade in Teldrassil's north-west, with the first moonwell under the Oracle Tree.",
 		lore = {
-			"Oracle Glade is a place of consultation and prophecy, tended by night elves who read the natural world for guidance.",
-			"The guidance currently coming out of it is not reassuring. The night elves blame the tree rather than the oracles.",
+			"The oracle here is a tree. The Oracle Tree stands in the north-west of Teldrassil and the first and most powerful of the world tree's moonwells lies under its boughs, which is why a young druid is sent to this glade to fill a phial at the last of the wells.",
+			"The tree has watched Teldrassil grow alongside the druids, and it reports by shedding a piece of its bark for somebody to carry to Fandral Staghelm in Darnassus. That line of communication has been cut more than once: Bloodfeather harpies have nested all round the glade, one of them killed a runner carrying a report, and Sentinel Arynia Cloudsbreak was sent out with a small detachment to push them back a nest at a time.",
+			"What the reports say is not reassuring, and the fault is not the tree's. Staghelm asked the dragons to bless Teldrassil as they once blessed Nordrassil, and Nozdormu refused him for his arrogance and Alexstrasza refused with him. Without that blessing the tree's growth has been flawed and unpredictable, and the night elves' immortality has not come back.",
 		},
 	},
 	{
@@ -565,18 +566,18 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Dreadmist Peak", parent = "The Barrens", faction = "Hostile",
-		hook = "A tower-topped peak held by Burning Blade cultists.",
+		hook = "A peak north-west of the Crossroads, held by Burning Blade cultists.",
 		lore = {
-			"Dreadmist Peak is a high point in the northern Barrens, occupied by the Burning Blade: the demonic cult of orcs who want the old Horde's power back.",
-			"That the cult can hold a visible landmark inside Horde territory says something about how thinly Orgrimmar's authority is spread across Kalimdor.",
+			"Dreadmist Peak stands north-west of the Crossroads and the Burning Blade have the top of it: the demonic cult of orcs who want the old Horde's power back. Pools of water up there set the weather across the northern Barrens, the Cenarion Circle holds that the cult has fouled them, and the gazelle north of the east-west road are sick.",
+			"Sarilus Foulborne sits at the summit. He is an undead mage and the Sentinels want him for the water elementals he has been defiling over in Ashenvale. That the cult can hold a visible landmark inside Horde territory says something about how thinly Orgrimmar's authority is spread across Kalimdor.",
 		},
 	},
 	{
 		name = "Far Watch Post", parent = "The Barrens", faction = "Horde",
-		hook = "A Horde watchtower on the road north from Durotar.",
+		hook = "The Horde garrison on the Barrens border, where the road comes in from Durotar.",
 		lore = {
-			"Far Watch Post is the first Horde position travellers meet coming into the Barrens from Durotar, and it watches the eastern road.",
-			"The tower system across the Barrens is how the Horde keeps track of a zone far too large to garrison properly.",
+			"Far Watch Post is the orc garrison on the border of the Barrens and Durotar, and it is the first Horde position travellers meet coming in off the bridge. Kargal Battlescar holds it, with a watchtower over the camp, peons, a riding wolf and a few Horde guards.",
+			"Two of the Horde's errands run through the post. Ak'Zeloth is here working on the Burning Blade and the Demon Seed up at Dreadmist Peak, and Uzzek instructs young warriors a short way south of the camp. The road west goes to the Crossroads.",
 		},
 	},
 	{
@@ -832,10 +833,11 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Mystral Lake", parent = "Ashenvale", faction = "Contested",
-		hook = "A lake in the forest's heart, with furbolgs on its shores.",
+		hook = "The forest's largest lake, and the water in it has turned.",
 		lore = {
-			"Mystral Lake is central Ashenvale's main water, and the forest around it is some of the oldest growth in Kalimdor.",
-			"It also sits on the route between Astranaar and the Horde's eastern positions, so it stays contested.",
+			"Mystral Lake is in south-central Ashenvale, below Silverwind Refuge and east of the Talondeep Path, and it is the biggest water in the forest. The elementals in it were the night elves' own once. Sarilus Foulborne corrupted them, and there are three dozen befouled water elementals in the lake now.",
+			"That is a transport problem as much as anything. The Talondeep Path is the tunnel between Ashenvale and Stonetalon, the lake sits beside its mouth, and traffic through the path has stopped because the water attacks whatever comes near it. Mastok Wrilehiss at Splintertree Post wants twelve of them killed and the gazebo out on the lake scouted while somebody is there, because it looks straight at the Alliance refuge.",
+			"Krolg is camped by the lake on his own errand, which is Ran Bloodtooth and the guards around him.",
 		},
 	},
 	{
@@ -1004,10 +1006,11 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Mannoroc Coven", parent = "Desolace", faction = "Hostile",
-		hook = "A demon camp left standing after the Third War ended.",
+		hook = "Night elf ruins in southern Desolace with demons coming through them.",
 		lore = {
-			"The Mannoroc Coven is a Burning Legion site in southern Desolace, named for the pit lord Mannoroth. Demons have held it since the Third War.",
-			"The Legion was defeated at Mount Hyjal but not removed. Pockets like this one survived across Kalimdor and the Burning Blade cult has been working with them.",
+			"The coven is a run of night elf ruins south of Ghost Walker Post, named for the pit lord Mannoroth, and the ground is blasted twice over: dead before the demons arrived and worse since. Infernals, felguards, succubi and felhounds hold it, with Lord Azrethoc over them and the orc warlock Jugkar Grim'rod there for the Burning Blade.",
+			"The demons are not survivors of anything. The Burning Blade is bringing them through, with portals the cult opens using the Hand of Iruxos, which it keeps locked in a demon box inside Thunder Axe Fortress. Taiga Wisemane at Shadowprey Village wants six of those portals banished and warns that each one has a guardian on it.",
+			"The road still runs past the coven. The Gizelton Caravan pays for an escort through it, on the grounds that the demons usually ignore the kodos and that something has them spooked this time.",
 		},
 	},
 	{
@@ -1090,7 +1093,7 @@ SubsOf("Dustwallow Marsh", {
 		hook = "Jaina Proudmoore's city, the Alliance's only real holding in Kalimdor outside the night elf lands.",
 		lore = {
 			"Theramore was built by the refugees Jaina led out of Lordaeron when the plague took it. It is a walled port on an island in the marsh, and the seat of Jaina's authority as Lady of Theramore.",
-			"Politically it is the most interesting city in the world. Jaina maintains working communication with Thrall, she has Kirin Tor credentials, and she is simultaneously an Alliance leader and the main reason Kalimdor is not at total war.",
+			"In political terms it is the most interesting city in the world. Jaina maintains working communication with Thrall, she has Kirin Tor credentials, and she is simultaneously an Alliance leader and the main reason Kalimdor is not at total war.",
 			"Her position is not popular with everyone. Her father died attacking the Horde she refuses to fight, and there are people in Theramore who have not forgiven her for letting it happen.",
 		},
 		readMore = { "Wowpedia: Theramore Isle" },
@@ -1247,18 +1250,18 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Ruins of Isildien", parent = "Feralas", faction = "Hostile",
-		hook = "Night elf ruins in the central jungle, held by centaur.",
+		hook = "A large night elf city in southern Feralas, held by the Gordunni in strength.",
 		lore = {
-			"Isildien was a night elf settlement, and the centaur have taken the ruins.",
-			"Feralas is dotted with night elf ruins the way Darkshore and Ashenvale are. The empire covered all of this.",
+			"Isildien was a night elf city and the Gordunni ogres have all of it. Not a camp in the ruins either: warlords, battlemasters, mage-lords, shamans, warlocks, brutes and maulers, most of a clan living in somebody else's capital.",
+			"The round building at the top of the stairs is the shape of a temple of Elune. Feralas is dotted with night elf ruins the way Darkshore and Ashenvale are, and the empire covered all of this.",
 		},
 	},
 	{
 		name = "Ruins of Solarsal", parent = "Feralas", faction = "Contested",
-		hook = "A night elf ruin on the coast, half in the water.",
+		hook = "A night elf ruin out on Sardor Isle, with naga standing in it.",
 		lore = {
-			"Solarsal is a coastal ruin showing exactly where the waterline used to be before the Sundering raised the sea.",
-			"The night elves have an active interest in these sites and a very limited capacity to protect them.",
+			"Solarsal is on Sardor Isle, off the Feralas coast south-west of Feathermoon Stronghold, and the Hatecrest naga are on the ruins themselves: screamers, warriors, sirens and wave riders, with coast crawl snapclaws working the water around them.",
+			"The night elves have an active interest in these sites and a very limited capacity to protect them. The stronghold's sentinels are on the same island and have not cleared it.",
 		},
 	},
 	{
@@ -1289,10 +1292,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Rage Scar Hold", parent = "Feralas", faction = "Hostile",
-		hook = "A yeti cave in the northern highlands.",
+		hook = "A dug-in yeti cave in central Feralas, with somebody else's books in it.",
 		lore = {
-			"Rage Scar Hold is a yeti den. Feralas' yeti are large, numerous and bad-tempered even by yeti standards.",
-			"The zone's wildlife is its real population. Both factions' outposts here are small by comparison.",
+			"Rage Scar Hold is cut into the hills of central Feralas and the rage scar yeti hold it. Nothing else lives there now.",
+			"The cave is more interesting than its tenants. There are books and written symbols inside it, and the architecture deeper in is night elf work, which means the yeti moved into something rather than digging it. Nobody has said what happened to whoever was there first.",
 		},
 	},
 	{
@@ -1353,9 +1356,9 @@ SubsOf("Tanaris", {
 		name = "Gates of Uldum", parent = "Tanaris", faction = "Contested",
 		hook = "An enormous sealed titan door at the desert's edge, and nobody has got it open.",
 		lore = {
-			"The Gates of Uldum are a titan structure in southeastern Tanaris: colossal doors flanked by watchers, shut tight.",
-			"After Uldaman, Ironforge knows what titan installations contain: records, machinery and the history of how this world was shaped. Uldum is presumably the same and much larger.",
-			"The Explorers' League has a camp nearby and no way in. The watchers at the gate are still functioning and still following their original instructions.",
+			"The Gates stand in the Valley of the Watchers, in southern Tanaris: colossal doors with stone watchers either side of them, shut tight, and a pedestal in front of them. The only Alliance presence in the valley is Gunstan's Post, and it has no way in either.",
+			"The platinum discs out of Uldaman are what got anyone this far. The keeper of knowledge down there said the Creators' synthesis of the Earthen had been chronicled in the Discs of Norgannon, and the portable copy of that record went to the League in Ironforge and to the sages of Thunder Bluff. Bring it to this pedestal and a second watcher appears, calls itself a guardian of entry, and refuses: the set is missing the Plates of Uldum.",
+			"Nobody knows where those plates are, so both expeditions have stopped here. The two of them do not want the same thing from the door either. Ironforge wants to walk into the place the Creators worked without having to bring a shovel. Thunder Bluff's reading is that the secrets the earth keeps would destroy us all and had better stay secrets.",
 		},
 	},
 	{
@@ -1388,10 +1391,10 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Dunemaul Compound", parent = "Tanaris", faction = "Hostile",
-		hook = "An ogre camp in the southern desert.",
+		hook = "The compound of a nomadic ogre band, newly arrived in southern Tanaris.",
 		lore = {
-			"The Dunemaul ogres hold ground in southern Tanaris, where they raid the roads and the goblin traffic.",
-			"Ogres in a desert are a poor fit and the Dunemaul have adapted badly. They are no less dangerous for it.",
+			"The Dunemaul came into Tanaris as a nomadic band and took a large stretch of the southern desert for a compound. Brutes, enforcers, ogre mages and warlocks hold it under Gor'marok the Ravager, with two rare ogres out on the same sand, Omgorn and Cyclok.",
+			"Gadgetzan wants the compound broken before the band can build up a force. Smaller parties of the same ogres are still wandering the desert, and some of them have moved into the old troll ruins.",
 		},
 	},
 	{
@@ -1404,10 +1407,10 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Eastmoon Ruins", parent = "Tanaris", faction = "Hostile",
-		hook = "Ruins in the eastern sands, with troll scavengers in them.",
+		hook = "Troll ruins west of the Gaping Chasm, moved into by ogres.",
 		lore = {
-			"Eastmoon is one of a set of ruins across Tanaris, with Southmoon and Noonshade, whose builders are not clearly identified.",
-			"The Sandfury trolls use them. Whether they built them is a separate question the trolls are not answering.",
+			"Eastmoon is one of a set of troll ruins across Tanaris, with Southmoon and Noonshade. The trolls who held this land worked gahz'ridian into ornaments, and the ground inside Eastmoon is thick with the stuff.",
+			"The ruins are not theirs any more. One of the wandering Dunemaul parties has moved into the stonework west of the Gaping Chasm, warlocks and enforcers and ogre mages, and the ogres are what stands between a treasure hunter and the ornaments.",
 		},
 	},
 	{
@@ -1490,11 +1493,14 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Legash Encampment", parent = "Azshara", faction = "Hostile",
-		hook = "A satyr camp in the northern hills.",
+		aliases = { "Legashi Encampment" },
+		hook = "The Legashi satyrs' camp in the northern hills.",
 		lore = {
-			"The Legash satyrs hold ground in northern Azshara, among the ruins of the empire their ancestors betrayed.",
-			"Satyrs are drawn to night elf sites. The night elves regard this as deliberate and probably correct.",
+			"The encampment sits in northern Azshara, east of Ursolan and north of the Thalassian Base Camp. The Legashi hold it, satyrs and rogues and hellcallers, camped in among the thunderhead skystormers that own most of this coast.",
+			"A satyr is a night elf who took Sargeras's bargain during the War of the Ancients and was remade for it. Azshara was the queen's own province and her court were the ones who opened the portal, and Xavius, the first satyr of all, was her counsellor. So the Legashi are sitting in the ruins of the civilisation they helped bring down, and they have had ten thousand years to move on and have not.",
+			"Satyr camps are scattered through every forest the night elves once held. This coast has the Legashi in the north and the Haldarr in the south-west.",
 		},
+		readMore = { "Wowpedia: Legash Encampment", "Wowpedia: Satyr", "Wowpedia: Xavius" },
 	},
 	{
 		name = "Haldarr Encampment", parent = "Azshara", faction = "Hostile",
@@ -1620,8 +1626,8 @@ SubsOf("Felwood", {
 		name = "Irontree Woods", parent = "Felwood", faction = "Hostile",
 		hook = "Northern woods where the trees themselves have turned.",
 		lore = {
-			"The Irontree Woods hold corrupted treants and worse. When Felwood's taint reaches plant life that was already sentient, the result is a hostile forest in the literal sense.",
-			"The Cenarion Circle finds this the most disturbing part of the zone, because treants were allies.",
+			"The Irontree Woods are in northern Felwood, and the trees are the hostile part. The ground is worked by irontree stompers in numbers, with wanderers and toxic horrors among them and angerclaw bears through the timber.",
+			"The Cenarion work here is done one plant at a time. The whipper root and the night dragon's breath growing in these woods come up corrupted, and a dose of Cenarion plant salve turns a corrupted plant back into a healthy one. Making the salve takes what Felwood has already spoiled, so every cleansed plant is paid for with fel creep, tainted vitriol or a corrupted soul shard taken off something that had to be put down.",
 		},
 	},
 	{
@@ -1712,10 +1718,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Golakka Hot Springs", parent = "Un'Goro Crater", faction = "Contested",
-		hook = "Hot springs in the northwest, with elementals in the water.",
+		hook = "Geothermal pools on the crater's western side, with a goblin taking their temperature.",
 		lore = {
-			"The Golakka Hot Springs are geothermal pools on the crater's western side.",
-			"Together with Fire Plume Ridge they suggest the crater sits on something volcanically active, which may be why a jungle survives here in the middle of a desert belt.",
+			"The Golakka Hot Springs are geothermal pools in the west of Un'Goro, north of Terror Run. The ground around them is worked by frenzied pterrordax and elder diemetradon, with glutinous oozes in the water and bloodpetal trappers in between.",
+			"Krakle is camped at the pools and wants to know where the heat comes from. His guess is Fire Plume Ridge, directly east of here, and he has built a thermometer to go and test it against the hot spots on the ridge. It reads in degrees Kraklenheit.",
 		},
 	},
 	{
@@ -1728,26 +1734,26 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Northern Pylon", parent = "Un'Goro Crater", faction = "Contested",
-		hook = "One of three crystal pylons standing on the crater rim.",
+		hook = "The pylon on the crater's northern rim, found on hearsay.",
 		lore = {
-			"The Northern Pylon is one of three crystal pylons standing on the crater's rim. They react to the crystals found on the crater floor, and the expedition has been feeding them samples to see what happens.",
-			"What they are for is unknown, and so is who built them. The guesses at Marshal's Refuge run from measuring instruments to something holding the crater shut, and nobody likes the second one.",
+			"The northern pylon completes the ring with the eastern and western ones, and like them it takes the crater's power crystals. Who raised any of the three has not been established.",
+			"This one was found because somebody at Marshal's Refuge could not let the rumours alone. His own description of his state was that the thought was driving him crazy and that he will usually believe anything people tell him, and all he could say about the location was that he had heard there was a pylon somewhere in the north. Somebody went and looked, and he was right.",
 		},
 	},
 	{
 		name = "Ironstone Plateau", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A raised plateau in the east, held by stone creatures.",
+		hook = "Bare rock on the crater's north-eastern rim, with young pterrordax on it.",
 		lore = {
-			"The Ironstone Plateau is high ground in eastern Un'Goro with an elemental and stone-creature population.",
-			"Un'Goro has elemental activity out of all proportion to its size: fire on the ridge, earth on this plateau, water at the springs. The expedition has not worked out whether that is cause or effect.",
+			"The Ironstone Plateau is high ground in north-eastern Un'Goro, stretches of bare stone tucked against the crater wall. What lives up here is fledgling pterrordax and young diemetradon, with bloodpetal lashers and threshers through the growth at its edges.",
+			"The plateau is also where the crystals come up. Power crystals in all four colours sit on it, red and blue and green and yellow, and those four are what the expedition's pylons read. A stone guardian comes through on its round.",
 		},
 	},
 	{
 		name = "Fungal Rock", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A cave of enormous fungi and the things that live in them.",
+		hook = "The apes' lair, a cavern in the crater's north-eastern wall.",
 		lore = {
-			"Fungal Rock is a cave on the crater's western side, dense with oversized fungal growth.",
-			"The crater's plant life is as unusual as its animals, and the expedition's botanists are as busy as its palaeontologists.",
+			"Fungal Rock is the cavern in the north-eastern wall of Un'Goro and the crater's apes live in it: gorillas, stompers and thunderers, with U'cha among them and a rare called Uhk'loc deeper in.",
+			"Marshal's Refuge is a short way west of the entrance. One of the expedition built a mechanical ape to get a closer look at the troop and lost contact with it at the cave mouth, and the machine is still standing outside.",
 		},
 	},
 })
@@ -1797,10 +1803,10 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Frostsaber Rock", parent = "Winterspring", faction = "Contested",
-		hook = "The frostsaber pride's territory in the western mountains.",
+		hook = "The frostsaber pride's tor in the north of Winterspring.",
 		lore = {
-			"Frostsaber Rock is where Winterspring's frostsaber pride lives. The great cats here are wild and the night elves' relationship with them is one of negotiation rather than ownership.",
-			"Earning a frostsaber's trust is a long piece of work. The night elves consider that appropriate.",
+			"Frostsaber Rock is the tor in northern Winterspring where the pride lives: cubs, huntresses and pride watchers on the slopes, with a matriarch over them and the rare Rak'shiri prowling the same snow.",
+			"Rivern Frostwind stands at the apex with a guardian beside him. He will teach friends of the Alliance to tame and ride a wintersaber, the work is long, and the night elves consider that appropriate. What he asks for first is the Winterfall furbolg kept away from the rock.",
 		},
 	},
 	{
@@ -1821,10 +1827,10 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Ice Thistle Hills", parent = "Winterspring", faction = "Hostile",
-		hook = "Yeti country in the eastern hills.",
+		hook = "The yeti hills south-east of Everlook, and the trade in what comes off them.",
 		lore = {
-			"The Ice Thistle Hills hold Winterspring's main yeti population, large even by yeti standards.",
-			"The zone's wildlife is its dominant feature. Everlook's economy runs substantially on what can be taken off it.",
+			"The Ice Thistle Hills are south-east of Everlook, and the ice thistle yeti live in and around a cave part way up them. The patriarchs and matriarchs carry the biggest horns.",
+			"Everlook uses all of it. Umi Rumplesnicker wants thick yeti fur to cover the moving parts of a mechanical yeti she has drawn up to startle her friends with, and two horns for it with nothing broken about them. Witch Doctor Mau'ari wants the e'ko: his reading of the yeti is that they move slowly and still dodge a great deal, because of what the fur takes off a blow, and whoever carries his cache can be given the same trick.",
 		},
 	},
 	{
@@ -2019,8 +2025,8 @@ SubsOf("Moonglade", {
 		name = "Lake Elune'ara", parent = "Moonglade", faction = "Neutral",
 		hook = "The lake at Moonglade's centre, named for the moon goddess.",
 		lore = {
-			"Lake Elune'ara is the water Moonglade is built around, and the night elves hold it sacred.",
-			"The glade's protection is not just a treaty between factions. The place itself is warded, and the Circle maintains that.",
+			"Lake Elune'ara is the water Moonglade is built around, and Nighthaven sits on it. The night elves hold it sacred.",
+			"Young druids are sent into it. The first trial is to go down and find a shrine bauble, get back out, and reach the Shrine of Remulos in the north-west of the glade before the thing decays in your hands, usually with other druids in the water hunting baubles of their own. Tajarri, one of the glade's wardens, is the one waiting at the shrine.",
 		},
 	},
 })
@@ -2235,11 +2241,10 @@ SubsOf("Desolace", {
 SubsOf("Durotar", {
 	{
 		name = "Razor Hill Barracks", parent = "Durotar", faction = "Horde",
-		hook = "Where Durotar's defence is organised, which in this zone is not ceremonial.",
+		hook = "The largest building in Razor Hill, and where new orcs are taught a trade.",
 		lore = {
-			"Razor Hill is the first real town new orcs reach, and the barracks is the part of it that matters. Durotar is bordered by the Kolkar centaur, harassed by the Burning Blade, and sits across a strait from a human city.",
-			"The Burning Blade is the serious problem. They are orcs who kept the demonic bargain after Thrall renounced it, and a clan that still drinks from the Legion's cup inside his own borders is a direct challenge to what the new Horde claims to be.",
-			"Thrall's whole case is that the orcs are no longer what Gul'dan made them. Durotar contains the counterexample.",
+			"The barracks is the big building in the middle of Razor Hill and it is where the teaching happens. Tarshaw Jaggedscar takes the warriors, Swart the shaman and Tai'jin the priests, with a blacksmith, a miner and a herbalist working out of the same walls and a general goods counter by the door.",
+			"That makes it the first place in Durotar where a young orc or troll is handed something other than a task. Everything else in this zone is a problem to be dealt with. This is the room where somebody shows you how.",
 		},
 		readMore = { "Wowpedia: Razor Hill", "Wowpedia: Burning Blade clan", "Wowpedia: Thrall" },
 	},
@@ -2270,9 +2275,9 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Kargathia Keep", parent = "Ashenvale", faction = "Horde",
-		hook = "The Warsong officers' stronghold, placed where Orgrimmar can reinforce it.",
+		hook = "The Warsong stronghold at the eastern end of the lumber camp.",
 		lore = {
-			"Kargathia Keep sits in the eastern part of the Warsong lumber operation, near the Southfury River, and it is where the clan's officers work. The position is chosen: if Ashenvale turns into a proper war, reinforcements come up from Orgrimmar along this line.",
+			"Kargathia Keep stands in the eastern part of the Warsong lumber operation in Ashenvale, close to the Southfury River and the line back to Durotar. What is around it is the operation itself: peons and deforesters working the trees with shredders among them, and grunts, shamans and scouts standing over the work.",
 			"The name is Kargath Bladefist's. He was chieftain of the Shattered Hand, the orc who cut off his own shackled hand and replaced it with a blade, and the Old Horde treated him as a figure to live up to. Kargath in the Badlands and Bladefist Bay in Durotar carry the name too.",
 			"Which is a particular choice for a logging camp in night elf country. The clan cutting Ashenvale down has named its command post after an orc famous for mutilating himself to get free.",
 		},
@@ -2389,6 +2394,7 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Galak Camp", parent = "Mulgore", faction = "Hostile",
+		era = "forever", spoiler = true,
 		hook = "Galak centaur camped on the Mulgore plains, a long way from any ground of theirs.",
 		lore = {
 			"The Galak are a Thousand Needles tribe. Thousand Needles is on the other side of the Barrens, and yet here they are on the grass in Mulgore with a camp pitched.",
@@ -2499,13 +2505,13 @@ SubsOf("Feralas", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Foothold Citadel", parent = "Dustwallow Marsh", faction = "Alliance",
-		hook = "Theramore's barracks, and the room where Jaina's father died.",
+		hook = "Theramore's barracks, the large building east of Jaina's tower.",
 		lore = {
-			"The Foothold Citadel is the keep inside Theramore Isle and the headquarters of the Theramore Guard.",
-			"Daelin Proudmoore died in it. He was Lord Admiral of Kul Tiras and Jaina's father, and he came to Kalimdor to finish the orcs off, on the straightforward Second War logic that the only safe orc is a dead one. Jaina had spent the Third War learning otherwise, at Hyjal, beside Thrall.",
-			"She would not fight her father and she would not help him. Thrall's forces stormed Theramore and killed him in this keep, and she let it happen because the alternative was the war her father wanted.",
+			"The Foothold Citadel is the large barracks inside Theramore Isle and the headquarters of the Theramore Guard. Captain Garran Vimes keeps the top floor. A clerk and an adjutant work the guard's rolls below him, and the building holds a gunsmith, an armourer, a warrior trainer and a trauma surgeon as well.",
+			"The rolls are where Theramore's old quarrel shows. Daelin Proudmoore, Lord Admiral of Kul Tiras and Jaina's father, brought the Kul Tiras fleet to Kalimdor to finish the orcs off, on the straightforward Second War logic that the only safe orc is a dead one. Jaina had spent the Third War learning otherwise, at Hyjal, beside Thrall. She would not fight her father and she would not help him, and the Horde killed him for it.",
+			"Men who came across the sea with her and stayed loyal to the admiral are down on the rolls as missing. Vimes calls them deserters and holds that they turned traitor out of loyalty to a dead man. Their answer is that Theramore betrayed the Alliance.",
 		},
-		didYouKnow = "Theramore is the only human settlement on Kalimdor that chose to live alongside the Horde, and the price of that choice was paid in this building. Jaina has been the Alliance's most committed advocate of peace with Orgrimmar ever since, and the reason is upstairs.",
+		didYouKnow = "Theramore is the only human settlement on Kalimdor that chose to live alongside the Horde. The bill for that choice is itemised in this building's guard rolls, one missing man at a time.",
 		readMore = { "Wowpedia: Foothold Citadel", "Wowpedia: Daelin Proudmoore", "Wowpedia: Jaina Proudmoore", "Wowpedia: Theramore Isle" },
 	},
 	{
@@ -2542,16 +2548,6 @@ SubsOf("Azshara", {
 		},
 		readMore = { "Wowpedia: Rethress Sanctum", "Wowpedia: Azshara" },
 	},
-	{
-		name = "Legashi Encampment", parent = "Azshara", faction = "Hostile",
-		hook = "Satyr ground in Azshara, held by one of the two clans working this coast.",
-		lore = {
-			"The Legashi are satyrs, and Azshara has them and the Haldarr both. A satyr is a night elf who took Sargeras's bargain during the War of the Ancients and was remade for it.",
-			"Their presence here is pointed. This was Azshara's own province, and the queen's court were the ones who opened the portal; Xavius, the first satyr of all, was her counsellor. The satyrs are in the ruins of the civilisation they helped destroy.",
-			"They have had ten thousand years and have not gone anywhere. Satyr camps are scattered through every forest the night elves once held, in Azshara, Ashenvale, Felwood and Desolace.",
-		},
-		readMore = { "Wowpedia: Satyr", "Wowpedia: Xavius", "Wowpedia: Azshara" },
-	},
 })
 
 -- Durotar.
@@ -2583,11 +2579,11 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Mor'shan Base Camp", parent = "The Barrens", faction = "Horde",
-		hook = "The camp behind the rampart, at the head of the Gold Road.",
+		hook = "The Horde's camp behind the Mor'shan Rampart, and its way into Warsong Gulch.",
 		lore = {
-			"The base camp sits with the rampart at the northern terminus of the Gold Road. The rampart is the wall; this is what keeps the wall supplied.",
-			"The Gold Road is the Barrens' spine. It runs north to south from here, crosses the east-west road at the Crossroads, and carries everything the Horde moves between Orgrimmar and the south.",
-			"Which makes the top of it the most sensitive point on the whole road. Lose the rampart and Ashenvale's war comes down the highway into the Barrens.",
+			"The base camp sits just south of the Ashenvale border beside the rampart, and it is the biggest Horde position at this end of the Barrens. Captain Shatterskull holds it for the Warsong.",
+			"What the camp is for is Warsong Gulch. Horde fighters cross into it from here and bring their marks of honour back to the captain, and Kelm Hargunth is the supply officer who turns a standing with the clan into rations and bandages that work nowhere else.",
+			"The Horde's account of that fight is worth hearing in its own words. Under the guise of protecting a forest that does not belong to them, the Alliance is said to be trying to deny the Horde one of its largest sources of lumber.",
 		},
 		readMore = { "Wowpedia: Mor'shan Rampart", "Wowpedia: Gold Road" },
 	},
@@ -2716,11 +2712,11 @@ SubsOf("Felwood", {
 	},
 	{
 		name = "Jadefire Glen", parent = "Felwood", faction = "Hostile",
-		hook = "A satyr camp in the south, speaking the Legion's own language.",
+		hook = "The Jadefire satyrs' own ground in southern Felwood.",
 		lore = {
-			"Xavathras holds the Jadefire Glen in southern Felwood, and the satyrs here answer to the Burning Legion directly rather than to themselves.",
-			"The detail worth noticing is the language. The satyrs of the Jadefire speak Eredun, the Legion's tongue, not Darnassian. They were night elves once, and they have given up even that.",
-			"Felwood is the forest the Legion ruined and the night elves could not clean. Most of the zone's work is killing satyrs, and there are always more.",
+			"The Jadefire Glen is in southern Felwood and the satyrs it is named for fill it, jadefire satyrs and felsworn, with felpaw wolves and angerclaw bears around them. Mongress and Alshirr Banebreath are both up here.",
+			"The Jadefire's working camp is next door at the Ruins of Constellas, and that is where the point of all this sits. A moonwell stands in those ruins. It was a night elf thing once, a place of renewal, and the satyrs have corrupted it and are using it to bring more of themselves into the world.",
+			"Xavathras runs the ruins and is cruel enough that Eridan Bluewind sends people after him by name for the Emerald Circle. He is not the top of it. The moonwell was a supply operation, and the spoils were going north to Xavaric.",
 		},
 		readMore = { "Wowpedia: Jadefire Glen", "Wowpedia: Satyr", "Wowpedia: Eredun" },
 	},
@@ -2865,8 +2861,8 @@ SubsOf("Durotar", {
 		name = "Hidden Path", parent = "Durotar", faction = "Horde",
 		hook = "A route through the mountains that new shaman are told to find for themselves.",
 		lore = {
-			"The Hidden Path goes up through the mountains ringing the Valley of Trials, and the first thing an aspiring shaman is asked to do is find it. Nobody draws them a map.",
-			"It leads to Spirit Rock. From the top of it there is a clear view out over the Barrens, which is the first time most new orcs see how much of this continent there is.",
+			"The Hidden Path goes up through the mountains ringing the Valley of Trials, and the only direction a young shaman is given is south-west. It comes out at Spirit Rock. The high point of it looks out over the Barrens.",
+			"The reason to find it is the sapta. A sapta is a drink made to bind a spirit to one of the elements, and only a few shaman know the recipe. Drunk in a holy place it lets the strong-willed see that element as nobody else can, and the shaman who hands it over says it is drunk in a holy place and never anywhere else.",
 			"Setting the search itself as the test is deliberate. A shaman's work is paying attention to the land, and a path that has to be noticed rather than followed is a reasonable way to begin.",
 		},
 		readMore = { "Wowpedia: Hidden Path", "Wowpedia: Valley of Trials", "Wowpedia: Spirit Rock" },
@@ -2885,9 +2881,9 @@ SubsOf("Durotar", {
 		name = "Razorwind Canyon", parent = "Durotar", faction = "Hostile",
 		hook = "Harpy nesting ground either side of the Orgrimmar road.",
 		lore = {
-			"The Dustwind harpies nest in this canyon, and the canyon is in two parts, east and west of the main road between Razor Hill and Orgrimmar.",
-			"Harpies are one of the stranger things in Kalimdor. The night elves hold them to be descended from Aviana's own servants, twisted long ago, which would make them a ruin of the same War of the Ancients that produced the satyrs.",
-			"Either way they are nesting on both sides of the Horde's main road, a short ride from the capital, and Durotar has not managed to do anything about it.",
+			"The Dustwind harpies nest in this canyon, and the canyon is in two parts, east and west of the main road between Razor Hill and Orgrimmar. There are savages, storm witches and pillagers in it, with Burning Blade thugs and neophytes camped in among them.",
+			"The harpies are a freight problem. Drygulch Ravine lies through the eastern part of the canyon, the goblins' caravans have to come that way, and Rezlak had lost enough of them to stop waiting for help and start paying for it himself.",
+			"So they are nesting on both sides of the Horde's main road, a short ride from the capital, and Durotar has not managed to do anything about it.",
 		},
 		readMore = { "Wowpedia: Razorwind Canyon", "Wowpedia: Harpy", "Wowpedia: Razor Hill" },
 	},
@@ -2978,13 +2974,13 @@ SubsOf("Desolace", {
 SubsOf("Azshara", {
 	{
 		name = "Legashi Stronghold", parent = "Azshara", faction = "Hostile",
-		hook = "The larger of the two Legashi satyr positions in the north.",
+		era = "forever", spoiler = true,
+		hook = "A second Legashi position in northern Azshara, above the encampment.",
 		lore = {
-			"The Legashi hold northern Azshara in strength, with an encampment and this stronghold. East of Ursolan, north of the Thalassian camp, the satyrs have the high ground.",
-			"Archmage Xylem found a grimoire in their camp, so they are keeping written work rather than simply raiding. Satyrs were Highborne once and the scholarship did not leave them when the rest did.",
+			"The Legashi hold northern Azshara in strength. The camp on the coast is the Legash Encampment, and this is the position behind it.",
 			"Azshara was the queen's own province and her court opened the portal. The satyrs are the ones who took Sargeras's bargain during that war, and they have been camped in the ruins of their own civilisation for ten thousand years.",
 		},
-		readMore = { "Wowpedia: Legash Encampment", "Wowpedia: Satyr", "Wowpedia: Azshara" },
+		readMore = { "Wowpedia: Satyr", "Wowpedia: Azshara" },
 	},
 	{
 		name = "Thalassian Vanguard Camp", parent = "Azshara", faction = "Hostile",
@@ -3028,11 +3024,10 @@ SubsOf("Durotar", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Dustwallow Bay", parent = "Dustwallow Marsh", faction = "Neutral",
-		hook = "The water off the marsh's eastern coast, with Theramore on it.",
+		hook = "The water along the marsh's eastern coast, with Theramore across it.",
 		lore = {
-			"Dustwallow Bay is the stretch of the Great Sea along the marsh's eastern side. Theramore Isle sits in it, with Tidefury Cove at the southern end.",
-			"Theramore being on an island in this bay is the whole of its position. Jaina Proudmoore put a human city on Kalimdor's coast with Orgrimmar a short way north, and the water is what makes that survivable.",
-			"Nat Pagle fishes out of an islet in the cove. The most accomplished fisherman anybody knows of has set up in the bay beside the most politically delicate city on the continent.",
+			"Dustwallow Bay is the stretch of the Great Sea off the marsh's eastern side, with Theramore Isle out on the far edge of it and Tidefury Cove at the southern end.",
+			"The water is the whole of Theramore's position. Jaina Proudmoore put a human city on Kalimdor's coast with Orgrimmar a short way north, and what makes that survivable is that the city stands on an island with a bay between it and the mainland.",
 		},
 		readMore = { "Wowpedia: Dustwallow Bay", "Wowpedia: Theramore Isle", "Wowpedia: Nat Pagle" },
 	},
@@ -3067,7 +3062,7 @@ SubsOf("Silithus", {
 		hook = "A cult camp in the Crystal Vale that something took apart.",
 		lore = {
 			"The camp is in the Crystal Vale in north-western Silithus, and it has been ruined. The Twilight's Hammer built it and no longer hold it.",
-			"Highlord Demitrian is there now, among the wreckage. He is the one who knows what to do with the shards of an elemental blade, so a destroyed cult camp is a more important address than it looks.",
+			"Highlord Demitrian is there now, among the wreckage, and a destroyed cult camp is a more important address than it looks. He is the one who can wake a blade from the bindings of an imprisoned wind elemental, given elementium and the essence of a firelord, and he is not honest about what he intends to do with them.",
 			"The cult's own records mention the place. State of the Cult runs to at least a hundred and twenty-seven volumes, so the Twilight's Hammer document themselves very thoroughly indeed.",
 		},
 		readMore = { "Wowpedia: Ravaged Twilight Camp", "Wowpedia: Twilight's Hammer", "Wowpedia: Silithus" },

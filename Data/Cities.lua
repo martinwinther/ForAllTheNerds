@@ -120,10 +120,11 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Hall of Explorers", faction = "Alliance",
-		hook = "The Explorers' League's own museum, full of things dug up from under the world.",
+		hook = "The Explorers' League's headquarters and library, full of things dug up from under the world.",
 		lore = {
-			"The Hall of Explorers holds the League's library and collection, including material recovered from Uldaman. It is the best archive of titan-related research anywhere.",
-			"The League's central claim, that the dwarves were made by the titans rather than born of the mountain, is argued and displayed here. For a people who thought they knew where they came from, the Hall is a nation-sized identity crisis with exhibits.",
+			"The Hall is the Explorers' League's headquarters, and the game calls it the Assembly of Explorers as readily as the Hall. The Library is its centre. Prospector Stormpike works out of it, hotheaded and worth ducking after you hand him bad news from a dig, and when a letter turns up that nobody can read it comes to him, because if anyone north of Blackrock Spire can read it he can.",
+			"What came back from Uldaman is here too. The Discs of Norgannon in that vault held the Creators' account of the Earthen, the troggs and the dwarves, and the portable copy of it was carried to this hall. Historian Karnik reads it as an unfinished sentence, and the next thing he asks anyone to do is go to Uldum.",
+			"So the claim the League is known for, that the dwarves were shaped by the Creators rather than born of the mountain, is not a theory it brought to Uldaman. It is what Uldaman told it.",
 		},
 	},
 	{
@@ -153,10 +154,11 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Military Ward", faction = "Alliance",
-		hook = "Where Ironforge trains its warriors and its gryphon riders.",
+		hook = "Ironforge's command district, built around the Hall of Arms.",
 		lore = {
-			"The Military Ward holds Ironforge's warrior and paladin training and the city's armouries.",
-			"Dwarven military tradition runs to heavy infantry, firearms and siege. The gryphons come from the Wildhammers, not from here.",
+			"The Hall of Arms is the middle of it, and what it holds is warrior and hunter training, the battlemasters who sign people into the wars, and a hangar for steam tanks and flying machines. Muren Stormpike teaches the warriors. Buliwyf Stonehand keeps the weapon master's post, and that is where a dwarf goes to learn a weapon nobody taught them.",
+			"The rest of the ward is supply: plate and chain, hunting gear, a meat vendor, and a row of training dummies for anyone who would rather hit something than buy something. The banners are red, where the Commons runs to pale blue.",
+			"Dwarven military tradition runs to heavy infantry, firearms and siege. The Light is studied in the Mystic Ward and the gryphons come from the Wildhammers, so neither is here.",
 		},
 	},
 	{
@@ -169,10 +171,11 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Gates of Ironforge", faction = "Alliance",
-		hook = "The mountain's front door, flanked by statues and gryphons.",
+		hook = "The mountain's front door, opening onto Dun Morogh's snow.",
 		lore = {
-			"The Gates are the only formal entrance to Ironforge, opening onto Dun Morogh's snow, built to be held.",
-			"The gryphon roost outside is the Alliance's main flight hub in the Eastern Kingdoms. No doorstep in the north is busier.",
+			"The Gates open at the top of the great ramp in central Dun Morogh and they are built to be held. They are not the only way in. The Deeprun Tram runs under the mountains from Stormwind and surfaces inside Tinker Town.",
+			"The doorstep itself is a recruiting ground. Emissaries for the Stormpike Guard, the Silverwing Sentinels and the League of Arathor stand outside the gates with honored heroes beside them, signing people up for three wars at once while the mountaineers watch the road.",
+			"Jordan Stilwell keeps an anvil out here. He is a human smith from the far end of Westfall's Longshore who came up to work with the dwarves, which left his wife Daphne alone in a stretch of country the Defias have all but taken over, and he is the reason paladins come to this particular doorstep.",
 		},
 	},
 })
