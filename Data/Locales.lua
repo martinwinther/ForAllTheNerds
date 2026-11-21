@@ -32,10 +32,10 @@ SubsOf("Elwynn Forest", {
 SubsOf("Westfall", {
 	{
 		name = "Demont's Place", faction = "Hostile",
-		hook = "An abandoned farmhouse in the dust, taken over by a Defias spellcaster.",
+		hook = "A dead farmstead west of Moonbrook, with a gnoll camp on it.",
 		lore = {
-			"Demont's was an ordinary Westfall holding before the farms failed. A Brotherhood magician works out of it now. The Defias were never only masons: the guild that rebuilt Stormwind employed engineers, surveyors and a few people who could do rather more than survey.",
-			"Dealing with a hostile spellcaster in a fortified farmhouse is beyond the People's Militia, in numbers and in training both, so it has not been dealt with.",
+			"Demont's was an ordinary Westfall holding before the farms failed, and like the Dead Acre there is little of it left. Riverpaw gnolls have the ground now: brutes, mongrels and herbalists, camped around a fire with the farm's own sacks of oats stacked beside it.",
+			"The gnolls are half of what has gone wrong out here and the Defias Brotherhood is the other. Moonbrook, the Gold Coast Quarry and the Alexston Farmstead have all been plundered, and the People's Militia at Sentinel Hill is recruiting pledges off the road to answer for it.",
 		},
 	},
 	{
@@ -241,10 +241,10 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Dustbelch Grotto", faction = "Hostile",
-		hook = "An ogre cave in the northern Badlands, attached to one of the road camps.",
+		hook = "The main Dustbelcher camp, an ogre mound in the south-west of the zone.",
 		lore = {
-			"Dustbelch Grotto is where the ogres of the northern Badlands shelter. Three ogre camps are strung across this zone holding the roads, and the grotto is where they go when the sun is at its worst.",
-			"They have no strategic aim. Caravans pass, the ogres take what they can, and the dwarves and the Horde both file it under weather.",
+			"Dustbelch Grotto is the large ogre mound in the south-western Badlands, and the dwarves working the digs call it the main ogre camp in the zone. Dustbelcher maulers, shamans, lords and ogre mages hold the ground around it, with Camp Cagg on the same corner of the map.",
+			"What the dwarves want off them is scrap metal. The ogres carry more of it than ogres have any business carrying, enough that the old stories about siege engines in the Badlands get another hearing, and a dig camp short of material will take ogre scrap and build its defences out of that.",
 		},
 	},
 })
@@ -566,9 +566,9 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Felfire Hill", faction = "Hostile",
-		hook = "A hill in eastern Ashenvale still burning from the Third War.",
+		hook = "A hill in eastern Ashenvale where the Legion's infernals came down.",
 		lore = {
-			"Felfire Hill holds demons that were never cleared after the Legion was broken at Mount Hyjal. They were cut off rather than destroyed, and they have been sitting on this hill since.",
+			"Infernals landed on this hill during the Third War and the ground has not recovered. The hill still carries searing infernals, with felguards and mannoroc lashers among them, and the Horde has Splintertree Post north-west of it and the Warsong Lumber Camp north-east.",
 			"Demon Fall Canyon is nearby, where Grom Hellscream killed the pit lord Mannoroth and freed every orc alive from the blood curse. In this forest the Legion's leavings and the Horde's redemption are a short walk apart.",
 		},
 	},
@@ -686,9 +686,9 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Feralas", {
 	{
 		name = "Feral Scar Vale", faction = "Hostile",
-		hook = "A yeti vale in central Feralas, where the wildlife outnumbers every claim on it.",
+		hook = "A yeti vale in the High Wilderness, inland of the Forgotten Coast.",
 		lore = {
-			"Feral Scar is yeti country. Feralas' yeti run large and numerous and bad-tempered even by the standards of yeti elsewhere, and this vale holds a good share of them.",
+			"Feral Scar is yeti country. The vale and its tunnels hold the Feral Scar yeti in numbers, with groddoc apes on the same slopes, and the leatherworkers at Feathermoon Stronghold and Camp Mojache both send people out here for thick yeti hide. A gnomish homing robot is stuck at the back of the first tunnel, waiting for somebody carrying its distress beacon.",
 			"Both factions' outposts in this jungle are small. Feathermoon Stronghold sits on an island and Camp Mojache is a tauren camp, and between them they hold rather less of Feralas than the gorillas, the yeti and the Woodpaw gnolls do.",
 		},
 	},
@@ -712,10 +712,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Frayfeather Highlands", faction = "Hostile",
-		hook = "Harpy highlands in the east, above the jungle and the ruins both.",
+		hook = "Hippogryph highlands in the High Wilderness, above the jungle and the ruins both.",
 		lore = {
-			"The Frayfeather hold the high ground in eastern Feralas and raid down off it. Harpies show a preference for occupying night elf ruins that the night elves consider deliberate.",
-			"What the Frayfeather want from the stonework is unclear. They are not scholars and they do not build, and yet across Kalimdor it is night elf ruins they settle in rather than caves.",
+			"The Frayfeather are hippogryphs and the highlands are theirs. Frayfeather hippogryphs and stagwings hold this high ground in the middle of Feralas, and their nests are up here with eggs in them.",
+			"Hippogryphs have been night elf companions for a long time and Feathermoon Stronghold keeps them, but the Frayfeather answer to nobody. The traffic in this corner of the zone is a goblin business instead: a machine in Gadgetzan weighs, measures and packages any hippogryph egg brought to it, and about half of what comes out of it hatches.",
 		},
 	},
 })
@@ -825,7 +825,7 @@ SubsOf("Un'Goro Crater", {
 		hook = "The eastern pylon on the crater rim, one of three nobody can account for.",
 		lore = {
 			"Three crystal pylons stand on rises around Un'Goro: northern, eastern and western. They react to the crystals found across the crater floor and do something when fed.",
-			"Who raised them has not been established. The guesses at Marshal's Refuge run from measuring instruments to something holding the crater shut, and the expedition has no way to test either.",
+			"Who raised them has not been established. The expedition at Marshal's Refuge went looking for this one on rumour alone, and its working guess is that the pylons have something to do with the crystals turning up all over the crater floor.",
 		},
 	},
 	{
@@ -833,7 +833,7 @@ SubsOf("Un'Goro Crater", {
 		hook = "The third pylon, on the crater's western rim above the hot springs.",
 		lore = {
 			"The western pylon completes the ring with the northern and eastern ones. All three are the same work and all three are equally unexplained.",
-			"Un'Goro is walled the whole way round, holds a jungle in a desert belt, has a live volcano at its centre and three unattributed devices on its rim. The expedition's working position is that those four facts are related, and that they have no way to demonstrate it.",
+			"Un'Goro is walled the whole way round, holds a jungle in a desert belt, has a live volcano at its centre and three unattributed devices on its rim. What the expedition can show is narrower than that: the pylons take the crater's power crystals, and combining them at a pylon table does something a manual at Marshal's Refuge sets out.",
 		},
 	},
 })
@@ -1347,10 +1347,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Eastern Strand", faction = "Contested",
-		hook = "The beach east of Southshore, looking out toward Purgation Isle.",
+		hook = "The south-eastern beach, held by Daggerspine naga.",
 		lore = {
-			"The eastern strand faces the small islands off the Hillsbrad coast. Purgation Isle is the nearest of them.",
-			"What the Scarlet Crusade does on that island is well outside anything the Church of the Holy Light would sanction, and the name is not a metaphor.",
+			"The Eastern Strand is the coast in the south-east of Hillsbrad, and the Daggerspine naga are on it: shorehunters and shorestalkers on the sand, sirens in the water. The Western Strand at the other end of the same coast has the same trouble.",
+			"Southshore treats them as a military matter rather than a nuisance. Marshal Redpath has his lieutenant working the strand, with orders to report the results in person.",
 		},
 	},
 })
@@ -1700,10 +1700,10 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Dreadmist Den", faction = "Hostile",
-		hook = "The cave under Dreadmist Peak, where the Burning Blade work.",
+		hook = "The Burning Blade's cave on Dreadmist Peak, with the Demon Seed in it.",
 		lore = {
-			"The den sits beneath the peak in the northern Barrens, and the Burning Blade hold both. They are orcs chasing the demonic power Thrall outlawed.",
-			"The old Horde under Gul'dan was genuinely stronger than the one Thrall built, and there are orcs who would take that trade. The cults keep forming for that reason.",
+			"The den is a cave on the peak itself, and what the Burning Blade keep in it is the Demon Seed, standing above an altar of fire. The cult rallies around that one object, and Orgrimmar knows where it is and wants it destroyed.",
+			"They are orcs chasing the demonic power Thrall outlawed. Gul'dan traded the orcs' shamanism for warlock craft and the Legion's favour, and there are orcs who would take that trade again. A demon called Rathorian is in the den some of the time.",
 		},
 	},
 	{
@@ -1764,10 +1764,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Fallen Sky Lake", faction = "Contested",
-		hook = "A lake in a crater in the eastern forest, and the name explains itself.",
+		hook = "A small lake in the south-east, where moonstones used to be gathered.",
 		lore = {
-			"The lake fills an impact crater. During the Third War the Burning Legion rained infernals down across these forests, and the ground still carries the marks.",
-			"Felwood took the worst of it. When the Legion was broken at Mount Hyjal the demonic energy in that region went into the soil instead of dispersing, and it has been wrong ever since.",
+			"Night elves gathered moonstones at Fallen Sky Lake until the shadethicket came. The treants hold the water now, and their oracle has collected up the fallen stones and sits on the island in the middle of the lake with them.",
+			"Astranaar sends out for a moonstone when somebody is too weak to mend on their own, and this is where the stones were. The lake lies south-east of the village, below Silverwing Outpost, and the errand is no longer a short one.",
 		},
 	},
 })
@@ -2037,10 +2037,10 @@ SubsOf("Felwood", {
 SubsOf("Winterspring", {
 	{
 		name = "Dun Mandarr", faction = "Hostile",
-		hook = "Ruins in the northern snow, with a dwarven name on them.",
+		hook = "A wrecked dwarf camp in southern Winterspring, taken over by wildkin.",
 		lore = {
-			"Dun Mandarr carries a dwarven name in a zone with no dwarven settlement. That is the interesting thing about it.",
-			"Winterspring is thinly held by anyone. Everlook is a goblin town, Starfall Village is a small night elf post, and the rest belongs to the wildlife and the cold.",
+			"The dwarven name on the map is Jaron Stoneshaper's. He is Explorers' League, he put a camp up beside a cave in the south of Winterspring, and the wildkin drove him off it. He got clear and one of his party did not, and his supplies and his wagon are still out in the snow where the owlbeasts left them.",
+			"He had unearthed something at the dig and the wildkin came for it. Jaron is at Starfall Village now. Winterspring is thinly held either way: Everlook is a goblin town, Starfall Village is a small night elf post, and the rest belongs to the wildlife and the cold.",
 		},
 	},
 	{

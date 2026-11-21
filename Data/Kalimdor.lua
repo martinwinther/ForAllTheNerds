@@ -565,18 +565,18 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Dreadmist Peak", parent = "The Barrens", faction = "Hostile",
-		hook = "A tower-topped peak held by Burning Blade cultists.",
+		hook = "A peak north-west of the Crossroads, held by Burning Blade cultists.",
 		lore = {
-			"Dreadmist Peak is a high point in the northern Barrens, occupied by the Burning Blade: the demonic cult of orcs who want the old Horde's power back.",
-			"That the cult can hold a visible landmark inside Horde territory says something about how thinly Orgrimmar's authority is spread across Kalimdor.",
+			"Dreadmist Peak stands north-west of the Crossroads and the Burning Blade have the top of it: the demonic cult of orcs who want the old Horde's power back. Pools of water up there set the weather across the northern Barrens, the Cenarion Circle holds that the cult has fouled them, and the gazelle north of the east-west road are sick.",
+			"Sarilus Foulborne sits at the summit. He is an undead mage and the Sentinels want him for the water elementals he has been defiling over in Ashenvale. That the cult can hold a visible landmark inside Horde territory says something about how thinly Orgrimmar's authority is spread across Kalimdor.",
 		},
 	},
 	{
 		name = "Far Watch Post", parent = "The Barrens", faction = "Horde",
-		hook = "A Horde watchtower on the road north from Durotar.",
+		hook = "The Horde garrison on the Barrens border, where the road comes in from Durotar.",
 		lore = {
-			"Far Watch Post is the first Horde position travellers meet coming into the Barrens from Durotar, and it watches the eastern road.",
-			"The tower system across the Barrens is how the Horde keeps track of a zone far too large to garrison properly.",
+			"Far Watch Post is the orc garrison on the border of the Barrens and Durotar, and it is the first Horde position travellers meet coming in off the bridge. Kargal Battlescar holds it, with a watchtower over the camp, peons, a riding wolf and a few Horde guards.",
+			"Two of the Horde's errands run through the post. Ak'Zeloth is here working on the Burning Blade and the Demon Seed up at Dreadmist Peak, and Uzzek instructs young warriors a short way south of the camp. The road west goes to the Crossroads.",
 		},
 	},
 	{
@@ -1090,7 +1090,7 @@ SubsOf("Dustwallow Marsh", {
 		hook = "Jaina Proudmoore's city, the Alliance's only real holding in Kalimdor outside the night elf lands.",
 		lore = {
 			"Theramore was built by the refugees Jaina led out of Lordaeron when the plague took it. It is a walled port on an island in the marsh, and the seat of Jaina's authority as Lady of Theramore.",
-			"Politically it is the most interesting city in the world. Jaina maintains working communication with Thrall, she has Kirin Tor credentials, and she is simultaneously an Alliance leader and the main reason Kalimdor is not at total war.",
+			"In political terms it is the most interesting city in the world. Jaina maintains working communication with Thrall, she has Kirin Tor credentials, and she is simultaneously an Alliance leader and the main reason Kalimdor is not at total war.",
 			"Her position is not popular with everyone. Her father died attacking the Horde she refuses to fight, and there are people in Theramore who have not forgiven her for letting it happen.",
 		},
 		readMore = { "Wowpedia: Theramore Isle" },
@@ -1388,10 +1388,10 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Dunemaul Compound", parent = "Tanaris", faction = "Hostile",
-		hook = "An ogre camp in the southern desert.",
+		hook = "The compound of a nomadic ogre band, newly arrived in southern Tanaris.",
 		lore = {
-			"The Dunemaul ogres hold ground in southern Tanaris, where they raid the roads and the goblin traffic.",
-			"Ogres in a desert are a poor fit and the Dunemaul have adapted badly. They are no less dangerous for it.",
+			"The Dunemaul came into Tanaris as a nomadic band and took a large stretch of the southern desert for a compound. Brutes, enforcers, ogre mages and warlocks hold it under Gor'marok the Ravager, with two rare ogres out on the same sand, Omgorn and Cyclok.",
+			"Gadgetzan wants the compound broken before the band can build up a force. Smaller parties of the same ogres are still wandering the desert, and some of them have moved into the old troll ruins.",
 		},
 	},
 	{
@@ -1404,10 +1404,10 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Eastmoon Ruins", parent = "Tanaris", faction = "Hostile",
-		hook = "Ruins in the eastern sands, with troll scavengers in them.",
+		hook = "Troll ruins west of the Gaping Chasm, moved into by ogres.",
 		lore = {
-			"Eastmoon is one of a set of ruins across Tanaris, with Southmoon and Noonshade, whose builders are not clearly identified.",
-			"The Sandfury trolls use them. Whether they built them is a separate question the trolls are not answering.",
+			"Eastmoon is one of a set of troll ruins across Tanaris, with Southmoon and Noonshade. The trolls who held this land worked gahz'ridian into ornaments, and the ground inside Eastmoon is thick with the stuff.",
+			"The ruins are not theirs any more. One of the wandering Dunemaul parties has moved into the stonework west of the Gaping Chasm, warlocks and enforcers and ogre mages, and the ogres are what stands between a treasure hunter and the ornaments.",
 		},
 	},
 	{
@@ -1744,10 +1744,10 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Fungal Rock", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A cave of enormous fungi and the things that live in them.",
+		hook = "The apes' lair, a cavern in the crater's north-eastern wall.",
 		lore = {
-			"Fungal Rock is a cave on the crater's western side, dense with oversized fungal growth.",
-			"The crater's plant life is as unusual as its animals, and the expedition's botanists are as busy as its palaeontologists.",
+			"Fungal Rock is the cavern in the north-eastern wall of Un'Goro and the crater's apes live in it: gorillas, stompers and thunderers, with U'cha among them and a rare called Uhk'loc deeper in.",
+			"Marshal's Refuge is a short way west of the entrance. One of the expedition built a mechanical ape to get a closer look at the troop and lost contact with it at the cave mouth, and the machine is still standing outside.",
 		},
 	},
 })
@@ -1797,10 +1797,10 @@ SubsOf("Winterspring", {
 	},
 	{
 		name = "Frostsaber Rock", parent = "Winterspring", faction = "Contested",
-		hook = "The frostsaber pride's territory in the western mountains.",
+		hook = "The frostsaber pride's tor in the north of Winterspring.",
 		lore = {
-			"Frostsaber Rock is where Winterspring's frostsaber pride lives. The great cats here are wild and the night elves' relationship with them is one of negotiation rather than ownership.",
-			"Earning a frostsaber's trust is a long piece of work. The night elves consider that appropriate.",
+			"Frostsaber Rock is the tor in northern Winterspring where the pride lives: cubs, huntresses and pride watchers on the slopes, with a matriarch over them and the rare Rak'shiri prowling the same snow.",
+			"Rivern Frostwind stands at the apex with a guardian beside him. He will teach friends of the Alliance to tame and ride a wintersaber, the work is long, and the night elves consider that appropriate. What he asks for first is the Winterfall furbolg kept away from the rock.",
 		},
 	},
 	{
@@ -2499,13 +2499,13 @@ SubsOf("Feralas", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Foothold Citadel", parent = "Dustwallow Marsh", faction = "Alliance",
-		hook = "Theramore's barracks, and the room where Jaina's father died.",
+		hook = "Theramore's barracks, the large building east of Jaina's tower.",
 		lore = {
-			"The Foothold Citadel is the keep inside Theramore Isle and the headquarters of the Theramore Guard.",
-			"Daelin Proudmoore died in it. He was Lord Admiral of Kul Tiras and Jaina's father, and he came to Kalimdor to finish the orcs off, on the straightforward Second War logic that the only safe orc is a dead one. Jaina had spent the Third War learning otherwise, at Hyjal, beside Thrall.",
-			"She would not fight her father and she would not help him. Thrall's forces stormed Theramore and killed him in this keep, and she let it happen because the alternative was the war her father wanted.",
+			"The Foothold Citadel is the large barracks inside Theramore Isle and the headquarters of the Theramore Guard. Captain Garran Vimes keeps the top floor. A clerk and an adjutant work the guard's rolls below him, and the building holds a gunsmith, an armourer, a warrior trainer and a trauma surgeon as well.",
+			"The rolls are where Theramore's old quarrel shows. Daelin Proudmoore, Lord Admiral of Kul Tiras and Jaina's father, brought the Kul Tiras fleet to Kalimdor to finish the orcs off, on the straightforward Second War logic that the only safe orc is a dead one. Jaina had spent the Third War learning otherwise, at Hyjal, beside Thrall. She would not fight her father and she would not help him, and the Horde killed him for it.",
+			"Men who came across the sea with her and stayed loyal to the admiral are down on the rolls as missing. Vimes calls them deserters and holds that they turned traitor out of loyalty to a dead man. Their answer is that Theramore betrayed the Alliance.",
 		},
-		didYouKnow = "Theramore is the only human settlement on Kalimdor that chose to live alongside the Horde, and the price of that choice was paid in this building. Jaina has been the Alliance's most committed advocate of peace with Orgrimmar ever since, and the reason is upstairs.",
+		didYouKnow = "Theramore is the only human settlement on Kalimdor that chose to live alongside the Horde. The bill for that choice is itemised in this building's guard rolls, one missing man at a time.",
 		readMore = { "Wowpedia: Foothold Citadel", "Wowpedia: Daelin Proudmoore", "Wowpedia: Jaina Proudmoore", "Wowpedia: Theramore Isle" },
 	},
 	{
@@ -3028,11 +3028,10 @@ SubsOf("Durotar", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Dustwallow Bay", parent = "Dustwallow Marsh", faction = "Neutral",
-		hook = "The water off the marsh's eastern coast, with Theramore on it.",
+		hook = "The water along the marsh's eastern coast, with Theramore across it.",
 		lore = {
-			"Dustwallow Bay is the stretch of the Great Sea along the marsh's eastern side. Theramore Isle sits in it, with Tidefury Cove at the southern end.",
-			"Theramore being on an island in this bay is the whole of its position. Jaina Proudmoore put a human city on Kalimdor's coast with Orgrimmar a short way north, and the water is what makes that survivable.",
-			"Nat Pagle fishes out of an islet in the cove. The most accomplished fisherman anybody knows of has set up in the bay beside the most politically delicate city on the continent.",
+			"Dustwallow Bay is the stretch of the Great Sea off the marsh's eastern side, with Theramore Isle out on the far edge of it and Tidefury Cove at the southern end.",
+			"The water is the whole of Theramore's position. Jaina Proudmoore put a human city on Kalimdor's coast with Orgrimmar a short way north, and what makes that survivable is that the city stands on an island with a bay between it and the mainland.",
 		},
 		readMore = { "Wowpedia: Dustwallow Bay", "Wowpedia: Theramore Isle", "Wowpedia: Nat Pagle" },
 	},

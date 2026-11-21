@@ -11,7 +11,7 @@
 
 # --- Eastern Kingdoms: places not yet written -----------------------------
 sub	Heroes' Vigil	Elwynn Forest	Alliance		Hilltop monument east of Goldshire commemorating fallen Stormwind soldiers
-sub	Demont's Place	Westfall	Hostile		Abandoned Westfall farmhouse used by a Defias magician
+sub	Demont's Place	Westfall	Hostile		Dead Westfall farmstead west of Moonbrook, held by Riverpaw gnolls
 sub	Longshore	Westfall	Contested		Westfall's northern coastline; murlocs and shipwrecks
 sub	The Dust Plains	Westfall	Contested		The driest part of Westfall, south of Moonbrook; the failed farmland at its worst
 sub	Brightwood Grove	Duskwood	Hostile		Northeastern Duskwood woodland, spiders and worgen
@@ -50,7 +50,7 @@ sub	The Vile Reef	Stranglethorn Vale	Hostile		Murlocs living in sunken Gurubashi
 sub	Crystalvein Mine	Stranglethorn Vale	Hostile		Kurzen-held mine in the jungle interior
 sub	Mirage Flats	Badlands	Contested		Open northern Badlands flats
 sub	Valley of Fangs	Badlands	Hostile		Badlands valley on the route east, scorpid and raptor country
-sub	Dustbelch Grotto	Badlands	Hostile		Ogre cave in the northern Badlands
+sub	Dustbelch Grotto	Badlands	Hostile		Ogre mound in the south-western Badlands, the main Dustbelcher camp
 sub	The Shifting Mire	Swamp of Sorrows	Contested		Open mire in the northern Swamp of Sorrows
 # NOT IN 1.12. The Red Reaches was added as an area in patch 4.0.3a and is in
 # neither client's area table, so an entry for it could never fire. Deleted in
@@ -77,7 +77,7 @@ sub	Nightsong Woods	Ashenvale	Contested		Central Ashenvale old-growth forest
 sub	The Howling Vale	Ashenvale	Hostile		Ashenvale vale with a worgen and furbolg problem
 sub	Greenpaw Village	Ashenvale	Hostile		Furbolg village in southern Ashenvale
 sub	Iris Lake	Ashenvale	Contested		Lake in eastern Ashenvale
-sub	Felfire Hill	Ashenvale	Hostile		Demon-tainted hill in eastern Ashenvale, left from the Third War
+sub	Felfire Hill	Ashenvale	Hostile		Demon-held hill in eastern Ashenvale where the Legion's infernals landed
 sub	Night Run	Ashenvale	Hostile		Eastern Ashenvale woodland, satyr territory
 sub	The Talon Den	Stonetalon Mountains	Hostile		Cave in the Stonetalon range
 sub	Cragpool Lake	Stonetalon Mountains	Contested		Lake in the northern Stonetalon Mountains
@@ -89,10 +89,10 @@ sub	Ranazjar Isle	Desolace	Hostile		Naga-held island off the Desolace coast
 sub	Wyrmbog	Dustwallow Marsh	Hostile		Southern Dustwallow marsh; black dragonkin country near Onyxia's lair
 sub	The Quagmire	Dustwallow Marsh	Contested		Central Dustwallow bog
 sub	Dreadmurk Shore	Dustwallow Marsh	Hostile		Dustwallow's eastern shore facing Alcaz Island
-sub	Feral Scar Vale	Feralas	Hostile		Yeti vale in central Feralas
+sub	Feral Scar Vale	Feralas	Hostile		Yeti vale in the High Wilderness of Feralas
 sub	Grimtotem Compound	Feralas	Hostile		Grimtotem tauren camp in Feralas
 sub	Jademir Lake	Feralas	Contested		Lake in northern Feralas near the Dream Bough
-sub	Frayfeather Highlands	Feralas	Hostile		Harpy highlands in eastern Feralas
+sub	Frayfeather Highlands	Feralas	Hostile		Hippogryph highlands in the High Wilderness of Feralas
 sub	Noonshade Ruins	Tanaris	Hostile		One of the unidentified ruin sets in Tanaris, used by Sandfury trolls
 sub	Southmoon Ruins	Tanaris	Hostile		Another of the Tanaris ruin sets
 sub	Waterspring Field	Tanaris	Contested		Rare water source in central Tanaris
@@ -106,7 +106,7 @@ sub	Morlos'Aran	Felwood	Hostile		Corrupted site in southern Felwood
 # in patch 4.0.3a and in neither client's area table. Its entry was deleted in P4
 # run 10 of the era sweep and the row was left behind. Do not write it again.
 sub	The Marshlands	Un'Goro Crater	Hostile		Wetland in the northwest of the crater
-sub	Eastern Pylon	Un'Goro Crater	Contested		One of the three titan crystal pylons ringing Un'Goro
+sub	Eastern Pylon	Un'Goro Crater	Contested		One of the three unattributed crystal pylons ringing Un'Goro
 sub	Western Pylon	Un'Goro Crater	Contested		The third titan pylon at Un'Goro's rim
 sub	Frostfire Hot Springs	Winterspring	Contested		Hot springs in southern Winterspring
 sub	Timbermaw Post	Winterspring	Neutral		Timbermaw furbolg outpost in Winterspring

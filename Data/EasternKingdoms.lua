@@ -62,10 +62,10 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Fargodeep Mine", parent = "Elwynn Forest", faction = "Hostile",
-		hook = "A worked-out Stormwind mine, now a kobold warren nobody has bothered to clear properly.",
+		hook = "An abandoned Stormwind gold mine south of Goldshire, full of kobolds.",
 		lore = {
-			"Fargodeep was a legitimate Stormwind mining operation, one of several shallow workings in the Elwynn hills. When the richer seams gave out the kingdom walked away, and kobolds moved into the empty tunnels the way they always do.",
-			"Kobolds are not an invasion so much as a persistent infestation. They are drawn to candles and dark places, they dig compulsively, and they breed faster than the militia can clear them. Every few years somebody declares the mine cleaned out. It never lasts.",
+			"Fargodeep was a Stormwind gold mine and a clan of kobolds has the workings now. It lies almost due south of Goldshire, between the Stonefield and Maclure homesteads, and a lower level runs deeper than that. A rare taskmaster called Narg turns up at the back of it, and a gold-toothed kobold dens above the mine with other people's property about him.",
+			"Kobolds are not an invasion so much as a persistent infestation. They are drawn to candles and dark places and they dig compulsively, and Goldshire has turned that into a trade: gold dust bought off them by the ounce, candle wax collected for a Stormwind apothecary, and Marshal Dughan sending people down to confirm the reports he keeps getting.",
 		},
 	},
 	{
@@ -1568,10 +1568,10 @@ SubsOf("Badlands", {
 	},
 	{
 		name = "Dustwind Gulch", parent = "Badlands", faction = "Contested",
-		hook = "A dry gulch near Kargath, picked over by scavengers and scorpids.",
+		hook = "A dry gulch west of Lethlor Ravine, worked over by coyotes and troggs.",
 		lore = {
-			"The gulch is typical Badlands ground: no water, hard rock, and a wildlife population that has adapted to both.",
-			"It sits on the route between Kargath and the Uldaman road, so it sees more traffic than it deserves.",
+			"The gulch is typical Badlands ground: no water, hard rock, and a wildlife population that has adapted to both. Crag coyotes hunt it, ridge stalkers work the air above it, and starving buzzards clean up after both.",
+			"Stonevault troggs have come down into the gulch as well, seers and bashers together. It lies in the east of the zone, out toward Lethlor Ravine, and nobody has a claim on it worth defending.",
 		},
 	},
 	{
@@ -1586,7 +1586,7 @@ SubsOf("Badlands", {
 		name = "Camp Kosh", parent = "Badlands", faction = "Hostile",
 		hook = "An ogre camp on the northern road.",
 		lore = {
-			"Camp Kosh is one of three ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
+			"Camp Kosh is one of four ogre camps strung across the Badlands, holding the roads in the only way ogres know how. The Dustbelcher have this one: warriors and a pair of mystics, with a cauldron going and an excavation supply crate standing about that did not start out theirs.",
 			"These are leftovers of the Second War Horde, like most ogres east of the sea, with no leadership and no plan beyond the next caravan.",
 		},
 	},
@@ -1688,10 +1688,10 @@ SubsOf("Swamp of Sorrows", {
 	},
 	{
 		name = "Fallow Sanctuary", parent = "Swamp of Sorrows", faction = "Hostile",
-		hook = "A troll settlement in the southern swamp.",
+		hook = "The Lost Ones' village, in the north of the swamp.",
 		lore = {
-			"The sanctuary holds forest trolls in the swamp's south, another fragment of the troll presence that long predates the orcs or the humans here.",
-			"Trolls were on this continent first, everywhere, and the swamp is no exception.",
+			"The sanctuary is a village of Lost Ones, the draenei who came through the Dark Portal and went feral in this swamp. Huts, campfires and a cauldron stand among the trees in the swamp's north-east, with a chieftain and a cook among them and Ongeku on the same ground. They catch or kill anyone who wanders near.",
+			"What they have that others want is draenethyst, crystals sacred to their kind and taken from the Lost Ones at the Harborage who kept their minds. A caravan bound for Nethergarde Keep lost a wagon to the sanctuary as well, dragged in with a chest of wizards' reagents still aboard.",
 		},
 	},
 	{
@@ -2385,10 +2385,10 @@ SubsOf("Blasted Lands", {
 	},
 	{
 		name = "Dreadmaul Post", parent = "Blasted Lands", faction = "Hostile",
-		hook = "An ogre camp on the road, taxing the route to the portal.",
+		hook = "The Dreadmaul clan's mound in the middle of the Blasted Lands.",
 		lore = {
-			"Dreadmaul Post sits on the main road through the Blasted Lands and the ogres there make travelling it expensive.",
-			"The Nethergarde garrison clears the road periodically. The ogres come back.",
+			"Dreadmaul Post sits in the centre of the zone, on the ground between Nethergarde Keep and the Dark Portal, and the ogres on it are the heaviest the clan puts out: maulers and warlocks rather than the brutes at Dreadmaul Hold in the north. A cauldron is going in the middle of the camp.",
+			"The Dreadmaul came through the Dark Portal from Draenor and never went far from it. They are still here two wars later, and felbeasts out of the Tainted Scar drift through the post from the south.",
 		},
 	},
 	{
@@ -2949,8 +2949,8 @@ SubsOf("Duskwood", {
 		hook = "A dark hill over Raven Hill Cemetery, with a necromancer's house on top.",
 		lore = {
 			"The Rowe is a hill on the northern edge of Raven Hill Cemetery, and it is darker than the rest of Duskwood, and that takes some doing.",
-			"Morbent Fel lives on it. He is a necromancer, and the undead throughout these woods answer to him; the graveyard below is his supply.",
-			"He cannot be put down with ordinary weapons, and a detail like that turns a local problem into a campaign. Duskwood has the worgen, the Nightbane pack, the Scythe of Elune and the Dark Riders, and this is the quieter half of its trouble.",
+			"Morbent Fel lives on it. He is a necromancer, and the undead throughout these woods answer to him.",
+			"He cannot be put down with ordinary weapons, and a detail like that turns a local problem into a campaign. The Dark Riders have been seen on this hill in conversation with him, so Duskwood's troubles are less separate than they look: the worgen, the Nightbane pack, the Scythe of Elune and the riders.",
 		},
 		readMore = { "Wowpedia: Forlorn Rowe", "Wowpedia: Morbent Fel", "Wowpedia: Raven Hill Cemetery" },
 	},
@@ -3144,11 +3144,11 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Featherbeard's Hovel", parent = "The Hinterlands", faction = "Alliance",
-		hook = "A house beside Aerie Peak that was somebody's and now is not.",
+		hook = "A house beside Aerie Peak with a dead dwarf's journal still in it.",
 		lore = {
-			"The hovel sits next to Aerie Peak and it was Featherbeard's home. That is the whole of the record.",
+			"The hovel sits next to Aerie Peak and it was Featherbeard's home. He is not in it. His journal is still there and his remains lie out in the hills to the south-east, and that is the whole of the record.",
 			"Wildhammer names run to this sort of thing, and the dwarves of Aerie Peak keep gryphons rather than rams and answer to themselves rather than Ironforge. A hovel on the slope below the keep is the ordinary housing of that arrangement.",
-			"Whatever Featherbeard did, it is finished, and the place is just a house now. Not everything in these mountains has a war in it.",
+			"Whatever Featherbeard was doing out in those hills, it finished badly, and his house is standing empty with his notes in it. Not everything in these mountains has a war in it.",
 		},
 		readMore = { "Wowpedia: Featherbeard's Hovel", "Wowpedia: Aerie Peak" },
 	},
