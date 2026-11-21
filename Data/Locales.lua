@@ -41,10 +41,10 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Longshore", faction = "Contested",
-		hook = "Westfall's northern beach, strewn with wrecks and worked over by murlocs.",
+		hook = "The whole Westfall coast, strewn with wrecks and worked over by murlocs.",
 		lore = {
-			"The coast north of the lighthouse has taken a steady toll of shipping, and the hulls are still on the sand where they came ashore. Nobody salvages them properly. Murlocs got there first and have stayed.",
-			"Stormwind's merchant traffic runs close in along this shore on the way to the harbour. Sentinel Hill has no boats and no coastal patrol, so what happens on the beach stays on the beach.",
+			"Longshore is not a stretch of the coast, it is the coast: the entire western shoreline of Westfall, and one of the longest beaches anywhere. Hulls and anchors lie along it where they came ashore and in the shallows off it, and nobody salvages them properly, because the murlocs got there first and have stayed. Old Murk-Eye ranges the beach among them.",
+			"Two things on it are worth the walk. A lockbox beside a wreck off the northern end holds half of the Pendant of the Sea Lion, which is what an Alliance druid needs before anyone will teach them an aquatic form. And at the far southern end, past the lighthouse, there is a farmhouse looking out at the water: Daphne Stilwell holds it alone while her husband is away working with the dwarves in Ironforge, in country the Defias have all but taken over.",
 		},
 	},
 	{
@@ -534,10 +534,11 @@ SubsOf("Darkshore", {
 SubsOf("Ashenvale", {
 	{
 		name = "Nightsong Woods", faction = "Contested",
-		hook = "The old-growth heart of Ashenvale, and the reason both sides want this forest.",
+		hook = "The eastern half of Ashenvale, and the ground both sides are fighting over.",
 		lore = {
-			"Nightsong is what the Ashenvale war is actually about. These are trees the night elves have watched over for ten thousand years, and they are also the best timber within reach of Orgrimmar.",
-			"The Warsong are cutting at the edges. Thrall has restrained them more than once and they have resumed more than once, and the Sentinels at Astranaar have drawn the obvious conclusion about what Orgrimmar's word on the subject is worth.",
+			"Nightsong Woods is the eastern part of the forest, running from Raynewood Retreat and the Felwood road all the way out to Azshara, with the Falfarren River through the middle of it. Most of the cross-faction fighting in Ashenvale happens in here, and the southern reaches are where the Warsong have been cutting.",
+			"The Horde's account of that is plain enough: under the guise of protecting a forest that does not belong to them, the Alliance is trying to deny the Horde one of its largest sources of lumber. The Silverwing Sentinels hold the other end of the argument.",
+			"Not everything in the woods is about timber. Kayneth Stillwind keeps the shrine at Forest Song and wants reports on what is happening along the coast and around Astranaar, because he thinks a corruption is moving through Ashenvale and he is not wrong.",
 		},
 	},
 	{
@@ -576,9 +577,10 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Night Run", faction = "Hostile",
-		hook = "Eastern woodland held by satyrs, who were night elves before they chose otherwise.",
+		hook = "The smallest of Ashenvale's three satyr sites, up on a naze nobody can climb.",
 		lore = {
-			"Satyrs hold the Night Run. They descend from night elves who sided with the Burning Legion during the War of the Ancients and were transformed for it, and Satyrnaar is their settlement a short way east.",
+			"The Felmusk hold the Night Run, in east-central Ashenvale between Raynewood Retreat and Splintertree Post. Of the three satyr settlements in this forest, with Satyrnaar and Xavian, it is by far the smallest: a few broken pillars and some ruined stonework for shelter. It is also the hardest to reach, sitting on a naze with cliffs nobody climbs, so the way in is along the Falfarren and then west.",
+			"The satyrs here are doing more than holding ground. A Warsong delivery of oil was intercepted on its way to the lumber camp, and it is being used for rituals in this place and in the other two.",
 			"Night elf accounts of the satyrs read unlike their accounts of anything else in these woods. There is no puzzlement in them. Xavius, the first satyr, was one of Queen Azshara's own highborne, and the night elves know exactly what was chosen and by whom.",
 		},
 	},
@@ -960,10 +962,11 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Maclure Vineyards", faction = "Alliance",
-		hook = "One of two vineyards south of Goldshire, and one half of a feud nobody can explain.",
+		hook = "One of two vineyards south of Goldshire, and one half of a feud with a romance in it.",
 		lore = {
-			"The Maclures grow grapes on the southern slopes, as the Stonefields do a short walk away. Between them they supply most of the wine in this part of the kingdom.",
-			"The two families have been at each other for years over a dispute whose origins depend entirely on which farmhouse you ask in. Goldshire's magistrate has stopped trying to settle it.",
+			"The Maclures grow grapes on the southern slopes, with the Stonefields a short walk away, and the two families cannot stand each other. Fargodeep Mine lies almost due south of Goldshire between the two homesteads, and that is how most people learn where both of them are.",
+			"The feud has a hole in the middle of it. Maybell Maclure and Tommy Joe Stonefield are in love, and getting her off the vineyard to meet him has taken a note to William Pestle at the inn, a trip to the murlocs at Crystal Lake for crystal kelp, and a bottle of invisibility liquor brewed out of it.",
+			"The rest of the family's business is smaller. Billy Maclure is accused by an old widow of taking her necklace and is usually to be found scuttling about the vines, a pork belly pie improves his mood, and the Brackwell prize sow comes over to eat the vegetables often enough that somebody has put a price on her collar.",
 		},
 	},
 	{
@@ -1360,10 +1363,11 @@ SubsOf("Hillsbrad Foothills", {
 SubsOf("Alterac Mountains", {
 	{
 		name = "Lordamere Lake", faction = "Contested",
-		hook = "The great lake below the mountains, with a drowned past on its shores.",
+		hook = "The great lake below the mountains, with a dead past under it.",
 		lore = {
-			"Lordamere separates the Alterac Mountains from Silverpine and the Hillsbrad lowlands. Fenris Isle sits out in it, and Dalaran's crater is not far from its southern shore.",
-			"The lake kept its name when the kingdoms around it stopped keeping theirs. Alterac was dismantled for treason and Lordaeron was destroyed outright.",
+			"Lordamere separates the Alterac Mountains from Silverpine and the Hillsbrad lowlands, with Dalaran a little back from its southern shore. Fenris Isle sits out in it, and east of that the Dawning Isles, overrun by Vile Fin murlocs. Snapjaw turtles work the shallows, and Southshore's cooks will pay for the meat.",
+			"Nothing else lives in the water. An ancient plague killed off the lake's aquatic life a very long time ago, and Apothecary Berard was studying it until Arugal's magic took his mind; the Royal Apothecary Society went looking for his journal afterwards, because a plague that emptied a lake is exactly the research it wants.",
+			"The lake kept its name when the kingdoms around it stopped keeping theirs. Alterac was dismantled for treason, and Lord Aliden Perenolde's manor still stands on this shore. Lordaeron was destroyed outright. Dalaran's wizards used to quarantine people at an internment camp on the water, and they are not running it any more either.",
 		},
 	},
 	{
@@ -1376,10 +1380,10 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Misty Shore", faction = "Contested",
-		hook = "The lake shore below the mountains, under more or less permanent fog.",
+		hook = "Lordamere's southern waterline, under more or less permanent fog.",
 		lore = {
-			"The shore runs along Lordamere's northern edge beneath the Alterac peaks. The fog off the lake rarely lifts entirely.",
-			"Dalaran's crater sits behind this coast under its containment dome, and it does nothing good for the weather or for anything living nearby.",
+			"The Misty Shore runs along the lake under the Alterac peaks, from Dandred's Fold east towards Dalaran. The fog off the water rarely lifts entirely, and what is on the shore is mostly turtles.",
+			"Fenris Keep can be made out from here, standing on its island with the Dawning Isles beyond it. The ruins of Dalaran are a short way inland behind the beach, shut under their dome.",
 		},
 	},
 })
@@ -1424,10 +1428,11 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Mistvale Valley", faction = "Hostile",
-		hook = "A valley in the southern jungle, thick with gorillas.",
+		hook = "A valley east of Booty Bay, thick with gorillas.",
 		lore = {
-			"Mistvale holds one of the larger gorilla populations in the vale, which in Stranglethorn means something worth taking seriously.",
-			"Hemet Nesingwary's expedition came to this jungle for exactly this. The dwarf hunts the largest animals he can find and has made a career of it across the world.",
+			"Mistvale Valley is in the south of the vale, and the elder Mistvale gorillas forage across it with a silverback patriarch among them. Nothing else much lives up here.",
+			"Everything the valley produces, somebody in Booty Bay wants. Gorilla fangs and the rare aged sinew go into enchantments; giblets go to a bookmaker who sends them to a man behind on his gambling debts without mentioning where they came from.",
+			"Witch Doctor Unbagwa keeps a hidden cave on the cape and is the only one who can call up the white beast Mokk. A man dying of Stranglethorn fever needs the heart of that beast and nothing else will do. The witch doctor will start the spirit talking for a gorilla fang, and asks to be protected from the other gorilla-beasts while he does it.",
 		},
 	},
 	{
@@ -1459,10 +1464,10 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Mizjah Ruins", faction = "Hostile",
-		hook = "Ruins on the eastern side of the vale, overgrown past the point of use.",
+		hook = "Troll ruins south-east of Grom'gol, held by Mosh'Ogg ogres.",
 		lore = {
-			"Mizjah sits in the eastern jungle and the trees have had their way with it more thoroughly than with most.",
-			"The Gurubashi collapse is usually dated to the war their own priests started by summoning Hakkar the Soulflayer. The empire had to fight to contain what it had called up, and it did not survive the effort.",
+			"The ruins are Gurubashi work and the ogres have them now. Mosh'Ogg brutes and witch doctors are camped in the stonework, with Roloch somewhere among them, and crocolisks and raptors in the water below.",
+			"They are there for the road. Grom'gol's job in this jungle is keeping Stonard supplied, and the ogres have gone on ambushing the supply caravans after being warned off, so clearing them out of the ruins is less about the ruins than about sending a firm message.",
 		},
 	},
 })
@@ -1532,10 +1537,10 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "Mazra'Alor", faction = "Hostile",
-		hook = "An Amani troll site in the northeast, taken by the Scourge.",
+		hook = "The ziggurat at the heart of Zul'Mashar, held by Mossflayer trolls.",
 		lore = {
-			"Mazra'Alor is troll work, part of the Amani presence that predates everything human in this region. Zul'Mashar is close by.",
-			"The trolls' holdings in the north were already in decline before the plague arrived. The Scourge finished the job and kept the buildings.",
+			"Mazra'Alor is the large ziggurat in the middle of Zul'Mashar, in the north-east of the Plaguelands, and it is forest troll work. The Mossflayer hold it: scouts, cannibals and shadowhunters, with their own dead walking among them as zombies. That is what the plague has made of a tribe that was here before any of this.",
+			"What they are keeping is worth more than the building. Two of the six Tablets of Mosh'aru are in Mossflayer hands, and the tablets are the record of how Hakkar's essence was contained. A troll who wanted only the first two of them was not telling the whole truth about why.",
 		},
 	},
 	{
@@ -1840,10 +1845,10 @@ SubsOf("Desolace", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "North Point Tower", faction = "Alliance",
-		hook = "A Theramore watchtower on the northern coast.",
+		hook = "Theramore's northern watchtower, on a well-travelled stretch of road.",
 		lore = {
-			"North Point watches the marsh's northern shore for Jaina Proudmoore's city. Theramore's outposts are few and thinly held.",
-			"Jaina led the refugees out of Lordaeron when the plague took it, on Medivh's warning, and built the city they landed at. It is the Alliance's only real holding on this continent outside the night elf lands.",
+			"North Point is one of the scout towers Theramore keeps out in the marsh, with Sentry Point and West Point Tower, and it stands in the north near the road. Theramore's own sentries garrison it.",
+			"The quieter work out this way is done by the infiltrators camped in tents along the road, who are watching Brackenwall Village and anything else that might come at the border. The men in the towers are Kul Tiras marines, paid at the start of every month and inclined to go somewhere else with it.",
 		},
 	},
 	{
@@ -1875,10 +1880,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Lower Wilds", faction = "Hostile",
-		hook = "The southern jungle, where the wildlife outnumbers everyone's claim.",
+		hook = "The eastern end of Feralas, where the forest runs out into Thousand Needles.",
 		lore = {
-			"The Lower Wilds are thick jungle running south from the Twin Colossals. Gorillas, yeti and great cats hold most of it.",
-			"Both factions' outposts in Feralas are small. Between them they hold rather less of this zone than the animals do.",
+			"The Lower Wilds are the eastern section of Feralas, the ground the road crosses on its way out to Thousand Needles. Longtooth runners and ironfur bears hold most of it, in numbers, with gravelsnout troggs and needles cougars coming in from the dry country at the far end.",
+			"Thalanaar is at that far end, where Falfindel Waywarder keeps the road and Thyssiana keeps the hippogryphs. Both factions' holdings in Feralas are small. Between them they hold rather less of this zone than the animals do.",
 		},
 	},
 	{

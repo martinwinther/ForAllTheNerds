@@ -832,10 +832,11 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Mystral Lake", parent = "Ashenvale", faction = "Contested",
-		hook = "A lake in the forest's heart, with furbolgs on its shores.",
+		hook = "The forest's largest lake, and the water in it has turned.",
 		lore = {
-			"Mystral Lake is central Ashenvale's main water, and the forest around it is some of the oldest growth in Kalimdor.",
-			"It also sits on the route between Astranaar and the Horde's eastern positions, so it stays contested.",
+			"Mystral Lake is in south-central Ashenvale, below Silverwind Refuge and east of the Talondeep Path, and it is the biggest water in the forest. The elementals in it were the night elves' own once. Sarilus Foulborne corrupted them, and there are three dozen befouled water elementals in the lake now.",
+			"That is a transport problem as much as anything. The Talondeep Path is the tunnel between Ashenvale and Stonetalon, the lake sits beside its mouth, and traffic through the path has stopped because the water attacks whatever comes near it. Mastok Wrilehiss at Splintertree Post wants twelve of them killed and the gazebo out on the lake scouted while somebody is there, because it looks straight at the Alliance refuge.",
+			"Krolg is camped by the lake on his own errand, which is Ran Bloodtooth and the guards around him.",
 		},
 	},
 	{
@@ -1004,10 +1005,11 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Mannoroc Coven", parent = "Desolace", faction = "Hostile",
-		hook = "A demon camp left standing after the Third War ended.",
+		hook = "Night elf ruins in southern Desolace with demons coming through them.",
 		lore = {
-			"The Mannoroc Coven is a Burning Legion site in southern Desolace, named for the pit lord Mannoroth. Demons have held it since the Third War.",
-			"The Legion was defeated at Mount Hyjal but not removed. Pockets like this one survived across Kalimdor and the Burning Blade cult has been working with them.",
+			"The coven is a run of night elf ruins south of Ghost Walker Post, named for the pit lord Mannoroth, and the ground is blasted twice over: dead before the demons arrived and worse since. Infernals, felguards, succubi and felhounds hold it, with Lord Azrethoc over them and the orc warlock Jugkar Grim'rod there for the Burning Blade.",
+			"The demons are not survivors of anything. The Burning Blade is bringing them through, with portals the cult opens using the Hand of Iruxos, which it keeps locked in a demon box inside Thunder Axe Fortress. Taiga Wisemane at Shadowprey Village wants six of those portals banished and warns that each one has a guardian on it.",
+			"The road still runs past the coven. The Gizelton Caravan pays for an escort through it, on the grounds that the demons usually ignore the kodos and that something has them spooked this time.",
 		},
 	},
 	{
@@ -1490,11 +1492,14 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Legash Encampment", parent = "Azshara", faction = "Hostile",
-		hook = "A satyr camp in the northern hills.",
+		aliases = { "Legashi Encampment" },
+		hook = "The Legashi satyrs' camp in the northern hills.",
 		lore = {
-			"The Legash satyrs hold ground in northern Azshara, among the ruins of the empire their ancestors betrayed.",
-			"Satyrs are drawn to night elf sites. The night elves regard this as deliberate and probably correct.",
+			"The encampment sits in northern Azshara, east of Ursolan and north of the Thalassian Base Camp. The Legashi hold it, satyrs and rogues and hellcallers, camped in among the thunderhead skystormers that own most of this coast.",
+			"A satyr is a night elf who took Sargeras's bargain during the War of the Ancients and was remade for it. Azshara was the queen's own province and her court were the ones who opened the portal, and Xavius, the first satyr of all, was her counsellor. So the Legashi are sitting in the ruins of the civilisation they helped bring down, and they have had ten thousand years to move on and have not.",
+			"Satyr camps are scattered through every forest the night elves once held. This coast has the Legashi in the north and the Haldarr in the south-west.",
 		},
+		readMore = { "Wowpedia: Legash Encampment", "Wowpedia: Satyr", "Wowpedia: Xavius" },
 	},
 	{
 		name = "Haldarr Encampment", parent = "Azshara", faction = "Hostile",
@@ -2543,16 +2548,6 @@ SubsOf("Azshara", {
 		},
 		readMore = { "Wowpedia: Rethress Sanctum", "Wowpedia: Azshara" },
 	},
-	{
-		name = "Legashi Encampment", parent = "Azshara", faction = "Hostile",
-		hook = "Satyr ground in Azshara, held by one of the two clans working this coast.",
-		lore = {
-			"The Legashi are satyrs, and Azshara has them and the Haldarr both. A satyr is a night elf who took Sargeras's bargain during the War of the Ancients and was remade for it.",
-			"Their presence here is pointed. This was Azshara's own province, and the queen's court were the ones who opened the portal; Xavius, the first satyr of all, was her counsellor. The satyrs are in the ruins of the civilisation they helped destroy.",
-			"They have had ten thousand years and have not gone anywhere. Satyr camps are scattered through every forest the night elves once held, in Azshara, Ashenvale, Felwood and Desolace.",
-		},
-		readMore = { "Wowpedia: Satyr", "Wowpedia: Xavius", "Wowpedia: Azshara" },
-	},
 })
 
 -- Durotar.
@@ -2584,11 +2579,11 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "Mor'shan Base Camp", parent = "The Barrens", faction = "Horde",
-		hook = "The camp behind the rampart, at the head of the Gold Road.",
+		hook = "The Horde's camp behind the Mor'shan Rampart, and its way into Warsong Gulch.",
 		lore = {
-			"The base camp sits with the rampart at the northern terminus of the Gold Road. The rampart is the wall; this is what keeps the wall supplied.",
-			"The Gold Road is the Barrens' spine. It runs north to south from here, crosses the east-west road at the Crossroads, and carries everything the Horde moves between Orgrimmar and the south.",
-			"Which makes the top of it the most sensitive point on the whole road. Lose the rampart and Ashenvale's war comes down the highway into the Barrens.",
+			"The base camp sits just south of the Ashenvale border beside the rampart, and it is the biggest Horde position at this end of the Barrens. Captain Shatterskull holds it for the Warsong.",
+			"What the camp is for is Warsong Gulch. Horde fighters cross into it from here and bring their marks of honour back to the captain, and Kelm Hargunth is the supply officer who turns a standing with the clan into rations and bandages that work nowhere else.",
+			"The Horde's account of that fight is worth hearing in its own words. Under the guise of protecting a forest that does not belong to them, the Alliance is said to be trying to deny the Horde one of its largest sources of lumber.",
 		},
 		readMore = { "Wowpedia: Mor'shan Rampart", "Wowpedia: Gold Road" },
 	},
@@ -2979,13 +2974,13 @@ SubsOf("Desolace", {
 SubsOf("Azshara", {
 	{
 		name = "Legashi Stronghold", parent = "Azshara", faction = "Hostile",
-		hook = "The larger of the two Legashi satyr positions in the north.",
+		era = "forever", spoiler = true,
+		hook = "A second Legashi position in northern Azshara, above the encampment.",
 		lore = {
-			"The Legashi hold northern Azshara in strength, with an encampment and this stronghold. East of Ursolan, north of the Thalassian camp, the satyrs have the high ground.",
-			"Archmage Xylem found a grimoire in their camp, so they are keeping written work rather than simply raiding. Satyrs were Highborne once and the scholarship did not leave them when the rest did.",
+			"The Legashi hold northern Azshara in strength. The camp on the coast is the Legash Encampment, and this is the position behind it.",
 			"Azshara was the queen's own province and her court opened the portal. The satyrs are the ones who took Sargeras's bargain during that war, and they have been camped in the ruins of their own civilisation for ten thousand years.",
 		},
-		readMore = { "Wowpedia: Legash Encampment", "Wowpedia: Satyr", "Wowpedia: Azshara" },
+		readMore = { "Wowpedia: Satyr", "Wowpedia: Azshara" },
 	},
 	{
 		name = "Thalassian Vanguard Camp", parent = "Azshara", faction = "Hostile",

@@ -12,7 +12,7 @@
 # --- Eastern Kingdoms: places not yet written -----------------------------
 sub	Heroes' Vigil	Elwynn Forest	Alliance		Stone of Remembrance on the island in Stone Cairn Lake, held by Defias rogue wizards
 sub	Demont's Place	Westfall	Hostile		Dead Westfall farmstead west of Moonbrook, held by Riverpaw gnolls
-sub	Longshore	Westfall	Contested		Westfall's northern coastline; murlocs and shipwrecks
+sub	Longshore	Westfall	Contested		The whole western coastline of Westfall; murlocs and shipwrecks
 sub	The Dust Plains	Westfall	Contested		The driest part of Westfall, south of Moonbrook; the failed farmland at its worst
 sub	Brightwood Grove	Duskwood	Hostile		Northeastern Duskwood woodland, spiders and worgen
 sub	The Hushed Bank	Duskwood	Contested		Duskwood's river bank facing Westfall across the water
@@ -73,12 +73,12 @@ sub	Wellspring River	Teldrassil	Alliance		River running through Teldrassil's nor
 sub	The Long Wash	Darkshore	Contested		Darkshore's northern beach
 sub	Mist's Edge	Darkshore	Contested		Southern Darkshore shoreline
 sub	Cliffspring River	Darkshore	Contested		River running down Darkshore's northern cliffs
-sub	Nightsong Woods	Ashenvale	Contested		Central Ashenvale old-growth forest
+sub	Nightsong Woods	Ashenvale	Contested		The eastern half of Ashenvale, from Raynewood Retreat out to Azshara
 sub	The Howling Vale	Ashenvale	Hostile		Ashenvale vale with a worgen and furbolg problem
 sub	Greenpaw Village	Ashenvale	Hostile		Furbolg village in southern Ashenvale
 sub	Iris Lake	Ashenvale	Contested		Lake in eastern Ashenvale
 sub	Felfire Hill	Ashenvale	Hostile		Demon-held hill in eastern Ashenvale where the Legion's infernals landed
-sub	Night Run	Ashenvale	Hostile		Eastern Ashenvale woodland, satyr territory
+sub	Night Run	Ashenvale	Hostile		East-central Ashenvale, held by Felmusk satyrs
 sub	The Talon Den	Stonetalon Mountains	Hostile		Cave in the Stonetalon range
 sub	Cragpool Lake	Stonetalon Mountains	Contested		Lake in the northern Stonetalon Mountains
 sub	Camp Aparaje	Stonetalon Mountains	Horde		Small Horde camp in southern Stonetalon

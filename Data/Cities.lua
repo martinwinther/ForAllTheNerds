@@ -154,10 +154,11 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "Military Ward", faction = "Alliance",
-		hook = "Where Ironforge trains its warriors and its gryphon riders.",
+		hook = "Ironforge's command district, built around the Hall of Arms.",
 		lore = {
-			"The Military Ward holds Ironforge's warrior and paladin training and the city's armouries.",
-			"Dwarven military tradition runs to heavy infantry, firearms and siege. The gryphons come from the Wildhammers, not from here.",
+			"The Hall of Arms is the middle of it, and what it holds is warrior and hunter training, the battlemasters who sign people into the wars, and a hangar for steam tanks and flying machines. Muren Stormpike teaches the warriors. Buliwyf Stonehand keeps the weapon master's post, and that is where a dwarf goes to learn a weapon nobody taught them.",
+			"The rest of the ward is supply: plate and chain, hunting gear, a meat vendor, and a row of training dummies for anyone who would rather hit something than buy something. The banners are red, where the Commons runs to pale blue.",
+			"Dwarven military tradition runs to heavy infantry, firearms and siege. The Light is studied in the Mystic Ward and the gryphons come from the Wildhammers, so neither is here.",
 		},
 	},
 	{

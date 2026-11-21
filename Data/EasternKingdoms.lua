@@ -54,10 +54,11 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Lion's Pride Inn", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "Goldshire's inn, under a lion sigil, and the busiest crossroads tavern in the kingdom.",
+		hook = "Goldshire's inn, under a lion sigil, with a motto and a guest list.",
 		lore = {
-			"The lion is Stormwind's own sigil, and that is as much as the inn's sign actually tells you. Lion of Azeroth was Sir Anduin Lothar's name among his own soldiers, earned in the Second War from the sight of his shield cutting through the orc ranks; he had covered the retreat from Stormwind in the First and he died at Blackrock Spire in the Second. Whether the innkeeper had him in mind is not recorded.",
-			"Practically, it is the last comfortable bed between Stormwind and the Dark Woods, so everybody stops. The gossip here is the closest thing Elwynn has to a newspaper.",
+			"Innkeeper Farley runs the inn, and the motto he greets people with is rest and relaxation for the tired and cold. Mention the right friend in Northshire and he will knock something off the food and drink. Barkeep Dobbins works the bar, there are trainers for half a dozen trades sitting in the common room, and William Pestle lodges here with his potions while he collects candle wax for the apothecary he and his brother run in Stormwind.",
+			"The lion is Stormwind's own sigil, and the sign does not say more than that.",
+			"Not everyone who passes through is a traveller. When a trail of old addresses out of Duskwood was followed up, the registry had a second entry under the name Stalvan, half scratched out, and it pointed here. Asking after that name in the common room is how a good many people have spent an evening in Goldshire.",
 		},
 	},
 	{
@@ -122,10 +123,10 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Mirror Lake", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "The still lake west of the Tower of Azora, with an orchard that supplies half of Stormwind's cider.",
+		hook = "A small lake with a waterfall, south-west of the Stormwind gates.",
 		lore = {
-			"Mirror Lake and its orchard are among the most productive bits of land in Elwynn, which is why the kobolds working their way out of the nearby hills are treated as a serious nuisance rather than a curiosity.",
-			"The name is literal and old. Few places in Elwynn carry one that came through the First War unchanged.",
+			"Mirror Lake sits in western Elwynn with the Mirror Lake Orchard beside it. It would be the obvious place in the forest to swim or fish, and the Defias in the trees around it are the reason nobody does.",
+			"The water is also under suspicion. Jennea Cannon sends mages out from Stormwind to fill a flask at the foot of the waterfall, because the mystic struggles of the last few years tore magic out of channels that used to be stable and nobody knows yet what has come through into this lake. Her working fear is for anyone who drinks from it long enough.",
 		},
 	},
 	{
@@ -650,10 +651,10 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "North Gate Pass", parent = "Loch Modan", faction = "Contested",
-		hook = "The northern road out of the valley, watched because of what uses it.",
+		hook = "The upper of the two passes between Loch Modan and Dun Morogh.",
 		lore = {
-			"North Gate carries traffic out of Loch Modan toward the Badlands road and the eastern mountains. It is the route the Mo'grosh use to come down out of the hills.",
-			"The dwarves garrison the gates and accept that the ogres will keep trying.",
+			"North Gate Pass runs through the north-west corner of the Loch and comes out in Dun Morogh, high in the mountains on the far side. It is the route most people take to and from the Wetlands, because it is the closest pass to the descent out of the Loch.",
+			"The dwarves keep North Gate Outpost in the middle of it, and the trouble the garrison deals with is wildlife rather than anybody's army.",
 		},
 	},
 })
@@ -1077,10 +1078,10 @@ SubsOf("Hillsbrad Foothills", {
 	},
 	{
 		name = "Nethander Stead", parent = "Hillsbrad Foothills", faction = "Contested",
-		hook = "A Hillsbrad farm caught between two armies and farming anyway.",
+		hook = "An abandoned Hillsbrad farm, with gnolls in the fields and mushrooms growing in them.",
 		lore = {
-			"The Nethander place is one of the holdings still being worked in the middle of the Southshore-Tarren Mill war. The farmers' position is that the crops do not care who is winning.",
-			"Hillsbrad's farmland is good. Both sides want the hills and neither will burn them.",
+			"The stead lies east of Southshore and south of Tarren Mill, across the river, and nobody farms it any more. Mudsnout gnolls have it, along with their shamans, and this is the only ground in the world that tribe is found on.",
+			"What grows in the fields now is giant white mushrooms. Apothecary Lydon wants six of them in Tarren Mill, for an elixir of agony he is building towards the Forsaken's next plague, and his own view of the gnolls is that at least they are good for something.",
 		},
 	},
 	{
@@ -3340,8 +3341,8 @@ SubsOf("Silverpine Forest", {
 		hook = "Silverpine's north-western shore, with a half-sunken ship on it.",
 		lore = {
 			"North Tide's Run is the name for the north-western shoreline of Silverpine, the beach and a thin band of the Great Sea beyond it.",
-			"The thing anybody remembers is the ship. It lies partly submerged at the water's edge, and nobody has moved it or explained it.",
-			"Wallace the Blind keeps a small campfire down by the water. Silverpine is Forsaken country with worgen in the woods and the Scarlet Crusade pushing in, so a man sitting alone on a beach beside a wreck is doing better than most.",
+			"The thing anybody remembers is the ship. A Horde vessel lies partly submerged at the water's edge, and nobody has moved it or explained it. Wallace the Blind keeps a campfire beside it and sells weapons off the beach, which is a living of sorts in a forest with worgen in it and the Scarlet Crusade pushing in.",
+			"Druids come here too. One half of the Pendant of the Sea Lion is in a lockbox out by the wreck, and a young druid who wants an aquatic form has to be told by somebody in Moonglade which coast to look on.",
 		},
 		readMore = { "Wowpedia: North Tide's Run", "Wowpedia: Silverpine Forest" },
 	},
@@ -3361,9 +3362,9 @@ SubsOf("Westfall", {
 		aliases = { "Westfall Lighthouse", "The Lighthouse" },
 		hook = "A lighthouse on the southern coast, kept now by its own keeper's ghost.",
 		lore = {
-			"The lighthouse stands just off Westfall's far southern shore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
-			"They came back and relit the flame. Old Murk-Eye then put the murlocs onto the lighthouse directly, and that was the end of the family.",
-			"Captain Grayson is still outside it. He is a ghost, he is entirely lucid about what happened, and what he wants is the murlocs along this coast dealt with. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
+			"The lighthouse stands on Westfall's far southern shore, at the end of the Longshore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
+			"They came back and relit the flame. Old Murk-Eye talked the weaker-minded murlocs into raiding the lighthouse with him a second time, and that was the end of the family.",
+			"Captain Grayson is still outside it. His own life ended on the rocks below, he is entirely lucid about all of it, and with nobody left to watch the flame he has taken the job himself: oil carried up from the harvest golems inland, and the murlocs along this coast dealt with by anyone willing. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
 		},
 		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Old Murk-Eye", "Wowpedia: Westfall" },
 	},
