@@ -81,11 +81,12 @@ SubsOf("Duskwood", {
 SubsOf("Redridge Mountains", {
 	{
 		name = "Stonewatch Falls", faction = "Hostile",
-		hook = "A waterfall below the captured keep, with caves behind it the orcs make use of.",
+		hook = "The falls below the captured keep, with a small murloc camp at the bottom.",
 		lore = {
-			"The falls run off the high ground Stonewatch Keep sits on, and the caves behind the water reach further into the hillside than Lakeshire would like. Blackrock orcs use them, and the gnolls use them when the orcs are elsewhere.",
-			"Lakeshire's militia has mapped the entrance and gone no deeper. Holding the bridge is as much as the town can manage.",
+			"Lake Everstill's eastern river ends here. It cascades down the hill below Stonewatch and pools deep in a nook of the eastern Redridge Mountains.",
+			"A small tribe of murlocs lives at the bottom of it, fishing the pool and putting up crude shelters to sleep in. They are all that holds the falls. The Blackrock orcs and the Shadowhide gnolls are both up the hill at the keep instead, and neither comes down for this.",
 		},
+		readMore = { "Wowpedia: Stonewatch Falls", "Wowpedia: Lake Everstill" },
 	},
 })
 
@@ -168,11 +169,12 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Sundown Marsh", faction = "Contested",
-		hook = "The low wet ground west of the road, between Menethil Harbor and the sea.",
+		hook = "The deepest part of the Wetlands, with an odd couple keeping shop in it.",
 		lore = {
-			"Sundown Marsh is the water around Menethil Harbor, and it is murloc country as much as anybody's. The Bluegill hold the coast and the garrison keeps them off the causeway.",
-			"Travellers off the boat from Kalimdor cross this marsh before they see anything else of the Eastern Kingdoms, which has given the Wetlands a reputation the rest of the zone has never shaken.",
+			"Sundown Marsh is the north-western and deepest part of the Wetlands. The water on every side of it holds crocolisks, gnolls, raptors, bog beasts and oozes, which keeps the inexperienced from wandering in.",
+			"In the middle of that is a small stone house with a windmill. Fradd Swiftgear sells engineering supplies out of it and Wenna Silkbeard deals in the peculiar things the marsh gives up, including recipes that are hard to find anywhere else. Mirelow is somewhere in the water nearby.",
 		},
+		readMore = { "Wowpedia: Sundown Marsh", "Wowpedia: Swiftgear Station", "Wowpedia: Wetlands" },
 	},
 	{
 		name = "The Green Belt", faction = "Contested",
@@ -473,7 +475,7 @@ SubsOf("Mulgore", {
 		name = "Ravaged Caravan", faction = "Contested",
 		hook = "A burnt-out Venture Company caravan on the shore of Stonebull Lake.",
 		lore = {
-			"The caravan was the Venture Company's, carrying supplies up to Supervisor Fizsprocket's mine. The tauren saw the company moving freely through Mulgore and put a stop to this load. What is left sits on a mound with black smoke still coming off it.",
+			"The caravan was the Venture Company's, travelling under guard along the northern shore of Stonebull Lake with Supervisor Fizsprocket's mine a short way east. The tauren saw the company moving freely through Mulgore and put a stop to this load. What is left sits on a mound with black smoke still coming off it, and the crates are stamped by the company's Mining Division and were due for processing at one of its central plants.",
 			"The company has not given it up. The laborers and taskmasters who survived the wrecking are camped on the remains and defend the cargo aggressively. That is the whole of their answer to being told to leave.",
 		},
 		readMore = { "Wowpedia: Ravaged Caravan", "Wowpedia: Venture Company", "Wowpedia: Mulgore" },
@@ -639,11 +641,12 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Tethris Aran", faction = "Hostile",
-		hook = "A night elf ruin in Desolace, from a time when this was worth settling.",
+		hook = "Night elf ruins in northern Desolace with nothing but animals in them.",
 		lore = {
-			"Tethris Aran is pre-Sundering night elf work, which places it before the sea came in and before this region became grey stone. The empire covered all of it.",
-			"Ruins like this one are the strongest argument that Desolace was not always a waste. Nobody builds a settlement on ground that looks like this.",
+			"Tethris Aran is a run of night elf ruins in northern Desolace, just north of Thunder Axe Fortress. Nobody holds it. Scorpashi snappers and a gritjaw basilisk work the stones, and that is the whole garrison.",
+			"The ruins are pre-Sundering work, from before the sea came in and before this region became grey rock. They are the strongest argument Desolace offers that it was not always a waste.",
 		},
+		readMore = { "Wowpedia: Tethris Aran", "Wowpedia: Desolace" },
 	},
 	{
 		name = "Ranazjar Isle", faction = "Hostile",
@@ -963,23 +966,6 @@ SubsOf("Elwynn Forest", {
 		},
 	},
 	{
-		name = "Maclure Vineyards", faction = "Alliance",
-		hook = "One of two vineyards south of Goldshire, and one half of a feud with a romance in it.",
-		lore = {
-			"The Maclures grow grapes on the southern slopes, with the Stonefields a short walk away, and the two families cannot stand each other. Fargodeep Mine lies almost due south of Goldshire between the two homesteads, and that is how most people learn where both of them are.",
-			"The feud has a hole in the middle of it. Maybell Maclure and Tommy Joe Stonefield are in love, and getting her off the vineyard to meet him has taken a note to William Pestle at the inn, a trip to the murlocs at Crystal Lake for crystal kelp, and a bottle of invisibility liquor brewed out of it.",
-			"The rest of the family's business is smaller. Billy Maclure is accused by an old widow of taking her necklace and is usually to be found scuttling about the vines, a pork belly pie improves his mood, and the Brackwell prize sow comes over to eat the vegetables often enough that somebody has put a price on her collar.",
-		},
-	},
-	{
-		name = "Stonefield Farm", faction = "Alliance",
-		hook = "The other southern vineyard, and the other half of the argument.",
-		lore = {
-			"The Stonefields farm the land beside the Maclures and get on with them about as well as two families can when they have been accusing each other of theft for a generation.",
-			"Both farms also have a kobold problem and a gnoll problem, which they manage separately and without speaking, because that would mean speaking.",
-		},
-	},
-	{
 		name = "Thunder Falls", faction = "Contested",
 		hook = "A waterfall in the eastern forest, loud enough to name itself.",
 		lore = {
@@ -1013,10 +999,10 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Stormwind Gates", faction = "Alliance",
-		hook = "The approach to the city, where Elwynn's road runs up to the walls.",
+		hook = "The land approach to Stormwind, under the walls the city rebuilt.",
 		lore = {
-			"The gates face east into Elwynn, with the Valley of Heroes and its statues on the far side of them. Everything that enters Stormwind by land comes through here.",
-			"The walls are part of the reconstruction. Stormwind was taken once, in the First War, and the city that was rebuilt afterwards was built by people who had watched it happen.",
+			"The gates are where Elwynn's road meets Stormwind's wall, and everything that arrives by land comes through them. Inside is the Valley of Heroes and its five statues; outside is the forest.",
+			"The wall itself is the point. Stormwind was taken and burned in the First War, and the city standing behind these gates is the one raised afterwards, by people who had watched the first one fall.",
 		},
 	},
 })
@@ -1232,11 +1218,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "The Dead Acre", faction = "Contested",
-		hook = "A field that stopped producing before the rest of Westfall did.",
+		hook = "A burnt farm in south-eastern Westfall, with the machines still working the fields.",
 		lore = {
-			"The Dead Acre went first. The soil here gave out early, and the farmers who worked the land around it watched and drew conclusions.",
-			"Drought took part of Westfall and neglect took the rest. The kingdom's attention and money went north after the wars and never properly came back.",
+			"The Dead Acre was one of Westfall's farms, in the south-east near the bridge into Duskwood, until the Defias Brotherhood took the zone and burned the buildings and the fields with them. What is left of it is smoking ruin.",
+			"The fields are still being worked, after a fashion. Harvest reapers walk them with the Foe Reaper 4000 among them, and the Defias themselves have not gone far: knuckledusters and a highwayman keep to the ground they burned.",
 		},
+		readMore = { "Wowpedia: Dead Acre", "Wowpedia: Defias Brotherhood", "Wowpedia: Westfall" },
 	},
 })
 
@@ -1657,11 +1644,12 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "The Cleft", faction = "Contested",
-		hook = "A split in the tree's bark wide enough to walk down.",
+		hook = "A corrupted furbolg den in the woods west of Dolanaar, with druids caged in it.",
 		lore = {
-			"The Cleft runs between Dolanaar and the northern slopes. On a World Tree the geography is the organism, which takes some getting used to.",
-			"Teldrassil is perhaps a few decades old. For a tree of this kind that is infancy, and the night elves who argued against planting it are being proved right slowly.",
+			"The Cleft is a Gnarlpine den in Teldrassil's woods west of Dolanaar, and Ursal the Mauler leads the furbolgs in it. Pathfinders, avengers and totemics hold the ground around him.",
+			"They have been ambushing travellers on the road to Darnassus, and they are keeping druids in the den, enslaved rather than killed. Moon Priestess Amara and a pair of huntresses watch the road by the entrance, which is as close as the night elves have yet come to doing anything about it.",
 		},
+		readMore = { "Wowpedia: Cleft", "Wowpedia: Ursal the Mauler", "Wowpedia: Gnarlpine tribe" },
 	},
 	{
 		name = "Wellspring Lake", faction = "Alliance",

@@ -359,11 +359,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Terrace of Repose", parent = "Tirisfal Glades", faction = "Contested",
-		hook = "A funerary terrace above the coast, built for Lordaeron's honoured dead.",
+		hook = "A green terrace at the Scarlet Monastery's gate, the one ground the plague missed.",
 		lore = {
-			"The terrace was a dignified place to inter those the kingdom wished to remember. Lordaeron took its dead seriously. In the years before the plague that turned out to be a dangerous habit.",
-			"What rests here now mostly does not rest. The Forsaken find the architecture more interesting than the occupants.",
+			"The Terrace of Repose is the ground just north of the Scarlet Monastery's entrance, and it is one of the very few places in northern Lordaeron the plague never reached. The Scarlet Crusade hold it, and on it they have hedges growing and a fountain running clean water, which nothing else in Tirisfal Glades manages.",
+			"It is a garrison rather than a garden. Scarlet sentries stand on it, a scout and a pair of preservers walk the approach, and the cathedral and armoury doors are behind them.",
 		},
+		readMore = { "Wowpedia: Terrace of Repose", "Wowpedia: Scarlet Monastery", "Wowpedia: Scarlet Crusade" },
 	},
 })
 
@@ -850,11 +851,12 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "The Darkened Bank", parent = "Duskwood", faction = "Contested",
-		hook = "The northern shore of Duskwood's river, facing Westfall across the water.",
+		hook = "Duskwood's whole northern shore, with two refugees camped at the west end.",
 		lore = {
-			"The bank is the boundary between Duskwood's gloom and Westfall's dust, and the difference across a single river is startling.",
-			"Smugglers and Defias both use the crossings here, since neither the Night Watch nor the People's Militia has anything to spare for river patrol.",
+			"The Darkened Bank runs the length of Duskwood's northern shore, from the far western edge of the zone east to the bridge into the Redridge Mountains. The water on the far side is Westfall at the western end and Elwynn along the rest, and swimming south out of Elwynn's south-western corner lands you on it.",
+			"Sven Yorgen and Lars are camped at the western end with a fire going. They are refugees, they are the first people most adventurers meet in Duskwood, and what they hand out is work against the weaker things in the woods.",
 		},
+		readMore = { "Wowpedia: Darkened Bank", "Wowpedia: Sven Yorgen", "Wowpedia: Duskwood" },
 	},
 })
 
@@ -1871,11 +1873,13 @@ SubsOf("Searing Gorge", {
 	},
 	{
 		name = "The Cauldron", parent = "Searing Gorge", faction = "Hostile",
-		hook = "The great open pit at the Gorge's centre, worked by Dark Irons and lit from below.",
+		hook = "The Gorge's central pit, dug by slaves who will not be rescued.",
 		lore = {
-			"The Cauldron is the Gorge's central crater and the heart of Dark Iron industry here. It is an open-cast operation on a scale that would impress Ironforge, if Ironforge could bear to look.",
-			"Beneath it is Blackrock Mountain's western approach. The Cauldron is a doorway as well as a mine.",
+			"The Cauldron is the open crater at the centre of the Searing Gorge, rimmed by the Dark Iron clan's excavation machines and fortified some time after Ragnaros was summoned. Fire and magma elementals move through the crevices at the bottom of it.",
+			"The digging is done by slaves. Dark Iron slavers and taskmasters hold the pit with Slave Master Blackheart working the line, and the slave workers have been driven far enough by the heat and the labour that they will attack anybody who comes at them, including anyone trying to get them out. There are mutilated and charred Dark Iron remains lying about the same ground.",
+			"Inside the Cauldron is the Slag Pit. Incendosaurs occupy its lava pools, and Overseer Maltorius commands the crew down there: a Thorium Brotherhood agent who went over to the Dark Iron, which is why the Brotherhood has put out an order on him.",
 		},
+		readMore = { "Wowpedia: Cauldron", "Wowpedia: The Slave Pits", "Wowpedia: Overseer Maltorius" },
 	},
 	{
 		name = "Grimesilt Dig Site", parent = "Searing Gorge", faction = "Hostile",
@@ -2527,7 +2531,7 @@ SubsOf("Eastern Plaguelands", {
 		name = "Terrorweb Tunnel", parent = "Eastern Plaguelands", faction = "Hostile",
 		hook = "A tunnel full of nerubians, running under the mountain from Terrordale to the river.",
 		lore = {
-			"The tunnel runs through the mountain north-west of Terrordale and comes out south at the Thondroril River. What is inside it is crypt fiends, which is to say nerubians.",
+			"The tunnel runs through the mountain north-west of Terrordale and comes out south at the Thondroril River. What is inside it is crypt fiends, which is to say nerubians, with horrors, walkers and a slayer among them and a nerubian overseer patrolling the length of it.",
 			"The nerubians are not Lordaeron's dead. They were a civilisation of their own in Northrend, old and organised, with a subterranean empire called Azjol-Nerub. The Lich King made war on them and won, and the ones in this tunnel are what he turned them into.",
 			"Their presence this far south says something about how far the Scourge reaches. Naxxramas hangs over these lands, and the army under it was assembled from more than one conquered people.",
 		},
@@ -2604,23 +2608,23 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Crimson Veil", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "One of three Bloodsail frigates moored off the Wild Shore.",
+		hook = "The Bloodsail flagship, and where the fleet does its recruiting.",
 		lore = {
-			"The Bloodsail Buccaneers keep three frigates at the Wild Shore, and this is one of them. The others are the Damsel's Luck and the Riptide.",
-			"Three ships is a fleet by the standards of this coast, and that is what makes the Bloodsail a political problem rather than a nuisance. Booty Bay can police a jungle road. It cannot police the sea.",
-			"The goblins' answer has been to make the Bloodsail unwelcome in the one port worth visiting. That has pushed the pirates further into taking what they need rather than buying it.",
+			"The Crimson Veil is the Bloodsail Buccaneers' flagship and the middle of the three frigates moored off the Wild Shore. Fleet Master Firallon has her, with Ironpatch beside him and deckhands, swabbies, sea dogs and elder maguses aboard.",
+			"Fleet Master Firallon recruits, and the qualification is simple: he wants people who are no friend of Booty Bay. A neutral goblin port that sells to everyone and a pirate fleet that takes from everyone cannot both be right about this stretch of water, and the goblins have answered by making the Bloodsail unwelcome in the one harbour worth visiting.",
+			"Something odd is lying about on these decks. Cortello's Riddle turns up on them in threes, which is a treasure hunt the Bloodsail do not appear to have finished.",
 		},
+		readMore = { "Wowpedia: The Crimson Veil", "Wowpedia: Fleet Master Firallon", "Wowpedia: Bloodsail Buccaneers" },
 		readMore = { "Wowpedia: Bloodsail Buccaneers" },
 	},
 	{
 		name = "The Damsel's Luck", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "The easternmost of the Bloodsail frigates, under Captain Stillwater.",
+		hook = "The easternmost Bloodsail frigate, with a gnome captain and a golem on deck.",
 		lore = {
-			"The Damsel's Luck lies furthest east of the three Bloodsail ships at the Wild Shore. Captain Stillwater has her, and the crew are Bloodsail like the other two.",
-			"Pirate outfits on this coast are not a single organisation. The Bloodsail and the Blackwater Raiders are both here and they loathe each other considerably more than either troubles about a passing traveller.",
-			"That is the reason piracy persists in Stranglethorn rather than being settled one way or the other. There is nobody to negotiate with.",
+			"The Damsel's Luck lies furthest east of the three Bloodsail ships off the Wild Shore. Captain Stillwater, a gnome, has her, which is not what the rest of the fleet looks like, and Brutus the golem stands on her deck among the swabbies and deckhands.",
+			"Pirate outfits on this coast are not a single organisation. The Bloodsail and the Blackwater Raiders are both here, and they mind each other a good deal more than either minds a traveller going past.",
 		},
-		readMore = { "Wowpedia: The Damsel's Luck", "Wowpedia: Bloodsail Buccaneers" },
+		readMore = { "Wowpedia: The Damsel's Luck", "Wowpedia: Captain Stillwater", "Wowpedia: Blackwater Raiders" },
 	},
 	{
 		name = "The Riptide", parent = "Stranglethorn Vale", faction = "Hostile",
@@ -2782,13 +2786,13 @@ SubsOf("Redridge Mountains", {
 	},
 	{
 		name = "Stonewatch Tower", parent = "Redridge Mountains", faction = "Hostile",
-		hook = "The tower of the Stonewatch stronghold, on the same captured ground.",
+		hook = "The intact watch tower beside the captured keep, with a mage's ear hidden in it.",
 		lore = {
-			"The tower is the other half of Stonewatch, and it fell with the keep when the Blackrock orcs came through for Morganth.",
-			"The position is the whole reason anybody wants it. Stonewatch sits on the pass, and the pass is the way between Redridge and the Burning Steppes, and the Steppes are Blackrock Mountain's doorstep.",
-			"So a human fort built to watch the road to Blackrock is now held by the people it was watching for.",
+			"Stonewatch Tower is the second structure of the Stonewatch stronghold, standing beside the keep, and it is the one still intact. Both belonged to Lakeshire until the Blackrock clan took them, and Gath'Ilzogg holds the ground now.",
+			"The position is the whole reason anybody wants it. The Blackrock came down out of the Burning Steppes to claim Stonewatch, and from it they maraud the country north of Lakeshire and keep the townspeople indoors. A human fort built to watch the road towards Blackrock Mountain is now held by the people it was built to watch for.",
+			"The tower has a second use nobody in the keep knows about. Theocritus at the Tower of Azora wants to know why Morganth, up at the Tower of Ilgalar, is in conflict with the orcs in Stonewatch Keep, and his method is a Glyph of Azora hidden at the top of this tower, dropped into an empty liquor jar left forgotten on a pair of barrels, close enough to read the minds inside.",
 		},
-		readMore = { "Wowpedia: Stonewatch", "Wowpedia: Blackrock clan" },
+		readMore = { "Wowpedia: Stonewatch Tower", "Wowpedia: Looking Further", "Wowpedia: Gath'Ilzogg" },
 	},
 })
 
@@ -2837,35 +2841,38 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Steelgrill's Depot", parent = "Dun Morogh", faction = "Alliance",
-		hook = "Miners and engineers east of Kharanos, with Gnomeregan on their minds.",
+		hook = "A siege engine shop north-east of Kharanos, and a haunt for tank pilots.",
 		lore = {
-			"Steelgrill's Depot is a small working settlement just outside Kharanos: trainers, vendors, and the sort of machinery dwarven and gnomish engineering produces when nobody is stopping it.",
-			"Gnomeregan is the thing hanging over it. The gnomes' city was lost to the troggs, and Mekgineer Thermaplugg's answer was to flood it with radiation rather than surrender it, killing most of his own people.",
-			"The survivors live in Ironforge's Tinker Town now, and retaking the city is an ongoing project rather than an abandoned one. A depot full of engineers near the mountain is part of that.",
+			"Steelgrill's Depot is Beldin Steelgrill's mechanic shop, north-east of Kharanos, and he is the best siege engine tech there is. He is also hard on his tools. He gets through arclight spanners faster than anyone can supply them, and he broke his last fang-ratchet an hour before needing it to finish Pilot Stonegear's engine.",
+			"The depot is where veteran tank pilots sit about, so it is worth keeping your ears open in it. Pilot Bellowfiz is stocking his tank, the Jetsteam, with a month of supplies for a long Siege Brigade run, and Pilot Stonegear has heard of a rare ore and wants it for his own engine's firepower.",
+			"There is a mining trainer and an engineering trainer here as well, and Loslor Rudge sells the parts.",
 		},
-		readMore = { "Wowpedia: Steelgrill's Depot", "Wowpedia: Gnomeregan", "Wowpedia: Sicco Thermaplugg" },
+		readMore = { "Wowpedia: Steelgrill's Depot", "Wowpedia: Tools for Steelgrill", "Wowpedia: Beldin Steelgrill" },
 	},
 })
 
 SubsOf("Elwynn Forest", {
 	{
 		name = "The Stonefield Farm", parent = "Elwynn Forest", faction = "Alliance",
+		aliases = { "Stonefield Farm" },
 		hook = "One half of a farming feud, with a child in love with the other half.",
 		lore = {
-			"The Stonefields farm in southern Elwynn, and they loathe the Maclures next door. Nobody involved seems able to say exactly when it started or what it was about.",
+			"The Stonefields farm in southern Elwynn and they loathe the Maclures next door. Nobody involved seems able to say exactly when it started or what it was about, beyond a generation of each accusing the other of theft.",
 			"It has gone the way these things do. A Stonefield child and a Maclure child have fallen in love, and the two families are the last to work it out.",
-			"Elwynn is the quietest zone in the Eastern Kingdoms and its largest ongoing dispute is between two farms over nothing. That is worth appreciating, given what the rest of the continent is dealing with.",
+			"Both farms have the same smaller troubles and will not compare notes on them, because comparing notes would mean speaking: kobolds in the Fargodeep Mine below them and gnolls in the woods. Elwynn is the quietest zone in the Eastern Kingdoms and its largest ongoing dispute is between two farms over nothing.",
 		},
 		didYouKnow = "The feud is a nod to the Hatfields and the McCoys, and the romance to Romeo and Juliet. Elwynn's writers were having a good day.",
 		readMore = { "Wowpedia: Stonefield Farm", "Wowpedia: Elwynn Forest" },
 	},
 	{
 		name = "The Maclure Vineyards", parent = "Elwynn Forest", faction = "Alliance",
+		aliases = { "Maclure Vineyards" },
 		hook = "The other half of the feud, and the one with the grapes.",
 		lore = {
-			"The Maclures keep vineyards in southern Elwynn, next door to the Stonefields, with whom they are not on speaking terms. Joshua Maclure is the vintner and Pa Maclure holds the farm.",
-			"The rivalry runs on small grievances. Bernice Stonefield is sure that Billy Maclure took her necklace, and the pie that goes back across to him is sent with the wish that he chokes on it. Their children, Maybell Maclure and Tommy Joe Stonefield, have made other arrangements of their own.",
-			"Elwynn's real problems are elsewhere: the Defias are in the hills, kobolds are in the Fargodeep Mine almost due south of Goldshire between the two homesteads, and Hogger is in the woods. Over a dozen boars root about the vineyards.",
+			"The Maclures grow grapes on the southern slopes of Elwynn, next door to the Stonefields, with whom they are not on speaking terms. Joshua Maclure is the vintner and Pa Maclure holds the farm.",
+			"The feud has a hole in the middle of it. Maybell Maclure and Tommy Joe Stonefield are in love, and getting her off the vineyard to meet him has taken a note to William Pestle at the inn, a trip to the murlocs at Crystal Lake for crystal kelp, and a bottle of invisibility liquor brewed out of it.",
+			"The rest of the rivalry runs on small grievances. Bernice Stonefield is sure Billy Maclure took her necklace and the pie that goes back across to him is sent with the wish that he chokes on it, though a pork belly pie does improve his mood. The Brackwell prize sow comes over to eat the vegetables often enough that somebody has put a price on her collar.",
+			"Elwynn's real problems are elsewhere: the Defias are in the hills, kobolds are in the Fargodeep Mine almost due south of Goldshire between the two homesteads, and Hogger is in the woods. Over a dozen boars root about the vineyard rows.",
 		},
 		readMore = { "Wowpedia: Maclure Vineyards", "Wowpedia: Elwynn Forest" },
 	},
@@ -2925,13 +2932,13 @@ SubsOf("Searing Gorge", {
 SubsOf("Loch Modan", {
 	{
 		name = "Stoutlager Inn", parent = "Loch Modan", faction = "Alliance",
-		hook = "Thelsamar's inn, and the most popular room in Loch Modan.",
+		hook = "Thelsamar's inn, with the Hearthstove family running it and the Explorers' League in it.",
 		lore = {
-			"The Stoutlager is in Thelsamar, with an innkeeper, vendors and people handing out work. It is the place in this zone where everyone ends up.",
-			"Loch Modan earns a comfortable inn. The Stonewrought Dam holds the loch, the dwarves have held this valley since before the Three Hammers, and the troubles here are troggs and the Mo'grosh ogres rather than anything existential.",
-			"It is one of the few zones in the Eastern Kingdoms where the local difficulty is a nuisance instead of a catastrophe, and the inn reflects that.",
+			"The Stoutlager is Thelsamar's inn and the Hearthstove family run it: Innkeeper Hearthstove behind the bar, Lina Hearthstove on the stables, Vidra Hearthstove about the place. A baker, a herbalist, a general goods dwarf and a tradesman all work out of the same rooms, and there is an anvil, a forge and a mailbox outside the door.",
+			"Two Explorers' League dwarves, Torren Squarejaw and Jern Hornhelm, are usually in here as well, which is how a good deal of the digging in Loch Modan gets staffed.",
+			"On the wall is a notice. By order of the Magistrate of Thelsamar, Chok'sul is wanted: the ogre held to be behind the attacks on the town, on the Stonewrought Dam and on the excavation site.",
 		},
-		readMore = { "Wowpedia: Stoutlager Inn", "Wowpedia: Thelsamar", "Wowpedia: Loch Modan" },
+		readMore = { "Wowpedia: Stoutlager Inn", "Wowpedia: Thelsamar", "Wowpedia: Chok'sul" },
 	},
 })
 

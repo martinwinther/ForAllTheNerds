@@ -193,11 +193,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Stonebull Lake", parent = "Mulgore", faction = "Horde",
-		hook = "A lake in southern Mulgore, and a quiet place by any standard.",
+		hook = "The horseshoe lake around Bloodhoof Village, with a burnt caravan on its north shore.",
 		lore = {
-			"Stonebull Lake waters the southern plains and is one of the more peaceful spots in Horde territory.",
-			"Mulgore as a whole is the gentlest zone the Horde holds. The tauren regard that as earned, not granted.",
+			"Stonebull Lake wraps around Bloodhoof Village on three sides in central Mulgore. A bridge crosses it at the narrowest point, carrying the road between the village and Thunder Bluff, and the fishing in it is good enough that a lot of hours go into it.",
+			"The northern shore is where the Venture Company's caravan died. Tauren found it travelling under guard, attacked it and burned the wagons, and the company's salvagers turned up afterwards to pick over whatever the torches had missed. The crates are stamped by its Mining Division, and the papers inside set out how the company meant to drive the tauren off their own land.",
 		},
+		readMore = { "Wowpedia: Stonebull Lake", "Wowpedia: The Ravaged Caravan", "Wowpedia: Bloodhoof Village" },
 	},
 	{
 		name = "Windfury Ridge", parent = "Mulgore", faction = "Contested",
@@ -1523,11 +1524,15 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Thalassian Base Camp", parent = "Azshara", faction = "Hostile",
-		hook = "A high elf camp with its own agenda.",
+		aliases = { "Thalassian Vanguard Camp" },
+		hook = "A blood elf dig on Azshara's northern peninsula, run by a woman who kills her partners.",
 		lore = {
-			"The elves at this camp are Thalassian, out of Quel'Thalas, and not working with the Alliance.",
-			"Quel'Thalas was destroyed by Arthas and the Scourge, and the surviving elves' relationship with their old allies has not recovered. Camps like this one operate on their own account.",
+			"The camp is a hill of small tents on Azshara's northern peninsula, south of the Legash Encampment and east of Ursolan. Magus Rimtori runs it, and the elves on it are blood elves: reclaimers and surveyors working the southern bluffs, with Magister Hawkhelm minding the place while she searches the zone under guard.",
+			"She got here on somebody else's money. Magus Rimtori told Belgrom Rockmaul that Azshara held great riches and powerful items, he lent her warriors to protect the expedition in return for a share of it, and she killed every one of them. Ag'tor Bloodfist at Valormok has been sending people after her since and they do not come back either.",
+			"She did the same to the goblin Kim'jael, hired to scout for lost treasure and then turned on, and he wants his compass, his scope, his stuffed chicken and his Wizzlegoober back off her people.",
+			"What she is digging for is the open question. Her camp holds a circle of crystals laid out to match a diagram in her own book, one crystal tied to her and the others tied to something worse, and Kim'jael's guess is a rune the naga are keeping in the Ruins of Eldarath.",
 		},
+		readMore = { "Wowpedia: Thalassian Base Camp", "Wowpedia: Magus Rimtori", "Wowpedia: Betrayed" },
 	},
 	{
 		name = "Bear's Head", parent = "Azshara", faction = "Contested",
@@ -1737,11 +1742,13 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Terror Run", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "Devilsaur country in the south, and the name is advice.",
+		hook = "The crater's south-west corner, where the diggers were nearly eaten.",
 		lore = {
-			"Terror Run is where the crater's devilsaurs range. Devilsaurs are enormous predatory dinosaurs, and nothing else in Un'Goro comes close to them.",
-			"Marshal's Refuge's standing instruction is to avoid the south. It is not followed often enough.",
+			"Terror Run is in south-western Un'Goro, west of the Slithering Scar, and almost everything in it is elite: stegodons of four kinds, elder diemetradons, frenzied pterrordax, with Gruff somewhere among them and the devilsaur queen's nest at the southern end.",
+			"Marshal Expeditions tried to work it. They were sent to dig there for dead stegodons and diemetradons, and Spark Nilminer's account is that there were a great many live ones as well and the party was nearly eaten whole while setting up camp. He now takes bones off whichever animal provides them and would rather nobody asked which.",
+			"The one thing Terror Run has that nowhere else does is red power crystals. On a pylon table they combine with the other colours: green for protection, blue to weaken a defence, yellow to make an explosion.",
 		},
+		readMore = { "Wowpedia: Terror Run", "Wowpedia: Roll the Bones", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Northern Pylon", parent = "Un'Goro Crater", faction = "Contested",
@@ -1983,11 +1990,12 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
-		hook = "A crystal formation in the north, and one of the few clean places left.",
+		hook = "A valley in Silithus's north-west corner, held by elementals rather than silithid.",
 		lore = {
-			"The Crystal Vale is a formation in northern Silithus that the silithid have not taken.",
-			"It is visibly different from the rest of the zone, and the Cenarion Circle watches it closely for signs of change.",
+			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. Dust stormers work the air over it, desert rumblers the ground, and an air elemental rift stands open in it.",
+			"There is generous thorium in the vale, and the Twilight's Hammer got to it first. Their ravaged camp is in here, with Highlord Demitrian standing among its scattered tablet fragments.",
 		},
+		readMore = { "Wowpedia: Crystal Vale", "Wowpedia: Highlord Demitrian", "Wowpedia: Silithus" },
 	},
 })
 
@@ -2180,12 +2188,13 @@ SubsOf("Desolace", {
 SubsOf("Durotar", {
 	{
 		name = "The Den", parent = "Durotar", faction = "Horde",
-		hook = "The cave new orcs and trolls come out of, in a land Thrall chose on purpose.",
+		hook = "The cave the Valley of Trials runs out of, with Gornek in charge of it.",
 		lore = {
-			"The Den is where it starts. Durotar is named for Durotan, Thrall's father, chieftain of the Frostwolves and the orc who refused Gul'dan's bargain and was murdered for it.",
-			"Thrall was born in internment. He grew up a slave in Aedelas Blackmoore's household, learned war from the man who meant to use him, escaped, found the Frostwolves and freed the camps. Then he took the Horde across the sea to found a nation somewhere nobody had a prior claim.",
-			"He picked hard ground deliberately. Durotar is dry, thin and defensible, and the point was a homeland the orcs owed nobody for.",
+			"The Den is the cave at the heart of the Valley of Trials, in Durotar's south-western corner, and almost everything a new orc or troll is asked to do starts in it. Gornek runs the place. There is a trainer in here for every class and vendors for the basics, and no trade trainers at all.",
+			"The ground outside is the point of it. Durotar is named for Durotan, Thrall's father, chieftain of the Frostwolves and the orc who refused Gul'dan's bargain and was murdered for it.",
+			"Thrall grew up a slave in Aedelas Blackmoore's household, learned war from the man who meant to use him, escaped, found the Frostwolves and freed the internment camps. Then he took the Horde across the sea to found a nation where nobody had a prior claim, and he picked dry, thin, defensible ground on purpose.",
 		},
+		readMore = { "Wowpedia: The Den", "Wowpedia: Gornek", "Wowpedia: Durotan" },
 		readMore = { "Wowpedia: Durotar", "Wowpedia: Thrall", "Wowpedia: Durotan" },
 	},
 })
@@ -2531,11 +2540,11 @@ SubsOf("Dustwallow Marsh", {
 		name = "Swamplight Manor", parent = "Dustwallow Marsh", faction = "Neutral",
 		hook = "A hermit's house at Witch Hill, with a buried spy report in the garden.",
 		lore = {
-			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook.",
-			"In the garden there is a pile of dirt with an orcish spy's report buried in it. Both sides want it. Theramore's guard captain will take it, and so will the Horde at Brackenwall.",
-			"That is Dustwallow entirely. A hermit, a good cook, a murdered spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
+			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook, which is why people walk out this far carrying marsh frog legs and darkmist eyes for him.",
+			"In the garden there is a pile of dirt with an orcish spy's report buried in it, and both sides want it. Captain Garran Vimes takes it for Theramore and Nazeer Bloodpike takes it for the Horde at Brackenwall Village.",
+			"Witch Hill around the house has Mirefin murloc camps in it and something haunting it, which Jarl would like dealt with. That is Dustwallow entirely: a hermit, a good cook, a dead spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
 		},
-		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Dustwallow Marsh" },
+		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Witch Hill", "Wowpedia: \"Swamp Eye\" Jarl" },
 	},
 })
 
@@ -2993,17 +3002,6 @@ SubsOf("Azshara", {
 			"Azshara was the queen's own province and her court opened the portal. The satyrs are the ones who took Sargeras's bargain during that war, and they have been camped in the ruins of their own civilisation for ten thousand years.",
 		},
 		readMore = { "Wowpedia: Satyr", "Wowpedia: Azshara" },
-	},
-	{
-		name = "Thalassian Vanguard Camp", parent = "Azshara", faction = "Hostile",
-		aliases = { "Thalassian Base Camp" },
-		hook = "A Thalassian camp in northern Azshara under Magus Rimtori.",
-		lore = {
-			"Magus Rimtori runs this camp in northern Azshara, south of the Legashi. The elves here speak Thalassian and answer to nobody but themselves.",
-			"Thalassian is Quel'Thalas's tongue. The high elves of that kingdom were nearly destroyed when Arthas came north for the Sunwell, and what survived has been split ever since between those who kept the old name and those who took a new one under Kael'thas.",
-			"A camp of them this deep in night elf country, digging into Azshara's ruins, is not a refugee arrangement. They came here for what is buried.",
-		},
-		readMore = { "Wowpedia: Thalassian Base Camp", "Wowpedia: Quel'Thalas", "Wowpedia: Azshara" },
 	},
 })
 
