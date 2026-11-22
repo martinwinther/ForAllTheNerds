@@ -627,11 +627,12 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Silver Stream Mine", parent = "Loch Modan", faction = "Hostile",
-		hook = "A silver mine the troggs took, with the miners' tools still lying where they dropped them.",
+		hook = "A worked-out silver mine turned storehouse, with kobolds all over the dwarves' tools.",
 		lore = {
-			"Silver Stream was a productive dwarven mine until troggs came up through the floor of it. The dwarves got out; the equipment did not.",
-			"Ironforge wants it back. Nobody in Thelsamar is volunteering to be first down the shaft.",
+			"Silver Stream ran dry a long time ago, and the Miners' League turned it into a storage depot instead. Its crates are still down there. They hold good dwarven gear, and they hold the charged rift gems woven into a mage's first wizard robe: this mine is the only known source of those.",
+			"Kobolds have moved in on the lot of it. Mountaineer Stormpike wants the League's gear out before his warriors tromp in and break things, and he is impatient for the order to clear the place, because the thought of kobold hands clawing around a dwarven mine turns his stomach.",
 		},
+		readMore = { "Wowpedia: Silver Stream Mine", "Wowpedia: Filthy Paws", "Wowpedia: Miners' League" },
 	},
 	{
 		name = "Valley of Kings", parent = "Loch Modan", faction = "Alliance",
@@ -1199,11 +1200,12 @@ SubsOf("Alterac Mountains", {
 	},
 	{
 		name = "Slaughter Hollow", parent = "Alterac Mountains", faction = "Hostile",
-		hook = "A gorge the Crushridge ogres use for exactly what the name suggests.",
+		hook = "A Crushridge ogre mound in the Alterac Mountains, with a caged gnome trading inside it.",
 		lore = {
-			"The hollow is an ogre killing ground in the eastern mountains. The Crushridge are not subtle and the name is descriptive.",
-			"Travellers using the mountain roads learn the geography of places to avoid quickly or not at all.",
+			"Slaughter Hollow is an ogre mound, a cave deep in the Alterac Mountains, and the Crushridge hold it. Brutes and ordinary ogres move about inside, and the walls carry iron, silver, gold, mithril and truesilver.",
+			"Rizz Loosebolt is in there in a cage. He is a gnome, the ogres took him, and he sells engineering supplies to anyone who gets far enough in to reach him.",
 		},
+		readMore = { "Wowpedia: Slaughter Hollow", "Wowpedia: Crushridge", "Wowpedia: Rizz Loosebolt" },
 	},
 	{
 		name = "Growless Cave", parent = "Alterac Mountains", faction = "Contested",
@@ -1701,11 +1703,12 @@ SubsOf("Swamp of Sorrows", {
 	},
 	{
 		name = "Splinterspear Junction", parent = "Swamp of Sorrows", faction = "Contested",
-		hook = "A road junction in the swamp, held by nobody in particular.",
+		hook = "Where the swamp road forks, with Stonard's scouts walking it.",
 		lore = {
-			"The junction is where the swamp's usable tracks meet: a natural ambush point and a natural camp site, depending on who arrived first.",
-			"Control of it shifts. The swamp does not support permanent garrisons well.",
+			"Splinterspear Junction is the fork in the main road through the Swamp of Sorrows. The northern branch runs past the Harborage and on to the Fallow Sanctuary, and the southern one goes down to Stonard and the path into the Blasted Lands.",
+			"It is not unheld. Stonard's scouts walk this stretch on patrol, and that makes the fork Horde ground in practice even though nothing is built on it. The rest of the traffic is swamp: sorrow spinners, young sawtooth crocolisks, swamp jaguars, and Molt Thorn somewhere among them.",
 		},
+		readMore = { "Wowpedia: Splinterspear Junction", "Wowpedia: Stonard", "Wowpedia: The Harborage" },
 	},
 	{
 		name = "Draenil'dur Village", parent = "Swamp of Sorrows", faction = "Hostile",
@@ -3022,10 +3025,10 @@ SubsOf("Stranglethorn Vale", {
 		hook = "A hidden cave in Mistvale Valley with a witch doctor in it.",
 		lore = {
 			"The Spirit Den is tucked into the northern end of Mistvale Valley on the cape, and it takes finding.",
-			"Witch Doctor Unbagwa works out of it. Troll witch doctors deal in the loa and in the older practice the Gurubashi empire ran on. That puts him in a different line of business from the priests at Zul'Gurub.",
-			"People come to him about Stranglethorn fever, among other things. In this jungle a hidden cave with a practitioner in it is a more reliable arrangement than a surgery on a road.",
+			"Witch Doctor Unbagwa works out of it, alone, and he is the one people come to about Stranglethorn fever. Its only known cure is to eat the heart of Mokk, an elusive white gorilla, and the witch doctor is the only one who can summon the beast at all.",
+			"He wants a gorilla fang first. Then he talks to the spirits, and the other gorillas of the valley come to the talking as well, so whoever wanted Mokk has to stand over the witch doctor and keep them off him while he works.",
 		},
-		readMore = { "Wowpedia: Spirit Den", "Wowpedia: Witch doctor", "Wowpedia: Gurubashi" },
+		readMore = { "Wowpedia: Spirit Den", "Wowpedia: Witch Doctor Unbagwa", "Wowpedia: Stranglethorn Fever (quest)" },
 	},
 })
 
@@ -3125,11 +3128,11 @@ SubsOf("The Hinterlands", {
 		name = "Shindigger's Camp", parent = "The Hinterlands", faction = "Alliance",
 		hook = "A dwarf and a high elf sharing a camp, and that is rarer than it sounds.",
 		lore = {
-			"Rhapsody Shindigger keeps this small camp in the Hinterlands, and he is drunk. Gilveradin Sunchaser is there with him, and he is a high elf.",
-			"The high elves are the quiet tragedy of the Alliance. When the blood elves took their new name and followed Kael'thas, a minority refused and kept the old one, and they have no kingdom, no city and very little standing anywhere.",
-			"Quel'Danil Lodge is further into the zone and is theirs. A high elf camped out with a cheerful Wildhammer drunk is about as settled as their position gets.",
+			"Rhapsody Shindigger was the best rider Gryphon Master Talonaxe had at Aerie Peak, until the drink. Nobody could fly like him and nobody could keep him sober, so the aviary let him go, and he set up this camp east of it to brew instead. He hiccups through every sentence.",
+			"The story the aviary will not finish is the flight. He drank a whole keg of stout before taking Brohann Caskbelly, of the Explorers' League, over the Swamp of Sorrows to look for a sunken temple, went too tipsy, came off his mount, dropped straight into the water and was pulled under. He surfaced among a crowd of trolls, swam out very fast, and kept an Atal'ai tablet fragment as a souvenir. He had known the temple was down there the whole time and nobody had asked him.",
+			"Gilveradin Sunchaser shares the camp and he is a high elf. When the blood elves took their new name and followed Kael'thas, a minority refused it and kept the old one, and Quel'Danil Lodge further into the zone is what they have. A high elf camped out with a cheerful Wildhammer drunk is about as settled as their position gets.",
 		},
-		readMore = { "Wowpedia: Shindigger's Camp", "Wowpedia: High elf", "Wowpedia: Quel'Danil Lodge" },
+		readMore = { "Wowpedia: Shindigger's Camp", "Wowpedia: Rhapsody's Tale", "Wowpedia: Quel'Danil Lodge" },
 	},
 	{
 		name = "Featherbeard's Hovel", parent = "The Hinterlands", faction = "Alliance",
@@ -3242,7 +3245,7 @@ SubsOf("Dun Morogh", {
 		hook = "The Dun Morogh end of the lower pass into Loch Modan.",
 		lore = {
 			"South Gate Pass runs from Dun Morogh's high mountains east into the lower hills of Loch Modan, and this is the western mouth of it.",
-			"It is the pass most travellers use, because it comes out nearest Thelsamar. The South Gate Outpost sits in it, keeping an eye on who goes through.",
+			"It is the pass most travellers use, because it comes out nearest Thelsamar. South Gate Outpost sits in the middle of it and counts as part of Dun Morogh, and its mountaineers have cleared the wildlife off the road. The dwarves at North Gate Outpost have never managed the same.",
 			"Khaz Modan is a mountain range with dwarves in it, and almost every named place here is a way through, a way in, or a post watching one.",
 		},
 		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Thelsamar" },
@@ -3256,9 +3259,9 @@ SubsOf("Loch Modan", {
 		lore = {
 			"This is the eastern mouth of South Gate Pass, coming out in Loch Modan's lower hills. The other end is up in Dun Morogh.",
 			"Thelsamar is the closest town, which makes this the route most people take between the two zones rather than the higher North Gate Pass.",
-			"Loch Modan is held by the Stonewrought Dam and by these passes. Both are dwarven engineering, and both were designed by Franclorn Forgewright, who was a Dark Iron.",
+			"Nothing is stationed in this half of the pass. South Gate Outpost and its mountaineers sit further up at the Dun Morogh end, so the eastern mouth simply opens onto the loch's lower hills.",
 		},
-		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Loch Modan", "Wowpedia: Franclorn Forgewright" },
+		readMore = { "Wowpedia: South Gate Pass", "Wowpedia: Loch Modan", "Wowpedia: South Gate Outpost" },
 	},
 })
 

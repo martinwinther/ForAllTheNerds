@@ -354,11 +354,12 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "Spirit Rise", faction = "Horde",
-		hook = "The shamans' mesa, and the Pools of Vision.",
+		hook = "The shamans' mesa, with the Forsaken keeping house underneath it.",
 		lore = {
-			"Spirit Rise holds the tauren's shamanistic training and the Pools of Vision, where spirit-walkers commune with the ancestors and the elements.",
-			"Tauren shamanism predates the orcs' by a long way, and Thrall's restoration of orcish shamanism was helped enormously by having the tauren to consult.",
+			"Spirit Rise is Thunder Bluff's north-western mesa, joined to the lower and middle rises by rope bridges, and it is the city's centre of shamanistic study. Siln Skychaser trains shaman here, one of several Skychaser trainers scattered across the Horde, and the Hall of Spirits stands on the cap.",
+			"Below the cap are the Pools of Vision, and they are not tauren work at all. The pools are where the Forsaken keep their own business at Thunder Bluff: Apothecary Zamah, of the Royal Apothecary Society, Archmage Shymm teaching mages, Forsaken priests teaching priests, and an emissary of the Defilers after recruits.",
 		},
+		readMore = { "Wowpedia: Spirit Rise", "Wowpedia: Pools of Vision", "Wowpedia: Skychaser tribe" },
 	},
 	{
 		name = "Hunter Rise", faction = "Horde",

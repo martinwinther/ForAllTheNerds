@@ -483,11 +483,12 @@ SubsOf("Mulgore", {
 SubsOf("Teldrassil", {
 	{
 		name = "Shadowthread Cave", faction = "Hostile",
-		hook = "A spider nest in Teldrassil's roots, with spiders larger than the tree should allow.",
+		hook = "A spider nest in the corner of Shadowglen, with spiders bigger than their kind grows.",
 		lore = {
-			"Shadowthread is a nest inside the World Tree itself, and the spiders in it are not the size that spiders in a healthy wood reach.",
-			"Teldrassil was planted without the dragon Aspects' blessings and it is sick. The Gnarlpine furbolgs' madness, the trouble in the barrow dens and the state of caves like this one all read to the night elves as one symptom.",
+			"Shadowthread Cave is in the north-western corner of Shadowglen, and the webwood spiders in it are not the size their kind reaches. Githyiss is the largest of them. There is a nest deep inside with unhatched eggs in it.",
+			"Gilshalan Windwalker came out from Darnassus to find out why. His reading is that the webwoods are cousin to a much smaller spider and that the world tree's recent growth has had a profound effect on them. He is sending venom and an egg back to the city to see whether their properties bear that out.",
 		},
+		readMore = { "Wowpedia: Shadowthread Cave", "Wowpedia: Webwood Venom", "Wowpedia: Githyiss the Vile" },
 	},
 	{
 		name = "Wellspring River", faction = "Alliance",
@@ -1047,11 +1048,12 @@ SubsOf("Dun Morogh", {
 	},
 	{
 		name = "Shimmer Ridge", faction = "Hostile",
-		hook = "A high ridge west of Kharanos, held by the Frostmane.",
+		hook = "Two Frostmane camps on a ridge, growing a weed for their rituals.",
 		lore = {
-			"Shimmer Ridge is Frostmane ground. The ice trolls were pushed into the high cold parts of this mountain when the dwarves expanded out of Ironforge, and ridges like this one are what they were left with.",
-			"They raid down from here onto the road and the ranches. From a Frostmane point of view every dwarven building in Dun Morogh is on taken ground, and nobody has ever put a counter-argument to them beyond holding it.",
+			"Shimmer Ridge is Frostmane ground in northern Dun Morogh, west of the Gates of Ironforge: two camps joined by a bridge, with a meat smoker going and crag boars on the slopes below. Seers do most of the standing about.",
+			"What they grow up here is shimmerweed, and it goes into their rituals. The dwarves have found no use for the stuff at all bar one. Rejold Barleybrew down at Brewnall Village is working his way towards a perfect stout, likes the taste of it, and does not much mind whether a batch comes off a seer or out of a basket.",
 		},
+		readMore = { "Wowpedia: Shimmer Ridge", "Wowpedia: The Perfect Stout", "Wowpedia: Frostmane tribe" },
 	},
 	{
 		name = "Coldridge Pass", faction = "Alliance",
@@ -1973,12 +1975,13 @@ SubsOf("Tanaris", {
 
 SubsOf("Azshara", {
 	{
-		name = "Southridge Beach", faction = "Contested",
-		hook = "The southern shore, below the ruins and the satyr camps.",
+		name = "Southridge Beach", faction = "Hostile",
+		hook = "The south shore of the Bay of Storms, held by naga and littered with Eldarath.",
 		lore = {
-			"Southridge runs along Azshara's lower coast, beneath the ground the Haldarr satyrs hold.",
-			"Satyrs are what became of the night elves who sided with the Burning Legion during the War of the Ancients. In this region, which was Queen Azshara's own, there are several clans of them.",
+			"Southridge Beach lines the southern edge of the Bay of Storms, in the middle of Azshara's coast. The Spitelash naga hold it, and makrura, hydras, murlocs and the occasional sea giant work the same water.",
+			"Ruins are everywhere along the sand. They are what is left of Eldarath, a night elf city the Great Sundering dropped into the bay below. The naga coming back up onto these beaches are, in a sense, coming home.",
 		},
+		readMore = { "Wowpedia: Southridge Beach", "Wowpedia: Bay of Storms", "Wowpedia: Ruins of Eldarath" },
 	},
 	{
 		name = "Jagged Reef", faction = "Hostile",

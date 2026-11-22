@@ -2312,3 +2312,42 @@ True Believer	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Twilight Keepers	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Twilight Lexicon	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template	cs
 Yorus Barleybrew	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
+Archmage Allistarj	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 7666	cs
+Archmage Arugal	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 4275	cs
+Archmage Shymm	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 3047	cs
+Archmage Xylem	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 8379	cs
+Bleakheart	vanilla	Name or component of Bleakheart Satyr	cmangos 1.12.1 creature_template 3765	cs
+Bloodbelly	vanilla	Name or component of Bloodbelly Fish	cmangos 1.12.1 item_template 13546	cs
+Brohann Caskbelly	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 5384	cs
+Captain Vimes	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 1282	cs
+Conservator Ilthalaine	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 2079	cs
+Cork	vanilla	Name or component of Cork Gizelton	cmangos 1.12.1 creature_template 11625	cs
+Drulzegar Skraghook	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 12340	cs
+Gilshalan Windwalker	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 2082	cs
+Githyiss	vanilla	Name or component of Githyiss the Vile	cmangos 1.12.1 creature_template 1994	cs
+Gryphon Master Talonaxe	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 5636	cs
+Illiyana Moonblaze	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 14753	cs
+James Hyal	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 1302	cs
+Jinar'Zillen	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 11317	cs
+Karnitol	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 1454	cs
+Krog	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 4926	cs
+Lui'Mala	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 12032	cs
+Mai'Lahii	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 12031	cs
+Miners' League	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 307	cs
+Molt Thorn	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 14448	cs
+Private Hendel	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 4966	cs
+Ranazjar Isle	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 1456	cs
+Rejold Barleybrew	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 1374	cs
+Rigger	vanilla	Name or component of Rigger Gizelton	cmangos 1.12.1 creature_template 11626	cs
+Sar'theris	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 6607	cs
+Selendra	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 13699	cs
+Sentinel Farsong	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 14733	cs
+Shadow Lord Fel'dan	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 9517	cs
+Shadowthread Cave	vanilla	AreaTable row 257	wow_classic_era	cs
+Siln Skychaser	vanilla	named in 1.12 game text	cmangos 1.12.1 creature_template 3030	cs
+Silverwing Grove	vanilla	AreaTable row 3319	wow_classic_era	cs
+Skychaser	vanilla	Name or component of Siln Skychaser	cmangos 1.12.1 creature_template 3030	cs
+Slaughter Hollow	vanilla	AreaTable row 283	wow_classic_era	cs
+Smeed	vanilla	named in 1.12 quest text	cmangos 1.12.1 quest_template 5821	cs
+Southridge Beach	vanilla	AreaTable row 1231	wow_classic_era	cs
+Splinterspear Junction	vanilla	AreaTable row 1780	wow_classic_era	cs
