@@ -139,7 +139,7 @@ Instance{
 		"Old Gods are the entities the titans found on this world and could not destroy. They imprisoned them instead, deep down, and every one of those prisons has been leaking ever since. C'Thun's is the one with an empire built on top.",
 		"The Twilight Hammer cult has spent years working toward this moment from the outside. The qiraji have spent a thousand years working toward it from the inside.",
 	},
-	didYouKnow = "C'Thun is not the only Old God. Whatever is under the Master's Glaive in Darkshore, whatever the Twilight Hammer are listening to, and whatever the titans buried elsewhere are all still down there.",
+	didYouKnow = "C'Thun is not the only one. The Twilight's Hammer are also at work at the Master's Glaive in Darkshore, with a cursed page of ancient elven text, using elven magic to bring their old masters back into the world. Nobody on the outside knows what they expect to raise.",
 	readMore = { "Wowpedia: Temple of Ahn'Qiraj", "Wowpedia: C'Thun", "Wowpedia: Old Gods" },
 }
 

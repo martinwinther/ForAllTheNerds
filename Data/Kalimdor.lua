@@ -193,11 +193,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Stonebull Lake", parent = "Mulgore", faction = "Horde",
-		hook = "A lake in southern Mulgore, and a quiet place by any standard.",
+		hook = "The horseshoe lake around Bloodhoof Village, with a burnt caravan on its north shore.",
 		lore = {
-			"Stonebull Lake waters the southern plains and is one of the more peaceful spots in Horde territory.",
-			"Mulgore as a whole is the gentlest zone the Horde holds. The tauren regard that as earned, not granted.",
+			"Stonebull Lake wraps around Bloodhoof Village on three sides in central Mulgore. A bridge crosses it at the narrowest point, carrying the road between the village and Thunder Bluff, and the fishing in it is good enough that a lot of hours go into it.",
+			"The northern shore is where the Venture Company's caravan died. Tauren found it travelling under guard, attacked it and burned the wagons, and the company's salvagers turned up afterwards to pick over whatever the torches had missed. The crates are stamped by its Mining Division, and the papers inside set out how the company meant to drive the tauren off their own land.",
 		},
+		readMore = { "Wowpedia: Stonebull Lake", "Wowpedia: The Ravaged Caravan", "Wowpedia: Bloodhoof Village" },
 	},
 	{
 		name = "Windfury Ridge", parent = "Mulgore", faction = "Contested",
@@ -236,11 +237,13 @@ Zone{
 SubsOf("Teldrassil", {
 	{
 		name = "Shadowglen", faction = "Alliance", levels = "1-5",
-		hook = "A moonwell glade in Teldrassil's branches where night elves begin.",
+		hook = "The night elves' starting glade, under the branches of Aldrassil.",
 		lore = {
-			"Shadowglen is the night elves' training glade, centred on a moonwell. Moonwells are drawn from the Well of Eternity's waters and they are the night elves' source of healing and renewal.",
-			"The glade should be perfectly healthy. The grell and corrupted wildlife in it are an early sign that something is wrong with the tree itself.",
+			"Shadowglen is where night elves begin: a small twilit glade in Teldrassil's north-east, ringed by mountains with one gap to the south. Aldrassil stands at the centre of it with Tenaron Stormgrip at the top of the tree, there is a moonwell in the clearing, and the road to Dolanaar runs south from Aldrassil's foot.",
+			"Conservator Ilthalaine's work here is the balance of nature, and this year that means culling. The spring rains were heavy, the nightsabers and thistle boars bred past what the glade can feed, and thinning them is what he calls a necessary evil for the good of all who share the land.",
+			"The grells and grellkin are a separate problem and not a natural one. They are tainted by fel moss, and the furbolgs who used to live in these hills have deserted their homes, taken the name Gnarlpine and gathered under the same corruption.",
 		},
+		readMore = { "Wowpedia: Shadowglen", "Wowpedia: Aldrassil", "Wowpedia: The Woodland Protector" },
 	},
 	{
 		name = "Dolanaar", faction = "Alliance", levels = "5-12",
@@ -765,11 +768,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Silverwing Grove", parent = "Ashenvale", faction = "Alliance",
-		hook = "A Sentinel grove facing the Warsong across a contested forest.",
+		hook = "The Sentinels' staging ground for Warsong Gulch.",
 		lore = {
-			"The Silverwing Sentinels hold this grove and the surrounding woods against the Warsong's expansion.",
-			"The Silverwing and Warsong conflict in Ashenvale is the oldest continuous fight between the Alliance and Horde in Kalimdor, and both sides have made it a point of honour.",
+			"Silverwing Grove is the Silverwing Sentinels' base, in south-central Ashenvale west of Fallen Sky Lake, and it is where the Alliance goes into Warsong Gulch. Everything needed to use that entrance stands here: a dozen Silverwing elites on the ground, Illiyana Moonblaze on supply, an Alliance brigadier general, and Sentinel Farsong, who pays out to anyone who comes back from the gulch with a victory to show for it.",
+			"What the grove is defending is the forest behind it. The Warsong are cutting timber on the far side and the Sentinels mean to stop them. Both sides have made it a point of honour.",
 		},
+		readMore = { "Wowpedia: Silverwing Grove", "Wowpedia: Silverwing Sentinels", "Wowpedia: Warsong Gulch" },
 	},
 	{
 		name = "Zoram'gar Outpost", faction = "Horde", levels = "18-30",
@@ -791,11 +795,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Satyrnaar", parent = "Ashenvale", faction = "Hostile",
-		hook = "A satyr settlement in the eastern forest, built by night elves who chose the Legion.",
+		hook = "The most intact of Ashenvale's three satyr settlements, and the easiest to walk into.",
 		lore = {
-			"Satyrnaar is held by satyrs, which means it is held by the descendants of night elves who sided with the Burning Legion during the War of the Ancients and were transformed for it.",
-			"The night elves do not treat satyrs as a monster population. They treat them as traitors, and the distinction matters a great deal in how that war is fought.",
+			"Satyrnaar is held by the Bleakheart satyrs. It is one of three satyr settlements in Ashenvale, with Night Run and Xavian, and it is the most intact and the most central of them: tents pitched among ruined buildings just off the road from Splintertree Post towards Azshara. Being the easiest to reach makes it the most fought over.",
+			"The Bleakheart are allied with the Cult of the Dark Strand and one of the cult's soulgems is kept here. The wood around the camp is tainted and there is a circle of imprisonment among the ruins.",
+			"The night elves do not treat satyrs as a monster population. They treat them as traitors, descendants of night elves who sided with the Burning Legion during the War of the Ancients and were transformed for it, and the distinction matters a great deal in how that war is fought.",
 		},
+		readMore = { "Wowpedia: Satyrnaar", "Wowpedia: Bleakheart", "Wowpedia: Cult of the Dark Strand" },
 	},
 	{
 		name = "Thistlefur Village", parent = "Ashenvale", faction = "Hostile",
@@ -988,11 +994,13 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Shadowprey Village", faction = "Horde", levels = "30-40",
-		hook = "A Darkspear troll village on the western coast, facing the naga.",
+		hook = "A Darkspear fishing village at the south end of Desolace's coast.",
 		lore = {
-			"Shadowprey is a Darkspear settlement on Desolace's coast, and its chief concern is the naga who have established themselves offshore and on the beaches.",
-			"Naga were night elves once, highborne of Queen Azshara's court who were transformed when the Well of Eternity collapsed and the sea took Zin-Azshari. They have been under the water for ten thousand years and they are coming back up.",
+			"Shadowprey sits at the southern end of Desolace's coast and it lives on fish. Jinar'Zillen is the fisherman, Lui'Mala teaches the trade, Mai'Lahii sells the tackle, and there are shellfish traps under the docks that somebody is forever being talked into emptying. Bloodbelly is the catch worth having, and the tauren at Ghost Walker Post want it badly enough to send for it when the centaur leave them the time.",
+			"The village also keeps a grievance against the naga. Drulzegar Skraghook was out with his crew near Ranazjar Isle one morning when the Slitherblade came up at them. He was the only one who got out, and the rest of his life is given to having them killed.",
+			"Two other errands run from here. Taiga Wisemane works against the demon portals the Burning Blade opens at Mannoroc Coven, and Selendra the dryad is here for the Cenarion Circle, trying to recover the remains of Zaetar from the centaur who hold them in Maraudon.",
 		},
+		readMore = { "Wowpedia: Shadowprey Village", "Wowpedia: Other Fish to Fry", "Wowpedia: Selendra" },
 	},
 	{
 		name = "Maraudon", parent = "Desolace", faction = "Hostile", levels = "45-55",
@@ -1047,11 +1055,13 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Sar'theris Strand", parent = "Desolace", faction = "Hostile",
-		hook = "A northern beach held by naga.",
+		hook = "The whole of Desolace's coast, with naga in the water and sea giants on the sand.",
 		lore = {
-			"Sar'theris Strand is naga-held coastline, and the ruins along it are night elf work from before the Sundering.",
-			"The naga returning to these beaches are, in a sense, coming home. That is what makes it so unsettling for the night elves.",
+			"Sar'theris Strand is the name of Desolace's coast and it runs the length of the zone. Shadowprey Village sits on it in the south and a wrecked ship lies off its northern end. Naga hold the water; sea giants and makrura work the shallows.",
+			"The wreck was Karnitol's. He is a Stormwind mage of some standing whose ship the sea giants took off the north-west coast, and he and his servants got one valuable chest as far as the beach before abandoning it and teleporting out. The chest turns up unharmed by water and completely empty, forced open by something that left long deep scratches no blade would make. The trail runs north to Ranazjar Isle, where the Slitherblade keep night elf ruins at the bottom of the sea.",
+			"For all that, the strand is sunny and grassy, which the rest of Desolace is not. Soft-shelled clams litter the sand around the wreck, and the Sar'theris striker is one of the four rare fish Nat Pagle sets as a test.",
 		},
+		readMore = { "Wowpedia: Sar'theris Strand", "Wowpedia: The Karnitol Shipwreck", "Wowpedia: Ranazjar Isle" },
 	},
 	{
 		name = "Ethel Rethor", parent = "Desolace", faction = "Hostile",
@@ -1152,11 +1162,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Sentry Point", parent = "Dustwallow Marsh", faction = "Alliance",
-		hook = "A Theramore watchpost on the northern road.",
+		hook = "The first tower outside Theramore, across the bridge from the city.",
 		lore = {
-			"Sentry Point watches the road into Theramore from the north and the Barrens beyond it.",
-			"Theramore's outposts are sparse. Jaina's city is strong and her hinterland is not.",
+			"Sentry Point is the first tower a traveller meets on leaving Theramore, just across the bridge from the island, and it watches the road. A captain and a dozen or so guards work it, and none of them stand still.",
+			"One tower matters more than it should here, because Theramore's hold on the marsh is thin. Captain Vimes puts it plainly: the city lost control of the roads and the ogres took them over.",
+			"The tower is also where the search for Private Hendel begins. He was stationed at it, and he is not there.",
 		},
+		readMore = { "Wowpedia: Sentry Point", "Wowpedia: The Missing Diplomat", "Wowpedia: Theramore Isle" },
 	},
 	{
 		name = "Bluefen", parent = "Dustwallow Marsh", faction = "Contested",
@@ -1512,11 +1524,15 @@ SubsOf("Azshara", {
 	},
 	{
 		name = "Thalassian Base Camp", parent = "Azshara", faction = "Hostile",
-		hook = "A high elf camp with its own agenda.",
+		aliases = { "Thalassian Vanguard Camp" },
+		hook = "A blood elf dig on Azshara's northern peninsula, run by a woman who kills her partners.",
 		lore = {
-			"The elves at this camp are Thalassian, out of Quel'Thalas, and not working with the Alliance.",
-			"Quel'Thalas was destroyed by Arthas and the Scourge, and the surviving elves' relationship with their old allies has not recovered. Camps like this one operate on their own account.",
+			"The camp is a hill of small tents on Azshara's northern peninsula, south of the Legash Encampment and east of Ursolan. Magus Rimtori runs it, and the elves on it are blood elves: reclaimers and surveyors working the southern bluffs, with Magister Hawkhelm minding the place while she searches the zone under guard.",
+			"She got here on somebody else's money. Magus Rimtori told Belgrom Rockmaul that Azshara held great riches and powerful items, he lent her warriors to protect the expedition in return for a share of it, and she killed every one of them. Ag'tor Bloodfist at Valormok has been sending people after her since and they do not come back either.",
+			"She did the same to the goblin Kim'jael, hired to scout for lost treasure and then turned on, and he wants his compass, his scope, his stuffed chicken and his Wizzlegoober back off her people.",
+			"What she is digging for is the open question. Her camp holds a circle of crystals laid out to match a diagram in her own book, one crystal tied to her and the others tied to something worse, and Kim'jael's guess is a rune the naga are keeping in the Ruins of Eldarath.",
 		},
+		readMore = { "Wowpedia: Thalassian Base Camp", "Wowpedia: Magus Rimtori", "Wowpedia: Betrayed" },
 	},
 	{
 		name = "Bear's Head", parent = "Azshara", faction = "Contested",
@@ -1726,11 +1742,13 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "Terror Run", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "Devilsaur country in the south, and the name is advice.",
+		hook = "The crater's south-west corner, where the diggers were nearly eaten.",
 		lore = {
-			"Terror Run is where the crater's devilsaurs range. Devilsaurs are enormous predatory dinosaurs, and nothing else in Un'Goro comes close to them.",
-			"Marshal's Refuge's standing instruction is to avoid the south. It is not followed often enough.",
+			"Terror Run is in south-western Un'Goro, west of the Slithering Scar, and almost everything in it is elite: stegodons of four kinds, elder diemetradons, frenzied pterrordax, with Gruff somewhere among them and the devilsaur queen's nest at the southern end.",
+			"Marshal Expeditions tried to work it. They were sent to dig there for dead stegodons and diemetradons, and Spark Nilminer's account is that there were a great many live ones as well and the party was nearly eaten whole while setting up camp. He now takes bones off whichever animal provides them and would rather nobody asked which.",
+			"The one thing Terror Run has that nowhere else does is red power crystals. On a pylon table they combine with the other colours: green for protection, blue to weaken a defence, yellow to make an explosion.",
 		},
+		readMore = { "Wowpedia: Terror Run", "Wowpedia: Roll the Bones", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Northern Pylon", parent = "Un'Goro Crater", faction = "Contested",
@@ -1972,11 +1990,12 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
-		hook = "A crystal formation in the north, and one of the few clean places left.",
+		hook = "A valley in Silithus's north-west corner, held by elementals rather than silithid.",
 		lore = {
-			"The Crystal Vale is a formation in northern Silithus that the silithid have not taken.",
-			"It is visibly different from the rest of the zone, and the Cenarion Circle watches it closely for signs of change.",
+			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. Dust stormers work the air over it, desert rumblers the ground, and an air elemental rift stands open in it.",
+			"There is generous thorium in the vale, and the Twilight's Hammer got to it first. Their ravaged camp is in here, with Highlord Demitrian standing among its scattered tablet fragments.",
 		},
+		readMore = { "Wowpedia: Crystal Vale", "Wowpedia: Highlord Demitrian", "Wowpedia: Silithus" },
 	},
 })
 
@@ -2006,11 +2025,13 @@ SubsOf("Moonglade", {
 	},
 	{
 		name = "Shrine of Remulos", parent = "Moonglade", faction = "Neutral",
-		hook = "Keeper Remulos' seat, at the glade's heart.",
+		hook = "Keeper Remulos' shrine in north-western Moonglade, and a druid's first two trials.",
 		lore = {
-			"The shrine is where Remulos, son of Cenarius, holds court. He is a demigod and he is the Circle's direct link to what Cenarius taught.",
+			"The shrine stands in north-western Moonglade, a short walk west of Nighthaven. Keeper Remulos is here, son of Cenarius, and the shrine is a standing tribute to his guiding of the Cenarion Circle in the preservation of nature and balance. Tajarri is its warden, one of the most trusted Moonglade has, and wardens patrol the ground around it.",
+			"Two of the trials a druid takes for aquatic form resolve at the shrine. The first is a race against the clock and against other druids: a bauble out of Lake Elune'ara that decays while it is carried and has to be used here. The second is the joining of a pendant from two halves, agility and endurance, and it cannot be done anywhere else.",
 			"Cenarius himself is dead, killed in Ashenvale during the Third War. Remulos is what the mortal druids have left of that lineage.",
 		},
+		readMore = { "Wowpedia: Shrine of Remulos", "Wowpedia: Keeper Remulos", "Wowpedia: Trial of the Lake" },
 	},
 	{
 		name = "Stormrage Barrow Dens", parent = "Moonglade", faction = "Neutral",
@@ -2088,13 +2109,13 @@ SubsOf("The Barrens", {
 SubsOf("Dustwallow Marsh", {
 	{
 		name = "Shady Rest Inn", parent = "Dustwallow Marsh", faction = "Contested",
-		hook = "A burnt-out inn that very nearly started a war.",
+		hook = "A burnt-out inn with two separate investigations crawling over it.",
 		lore = {
-			"The Shady Rest was an inn on the road through Dustwallow, and it was burned with people inside it. That is the whole of what is agreed.",
-			"Everything else about it is contested, and the contest matters because of where it happened. Theramore is Jaina Proudmoore's city and the only human settlement on Kalimdor that has chosen to live alongside the Horde. Orgrimmar is a short way north.",
-			"Jaina and Thrall both have more to lose from a war here than anyone else, and both know it. Finding out what actually happened at the inn is work somebody has to do on the ground.",
+			"James Hyal opened the Shady Rest at the edge of the Barrens and meant it to be a good place for travellers to stop. For a while it did well. Then Theramore lost control of the roads through the marsh and the ogres took them, and he would not give the inn up for safety inside the city walls. It burned to the ground with his wife and child in it.",
+			"Two investigations are running and they are not the same investigation. Captain Garran Vimes handles Theramore's from the top floor of Foothold Citadel and Krog runs the Horde's out of Brackenwall Village. What the rubble holds is an iron shield blackened by the fire and fixed to the crumbling chimney, rows of hoofprints leading off through the soft mud, and a Theramore lieutenant's badge.",
+			"Krog's reading of the shield is the unsettling one. Humans do not hang plain iron on a fireplace, so somebody who was there put it up, and he cannot decide whether it was a warning or a threat.",
 		},
-		readMore = { "Wowpedia: Shady Rest Inn", "Wowpedia: Theramore Isle", "Wowpedia: Jaina Proudmoore" },
+		readMore = { "Wowpedia: Shady Rest Inn", "Wowpedia: The Black Shield", "Wowpedia: They Call Him Smiling Jim" },
 	},
 	{
 		name = "Emberstrife's Den", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -2167,12 +2188,13 @@ SubsOf("Desolace", {
 SubsOf("Durotar", {
 	{
 		name = "The Den", parent = "Durotar", faction = "Horde",
-		hook = "The cave new orcs and trolls come out of, in a land Thrall chose on purpose.",
+		hook = "The cave the Valley of Trials runs out of, with Gornek in charge of it.",
 		lore = {
-			"The Den is where it starts. Durotar is named for Durotan, Thrall's father, chieftain of the Frostwolves and the orc who refused Gul'dan's bargain and was murdered for it.",
-			"Thrall was born in internment. He grew up a slave in Aedelas Blackmoore's household, learned war from the man who meant to use him, escaped, found the Frostwolves and freed the camps. Then he took the Horde across the sea to found a nation somewhere nobody had a prior claim.",
-			"He picked hard ground deliberately. Durotar is dry, thin and defensible, and the point was a homeland the orcs owed nobody for.",
+			"The Den is the cave at the heart of the Valley of Trials, in Durotar's south-western corner, and almost everything a new orc or troll is asked to do starts in it. Gornek runs the place. There is a trainer in here for every class and vendors for the basics, and no trade trainers at all.",
+			"The ground outside is the point of it. Durotar is named for Durotan, Thrall's father, chieftain of the Frostwolves and the orc who refused Gul'dan's bargain and was murdered for it.",
+			"Thrall grew up a slave in Aedelas Blackmoore's household, learned war from the man who meant to use him, escaped, found the Frostwolves and freed the internment camps. Then he took the Horde across the sea to found a nation where nobody had a prior claim, and he picked dry, thin, defensible ground on purpose.",
 		},
+		readMore = { "Wowpedia: The Den", "Wowpedia: Gornek", "Wowpedia: Durotan" },
 		readMore = { "Wowpedia: Durotar", "Wowpedia: Thrall", "Wowpedia: Durotan" },
 	},
 })
@@ -2518,11 +2540,11 @@ SubsOf("Dustwallow Marsh", {
 		name = "Swamplight Manor", parent = "Dustwallow Marsh", faction = "Neutral",
 		hook = "A hermit's house at Witch Hill, with a buried spy report in the garden.",
 		lore = {
-			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook.",
-			"In the garden there is a pile of dirt with an orcish spy's report buried in it. Both sides want it. Theramore's guard captain will take it, and so will the Horde at Brackenwall.",
-			"That is Dustwallow entirely. A hermit, a good cook, a murdered spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
+			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook, which is why people walk out this far carrying marsh frog legs and darkmist eyes for him.",
+			"In the garden there is a pile of dirt with an orcish spy's report buried in it, and both sides want it. Captain Garran Vimes takes it for Theramore and Nazeer Bloodpike takes it for the Horde at Brackenwall Village.",
+			"Witch Hill around the house has Mirefin murloc camps in it and something haunting it, which Jarl would like dealt with. That is Dustwallow entirely: a hermit, a good cook, a dead spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
 		},
-		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Dustwallow Marsh" },
+		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Witch Hill", "Wowpedia: \"Swamp Eye\" Jarl" },
 	},
 })
 
@@ -2554,14 +2576,13 @@ SubsOf("Azshara", {
 SubsOf("Durotar", {
 	{
 		name = "Shrine of the Dormant Flame", parent = "Durotar", faction = "Horde",
-		hook = "The holiest place the Horde's shaman have, up a hidden path above the Valley of Trials.",
+		hook = "The holiest place the Horde's shaman have, up a hidden trail above the Valley of Trials.",
 		lore = {
-			"The shrine sits on top of the tallest mountain north-west of the Valley of Trials, reached by a path that spirals up and is not obvious; it starts down by the Southfury River.",
-			"Telf Joolam keeps it, alone. His work was guiding new shaman in the taming of fire, and the brazier at the summit was lit by them as part of that.",
-			"Shamanism is the whole of what Thrall's Horde claims to be. The orcs had it, Gul'dan took it from them and gave them warlocks instead, and Thrall got it back from Drek'Thar and the Frostwolves. A quiet shrine above the orc starting valley is where that recovery is taught.",
+			"The shrine sits on one of the highest peaks in Durotar, north-west of the Valley of Trials. The trail up spirals round the mountain and is not obvious, and it starts beside the Southfury River before the Great Sea.",
+			"Telf Joolam is the keeper and he is the only one up there. His work was the taming of fire. A shaman came carrying a torch to mark the attempt, lit it at the brazier on the summit and took it back down still burning. Without a torch he turns people away, apologetic about the climb they have wasted.",
+			"By his own account most of those who get up here were looking for lost treasure or something mystical to kill, and they leave again thinking the shrine is empty. That suits him. It keeps a secret from the mundane members of the Horde, and to the shaman it is sacred.",
 		},
-		didYouKnow = "The view from the summit is the best in Durotar. Jumping off is not advised, and the accounts felt the need to specify it.",
-		readMore = { "Wowpedia: Shrine of the Dormant Flame", "Wowpedia: Shaman", "Wowpedia: Thrall" },
+		readMore = { "Wowpedia: Shrine of the Dormant Flame", "Wowpedia: Telf Joolam", "Wowpedia: Call of Fire (Horde)" },
 	},
 })
 
@@ -2704,8 +2725,8 @@ SubsOf("Felwood", {
 		name = "Shrine of the Deceiver", parent = "Felwood", faction = "Hostile",
 		hook = "A barrow den at Jaedenar, turned into a shrine to Kil'jaeden.",
 		lore = {
-			"This was a barrow den, which means druids slept in it. It is now a shrine, and the Deceiver it is named for is Kil'jaeden, who leads the Burning Legion in Sargeras's absence.",
-			"The Shadow Council run it, and the warlocks in it are not amateurs. Jaedenar as a whole is theirs: a cult site named for their master, built inside a druidic holy place in a forest the Legion already poisoned.",
+			"This was a barrow den, a place where druids slept. It is now a shrine, and the Deceiver it is named for is Kil'jaeden, who leads the Burning Legion in Sargeras's absence.",
+			"The den itself is held by Jaedenar's rank and file: cultists, adepts and guardians, with hounds kept among them. The Council's own warlocks and Shadow Lord Fel'dan are not down here; they are up in Shadow Hold.",
 			"Kil'jaeden is the one who found Ner'zhul and made the Lich King out of him, which means the Scourge on the other continent and the corruption in this forest come from the same hand.",
 		},
 		readMore = { "Wowpedia: Shrine of the Deceiver", "Wowpedia: Kil'jaeden", "Wowpedia: Shadow Council", "Wowpedia: Jaedenar" },
@@ -2851,9 +2872,9 @@ SubsOf("Durotar", {
 		name = "Spirit Rock", parent = "Durotar", faction = "Horde",
 		hook = "A stone above the Valley of Trials where shaman are sent to listen.",
 		lore = {
-			"Spirit Rock is in the hills over the Valley of Trials, and it is sacred to the Horde's shaman. Getting to it means finding the Hidden Path.",
-			"New shaman came here to drink sapta by the rock and commune with the earth. That is the first lesson rather than a ceremony: not casting anything, but listening to the ground and finding out whether it answers.",
-			"The orcs lost shamanism entirely. Gul'dan traded it away for warlock power and a generation grew up without it; Thrall learned it from Drek'Thar among the Frostwolves and brought it back. Every orc shaman since starts on this hill.",
+			"Spirit Rock is up in the hills over the Valley of Trials, at the end of the Hidden Path, and it is sacred to the Horde's shaman.",
+			"What happens here is a sapta: a drink made to bind the drinker's spirit to one element, known to only a few shaman, and drunk in a holy place and nowhere else. New shaman came to this rock for the earth, and the rite asks nothing of them but to stand before it humbly. The warning that comes with passing it is that the other elements will not be so passive about it.",
+			"The orcs lost shamanism entirely. Gul'dan traded it away for warlock power and a generation grew up without it, and Thrall learned it back from Drek'Thar among the Frostwolves. The first lesson of the practice he recovered is this rock.",
 		},
 		readMore = { "Wowpedia: Spirit Rock", "Wowpedia: Shaman", "Wowpedia: Drek'Thar" },
 	},
@@ -2982,29 +3003,18 @@ SubsOf("Azshara", {
 		},
 		readMore = { "Wowpedia: Satyr", "Wowpedia: Azshara" },
 	},
-	{
-		name = "Thalassian Vanguard Camp", parent = "Azshara", faction = "Hostile",
-		aliases = { "Thalassian Base Camp" },
-		hook = "A Thalassian camp in northern Azshara under Magus Rimtori.",
-		lore = {
-			"Magus Rimtori runs this camp in northern Azshara, south of the Legashi. The elves here speak Thalassian and answer to nobody but themselves.",
-			"Thalassian is Quel'Thalas's tongue. The high elves of that kingdom were nearly destroyed when Arthas came north for the Sunwell, and what survived has been split ever since between those who kept the old name and those who took a new one under Kael'thas.",
-			"A camp of them this deep in night elf country, digging into Azshara's ruins, is not a refugee arrangement. They came here for what is buried.",
-		},
-		readMore = { "Wowpedia: Thalassian Base Camp", "Wowpedia: Quel'Thalas", "Wowpedia: Azshara" },
-	},
 })
 
 SubsOf("Desolace", {
 	{
 		name = "Scrabblescrew's Camp", parent = "Desolace", faction = "Neutral",
-		hook = "A goblin and his kodo caravan, near the graveyard where kodos go to die.",
+		hook = "A goblin with a device for reviving kodos, parked above the graveyard they walk to.",
 		lore = {
-			"Smeed Scrabblescrew keeps this small camp not far from the Kodo Graveyard and runs a kodo caravan out of it.",
-			"The graveyard is the thing worth knowing about. Old kodos walk to it to die; the tauren treat that as natural and sacred, and the goblins treat it as an opportunity.",
-			"Desolace is grey, broken, centaur-ridden country with almost nothing in it worth having. A goblin has found a business anyway, because that is what goblins do.",
+			"Smeed Scrabblescrew keeps this camp on the road above the Kodo Graveyard with tamed kodos penned beside it. Ancient and dying beasts make their own way down to the graveyard to end, and Smeed has built a business on the walk: his kodo kombobulator jolts one of them back into something that will follow a caravan.",
+			"The caravan is not his. The Gizelton Caravan belongs to Cork, Rigger drives it, and Smeed sells them kodos and pays whoever will escort the thing past the Kolkar village and through Mannoroc Coven. Cork and Rigger make a gold piece a week between them, and Smeed has decided not to care how they run their business.",
+			"He has a rival. Bibbly F'utzbuckle at Kormek's Hut collects kodo bones for furniture, instruments and blasting powder, and each goblin's chief pleasure is the thought of the other hearing about his success.",
 		},
-		readMore = { "Wowpedia: Scrabblescrew's Camp", "Wowpedia: Kodo Graveyard", "Wowpedia: Desolace" },
+		readMore = { "Wowpedia: Scrabblescrew's Camp", "Wowpedia: Kodo Roundup", "Wowpedia: Gizelton Caravan" },
 	},
 })
 

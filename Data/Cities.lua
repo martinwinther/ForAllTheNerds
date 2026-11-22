@@ -84,11 +84,12 @@ SubsOf("Stormwind City", {
 	},
 	{
 		name = "The Canals", faction = "Alliance",
-		hook = "The waterways tying the city's districts together, and a monument to a mage.",
+		hook = "The waterways between Stormwind's districts, dug clear of the First War's dead.",
 		lore = {
-			"Stormwind's canals run between all its districts and are part of the Stonemasons' reconstruction work.",
-			"A statue along the canal honours the city's dead and the heroes of the wars. The masonry throughout is worth looking at, given what it cost.",
+			"The canals wind through Stormwind and separate every district from the next, which is mostly how people get about the city. A few shops look out over the marble walkways and the docks, the fishing off them is a recognised way to spend an afternoon, and the Stockade is down one of them.",
+			"They were not always walkable. After the First War the canals were left choked with stone, timber and the bodies of the people who had lived here, and when the Alliance of Lordaeron retook the city it cleared them and buried the dead before anything else was rebuilt.",
 		},
+		readMore = { "Wowpedia: Canals (Stormwind City)", "Wowpedia: Stormwind City" },
 	},
 })
 
@@ -146,11 +147,12 @@ SubsOf("Ironforge", {
 	},
 	{
 		name = "The Commons", faction = "Alliance",
-		hook = "Ironforge's market ring, where the Alliance does its business.",
+		hook = "Ironforge's market ring, and the most crowded room in the city.",
 		lore = {
-			"The Commons holds the auction house, the bank and the bulk of Ironforge's trade. It is one of the busiest commercial spaces in the Alliance.",
-			"Ironforge's central position and its tram link to Stormwind have made it a hub out of proportion to Dun Morogh's own population.",
+			"The Commons holds the auction house, the vault and the inn, and it is the busiest part of Ironforge. The Gates lie south-west of it, the Great Forge north-east, the Military Ward east and the Mystic Ward north, so most traffic through the city crosses this ring.",
+			"It is also where the war recruits. Emissaries for the Stormpike Guard, the Silverwing Sentinels and the League of Arathor stand about the ring looking for volunteers, and Thief Catcher Farmountain walks the circuit on other business.",
 		},
+		readMore = { "Wowpedia: Commons", "Wowpedia: Ironforge" },
 	},
 	{
 		name = "Military Ward", faction = "Alliance",
@@ -354,11 +356,12 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "Spirit Rise", faction = "Horde",
-		hook = "The shamans' mesa, and the Pools of Vision.",
+		hook = "The shamans' mesa, with the Forsaken keeping house underneath it.",
 		lore = {
-			"Spirit Rise holds the tauren's shamanistic training and the Pools of Vision, where spirit-walkers commune with the ancestors and the elements.",
-			"Tauren shamanism predates the orcs' by a long way, and Thrall's restoration of orcish shamanism was helped enormously by having the tauren to consult.",
+			"Spirit Rise is Thunder Bluff's north-western mesa, joined to the lower and middle rises by rope bridges, and it is the city's centre of shamanistic study. Siln Skychaser trains shaman here, one of several Skychaser trainers scattered across the Horde, and the Hall of Spirits stands on the cap.",
+			"Below the cap are the Pools of Vision, and they are not tauren work at all. The pools are where the Forsaken keep their own business at Thunder Bluff: Apothecary Zamah, of the Royal Apothecary Society, Archmage Shymm teaching mages, Forsaken priests teaching priests, and an emissary of the Defilers after recruits.",
 		},
+		readMore = { "Wowpedia: Spirit Rise", "Wowpedia: Pools of Vision", "Wowpedia: Skychaser tribe" },
 	},
 	{
 		name = "Hunter Rise", faction = "Horde",
