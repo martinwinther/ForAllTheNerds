@@ -1,5 +1,95 @@
 # Changelog
 
+## 1.2.19
+
+Two more rounds of the vanilla-era sweep: 50 entry records reviewed and 46 of them
+corrected. The sweep now covers 842 of the 907 vanilla entries. Three more entries
+turned out to be duplicates of entries the addon already had, including two Elwynn
+farms that had each been written up twice.
+
+**Fixed**
+
+- Nine places had the wrong occupants. The Silver Stream Mine ran dry long ago and
+  was turned into a Miners' League store; the kobolds in it are on the dwarves'
+  tools, and there were never any troggs. The Cleft is a Gnarlpine den under Ursal
+  the Mauler with captured druids held in it, not a split in Teldrassil's bark.
+  Stonewatch Falls has a small murloc camp at the bottom of the pool; the Blackrock
+  orcs and Shadowhide gnolls are up the hill at the keep. Slaughter Hollow is an
+  ogre mound with a caged gnome selling engineering supplies inside it. The Shrine
+  of the Deceiver holds Jaedenar's cultists, adepts and guardians, while the Shadow
+  Council's warlocks are up in Shadow Hold. The Thalassian Base Camp is a blood elf
+  dig, not a high elf camp. Southridge Beach is naga ground. Splinterspear Junction
+  is patrolled by Stonard's scouts rather than held by nobody. The Dead Acre was
+  burned by the Defias, and harvest reapers and the Foe Reaper 4000 work its fields.
+- The Pools of Vision are the Forsaken's own corner of Thunder Bluff, with the Royal
+  Apothecary Society, a mage trainer, priest trainers and a Defilers emissary in
+  them. Spirit Rise above is still where the tauren teach shamanism.
+- The Terrace of Repose is the Scarlet Crusade's ground at the Scarlet Monastery
+  gate, one of the few places in northern Lordaeron the plague never reached, with
+  hedges growing and a fountain running clean. It is not a burial terrace.
+- Steelgrill's Depot is a siege engine shop and a haunt for veteran tank pilots.
+  Beldin Steelgrill breaks more arclight spanners than anyone can supply him with.
+- Six places moved to where they actually are: Sar'theris Strand is the whole of
+  Desolace's coast rather than one northern beach, Stonebull Lake wraps around
+  Bloodhoof Village in central Mulgore, Sundown Marsh is the deepest part of the
+  Wetlands in the north-west, the Shrine of Remulos is in north-western Moonglade a
+  short walk from Nighthaven, Shimmer Ridge is north of Kharanos, and Shadowthread
+  Cave is in the corner of Shadowglen rather than down in Teldrassil's roots.
+- Stonewatch Tower is still standing and is being used against the keep beside it.
+  A mage in Elwynn has a glyph hidden at the top of it, in a forgotten liquor jar,
+  to find out why Morganth is in conflict with the orcs inside.
+- Shadowglen is centred on Aldrassil, with Tenaron Stormgrip at the top of the tree
+  and a moonwell in the clearing. Its grells are tainted by fel moss, which is also
+  what became of the furbolgs who used to live in those hills.
+- Shadowprey Village is a fishing village before it is anything else, and the
+  Darkened Bank's notable residents are two refugees with a campfire.
+
+**Removed**
+
+- Advice meant for players rather than lore. The Shrine of the Dormant Flame no
+  longer tells you the view is the best in Durotar and that jumping off is unwise,
+  and the Stoutlager Inn is no longer the most popular room in Loch Modan.
+- The Stonewrought Dam and the South Gate passes were not designed by Franclorn
+  Forgewright. He invented the stonewrought method of architecture, and that is as
+  far as this period takes it.
+- Troll witch doctors no longer deal in the loa. What Witch Doctor Unbagwa does is
+  summon Mokk, the white gorilla whose heart is the only known cure for Stranglethorn
+  fever, and the other gorillas come to the spirit-talking.
+- Invented history and motives are gone from the Canals, the Crystal Vale, Terror
+  Run, the Darkened Bank, Silverwing Grove, the Kodo Graveyard and Tethris Aran.
+  Among them: a statue along Stormwind's canals that is actually in the Valley of
+  Heroes, the Cenarion Circle watching the Crystal Vale, Marshal's Refuge issuing
+  standing orders, smugglers using river crossings nobody patrols, and the Ashenvale
+  war being the oldest fight on the continent.
+- Thrall was not born in an internment camp, and Theramore is not described as the
+  only human settlement on Kalimdor that chose to live beside the Horde.
+
+**Changed**
+
+- Three entries were duplicates and each has been merged into the one the game's own
+  name matches. The Thalassian Vanguard Camp is folded into the Thalassian Base
+  Camp, and the two Elwynn farms written up twice over are folded into The Stonefield
+  Farm and The Maclure Vineyards. All three old names are kept as aliases, so `/ftn`
+  still answers to them.
+- Southridge Beach is marked hostile rather than contested, which is what naga
+  ground means in practice.
+- Many entries gained what the game actually gives them. The Shady Rest Inn has
+  James Hyal, the blackened shield nailed to its chimney, the hoofprints and the
+  badge in the rubble, and two investigations running separately out of Theramore
+  and Brackenwall. Silverwing Grove is where the Alliance enters Warsong Gulch.
+  Scrabblescrew's Camp has the kodo kombobulator, the Gizelton Caravan that belongs
+  to somebody else, and a rival goblin collecting bones. Shindigger's Camp has the
+  gryphon rider who found the sunken temple by falling into it drunk. The Cauldron
+  has the Slag Pit, and slaves who have been driven far enough to attack anyone who
+  comes for them, rescuers included. The Crimson Veil is the Bloodsail flagship and
+  does the fleet's recruiting. Terror Run has the expedition that was nearly eaten
+  setting up camp, and the only red power crystals in the world. The Den has Gornek,
+  a trainer for every class and no trade trainers at all. The Commons has the
+  battleground emissaries. Spirit Rock has the sapta, drunk in a holy place and
+  nowhere else. Satyrnaar has the Bleakheart and a soulgem of the Cult of the Dark
+  Strand. Sentry Point is the first tower outside Theramore and where the search for
+  a missing soldier begins.
+
 ## 1.2.18
 
 Four more rounds of the vanilla-era sweep: 100 entry records reviewed and 93 of

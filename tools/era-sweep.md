@@ -80,11 +80,12 @@ Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
 in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
 in 1.2.13, runs 19 and 20 in 1.2.14, runs 21 and 22 in 1.2.15, run 23 in 1.2.16,
-and runs 24 to 28 in 1.2.17**, all released mid-sweep at Martin's explicit
-instruction. Their player-facing lines are already in the changelog under those
-twelve headings, so do not write them again. P5 now covers only P4 run 29
-onwards, plus `tools/era-audit.md`, still not updated for anything since the
-original four errors.
+runs 24 to 28 in 1.2.17, runs 29 to 32 in 1.2.18 and runs 33 and 34 in
+1.2.19**, all released mid-sweep at Martin's explicit instruction. Their
+player-facing lines are already in the changelog under those fourteen headings,
+so do not write them again. P5 now covers only P4 run 35 onwards, plus
+`tools/era-audit.md`, still not updated for anything since the original four
+errors.
 
 ## Oracles, in order of preference
 
@@ -7605,3 +7606,38 @@ Altar of Storms, Darnassus, The Bulwark, The Talondeep Path and Thunder Bluff ar
 each two entries, and all five are already covered. Two names still have no wiki
 article, The Dream Bough and The Sanctum, and both fall in this next batch. P5
 remains pending and covers run 29 onwards.
+
+### 2026-11-22, release 1.2.19
+
+Martin asked for dev to be merged to main and the next 1.2.x released. Release
+1.2.19 carries P4 runs 33 and 34, which is 50 entry records reviewed and 46
+corrected. Three records were deleted as duplicates of entries the addon already
+had: Thalassian Vanguard Camp into Thalassian Base Camp, and the two Elwynn farms
+that had been written up twice into The Stonefield Farm and The Maclure Vineyards.
+Two records held up with no change, Sleeping Gorge and Slither Rock. One faction
+field changed, Southridge Beach from Contested to Hostile. The vanilla corpus is
+907 entries and the Forever one is 76. Both version strings read 1.2.19.
+
+`CHANGELOG.md` records the findings under the 1.2.19 heading in the same three
+sections 1.2.17 and 1.2.18 used: the corrections, the claims removed, and the
+structural changes, which this time are the three merges and the faction change.
+P5 must not write runs 33 or 34 again and now covers run 35 onwards. The other
+half of P5, writing the findings into `tools/era-audit.md`, is still outstanding
+and was not touched by this release.
+
+Two things this release does not carry, because they are notes to ourselves rather
+than player-facing changes: the correction to run 33's claim about Zeppelin Masters
+in the 1.12 table, and the covered-list hyphen bug. Both are recorded in the run 34
+entry above.
+
+Release checks before preparing: default validation and all nine CI configurations
+pass with zero errors and warnings, check-gaps reports 43 explained gaps, prose
+lint is clean on the changelog, the CurseForge description and the README, and
+`git diff --check` passes. `tools/build-zip.sh` produces
+`ForAllTheNerds-1.2.19.zip` with the toc at `ForAllTheNerds/ForAllTheNerds.toc`,
+declaring interface 16001 and 11509, both version strings reading 1.2.19,
+`LICENSE` present, 26 entries packaged and no tooling, media or dotfiles in it.
+The upload label override `-n ":{package-name}-{project-version}"` is still in
+`.github/workflows/release.yml`, so the file lists as `ForAllTheNerds-1.2.19`
+rather than a bare number. The preceding sweep commit 954d659 passed CI for its
+exact SHA before release preparation began.
