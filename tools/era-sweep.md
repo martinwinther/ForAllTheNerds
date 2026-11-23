@@ -80,12 +80,12 @@ Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
 in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
 in 1.2.13, runs 19 and 20 in 1.2.14, runs 21 and 22 in 1.2.15, run 23 in 1.2.16,
-runs 24 to 28 in 1.2.17, runs 29 to 32 in 1.2.18 and runs 33 and 34 in
-1.2.19**, all released mid-sweep at Martin's explicit instruction. Their
-player-facing lines are already in the changelog under those fourteen headings,
-so do not write them again. P5 now covers only P4 run 35 onwards, plus
-`tools/era-audit.md`, still not updated for anything since the original four
-errors.
+runs 24 to 28 in 1.2.17, runs 29 to 32 in 1.2.18, runs 33 and 34 in 1.2.19 and
+runs 35 and 36 in 1.2.20**, all released mid-sweep at Martin's explicit
+instruction. Their player-facing lines are already in the changelog under those
+fifteen headings, so do not write them again. P5 now covers only P4 run 37
+onwards, plus `tools/era-audit.md`, still not updated for anything since the
+original four errors.
 
 ## Oracles, in order of preference
 
@@ -8489,3 +8489,36 @@ background for Swamplight Manor but has not had its own review. Recompute the
 ranking anyway to confirm nothing new scores. After that batch P4 is finished and
 P5 is the whole of what is left: the findings into `tools/era-audit.md`, and the
 changelog lines for runs 35 onwards.
+
+### 2026-11-23, release 1.2.20
+
+Martin asked for dev to be merged to main and the next 1.2.x released. Release
+1.2.20 carries P4 runs 35 and 36, which is 50 entry records reviewed and 49
+corrected. One record held up unchanged, Western Pylon. Nothing was deleted, no
+era tag changed and no faction changed. The vanilla corpus is 907 entries and the
+Forever one is 76. Both version strings read 1.2.20.
+
+`CHANGELOG.md` records the findings under the 1.2.20 heading in the same three
+sections the last three releases used. Its lead names the thing that is new in
+these two runs, which is entries that had invented an owner out of the place name
+itself: Twilight Vale's cult and the Vul'Gol tribe. P5 must not write runs 35 or
+36 again and now covers run 37 onwards, which is the last P4 batch. The other half
+of P5, writing the findings into `tools/era-audit.md`, is still outstanding and was
+not touched by this release.
+
+Two notes-to-ourselves are deliberately not in the changelog, as in 1.2.19: the
+tooling lesson that a creature can be in `creature_template` with no row in
+`creature`, and the covered-list hyphen bug. Both are in the run 34 and 35 entries
+above.
+
+Release checks before preparing: default validation and all nine CI configurations
+pass with zero errors and warnings, check-gaps reports 43 explained gaps, prose
+lint is clean on the changelog, the CurseForge description and the README, and
+`git diff --check` passes. `tools/build-zip.sh` produces
+`ForAllTheNerds-1.2.20.zip` with the toc at `ForAllTheNerds/ForAllTheNerds.toc`,
+declaring interface 16001 and 11509, both version strings reading 1.2.20,
+`LICENSE` present, 26 entries packaged and no tooling, media or dotfiles in it.
+The upload label override `-n ":{package-name}-{project-version}"` is still in
+`.github/workflows/release.yml`, so the file lists as `ForAllTheNerds-1.2.20`
+rather than a bare number. The preceding sweep commit 5f9593b passed CI for its
+exact SHA before release preparation began.
