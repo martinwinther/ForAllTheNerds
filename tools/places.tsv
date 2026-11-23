@@ -13,7 +13,7 @@
 sub	Heroes' Vigil	Elwynn Forest	Alliance		Stone of Remembrance on the island in Stone Cairn Lake, held by Defias rogue wizards
 sub	Demont's Place	Westfall	Hostile		Dead Westfall farmstead west of Moonbrook, held by Riverpaw gnolls
 sub	Longshore	Westfall	Contested		The whole western coastline of Westfall; murlocs and shipwrecks
-sub	The Dust Plains	Westfall	Contested		The driest part of Westfall, south of Moonbrook; the failed farmland at its worst
+sub	The Dust Plains	Westfall	Contested		Westfall's southernmost ground; Riverpaw gnoll camps and Mortwake's Tower at its eastern edge
 sub	Brightwood Grove	Duskwood	Hostile		Northeastern Duskwood woodland, spiders and worgen
 sub	The Hushed Bank	Duskwood	Contested		Duskwood's river bank facing Westfall across the water
 sub	Stonewatch Falls	Redridge Mountains	Hostile		Waterfall and cave below Stonewatch Keep
@@ -27,7 +27,7 @@ sub	Circle of West Binding	Arathi Highlands	Contested		The westernmost of the fo
 sub	Boulder'gor	Arathi Highlands	Hostile		Boulderfist ogre camp in the western Highlands
 sub	Darrow Hill	Hillsbrad Foothills	Contested		Hill in eastern Hillsbrad near Tarren Mill
 sub	Corrahn's Dagger	Hillsbrad Foothills	Hostile		Hill in the Hillsbrad uplands held by the Syndicate
-sub	The Uplands	Alterac Mountains	Hostile		High eastern Alterac Mountains; Crushridge ogre country
+sub	The Uplands	Alterac Mountains	Hostile		Hills in the north-eastern Alterac Mountains; Alterac's old bread basket, now the Syndicate's strongest ground
 sub	Hiri'watha	The Hinterlands	Hostile		Vilebranch troll site in the central Hinterlands
 sub	The Overlook Cliffs	The Hinterlands	Contested		Eastern Hinterlands cliffs above the sea, near Revantusk Village
 sub	Shaol'watha	The Hinterlands	Hostile		Abandoned Amani troll ruin in the Hinterlands woods
@@ -51,7 +51,7 @@ sub	Crystalvein Mine	Stranglethorn Vale	Hostile		Kurzen-held mine in the jungle 
 sub	Mirage Flats	Badlands	Contested		Open northern Badlands flats
 sub	Valley of Fangs	Badlands	Hostile		Badlands valley on the route east, scorpid and raptor country
 sub	Dustbelch Grotto	Badlands	Hostile		Ogre mound in the south-western Badlands, the main Dustbelcher camp
-sub	The Shifting Mire	Swamp of Sorrows	Contested		Open mire in the northern Swamp of Sorrows
+sub	The Shifting Mire	Swamp of Sorrows	Contested		The central bulk of the Swamp of Sorrows, west of the Pool of Tears; the silt moves on its own
 # NOT IN 1.12. The Red Reaches was added as an area in patch 4.0.3a and is in
 # neither client's area table, so an entry for it could never fire. Deleted in
 # P4 run 13 of the era sweep. Do not write it again.
@@ -61,7 +61,7 @@ sub	Burning Blade Coven	Durotar	Hostile		Burning Blade cult cave in Durotar; orc
 sub	Rocktusk Farm	Durotar	Hostile		Horde pig farm on the western road out of Orgrimmar
 sub	Scuttle Coast	Durotar	Contested		Durotar's southeastern coast, near the Echo Isles
 sub	Deadeye Shore	Durotar	Contested		Durotar coastline where Kul Tiras marines were wrecked
-sub	The Rolling Plains	Mulgore	Horde		Eastern Mulgore grassland on the route to the Barrens
+sub	The Rolling Plains	Mulgore	Horde		Southern Mulgore grassland from Bloodhoof Village to the Barrens border; a Windfury harpy nest at its east end
 sub	Ravaged Caravan	Mulgore	Contested		Destroyed caravan in Mulgore, picked over by gnolls
 sub	Thorn Hill	The Barrens	Horde		Razormane quilboar settlement under Tortusk, on the hilltop between the Crossroads and Durotar
 sub	Boulder Lode Mine	The Barrens	Hostile		Venture Company mine in the northern Barrens

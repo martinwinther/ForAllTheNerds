@@ -49,11 +49,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "The Dust Plains", faction = "Contested",
-		hook = "The driest ground in Westfall, where the farmland gave up before the rest of it did.",
+		hook = "The southernmost ground in Westfall, with gnoll camps on it and a tower at its edge.",
 		lore = {
-			"South of Moonbrook the soil stopped holding water and the tenants walked away. This is what the rest of Westfall is afraid of becoming: not raided, not burned, just finished.",
-			"Nothing is farmed out here now. Harvest golems left standing in the fields go on working the dirt regardless, and there is no more unsettling sight in the zone.",
+			"The Dust Plains are the bottom of Westfall. Riverpaw gnolls keep a few camps out here and trouble anyone crossing, with Defias highwaymen working the same ground and Leprithus wandering it.",
+			"An old mage tower stands on the eastern edge of the plains. Klaven Mortwake holds it, with Defias tower sentries and patrollers on the ground below him and Venture Company drones about the place, which is a stranger combination than the tower deserves.",
 		},
+		readMore = { "Wowpedia: Dust Plains", "Wowpedia: Klaven Mortwake", "Wowpedia: Westfall" },
 	},
 })
 
@@ -112,11 +113,12 @@ SubsOf("Hillsbrad Foothills", {
 SubsOf("Alterac Mountains", {
 	{
 		name = "The Uplands", faction = "Hostile",
-		hook = "The high eastern mountains, taken over by the Crushridge ogres.",
+		hook = "Alterac's old bread basket, and where the Syndicate is strongest.",
 		lore = {
-			"The Uplands are the roof of Alterac and the Crushridge clan holds them. Ogres moved into these mountains once the kingdom was broken up and nobody was left with the authority or the troops to object.",
-			"They are fighting the Syndicate for the high ground now: a clan of ogres against a society of dispossessed aristocrats, over a country that officially no longer exists.",
+			"The Uplands are the hills in the north-east of the Alterac Mountains, and they fed the kingdom. Once the core of Alterac was destroyed there was nobody left with the authority or the troops to hold them, and the Syndicate moved in. They keep several camps up here and this is the ground they are strongest on.",
+			"Baron Vardus is the one to know about, a high-ranking Syndicate man with sentries and a saboteur around him and an Argus shadow mage standing among them. That is a more interesting kind of company than dispossessed aristocrats usually keep. Dandred's Fold lies at the western end of the same hills.",
 		},
+		readMore = { "Wowpedia: Uplands", "Wowpedia: Baron Vardus", "Wowpedia: Syndicate" },
 	},
 })
 
@@ -319,11 +321,12 @@ SubsOf("Stranglethorn Vale", {
 SubsOf("Swamp of Sorrows", {
 	{
 		name = "The Shifting Mire", faction = "Contested",
-		hook = "Open mire in the northern swamp, where the ground is a matter of opinion.",
+		hook = "The central bulk of the swamp, where the ground travels on its own.",
 		lore = {
-			"The Shifting Mire is the least solid part of a zone with no solid parts. Tracks across it hold for a season and then stop holding.",
-			"Stonard keeps the usable routes marked. The orcs have been in this swamp since the First War, longer than they have held anywhere else on this continent, and marking safe ground is one of the few things they have had the time to get right.",
+			"The Shifting Mire is the middle of the Swamp of Sorrows, west of the Pool of Tears, and the name is literal. Some force in the ground gathers the very fine silt and moves it, so that it travels as though it were alive. Nobody in this period can say what the force is.",
+			"What lives on it is swamp jaguars, young sawtooth crocolisks and sorrow spinners, with Molt Thorn somewhere among them, and the Lost Ones' camps on its edges.",
 		},
+		readMore = { "Wowpedia: Shifting Mire", "Wowpedia: Swamp of Sorrows" },
 	},
 })
 
@@ -465,11 +468,12 @@ SubsOf("Durotar", {
 SubsOf("Mulgore", {
 	{
 		name = "The Rolling Plains", faction = "Horde",
-		hook = "Eastern Mulgore grassland, and the road out toward the Barrens.",
+		hook = "Grassland in southern Mulgore, running from Bloodhoof Village to the Barrens.",
 		lore = {
-			"The Rolling Plains carry Mulgore's eastern traffic, and the change in the land as you go is abrupt. Good grass gives way to the Barrens' scrub inside a few hours' walk.",
-			"Kodo herds graze here and the tauren follow them, as they did for generations before they settled. Mulgore is only a few years old as a homeland, and the habits that carried the tauren through the centuries before it have not been put down.",
+			"The Rolling Plains cover much of southern Mulgore, from Bloodhoof Village out to the Barrens border, and the change in the land as you go is abrupt. Good grass gives way to scrub inside a few hours' walk. Kodo, tallstriders, cougars and wolves all graze or hunt across it.",
+			"The eastern end is less peaceful than the rest. A nest of Windfury harpies sits out there, the same tribe that holds the ridge in the north of the zone, and they are the one thing on these plains that is not simply grazing.",
 		},
+		readMore = { "Wowpedia: Rolling Plains", "Wowpedia: Mulgore", "Wowpedia: Windfury Harpy" },
 	},
 	{
 		name = "Ravaged Caravan", faction = "Contested",
@@ -1395,11 +1399,12 @@ SubsOf("Arathi Highlands", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "The Savage Coast", faction = "Contested",
-		hook = "The northern coastline of the vale, between the jungle and the sea.",
+		hook = "Stranglethorn's northern shore, from the Westfall border down to Grom'gol.",
 		lore = {
-			"The Savage Coast runs along Stranglethorn's northwestern shore. The Bloodscalp hold the ground behind it and the water in front of it belongs to whatever is in the water.",
-			"Every stretch of this jungle has a claim on it: trolls, ogres, the Venture Company, Kurzen's deserters and the goblins at the southern tip. The coast is no different.",
+			"The Savage Coast is the northern coastline of the vale. It runs from the Westfall border in the north all the way down the shore to Grom'gol Base Camp, with crocolisks and basilisks on the sand and lashtail raptors working the ground above it. Several troll settlements sit along its length.",
+			"A good shudder of the earth once dropped an old troll city into the water off the coast's north-west. What is down there is called the Vile Reef now, because the murlocs have it.",
 		},
+		readMore = { "Wowpedia: Savage Coast", "Wowpedia: The Vile Reef", "Wowpedia: Stranglethorn Vale" },
 	},
 	{
 		name = "Ruins of Aboraz", faction = "Hostile",
@@ -1685,11 +1690,12 @@ SubsOf("Darkshore", {
 SubsOf("The Barrens", {
 	{
 		name = "The Tidus Stair", faction = "Contested",
-		hook = "A sunken formation off the eastern coast, out in the water.",
+		hook = "Stone terraces above the Merchant Coast, with two tauren fishing off them.",
 		lore = {
-			"The Tidus Stair lies off the Barrens' eastern shore, below the surface. Stepped stone underwater generally means somebody built it when the water was not there.",
-			"The Barrens were not always barren, and this coastline was not always this coastline. The Sundering broke Kalimdor apart and the sea came in over a good deal of it.",
+			"The Tidus Stair is a run of terraces on the Barrens' eastern coast south-east of Ratchet, stepped like a giant staircase and looking out over the Merchant Coast. The lower steps go on down under the water, which is the part that gets talked about.",
+			"Islen Waterseer and Mahren Skyseer sit up here with a fire going, fishing and talking to the water spirits. They are the only people on it.",
 		},
+		readMore = { "Wowpedia: Tidus Stair", "Wowpedia: Islen Waterseer", "Wowpedia: Merchant Coast" },
 	},
 	{
 		name = "Bramblescar", faction = "Hostile",
@@ -1855,11 +1861,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "The Dragonmurk", faction = "Hostile",
-		hook = "The southern mire, thick with black dragonkin.",
+		hook = "The southern mire, with Onyxia's brood scattered across it.",
 		lore = {
-			"The Dragonmurk is the worst-held corner of Dustwallow and the most heavily patrolled from the air. Onyxia's lair opens into this part of the marsh.",
-			"The black dragonflight does not go in for open assault. Where one of Deathwing's children chooses to settle usually says more than anything it does afterwards.",
+			"The Dragonmurk is the southern stretch of Dustwallow, and whelps and dragonspawn of the black flight are thick in it. The Den of Flame and the Stonemaul Ruins both sit inside it and both have been taken over by the same dragonkin. Onyxia's own lair is in the Wyrmbog, further south again.",
+			"Her brood is scattered across the murk and her eggs are riddled around the Wyrmbog, so the Stonemaul at Brackenwall Village keep sending people to break them. They will not get their village back while the ground around it is a breeding pen.",
 		},
+		readMore = { "Wowpedia: Dragonmurk", "Wowpedia: The Brood of Onyxia", "Wowpedia: Wyrmbog" },
 	},
 })
 

@@ -210,11 +210,13 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "The Venture Co. Mine", parent = "Mulgore", faction = "Hostile",
-		hook = "A goblin mining operation drilling into tauren land without asking.",
+		hook = "An enormous goblin mine in the eastern cliffs, dug after the tauren said no.",
 		lore = {
-			"The Venture Company has set up on Mulgore's eastern edge and started extracting. They did not seek permission and they are not interested in the tauren's objections.",
+			"The Venture Company asked for mining rights in Mulgore, was refused, and dug anyway. The mine runs into the eastern cliffs and has three ways in, of which only the main one can be reached on foot: the second is a cliff and the third is a small lumber camp. Supervisor Fizsprocket sits at the main entrance and runs the whole of the company's business in the tauren homeland, with Enforcer Emilgund keeping order and supervisors and workers below.",
+			"The papers the tauren pulled out of the wrecked caravan on Stonebull Lake are what give the scale of the plan away. Mogul Razdunk and the advisory board were pressing the supervisor to take the operation into lumber as well, and were sending him their newest shredders and the materials for a mill.",
 			"Venture Co. is the goblin cartel that works without any pretence of neutrality or restraint. They are doing the same thing in the Barrens, Stranglethorn and Stonetalon.",
 		},
+		readMore = { "Wowpedia: Venture Co. Mine", "Wowpedia: Supervisor Fizsprocket", "Wowpedia: The Venture Co." },
 	},
 })
 
@@ -528,11 +530,12 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "The Sludge Fen", parent = "The Barrens", faction = "Hostile",
-		hook = "A goblin industrial site poisoning the northern Barrens.",
+		hook = "An oil field in the north-east, where a pool of clear water used to be.",
 		lore = {
-			"The Venture Company is running an extraction operation here and dumping the waste into the water. The result is a spreading sludge that is killing everything downstream.",
-			"The Horde wants it stopped. Venture Co. has no interest, and the cartel has no central authority that the Horde can pressure.",
+			"The Sludge Fen was a pool of clear blue water until the Venture Company put an oil rig on top of it and turned it into a mire of industrial waste. Supervisor Lugwizzle runs the operation. The company has the north-east corner of the Barrens fairly well sewn up: a tower above the fen, a research facility to the south-west and the Boulder Lode Mine beyond it.",
+			"Goblin business being what it is, the fen's other distinction is being robbed by other goblins. Sputtervalve, of the Tinkers' Union in Ratchet, has Director Riddlevox pressing him for results on shredder development, decided that stealing the Venture Company's design was faster than beating it, and sent Wizzlecrank to drive one out of the fen. Wizzlecrank climbed into a shredder without first obtaining the key, and had to be dug out and escorted home with the company in pursuit.",
 		},
+		readMore = { "Wowpedia: Sludge Fen", "Wowpedia: Supervisor Lugwizzle", "Wowpedia: The Escape" },
 	},
 	{
 		name = "Mor'shan Rampart", parent = "The Barrens", faction = "Horde",
@@ -848,11 +851,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Ruins of Stardust", parent = "Ashenvale", faction = "Contested",
-		hook = "Night elf ruins in the southern forest, from before the Sundering.",
+		hook = "A holy place on a lake island, gone yellow with Felwood's rot.",
 		lore = {
-			"Stardust was a night elf settlement of the old empire, and these ruins are ten thousand years old.",
-			"Ashenvale is full of them. The night elves fighting for this forest are fighting over ground that already holds their own civilisation's wreckage.",
+			"The Ruins of Stardust sit on an island in a lake south of Astranaar, west of the Talondeep Path, and they were a holy place. The lake has taken the demonic rot coming down out of Felwood, as Iris Lake has, and the whole site is tinted a sickly yellow-green. Large bog beasts roam the stones, corrupted by the water. The shaman who send people here for a sample of the fountain at the lake's centre pass on the tale that the ruins are protected by creatures of nature that do not care for visitors, and allow that it might only be a story told to frighten off the night elves' enemies.",
+			"The stardust itself is the exception. It is a frosted dust lying among the ruins, on bushes the taint has not touched, and it brings a fever down. Pelturas Whitemoon in Astranaar sends for handfuls of it to make a poultice for his daughter Relara Whitemoon, whose nightmares a tear of Elune has already eased and whose fever it has not.",
 		},
+		readMore = { "Wowpedia: Ruins of Stardust", "Wowpedia: The Ruins of Stardust", "Wowpedia: Call of Water" },
 	},
 	{
 		name = "Raynewood Retreat", parent = "Ashenvale", faction = "Alliance",
@@ -1154,11 +1158,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "The Den of Flame", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "A cave of black dragonkin, in Onyxia's neighbourhood.",
+		hook = "An ogre mound the black dragons burned the Stonemaul out of.",
 		lore = {
-			"The Den of Flame holds black dragonkin, which in Dustwallow means Onyxia's brood and servants.",
-			"The black flight's presence in this marsh is substantial and deliberate. It is not an accident that Onyxia chose a lair next door to the Alliance's Kalimdor capital.",
+			"The Den of Flame was built by the Stonemaul ogres as their mound, and the architecture still says so. What holds it now is the black dragonflight: Firemane scouts, ash tails and scalebanes, with Onyxia's lair in the Wyrmbog not far off.",
+			"Overlord Mok'Morokk's account of how the clan lost it is short. Big dragons came and made fire at the old home, so he found the clan a new one at Brackenwall Village, and he left in such a hurry that his grog, his snuff and his strongbox are all still down here with the Stonemaul Banner.",
+			"The clan has not written the place off. Draz'Zilb's view is that they will never reclaim Stonemaul Village while the ground around it is a dragon breeding pen, and that returning them to their proper home in the south is the whole point of the exercise.",
 		},
+		readMore = { "Wowpedia: Den of Flame", "Wowpedia: Overlord Mok'Morokk's Concern", "Wowpedia: Stonemaul clan" },
 	},
 	{
 		name = "Sentry Point", parent = "Dustwallow Marsh", faction = "Alliance",
@@ -1287,11 +1293,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "The Dream Bough", parent = "Feralas", faction = "Hostile",
-		hook = "The fourth Emerald Dream portal, guarded and hostile.",
+		hook = "A great tree on an island in Jademir Lake, with a Dream portal under it.",
 		lore = {
-			"The Dream Bough is the last of the four Dream portals, with Seradane, Bough Shadow and Twilight Grove.",
-			"Like the others it is guarded by a green dragon who has gone wrong. Whatever is happening in the Emerald Dream is happening at all four gates at once.",
+			"The Dream Bough is a great tree standing on a small island in the middle of Jademir Lake, in northern Feralas, the largest tree in the zone. One of the four portals into the Emerald Dream is at the foot of it, with Seradane, Bough Shadow and Twilight Grove holding the other three.",
+			"The green dragonflight keeps it, and keeps it closed. Lethlas patrols the island with Jademir boughguards, a tree warder and an oracle, all of them a good deal more than a lake island would normally carry. Whatever is wrong inside the Dream is being answered the same way at all four gates.",
 		},
+		readMore = { "Wowpedia: Dream Bough", "Wowpedia: Lethlas", "Wowpedia: Jademir Lake" },
 	},
 	{
 		name = "Woodpaw Hills", parent = "Feralas", faction = "Hostile",
@@ -1718,11 +1725,12 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "The Slithering Scar", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A silithid hive in the crater's south, connected to something worse.",
+		hook = "A silithid hive taking up most of the crater's south.",
 		lore = {
-			"The Slithering Scar is a silithid colony inside Un'Goro, and the silithid are not native to the crater's ecology.",
-			"They came from Silithus, and the tunnels run both ways. The crater's isolation has been breached by the one thing in Kalimdor that nobody wants loose.",
+			"The Slithering Scar is a hive of the Gorishi, and it has most of southern Un'Goro. Reavers and workers hold the upper ground, tunnelers and stingers the deeper parts, and a crystal in the hive will call something considerably worse up if it is interfered with.",
+			"The silithid are not part of the crater's ecology. They are the same creatures that have Silithus, so a colony of them inside a sealed crater is worth more attention than its size suggests.",
 		},
+		readMore = { "Wowpedia: Slithering Scar", "Wowpedia: Silithid", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Lakkari Tar Pits", parent = "Un'Goro Crater", faction = "Hostile",
@@ -1920,7 +1928,7 @@ SubsOf("Silithus", {
 		name = "The Scarab Wall", parent = "Silithus", faction = "Contested",
 		hook = "The wall that has kept the qiraji in for a thousand years.",
 		lore = {
-			"The Scarab Wall and the Gates of Ahn'Qiraj were raised by the night elves and the bronze dragonflight to seal the qiraji inside their own city.",
+			"The wall runs along Silithus's southern edge, from one side of the zone to the other, dividing the silithid desert from the ruined city of Ahn'Qiraj behind it. The night elves and the bronze dragonflight raised it together at the end of the War of the Shifting Sands to seal the qiraji inside their own city, and the Gates of Ahn'Qiraj are the one door in it.",
 			"The Scepter of the Shifting Sands is the key. It was broken and its pieces scattered, partly to make sure nobody opened the gates casually, and reassembling it is now a live project.",
 			"Opening the gates on purpose, with an army ready, is being argued as better than waiting for the qiraji to come out on their own schedule.",
 		},
@@ -1992,7 +2000,7 @@ SubsOf("Silithus", {
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
 		hook = "A valley in Silithus's north-west corner, held by elementals rather than silithid.",
 		lore = {
-			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. Dust stormers work the air over it, desert rumblers the ground, and an air elemental rift stands open in it.",
+			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. The air over it is worked by dust stormers, the ground by desert rumblers, and an air elemental rift stands open in it.",
 			"There is generous thorium in the vale, and the Twilight's Hammer got to it first. Their ravaged camp is in here, with Highlord Demitrian standing among its scattered tablet fragments.",
 		},
 		readMore = { "Wowpedia: Crystal Vale", "Wowpedia: Highlord Demitrian", "Wowpedia: Silithus" },
@@ -2312,8 +2320,9 @@ SubsOf("Ashenvale", {
 			"Very little of Ordil'Aran is left. It was a night elf city once, north of Maestra's Post, and what survives is enough stonework to shelter in.",
 			"The Cult of the Dark Strand made a base of it. They are Shadow Council work: night elves and others turned to the service of things that should not be served, operating inside Darnassus's own territory, and the Tower of Althalaxx further up the coast is the other end of the same problem.",
 			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, and they give a reasonable idea of how that went.",
+			"The heartswood tree stands in the ruins, and its core is what a summoning circle in the crypt below needs to open a portal and bring a succubus through. That is the Althalaxx business reaching this far down the coast.",
 		},
-		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Dark Strand", "Wowpedia: Thistlefur" },
+		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Heartswood", "Wowpedia: Thistlefur" },
 	},
 	{
 		name = "Bloodtooth Camp", parent = "Ashenvale", faction = "Hostile",
@@ -2349,7 +2358,7 @@ SubsOf("Ashenvale", {
 		name = "The Shady Nook", parent = "Ashenvale", faction = "Neutral",
 		hook = "A small valley with a family of bears in it, and nothing else going on.",
 		lore = {
-			"The Shady Nook is a hollow south of Raynewood Retreat with a cave in it and a few bears living there. That is the whole of it.",
+			"The Shady Nook is a hollow south of Raynewood Retreat and east of Greenpaw Village, with a small cave in it and a family of bears living there, presumably in the cave. That is the whole of it.",
 			"Which is worth saying out loud. Ashenvale is a zone where nearly every named place is a front line, a cult site, a satyr holding or something that used to be a city, and this one is a dell with animals in it.",
 			"The whole forest was like this once, before the Warsong came for the timber and the satyrs came out of the ruins. A hollow with bears in it is what Ashenvale is defending.",
 		},
@@ -2496,7 +2505,7 @@ SubsOf("Feralas", {
 		hook = "A silithid hive in the south-east, and the gnolls around it have gone frantic.",
 		lore = {
 			"Hive Zukk'ash is in the ground here, and it is silithid. They are the qiraji's creatures: insectoid, numberless, and answering ultimately to C'Thun under Ahn'Qiraj.",
-			"The hive is driving the local gnolls out of their minds. They are pushing north in a state and running into Camp Mojache, which means the tauren there are fighting gnolls because of something neither of them started.",
+			"The hive is driving the local gnolls out of their minds. A set of battle plans taken off the Woodpaw showed Camp Mojache that the gnolls are fighting a war on two fronts, and that most of their effort is going south rather than at the tauren. Hadoken Swiftstrider's reading is that whatever is driving the gnolls to frenzy is the larger threat of the two, and that nothing short of a full-scale invasion will thin it. Stinglasher, a giant among the insects that secretes an aura the others do not, was cut open to find out why.",
 			"That is how silithid work as a problem. Clearing the ones on the surface does nothing to the eggs, and no hive was ever the real problem; each is an outpost of something much older, still buried in Silithus.",
 		},
 		readMore = { "Wowpedia: Writhing Deep", "Wowpedia: Silithid", "Wowpedia: C'Thun" },
@@ -2552,13 +2561,13 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Azshara", {
 	{
 		name = "The Ruined Reaches", parent = "Azshara", faction = "Neutral",
-		hook = "The broken coast of the queen's own province, with nothing much left standing.",
+		hook = "Azshara's southern coast, all beach and cliff and wreckage, with a gnome shop on it.",
 		lore = {
-			"Azshara was the heart of the night elf empire and Zin-Azshari, the queen's capital, stood in it. The Sundering took most of that and put it under water.",
-			"The Ruined Reaches are the part of the coastline where the wreckage shows worst. Ravencrest Monument is close by, and Rethress Sanctum is in here somewhere, empty.",
-			"Ten thousand years of nothing being rebuilt. The naga are offshore, the satyrs are inland, and the zone still carries the name of the queen who caused all of it.",
+			"The Ruined Reaches run along Azshara's southern coast, down towards the Durotar border: stretches of beach and cliff broken up by inlets, dotted with ruins and with shipwrecks. As on the Jagged Reef in the north, the walk is hazardous, partly for the shallows sitting just under the surface and partly for the murlocs, hydras and makrura that work them.",
+			"On the western shore of the reaches, up a steep path on a hill, there is a gnomish building with a lift in it. Blimo Gadgetspring and Jubie Gadgetspring live and trade out of it, selling engineering and trade supplies a long way from anyone who needs them.",
+			"The ruins are what the Sundering left. Azshara was the heart of the night elf empire and Zin-Azshari, the queen's own capital, stood in this province before the sea came in over it.",
 		},
-		readMore = { "Wowpedia: Azshara", "Wowpedia: Zin-Azshari", "Wowpedia: Great Sundering" },
+		readMore = { "Wowpedia: Ruined Reaches", "Wowpedia: Zin-Azshari", "Wowpedia: Great Sundering" },
 	},
 	{
 		name = "Rethress Sanctum", parent = "Azshara", faction = "Neutral",
@@ -2836,7 +2845,7 @@ SubsOf("Silithus", {
 		name = "The Swarming Pillar", parent = "Silithus", faction = "Hostile",
 		hook = "The biggest silithid hive above ground, a short way from Cenarion Hold.",
 		lore = {
-			"The Swarming Pillar is a peak in the middle of Silithus with a hive in it, and the name comes from the cloud of small silithid that never stops moving around it. It is the largest of them.",
+			"The Swarming Pillar is a peak just south of Cenarion Hold, and the name comes from the cloud of small silithid that never stops moving around it. What breaks the surface here is Hive'Ashi's: swarmers and stingers, all of them elite. It is reckoned the largest of the hives.",
 			"It is also only one. The hives' foundations run under the sand across the whole zone, and there are far too many of them to count, let alone clear.",
 			"That is the Cenarion Circle's problem in one sentence. They can hold a fort and they can kill what comes out of a hive. They cannot do anything about what the hives are connected to.",
 		},

@@ -1254,7 +1254,7 @@ SubsOf("Arathi Highlands", {
 		lore = {
 			"Past the Church of the Holy Light's chapel in Stromgarde there is an inner room, and under it the Trollbane family crypt. A graveyard lies alongside the church. Stromgarde Soldiers hold this part of the city.",
 			"Prince Galen Trollbane keeps to the chapel. He is what remains of the royal line: his father Thoras is dead, the kingdom came apart, and Galen holds a church and the ground immediately around it while the Syndicate and the Boulderfist ogres divide up the rest.",
-			"Thoras was the last king here. He put Stromgarde into the Alliance of Lordaeron and then took it back out again when Lordaeron would not act on the internment camps, and he carried a line that ran to Thoradin and the founding of Arathor. The crypt under this floor is where that family is kept.",
+			"Thoras was the last king here, and he carried a line that ran back to Thoradin and the founding of Arathor. He was a founding member of the Alliance of Lordaeron and he took Stromgarde back out of it, over the orcs in the internment camps: he wanted every one of them executed, argued it bitterly with Terenas, who was a close friend, and withdrew when Lordaeron refused. The crypt under this floor is where that family is kept.",
 		},
 		readMore = { "Wowpedia: Stromgarde Keep", "Wowpedia: Thoras Trollbane", "Wowpedia: Arathor" },
 	},
@@ -1497,11 +1497,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "The Stockpile", parent = "Stranglethorn Vale", faction = "Hostile",
-		hook = "A cave of stolen goods on the northern coast, run by whoever currently holds it.",
+		hook = "The cave at the back of Kurzen's Compound, where his best troops are kept.",
 		lore = {
-			"The Stockpile is a smugglers' and bandits' cache in the northern jungle. Its contents and its owners change regularly.",
-			"Stranglethorn has no law outside Booty Bay's docks, and places like this are the practical consequence.",
+			"The Stockpile is a cave deep at the back of Kurzen's Compound, and Kurzen keeps his special forces in it: commandoes and headshrinkers rather than the regular troops outside.",
+			"Sergeant Yohwa of the rebels, who served with many of them, says plainly that they are skilled, loyal and cruel, and that going in after them is no easy task. When they are not in the cave they are out in the wilderness killing her people.",
 		},
+		readMore = { "Wowpedia: Stockpile", "Wowpedia: Special Forces", "Wowpedia: Kurzen's Compound" },
 	},
 })
 
@@ -2249,11 +2250,12 @@ SubsOf("Eastern Plaguelands", {
 	},
 	{
 		name = "The Undercroft", parent = "Eastern Plaguelands", faction = "Hostile",
-		hook = "A crypt near Darrowshire, raided by necromancers.",
+		hook = "A crypt in the south-west, and the hideout of a gang of dead troll body-thieves.",
 		lore = {
-			"The Undercroft is a burial site the Scourge's necromancers have been working, by which anyone local means harvesting.",
-			"Every graveyard in this zone is a resource to the Scourge, and the Dawn cannot guard them all.",
+			"The Undercroft is a crypt in the south-western Plaguelands, and what lives in it is a band of undead trolls under Zaeldarr the Outcast. They come out at night, go to Light's Hope Chapel, take bodies out of the grave pit below it and carry them back here. Caretaker Alen, whose pit it is, describes this as mischief and wants the head of their leader for it.",
+			"Behind the crypt there is a mound of dirt beside a wagon, with a chest buried in it and a note explaining the chest. Infiltrator Hameya wrote the note while he still could: he and his brethren ate bad meat on the road to Zul'Mashar and changed, he can feel a lich's words urging him on to infect more of his own people, and the note asks the reader to kill him and keep what is buried. He has the key.",
 		},
+		readMore = { "Wowpedia: Undercroft", "Wowpedia: Zaeldarr the Outcast", "Wowpedia: Hameya's Plea" },
 	},
 	{
 		name = "Northpass Tower", parent = "Eastern Plaguelands", faction = "Contested",
@@ -2311,11 +2313,12 @@ SubsOf("Deadwind Pass", {
 	},
 	{
 		name = "The Vice", parent = "Deadwind Pass", faction = "Hostile",
-		hook = "A narrow cleft off the main road, held by ogres.",
+		hook = "The ogre ground in the southern pass, mounds and camps along the Karazhan road.",
 		lore = {
-			"The Vice is a side canyon the Deadwind ogres use as a camp. It is the only organised presence in the pass besides whatever is in the tower.",
-			"Ogres are indifferent to history. Nothing else could live next to Karazhan so comfortably.",
+			"The Vice is where the Deadwind ogres live: several mounds and camps rather than one, scattered along the road south towards Karazhan. Brutes, maulers and ogre magi hold them, with Deadwind warlocks among them, and they are the only organised presence in the pass besides whatever is in the tower.",
+			"Why they settled a canyon with nothing in it but restless spirits and a few vultures is not a question anybody has an answer to.",
 		},
+		readMore = { "Wowpedia: Vice", "Wowpedia: Deadwind Pass" },
 	},
 })
 
@@ -2858,8 +2861,9 @@ SubsOf("Elwynn Forest", {
 		hook = "One half of a farming feud, with a child in love with the other half.",
 		lore = {
 			"The Stonefields farm in southern Elwynn and they loathe the Maclures next door. Nobody involved seems able to say exactly when it started or what it was about, beyond a generation of each accusing the other of theft.",
-			"It has gone the way these things do. A Stonefield child and a Maclure child have fallen in love, and the two families are the last to work it out.",
-			"Both farms have the same smaller troubles and will not compare notes on them, because comparing notes would mean speaking: kobolds in the Fargodeep Mine below them and gnolls in the woods. Elwynn is the quietest zone in the Eastern Kingdoms and its largest ongoing dispute is between two farms over nothing.",
+			"It has gone the way these things do. Tommy Joe Stonefield and Maybell Maclure are in love, he spends his time at the river west of the farm, and Gramma Stonefield is the one who works out that William Pestle at the inn could brew something to get Maybell Maclure off the vineyard for an afternoon.",
+			"The rest of the household has its own business. Bernice Stonefield lost her necklace and is sure Billy Maclure took it, and she is right: he dropped it near the Fargodeep Mine and a big gold-toothed kobold picked it up and carried it in. Ma Stonefield wants the Brackwells' prize sow dead, because Princess keeps coming over from the pumpkin patch to eat the vegetables, and will pay for the collar as proof.",
+			"Elwynn is the quietest zone in the Eastern Kingdoms and its largest ongoing dispute is between two farms over nothing. The Fargodeep Mine sits almost due south of Goldshire between the two homesteads, which is how most people find out where either of them is.",
 		},
 		didYouKnow = "The feud is a nod to the Hatfields and the McCoys, and the romance to Romeo and Juliet. Elwynn's writers were having a good day.",
 		readMore = { "Wowpedia: Stonefield Farm", "Wowpedia: Elwynn Forest" },
@@ -2871,7 +2875,7 @@ SubsOf("Elwynn Forest", {
 		lore = {
 			"The Maclures grow grapes on the southern slopes of Elwynn, next door to the Stonefields, with whom they are not on speaking terms. Joshua Maclure is the vintner and Pa Maclure holds the farm.",
 			"The feud has a hole in the middle of it. Maybell Maclure and Tommy Joe Stonefield are in love, and getting her off the vineyard to meet him has taken a note to William Pestle at the inn, a trip to the murlocs at Crystal Lake for crystal kelp, and a bottle of invisibility liquor brewed out of it.",
-			"The rest of the rivalry runs on small grievances. Bernice Stonefield is sure Billy Maclure took her necklace and the pie that goes back across to him is sent with the wish that he chokes on it, though a pork belly pie does improve his mood. The Brackwell prize sow comes over to eat the vegetables often enough that somebody has put a price on her collar.",
+			"The rest of the rivalry runs on small grievances. Bernice Stonefield is sure Billy Maclure took her necklace, and he will say who has it in exchange for a pork belly pie that she is the one who bakes. He is usually to be found scuttling about the vines.",
 			"Elwynn's real problems are elsewhere: the Defias are in the hills, kobolds are in the Fargodeep Mine almost due south of Goldshire between the two homesteads, and Hogger is in the woods. Over a dozen boars root about the vineyard rows.",
 		},
 		readMore = { "Wowpedia: Maclure Vineyards", "Wowpedia: Elwynn Forest" },
@@ -2961,7 +2965,7 @@ SubsOf("Silverpine Forest", {
 		hook = "Silverpine's shore of Lordamere Lake, running up to the old capital.",
 		lore = {
 			"The Shining Strand is the lakeshore, stretching from Lordaeron's capital city in the north down to the hills that divide Silverpine from the Alterac Mountains.",
-			"The Vile Fin murlocs had settlements all along it and made the walk genuinely dangerous. They have since moved out to the Dawning Isles, improving the strand and ruining the islands.",
+			"The Vile Fin murlocs have settlements the whole length of it and they make the walk dangerous: lakestalkers, shredders, tidecallers, tidehunters, oracles and shorecreepers, in numbers no other stretch of Silverpine has to deal with. Their hold on the Dawning Isles out in the lake is the same tribe.",
 			"The capital at the north end is the Ruins of Lordaeron, with the Undercity dug out beneath it. A pleasant name for a shoreline that leads to that.",
 		},
 		readMore = { "Wowpedia: Shining Strand", "Wowpedia: Lordamere Lake", "Wowpedia: Silverpine Forest" },
