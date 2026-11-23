@@ -44,7 +44,7 @@ sub	Lake Mereldar	Eastern Plaguelands	Contested		Polluted lake south of Corin's 
 sub	Bal'lal Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in northern Stranglethorn
 sub	Balia'mah Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin held by Bloodscalp trolls
 sub	Ziata'jai Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin in the central jungle
-sub	Tkashi Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin near Lake Nazferiti
+sub	Tkashi Ruins	Stranglethorn Vale	Hostile		Old troll ruin south-west of Nesingwary's Expedition, held by the Bloodscalp
 sub	Zuuldaia Ruins	Stranglethorn Vale	Hostile		Gurubashi ruin on the southern coast near Booty Bay
 sub	The Vile Reef	Stranglethorn Vale	Hostile		Murlocs living in sunken Gurubashi ruins on a reef off the coast; the naga reading is RPG-only and non-canon
 sub	Crystalvein Mine	Stranglethorn Vale	Hostile		Kurzen-held mine in the jungle interior
@@ -63,7 +63,7 @@ sub	Scuttle Coast	Durotar	Contested		Durotar's southeastern coast, near the Echo
 sub	Deadeye Shore	Durotar	Contested		Durotar coastline where Kul Tiras marines were wrecked
 sub	The Rolling Plains	Mulgore	Horde		Southern Mulgore grassland from Bloodhoof Village to the Barrens border; a Windfury harpy nest at its east end
 sub	Ravaged Caravan	Mulgore	Contested		Destroyed caravan in Mulgore, picked over by gnolls
-sub	Thorn Hill	The Barrens	Horde		Razormane quilboar settlement under Tortusk, on the hilltop between the Crossroads and Durotar
+sub	Thorn Hill	The Barrens	Horde		Razormane quilboar settlement on the hilltop between the Crossroads and Durotar, with Elder Mystic Razorsnout on it and the Crossroads' stolen supply crates stacked up
 sub	Boulder Lode Mine	The Barrens	Hostile		Venture Company mine in the northern Barrens
 sub	Blackthorn Ridge	The Barrens	Hostile		Quilboar ridge in the southern Barrens
 sub	The Merchant Coast	The Barrens	Contested		Southeastern Barrens coast, Southsea pirates

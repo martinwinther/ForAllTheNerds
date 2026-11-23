@@ -425,11 +425,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Twilight Vale", parent = "Darkshore", faction = "Hostile",
-		hook = "The valley behind the Master's Glaive, thick with cultists.",
+		hook = "The southern forests of Darkshore, named for the dusk and not for the cult.",
 		lore = {
-			"Twilight Vale is the Twilight Hammer's ground in Darkshore, running inland from the Glaive.",
-			"The cult has three separate camps along this coast. For an organisation this secretive that is a substantial commitment.",
+			"Twilight Vale is the name of Darkshore's southern forests, running from below Ameth'Aran down to the Ashenvale border. Nothing of the Twilight's Hammer is in it. The name belongs to the half-light this coast sits in permanently, the same half-light Darkshore is named for.",
+			"What is in the woods is the zone's own trouble. Blackwood ursas and shaman hold the ground in numbers, moonstalkers hunt it, and the deer are visibly sick. Travellers are advised to keep to the roads through the vale, and the advice has something behind it.",
 		},
+		readMore = { "Wowpedia: Twilight Vale", "Wowpedia: Blackwood tribe", "Wowpedia: Darkshore" },
 	},
 	{
 		name = "Blackwood Den", parent = "Darkshore", faction = "Hostile",
@@ -755,7 +756,7 @@ SubsOf("Ashenvale", {
 		hook = "The Warsong's other logging camp, out in the southeast where nobody is watching.",
 		lore = {
 			"This is not the Warsong Lumber Camp. That is the main operation; this is a smaller one in the southeast of the forest, east of Fallen Sky Lake, where loggers and harvesters work under a handful of orcish guards.",
-			"Two camps instead of one is the part worth noticing. The Horde's timber operation in Ashenvale is not a single site the Sentinels could close down and be finished with. It spreads, and this is where it has spread to.",
+			"Two camps instead of one is the part worth noticing. The Horde's timber operation in Ashenvale is not a single site the Sentinels could close down and be finished with. It spreads, and this is where it has spread to. The isolation cuts both ways: Alliance adventurers come out here precisely because the guards can be killed without anything coming of it.",
 			"It stands a short walk from the Dor'Danil Barrow Den, where night elf druids were laid down to sleep in the earth. Nobody at the camp seems to have been told that, or to have asked.",
 		},
 		readMore = { "Wowpedia: Warsong Labor Camp", "Wowpedia: Ashenvale" },
@@ -808,11 +809,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Thistlefur Village", parent = "Ashenvale", faction = "Hostile",
-		hook = "A furbolg village gone over to corruption.",
+		hook = "The Thistlefur's own village, east of the Zoram Strand.",
 		lore = {
-			"The Thistlefur furbolgs have fallen the way the Gnarlpine and Blackwood did, and they hold a village in northern Ashenvale.",
-			"Furbolg corruption across the northern forests is widespread, and the source is generally traced to the demonic taint left after the Third War, worst of all in Felwood next door.",
+			"Thistlefur Village is the Thistlefur tribe's home, east of the Zoram Strand in north-western Ashenvale, and they attack anyone who comes near. Avengers and shaman make up most of it. Dal Bloodclaw and Rorgish Jowl are the two warriors leading them, and Raene Wolfrunner in Astranaar wants Dal Bloodclaw's skull brought to her.",
+			"They have made enemies on both sides. A party of trolls carrying sacred charms to Zoram'gar Outpost was attacked and killed by the Thistlefur before it arrived.",
+			"The tribe has fallen the way the Gnarlpine and Blackwood did. Furbolg corruption across the northern forests is widespread, and the source is generally traced to the demonic taint left after the Third War, worst of all in Felwood next door.",
 		},
+		readMore = { "Wowpedia: Thistlefur Village", "Wowpedia: Dal Bloodclaw", "Wowpedia: Thistlefur tribe" },
 	},
 	{
 		name = "Bough Shadow", parent = "Ashenvale", faction = "Hostile",
@@ -1961,11 +1964,13 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Twilight Base Camp", parent = "Silithus", faction = "Hostile",
-		hook = "A Twilight Hammer camp, working to help an Old God out of its prison.",
+		hook = "The cult's camp in central Silithus, with the wind stones they talk through.",
 		lore = {
-			"The Twilight Hammer maintain several camps across Silithus, and their goal is explicit: they want C'Thun free.",
-			"The cult worships the Old Gods and believes the world should end. They are not negotiating and they have been at this since before anyone was paying attention.",
+			"Twilight Base Camp is one of four Twilight's Hammer camps in Silithus and sits in the middle of the zone. Twilight Keeper Havunth walks it with avengers, geolords and stonecallers around him, and a bonfire going.",
+			"The stones are what the camp is for. Each of the cult's camps has wind stones of three sizes standing in it, and a cultist communes through them: the lesser and ordinary ones reach the Abyssal Council's dukes, and only the top-ranking members of the Twilight's Council may speak through a greater wind stone to the Council's lords. Aurel Goldleaf at Cenarion Hold has worked out what that is worth. Dressed in the cult's own trappings, with a ring of lordship and a medallion of station, somebody can activate a greater stone, be taken for a servant of the Council, and lure a Lord into an ambush.",
+			"The cult worships the Old Gods and wants C'Thun out from under Ahn'Qiraj. They are not negotiating.",
 		},
+		readMore = { "Wowpedia: Twilight Base Camp", "Wowpedia: Lords of the Council", "Wowpedia: Wind stone" },
 	},
 	{
 		name = "Southwind Village", parent = "Silithus", faction = "Hostile",
@@ -2245,12 +2250,13 @@ SubsOf("The Barrens", {
 SubsOf("Silithus", {
 	{
 		name = "Twilight Outpost", parent = "Silithus", faction = "Hostile",
-		hook = "A Twilight's Hammer camp in the desert, dug in over something they want let out.",
+		hook = "The cult camp pitched against the Scarab Wall itself.",
 		lore = {
-			"The Twilight's Hammer began as a Horde clan under Cho'gall in the Second War. What they are now is a doomsday cult that serves the Old Gods, and Silithus is where they have concentrated.",
-			"The reason is underneath. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans could not kill and settled for burying, and the qiraji are its army. The cult is not here to fight the qiraji.",
-			"Their presence is the strongest argument anybody has for reopening the gates deliberately rather than waiting to see what comes through them. It is not a comfortable argument.",
+			"Twilight Outpost is in the far south-western corner of Silithus, just north-west of the Scarab Wall and west of the Bronzebeard Encampment. Of the cult's four camps this is the one sitting against the thing they want opened. Twilight Keeper Exeter holds it, with a twilight master, avengers, geolords and stonecallers, and the usual run of wind stones.",
+			"The Twilight's Hammer began as a Horde clan under Cho'gall in the Second War. What they are now is a doomsday cult serving the Old Gods, and Ahn'Qiraj behind that wall holds C'Thun, one of the Old Gods the titans buried rather than killed.",
+			"Their being camped here is the strongest argument anybody has for opening the gates deliberately rather than waiting to see what comes through them. It is not a comfortable argument.",
 		},
+		readMore = { "Wowpedia: Twilight Outpost", "Wowpedia: Twilight's Hammer", "Wowpedia: Scarab Wall" },
 		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: C'Thun", "Wowpedia: Ahn'Qiraj" },
 	},
 })
@@ -2299,7 +2305,8 @@ SubsOf("Ashenvale", {
 		lore = {
 			"There was a night elf city here called Zoram. The Great Sundering destroyed it and most of it went down beneath the Veiled Sea, and what is left is a strip of beach with the coastline rearranged around it.",
 			"The naga hold it now, and the wreckage along the shore is the evidence: ships broken up and sea creatures beached. The naga are the Highborne who went under with the Sundering and did not die, so their presence on the ruins of a drowned night elf city is a homecoming of a sort.",
-			"Blackfathom Deeps opens off this strand, which was a temple of Elune before the water took it.",
+			"Talen keeps a thin camp near the strand and is the reason anyone goes out onto it. He was taking a small vessel over the submerged ruins when the naga came up out of the water at him, and in getting ashore he lost an ancient statuette he had braved the place for. The statuette locks, and the key to it is the Ring of Zoram.",
+			"Blackfathom Deeps opens off the strand, a temple of Elune before the water took it, and the naga are down there cutting sapphire clusters out of the walls of its first tunnels. Vorsha the Lasher, a hydra, comes out of the same sea at the Horde's outpost on the strand, unprovoked each time.",
 		},
 		readMore = { "Wowpedia: Zoram Strand", "Wowpedia: Great Sundering", "Wowpedia: Naga" },
 	},
@@ -2767,9 +2774,9 @@ SubsOf("Darkshore", {
 		name = "Twilight Shore", parent = "Darkshore", faction = "Neutral",
 		hook = "The roughest stretch of Darkshore's coast, running down to Ashenvale.",
 		lore = {
-			"The Twilight Shore is southern Darkshore's coastline, starting below the Long Wash and running all the way down to the Ashenvale border. It is the most broken part of the coast, and the beaches are grey.",
+			"The Twilight Shore is southern Darkshore's coastline, starting below the Long Wash, whose own end lies due west of Ameth'Aran, and running all the way down to the Ashenvale border. It is the most rugged part of the coast: grey beaches broken up by jutting cliffs, with small islands off the southern end.",
+			"Murlocs are all over it, and the water is worse than the sand: threshadons lie off the shore and go for anyone swimming in. The beach is walked rather than approached from the sea.",
 			"Darkshore is a drowned shoreline. The Sundering rearranged this whole edge of Kalimdor, and the night elf ruins along it, Ameth'Aran and Bashal'Aran among them, are what was above water when the sea finished moving.",
-			"The Wildbend River comes out near here, carrying Felwood's corruption down from the mountains. Darkshore gets other people's damage from both directions.",
 		},
 		readMore = { "Wowpedia: Twilight Shore", "Wowpedia: Darkshore", "Wowpedia: Great Sundering" },
 	},
@@ -2816,7 +2823,7 @@ SubsOf("Silithus", {
 		name = "Twilight Post", parent = "Silithus", faction = "Hostile",
 		hook = "A Twilight's Hammer camp in the north-west, well away from the Cenarion watch.",
 		lore = {
-			"The Twilight Post sits in north-western Silithus, a long way west of Cenarion Hold. Twilight Lord Everun and Twilight Keeper Mayna are the names attached to it, with geolords and stonecallers under them.",
+			"The Twilight Post sits in north-western Silithus, a long way west of Cenarion Hold and north-west of Twilight Base Camp. Twilight Lord Everun and Twilight Keeper Mayna are the names attached to it, with avengers, geolords and stonecallers under them, and wind stones of all three sizes standing about the camp.",
 			"The Twilight's Hammer are not in Silithus by accident. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans buried rather than killed, and the cult serve the Old Gods directly.",
 			"The Cenarion Circle hold the only real position in this desert and are trying to contain the qiraji. The cult are trying to let them out. Both are camped in the same sand.",
 		},
@@ -2826,8 +2833,8 @@ SubsOf("Silithus", {
 		name = "Twilight's Run", parent = "Silithus", faction = "Hostile",
 		hook = "A cult cave at the foot of Staghelm Point.",
 		lore = {
-			"Twilight's Run is a cave in northern Silithus, under Staghelm Point, and it is full of Twilight's Hammer.",
-			"The point above it is named for Fandral Staghelm, the night elf Archdruid who planted Teldrassil without the dragons' blessing and who lost his son Valstann in the War of the Shifting Sands, fought over this very desert.",
+			"Twilight's Run is a cave at the foot of Staghelm Point in northern Silithus, and it is full of Twilight's Hammer. Vyral holds it, with twilight overlords beside him and flamereavers through the rest of the cave, and braziers burning in it.",
+			"Nobody is sure which Staghelm the point above is named for. It is either Fandral, the night elf Archdruid who led the armies in the War of the Shifting Sands and later planted Teldrassil without the dragons' blessing, or his son Valstann, who fell in that war, fought over this very desert.",
 			"So a cult serving the thing under Ahn'Qiraj has made itself a cave beneath a monument to the man whose grief helped seal it. Silithus is full of arrangements like that.",
 		},
 		readMore = { "Wowpedia: Twilight's Run", "Wowpedia: Fandral Staghelm", "Wowpedia: Twilight's Hammer" },

@@ -139,11 +139,13 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Westbrook Garrison", parent = "Elwynn Forest", faction = "Alliance",
-		hook = "The fortified gate between Elwynn and Westfall, now the kingdom's line against the Defias.",
+		hook = "An undermanned barracks at Elwynn's western edge, with Hogger's poster on the wall.",
 		lore = {
-			"Westbrook was built to watch the western road. It now has a far more awkward job: the Defias Brotherhood operating out of Westfall are not foreign invaders but Stormwind's own former stonemasons, and the garrison is effectively holding the border against its own citizens.",
-			"The Riverpaw gnolls in the hills nearby are the simpler half of the garrison's work, and the half the soldiers prefer to talk about.",
+			"Westbrook Garrison is a Stormwind Guard barracks at Forest's Edge, on Elwynn's western end near the Westfall border. Deputy Rainer has it, with guards, two quartermasters and a morale officer. The bulk of the Stormwind army is abroad and the garrison has barely enough men to keep the roads of the region open.",
+			"Its work is the Riverpaw pack in the woods to the south. Deputy Rainer asked Marshal Dughan in Goldshire for more soldiers and was sent adventurers instead. That is how most of that fighting gets done.",
+			"On the garrison wall there are wanted posters for Hogger, the Riverpaw chieftain, who has seen off every attempt at taking him so far.",
 		},
+		readMore = { "Wowpedia: Westbrook Garrison", "Wowpedia: Riverpaw Gnoll Bounty", "Wowpedia: Hogger" },
 	},
 	{
 		name = "Valley of Heroes", parent = "Stormwind City", faction = "Alliance",
@@ -589,7 +591,8 @@ SubsOf("Loch Modan", {
 		hook = "The dwarven town on the loch's west shore, famous for its blood sausage.",
 		lore = {
 			"Thelsamar is Loch Modan's main settlement: an inn, a smith, a flight path and the administration for the valley's mining and digging concerns. It is comfortable in a way Dun Morogh's towns are not, because it is not on a glacier.",
-			"The town handles the practical side of the Explorers' League's work in the valley, and is full of dwarves with strong opinions about potsherds.",
+			"The town handles the practical side of the Explorers' League's work in the valley, and is full of dwarves with strong opinions about potsherds. There is never a shortage of empty bellies in it either, with children running in and out and the excavation crews coming in at the end of a day.",
+			"The blood sausage is the town's own. Vidra Hearthstove makes it and will give out the recipe to anyone who fetches the ingredients: bear meat, boar intestines for the casings and spider ichor for spice. She recommends eating them fresh.",
 		},
 	},
 	{
@@ -637,11 +640,13 @@ SubsOf("Loch Modan", {
 	},
 	{
 		name = "Valley of Kings", parent = "Loch Modan", faction = "Alliance",
-		hook = "The great carved gateway between Dun Morogh and Loch Modan.",
+		hook = "Two carved kings standing over the locked gate to the Searing Gorge.",
 		lore = {
-			"The valley is the road between the dwarven heartland and the loch, and the dwarves have carved it accordingly. The statuary is a statement about who owns these mountains.",
-			"It is also a chokepoint, and it has been fortified as one for as long as Ironforge has had enemies to the east.",
+			"The Valley of Kings is the south-western corner of Loch Modan, west of Stonesplinter Valley. The South Gate Pass clips a piece of it, but what the valley is really for is the road south into the Searing Gorge.",
+			"The two kings are Madoran Bronzebeard and Khardros Wildhammer, and the statues were raised by their sons after both men were dead. They stand over the pass into the southlands, gone volcanic under Ragnaros by then, as a warning to anyone minded to attack the dwarven kingdoms and a reminder of the price the Dark Irons paid for trying.",
+			"The gate itself stays shut. Mountaineer Pebblebitty keeps it and keeps the lever, and will not open it for anyone who has not satisfied her, a position she enjoys. She also has a history with Margol out in the Badlands, and she will tell you that any horn you bring her is a fake because she has seen the real one close up.",
 		},
+		readMore = { "Wowpedia: Valley of Kings", "Wowpedia: War of the Three Hammers", "Wowpedia: Mountaineer Pebblebitty" },
 	},
 	{
 		name = "Grizzlepaw Ridge", parent = "Loch Modan", faction = "Contested",
@@ -802,11 +807,13 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Vul'Gol Ogre Mound", parent = "Duskwood", faction = "Hostile",
-		hook = "An ogre mound in the western woods, with worgen pressing in on it.",
+		hook = "A basin in southern Duskwood, overrun by Splinter Fist ogres and named for their chief.",
 		lore = {
-			"The Vul'Gol ogres held this mound before the darkness came and have carried on holding it since, apparently without noticing the difference.",
-			"They now have competition. Worgen have spread into Duskwood, and the ogres are finding the new neighbours harder to deal with than the Night Watch ever was.",
+			"The mound is a small basin in southern Duskwood, just south-west of where the road splits and runs on into Stranglethorn. The Splinter Fist ogres have all of it, under Zzarc' Vul, and the place is named after him. Humans lived in the basin once, as the ruined farmhouses still show.",
+			"The walls are thick with ore, copper through to gold, and nobody is mining any of it. What the ogres do collect is other people's property: Abercrombie had a crate of tools and herbs taken off him and carried in here, and he wants it back.",
+			"The Night Watch will not spend its own few members on the place and pays others to thin the ogres instead. Viktori Prism'Antras has a narrower interest and wants Zzarc' Vul's monocle for his research.",
 		},
+		readMore = { "Wowpedia: Vul'Gol Ogre Mound", "Wowpedia: Zzarc' Vul", "Wowpedia: Ogre Thieves" },
 	},
 	{
 		name = "Manor Mistmantle", parent = "Duskwood", faction = "Contested",
@@ -835,11 +842,12 @@ SubsOf("Duskwood", {
 	},
 	{
 		name = "Tranquil Gardens Cemetery", parent = "Duskwood", faction = "Contested",
-		hook = "Darkshire's own graveyard, watched far more closely than the name suggests.",
+		hook = "Darkshire's graveyard, and the ghoul who stole Blind Mary's looking glass.",
 		lore = {
-			"The Gardens serve Darkshire itself, and the Night Watch guards them with real attention. A rising in this cemetery would be a disaster rather than a patrol.",
-			"The town's funeral customs have changed since the darkness came, and not subtly. Nobody in Darkshire buries anybody casually.",
+			"The Tranquil Gardens lie a little south-east of Darkshire and the name has stopped applying. Its dead are up and walking, around a ruined church, though they are the weakest undead in Duskwood and the town has worse problems further out.",
+			"The one in the cemetery worth knowing about is the Insane Ghoul. Blind Mary, whose house is just north of the graves, threw a looking glass out behind her barn after what she calls the incident, and the ghoul used to roam back there and is thought to have picked it up. Viktori Prism'Antras in Darkshire wants that glass: he and Cog are building a machine for looking at the stars and need a lens big enough.",
 		},
+		readMore = { "Wowpedia: Tranquil Gardens Cemetery", "Wowpedia: Look To The Stars", "Wowpedia: Blind Mary" },
 	},
 	{
 		name = "Beggar's Haunt", parent = "Duskwood", faction = "Hostile",
@@ -951,11 +959,12 @@ SubsOf("Wetlands", {
 	},
 	{
 		name = "Thelgen Rock", parent = "Wetlands", faction = "Hostile",
-		hook = "A flooded mine shaft full of things the water brought in.",
+		hook = "A spider cave in the marsh, with volatile ore in its walls.",
 		lore = {
-			"Thelgen Rock was a dwarven working that the marsh reclaimed. When the water came in, the mine became a cave system, and the cave system acquired tenants.",
-			"The Wetlands work to one rule above all others: anything built here eventually becomes swamp.",
+			"Thelgen Rock is an extensive cavern running deep into the mountains of the southern Wetlands, north-west of Algaz Gate, and it is crawling with spiders. Cave stalkers and leech stalkers hold most of it, with the Leech Widow somewhere inside.",
+			"The reason anybody goes in is in the walls. Incendicite is a rare ore, volatile enough that it is hard to handle without blowing yourself up, and Pilot Stonegear up at Steelgrill's Depot is convinced that smelted the right way it would make cannon shells worth having. He is content to let somebody else do the experimenting.",
 		},
+		readMore = { "Wowpedia: Thelgen Rock", "Wowpedia: Search for Incendicite" },
 	},
 	{
 		name = "Ironbeard's Tomb", parent = "Wetlands", faction = "Contested",
@@ -1839,11 +1848,12 @@ SubsOf("The Hinterlands", {
 	},
 	{
 		name = "Valorwind Lake", parent = "The Hinterlands", faction = "Contested",
-		hook = "A clear lake in the central forest, below Aerie Peak.",
+		hook = "A small lake north-east of Shadra'Alor, and the only place one mushroom grows.",
 		lore = {
-			"Valorwind is the Hinterlands' main lake and sits in the valley below the Wildhammer hold.",
-			"It is one of the more pleasant places in the zone, mostly meaning the trolls have not built anything on it.",
+			"Valorwind Lake is small and sits north-east of Shadra'Alor. Nothing has been built on it, and in the Hinterlands that counts as a distinction of its own.",
+			"What it has is the Violet Tragan, a mushroom that grows underwater and grows nowhere else in the world. Sprinkle, a goblin in Gadgetzan, puts it in everything on the grounds that it makes anything taste good, a view she formed in childhood from her sister's cooking.",
 		},
+		readMore = { "Wowpedia: Valorwind Lake", "Wowpedia: Sprinkle's Secret Ingredient" },
 	},
 })
 
@@ -1868,8 +1878,9 @@ SubsOf("Searing Gorge", {
 		name = "Thorium Point", faction = "Neutral", levels = "45-55",
 		hook = "The Dark Iron dwarves who walked away from Ragnaros, selling to everyone.",
 		lore = {
-			"The Thorium Brotherhood are Dark Irons who rejected Ragnaros' service and set out to be smiths again rather than slaves. Thorium Point is their camp, and they keep it neutral.",
-			"They are the best metalworkers in the world and they know it. Alliance and Horde both court them, and the Brotherhood's price is usually information or materials from Blackrock Mountain.",
+			"The Thorium Brotherhood are Dark Irons who rejected Ragnaros' service and set out to be smiths again rather than slaves. Thorium Point is their camp, in the north-west of the Searing Gorge, and they keep it neutral in the practical sense: dwarves of both kinds and orcs work out of it, and there is an anvil and a flight path for anyone who gets that far.",
+			"Overseer Oilfist runs the place. The Brotherhood's quarrel with its own past is still live, and he is the one who put out the order on Overseer Maltorius down in the Cauldron, an agent of theirs who went over to the Dark Iron.",
+			"Alliance and Horde both court them, and the Brotherhood's price is usually information or materials out of Blackrock Mountain.",
 		},
 	},
 	{
@@ -2643,7 +2654,7 @@ SubsOf("Stranglethorn Vale", {
 		name = "Venture Co. Operations Center", parent = "Stranglethorn Vale", faction = "Hostile",
 		hook = "A goblin oil platform on a jungle lake, run by the cartel that does not pretend to be neutral.",
 		lore = {
-			"The Venture Company put an oil platform on a lake in northern Stranglethorn, and they have it staffed with mechanics and geologists rather than soldiers. They are prospecting.",
+			"The Venture Company put an oil platform on a lake in northern Stranglethorn, and they have it staffed with mechanics and geologists rather than soldiers. Foreman Cozzle runs it, with a workboss under him and a lumberjack about the place, so the prospecting is not the only thing they have in mind.",
 			"The Venture Company is the goblin cartel that broke the pattern. Steamwheedle, who run Booty Bay and Ratchet and Gadgetzan, make their money by being neutral and useful to both sides. The Venture Company decided extraction was more profitable than arbitration.",
 			"So they are the one goblin outfit that gets treated as an enemy by everybody, and they are in Stranglethorn, Mulgore, the Barrens and Desolace doing the same thing in each.",
 		},

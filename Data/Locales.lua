@@ -284,11 +284,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Tkashi Ruins", faction = "Hostile",
-		hook = "A ruin on the shore of Lake Nazferiti, with the lake's own problems at the door.",
+		hook = "Old troll ruins south-west of Nesingwary's camp, with Bloodscalp living in them.",
 		lore = {
-			"Tkashi stands on the great jungle lake, and the Gurubashi built heavily all round that water. Fresh water in Stranglethorn meant the same to them as it does to everybody else.",
-			"Trolls, raptors and crocolisks hold the shoreline now in roughly equal measure. The ruins are the least dangerous thing on it.",
+			"The Tkashi Ruins are ancient troll work in the middle of Stranglethorn, south-west of Nesingwary's Expedition, and a large group of Bloodscalp live in them now rather than merely passing through.",
+			"Hemet Nesingwary's own account of coming through the ruins is that his party did so without incident, the kind of remark that reads differently depending on who is making it.",
 		},
+		readMore = { "Wowpedia: Tkashi Ruins", "Wowpedia: Bloodscalp tribe" },
 	},
 	{
 		name = "Zuuldaia Ruins", faction = "Hostile",
@@ -876,6 +877,7 @@ SubsOf("The Barrens", {
 		hook = "A Razormane quilboar settlement on the hilltop between the Crossroads and Durotar.",
 		lore = {
 			"Thorn Hill is a settlement of some size, set on the north face of a hilltop on the road between the Crossroads and Durotar. The Razormane hold it in numbers.",
+			"Geomancers and defenders make up most of them, with Elder Mystic Razorsnout on the hill. What gives the place away is the plunder: the Crossroads' own supply crates are stacked up here, taken off Horde caravans on the road below, and that is what finally drew the attention of the Barrens' security.",
 			"Its position is the whole problem. That road is the main link between Orgrimmar and the Barrens' interior, and the Horde does not control the ground beside it. Quilboar were in this country long before the orcs crossed the sea and have never recognised the claim.",
 		},
 	},
@@ -971,11 +973,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Thunder Falls", faction = "Contested",
-		hook = "A waterfall in the eastern forest, loud enough to name itself.",
+		hook = "A ravine in north-western Elwynn with waterfalls at both ends and bandits in the middle.",
 		lore = {
-			"The falls come down off the high ground toward Eastvale, feeding the streams that water the eastern half of Elwynn.",
-			"Nothing of consequence has ever happened here, which in a kingdom that has been sacked once and is currently losing three counties counts as a recommendation.",
+			"Thunder Falls is a narrow ravine up in the mountains of north-western Elwynn, reached by a steep path off the right of Mirror Lake's own waterfall. It is unusual in having falls at both ends, fed by a third coming off the cliffs to the north that cannot be reached at all. Follow the water out and it eventually drops again near the Westfall border.",
+			"Somebody lives up there. There is a small cottage in the ravine with an anvil and a fire going, a pier and a boat at the water, and a few bandits who presumably own all of it.",
 		},
+		readMore = { "Wowpedia: Thunder Falls", "Wowpedia: Elwynn Forest" },
 	},
 	{
 		name = "Mirror Lake Orchard", faction = "Hostile",
@@ -1176,11 +1179,13 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "Valgan's Field", faction = "Hostile",
-		hook = "Another emptied farm, with worgen in the treeline.",
+		hook = "The wheat farm where Arugal stayed first, with his spellbooks still in it.",
 		lore = {
-			"Valgan's is one of several holdings between the Sepulcher and Pyrewood that have been abandoned since Arugal's worgen got loose in this forest.",
-			"The archmage summoned them out of another world as weapons against the Scourge and lost control of them immediately. They have been spreading ever since.",
+			"Valgan's Field is a wheat farm north of the bridge in northern Silverpine, named for the man who worked it and who was killed or driven off when the Scourge came through. It stands empty now.",
+			"What is still in it is Arugal's. The archmage stayed here before the war and left spellbooks behind, and a Deathstalker who found them could not get them out. Dalar Dawnweaver at the Sepulcher wants one spell in particular, the Remedy of Arugal, so that he can turn the man's own magic against him and have Silverpine for the Dark Lady.",
+			"His opinion of the man is not a secret. He cannot understand how Arugal was ever accepted into the Kirin Tor, calls his spellcraft as transparent as a blown glass bauble, and holds that the old hack was not fit to clean chamber pots in Dalaran.",
 		},
+		readMore = { "Wowpedia: Valgan's Field", "Wowpedia: Arugal's Folly", "Wowpedia: Archmage Arugal" },
 	},
 	{
 		name = "The Decrepit Ferry", faction = "Contested",
@@ -1898,11 +1903,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Verdantis River", faction = "Contested",
-		hook = "The river through the northern jungle, running past the Dream portal.",
+		hook = "A small river in central Feralas, and the only water one fish lives in.",
 		lore = {
-			"The Verdantis cuts through northern Feralas, near Jademir Lake and the Dream Bough.",
-			"That bough is one of four places in this world where the Emerald Dream presses against the waking one. The green dragonflight guards all four and is not managing it.",
+			"The Verdantis weaves through central Feralas, south-east of Dire Maul. It is a small river and most of what crosses it does not stop.",
+			"The one thing it has is the Feralas ahi, which is caught here and nowhere else in the world. Nat Pagle sets it as one of the four rare fish anybody who wants to be taught by him has to bring in.",
 		},
+		readMore = { "Wowpedia: Verdantis River", "Wowpedia: Nat Pagle, Angler Extreme" },
 	},
 	{
 		name = "Idlewind Lake", faction = "Contested",

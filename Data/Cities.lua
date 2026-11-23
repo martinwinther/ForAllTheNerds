@@ -441,11 +441,12 @@ SubsOf("Darnassus", {
 	},
 	{
 		name = "Tradesmen's Terrace", faction = "Alliance",
-		hook = "Darnassus' market quarter, and the least night elven part of the city.",
+		hook = "Darnassus' commerce, in the south of the city, with ancients standing among the stalls.",
 		lore = {
-			"The Tradesmen's Terrace handles the city's commerce, including trade with the rest of the Alliance.",
-			"The night elves had no money economy to speak of before joining the Alliance. This quarter is an accommodation to allies who do.",
+			"The Tradesmen's Terrace is the large district in the south of Darnassus and the centre of the city's trade. Most of the vendors and shopkeepers are here, and so is the auction house. It opens off the Warrior's Terrace to the north and the Temple of the Moon and Temple Gardens to the west.",
+			"It is less of a concession to outsiders than the stalls suggest. Sentinels walk it, wisps drift through it, and ancient protectors stand among the merchants. The rest of the Alliance does not keep a market this way.",
 		},
+		readMore = { "Wowpedia: Tradesmen's Terrace", "Wowpedia: Darnassus" },
 	},
 	{
 		name = "The Temple Gardens", faction = "Alliance",
