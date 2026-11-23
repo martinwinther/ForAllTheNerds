@@ -210,11 +210,13 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "The Venture Co. Mine", parent = "Mulgore", faction = "Hostile",
-		hook = "A goblin mining operation drilling into tauren land without asking.",
+		hook = "An enormous goblin mine in the eastern cliffs, dug after the tauren said no.",
 		lore = {
-			"The Venture Company has set up on Mulgore's eastern edge and started extracting. They did not seek permission and they are not interested in the tauren's objections.",
+			"The Venture Company asked for mining rights in Mulgore, was refused, and dug anyway. The mine runs into the eastern cliffs and has three ways in, of which only the main one can be reached on foot: the second is a cliff and the third is a small lumber camp. Supervisor Fizsprocket sits at the main entrance and runs the whole of the company's business in the tauren homeland, with Enforcer Emilgund keeping order and supervisors and workers below.",
+			"The papers the tauren pulled out of the wrecked caravan on Stonebull Lake are what give the scale of the plan away. Mogul Razdunk and the advisory board were pressing the supervisor to take the operation into lumber as well, and were sending him their newest shredders and the materials for a mill.",
 			"Venture Co. is the goblin cartel that works without any pretence of neutrality or restraint. They are doing the same thing in the Barrens, Stranglethorn and Stonetalon.",
 		},
+		readMore = { "Wowpedia: Venture Co. Mine", "Wowpedia: Supervisor Fizsprocket", "Wowpedia: The Venture Co." },
 	},
 })
 
@@ -423,11 +425,12 @@ SubsOf("Darkshore", {
 	},
 	{
 		name = "Twilight Vale", parent = "Darkshore", faction = "Hostile",
-		hook = "The valley behind the Master's Glaive, thick with cultists.",
+		hook = "The southern forests of Darkshore, named for the dusk and not for the cult.",
 		lore = {
-			"Twilight Vale is the Twilight Hammer's ground in Darkshore, running inland from the Glaive.",
-			"The cult has three separate camps along this coast. For an organisation this secretive that is a substantial commitment.",
+			"Twilight Vale is the name of Darkshore's southern forests, running from below Ameth'Aran down to the Ashenvale border. Nothing of the Twilight's Hammer is in it. The name belongs to the half-light this coast sits in permanently, the same half-light Darkshore is named for.",
+			"What is in the woods is the zone's own trouble. Blackwood ursas and shaman hold the ground in numbers, moonstalkers hunt it, and the deer are visibly sick. Travellers are advised to keep to the roads through the vale, and the advice has something behind it.",
 		},
+		readMore = { "Wowpedia: Twilight Vale", "Wowpedia: Blackwood tribe", "Wowpedia: Darkshore" },
 	},
 	{
 		name = "Blackwood Den", parent = "Darkshore", faction = "Hostile",
@@ -528,11 +531,12 @@ SubsOf("The Barrens", {
 	},
 	{
 		name = "The Sludge Fen", parent = "The Barrens", faction = "Hostile",
-		hook = "A goblin industrial site poisoning the northern Barrens.",
+		hook = "An oil field in the north-east, where a pool of clear water used to be.",
 		lore = {
-			"The Venture Company is running an extraction operation here and dumping the waste into the water. The result is a spreading sludge that is killing everything downstream.",
-			"The Horde wants it stopped. Venture Co. has no interest, and the cartel has no central authority that the Horde can pressure.",
+			"The Sludge Fen was a pool of clear blue water until the Venture Company put an oil rig on top of it and turned it into a mire of industrial waste. Supervisor Lugwizzle runs the operation. The company has the north-east corner of the Barrens fairly well sewn up: a tower above the fen, a research facility to the south-west and the Boulder Lode Mine beyond it.",
+			"Goblin business being what it is, the fen's other distinction is being robbed by other goblins. Sputtervalve, of the Tinkers' Union in Ratchet, has Director Riddlevox pressing him for results on shredder development, decided that stealing the Venture Company's design was faster than beating it, and sent Wizzlecrank to drive one out of the fen. Wizzlecrank climbed into a shredder without first obtaining the key, and had to be dug out and escorted home with the company in pursuit.",
 		},
+		readMore = { "Wowpedia: Sludge Fen", "Wowpedia: Supervisor Lugwizzle", "Wowpedia: The Escape" },
 	},
 	{
 		name = "Mor'shan Rampart", parent = "The Barrens", faction = "Horde",
@@ -752,7 +756,7 @@ SubsOf("Ashenvale", {
 		hook = "The Warsong's other logging camp, out in the southeast where nobody is watching.",
 		lore = {
 			"This is not the Warsong Lumber Camp. That is the main operation; this is a smaller one in the southeast of the forest, east of Fallen Sky Lake, where loggers and harvesters work under a handful of orcish guards.",
-			"Two camps instead of one is the part worth noticing. The Horde's timber operation in Ashenvale is not a single site the Sentinels could close down and be finished with. It spreads, and this is where it has spread to.",
+			"Two camps instead of one is the part worth noticing. The Horde's timber operation in Ashenvale is not a single site the Sentinels could close down and be finished with. It spreads, and this is where it has spread to. The isolation cuts both ways: Alliance adventurers come out here precisely because the guards can be killed without anything coming of it.",
 			"It stands a short walk from the Dor'Danil Barrow Den, where night elf druids were laid down to sleep in the earth. Nobody at the camp seems to have been told that, or to have asked.",
 		},
 		readMore = { "Wowpedia: Warsong Labor Camp", "Wowpedia: Ashenvale" },
@@ -805,11 +809,13 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "Thistlefur Village", parent = "Ashenvale", faction = "Hostile",
-		hook = "A furbolg village gone over to corruption.",
+		hook = "The Thistlefur's own village, east of the Zoram Strand.",
 		lore = {
-			"The Thistlefur furbolgs have fallen the way the Gnarlpine and Blackwood did, and they hold a village in northern Ashenvale.",
-			"Furbolg corruption across the northern forests is widespread, and the source is generally traced to the demonic taint left after the Third War, worst of all in Felwood next door.",
+			"Thistlefur Village is the Thistlefur tribe's home, east of the Zoram Strand in north-western Ashenvale, and they attack anyone who comes near. Avengers and shaman make up most of it. Dal Bloodclaw and Rorgish Jowl are the two warriors leading them, and Raene Wolfrunner in Astranaar wants Dal Bloodclaw's skull brought to her.",
+			"They have made enemies on both sides. A party of trolls carrying sacred charms to Zoram'gar Outpost was attacked and killed by the Thistlefur before it arrived.",
+			"The tribe has fallen the way the Gnarlpine and Blackwood did. Furbolg corruption across the northern forests is widespread, and the source is generally traced to the demonic taint left after the Third War, worst of all in Felwood next door.",
 		},
+		readMore = { "Wowpedia: Thistlefur Village", "Wowpedia: Dal Bloodclaw", "Wowpedia: Thistlefur tribe" },
 	},
 	{
 		name = "Bough Shadow", parent = "Ashenvale", faction = "Hostile",
@@ -848,11 +854,12 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Ruins of Stardust", parent = "Ashenvale", faction = "Contested",
-		hook = "Night elf ruins in the southern forest, from before the Sundering.",
+		hook = "A holy place on a lake island, gone yellow with Felwood's rot.",
 		lore = {
-			"Stardust was a night elf settlement of the old empire, and these ruins are ten thousand years old.",
-			"Ashenvale is full of them. The night elves fighting for this forest are fighting over ground that already holds their own civilisation's wreckage.",
+			"The Ruins of Stardust sit on an island in a lake south of Astranaar, west of the Talondeep Path, and they were a holy place. The lake has taken the demonic rot coming down out of Felwood, as Iris Lake has, and the whole site is tinted a sickly yellow-green. Large bog beasts roam the stones, corrupted by the water. The shaman who send people here for a sample of the fountain at the lake's centre pass on the tale that the ruins are protected by creatures of nature that do not care for visitors, and allow that it might only be a story told to frighten off the night elves' enemies.",
+			"The stardust itself is the exception. It is a frosted dust lying among the ruins, on bushes the taint has not touched, and it brings a fever down. Pelturas Whitemoon in Astranaar sends for handfuls of it to make a poultice for his daughter Relara Whitemoon, whose nightmares a tear of Elune has already eased and whose fever it has not.",
 		},
+		readMore = { "Wowpedia: Ruins of Stardust", "Wowpedia: The Ruins of Stardust", "Wowpedia: Call of Water" },
 	},
 	{
 		name = "Raynewood Retreat", parent = "Ashenvale", faction = "Alliance",
@@ -1154,11 +1161,13 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "The Den of Flame", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "A cave of black dragonkin, in Onyxia's neighbourhood.",
+		hook = "An ogre mound the black dragons burned the Stonemaul out of.",
 		lore = {
-			"The Den of Flame holds black dragonkin, which in Dustwallow means Onyxia's brood and servants.",
-			"The black flight's presence in this marsh is substantial and deliberate. It is not an accident that Onyxia chose a lair next door to the Alliance's Kalimdor capital.",
+			"The Den of Flame was built by the Stonemaul ogres as their mound, and the architecture still says so. What holds it now is the black dragonflight: Firemane scouts, ash tails and scalebanes, with Onyxia's lair in the Wyrmbog not far off.",
+			"Overlord Mok'Morokk's account of how the clan lost it is short. Big dragons came and made fire at the old home, so he found the clan a new one at Brackenwall Village, and he left in such a hurry that his grog, his snuff and his strongbox are all still down here with the Stonemaul Banner.",
+			"The clan has not written the place off. Draz'Zilb's view is that they will never reclaim Stonemaul Village while the ground around it is a dragon breeding pen, and that returning them to their proper home in the south is the whole point of the exercise.",
 		},
+		readMore = { "Wowpedia: Den of Flame", "Wowpedia: Overlord Mok'Morokk's Concern", "Wowpedia: Stonemaul clan" },
 	},
 	{
 		name = "Sentry Point", parent = "Dustwallow Marsh", faction = "Alliance",
@@ -1287,11 +1296,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "The Dream Bough", parent = "Feralas", faction = "Hostile",
-		hook = "The fourth Emerald Dream portal, guarded and hostile.",
+		hook = "A great tree on an island in Jademir Lake, with a Dream portal under it.",
 		lore = {
-			"The Dream Bough is the last of the four Dream portals, with Seradane, Bough Shadow and Twilight Grove.",
-			"Like the others it is guarded by a green dragon who has gone wrong. Whatever is happening in the Emerald Dream is happening at all four gates at once.",
+			"The Dream Bough is a great tree standing on a small island in the middle of Jademir Lake, in northern Feralas, the largest tree in the zone. One of the four portals into the Emerald Dream is at the foot of it, with Seradane, Bough Shadow and Twilight Grove holding the other three.",
+			"The green dragonflight keeps it, and keeps it closed. Lethlas patrols the island with Jademir boughguards, a tree warder and an oracle, all of them a good deal more than a lake island would normally carry. Whatever is wrong inside the Dream is being answered the same way at all four gates.",
 		},
+		readMore = { "Wowpedia: Dream Bough", "Wowpedia: Lethlas", "Wowpedia: Jademir Lake" },
 	},
 	{
 		name = "Woodpaw Hills", parent = "Feralas", faction = "Hostile",
@@ -1718,11 +1728,12 @@ SubsOf("Un'Goro Crater", {
 	},
 	{
 		name = "The Slithering Scar", parent = "Un'Goro Crater", faction = "Hostile",
-		hook = "A silithid hive in the crater's south, connected to something worse.",
+		hook = "A silithid hive taking up most of the crater's south.",
 		lore = {
-			"The Slithering Scar is a silithid colony inside Un'Goro, and the silithid are not native to the crater's ecology.",
-			"They came from Silithus, and the tunnels run both ways. The crater's isolation has been breached by the one thing in Kalimdor that nobody wants loose.",
+			"The Slithering Scar is a hive of the Gorishi, and it has most of southern Un'Goro. Reavers and workers hold the upper ground, tunnelers and stingers the deeper parts, and a crystal in the hive will call something considerably worse up if it is interfered with.",
+			"The silithid are not part of the crater's ecology. They are the same creatures that have Silithus, so a colony of them inside a sealed crater is worth more attention than its size suggests.",
 		},
+		readMore = { "Wowpedia: Slithering Scar", "Wowpedia: Silithid", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Lakkari Tar Pits", parent = "Un'Goro Crater", faction = "Hostile",
@@ -1920,7 +1931,7 @@ SubsOf("Silithus", {
 		name = "The Scarab Wall", parent = "Silithus", faction = "Contested",
 		hook = "The wall that has kept the qiraji in for a thousand years.",
 		lore = {
-			"The Scarab Wall and the Gates of Ahn'Qiraj were raised by the night elves and the bronze dragonflight to seal the qiraji inside their own city.",
+			"The wall runs along Silithus's southern edge, from one side of the zone to the other, dividing the silithid desert from the ruined city of Ahn'Qiraj behind it. The night elves and the bronze dragonflight raised it together at the end of the War of the Shifting Sands to seal the qiraji inside their own city, and the Gates of Ahn'Qiraj are the one door in it.",
 			"The Scepter of the Shifting Sands is the key. It was broken and its pieces scattered, partly to make sure nobody opened the gates casually, and reassembling it is now a live project.",
 			"Opening the gates on purpose, with an army ready, is being argued as better than waiting for the qiraji to come out on their own schedule.",
 		},
@@ -1953,11 +1964,13 @@ SubsOf("Silithus", {
 	},
 	{
 		name = "Twilight Base Camp", parent = "Silithus", faction = "Hostile",
-		hook = "A Twilight Hammer camp, working to help an Old God out of its prison.",
+		hook = "The cult's camp in central Silithus, with the wind stones they talk through.",
 		lore = {
-			"The Twilight Hammer maintain several camps across Silithus, and their goal is explicit: they want C'Thun free.",
-			"The cult worships the Old Gods and believes the world should end. They are not negotiating and they have been at this since before anyone was paying attention.",
+			"Twilight Base Camp is one of four Twilight's Hammer camps in Silithus and sits in the middle of the zone. Twilight Keeper Havunth walks it with avengers, geolords and stonecallers around him, and a bonfire going.",
+			"The stones are what the camp is for. Each of the cult's camps has wind stones of three sizes standing in it, and a cultist communes through them: the lesser and ordinary ones reach the Abyssal Council's dukes, and only the top-ranking members of the Twilight's Council may speak through a greater wind stone to the Council's lords. Aurel Goldleaf at Cenarion Hold has worked out what that is worth. Dressed in the cult's own trappings, with a ring of lordship and a medallion of station, somebody can activate a greater stone, be taken for a servant of the Council, and lure a Lord into an ambush.",
+			"The cult worships the Old Gods and wants C'Thun out from under Ahn'Qiraj. They are not negotiating.",
 		},
+		readMore = { "Wowpedia: Twilight Base Camp", "Wowpedia: Lords of the Council", "Wowpedia: Wind stone" },
 	},
 	{
 		name = "Southwind Village", parent = "Silithus", faction = "Hostile",
@@ -1992,7 +2005,7 @@ SubsOf("Silithus", {
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
 		hook = "A valley in Silithus's north-west corner, held by elementals rather than silithid.",
 		lore = {
-			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. Dust stormers work the air over it, desert rumblers the ground, and an air elemental rift stands open in it.",
+			"The Crystal Vale sits in the far north-western corner of Silithus and looks nothing like the rest of the zone. The air over it is worked by dust stormers, the ground by desert rumblers, and an air elemental rift stands open in it.",
 			"There is generous thorium in the vale, and the Twilight's Hammer got to it first. Their ravaged camp is in here, with Highlord Demitrian standing among its scattered tablet fragments.",
 		},
 		readMore = { "Wowpedia: Crystal Vale", "Wowpedia: Highlord Demitrian", "Wowpedia: Silithus" },
@@ -2237,12 +2250,13 @@ SubsOf("The Barrens", {
 SubsOf("Silithus", {
 	{
 		name = "Twilight Outpost", parent = "Silithus", faction = "Hostile",
-		hook = "A Twilight's Hammer camp in the desert, dug in over something they want let out.",
+		hook = "The cult camp pitched against the Scarab Wall itself.",
 		lore = {
-			"The Twilight's Hammer began as a Horde clan under Cho'gall in the Second War. What they are now is a doomsday cult that serves the Old Gods, and Silithus is where they have concentrated.",
-			"The reason is underneath. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans could not kill and settled for burying, and the qiraji are its army. The cult is not here to fight the qiraji.",
-			"Their presence is the strongest argument anybody has for reopening the gates deliberately rather than waiting to see what comes through them. It is not a comfortable argument.",
+			"Twilight Outpost is in the far south-western corner of Silithus, just north-west of the Scarab Wall and west of the Bronzebeard Encampment. Of the cult's four camps this is the one sitting against the thing they want opened. Twilight Keeper Exeter holds it, with a twilight master, avengers, geolords and stonecallers, and the usual run of wind stones.",
+			"The Twilight's Hammer began as a Horde clan under Cho'gall in the Second War. What they are now is a doomsday cult serving the Old Gods, and Ahn'Qiraj behind that wall holds C'Thun, one of the Old Gods the titans buried rather than killed.",
+			"Their being camped here is the strongest argument anybody has for opening the gates deliberately rather than waiting to see what comes through them. It is not a comfortable argument.",
 		},
+		readMore = { "Wowpedia: Twilight Outpost", "Wowpedia: Twilight's Hammer", "Wowpedia: Scarab Wall" },
 		readMore = { "Wowpedia: Twilight's Hammer", "Wowpedia: C'Thun", "Wowpedia: Ahn'Qiraj" },
 	},
 })
@@ -2291,7 +2305,8 @@ SubsOf("Ashenvale", {
 		lore = {
 			"There was a night elf city here called Zoram. The Great Sundering destroyed it and most of it went down beneath the Veiled Sea, and what is left is a strip of beach with the coastline rearranged around it.",
 			"The naga hold it now, and the wreckage along the shore is the evidence: ships broken up and sea creatures beached. The naga are the Highborne who went under with the Sundering and did not die, so their presence on the ruins of a drowned night elf city is a homecoming of a sort.",
-			"Blackfathom Deeps opens off this strand, which was a temple of Elune before the water took it.",
+			"Talen keeps a thin camp near the strand and is the reason anyone goes out onto it. He was taking a small vessel over the submerged ruins when the naga came up out of the water at him, and in getting ashore he lost an ancient statuette he had braved the place for. The statuette locks, and the key to it is the Ring of Zoram.",
+			"Blackfathom Deeps opens off the strand, a temple of Elune before the water took it, and the naga are down there cutting sapphire clusters out of the walls of its first tunnels. Vorsha the Lasher, a hydra, comes out of the same sea at the Horde's outpost on the strand, unprovoked each time.",
 		},
 		readMore = { "Wowpedia: Zoram Strand", "Wowpedia: Great Sundering", "Wowpedia: Naga" },
 	},
@@ -2312,8 +2327,9 @@ SubsOf("Ashenvale", {
 			"Very little of Ordil'Aran is left. It was a night elf city once, north of Maestra's Post, and what survives is enough stonework to shelter in.",
 			"The Cult of the Dark Strand made a base of it. They are Shadow Council work: night elves and others turned to the service of things that should not be served, operating inside Darnassus's own territory, and the Tower of Althalaxx further up the coast is the other end of the same problem.",
 			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, and they give a reasonable idea of how that went.",
+			"The heartswood tree stands in the ruins, and its core is what a summoning circle in the crypt below needs to open a portal and bring a succubus through. That is the Althalaxx business reaching this far down the coast.",
 		},
-		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Dark Strand", "Wowpedia: Thistlefur" },
+		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Heartswood", "Wowpedia: Thistlefur" },
 	},
 	{
 		name = "Bloodtooth Camp", parent = "Ashenvale", faction = "Hostile",
@@ -2349,7 +2365,7 @@ SubsOf("Ashenvale", {
 		name = "The Shady Nook", parent = "Ashenvale", faction = "Neutral",
 		hook = "A small valley with a family of bears in it, and nothing else going on.",
 		lore = {
-			"The Shady Nook is a hollow south of Raynewood Retreat with a cave in it and a few bears living there. That is the whole of it.",
+			"The Shady Nook is a hollow south of Raynewood Retreat and east of Greenpaw Village, with a small cave in it and a family of bears living there, presumably in the cave. That is the whole of it.",
 			"Which is worth saying out loud. Ashenvale is a zone where nearly every named place is a front line, a cult site, a satyr holding or something that used to be a city, and this one is a dell with animals in it.",
 			"The whole forest was like this once, before the Warsong came for the timber and the satyrs came out of the ruins. A hollow with bears in it is what Ashenvale is defending.",
 		},
@@ -2496,7 +2512,7 @@ SubsOf("Feralas", {
 		hook = "A silithid hive in the south-east, and the gnolls around it have gone frantic.",
 		lore = {
 			"Hive Zukk'ash is in the ground here, and it is silithid. They are the qiraji's creatures: insectoid, numberless, and answering ultimately to C'Thun under Ahn'Qiraj.",
-			"The hive is driving the local gnolls out of their minds. They are pushing north in a state and running into Camp Mojache, which means the tauren there are fighting gnolls because of something neither of them started.",
+			"The hive is driving the local gnolls out of their minds. A set of battle plans taken off the Woodpaw showed Camp Mojache that the gnolls are fighting a war on two fronts, and that most of their effort is going south rather than at the tauren. Hadoken Swiftstrider's reading is that whatever is driving the gnolls to frenzy is the larger threat of the two, and that nothing short of a full-scale invasion will thin it. Stinglasher, a giant among the insects that secretes an aura the others do not, was cut open to find out why.",
 			"That is how silithid work as a problem. Clearing the ones on the surface does nothing to the eggs, and no hive was ever the real problem; each is an outpost of something much older, still buried in Silithus.",
 		},
 		readMore = { "Wowpedia: Writhing Deep", "Wowpedia: Silithid", "Wowpedia: C'Thun" },
@@ -2552,13 +2568,13 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Azshara", {
 	{
 		name = "The Ruined Reaches", parent = "Azshara", faction = "Neutral",
-		hook = "The broken coast of the queen's own province, with nothing much left standing.",
+		hook = "Azshara's southern coast, all beach and cliff and wreckage, with a gnome shop on it.",
 		lore = {
-			"Azshara was the heart of the night elf empire and Zin-Azshari, the queen's capital, stood in it. The Sundering took most of that and put it under water.",
-			"The Ruined Reaches are the part of the coastline where the wreckage shows worst. Ravencrest Monument is close by, and Rethress Sanctum is in here somewhere, empty.",
-			"Ten thousand years of nothing being rebuilt. The naga are offshore, the satyrs are inland, and the zone still carries the name of the queen who caused all of it.",
+			"The Ruined Reaches run along Azshara's southern coast, down towards the Durotar border: stretches of beach and cliff broken up by inlets, dotted with ruins and with shipwrecks. As on the Jagged Reef in the north, the walk is hazardous, partly for the shallows sitting just under the surface and partly for the murlocs, hydras and makrura that work them.",
+			"On the western shore of the reaches, up a steep path on a hill, there is a gnomish building with a lift in it. Blimo Gadgetspring and Jubie Gadgetspring live and trade out of it, selling engineering and trade supplies a long way from anyone who needs them.",
+			"The ruins are what the Sundering left. Azshara was the heart of the night elf empire and Zin-Azshari, the queen's own capital, stood in this province before the sea came in over it.",
 		},
-		readMore = { "Wowpedia: Azshara", "Wowpedia: Zin-Azshari", "Wowpedia: Great Sundering" },
+		readMore = { "Wowpedia: Ruined Reaches", "Wowpedia: Zin-Azshari", "Wowpedia: Great Sundering" },
 	},
 	{
 		name = "Rethress Sanctum", parent = "Azshara", faction = "Neutral",
@@ -2758,9 +2774,9 @@ SubsOf("Darkshore", {
 		name = "Twilight Shore", parent = "Darkshore", faction = "Neutral",
 		hook = "The roughest stretch of Darkshore's coast, running down to Ashenvale.",
 		lore = {
-			"The Twilight Shore is southern Darkshore's coastline, starting below the Long Wash and running all the way down to the Ashenvale border. It is the most broken part of the coast, and the beaches are grey.",
+			"The Twilight Shore is southern Darkshore's coastline, starting below the Long Wash, whose own end lies due west of Ameth'Aran, and running all the way down to the Ashenvale border. It is the most rugged part of the coast: grey beaches broken up by jutting cliffs, with small islands off the southern end.",
+			"Murlocs are all over it, and the water is worse than the sand: threshadons lie off the shore and go for anyone swimming in. The beach is walked rather than approached from the sea.",
 			"Darkshore is a drowned shoreline. The Sundering rearranged this whole edge of Kalimdor, and the night elf ruins along it, Ameth'Aran and Bashal'Aran among them, are what was above water when the sea finished moving.",
-			"The Wildbend River comes out near here, carrying Felwood's corruption down from the mountains. Darkshore gets other people's damage from both directions.",
 		},
 		readMore = { "Wowpedia: Twilight Shore", "Wowpedia: Darkshore", "Wowpedia: Great Sundering" },
 	},
@@ -2807,7 +2823,7 @@ SubsOf("Silithus", {
 		name = "Twilight Post", parent = "Silithus", faction = "Hostile",
 		hook = "A Twilight's Hammer camp in the north-west, well away from the Cenarion watch.",
 		lore = {
-			"The Twilight Post sits in north-western Silithus, a long way west of Cenarion Hold. Twilight Lord Everun and Twilight Keeper Mayna are the names attached to it, with geolords and stonecallers under them.",
+			"The Twilight Post sits in north-western Silithus, a long way west of Cenarion Hold and north-west of Twilight Base Camp. Twilight Lord Everun and Twilight Keeper Mayna are the names attached to it, with avengers, geolords and stonecallers under them, and wind stones of all three sizes standing about the camp.",
 			"The Twilight's Hammer are not in Silithus by accident. Ahn'Qiraj holds C'Thun, one of the Old Gods the titans buried rather than killed, and the cult serve the Old Gods directly.",
 			"The Cenarion Circle hold the only real position in this desert and are trying to contain the qiraji. The cult are trying to let them out. Both are camped in the same sand.",
 		},
@@ -2817,8 +2833,8 @@ SubsOf("Silithus", {
 		name = "Twilight's Run", parent = "Silithus", faction = "Hostile",
 		hook = "A cult cave at the foot of Staghelm Point.",
 		lore = {
-			"Twilight's Run is a cave in northern Silithus, under Staghelm Point, and it is full of Twilight's Hammer.",
-			"The point above it is named for Fandral Staghelm, the night elf Archdruid who planted Teldrassil without the dragons' blessing and who lost his son Valstann in the War of the Shifting Sands, fought over this very desert.",
+			"Twilight's Run is a cave at the foot of Staghelm Point in northern Silithus, and it is full of Twilight's Hammer. Vyral holds it, with twilight overlords beside him and flamereavers through the rest of the cave, and braziers burning in it.",
+			"Nobody is sure which Staghelm the point above is named for. It is either Fandral, the night elf Archdruid who led the armies in the War of the Shifting Sands and later planted Teldrassil without the dragons' blessing, or his son Valstann, who fell in that war, fought over this very desert.",
 			"So a cult serving the thing under Ahn'Qiraj has made itself a cave beneath a monument to the man whose grief helped seal it. Silithus is full of arrangements like that.",
 		},
 		readMore = { "Wowpedia: Twilight's Run", "Wowpedia: Fandral Staghelm", "Wowpedia: Twilight's Hammer" },
@@ -2836,7 +2852,7 @@ SubsOf("Silithus", {
 		name = "The Swarming Pillar", parent = "Silithus", faction = "Hostile",
 		hook = "The biggest silithid hive above ground, a short way from Cenarion Hold.",
 		lore = {
-			"The Swarming Pillar is a peak in the middle of Silithus with a hive in it, and the name comes from the cloud of small silithid that never stops moving around it. It is the largest of them.",
+			"The Swarming Pillar is a peak just south of Cenarion Hold, and the name comes from the cloud of small silithid that never stops moving around it. What breaks the surface here is Hive'Ashi's: swarmers and stingers, all of them elite. It is reckoned the largest of the hives.",
 			"It is also only one. The hives' foundations run under the sand across the whole zone, and there are far too many of them to count, let alone clear.",
 			"That is the Cenarion Circle's problem in one sentence. They can hold a fort and they can kill what comes out of a hive. They cannot do anything about what the hives are connected to.",
 		},

@@ -49,11 +49,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "The Dust Plains", faction = "Contested",
-		hook = "The driest ground in Westfall, where the farmland gave up before the rest of it did.",
+		hook = "The southernmost ground in Westfall, with gnoll camps on it and a tower at its edge.",
 		lore = {
-			"South of Moonbrook the soil stopped holding water and the tenants walked away. This is what the rest of Westfall is afraid of becoming: not raided, not burned, just finished.",
-			"Nothing is farmed out here now. Harvest golems left standing in the fields go on working the dirt regardless, and there is no more unsettling sight in the zone.",
+			"The Dust Plains are the bottom of Westfall. Riverpaw gnolls keep a few camps out here and trouble anyone crossing, with Defias highwaymen working the same ground and Leprithus wandering it.",
+			"An old mage tower stands on the eastern edge of the plains. Klaven Mortwake holds it, with Defias tower sentries and patrollers on the ground below him and Venture Company drones about the place, which is a stranger combination than the tower deserves.",
 		},
+		readMore = { "Wowpedia: Dust Plains", "Wowpedia: Klaven Mortwake", "Wowpedia: Westfall" },
 	},
 })
 
@@ -112,11 +113,12 @@ SubsOf("Hillsbrad Foothills", {
 SubsOf("Alterac Mountains", {
 	{
 		name = "The Uplands", faction = "Hostile",
-		hook = "The high eastern mountains, taken over by the Crushridge ogres.",
+		hook = "Alterac's old bread basket, and where the Syndicate is strongest.",
 		lore = {
-			"The Uplands are the roof of Alterac and the Crushridge clan holds them. Ogres moved into these mountains once the kingdom was broken up and nobody was left with the authority or the troops to object.",
-			"They are fighting the Syndicate for the high ground now: a clan of ogres against a society of dispossessed aristocrats, over a country that officially no longer exists.",
+			"The Uplands are the hills in the north-east of the Alterac Mountains, and they fed the kingdom. Once the core of Alterac was destroyed there was nobody left with the authority or the troops to hold them, and the Syndicate moved in. They keep several camps up here and this is the ground they are strongest on.",
+			"Baron Vardus is the one to know about, a high-ranking Syndicate man with sentries and a saboteur around him and an Argus shadow mage standing among them. That is a more interesting kind of company than dispossessed aristocrats usually keep. Dandred's Fold lies at the western end of the same hills.",
 		},
+		readMore = { "Wowpedia: Uplands", "Wowpedia: Baron Vardus", "Wowpedia: Syndicate" },
 	},
 })
 
@@ -282,11 +284,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Tkashi Ruins", faction = "Hostile",
-		hook = "A ruin on the shore of Lake Nazferiti, with the lake's own problems at the door.",
+		hook = "Old troll ruins south-west of Nesingwary's camp, with Bloodscalp living in them.",
 		lore = {
-			"Tkashi stands on the great jungle lake, and the Gurubashi built heavily all round that water. Fresh water in Stranglethorn meant the same to them as it does to everybody else.",
-			"Trolls, raptors and crocolisks hold the shoreline now in roughly equal measure. The ruins are the least dangerous thing on it.",
+			"The Tkashi Ruins are ancient troll work in the middle of Stranglethorn, south-west of Nesingwary's Expedition, and a large group of Bloodscalp live in them now rather than merely passing through.",
+			"Hemet Nesingwary's own account of coming through the ruins is that his party did so without incident, the kind of remark that reads differently depending on who is making it.",
 		},
+		readMore = { "Wowpedia: Tkashi Ruins", "Wowpedia: Bloodscalp tribe" },
 	},
 	{
 		name = "Zuuldaia Ruins", faction = "Hostile",
@@ -319,11 +322,12 @@ SubsOf("Stranglethorn Vale", {
 SubsOf("Swamp of Sorrows", {
 	{
 		name = "The Shifting Mire", faction = "Contested",
-		hook = "Open mire in the northern swamp, where the ground is a matter of opinion.",
+		hook = "The central bulk of the swamp, where the ground travels on its own.",
 		lore = {
-			"The Shifting Mire is the least solid part of a zone with no solid parts. Tracks across it hold for a season and then stop holding.",
-			"Stonard keeps the usable routes marked. The orcs have been in this swamp since the First War, longer than they have held anywhere else on this continent, and marking safe ground is one of the few things they have had the time to get right.",
+			"The Shifting Mire is the middle of the Swamp of Sorrows, west of the Pool of Tears, and the name is literal. Some force in the ground gathers the very fine silt and moves it, so that it travels as though it were alive. Nobody in this period can say what the force is.",
+			"What lives on it is swamp jaguars, young sawtooth crocolisks and sorrow spinners, with Molt Thorn somewhere among them, and the Lost Ones' camps on its edges.",
 		},
+		readMore = { "Wowpedia: Shifting Mire", "Wowpedia: Swamp of Sorrows" },
 	},
 })
 
@@ -465,11 +469,12 @@ SubsOf("Durotar", {
 SubsOf("Mulgore", {
 	{
 		name = "The Rolling Plains", faction = "Horde",
-		hook = "Eastern Mulgore grassland, and the road out toward the Barrens.",
+		hook = "Grassland in southern Mulgore, running from Bloodhoof Village to the Barrens.",
 		lore = {
-			"The Rolling Plains carry Mulgore's eastern traffic, and the change in the land as you go is abrupt. Good grass gives way to the Barrens' scrub inside a few hours' walk.",
-			"Kodo herds graze here and the tauren follow them, as they did for generations before they settled. Mulgore is only a few years old as a homeland, and the habits that carried the tauren through the centuries before it have not been put down.",
+			"The Rolling Plains cover much of southern Mulgore, from Bloodhoof Village out to the Barrens border, and the change in the land as you go is abrupt. Good grass gives way to scrub inside a few hours' walk. Kodo, tallstriders, cougars and wolves all graze or hunt across it.",
+			"The eastern end is less peaceful than the rest. A nest of Windfury harpies sits out there, the same tribe that holds the ridge in the north of the zone, and they are the one thing on these plains that is not simply grazing.",
 		},
+		readMore = { "Wowpedia: Rolling Plains", "Wowpedia: Mulgore", "Wowpedia: Windfury Harpy" },
 	},
 	{
 		name = "Ravaged Caravan", faction = "Contested",
@@ -872,6 +877,7 @@ SubsOf("The Barrens", {
 		hook = "A Razormane quilboar settlement on the hilltop between the Crossroads and Durotar.",
 		lore = {
 			"Thorn Hill is a settlement of some size, set on the north face of a hilltop on the road between the Crossroads and Durotar. The Razormane hold it in numbers.",
+			"Geomancers and defenders make up most of them, with Elder Mystic Razorsnout on the hill. What gives the place away is the plunder: the Crossroads' own supply crates are stacked up here, taken off Horde caravans on the road below, and that is what finally drew the attention of the Barrens' security.",
 			"Its position is the whole problem. That road is the main link between Orgrimmar and the Barrens' interior, and the Horde does not control the ground beside it. Quilboar were in this country long before the orcs crossed the sea and have never recognised the claim.",
 		},
 	},
@@ -967,11 +973,12 @@ SubsOf("Elwynn Forest", {
 	},
 	{
 		name = "Thunder Falls", faction = "Contested",
-		hook = "A waterfall in the eastern forest, loud enough to name itself.",
+		hook = "A ravine in north-western Elwynn with waterfalls at both ends and bandits in the middle.",
 		lore = {
-			"The falls come down off the high ground toward Eastvale, feeding the streams that water the eastern half of Elwynn.",
-			"Nothing of consequence has ever happened here, which in a kingdom that has been sacked once and is currently losing three counties counts as a recommendation.",
+			"Thunder Falls is a narrow ravine up in the mountains of north-western Elwynn, reached by a steep path off the right of Mirror Lake's own waterfall. It is unusual in having falls at both ends, fed by a third coming off the cliffs to the north that cannot be reached at all. Follow the water out and it eventually drops again near the Westfall border.",
+			"Somebody lives up there. There is a small cottage in the ravine with an anvil and a fire going, a pier and a boat at the water, and a few bandits who presumably own all of it.",
 		},
+		readMore = { "Wowpedia: Thunder Falls", "Wowpedia: Elwynn Forest" },
 	},
 	{
 		name = "Mirror Lake Orchard", faction = "Hostile",
@@ -1172,11 +1179,13 @@ SubsOf("Silverpine Forest", {
 	},
 	{
 		name = "Valgan's Field", faction = "Hostile",
-		hook = "Another emptied farm, with worgen in the treeline.",
+		hook = "The wheat farm where Arugal stayed first, with his spellbooks still in it.",
 		lore = {
-			"Valgan's is one of several holdings between the Sepulcher and Pyrewood that have been abandoned since Arugal's worgen got loose in this forest.",
-			"The archmage summoned them out of another world as weapons against the Scourge and lost control of them immediately. They have been spreading ever since.",
+			"Valgan's Field is a wheat farm north of the bridge in northern Silverpine, named for the man who worked it and who was killed or driven off when the Scourge came through. It stands empty now.",
+			"What is still in it is Arugal's. The archmage stayed here before the war and left spellbooks behind, and a Deathstalker who found them could not get them out. Dalar Dawnweaver at the Sepulcher wants one spell in particular, the Remedy of Arugal, so that he can turn the man's own magic against him and have Silverpine for the Dark Lady.",
+			"His opinion of the man is not a secret. He cannot understand how Arugal was ever accepted into the Kirin Tor, calls his spellcraft as transparent as a blown glass bauble, and holds that the old hack was not fit to clean chamber pots in Dalaran.",
 		},
+		readMore = { "Wowpedia: Valgan's Field", "Wowpedia: Arugal's Folly", "Wowpedia: Archmage Arugal" },
 	},
 	{
 		name = "The Decrepit Ferry", faction = "Contested",
@@ -1395,11 +1404,12 @@ SubsOf("Arathi Highlands", {
 SubsOf("Stranglethorn Vale", {
 	{
 		name = "The Savage Coast", faction = "Contested",
-		hook = "The northern coastline of the vale, between the jungle and the sea.",
+		hook = "Stranglethorn's northern shore, from the Westfall border down to Grom'gol.",
 		lore = {
-			"The Savage Coast runs along Stranglethorn's northwestern shore. The Bloodscalp hold the ground behind it and the water in front of it belongs to whatever is in the water.",
-			"Every stretch of this jungle has a claim on it: trolls, ogres, the Venture Company, Kurzen's deserters and the goblins at the southern tip. The coast is no different.",
+			"The Savage Coast is the northern coastline of the vale. It runs from the Westfall border in the north all the way down the shore to Grom'gol Base Camp, with crocolisks and basilisks on the sand and lashtail raptors working the ground above it. Several troll settlements sit along its length.",
+			"A good shudder of the earth once dropped an old troll city into the water off the coast's north-west. What is down there is called the Vile Reef now, because the murlocs have it.",
 		},
+		readMore = { "Wowpedia: Savage Coast", "Wowpedia: The Vile Reef", "Wowpedia: Stranglethorn Vale" },
 	},
 	{
 		name = "Ruins of Aboraz", faction = "Hostile",
@@ -1685,11 +1695,12 @@ SubsOf("Darkshore", {
 SubsOf("The Barrens", {
 	{
 		name = "The Tidus Stair", faction = "Contested",
-		hook = "A sunken formation off the eastern coast, out in the water.",
+		hook = "Stone terraces above the Merchant Coast, with two tauren fishing off them.",
 		lore = {
-			"The Tidus Stair lies off the Barrens' eastern shore, below the surface. Stepped stone underwater generally means somebody built it when the water was not there.",
-			"The Barrens were not always barren, and this coastline was not always this coastline. The Sundering broke Kalimdor apart and the sea came in over a good deal of it.",
+			"The Tidus Stair is a run of terraces on the Barrens' eastern coast south-east of Ratchet, stepped like a giant staircase and looking out over the Merchant Coast. The lower steps go on down under the water, which is the part that gets talked about.",
+			"Islen Waterseer and Mahren Skyseer sit up here with a fire going, fishing and talking to the water spirits. They are the only people on it.",
 		},
+		readMore = { "Wowpedia: Tidus Stair", "Wowpedia: Islen Waterseer", "Wowpedia: Merchant Coast" },
 	},
 	{
 		name = "Bramblescar", faction = "Hostile",
@@ -1855,11 +1866,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "The Dragonmurk", faction = "Hostile",
-		hook = "The southern mire, thick with black dragonkin.",
+		hook = "The southern mire, with Onyxia's brood scattered across it.",
 		lore = {
-			"The Dragonmurk is the worst-held corner of Dustwallow and the most heavily patrolled from the air. Onyxia's lair opens into this part of the marsh.",
-			"The black dragonflight does not go in for open assault. Where one of Deathwing's children chooses to settle usually says more than anything it does afterwards.",
+			"The Dragonmurk is the southern stretch of Dustwallow, and whelps and dragonspawn of the black flight are thick in it. The Den of Flame and the Stonemaul Ruins both sit inside it and both have been taken over by the same dragonkin. Onyxia's own lair is in the Wyrmbog, further south again.",
+			"Her brood is scattered across the murk and her eggs are riddled around the Wyrmbog, so the Stonemaul at Brackenwall Village keep sending people to break them. They will not get their village back while the ground around it is a breeding pen.",
 		},
+		readMore = { "Wowpedia: Dragonmurk", "Wowpedia: The Brood of Onyxia", "Wowpedia: Wyrmbog" },
 	},
 })
 
@@ -1891,11 +1903,12 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Verdantis River", faction = "Contested",
-		hook = "The river through the northern jungle, running past the Dream portal.",
+		hook = "A small river in central Feralas, and the only water one fish lives in.",
 		lore = {
-			"The Verdantis cuts through northern Feralas, near Jademir Lake and the Dream Bough.",
-			"That bough is one of four places in this world where the Emerald Dream presses against the waking one. The green dragonflight guards all four and is not managing it.",
+			"The Verdantis weaves through central Feralas, south-east of Dire Maul. It is a small river and most of what crosses it does not stop.",
+			"The one thing it has is the Feralas ahi, which is caught here and nowhere else in the world. Nat Pagle sets it as one of the four rare fish anybody who wants to be taught by him has to bring in.",
 		},
+		readMore = { "Wowpedia: Verdantis River", "Wowpedia: Nat Pagle, Angler Extreme" },
 	},
 	{
 		name = "Idlewind Lake", faction = "Contested",

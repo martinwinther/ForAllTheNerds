@@ -1,5 +1,90 @@
 # Changelog
 
+## 1.2.20
+
+Two more rounds of the vanilla-era sweep: 50 entry records reviewed and 49 of them
+corrected. The sweep now covers 892 of the 907 vanilla entries, with fifteen left.
+This batch turned up a kind of mistake the earlier rounds had not: places whose
+entry had invented an owner out of the place name itself.
+
+**Fixed**
+
+- Twilight Vale in Darkshore has nothing to do with the Twilight's Hammer. It is the
+  name of the zone's southern forests, after the half-light the coast sits in, and
+  what is in the woods is Blackwood furbolgs, moonstalkers and sick deer.
+- There is no Vul'Gol tribe. The ogres at the Vul'Gol Ogre Mound are Splinter Fist,
+  led by Zzarc' Vul, who the mound is named after, and no worgen are pressing in on
+  them. Humans farmed the basin once and the ruined farmhouses are still there.
+- Eleven more places had the wrong occupants or the wrong owner. The Uplands are the
+  Syndicate's strongest ground, not Crushridge ogre country. The Undercroft is
+  Zaeldarr the Outcast's hideout, and his undead trolls are the ones stealing bodies
+  out of Light's Hope Chapel's grave pit rather than necromancers working a
+  graveyard. At the back of Kurzen's Compound, the Stockpile is where his special forces are
+  kept, not a smugglers' cache with changing owners. The Dust
+  Plains are Westfall's southernmost ground, with Riverpaw gnoll camps and Mortwake's
+  Tower on the eastern edge. Stonemaul ogres built the Den of Flame as their
+  mound, and the black dragons burned them out of it. The Shining Strand still has the
+  Vile Fin murlocs along its whole length. Silt that travels as though alive is what the
+  Shifting Mire is named for, and nobody keeps its routes marked. Thelgen Rock is a
+  spider cave with volatile ore in the walls, not a flooded mine. Thorn Hill has the
+  Crossroads' own stolen supply crates stacked up on it. The Dragonmurk has Onyxia's
+  brood scattered across it, while her lair is in the Wyrmbog. The Ruins of Stardust
+  are a holy place on a lake island, gone yellow with Felwood's rot.
+- Seven places moved to where they actually are: the Tidus Stair is stone terraces
+  above the Merchant Coast rather than a formation below the surface, Valorwind Lake
+  is a small lake north-east of Shadra'Alor rather than the Hinterlands' main lake,
+  the Verdantis River is in central Feralas south-east of Dire Maul, Thunder Falls is
+  a ravine in north-western Elwynn, the Ruined Reaches are Azshara's southern coast
+  near Durotar, the Rolling Plains cover southern Mulgore from Bloodhoof Village to
+  the Barrens border, and Thistlefur Village is east of the Zoram Strand.
+- The Valley of Kings faces south. Its two statues are Madoran Bronzebeard and
+  Khardros Wildhammer, raised by their sons over the pass into the southlands as a
+  warning and a reminder of what the Dark Irons paid, and Mountaineer Pebblebitty
+  keeps the gate to the Searing Gorge locked.
+- Stonewatch Tower is still standing and is being used against the keep beside it. A
+  mage in Elwynn has a glyph hidden at the top of it, in a forgotten liquor jar.
+- The Tranquil Gardens are not guarded. The dead are up and walking in the cemetery,
+  and the Insane Ghoul in it has Blind Mary's looking glass.
+
+**Removed**
+
+- Advice meant for players rather than lore, and claims the period does not make.
+  Thoras Trollbane did not withdraw Stromgarde from the Alliance because Lordaeron
+  "would not act on the internment camps": he wanted every orc in them executed and
+  withdrew when Terenas refused. Thrall was not born in an internment camp.
+  Staghelm Point is named for one of the two Staghelms and nobody knows which.
+- The Scarab Wall no longer carries its own name or a two-part construction. Both
+  come from a book published long after this period, and a 1.12 player could not have
+  heard either. What the entry keeps is that the night elves and the bronze
+  dragonflight raised the wall together at the end of the War of the Shifting Sands.
+- Invented history and motives are gone from the Vice, the Sludge Fen, the Tradesmen's
+  Terrace, Westbrook Garrison, the Crystal Vale, the Darkened Bank, Terror Run,
+  Tkashi Ruins and the Savage Coast. Among them: ogres indifferent to history, a
+  goblin cartel with no central authority to pressure, night elves with no money
+  economy, a garrison holding the border against its own citizens, and the Cenarion
+  Circle watching a valley it has no presence in.
+
+**Changed**
+
+- The three Twilight's Hammer camps in Silithus were all repeating the same paragraph
+  about the Old Gods. What tells them apart is the wind stones standing in each: a
+  cultist communes through them to reach the Abyssal Council, and only the top of the
+  Twilight's Council may use a greater stone to speak to its lords. Twilight Outpost
+  is pitched against the Scarab Wall itself.
+- Many entries gained what the game actually gives them. Valgan's Field is the wheat
+  farm where Arugal stayed before the war, with his spellbooks still in it and Dalar
+  Dawnweaver wanting the Remedy of Arugal out of them. The Zoram Strand has Talen,
+  who lost an ancient statuette to the naga and needs the Ring of Zoram to open it.
+  Thelsamar has the blood sausage recipe it is famous for. The Venture Co. Mine was
+  refused mining rights and dug anyway. The Stonefield Farm has Gramma Stonefield's
+  scheme, Bernice's necklace and the prize sow eating Ma Stonefield's vegetables.
+  Thorium Point has Overseer Oilfist, who put the order out on the man running the
+  Cauldron. The Writhing Deep has the two-front war the Woodpaw battle plans revealed.
+  A great tree on an island in Jademir Lake is what the Dream Bough is. The
+  Slithering Scar is the Gorishi's. Terror Run has the expedition that was nearly eaten setting up camp.
+- Southridge Beach is marked hostile rather than contested, which is what naga ground
+  means in practice.
+
 ## 1.2.19
 
 Two more rounds of the vanilla-era sweep: 50 entry records reviewed and 46 of them
