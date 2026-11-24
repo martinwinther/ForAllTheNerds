@@ -202,11 +202,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Windfury Ridge", parent = "Mulgore", faction = "Contested",
-		hook = "A ridge in the north where harpies have settled.",
+		hook = "The northern ridge, where the harpies keep their sorceresses and matriarchs.",
 		lore = {
-			"Windfury Ridge holds a harpy population on Mulgore's northern edge, near the approaches to Thunder Bluff.",
-			"Harpies and tauren have no history to speak of; the harpies are there and aggressive, as they are across most of Kalimdor.",
+			"Windfury Ridge runs along Mulgore's northern rim on the approaches to Thunder Bluff, and the harpies nesting on it are the clan's upper ranks. Sorceresses and matriarchs are up here; the ordinary harpies and wind witches are down in the middle of the zone. Cougars and wolves work the same hills.",
+			"Tauren are not neutral about harpies. Ruul Eagletalon in Bloodhoof Village counts the Windfury among Mulgore's natural enemies and sends the young after them as a test of strength before they leave the zone, on the grounds that these are foes whose fighting is rivalled only by their appetite. The ones he points them at are the easier end of the same clan.",
 		},
+		readMore = { "Wowpedia: Windfury Ridge", "Wowpedia: Dangers of the Windfury", "Wowpedia: Harpy" },
 	},
 	{
 		name = "The Venture Co. Mine", parent = "Mulgore", faction = "Hostile",
@@ -1153,11 +1154,12 @@ SubsOf("Dustwallow Marsh", {
 	},
 	{
 		name = "Witch Hill", parent = "Dustwallow Marsh", faction = "Hostile",
-		hook = "A hill in the northern marsh with a grim reputation and a worse resident.",
+		hook = "A hill up the north-eastern side of the marsh, with a hermit's house on it.",
 		lore = {
-			"Witch Hill is a local landmark with the sort of name that gets earned. The marsh's undead and its stranger inhabitants concentrate here.",
-			"Dustwallow has a scattering of sites like this: isolated, unexplained and left alone by both factions.",
+			"Witch Hill sits north-west of Theramore, part of the way along the ground between the island and the rest of the marsh. Swamplight Manor stands near its middle, Mirefin murloc camps are along the shore to the north, and what is in between is bark rippers, venomspitters, raptors and crocolisks.",
+			"There are no undead on it. Dustwallow has them in quantity elsewhere and this is not where they are, whatever the name implies, and no account from this period says where the name came from either.",
 		},
+		readMore = { "Wowpedia: Witch Hill", "Wowpedia: Swamplight Manor", "Wowpedia: Mirefin" },
 	},
 	{
 		name = "The Den of Flame", parent = "Dustwallow Marsh", faction = "Hostile",
@@ -2294,7 +2296,8 @@ SubsOf("Ashenvale", {
 		lore = {
 			"Xavius was a night elf and one of Queen Azshara's counsellors, and he is the reason there is a Burning Legion in this world's history at all: he worked the portal at Zin-Azshari that let Sargeras's army through the Well of Eternity.",
 			"Sargeras grew dissatisfied with him and made him into something else. Xavius became the first satyr, and every satyr since is descended from that act. They are night elves who took the bargain, and ten thousand years later they are still here.",
-			"Xavian is one of three satyr holdings in Ashenvale, with Satyrnaar and Night Run, and it is the one where their leadership sits. The ruins they have made themselves at home in were a night elf temple.",
+			"Xavian is one of three satyr holdings in Ashenvale, with Satyrnaar and Night Run, and it is the one where their leadership sits. Prince Raze is here and so is Geltharis. The ruins they have made themselves at home in were a night elf temple, up in the north-east of the forest with a waterfall running through it.",
+			"Two things are going on in it. Dryads came for the Branch of Cenarius after the satyrs took it, and Anilia, who was leading them, is lying in the ruins pointing north and naming Geltharis. The other is oil. A Warsong shipment bound for the lumber camp was intercepted, and the satyrs at all three of their holdings are burning it in rituals of their own, so an orc at Splintertree Post is trying to get it back.",
 		},
 		didYouKnow = "The satyrs are not invaders. They are the descendants of the night elves who went over during the War of the Ancients, which is why they are still in Kalimdor's forests arguing with the people they used to be.",
 		readMore = { "Wowpedia: Xavian", "Wowpedia: Xavius", "Wowpedia: Satyr", "Wowpedia: War of the Ancients" },
@@ -2519,13 +2522,13 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Woodpaw Den", parent = "Feralas", faction = "Hostile",
-		hook = "The Woodpaw gnolls' den, and they have been pushed into it from two directions.",
+		hook = "The Woodpaw gnolls' den, and where their alphas are.",
 		lore = {
-			"The Woodpaw hold this den, and their alphas are here. The Darkmist Ruins lie south of it.",
-			"They have been squeezed. The Gordunni ogres deforested the Woodpaws' old home, and the Feral Scar yetis came through it as well, so the gnolls moved east and built again.",
-			"Feralas has a great many claimants and no authority. The ogres push the gnolls, the gnolls push the tauren at Camp Mojache, the naga work the coast, and Feathermoon Stronghold holds an island and watches.",
+			"The den holds the Woodpaw alphas, with mystics and reavers around them in numbers and trappers and mongrels out on the approaches. The Darkmist Ruins lie south of it.",
+			"Camp Mojache has decided the alphas are the answer. Hadoken Swiftstrider wants five of them dead inside an hour, on the reasoning that losing their leaders all at once would throw the clan into chaos and make it think twice about storming the camp. He also wants to know what has the gnolls so worked up, because something has.",
+			"Feralas has a great many claimants and no authority. The silithid push the gnolls, the gnolls push the tauren at Camp Mojache, the naga work the coast, and Feathermoon Stronghold holds an island and watches.",
 		},
-		readMore = { "Wowpedia: Woodpaw Den", "Wowpedia: Gordunni", "Wowpedia: Feralas" },
+		readMore = { "Wowpedia: Woodpaw Den", "Wowpedia: Alpha Strike (Classic)", "Wowpedia: Feralas" },
 	},
 	{
 		name = "Shalzaru's Lair", parent = "Feralas", faction = "Hostile",
@@ -2558,7 +2561,7 @@ SubsOf("Dustwallow Marsh", {
 		lore = {
 			"Swamplight Manor is one small house out at Witch Hill, and calling it a manor is a joke somebody is in on. \"Swamp Eye\" Jarl lives there and is a famous cook, which is why people walk out this far carrying marsh frog legs and darkmist eyes for him.",
 			"In the garden there is a pile of dirt with an orcish spy's report buried in it, and both sides want it. Captain Garran Vimes takes it for Theramore and Nazeer Bloodpike takes it for the Horde at Brackenwall Village.",
-			"Witch Hill around the house has Mirefin murloc camps in it and something haunting it, which Jarl would like dealt with. That is Dustwallow entirely: a hermit, a good cook, a dead spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
+			"Witch Hill around the house has Mirefin murloc camps along the shore north of it. Jarl's third errand is a moonsteel broadsword, and he will not say what he means to cut with it. That is Dustwallow entirely: a hermit, a good cook, a dead spy's paperwork in the vegetable patch, and two armies a few miles apart pretending the marsh is quiet.",
 		},
 		readMore = { "Wowpedia: Swamplight Manor", "Wowpedia: Witch Hill", "Wowpedia: \"Swamp Eye\" Jarl" },
 	},
@@ -3072,10 +3075,10 @@ SubsOf("Feralas", {
 	},
 	{
 		name = "Wildwind Lake", parent = "Feralas", faction = "Neutral",
-		hook = "Open water near Camp Mojache.",
+		hook = "Open water below Camp Mojache, in the east of the zone.",
 		lore = {
-			"Wildwind Lake lies near Camp Mojache in central Feralas, and there is not a great deal more on record about it.",
-			"Camp Mojache is the Horde's hold in this zone, Grimtotem tauren rather than Thrall's being the complication there, and the lake is the water the camp sits beside.",
+			"Wildwind Lake lies in eastern Feralas with Camp Mojache above it, and there is not a great deal more on record about it.",
+			"Camp Mojache is the Horde's hold in this zone and its tauren are Thrall's, the Grimtotem being off in their own compound further west, and the lake is the water the camp sits beside.",
 			"Not every named place carries a war. Feralas has gnolls, ogres, naga, satyrs and a sealed Highborne city in it, and it also has a lake.",
 		},
 		readMore = { "Wowpedia: Wildwind Lake", "Wowpedia: Camp Mojache" },
@@ -3107,12 +3110,12 @@ SubsOf("Stonetalon Mountains", {
 		readMore = { "Wowpedia: Greatwood Vale", "Wowpedia: Stonetalon Mountains" },
 	},
 	{
-		name = "Windshear Mine", parent = "Stonetalon Mountains", faction = "Horde",
-		hook = "A tin mine the Horde took over after the goblins walked away from it.",
+		name = "Windshear Mine", parent = "Stonetalon Mountains", faction = "Hostile",
+		hook = "A tin mine at the end of the Blackwolf River, held by kobolds with goblins at the door.",
 		lore = {
-			"Windshear Mine sits at the end of the Blackwolf River in Windshear Crag. It produces tin, claimed by the Horde once the Venture Company had abandoned the ground.",
-			"While the cartel had it, they worked it with kobolds. That is their method everywhere: find something worth extracting, employ whatever will dig for least, and leave when the seam stops paying.",
-			"So a working Horde mine in Stonetalon is a goblin leftover. The crag is full of them, and the Venture Company are still cutting the rest of the range.",
+			"Windshear Mine sits at the end of the Blackwolf River in Windshear Crag, and the tin is real: the veins are in the walls. What is in the shafts is the Windshear kobolds, and they are not a rabble. Vermin, tunnel rats, diggers and stonecutters work under geomancers and an overlord, and the tribe is named for the ground.",
+			"The Venture Company is at the mouth of it with loggers, deforesters, operators and a goblin called Piznik, and it has brought wagons of explosives up. That is the company's method everywhere: find something worth extracting, employ whatever will dig for least, and move on when the seam stops paying.",
+			"Nothing in this period gives the mine to the Horde. The crag around it is being cut down at the same time, and the Venture Company are still working the rest of the range.",
 		},
 		readMore = { "Wowpedia: Windshear Mine", "Wowpedia: Venture Company", "Wowpedia: Windshear Crag" },
 	},

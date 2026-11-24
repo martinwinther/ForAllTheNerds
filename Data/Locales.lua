@@ -276,11 +276,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Ziata'jai Ruins", faction = "Hostile",
-		hook = "Ruins in the central jungle, overgrown to the point of being easy to walk into.",
+		hook = "An overgrown ruin in the middle of the vale with a Skullsplitter trophy pile in it.",
 		lore = {
-			"Ziata'jai sits in the thick of the vale and the jungle has taken it further than most. Walls are findable. Floors rather less so.",
-			"The Gurubashi built in stone and the trees have had a long time to work on it. Dating the empire's collapse to the war against Hakkar puts these blocks well past the age of anything human on this continent.",
+			"Ziata'jai sits in the thick of the vale and the jungle has taken it further than most. Walls are findable. Floors rather less so. Nothing lives in the ruin itself. Skullsplitter camps are over to the east, and what the tribe keeps out here is a pile of trophy skulls.",
+			"Those skulls are why anyone walks in. The Skullsplitter and the Bloodscalp are at war with each other, and a bound Bloodscalp head will trade what it knows for three of them, one from Balia'mah, one from here and one from Zul'Mamwe, so that its spirit has slaves in the Nether.",
 		},
+		readMore = { "Wowpedia: Ziata'jai Ruins", "Wowpedia: Speaking with Nezzliok (Classic)", "Wowpedia: Skullsplitter tribe" },
 	},
 	{
 		name = "Tkashi Ruins", faction = "Hostile",
@@ -293,11 +294,12 @@ SubsOf("Stranglethorn Vale", {
 	},
 	{
 		name = "Zuuldaia Ruins", faction = "Hostile",
-		hook = "Gurubashi ruins on the southern coast, a short walk from Booty Bay's docks.",
+		hook = "Gurubashi ruins up the western coast, held by the Bloodscalp in numbers.",
 		lore = {
-			"Zuuldaia sits at the bottom of the vale, close enough to Booty Bay that the goblins have had every opportunity to strip it and have mostly not bothered. There is no market for Gurubashi masonry.",
-			"Naga have taken an interest in this stretch of coast, a newer problem than the trolls and a worse one. What comes out of the water here does not negotiate with the Blackwater Raiders.",
+			"Zuuldaia stands on the coast in the far north-west of the vale, at the opposite end of it from Booty Bay. Bloodscalp hold the old stonework in strength: witch doctors, berserkers, headhunters, hunters, scouts and mystics, with crocolisks working the water below.",
+			"The Darkspear have a reason to come this far up. Their chief's son is missing, the Bloodscalp are their enemies, and Zul'Kunda along the same coast is where Gan'zulah and his witch doctor sit. Nimboya at Grom'gol sends people to the headhunters at Zuuldaia first, to count shrunken heads and find out whether Yenniku's is among them.",
 		},
+		readMore = { "Wowpedia: Zuuldaia Ruins", "Wowpedia: Headhunting (Classic)", "Wowpedia: Bloodscalp tribe" },
 	},
 	{
 		name = "The Vile Reef", faction = "Hostile",
@@ -763,11 +765,12 @@ SubsOf("Tanaris", {
 	},
 	{
 		name = "Zalashji's Den", faction = "Hostile",
-		hook = "A naga den on the Tanaris coast, where the desert runs into the sea.",
+		hook = "A cave on the eastern Tanaris coast with one naga in it.",
 		lore = {
-			"Naga have established themselves on this shore. The Tanaris coast is long, hot and barely watched, and a den here can go unremarked for years.",
-			"Southsea pirates work the same water out of Lost Rigger Cove, and the Steamwheedle Cartel would like both gone. Neither is going, and the cartel keeps selling to the pirates.",
+			"The den is on the eastern shore, where the desert runs into the sea, and it is named for its only occupant. Zalashji is a naga, he is on his own, he carries no title, and nothing in this period turns on him in the slightest. For a cave with a name on the map that is unusual.",
+			"Southsea pirates work the same coast from Lost Rigger Cove to the south. The Steamwheedle Cartel's arrangement with them is protection money, paid regularly, and lately the pirates have been ignoring what it buys. The cartel has told Security Chief Bilgewhizzle to teach them a lesson, and he would go and do it himself if he could be in two places at once.",
 		},
+		readMore = { "Wowpedia: Zalashji's Den", "Wowpedia: Southsea Freebooters", "Wowpedia: Lost Rigger Cove" },
 	},
 })
 
@@ -1344,17 +1347,18 @@ SubsOf("Wetlands", {
 SubsOf("Hillsbrad Foothills", {
 	{
 		name = "Western Strand", faction = "Contested",
-		hook = "The beach west of Southshore, with murlocs and wreckage on it.",
+		hook = "The beach west of Southshore, with Torn Fin murlocs all over it.",
 		lore = {
-			"The strand runs along the bay west of the town. Southshore is a fishing port and this is part of what it fishes.",
-			"Murlocs work the shoreline here and the town's militia deals with them when it has anybody spare. Tarren Mill sees to it that this is rare.",
+			"The strand runs along the bay west of the town, and the Torn Fin tribe holds it: coastrunners and muckdwellers on the sand, tidehunters and oracles in the shallows, and Scargil somewhere among them. Southshore is a fishing port and this is part of what it fishes.",
+			"Clearing them is Lieutenant Farren Orinelle's job, and he was posted out here from the Stormwind city guard and wants it known. He thinks the town looks like it should have been abandoned, he cannot get the harbour out of his nose, and he will happily send somebody else down the coast in his place. When Marshal Redpath asks for heads as proof, he objects to handling them. He has not eaten fish in weeks, and in Southshore that means he has not eaten much.",
 		},
+		readMore = { "Wowpedia: Western Strand", "Wowpedia: Down the Coast", "Wowpedia: Torn Fin" },
 	},
 	{
 		name = "Eastern Strand", faction = "Contested",
 		hook = "The south-eastern beach, held by Daggerspine naga.",
 		lore = {
-			"The Eastern Strand is the coast in the south-east of Hillsbrad, and the Daggerspine naga are on it: shorehunters and shorestalkers on the sand, sirens in the water. The Western Strand at the other end of the same coast has the same trouble.",
+			"The Eastern Strand is the coast in the south-east of Hillsbrad, and the Daggerspine naga are on it: shorehunters and shorestalkers on the sand, sirens in the water. The Western Strand at the other end of the same coast has murlocs instead.",
 			"Southshore treats them as a military matter rather than a nuisance. Marshal Redpath has his lieutenant working the strand, with orders to report the results in person.",
 		},
 	},
@@ -1633,11 +1637,12 @@ SubsOf("Mulgore", {
 	},
 	{
 		name = "Wildmane Water Well", faction = "Horde",
-		hook = "The third of the tribal wells, in the western plains.",
+		hook = "The last of the three tribal wells, north of Thunder Bluff.",
 		lore = {
-			"The Wildmane tend this well on Mulgore's western side, under the bluffs.",
-			"Something has been fouling the wells, which for the tauren is closer to a desecration than a practical problem. Water, land and the Earthmother are not separable concepts in how they think about it.",
+			"This well lies north of Thunder Bluff, under the city's own bluffs. It is named for the Wildmane clan rather than tended by them, and Mull Thunderhorn in Bloodhoof Village leaves it until last, because it is the third well in his cleansing.",
+			"Venture Company workers and their supervisors are standing at the well itself. They are what fouled it. The totem for this one is made from the teeth of the prairie wolf alphas that wander the foot of Thunder Bluff, and Mull Thunderhorn's view of the goblins is that they will never learn the difference between contending with the land and living in harmony with it.",
 		},
+		readMore = { "Wowpedia: Wildmane Water Well", "Wowpedia: Wildmane Totem (Classic)", "Wowpedia: Wildmane Cleansing (Classic)" },
 	},
 })
 
