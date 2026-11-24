@@ -345,13 +345,14 @@ function M.install()
 		return u.name
 	end
 
-	if not os.getenv("FTN_NO_UNITISPLAYER") then
-		_G.UnitIsPlayer = function(unit)
-			local u = unitOf(unit)
-			if not u then return nil end
-			if u.secretIsPlayer then return M.secret(false) end
-			return u.isPlayer and true or false
-		end
+	-- The addon stopped reading UnitIsPlayer in 1.2.21, when the NPC roster
+	-- went. The stub stays because it models the client, but there is no
+	-- longer a FTN_NO_UNITISPLAYER switch, since nothing branches on it.
+	_G.UnitIsPlayer = function(unit)
+		local u = unitOf(unit)
+		if not u then return nil end
+		if u.secretIsPlayer then return M.secret(false) end
+		return u.isPlayer and true or false
 	end
 
 	-- GUIDs on the modern format. u.guid overrides it outright, so a test can
@@ -373,15 +374,15 @@ function M.install()
 
 	_G.UNKNOWNOBJECT = "Unknown Entity"
 
-	if not os.getenv("FTN_NO_SECRET_PROBE") then
-		_G.C_Secrets = {
-			ShouldUnitIdentityBeSecret = function(unit)
-				local u = unitOf(unit)
-				if not u then return false end
-				return u.identityRestricted and true or false
-			end,
-		}
-	end
+	-- Also unread since 1.2.21: only the roster asked whether a unit's identity
+	-- would come back secret. issecretvalue above is still live and still used.
+	_G.C_Secrets = {
+		ShouldUnitIdentityBeSecret = function(unit)
+			local u = unitOf(unit)
+			if not u then return false end
+			return u.identityRestricted and true or false
+		end,
+	}
 
 	_G.C_Timer = {
 		After = function(delay, fn)
@@ -413,11 +414,10 @@ function M.install()
 		GetMapInfo = function(id) return { mapID = id, name = M.location.zone } end,
 	}
 
-	if not os.getenv("FTN_NO_AREAINFO") then
-		C_Map.GetAreaInfo = function(id)
-			if M.areaInfoSecret then return M.secret("Somewhere") end
-			return M.areas[id]
-		end
+	-- Unread since 1.2.21, when /ftn areas went.
+	C_Map.GetAreaInfo = function(id)
+		if M.areaInfoSecret then return M.secret("Somewhere") end
+		return M.areas[id]
 	end
 
 	_G.C_AddOns = {

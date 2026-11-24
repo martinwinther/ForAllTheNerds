@@ -7,6 +7,11 @@ addon answers to. Run on 2026-11-09 against `AreaTable` for product `wowf`
 The question it answers: are there whole places, not subzones, that this addon
 has nothing for.
 
+**The in-game half of this method is gone.** `/ftn areas` was removed in 1.2.21.
+The AreaTable side below still works, so the sweep can be repeated; what cannot
+be repeated is the cross-check against the addon's own live resolver, which is
+what settled the disagreements noted further down.
+
 ## Method
 
 `AreaTable` has 1,404 named areas. The 189 with `ParentAreaID = 0` are the

@@ -5,6 +5,13 @@ two questions that decide whether a candidate is worth writing up: does this
 NPC exist in the game, and where does it stand. There are two automatic ways to
 answer. They answer different things, and both are worth having.
 
+**Route 1 is no longer available.** `/ftn npcs` and `/ftn areas` were removed in
+1.2.21: they were author's tooling that shipped inside the addon and recorded
+into every player's saved variables by default. What follows describes how they
+worked and what they produced, because the data they gathered is still in
+`tools/characters.tsv` and `tools/creature-ids.tsv` and the method explains its
+shape. To gather more, use route 2 or run a local build with the code restored.
+
 ## Route 1: the client itself
 
 `/ftn npcs` records the creature id along with the name and zone. It comes out

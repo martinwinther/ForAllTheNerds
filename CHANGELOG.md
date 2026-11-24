@@ -1,5 +1,84 @@
 # Changelog
 
+## 1.2.21
+
+This addon had been keeping lists of its own in your saved variables, and they are
+gone. It also finishes the vanilla-era sweep: the last fifteen entry records are
+reviewed, every one of them needed correcting, and all 907 vanilla entries have now
+been checked.
+
+**Removed**
+
+- Three commands and the recording behind them. `/ftn gaps` noted the names of
+  places with no entry written for them. `/ftn npcs` noted the name, zone and
+  creature id of anything you targeted or hovered over. `/ftn areas` asked the
+  client for every place name it knows. Two of those recorders were on by
+  default. They were my own tooling for deciding what to write up next, nothing was
+  ever sent anywhere, and players were never recorded, only NPCs. None of that makes
+  them something to keep running in your game. They have done their job: the
+  worklists they built are finished with, and the write-ups they fed are written.
+- The two settings that switched the recording on and off, since there is no longer
+  anything to switch.
+- Whatever those lists had already collected. Your settings file is read once on
+  login and the old entries are deleted from it, so after one login nothing is left.
+  Discoveries, statistics and every setting you have chosen are untouched.
+
+**Fixed**
+
+- Zuuldaia Ruins in Stranglethorn Vale was described as sitting on the southern
+  coast a short walk from Booty Bay. It is at the far opposite end of the zone, up
+  the western coast, and the Bloodscalp hold it in strength.
+- Whispering Gardens in Tirisfal Glades was not a Lordaeron graveyard watched over
+  by the Forsaken. It is the rise on the south side of the Scarlet Monastery's
+  entrance, the Scarlet Crusade holds it, and there is not a single grave on it.
+- Witch Hill in Dustwallow Marsh has no undead on it. It is north-west of Theramore
+  up the eastern side of the marsh, Swamplight Manor stands near the middle of it,
+  and Mirefin murlocs camp along the shore above.
+- At the Westfall Lighthouse, Captain Grayson is a ghost. He drowned on those rocks
+  himself, the lighthouse keeper's family was killed in front of him by Old
+  Murk-Eye's murlocs, and he keeps the flame lit because nobody living is left to.
+- Windshear Mine in the Stonetalon Mountains is not a Horde mine the goblins walked
+  away from. The Venture Company is still at the mouth of it with wagons of
+  explosives, and the Windshear kobolds in the shafts have geomancers and an
+  overlord of their own.
+- Woodpaw Den in Feralas lost an explanation of why the gnolls moved there. It came
+  from a novel published long after this period. What is going on there now is
+  Camp Mojache planning to kill five of the clan's alphas at once.
+- The Wildmane Water Well is north of Thunder Bluff, not out in the western plains,
+  and it is the last of Mulgore's three wells to be cleansed. Venture Company
+  workers are standing in it, and they are what fouled it.
+- Windfury Ridge holds the harpy clan's sorceresses and matriarchs rather than a
+  general harpy population, and tauren and harpies have a great deal of history:
+  young tauren are sent after the Windfury as a test of strength.
+- Wildwind Lake is in eastern Feralas below Camp Mojache, and the camp's tauren
+  answer to Thrall. The Grimtotem are in their own compound further west.
+- Ziata'jai Ruins has nothing living in it. What the Skullsplitter keep out there is
+  a pile of trophy skulls, and the ruin's age was being worked out from a date that
+  nothing supports.
+- Wildhammer Keep in Aerie Peak had the Wildhammer dwarves coming straight north
+  out of the War of the Three Hammers. They founded their kingdom inside Grim Batol
+  first, and lost it when Modgud died in its halls and left the mountain unlivable.
+  That is why they live on a slope instead of under one.
+- Xavian in Ashenvale gains what is actually happening in it, including who the
+  satyrs' leaders there are and what they did with a shipment of Warsong oil.
+- The Wild Shore gains the Bloodsail fleet in detail and Jaguero Isle off its
+  eastern end, and loses Gorlash, who stands on a different stretch of coast.
+- Zalashji's Den holds one naga rather than a colony. The Steamwheedle Cartel's
+  arrangement with the Southsea pirates is protection money. The cartel pays it and
+  the pirates have lately been ignoring what it buys.
+- The Western Strand is worked by Torn Fin murlocs, and Southshore's own lieutenant
+  would rather somebody else dealt with them. The Eastern Strand's entry had said
+  the western one has naga; it does not.
+- Swamplight Manor no longer says something haunts Witch Hill, which nothing in
+  this period supports. "Swamp Eye" Jarl's third errand is a sword, and he will not
+  say what he means to cut with it.
+
+**Changed**
+
+- The settings page is shorter by two checkboxes, and `/ftn` lists three fewer
+  commands. Typing one of the retired commands now looks for a place of that name
+  instead, the same as any other unrecognised word.
+
 ## 1.2.20
 
 Two more rounds of the vanilla-era sweep: 50 entry records reviewed and 49 of them

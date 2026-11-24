@@ -1,8 +1,9 @@
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P5, the write-up, which is the only item left.
+IN PROGRESS. Next: P5, and the only half of it left is `tools/era-audit.md`.
 P4 finished on 2026-11-24: all 907 surviving vanilla entries are covered, and
-the ranking is spent. See run 19 for counting details and run 34 for the recount
+the ranking is spent. Every run's player-facing changelog lines are written,
+run 37's under the 1.2.21 heading. See run 19 for counting details and run 34 for the recount
 that corrected run 33's total.
 Runs 30 to 32 took five entries out of the vanilla corpus, two by era tag and
 three as duplicates, which is how 915 became 910.
@@ -81,11 +82,12 @@ to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
 in 1.2.10, runs 13 and 14 in 1.2.11, runs 15 and 16 in 1.2.12, runs 17 and 18
 in 1.2.13, runs 19 and 20 in 1.2.14, runs 21 and 22 in 1.2.15, run 23 in 1.2.16,
 runs 24 to 28 in 1.2.17, runs 29 to 32 in 1.2.18, runs 33 and 34 in 1.2.19 and
-runs 35 and 36 in 1.2.20**, all released mid-sweep at Martin's explicit
-instruction. Their player-facing lines are already in the changelog under those
-fifteen headings, so do not write them again. P5 now covers only P4 run 37
-onwards, plus `tools/era-audit.md`, still not updated for anything since the
-original four errors.
+runs 35 and 36 in 1.2.20 and run 37 in 1.2.21**, all released mid-sweep at
+Martin's explicit instruction. Their player-facing lines are already in the
+changelog under those sixteen headings, so do not write them again. That is the
+changelog half of P5 finished for every run. **What is left of P5 is
+`tools/era-audit.md` alone**, still not updated for anything since the original
+four errors.
 
 ## Oracles, in order of preference
 
@@ -8996,10 +8998,80 @@ Woodpaw Den, Woodpaw Hills, Wyrmbog, Xavian, Yojamba Isle, Zalashji's
 Den, Ziata'jai Ruins, Zoram'gar Outpost, Zul'Farrak, Zul'Gurub,
 Zul'Mashar, Zun'watha, Zuuldaia Ruins.
 
-Next: P5, and nothing else. P0 to P4 are all done. P5 is the findings into
-`tools/era-audit.md`, which has not been touched since the original four errors,
-plus the player-facing changelog lines for this run, run 37, the only P4 batch
-not yet shipped. Runs 1 to 36 shipped in releases 1.2.6 through 1.2.20 and must
-not be written again. Do not tag and do not publish: releases are Martin's call.
-When P5 is done, write "SWEEP COMPLETE" as the first line of this file, commit,
-and say plainly that the loop can be stopped.
+Next: P5, and nothing else. P0 to P4 are all done, and run 37 shipped in 1.2.21
+along with its changelog lines, so the only half of P5 left is the findings into
+`tools/era-audit.md`, which has not been touched since the original four errors.
+Do not tag and do not publish: releases are Martin's call. When P5 is done, write
+"SWEEP COMPLETE" as the first line of this file, commit, and say plainly that the
+loop can be stopped.
+
+### 2026-11-24, release 1.2.21
+
+Martin asked for the addon's own dev tooling and data collection to come out,
+and for dev to be merged to main and released as the next 1.2.x. Both halves are
+in this release, so it carries more than a sweep batch does.
+
+**What came out of the addon.** Three commands and the recording behind them:
+`/ftn gaps` and its `logUnknown` list of unwritten place names, `/ftn npcs` and
+its `logNPCs` roster of targeted NPCs with creature ids, and `/ftn areas` with
+its `areaScan` result. Gone with them: the two settings checkboxes, the
+`ns.has.unitIsPlayer`, `identityProbe` and `areaInfo` capability probes, the
+`PLAYER_TARGET_CHANGED` and `UPDATE_MOUSEOVER_UNIT` frame in `Detect.lua` with
+`rosterNameOf` and `creatureIdFrom`, and the `RecordUnknown`, `UnknownList`,
+`RecordNPC`, `NPCList`, `ScanAreas` and `AreaGaps` functions in `Core.lua`.
+Two of the recorders were on by default, which is the part that justified
+removing rather than defaulting them off.
+
+`ns.PruneCollected` is new and takes the five keys out of an existing player's
+saved variables on load. The collected data is deleted rather than merely
+orphaned. Settings, discoveries and stats are left alone. Three new
+checks in the validator cover it, under a new `Retired lists` section: that an
+old file loses all five keys and keeps everything else, that `ns.defaults`
+carries none of them so a new file cannot start collecting again, and that none
+of the six functions is still on the namespace. All three were broken
+deliberately and confirmed to fail, by dropping `npcs` from the prune list, by
+putting `logNPCs` back in the defaults, and by restoring an `ns.RecordNPC` stub.
+A fourth check asserts the eight retired command spellings degrade to a place
+lookup instead of erroring, for anyone with one in a macro.
+
+**What this means for the sweep's own method, which matters more here than the
+release does.** Two of the three worklists this sweep has been working from were
+built by those commands. `tools/places.tsv` came out of `/ftn gaps`,
+`tools/characters.tsv` and `tools/creature-ids.tsv` out of `/ftn npcs`, and
+`tools/area-gaps.tsv` and `tools/coverage.md` were cross-checked against
+`/ftn areas`. All three files stay and all of them are complete enough for P5.
+What is no longer available is regenerating them from inside the game. The notes
+that described those routes as live instructions now say so at the top:
+`tools/npc-ids.md`, `tools/area-sweep.md` and the regeneration recipe in
+`tools/coverage.md`. The AreaTable and wago.tools routes are untouched, so the
+area sweep can still be repeated; the cross-check against the addon's own live
+resolver cannot.
+
+**The CI matrix went from nine configurations to six.** `FTN_NO_SECRET_PROBE=1`,
+`FTN_NO_UNITISPLAYER=1` and `FTN_NO_AREAINFO=1` each existed to prove the roster
+or the area scan coped on a client missing the API it needed. Nothing in the
+addon reads those APIs now. All three would have reported green while exercising
+nothing, and that is worse than not running them. The dead `os.getenv`
+gates came out of `tools/mock_wow.lua` with them, though the stubs themselves
+stay, since they model the client rather than the addon. `issecretvalue` is
+untouched and still used by `Detect.lua`.
+
+Two helpers in `Util.lua`, `U.CallBool` and `U.SafeBool`, are left in place
+although the roster was their only caller. They are generic secret-value guards
+rather than collection code, the validator exercises them directly, and taking
+them out would have been a second change riding along with this one.
+
+**Release contents.** P4 run 37, the last fifteen records, plus the removal
+above. `CHANGELOG.md` records both under the 1.2.21 heading in **Removed**,
+**Fixed** and **Changed**, and the removal leads, because it is the half a
+player would notice. The `', which'` budget fired on the new section at 9.3 per
+1000 words against a budget of 6, and five clauses were rewritten to bring it
+under rather than raising it. With run 37's lines written, the changelog half of
+P5 is finished for every run, and **P5 is now `tools/era-audit.md` alone**.
+
+Release checks before preparing: default validation and all six remaining CI
+configurations pass with zero errors and warnings, the retail and verbose
+switches pass too, check-gaps reports 43 explained gaps, prose lint is clean on
+the changelog, the CurseForge description and the README, and `git diff --check`
+passes. The preceding sweep commit 2018343 passed CI for its exact SHA before
+release preparation began.

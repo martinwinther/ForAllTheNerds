@@ -40,12 +40,12 @@ jobs:
             env: 'FTN_NO_SETTINGS=1 FTN_NO_TEMPLATES=1'
           - name: legacy options panel
             env: 'FTN_LEGACY_OPTIONS=1'
-          - name: no C_Secrets probe
-            env: 'FTN_NO_SECRET_PROBE=1'
-          - name: no UnitIsPlayer
-            env: 'FTN_NO_UNITISPLAYER=1'
-          - name: no C_Map.GetAreaInfo
-            env: 'FTN_NO_AREAINFO=1'
+          # Three configurations were dropped in 1.2.21: no C_Secrets probe, no
+          # UnitIsPlayer and no C_Map.GetAreaInfo. Each existed to prove the NPC
+          # roster and the AreaTable scan coped on a client missing the API they
+          # needed. Both features are gone, nothing in the addon reads those
+          # APIs any more, and a configuration that exercises nothing is worse
+          # than no configuration: it reports green without testing anything.
     name: ${{ matrix.name }}
     steps:
       - name: Check out

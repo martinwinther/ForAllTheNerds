@@ -954,7 +954,7 @@ SubsOf("Silithus", {
 -- The second pass covered the places on tools/places.tsv. This covers the rest
 -- of the named areas I am confident exist in the 1.12 world. Where I am not
 -- sure of a spelling I have left the place out rather than guess: an entry
--- whose name never matches is dead weight, and /ftn gaps will surface it.
+-- whose name never matches is dead weight.
 -- ===========================================================================
 
 SubsOf("Elwynn Forest", {
