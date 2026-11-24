@@ -21,8 +21,12 @@ list of vanilla subzones only. This file is the superset: it adds Forever's
 remaining areas and the top-level ones. `tools/forever-areas.tsv` covers
 Forever's four zones on their own.
 
-Regenerate with the recipe at the end. `/ftn areas` in game does the same
-check with the real resolver and is the authority when the two disagree.
+Regenerate with the recipe at the end. There used to be a second route,
+`/ftn areas` in game, which ran the same check through the real resolver and
+was the authority when the two disagreed. It was author's tooling living in a
+shipped addon and went in 1.2.21, so the recipe below is now the only route.
+Anything it reports has to be read with that in mind: the AreaTable rows are
+the client's, but the matching is this file's rather than the addon's own.
 
 ## Where the gaps are
 

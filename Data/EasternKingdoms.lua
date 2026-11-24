@@ -353,11 +353,12 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Whispering Gardens", parent = "Tirisfal Glades", faction = "Contested",
-		hook = "An old Lordaeron graveyard, unnervingly peaceful by the standards of this zone.",
+		hook = "The hill on the south side of the Scarlet Monastery's entrance.",
 		lore = {
-			"The Gardens were a formal burial ground for Capital City's dead, laid out long before the plague. Most of its occupants have since got up and walked off.",
-			"The Forsaken keep an eye on it. Consecrated ground has a way of producing complications for the undead, and some of the older graves here were warded by the Church.",
+			"The Gardens are the rise south of the Monastery's doors, in north-eastern Tirisfal, and the Scarlet Crusade holds them as it holds everything within sight of the place. Scouts work the slope, with magicians and preservers behind them and a watch post on the ground.",
+			"Nothing in this period explains the name. There are no graves on the hill, nobody has recorded what was supposed to be whispering here, and the only thing the Gardens reliably are is the last open ground before the Monastery gate.",
 		},
+		readMore = { "Wowpedia: Whispering Gardens", "Wowpedia: Scarlet Monastery", "Wowpedia: Tirisfal Glades" },
 	},
 	{
 		name = "Terrace of Repose", parent = "Tirisfal Glades", faction = "Contested",
@@ -544,11 +545,12 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Westfall Lighthouse", parent = "Westfall", faction = "Contested",
-		hook = "A lighthouse on the dust coast, with murlocs in the surf below it.",
+		hook = "A lighthouse kept by the ghost of a man who died on the rocks below it.",
 		lore = {
-			"The lighthouse still works and still matters, since the coast here is a hazard and Stormwind's shipping passes it. Its keeper's situation is lonely and precarious.",
-			"Murlocs have colonised the beaches beneath it, and the job has got much worse.",
+			"The coast here is a hazard and the wrecks along it say so. Sailors out on the Great Sea come in close to these rocks, which is the whole reason the flame matters. Captain Grayson stands outside the lighthouse and he is dead. His life ended on this shore, and his account of why he has not moved on is that his afterlife's work is seeing nobody else goes the way he did.",
+			"He was never the keeper. The keeper's family was frightened off the first time Old Murk-Eye brought the murlocs up the beach; they came back and relit the flame, and the second raid killed them in front of him. With nobody left to watch it, the job fell to him, and what he needs to do it is oil out of the harvest golems inland. Old Murk-Eye is still on the sand, with tidehunters and oracles all along the shore.",
 		},
+		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Captain Grayson", "Wowpedia: Keeper of the Flame (Classic)" },
 	},
 	{
 		name = "The Dagger Hills", parent = "Westfall", faction = "Hostile",
@@ -2614,9 +2616,8 @@ SubsOf("Stranglethorn Vale", {
 		name = "Wild Shore", parent = "Stranglethorn Vale", faction = "Hostile",
 		hook = "The southernmost beach in the Eastern Kingdoms, and the Bloodsail fleet is moored on it.",
 		lore = {
-			"This is where the continent stops. South of the Wild Shore is open water, and the Bloodsail Buccaneers keep their ships here because it is the last anchorage before that.",
-			"The Bloodsail are at war with Booty Bay, which is a goblin port a short way up the coast on the other side of a rocky point. A neutral town that sells to everyone and a pirate fleet that takes from everyone cannot both be right about this stretch of water.",
-			"Gorlash walks this beach. He is a giant, and he is not with the pirates; he is simply also here, and that is Stranglethorn's general arrangement.",
+			"This is where the continent stops. South of the Wild Shore is open water, and the Bloodsail Buccaneers keep their ships here because it is the last anchorage before that. Deckhands, sea dogs, swabbies and their elder magi are all on this stretch of sand. Jaguero Isle lies off the eastern end of it, across a shallow strait.",
+			"The Bloodsail are at war with Booty Bay, a goblin port a short way up the coast on the other side of a rocky point. A neutral town that sells to everyone and a pirate fleet that takes from everyone cannot both be right about this stretch of water.",
 		},
 		readMore = { "Wowpedia: Wild Shore", "Wowpedia: Bloodsail Buccaneers", "Wowpedia: Booty Bay" },
 	},
@@ -2751,11 +2752,12 @@ SubsOf("Eastern Plaguelands", {
 SubsOf("The Hinterlands", {
 	{
 		name = "Wildhammer Keep", parent = "The Hinterlands", faction = "Alliance",
-		hook = "The Wildhammer seat inside Aerie Peak, with an anvil and no forge.",
+		hook = "The Wildhammer seat inside Aerie Peak, built by dwarves who will not live under a mountain.",
 		lore = {
-			"Aerie Peak is the Wildhammer dwarves' home, and this keep is the heart of it. It doubles as an inn, and there is an anvil in it but nothing to heat the metal.",
-			"The Wildhammers are here because of the War of the Three Hammers. When Modimus Anvilmar died with no settled succession, the Bronzebeards, Wildhammers and Dark Irons fought over the throne. The Bronzebeards kept Ironforge, the Wildhammers came north to this peak, and the Dark Irons went south and bound themselves to Ragnaros.",
-			"They keep gryphons rather than rams and they answer to themselves rather than to Ironforge. Three thousand years on, the dwarves are still three peoples.",
+			"Aerie Peak is the Wildhammer dwarves' home and this keep is the heart of it. It doubles as an inn, and there is an anvil in it with nothing to heat the metal.",
+			"Why they are up here at all, rather than under a mountain like their cousins, is the War of the Three Hammers and what followed it. High King Modimus Anvilmar died of old age with the succession unsettled, the three clans went to war for Ironforge, and the Bronzebeards, who had the largest standing army, banished the other two from under the mountain. Khardros Wildhammer took his people north through the gates of Dun Algaz and founded their kingdom inside Grim Batol.",
+			"They did not keep it. Modgud, the sorceress wife of the Dark Iron thane Thaurissan, broke the gates and laid siege to the fortress, and Khardros waded through her army and cut her down in his own halls. Her death left a stain on the mountain that made it unlivable. Bronzebeard offered them a place inside Ironforge's borders and they refused it, so Khardros brought them to the Hinterlands instead, where they built on the slopes rather than carve a kingdom underneath and grew close enough to the land to bond with its gryphons.",
+			"They keep gryphons rather than rams and they answer to themselves rather than to Ironforge. A keep with an inn in it, standing on top of a peak, is what Grim Batol left them wanting.",
 		},
 		readMore = { "Wowpedia: Aerie Peak", "Wowpedia: Wildhammer clan", "Wowpedia: War of the Three Hammers" },
 	},

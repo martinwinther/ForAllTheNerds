@@ -81,8 +81,6 @@ about the place. Click it for the full write-up; right-click to dismiss it.
 | `/ftn stats` | how much of the world you have been told about |
 | `/ftn forget` | make everywhere count as new again |
 | `/ftn where` | print the exact strings the client reports for this spot |
-| `/ftn npcs` | the characters you have targeted, and the zone each stands in |
-| `/ftn areas` | ask the client for every place name it knows, and what has no entry |
 
 There is a minimap button too: left-click reads about where you are,
 right-click opens the settings.
@@ -366,7 +364,13 @@ FTN_PROJECT_ID=2 FTN_TOC=11509 lua tools/validate.lua   # Classic Era
 FTN_PROJECT_ID=1 FTN_TOC=120105 lua tools/validate.lua  # retail
 ```
 
-All eight configurations pass with zero errors and zero warnings.
+All of these pass with zero errors and zero warnings. The six that gate a
+release run in CI; the verbose and retail switches are for working locally.
+
+Three configurations were dropped in 1.2.21, for no C_Secrets probe, no
+`UnitIsPlayer` and no `C_Map.GetAreaInfo`. Each proved that the NPC roster or
+the AreaTable scan coped on a client missing the API it needed, and both of
+those features are gone.
 
 ---
 
