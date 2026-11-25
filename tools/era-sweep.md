@@ -8,7 +8,8 @@ entries were reviewed across 37 runs, the ranking is spent, every run's
 player-facing changelog lines are written, run 37's under the 1.2.21 heading,
 and the findings are written up in `tools/era-audit.md`.
 
-Read `tools/era-audit.md` first. It is the account of what the sweep found: the
+Read `tools/era-audit.md` first, and `tools/audit-prompt.md` if you are looking
+for the next error rather than a past one. It is the account of what the sweep found: the
 nine classes of error, how each got in, what now stops it and, more usefully,
 what no gate can catch. This file is the working log behind it, run by run, and
 is where to look for any single entry.
