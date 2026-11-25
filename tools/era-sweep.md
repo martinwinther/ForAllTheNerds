@@ -1,18 +1,28 @@
+SWEEP COMPLETE
+
 # The vanilla-era sweep
 
-IN PROGRESS. Next: P5, and the only half of it left is `tools/era-audit.md`.
-P4 finished on 2026-11-24: all 907 surviving vanilla entries are covered, and
-the ranking is spent. Every run's player-facing changelog lines are written,
-run 37's under the 1.2.21 heading. See run 19 for counting details and run 34 for the recount
-that corrected run 33's total.
-Runs 30 to 32 took five entries out of the vanilla corpus, two by era tag and
-three as duplicates, which is how 915 became 910.
+**Finished on 2026-11-25. There is no next run, and the loop that was driving
+this can be stopped.** P0 through P5 are all done. All 907 surviving vanilla
+entries were reviewed across 37 runs, the ranking is spent, every run's
+player-facing changelog lines are written, run 37's under the 1.2.21 heading,
+and the findings are written up in `tools/era-audit.md`.
 
-One bounded chunk per run. The point of the sweep is to replace a blacklist of
-era mistakes somebody happened to think of with a ledger that fails on anything
-unproven. `tools/era-audit.md` records the six errors already found and how
-they got in. Read it before touching an entry, and do not repeat that analysis
-here.
+Read `tools/era-audit.md` first. It is the account of what the sweep found: the
+nine classes of error, how each got in, what now stops it and, more usefully,
+what no gate can catch. This file is the working log behind it, run by run, and
+is where to look for any single entry.
+
+What the sweep did to the corpus, measured rather than tallied from the runs:
+921 vanilla records before, 907 after, with 692 of the 906 that survived both
+ends changed and 214 left exactly as they were. Eleven records left the vanilla
+corpus, five as places that do not exist in this period and six as duplicates,
+and three moved from vanilla to Forever. See run 19 for counting details and
+run 34 for the recount that corrected run 33's total.
+
+One bounded chunk per run was the rule while this ran. The point of the sweep
+was to replace a blacklist of era mistakes somebody happened to think of with a
+ledger that fails on anything unproven, and that is now in place at 2,480 rows.
 
 The current corpus is 915 vanilla entries and 74 Forever ones, from `lua
 tools/dump-prose.lua`. Only the vanilla ones are in scope. A Forever entry is
@@ -72,10 +82,13 @@ spoilers in a fix: name a place and who holds it, not how a quest resolves.
 Record the entries covered in the log below. The next run then continues
 instead of restarting.
 
-**P5. Write it up. NOT STARTED.**
-Once P0 to P4 are done, put the findings into `tools/era-audit.md`, add the
-player-facing lines to the `Unreleased` section of the changelog, and stop. Do
-not tag and do not publish: releases are Martin's call.
+**P5. Write it up. DONE 2026-11-25.**
+`tools/era-audit.md` is rewritten from the four original errors to the whole
+sweep: the corpus arithmetic, nine classes of error with examples, the ways in
+that the first pass had not seen, what the ledger and `check-era.py` now stop,
+and a section on what no gate can catch. The player-facing changelog lines were
+written release by release, run 37's last, under the 1.2.21 heading. Nothing was
+tagged or published for P5 itself.
 
 Note for whoever reaches P5: **P0 and P1 shipped in 1.2.6, P2, P3 and P4 runs 1
 to 3 in 1.2.7, runs 4 to 8 in 1.2.8, runs 9 and 10 in 1.2.9, runs 11 and 12
@@ -122,8 +135,8 @@ robots.txt disallows our agents.
 
 ## Before every commit
 
-`lua tools/validate.lua`, and the same across the nine client configs the
-matrix in `.github/workflows/ci.yml` lists. All must pass. `python3 -I
+`lua tools/validate.lua`, and the same across the client configs the matrix in
+`.github/workflows/ci.yml` lists, six of them since 1.2.21 dropped three. All must pass. `python3 -I
 tools/lint-prose.py` on every file touched, clean. `python3 -I
 tools/check-gaps.py` passes. RHYTHM findings on `Data/*.lua` are pre-existing
 false positives from reading Lua as prose, so check the count did not rise
@@ -9075,3 +9088,74 @@ switches pass too, check-gaps reports 43 explained gaps, prose lint is clean on
 the changelog, the CurseForge description and the README, and `git diff --check`
 passes. The preceding sweep commit 2018343 passed CI for its exact SHA before
 release preparation began.
+
+### 2026-11-25, P5: the write-up, and the end of the sweep
+
+`tools/era-audit.md` goes from 90 lines about four errors to 250 about the whole
+sweep. P0 through P5 are done and the first line of this file now says so.
+
+**The numbers in it were measured, not tallied.** Adding up thirty-seven runs'
+own claims would have compounded every bookkeeping slip the log already records
+two of, so the corpus arithmetic came from dumping the prose at the 1.2.5 tag,
+the last release before the sweep began, dumping it again at HEAD, and pairing
+the records: 994 records before and 983 after, 921 vanilla and 907, 73 Forever
+and 76. Of the 906 vanilla records present at both ends, 692 changed and 214
+were left exactly as they were. Eleven records left the vanilla corpus, five
+deleted as places that do not exist in this period, The Sludgewerks, Whisperwind
+Grove, The Red Reaches, Thieves Camp and Witherbark Caverns, and six resolved as
+duplicates in favour of the client's own spelling. Three moved from vanilla to
+Forever: Galak Camp, Legashi Stronghold and Skywatcher Plateau. One name was
+added, O'Breen's Camp: the same place as the old O'Breen's Encampment, under
+the name the client uses.
+
+That 214 is the figure worth keeping. It is the quarter of the corpus the sweep
+read and found no fault in, and without it the other number means nothing.
+
+**Nine classes of error, ranked by how much trouble each caused.** The later
+state described as the present, which is what the original audit was written
+for, is only the first and not the commonest. The wrong occupants is the
+commonest. Then the wrong place, invention, a proper noun inferred from a common
+word in the place name, a claim asserted where the source says nobody knows,
+lore published long after the period about events inside it, our own entries
+contradicting each other, and the sweep's own corrections wrong in turn. Each
+carries two or three worked examples out of the log.
+
+**The three ways in that the first pass had not seen** are written up alongside
+the original retail-article diagnosis, which held across all 907 entries: an
+infobox leader filed under a tribe's best-known holding rather than where the
+client puts him, the worklist keeping a deleted place alive and eligible to be
+written up again, and absence from the spawn table read as absence from the
+game, the Magus Rimtori lesson from run 34.
+
+**The section worth reading twice is "What no gate can catch".** Classes 2
+through 9 all pass the ledger cleanly, because each is built entirely out of
+words that are vanilla. Twilight Vale's invented cult used `Twilight's Hammer`,
+a correct row in the ledger, in a zone where no cult stands. The audit says so
+plainly rather than leaving the gates looking more capable than they are, and it
+records the two extractor limits with it. A term capitalised only at the start
+of a sentence is never checked at all, and that hid `Security Chief
+Bilgewhizzle` in two entries until a third wrote him mid-sentence. The same rule
+in reverse means a more specific term in one entry can fail entries nobody
+touched, as happened in five consecutive runs.
+
+**Two stale instructions fixed while here.** The "Before every commit" section
+said nine client configs; 1.2.21 dropped three and it is six. The old header
+said `tools/era-audit.md` "records the six errors already found", which stopped
+being what that file is.
+
+**No new checks, so nothing to break deliberately.** This item is documentation
+only: no entry prose, no ledger row, no code and no validator section changed.
+The prose dump is 983 records before and after, none added, removed or changed,
+and no era tag changed. Worth knowing for whoever compares dumps next:
+`tools/dump-prose.lua` does not emit its records in a stable order, because it
+walks a Lua table, so two dumps of an identical corpus differ line by line and
+`diff` reports a change that is not there. Compare them keyed on the entry name,
+or sort both first. `lua tools/validate.lua` passes, and so do the six
+client configs in `.github/workflows/ci.yml`, the `FTN_NO_TEMPLATES=1` one with
+its usual single note. `python3 -I tools/check-gaps.py` passes with 43 explained
+gaps. `git diff --check` passes. `tools/lint-prose.py` is clean on
+`tools/era-audit.md` and on this file. Nothing was tagged and nothing published:
+P5's brief says releases are Martin's call, and 1.2.21 already carries run 37.
+
+The sweep is over. Nothing is scheduled, nothing is pending, and the next person
+to touch an entry should read `tools/era-audit.md` and not this log.
