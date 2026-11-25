@@ -1,5 +1,51 @@
 # Changelog
 
+## 1.2.22
+
+A correctness fix reported by a player, and three new Forever write-ups.
+
+**Fixed**
+
+- There is no crater at Dalaran in this period, and five entries said there was.
+  Thanks to ptk042 on CurseForge for spotting it in the Alterac Mountains and
+  Dalaran Crater descriptions. What is actually there is the destroyed city with a
+  vast magical dome raised over the heart of it, and the game gives two rival
+  accounts of why the wizards built it: protection from the violence of these
+  times, or solitude to study and plot. The ruined outskirts outside the dome can
+  be walked, treasure hunters think there is still magic lying in them, and they
+  are patrolled by Dalaran shield guards, theurgists and summoners with elemental
+  slaves bound to them. Mages are rebuilding the place, and Archmage Ansirem
+  Runeweaver is on the ground being asked to identify things on the grounds that
+  his knowledge is vast. A crater only belongs there at a much later point in the
+  story, once the city has been lifted away to fly over Northrend.
+- The same mistake was in three more entries than were reported: Ambermill, the
+  Mage Quarter in Stormwind and the Forever City of Dalaran. All corrected.
+- The Dalaran entry is now called Dalaran, which is what the game calls that
+  ground. It had been filed under the name the area is given much later. Looking
+  it up by the old name still works.
+- Four places had quietly taken over another entry's name, so the write-up you
+  got depended on which file loaded first rather than on where you were standing.
+  Dalaran, Alcaz Island, the Westfall Lighthouse and Hillsbrad Fields are each
+  answered by their own entry again.
+- Jereman, the dread raven Wild God in the Cradle of Tranquility, is a she. The
+  entry had been calling her he.
+
+**Added**
+
+- Three Forever places that had no write-up. Dae'gun on Mount Hyjal, demon-held
+  ruins with a pit lord's ashes still on the ground. Elderwild, also on Hyjal,
+  where the people stranded on the mountain are living: an infirmary, a few
+  remaining mounts, some sheep, and a boy who is supposed to be watching them and
+  is making mud dragons instead. And Turner's Logging Camp in the Riverglades, a
+  human camp losing its own woodpiles to the headhunters across the line.
+- These three are Forever content, so like the rest of it they stay hidden until
+  you turn Forever's new zones on.
+
+**Changed**
+
+- The build now refuses to ship if one place has taken over another's name, which
+  is the check that would have caught the Dalaran problem before you did.
+
 ## 1.2.21
 
 This addon had been keeping lists of its own in your saved variables, and they are

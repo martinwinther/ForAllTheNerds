@@ -11,11 +11,13 @@
 # has_entry was produced by loading the addon against tools/mock_wow.lua,
 # dumping every registered entry name through ns.EachEntry, and matching on a
 # normalised name. That is a name match, not the resolver: a place whose entry
-# exists but whose parent zone differs would show as having one. /ftn areas
-# inside the game uses the real ns.FindZone / ns.FindSub / ns.FindInstance.
+# exists but whose parent zone differs would show as having one. The resolver
+# check used to be /ftn areas in game, removed in 1.2.21 with the rest of the
+# in-addon tooling.
 #
-# 68 areas, 49 written up, 19 to go. Counted with aliases; a name-only
-# check had reported four of them wrongly.
+# 68 areas, 57 written up, 11 to go. RECOUNTED 2026-11-25 against the live
+# corpus with aliases included. The earlier figures in this header, 19 to go
+# here and 35 further down, were both left behind by later runs.
 #
 # RE-CHECKED 2026-11-09, five days after the patch. The wiki has grown a
 # Category:Riverglades subzones with ten pages in it, three of which were new:
@@ -26,6 +28,8 @@
 # Forever's. So the wiki IS filling in, zone by zone, and this is worth
 # re-running every so often rather than treating as settled.
 #
+# SUPERSEDED, see the 2026-11-25 recount above: 8 still open, not 35. The note
+# below is kept because its reasoning still holds for the zone articles.
 # The 35 still open are not blocked on sources any more. Martin cleared the
 # built-in browser for reading warcraft.wiki.gg, whose robots.txt allows
 # User-agent: * even though it names this tooling's crawler agents, and the

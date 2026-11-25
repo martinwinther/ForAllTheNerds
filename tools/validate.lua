@@ -311,6 +311,66 @@ out("Spoiler gating: hides " .. spoilerCount .. " entries off, reveals them on")
 -- couple of uses is voice and twenty is a tic.
 -- ---------------------------------------------------------------------------
 
+-- Two entries claiming one name
+--
+-- Duplicate entry NAMES are legitimate and the corpus has several: the client
+-- really does have two areas called South Gate Pass, one per side of the pass.
+-- An ALIAS colliding with another entry's name is not legitimate. The resolver
+-- then answers from whichever file loaded first rather than from intent, and
+-- the player standing in the place gets the write-up for somewhere else.
+--
+-- Run 32 of the era sweep found this shape at Dalaran and recorded it rather
+-- than fixing it, and it stayed live until a player reported the entry that
+-- came out on top. Two more were found with it: Hillsbrad claimed Hillsbrad
+-- Fields, which is a separate area in the client's own AreaTable, and the
+-- City of Dalaran claimed Dalaran, which is the ground outside it.
+--
+-- An alias that matches its own entry's name is exempt. That is how an entry
+-- tolerates a missing apostrophe, as Champions' Hall does.
+do
+	local claims = {}
+	ns.EachEntry(function(e)
+		local nameKey = ns.U.Key(e.name)
+		if nameKey then
+			claims[nameKey] = claims[nameKey] or {}
+			table.insert(claims[nameKey], { entry = e.name, how = "its name" })
+		end
+		for i = 1, #(e.aliases or {}) do
+			local aliasKey = ns.U.Key(e.aliases[i])
+			-- An entry is allowed to alias a spelling of itself.
+			if aliasKey and aliasKey ~= nameKey then
+				claims[aliasKey] = claims[aliasKey] or {}
+				table.insert(claims[aliasKey], { entry = e.name, how = string.format("the alias %q", e.aliases[i]) })
+			end
+		end
+	end)
+
+	local clashes = 0
+	for _, key in ipairs(ns.U.Keys(claims, true)) do
+		local who = claims[key]
+		if #who > 1 then
+			-- Only an alias makes this a clash; two entries sharing a real name
+			-- are two real places.
+			local hasAlias = false
+			for i = 1, #who do
+				if who[i].how ~= "its name" then hasAlias = true end
+			end
+			if hasAlias then
+				clashes = clashes + 1
+				local parts = {}
+				for i = 1, #who do
+					parts[#parts + 1] = string.format("%s by %s", who[i].entry, who[i].how)
+				end
+				fail("%q is claimed by %d entries, so the resolver picks by file order: %s",
+					key, #who, table.concat(parts, ", "))
+			end
+		end
+	end
+	if clashes == 0 then
+		out("no alias collides with another entry's name")
+	end
+end
+
 section("Prose style")
 
 -- Lua patterns, not regexes: no alternation, so each phrasing is listed.

@@ -119,7 +119,8 @@ sub	Ortell's Hideout	Silithus	Hostile		Cave where the Twilight's Hammer deserter
 # the exact strings GetZoneText and GetSubZoneText return, which is what a
 # new entry has to match. Add the rows here, then generate.
 
+# TODO Westfall: two entries cover one lighthouse. The client has both Lighthouse (area 26) and Westfall Lighthouse (area 115) under Westfall, so both names are real and both entries resolve, but they describe the same building and Captain Grayson twice over. Worth merging into one, with the other name as an alias on it. Found 2026-11-25 by the new alias-collision check in validate.lua, not by the era sweep, which reviewed Westfall Lighthouse in run 37 without noticing the second entry existed.
 # TODO Shen'dralas: UNKNOWN -- no subzone names documented yet. Use /ftn where in game to capture them.
 # TODO Zephras Isle: UNKNOWN -- Windshapers, High Order and Al'Aketh are named as groups on the isle, but no subzone strings confirmed.
 # TODO Riverglades: UNKNOWN -- only Powderfuse Port confirmed so far.
-# TODO Mount Hyjal: Hyjal Summit is reported as a 20-player raid. Confirm the exact instance name with /ftn where before adding.
+# TODO Mount Hyjal: the Mount Hyjal (Forever) article's instance table, read 2026-11-25, gives two raids: Hyjal Summit at level 60 for 20 players and Barrow Deeps at level 60 for 10. Neither has an AreaTable row, so both need Instance{} rather than SubsOf, the way Krol'dok Stronghold is registered. Not written yet: the table gives names, levels and group sizes and no lore. /ftn where is no longer available to confirm the strings in game, since 1.2.21 removed it.

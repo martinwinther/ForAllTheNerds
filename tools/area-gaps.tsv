@@ -12,14 +12,21 @@
 #
 # Some of these will be spelling variants of entries that already exist --
 # "The Cemetary" against Raven Hill Cemetery, say -- so treat the count as an
-# upper bound until each is checked. /ftn areas in game uses the real resolver
-# and is the authority.
+# upper bound until each is checked. There used to be a second check, /ftn areas
+# in game, which ran the real resolver and was the authority; it was removed in
+# 1.2.21 along with the rest of the in-addon tooling. Match against the addon's
+# entry names AND their aliases instead: a name-only check overstates the gap,
+# because 41 alias strings answer to names that are not entry names.
 #
 # No notes column. tools/places.tsv had one, three of its notes were wrong, and
 # those errors reached finished lore.
 #
-# 202 places still open. 231 when the list was made on 2026-11-09;
-# 17 have been written up since.
+# RECOUNTED 2026-11-25, after the vanilla-era sweep finished: 40 of these 202
+# rows are still unanswered, and all 40 are documented in tools/no-source.md as
+# places that will never get an entry. There are no undocumented gaps left on
+# this list, which is what tools/check-gaps.py asserts in CI. The older counts,
+# 231 when the list was made on 2026-11-09 and 202 after, were name-only and
+# did not count aliases.
 #
 # parent	area_id	name	continent
 parent	area_id	name	continent

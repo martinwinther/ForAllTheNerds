@@ -7,7 +7,7 @@ local addonName, ns = ...
 local U = ns.U
 
 ns.NAME      = addonName
-ns.VERSION   = "1.2.21"
+ns.VERSION   = "1.2.22"
 ns.TITLE     = "ForAllTheNerds"
 
 -- ---------------------------------------------------------------------------

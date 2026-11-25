@@ -128,6 +128,35 @@ other entries repeating the same claim were left alone. **A correction is not
 finished when the entry it was found in is fixed.** Grep the rest of the corpus
 for the claim before closing it out.
 
+### Two ways class 1 got past the whole sweep
+
+Found on 2026-11-25, by a player, after the sweep had closed. Both are worth
+more than the entries they affected.
+
+**The entry name vouched for the claim.** Five entries said there is a crater at
+Dalaran. There is not, in this period: the wizards raised a dome over the heart
+of their ruined city, quest 545 gives two rival accounts of why, and the
+outskirts outside the dome are walkable and patrolled. The crater only appears
+in Wrath of the Lich King, when the city is lifted away to Northrend. Nobody
+caught it because the entry was called **Dalaran Crater**, which is the area's
+name from Wrath onward, so the name read as the client vouching for the crater. The ledger exempts entry names by design, because the client really does
+have an area called the Southern Barrens. That exemption is also a hole: a name
+taken from a later client asserts the later state before any prose does, and
+every reviewer who looked at the entry took the crater as given. The vanilla
+client's AreaTable has one area here, 279, called **Dalaran**, and the entry is
+now named that.
+
+**An alias can steal another entry's name.** Run 32 of the sweep found that
+`Dalaran Crater` and `City of Dalaran` both claimed the alias `Dalaran`, wrote
+down that the resolver was therefore picking by file order, and left it. That is
+how the wrong entry came to answer for the place a player was standing in.
+`tools/validate.lua` now fails on any alias that collides with another entry's
+name, exempting an alias that matches its own entry so that an apostrophe can
+still be tolerated. It found two more the moment it was added: a Forever
+instance claiming `Alcaz Island` from the vanilla area, and a Westfall entry
+claiming `Westfall Lighthouse` from the entry of that name. Recording a
+structural problem is not the same as having a check for it.
+
 ## How they got in
 
 The original diagnosis held up across all 907 entries, so it is unchanged:

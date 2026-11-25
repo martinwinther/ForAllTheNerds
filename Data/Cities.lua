@@ -55,7 +55,7 @@ SubsOf("Stormwind City", {
 		hook = "Stormwind's arcane district, under the Wizard's Sanctum tower.",
 		lore = {
 			"The Mage Quarter holds the Wizard's Sanctum and Stormwind's arcane establishment. It is where the kingdom's mages and warlocks train, the latter rather more discreetly.",
-			"Stormwind's magical tradition has always been secondary to Dalaran's. With Dalaran a crater, that has started to change by default rather than design.",
+			"Stormwind's magical tradition has always been secondary to Dalaran's. With Dalaran in ruins and sealed under its own dome, that has started to change by default rather than design.",
 		},
 	},
 	{
