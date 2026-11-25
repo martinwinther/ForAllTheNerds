@@ -418,7 +418,7 @@ SubsOf("Silverpine Forest", {
 		name = "Ambermill", parent = "Silverpine Forest", faction = "Hostile",
 		hook = "The last Dalaran holdout in Silverpine, and the Forsaken want it gone.",
 		lore = {
-			"Ambermill is held by mages still loyal to Dalaran, squarely in the Forsaken's way. Dalaran itself is a ruin and a crater, but the Kirin Tor's scattered agents have not all accepted that the city is finished.",
+			"Ambermill is held by mages still loyal to Dalaran, squarely in the Forsaken's way. Dalaran itself is a ruin under a dome, but the Kirin Tor's scattered agents have not all accepted that the city is finished, and the mages there are rebuilding it.",
 			"The Forsaken see an enemy garrison inside their borders. The mages see squatters in a dead kingdom. Neither reading is unreasonable.",
 		},
 	},
@@ -1135,7 +1135,7 @@ Zone{
 	lore = {
 		"Alterac was one of the seven human kingdoms and a founding member of the Alliance of Lordaeron. Its king, Aiden Perenolde, then sold the Alliance out: he fed intelligence to the Horde during the Second War and tried to cut a separate peace. When it came out, Alterac was dismantled and its nobility stripped of everything.",
 		"What is left is the Syndicate. The dispossessed Alterac nobles and their retainers turned to organised crime, and they now operate across the Alterac Mountains, Hillsbrad and the Arathi Highlands. They are better dressed than ordinary bandits and no less dangerous.",
-		"The mountains hold two other things worth knowing. Dalaran's crater is here, where the Violet Citadel was crushed by the demon Archimonde during the Legion's invasion. And Alterac Valley to the north is a live war: Stormpike dwarves digging for titan relics against the Frostwolf orcs who were already living there.",
+		"The mountains hold two other things worth knowing. Dalaran is here, crushed by the demon Archimonde during the Legion's invasion and sitting under a dome its own wizards raised over the ruins afterwards. And Alterac Valley to the north is a live war: Stormpike dwarves digging for titan relics against the Frostwolf orcs who were already living there.",
 	},
 	didYouKnow = "The Frostwolf clan in Alterac Valley are Thrall's own clan, exiled to that valley by Gul'dan long before the Horde came through the portal. Drek'Thar leads them, and without them Thrall would never have learned what being an orc meant.",
 	readMore = { "Wowpedia: Alterac Mountains", "Wowpedia: Syndicate", "Wowpedia: Alterac" },
@@ -1143,14 +1143,14 @@ Zone{
 
 SubsOf("Alterac Mountains", {
 	{
-		name = "Dalaran Crater", parent = "Alterac Mountains", faction = "Hostile",
-		aliases = { "Dalaran", "Old Dalaran Ruins" },
-		hook = "What is left of the Kirin Tor's city after a demon lord stepped on it.",
+		name = "Dalaran", parent = "Alterac Mountains", faction = "Hostile",
+		aliases = { "Dalaran Crater", "Old Dalaran Ruins" },
+		hook = "A destroyed city with a dome over the middle of it, and nobody agrees why the dome is there.",
 		lore = {
 			"Dalaran was the magocracy, home of the Kirin Tor and the finest centre of arcane learning in the world. Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied in its Violet Citadel, and most of the archmages whose decisions shaped the last two wars with them.",
-			"During the Legion's invasion, Archimonde destroyed it. The mages threw everything they had into a magical shield and he simply broke it and crushed the city. What remains is a crater under a dome.",
-			"Kirin Tor are still on the ground outside it, and they are not only standing guard. Dalaran summoners and theurgists work the crater with elemental slaves bound to them, and nobody is in a position to question the liberty.",
-			"The Kirin Tor has not disbanded. Its archmages are scattered and it has no city, but the order still considers itself responsible for magic in this world.",
+			"Archimonde destroyed it during the Legion's invasion. The mages threw everything they had into a magical shield and he simply broke it and crushed the city underneath. What the wizards did afterwards is the part worth knowing: they raised a vast magical dome over the heart of their own ruin, and the reasons given for it do not agree. One account says protection from the violence of these times. Another says they wanted solitude, to study and to plot.",
+			"Outside the dome are the ruined outskirts, and those can be walked. Treasure hunters think there is magic still lying in them, which is a problem, because the ground is patrolled. Dalaran shield guards, theurgists and summoners work it with elemental slaves bound to them, and nobody out here is in a position to question the arrangement.",
+			"The Kirin Tor has not disbanded and has not given the city up either. Its mages are rebuilding, and Archmage Ansirem Runeweaver is on the ground, consulted by people who need something identified on the grounds that his knowledge is vast.",
 		},
 		didYouKnow = "Kel'Thuzad was a Kirin Tor archmage before he founded the Cult of the Damned. Dalaran expelled him for studying necromancy. He went to Northrend, found the Lich King, and brought back the plague that destroyed Lordaeron.",
 		readMore = { "Wowpedia: Dalaran", "Wowpedia: Kirin Tor" },
@@ -3009,7 +3009,6 @@ SubsOf("Wetlands", {
 SubsOf("Hillsbrad Foothills", {
 	{
 		name = "Hillsbrad", parent = "Hillsbrad Foothills", faction = "Alliance",
-		aliases = { "Hillsbrad Fields" },
 		hook = "The town the foothills are named for, still standing and not expected to.",
 		lore = {
 			"Hillsbrad town sits in the western foothills under Magistrate Burnside, and it is human, Alliance, and holding on. It was Lordaeron's before Lordaeron fell.",
@@ -3373,7 +3372,11 @@ SubsOf("Silverpine Forest", {
 SubsOf("Westfall", {
 	{
 		name = "Lighthouse", parent = "Westfall", faction = "Contested",
-		aliases = { "Westfall Lighthouse", "The Lighthouse" },
+		-- Not aliasing "Westfall Lighthouse": the client has both as separate
+		-- areas, 26 and 115, both parented to Westfall, and each entry answers
+		-- to its own. The two write-ups cover one physical lighthouse between
+		-- them and are worth merging; see tools/places.tsv.
+		aliases = { "The Lighthouse" },
 		hook = "A lighthouse on the southern coast, kept now by its own keeper's ghost.",
 		lore = {
 			"The lighthouse stands on Westfall's far southern shore, at the end of the Longshore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",

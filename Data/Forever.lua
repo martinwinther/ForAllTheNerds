@@ -803,14 +803,18 @@ Instance{
 Instance{
 	name = "City of Dalaran", continent = "Eastern Kingdoms", faction = "Contested", levels = "28-33",
 	era = "forever", spoiler = true,
-	aliases = { "Dalaran", "The City of Dalaran" },
-	hook = "Inside the Kirin Tor's ruined city, under the dome that has hidden it since the Third War.",
+	-- "Dalaran" is deliberately NOT an alias here. It is the vanilla client's own
+	-- area name for the ground outside, AreaTable 279, and the entry in
+	-- Data/EasternKingdoms.lua answers to it. Two entries claiming one alias left
+	-- the resolver picking by file order, which run 32 of the era sweep flagged.
+	aliases = { "The City of Dalaran" },
+	hook = "Inside the Kirin Tor's ruined city, through a sewer grate in the western wall.",
 	lore = {
 		"Dalaran was the magocracy, and the Violet Citadel at its centre was the finest school of arcane learning in the world. Medivh, Khadgar, Jaina Proudmoore, Antonidas and Kel'Thuzad all studied here.",
-		"Archimonde destroyed it during the Legion's invasion. The mages threw everything they had into a shield and the demon broke it and crushed the city underneath. What has been visible from the Alterac Mountains ever since is a crater under a magical dome, patrolled by surviving Kirin Tor who keep people out.",
+		"Archimonde destroyed it during the Legion's invasion. The mages threw everything they had into a shield and the demon broke it and crushed the city underneath. What is visible from the Alterac Mountains is the ruin and the dome the wizards raised over the heart of it afterwards, with the outskirts outside patrolled by Kirin Tor who keep people out.",
 		"Kel'Thuzad is the name that hangs over the place. He was a Kirin Tor archmage until Dalaran expelled him for studying necromancy, and he went north, found the Lich King, and came back with the plague that killed Lordaeron. The order that threw him out paid for it as much as anyone.",
 	},
-	didYouKnow = "Getting in needs an attunement, and the Alliance and Horde start it from opposite ends of the Hillsbrad war: Southshore for one, Tarren Mill for the other.",
+	didYouKnow = "Getting in means going under the wards rather than through them: the way in is a sewer grate in the western wall, and it needs a key. The Alliance picks the trail up in Stormwind and Southshore and the Horde in the Undercity and Tarren Mill, and both ends run through an image of Archmage Modera on the shore of Lordamere Lake, who simply hands the key over.",
 	readMore = { "Wowpedia: Dalaran", "Wowpedia: Kirin Tor", "Wowpedia: Archimonde" },
 }
 
@@ -830,7 +834,8 @@ Instance{
 Instance{
 	name = "Alcaz Prison", continent = "Kalimdor", faction = "Contested", levels = "48-53",
 	era = "forever", spoiler = true,
-	aliases = { "Alcaz Island" },
+	-- "Alcaz Island" is deliberately not an alias: it is the vanilla client's own
+	-- area name, AreaTable 2079, and the Data/Kalimdor.lua entry answers to it.
 	hook = "The island prison off Dustwallow, where the Defias held Stormwind's nobles for ransom.",
 	lore = {
 		"Alcaz Island sits off Dustwallow Marsh's eastern shore, within sight of Theramore and impossible to get onto. The Defias Brotherhood used it to hold kidnapped Stormwind nobility while the ransoms were negotiated, which is a long way from Westfall for a gang of stonemasons.",

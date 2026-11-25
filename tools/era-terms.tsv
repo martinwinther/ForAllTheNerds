@@ -65,7 +65,7 @@ Angerfang	vanilla	AreaTable row	wow_classic_era	cs
 Angerfang Encampment	vanilla	AreaTable row	wow_classic_era	cs
 Angor Fortress	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Antilus	vanilla	name or title component of creature_template 5347	cmangos 1.12.1 creature_template	cs
-Antonidas	forever	used only by Forever entries	Forever	cs
+Antonidas	history	Grand Magus of the Kirin Tor in the Third War; absent from the 1.12 tables and named by a vanilla entry as well as a Forever one	warcraft.wiki.gg	cs
 Anubisath	vanilla	named in 1.12 game text	cmangos 1.12.1	cs
 Anvilas	forever	used only by Forever entries	Forever	cs
 Anvillaxx	forever	used only by Forever entries	Forever	cs
@@ -2488,3 +2488,5 @@ Ortak Lomgok	forever	named in Forever quest 96622, A Rest Without Pain	Forever	c
 Renalard	forever	fox Wild God named in Forever quest A Clever Creature	Forever	cs
 Tan'jani	forever	named in Forever quest 95951, Fetch 'n' Fletch	Forever	cs
 Turner's Logging Camp	forever	AreaTable row; named in Forever quest 95951	Forever	cs
+Archmage Ansirem Runeweaver	vanilla	Creature 2543, Archmage Ansirem Runeweaver of the Kirin Tor, named in quest 602	cmangos 1.12.1 creature_template and quest_template	cs
+Archmage Modera	forever	the Image of Archmage Modera who hands over the Dalaran Sewer Key; absent from the 1.12 tables	Forever	cs
