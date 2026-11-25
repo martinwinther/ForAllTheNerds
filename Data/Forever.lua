@@ -27,10 +27,25 @@ local addonName, ns = ...
 -- the Twilight's Hammer arriving out of the Tomb of Sargeras, the Skyborne's
 -- vanished elementals and their failing island.
 --
--- 35 areas are still unwritten. They need the individual subzone articles or
--- the game itself; tools/forever-areas.tsv lists them. Client data will not
--- help, whatever effort goes in: quest text and NPC dialogue are what describe
--- a place in this game and both live on the server.
+-- 8 areas are still unwritten, down from 35. tools/forever-areas.tsv lists
+-- them. Client data will not help, whatever effort goes in: quest text and NPC
+-- dialogue are what describe a place in this game and both live on the server.
+--
+-- RE-CHECKED 2026-11-25. The wiki was queried again for all eleven that were
+-- then outstanding, by title, by disambiguated title and by full-text search.
+-- Three turned out to be writable and are now written: Dae'gun and Elderwild
+-- on Hyjal, from three and two Forever quest pages respectively, and Turner's
+-- Logging Camp in the Riverglades from one. The other eight have nothing. Six
+-- are bare red links in a zone article's subregion list, which supports no
+-- claim at all, and two, Hyjal Crater and Twilight Hollow, are not mentioned
+-- anywhere on the wiki. Those eight need the game.
+--
+-- One trap found while doing it, recorded so nobody repeats it. There is an
+-- article called Eastwind Shore, and it is a coastal strip in the Grizzly
+-- Hills. The Riverglades has its own Eastwind Shore and links it as
+-- "Eastwind Shore (Riverglades)", which is a red link. A name match is not a
+-- place match, and this is the same shape of error as reading a retail article
+-- for a vanilla place.
 --
 -- Nothing here is invented. That is the line.
 -- ===========================================================================
@@ -136,7 +151,7 @@ SubsOf("Mount Hyjal", {
 		hook = "A quiet grove on the mountain with a dread raven Wild God sitting in it.",
 		lore = {
 			"Hyjal belonged to the Wild Gods before it belonged to anyone. The ancient animal demigods of Kalimdor were gathered here, and the night elves left the peak untouched through ten thousand years of empire because of what lived on it.",
-			"One of them is in this grove. Jereman is a dread raven and a Wild God both, and he has settled in the stillest corner of a zone that recently had Archimonde pulled down on top of it.",
+			"One of them is in this grove. Jereman is a dread raven and a Wild God both, and she has settled in the stillest corner of a zone that recently had Archimonde pulled down on top of it.",
 			"The name is making an argument. Nordrassil is burned, the slopes are full of what the Legion and the Scourge left, and somebody has called one grove on this mountain tranquil. That says what the place is for rather than what the neighbourhood is like.",
 		},
 		readMore = { "Wowpedia: Wild God", "Wowpedia: Mount Hyjal" },
@@ -151,6 +166,28 @@ SubsOf("Mount Hyjal", {
 			"His second objection is less philosophical. He is a vulture. He is unaccustomed to his food walking off, and he is not in the habit of chasing a meal down.",
 		},
 		readMore = { "Wowpedia: Wild God", "Wowpedia: Battle of Mount Hyjal" },
+	},
+	{
+		name = "Dae'gun", parent = "Mount Hyjal", faction = "Hostile",
+		era = "forever", spoiler = true,
+		hook = "Ruins in the north of the mountain, still held by demons, with a pit lord's ashes in them.",
+		lore = {
+			"Dae'gun is ruins in northern Hyjal and the Legion never left it: doomguards are in it and so are their warlords, and the way through is to burn them out of hiding rather than go looking.",
+			"What is in the ruins is Azgalor's ashes. Azgalor was an annihilan and one of the Legion's commanders, and he is remembered for a single thing: he came up this mountain in the Third War and he was put down on it. The remains of a pit lord are still a reagent, which is why anyone is sent up to collect a pinch of him.",
+			"Jereman, the dread raven Wild God down in the Cradle of Tranquility, calls it the area mortals refer to as Dae'gun, the one with the demons. She sends people north through it to find Renalard, who is a fox and a Wild God, on the grounds that he is the clever one.",
+		},
+		readMore = { "Wowpedia: Azgalor", "Wowpedia: Battle of Mount Hyjal", "Wowpedia: Wild God" },
+	},
+	{
+		name = "Elderwild", parent = "Mount Hyjal", faction = "Contested",
+		era = "forever", spoiler = true,
+		hook = "A camp on the mountain for people who cannot get off it.",
+		lore = {
+			"Elderwild is where the people stranded on Hyjal are living, and both the Horde and the Alliance have them here. It is not a garrison. There is an infirmary, there are a few mounts left, and there are sheep.",
+			"Ortak Lomgok keeps the Horde end of it and makes poultices out of Hyjal silphium. One of the men he is treating is too weak to do more than take broth off a spoon, and Ortak Lomgok's summary of his own work is that he has nothing for the wounds you cannot see. He talks about the day he gets off this mountain rather than the day he holds it.",
+			"On the Alliance side there is a boy called Mirt, who is supposed to be watching the sheep and is making mud dragons instead. He is not allowed past the edge of the camp, because his mother says what is out there would hurt him. He would like to know what snow looks like, and whether you have ever seen a dragon.",
+		},
+		readMore = { "Wowpedia: Mount Hyjal", "Wowpedia: A Rest Without Pain", "Wowpedia: Ewe Wandered Off" },
 	},
 })
 
@@ -313,6 +350,17 @@ SubsOf("Riverglades", {
 			"A working farm this close to the Brotherhood's keep is worth something to Farholde, which has been under siege or close to it for years. Reapers in the wheat are a problem somebody will have to deal with.",
 		},
 		readMore = { "Wowpedia: Wheeler's Grange", "Wowpedia: Farholde Keep" },
+	},
+	{
+		name = "Turner's Logging Camp", parent = "Riverglades", faction = "Contested",
+		era = "forever", spoiler = true,
+		hook = "A human logging camp, being stripped of its own timber by the people it is worried about.",
+		lore = {
+			"Turner's Logging Camp is human and it is worked by peasants, with their woodpiles stacked around it. It sits west of the Horde's ground in the region, which is the whole of its problem.",
+			"Tan'jani is a troll headhunter on the other side of that line and he sends people over to take the lumber. The wood is not wanted for building. A peasant's firewood, sharpened, is a throwing spear, and the distinction Tan'jani draws is that orcs are good at hitting humans with axes while sticking them before they see you coming is a headhunter's trade.",
+			"So the camp is losing its timber to the people who intend to use it on the camp. The Riverglades is a region Stormwind has never administered, and at the level of a woodpile this is what that looks like.",
+		},
+		readMore = { "Wowpedia: Riverglades", "Wowpedia: Fetch 'n' Fletch" },
 	},
 })
 
