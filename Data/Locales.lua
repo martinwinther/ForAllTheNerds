@@ -1820,14 +1820,6 @@ SubsOf("Thousand Needles", {
 
 SubsOf("Desolace", {
 	{
-		name = "Shok'Thokar", faction = "Hostile",
-		hook = "A Burning Blade site in the southern waste.",
-		lore = {
-			"The Burning Blade are better organised in Desolace than almost anywhere, with Thunder Axe Fortress and sites like this one across the zone.",
-			"Having the Mannoroc Coven nearby helps them. Demons left over from the Third War have held that ground since, and the cult has something to organise around.",
-		},
-	},
-	{
 		name = "Bolgan's Hole", faction = "Hostile",
 		hook = "A cave in Gelkis Village, where the Gelkis keep their khan.",
 		lore = {

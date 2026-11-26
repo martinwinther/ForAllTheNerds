@@ -2490,3 +2490,5 @@ Tan'jani	forever	named in Forever quest 95951, Fetch 'n' Fletch	Forever	cs
 Turner's Logging Camp	forever	AreaTable row; named in Forever quest 95951	Forever	cs
 Archmage Ansirem Runeweaver	vanilla	Creature 2543, Archmage Ansirem Runeweaver of the Kirin Tor, named in quest 602	cmangos 1.12.1 creature_template and quest_template	cs
 Archmage Modera	forever	the Image of Archmage Modera who hands over the Dalaran Sewer Key; absent from the 1.12 tables	Forever	cs
+Shok'Thokar	out-of-era	Desolace area added in patch 4.0.3a, replacing Magram Village; the place in this period is Magram Village	warcraft.wiki.gg	ci
+Warug	vanilla	Magram spokesman named in quests 1367, 1369 and 1371	cmangos 1.12.1 quest_template	cs

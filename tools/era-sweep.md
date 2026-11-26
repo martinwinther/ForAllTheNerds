@@ -9311,3 +9311,63 @@ The corpus is 900 vanilla entries and 79 Forever ones, down from 907 vanilla.
 Seven records left it, all of them a second write-up of ground already covered.
 
 Next: verify Nordrassil and Shok'Thokar, then P5, the readMore probe.
+
+### 2026-11-26, audit P1 part three: the last two leads, and P1 closes clean
+
+Both verified. One was the Dalaran error again, under a different name, in an
+entry the sweep had reviewed and passed. `tools/check-names.py` now exits 0:
+every testable entry matches an area its own client knows.
+
+**Shok'Thokar was a Cataclysm area all along.** Its own wiki page settles it in
+one line, in the patch-changes section: `Patch 4.0.3a, Replaced Magram Village`.
+The place in this period is **Magram Village**, AreaTable 604, parent Desolace,
+and we already had an entry for it. 1.12 quest text has Warug the Magram
+spokesman sitting on the outskirts of that village in south-east Desolace,
+across quests 1367, 1369 and 1371.
+
+Our entry had it as "a Burning Blade site in the southern waste" with the
+Mannoroc Coven for company. The Burning Blade do take the village, with a pit
+lord called Agogridon and a tower built to watch the area, and the three centaur
+khans then unite in it. All of that is 4.0.3a. The infobox reads centaur as the
+current race and demons as the former, which is retail's current, and the whole
+arrangement postdates this addon's period by an expansion.
+
+Deleted, and the term filed `out-of-era` with `ci` matching, the way Whisperwind
+Grove and The Red Reaches were, so it cannot be written back in any casing.
+Magram Village keeps the ground and gains Warug, who is the closest thing to a
+diplomatic channel the centaur offer. Nothing from the deleted entry was worth
+absorbing: its two paragraphs were about the Burning Blade in Desolace generally
+rather than about this village. That vagueness is its own tell.
+
+That is the third instance of the class `tools/era-audit.md` now leads on: an
+entry named for an area that exists, under a name a later client gave it, whose
+prose then describes the later state. Dalaran Crater, the five entries that
+followed it, and now this. The entry name is the carrier every time.
+
+**Nordrassil is a tree, not a subzone, and the entry is right.** Neither client
+registers an area for it. The wiki's article is the tree itself, and the only
+subzone of that name belongs to the Burning Crusade's Hyjal Summit instance and
+is out of era. The Mount Hyjal (Forever) article's own subregion list has
+nine entries and Nordrassil is not among them, though the article's history
+prose names it seven times. So the client will never report it, `/ftn nordrassil`
+is how anyone reaches it, and that is fine for the most consequential tree in the
+setting. Added to the probe's allowed list with that reasoning, alongside the
+Un'Goro pylons and the Lion's Pride Inn.
+
+**P1 is finished.** 978 entries, 72 of them outside what this probe can test:
+22 instances, 42 city interiors and 8 quest-named or landmark exceptions, each
+of the 8 carrying its source in the script. The remaining 906 all match. The
+probe's full arc, worth keeping for the next one: 64 raw hits, 26 after the
+category exclusions, 15 once each era was matched against its own client, 9 once
+the landmarks were listed, 2 after the duplicate merges, 0 now. Six of those
+stages were the probe being wrong rather than the corpus.
+
+Two deliberate breaks, both confirmed and restored: removing the `Warug` row
+failed the build naming Magram Village, and writing `Shok'Thokar` back into that
+entry's prose failed on the new out-of-era row, which is the row doing the job
+it was filed for.
+
+The corpus is 899 vanilla entries and 79 Forever ones.
+
+Next: P5, the readMore probe, which is the cheapest of the remaining ones and
+has already produced two findings by accident this month.

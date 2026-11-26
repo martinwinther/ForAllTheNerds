@@ -59,6 +59,10 @@ ALLOWED = {
     # Outpost, Captain Vachon's tower in the east. Neither the palisade nor this
     # tower has an AreaTable row. P1's first run nearly merged the two.
     "Crusader's Outpost": "warcraft.wiki.gg, distinguished from Crusader Outpost",
+    # The tree, not a subzone. Neither client registers an area for it, and the
+    # only subzone of that name belongs to the Burning Crusade's Hyjal Summit
+    # instance and is out of era. The entry is about the tree's history.
+    "Nordrassil": "warcraft.wiki.gg; the only Nordrassil subzone is out of era",
 }
 
 

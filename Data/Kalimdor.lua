@@ -1030,11 +1030,12 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Magram Village", parent = "Desolace", faction = "Hostile",
-		hook = "One of the two warring centaur clans' villages.",
+		hook = "One of the two warring centaur clans' villages, in the south-east of the zone.",
 		lore = {
-			"The Magram hold the eastern plains and are at war with the Gelkis in the hills. The feud goes back to Zaetar's sons.",
-			"The tauren and the Alliance have both tried playing the clans against each other, with some success and no lasting benefit.",
+			"The Magram hold the eastern plains and are at war with the Gelkis in the hills. The feud goes back to Zaetar's sons. Warug speaks for the clan and sits on the outskirts of the village rather than in it, which is as close to a diplomatic channel as the centaur offer.",
+			"The tauren and the Alliance have both tried playing the clans against each other, with some success and no lasting benefit. The method is always the same: pick a clan, kill its enemies, and trade on the standing that earns.",
 		},
+		readMore = { "Wowpedia: Magram Village", "Wowpedia: Magram clan", "Wowpedia: Warug" },
 	},
 	{
 		name = "Gelkis Village", parent = "Desolace", faction = "Hostile",
