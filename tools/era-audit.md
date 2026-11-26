@@ -261,6 +261,15 @@ Adding a row is always safe; deleting or re-verdicting one is not.
   standing; the Great Lift really is tauren-built; Doomhammer really was run
   down by a wagon; the Deeprun Tram really is partly flooded.
 
+## Where the next one will be
+
+`tools/audit-prompt.md` is the method for finding it. The short version: do not
+hunt for the last error, hunt for the surfaces the checks do not read. The gate
+reads `hook`, `lore` and `didYouKnow`, so the entry name, the aliases, the
+readMore titles, the parent, the faction, the levels and every paragraph the
+sources support but nobody wrote are all unverified by construction. Dalaran was
+sitting in the first of those.
+
 ## The rule this leaves
 
 For a vanilla place, read the `(Classic)` article when one exists, check any

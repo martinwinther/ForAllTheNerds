@@ -1128,6 +1128,9 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Crusader's Outpost", faction = "Hostile",
+		-- Not the same place as Crusader Outpost, without the apostrophe, which is
+		-- Captain Vachon's tower in the east of Tirisfal. This one sits inside the
+		-- Scarlet Palisade and the client registers no area for it.
 		hook = "The Crusade's westernmost ground in Tirisfal, a long way from the Monastery.",
 		lore = {
 			"The Crusade does not only hold the east. Scarlet warriors and missionaries work the western glades out by the Solliden Farmstead. That is as far west as the order reaches anywhere in Lordaeron, and a long way from anything that could reinforce them.",
@@ -1754,15 +1757,6 @@ SubsOf("Ashenvale", {
 		},
 	},
 	{
-		name = "Ruins of Ordil'Aran", faction = "Hostile",
-		hook = "Night elf ruins in northwestern Ashenvale, occupied by the Cult of the Dark Strand.",
-		lore = {
-			"The Ruins of Ordil'Aran lie northeast of Maestra's Post. The Cult of the Dark Strand has established itself here, and Delgren the Purifier seeks a soul gem carried by one of its members.",
-			"The heartswood tree also grows among the ruins. Warlocks tell of two lovers who fell together in the War of the Ancients, and of the tree that grew where they died.",
-		},
-		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: The Tower of Althalaxx (4)", "Wowpedia: Heartswood (quest)" },
-	},
-	{
 		name = "Bathran's Haunt", faction = "Hostile",
 		hook = "A ruin in the north where a healing plant grew, with Forsaken picking it over.",
 		lore = {
@@ -1896,15 +1890,6 @@ SubsOf("Feralas", {
 			"The Lower Wilds are the eastern section of Feralas, the ground the road crosses on its way out to Thousand Needles. Longtooth runners and ironfur bears hold most of it, in numbers, with gravelsnout troggs and needles cougars coming in from the dry country at the far end.",
 			"Thalanaar is at that far end, where Falfindel Waywarder keeps the road and Thyssiana keeps the hippogryphs. Both factions' holdings in Feralas are small. Between them they hold rather less of this zone than the animals do.",
 		},
-	},
-	{
-		name = "The High Wilderness", faction = "Hostile",
-		hook = "A vast forest in the west of the zone, with the Gordunni ogres holding the ruins in it.",
-		lore = {
-			"The High Wilderness stretches from the Forgotten Coast to the Verdantis River across western Feralas. Abandoned and ruined structures stand in the trees on ground that belonged to the night elves once, and the Gordunni ogres have taken that ground over. They do not take kindly to anyone who walks into it.",
-			"The forest itself is busy. Groddoc apes, ironfur bears, feral scar yetis and frayfeather hippogryphs work it, Old Grizzlegut and Antilus the Soarer are somewhere in the trees, and hippogryph eggs sit in nests on the ground.",
-		},
-		readMore = { "Wowpedia: High Wilderness", "Wowpedia: The High Wilderness (quest)" },
 	},
 	{
 		name = "Verdantis River", faction = "Contested",

@@ -8,7 +8,8 @@ entries were reviewed across 37 runs, the ranking is spent, every run's
 player-facing changelog lines are written, run 37's under the 1.2.21 heading,
 and the findings are written up in `tools/era-audit.md`.
 
-Read `tools/era-audit.md` first. It is the account of what the sweep found: the
+Read `tools/era-audit.md` first, and `tools/audit-prompt.md` if you are looking
+for the next error rather than a past one. It is the account of what the sweep found: the
 nine classes of error, how each got in, what now stops it and, more usefully,
 what no gate can catch. This file is the working log behind it, run by run, and
 is where to look for any single entry.
@@ -9159,3 +9160,154 @@ P5's brief says releases are Martin's call, and 1.2.21 already carries run 37.
 
 The sweep is over. Nothing is scheduled, nothing is pending, and the next person
 to touch an entry should read `tools/era-audit.md` and not this log.
+
+### 2026-11-26, audit P1: does the client have this name at all?
+
+The first run of `tools/audit-prompt.md`. P1 is now mechanised as
+`tools/check-names.py`, which takes both AreaTables and is not in CI, because it
+needs a download.
+
+**What it found: seven duplicate pairs the sweep never looked for.** In each
+case we carry two entries for one place, one under the name the client reports
+and one under a name it does not. The client-named entry answers when the player
+stands there; the other is reachable only by looking it up.
+
+| Our name, which the client does not use | What the client reports, and the entry that answers |
+|---|---|
+| Andorhal | Ruins of Andorhal, area 193 |
+| Crusader's Outpost | Crusader Outpost, area 167 |
+| Mor'shan Rampart | The Mor'shan Rampart, area 1703 |
+| Oracle Glade | The Oracle Glade, area 264 |
+| Ruins of Ordil'Aran | The Ruins of Ordil'Aran, area 412 |
+| The Dream Bough | Dream Bough, area 1111 |
+| The High Wilderness | High Wilderness, area 1136 |
+
+Five of the seven differ by a leading "The" and one by an apostrophe. `U.Key`
+lowercases and normalises whitespace and quote characters and does nothing else.
+To the resolver none of those is a near miss.
+
+The sweep found and resolved six duplicate pairs over 37 runs and missed all
+seven of these, because its question was always "is this entry's prose true".
+Nothing in it ever asked whether a second entry already covered the same ground
+under a different name.
+
+**Two leads that are not duplicates.** `Shok'Thokar` in Desolace has no
+AreaTable row in either client and appears nowhere in 1.12 game text; the entry
+was reviewed by the sweep, so the prose may be sound while the name is not
+something the client will ever report. `Nordrassil` is tagged `forever` and has
+no area in Forever's own AreaTable either, although the wiki's Mount Hyjal
+article lists it as a subregion. Both need their own verification.
+
+**How wrong the probe was before it was right. This is the part worth keeping.**
+It reported 64 names on its first pass. Then 26, once instances and city
+interiors were excluded. Then 15, once Forever entries were matched against
+Forever's AreaTable instead of our 68-row new-zone worklist, a mistake that had
+been reporting twelve places as missing when none of them was. Then 9, once
+the places named in quest text but carrying no area row were listed with the
+quest that names each. Reporting the 64 would have buried the finding in noise
+of my own making.
+
+And the interpretation was wrong twice after that. The raw list looked like
+entries that could never fire. Reading `U.Key` suggested they were dead. Feeding
+the client's own strings through `ns.FindSubIn` showed all seven resolving
+perfectly well, to a different entry. Only the real resolver settled it. The script now tells its next reader to do
+that before writing anything up.
+
+Two smaller things found on the way. `wow_classic_era`'s AreaTable carries no
+city district or quarter rows at all, and Stormwind City has exactly one child
+area, the Valley of Heroes. That puts 43 of our city entries beyond this test,
+and whether `GetSubZoneText` ever returns their names is a separate question for
+the game. Separately, `mock_wow` replaces the global `print` with WoW's chat
+version, so a probe script that prints its results writes an empty file and
+exits 0. Use `io.write`, as `tools/dump-prose.lua` does.
+
+**Nothing was fixed this run and that is deliberate.** Resolving seven duplicate
+pairs means seven decisions about which entry survives and what the other has
+that is worth keeping, and the gate that would stop an eighth appearing has to
+land with them, because a gate added before the merges fails the build on all
+seven. That is the next chunk, and it is a chunk rather than a note: run 32
+recorded a structural problem and left it, and a player found it eleven releases
+later.
+
+Next: merge the seven pairs, keeping the client's name in each case and the
+other as an alias, then gate the shape. After that, verify Shok'Thokar and
+Nordrassil. Then P5, which is the readMore probe and the cheapest of the rest.
+
+### 2026-11-26, audit P1 part two: the merges, and a gate that found an eighth pair
+
+Seven pairs merged, one pair found not to be a pair at all, and an eighth found
+by the gate that P1 could not have reached.
+
+**The six article-and-spelling merges.** In each case the entry carrying the
+client's own name survives, takes anything the other had that was worth keeping,
+and holds the dropped name as an alias so that looking it up still works.
+
+| Survives | Deleted | What the deleted entry gave it |
+|---|---|---|
+| Ruins of Andorhal | Andorhal | the plague cauldrons answering to Araj, and the Scarlet patrols coming down from Hearthglen |
+| The Mor'shan Rampart | Mor'shan Rampart | nothing it did not already have |
+| The Oracle Glade | Oracle Glade | the tree reporting by shedding bark to Fandral Staghelm, the runner killed carrying one, and the dragons' refused blessing |
+| The Ruins of Ordil'Aran | Ruins of Ordil'Aran | Delgren the Purifier, and the warlocks' story of two lovers who fell in the War of the Ancients |
+| Dream Bough | The Dream Bough | all of it. The surviving entry was two sentences and the deleted one had the four Dream gates, Lethlas and the boughguards |
+| High Wilderness | The High Wilderness | the Gordunni holding the ruined night elf ground, Old Grizzlegut and Antilus the Soarer |
+
+Two of those are worth noting as a pattern: at the Oracle Glade and the Dream
+Bough the better write-up was the one with the wrong name. A merge that simply
+deleted the odd-named entry would have thrown away the best material in both.
+
+**One pair was not a pair, and nearly got merged anyway.** `Crusader Outpost`
+and `Crusader's Outpost` are two real Scarlet Crusade scout towers at opposite
+ends of Tirisfal. The wiki carries both and distinguishes them explicitly. The
+first is Captain Vachon's, in the east at 80,56, watching the glades road and
+flanking the Scarlet Monastery, and it has AreaTable row 167. The second sits
+inside the Scarlet Palisade in the west by the Solliden Farmstead, is the
+Crusade's westernmost holding in Lordaeron, and has no area row at all. Both our
+entries were right. Both now carry a comment saying they are not each other, and
+the apostrophe form is in `check-names.py`'s allowed list with its source.
+
+This is the probe's own discipline earning its place. The list said duplicate;
+the sources said otherwise.
+
+**The gate, and the eighth pair.** `tools/validate.lua` now fails when two
+entries under one parent collide after a harder normalisation than `U.Key`
+does: drop a leading article and every non-alphanumeric character. It is
+deliberately narrower than it could be, because stripping an apostrophe-s would
+fire on the two Crusader towers, which are a real pair of places.
+
+It failed on first run, naming `Pools of Vision` and `The Pools of Vision`.
+**P1 could not have found that one**, because the Pools are inside Thunder Bluff
+and P1 excludes city interiors: `wow_classic_era` has no AreaTable row for any
+of them, so the test has nothing to match against. The gate does not care about
+the AreaTable, which is exactly why it reaches where P1 cannot. Two checks of
+the same family, with different blind spots, and it took both to clear the
+corpus.
+
+Resolving that eighth pair needed a different tiebreak, since the client names
+neither form. The wiki's article is at `Pools of Vision` with `The Pools of
+Vision` as a redirect, so the canonical title won; the richer of the two
+write-ups survived under it, and it now lives in `Data/Cities.lua`, which is
+where a city interior belongs. Broke the gate deliberately by restoring a
+`The Dream Bough` entry beside `Dream Bough`, confirmed it failed naming both,
+and restored.
+
+**Where this leaves P1.** Nine leads down to two. `Nordrassil` is tagged
+`forever` and has no area in Forever's own AreaTable, although the wiki lists it
+as a Mount Hyjal subregion. `Shok'Thokar` in Desolace has no area row in either
+client and appears nowhere in 1.12 game text. Neither is a duplicate and both
+need their own verification.
+
+One lead chased to nothing, recorded so nobody chases it again: the Balnir
+Farmstead entry has Captain Vachon raiding from a tower just along from the
+farm, which looked wrong once the Crusader towers were untangled. Balnir is at
+76,60 and Vachon's tower is at 80,56. It is correct.
+
+One tidiness observation, not acted on: entries do not always live in the file
+their zone suggests. `Crusader Outpost` is a Tirisfal entry in
+`Data/Kalimdor.lua`, and the Pools of Vision were a Thunder Bluff interior in
+the same file until this run moved them. The resolver reads `parent` and does
+not care, so this is housekeeping rather than a defect.
+
+The corpus is 900 vanilla entries and 79 Forever ones, down from 907 vanilla.
+Seven records left it, all of them a second write-up of ground already covered.
+
+Next: verify Nordrassil and Shok'Thokar, then P5, the readMore probe.

@@ -1,5 +1,39 @@
 # Changelog
 
+## 1.2.23
+
+Seven places had two write-ups each. Now they have one, and in two cases the one
+you were getting was the worse of the two.
+
+**Fixed**
+
+- Seven places were written up twice over, under two spellings of the same name,
+  and which version you saw depended on where exactly you were standing. Each is
+  now a single entry under the name the game itself uses, and looking it up by the
+  old name still works. Andorhal, the Mor'shan Rampart, the Oracle Glade, the
+  Ruins of Ordil'Aran, the Dream Bough, the High Wilderness and the Pools of
+  Vision.
+- Two of those were losing you the better write-up. The Dream Bough had been two
+  sentences about a tree on an island; it now has the four Emerald Dream gates
+  and what the green dragonflight keeps on that island, which is a great deal
+  more than a lake island would normally carry. The Oracle Glade had been missing
+  the part that makes it worth standing in: the Oracle Tree reports on Teldrassil
+  by shedding a piece of its bark for somebody to carry to Fandral Staghelm, a
+  runner was killed carrying one, and what the reports say is not reassuring,
+  because the dragons refused to bless the tree in the first place.
+- Andorhal gains the Scarlet Crusade patrols working the roads north out of it,
+  sent down from Hearthglen. The Ruins of Ordil'Aran gain the story warlocks tell
+  about the heartswood: two lovers who fell together in the War of the Ancients,
+  and the tree that grew where they died. The High Wilderness gains the Gordunni
+  ogres sitting on ruined night elf ground, and Old Grizzlegut and Antilus the
+  Soarer somewhere in the trees.
+
+**Changed**
+
+- The build now refuses to ship two entries for one place when they differ only
+  by a leading "The". That check found the seventh pair by itself, inside Thunder
+  Bluff, where the method that found the first six cannot see.
+
 ## 1.2.22
 
 A correctness fix reported by a player, and three new Forever write-ups.
