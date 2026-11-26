@@ -9454,3 +9454,68 @@ The reference now points at Islen Waterseer.
 No entry prose changed in this run, only references. Next: P2, the probe that
 asks whether an entry's name claims more than its prose proves. That is the
 Dalaran catch, and the only one of the eight that cannot be mechanised at all.
+
+### 2026-11-26, audit P2: does the name claim more than the prose proves?
+
+One finding in 978 entries, and a corrected idea of what this probe is for.
+
+**The first filter was the wrong filter.** The obvious way to narrow P2 is to
+find names that assert a state: Ruins of, Crater, Abandoned, Lost, Sunken,
+Burning, Fallen. That produced 59 candidates, of which three had a state in the
+name the prose never mentions, and all three were the filter catching a word
+that is simply part of a real place name. Forlorn Rowe is called that. So is the
+Forgotten Coast. Ashwood's Fall turned out to be the opposite of a problem: its
+last sentence already says the identification "stays an inference rather than a
+fact", which is the discipline this whole audit is asking for.
+
+Checked the strongest of the 56 that do agree with their names, since agreement
+between name and prose is the dangerous case rather than the safe one: both
+craters, both drowned places, both broken, both tainted, both dead. Un'Goro has
+a crater, Weazel has a crater, the Drowned Reef has wrecks and submerged ruins,
+the Broken Pillar "stands, or rather lies". All sound.
+
+**What actually produces name errors is an entry explaining its own name.**
+Every one this project has had was an etymology: Staghelm Point, Gavin's Naze,
+Twilight Vale, Vul'Gol, the Headland. So the probe was re-aimed at the claim
+rather than at the name, grepping the prose for "named for", "takes its name",
+"the name is" and the like. That returns **109 entries making 143 naming
+claims**, which is the right reading list, and the re-aimed grep is now in
+`tools/audit-prompt.md` under P2.
+
+Reassuring in passing: the sweep's own naming corrections are visible in that
+list in their fixed form. Twilight's Run says nobody is sure which Staghelm the
+point is named for. Twilight Vale says named for the dusk and not for the cult.
+Whispering Gardens and Witch Hill both say nothing in this period explains the
+name. Gavin's Naze says a naze is a headland, so two of the four are named for
+what all four are.
+
+**The one finding: Darrow Hill.** It said "the name belongs to the same
+Lordaeron family as Darrowmere Lake and the village of Darrowshire", and there
+is no Darrow family. No page on the wiki mentions one, there is no `Darrow
+(family)` article, the Darrow Hill article says nothing about it, and 1.12 text
+names Darrow Hill, Darrowshire, Darrowmere and Caer Darrow without ever
+connecting them to a house. It is the Gavin's Naze shape exactly: a paragraph
+built on an observed naming pattern. The shared name is a fact and stays; the
+family is gone, and the entry now says that nothing in this period says where
+the name came from or which place carried it first.
+
+**Three etymologies checked and clean, recorded so nobody rechecks them.** Bear's
+Head is named after the Timbermaw furbolg villages dotted across it, which is
+what the place article says. Saltspray Glen is named for the ease with which the
+ocean throws seawater inland, in almost our own words. And Rethban ore really is
+named after the man who first found it: quest 347 says "Rethban Ore is named
+after the man who first found it, Bart Rethban" in those words. That last one
+was briefly a lead because a truncated grep of the dump hid the sentence, which
+is worth admitting: the probe's output is only as good as the reading behind it,
+and a `head -4` is not a reading.
+
+**No gate came out of this one, and none can.** Darrow Hill's claim was built
+entirely from terms the ledger carries and verdicts as vanilla, because every
+one of them is: Darrow, Darrow Hill, Darrowmere Lake, Darrowshire. The sentence
+was false and every word in it was proven. That is the whole argument for P2
+existing, and for it being read rather than run.
+
+Next: the remaining probes are P3, whether a claim reused across entries was
+verified more than once, P4, whether an entry's only source is another of our
+entries, P6, the unread fields, and P7, what the sources say that we do not. P7
+is the one that finds missing sentences and is the largest.

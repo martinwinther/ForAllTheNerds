@@ -88,8 +88,25 @@ This is the Dalaran catch stated generally, and no script will do it. `Dalaran
 Crater` asserts a crater. The prose never proved one, and nobody noticed,
 because the name had already settled the question before the first sentence.
 
-Names that assert a state are the ones to read twice: Ruins of, Crater,
-Abandoned, Lost, Sunken, Burning, Fallen. Each is a claim about when you are.
+**Narrow it by naming claims, not by state words.** The obvious filter is names
+containing a state: Ruins of, Crater, Abandoned, Lost, Sunken, Burning, Fallen.
+That was tried first and produced 59 candidates and nothing at all. Three looked
+like hits and all three were the filter catching a word that is simply part of a
+real place name, as at Forlorn Rowe and the Forgotten Coast. A state word in a
+name is usually just the name.
+
+What produced every name error this project has actually had is an entry
+**explaining its own name**. Staghelm Point, Gavin's Naze, Twilight Vale,
+Vul'Gol and the Headland were all etymologies. So grep the prose for the claim
+rather than the name for the word:
+
+    lua tools/dump-prose.lua | grep -nEi \
+      "named (for|after)|takes its name|gets its name|the name (is|comes|belongs)|is named"
+
+That returns about 110 entries and 140 claims, which is a reading list for one
+run. Work it in bands and record where you stopped. Most will be sound, and the
+sound ones are worth seeing too: an entry that says "nothing in this period
+explains the name" is doing exactly what it should.
 
 ### P3. Who else says this, and was it checked there too?
 

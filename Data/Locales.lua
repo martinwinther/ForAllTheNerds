@@ -97,7 +97,7 @@ SubsOf("Hillsbrad Foothills", {
 		hook = "High ground south-west of Tarren Mill, with yeti in the rock under it.",
 		lore = {
 			"Darrow Hill rises south-west of Tarren Mill, and nobody is holding it. Starving mountain lions and vicious gray bears work the slopes, cave yeti and ferocious yeti come up out of the Foothill Caverns underneath, and the signpost at the foot of it points four ways: Durnholde Keep, Hillsbrad, Tarren Mill and Southshore. Alterac granite comes out of this ground.",
-			"The name belongs to the same Lordaeron family as Darrowmere Lake and the village of Darrowshire off in the Plaguelands. Very little that the Darrow name was attached to is still standing.",
+			"The Darrow name is all over this part of Lordaeron: Darrowmere Lake, the village of Darrowshire out in the Plaguelands, and Caer Darrow on its island in the lake. Nothing in this period says where the name came from, or which of them carried it first.",
 		},
 	},
 	{
