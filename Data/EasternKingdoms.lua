@@ -638,7 +638,7 @@ SubsOf("Loch Modan", {
 			"Silver Stream ran dry a long time ago, and the Miners' League turned it into a storage depot instead. Its crates are still down there. They hold good dwarven gear, and they hold the charged rift gems woven into a mage's first wizard robe: this mine is the only known source of those.",
 			"Kobolds have moved in on the lot of it. Mountaineer Stormpike wants the League's gear out before his warriors tromp in and break things, and he is impatient for the order to clear the place, because the thought of kobold hands clawing around a dwarven mine turns his stomach.",
 		},
-		readMore = { "Wowpedia: Silver Stream Mine", "Wowpedia: Filthy Paws", "Wowpedia: Miners' League" },
+		readMore = { "Wowpedia: Silver Stream Mine", "Wowpedia: Filthy Paws (Classic)", "Wowpedia: Miners' League" },
 	},
 	{
 		name = "Valley of Kings", parent = "Loch Modan", faction = "Alliance",
@@ -815,7 +815,7 @@ SubsOf("Duskwood", {
 			"The walls are thick with ore, copper through to gold, and nobody is mining any of it. What the ogres do collect is other people's property: Abercrombie had a crate of tools and herbs taken off him and carried in here, and he wants it back.",
 			"The Night Watch will not spend its own few members on the place and pays others to thin the ogres instead. Viktori Prism'Antras has a narrower interest and wants Zzarc' Vul's monocle for his research.",
 		},
-		readMore = { "Wowpedia: Vul'Gol Ogre Mound", "Wowpedia: Zzarc' Vul", "Wowpedia: Ogre Thieves" },
+		readMore = { "Wowpedia: Vul'Gol Ogre Mound", "Wowpedia: Zzarc'Vul", "Wowpedia: Ogre Thieves (Classic)" },
 	},
 	{
 		name = "Manor Mistmantle", parent = "Duskwood", faction = "Contested",
@@ -824,7 +824,7 @@ SubsOf("Duskwood", {
 			"Manor Mistmantle lies north of Darkshire in Duskwood. Stalvan Mistmantle, a former schoolteacher now among the undead, inhabits the property with ghouls.",
 			"The town's records connect his name to the schoolhouse in Moonbrook. Investigators in Darkshire are trying to piece together his past.",
 		},
-		readMore = { "Wowpedia: Manor Mistmantle", "Wowpedia: The Legend of Stalvan" },
+		readMore = { "Wowpedia: Manor Mistmantle", "Wowpedia: The Legend of Stalvan (Classic)" },
 	},
 	{
 		name = "Addle's Stead", parent = "Duskwood", faction = "Hostile",
@@ -849,7 +849,7 @@ SubsOf("Duskwood", {
 			"The Tranquil Gardens lie a little south-east of Darkshire and the name has stopped applying. Its dead are up and walking, around a ruined church, though they are the weakest undead in Duskwood and the town has worse problems further out.",
 			"The one in the cemetery worth knowing about is the Insane Ghoul. Blind Mary, whose house is just north of the graves, threw a looking glass out behind her barn after what she calls the incident, and the ghoul used to roam back there and is thought to have picked it up. Viktori Prism'Antras in Darkshire wants that glass: he and Cog are building a machine for looking at the stars and need a lens big enough.",
 		},
-		readMore = { "Wowpedia: Tranquil Gardens Cemetery", "Wowpedia: Look To The Stars", "Wowpedia: Blind Mary" },
+		readMore = { "Wowpedia: Tranquil Gardens Cemetery", "Wowpedia: Look To The Stars (Classic)", "Wowpedia: Blind Mary" },
 	},
 	{
 		name = "Beggar's Haunt", parent = "Duskwood", faction = "Hostile",
@@ -984,7 +984,7 @@ SubsOf("Wetlands", {
 			"First Mate Fitzsimmons, off the Wave Mistress, is the only man of that fleet still breathing, and he is not the only one still walking. Cursed sailors and cursed marines crew the wrecks, First Mate Snellig among them, and Captain Halyndor walks his own ship, the Intrepid, with its strongbox still locked aboard.",
 			"Bluegill murlocs have colonised the hulls and hammerhead sharks work the water around them. Battered footlockers still lie scattered through the shallows.",
 		},
-		readMore = { "Wowpedia: Lost Fleet", "Wowpedia: The Third Fleet", "Wowpedia: The Cursed Crew" },
+		readMore = { "Wowpedia: Lost Fleet", "Wowpedia: The Third Fleet (Classic)", "Wowpedia: The Cursed Crew (Classic)" },
 	},
 	{
 		name = "Bluegill Marsh", parent = "Wetlands", faction = "Hostile",
@@ -1293,7 +1293,7 @@ SubsOf("Arathi Highlands", {
 			"Boulderfist Hall lies in southern Arathi Highlands, east of Thandol Span. Boulderfist ogres occupy its caves.",
 			"Kor'gresh Coldrage has acquired a wand belonging to Trelane and uses blasts of ice to keep his fellows in line. Skuerto at Refuge Pointe wants the stolen wand recovered.",
 		},
-		readMore = { "Wowpedia: Boulderfist Hall", "Wowpedia: Wand over Fist" },
+		readMore = { "Wowpedia: Boulderfist Hall", "Wowpedia: Wand over Fist (Classic)" },
 	},
 	{
 		name = "Witherbark Village", parent = "Arathi Highlands", faction = "Hostile",
@@ -1747,7 +1747,7 @@ Zone{
 		"The zone also holds Seradane, one of the green dragonflight's Emerald Dream portals, and Quel'Danil Lodge, where high elves who still speak to the Alliance maintain a presence. For a quiet-looking forest it is unusually crowded with ancient business.",
 	},
 	didYouKnow = "The Wildhammers tamed gryphons, which the Bronzebeards never managed. Every gryphon in Alliance service traces back to Aerie Peak.",
-	readMore = { "Wowpedia: The Hinterlands", "Wowpedia: Wildhammer clan", "Wowpedia: Amani" },
+	readMore = { "Wowpedia: The Hinterlands", "Wowpedia: Wildhammer clan", "Wowpedia: Amani Empire" },
 }
 
 SubsOf("The Hinterlands", {
@@ -2278,7 +2278,7 @@ SubsOf("Eastern Plaguelands", {
 			"Terrordale lies in the northwest of the Eastern Plaguelands, near Stratholme. Augustus the Touched wants to reopen his shop here, while Egan works on freeing the souls trapped in Stratholme.",
 			"The town itself is haunted. Patches of disturbed ground reveal the torment of its spirits, and paladins are sent here to perform exorcisms.",
 		},
-		readMore = { "Wowpedia: Terrordale", "Wowpedia: Augustus' Receipt Book (quest)", "Wowpedia: The Restless Souls", "Wowpedia: Exorcising Terrordale" },
+		readMore = { "Wowpedia: Terrordale", "Wowpedia: Augustus' Receipt Book (quest)", "Wowpedia: The Restless Souls (1)", "Wowpedia: Exorcising Terrordale" },
 	},
 })
 
@@ -2442,7 +2442,7 @@ SubsOf("Eastern Plaguelands", {
 			"It has not stopped. The dead of Darrowshire are still in the village fighting the same fight, and laying them to rest is one of the Argent Dawn's long-standing concerns. Doing it requires knowing exactly who did what on the day, which means the heroes, the defenders, the villains and the marauders all have to be accounted for separately.",
 			"Pamela Redpath remains among the ruins. Her surviving family is searching for news of her.",
 		},
-		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Sister Pamela", "Wowpedia: Defenders of Darrowshire" },
+		readMore = { "Wowpedia: Darrowshire", "Wowpedia: Sister Pamela", "Wowpedia: Defenders of Darrowshire (Classic)" },
 	},
 })
 

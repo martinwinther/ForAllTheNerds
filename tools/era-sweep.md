@@ -9371,3 +9371,86 @@ The corpus is 899 vanilla entries and 79 Forever ones.
 
 Next: P5, the readMore probe, which is the cheapest of the remaining ones and
 has already produced two findings by accident this month.
+
+### 2026-11-26, audit P5: the readMore references
+
+1,517 references across 1,072 distinct titles, all checked against the wiki.
+Twenty-five were wrong and are fixed. `tools/check-refs.py` mechanises the run
+and now exits 0.
+
+**Six were dead links.** The validator only asserts that a reference produces a
+valid https address, so a reference to a page nobody ever wrote passes the build
+and ships. Four were Forever entries pointing at pages the wiki has not written:
+`Galestrider` from Fairweather Stables, `Rog'mar`, `Valanaar` and
+`Valanaar Skydocks`. Each now points at the page that does cover the ground,
+`Zephras Isle`, `Riverglades` or `Valanaar Port Authority`. The other two were
+mistitled: `Zzarc' Vul` for the wiki's `Zzarc'Vul`, a stray space, and
+`Wasteland (quest)` for `Wasteland`, which is the right page and carries a
+`Classic only` tag.
+
+That makes nine Forever references to nonexistent pages found this month, after
+the eight unwritable subzones. Forever's wiki coverage is thinner than our
+Forever entries assumed when they were given further reading.
+
+**Five were disambiguation pages.** Each hands the reader a menu instead of an
+article. `Amani` from the Hinterlands wanted the `Amani Empire`; `Gurubashi`
+from Bal'lal Ruins wanted the `Gurubashi Empire`; `The Ravaged Caravan` from
+Stonebull Lake wanted the Mulgore Horde quest rather than a Nagrand one; `The
+Restless Souls` from Terrordale wanted the first of its two parts; and `Margoz`
+from Drygulch Ravine wanted `Margoz (orc)`, the Durotar quest giver, rather than
+the human from a novel.
+
+**Two were the wrong kind of thing under the right name.** We cited
+`The Venture Co.` from the Venture Co. Mine meaning the company; the bare page
+is a retail quest, and the company is at `Venture Company`. And the Ruins of
+Stardust cited both `Ruins of Stardust` and `The Ruins of Stardust`, which looked
+like a duplicate and was not: the first is the place and the second was reaching
+for the quest, and the quest lives at `The Ruins of Stardust (quest)`.
+
+**The (Classic) trap does not transfer to readMore, and that is the finding
+worth keeping.** It is the most reliable tell in `tools/era-audit.md` for prose.
+Probing all 992 bare titles turned up **71 with a real `(Classic)` article**, and
+switching all 71 would have been wrong for most of them.
+
+| The (Classic) page is | Count | Verdict |
+|---|---:|---|
+| a quest | 21 | switch, for 16 of them |
+| a zone | 37 | leave: the bare title is the lore and history page, which is what this addon is |
+| an instance | 9 | leave, same reasoning |
+| a character | 2 | leave emphatically |
+| other | 2 | leave |
+
+`Stranglethorn Vale (Classic)` settles the zone case in its own hatnote: it
+sends the reader to the bare title "for lore and history" and keeps itself for
+the pre-Cataclysm zone snapshot. And `Kel'Thuzad (Classic)` is the raid
+encounter at 14k while the bare page is the character at 73k, so switching that
+one would have replaced a lore article with a tactics page.
+
+Five of the 21 quest-shaped hits were NPC or faction names where the `(Classic)`
+page is a coincidentally-named quest: `Southsea Freebooters`,
+`Supervisor Fizsprocket`, `Zaeldarr the Outcast`, `Margoz` and
+`The Venture Co.`. For the first three the bare page is the NPC or faction and is
+correct. So 16 switched, 55 were left, and the rule had to be applied by type
+rather than by its own tell.
+
+**One limitation with nothing to fix,** recorded so it is not rediscovered.
+Three vanilla names redirect to pages titled for a later era and no
+vanilla-specific page exists: The People's Militia to Westfall Brigade, Sandfury
+to Farraki tribe, and Zandalar tribe to Zandalari Empire. The reader lands on
+the right subject under the wrong era's name.
+
+Nine more redirects land on an apparently different title and were each checked
+and left: Eldre'Thalas really is Dire Maul, Sunken Temple really is the Temple
+of Atal'Hakkar, the Kingdom of Azeroth really did become Stormwind, Neltharion
+really is Deathwing, and so on. The script still prints them, because the next
+reader should check rather than trust that someone did.
+
+**One thing P5 confirmed rather than found.** The Ruins of Stardust entry says
+shaman send people to the fountain at the lake's centre for a water sample. That
+is quest 1534, almost word for word: a waterskin, Ashenvale beyond Lake Mystral,
+a holy place, a small fountain at the centre of the lake, and a return to Islen.
+The reference now points at Islen Waterseer.
+
+No entry prose changed in this run, only references. Next: P2, the probe that
+asks whether an entry's name claims more than its prose proves. That is the
+Dalaran catch, and the only one of the eight that cannot be mechanised at all.

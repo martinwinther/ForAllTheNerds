@@ -112,13 +112,49 @@ not, and nothing in the build can see it.
 
 ### P5. Does the linked article describe this place?
 
-Every `readMore` title: does it exist, and is it about the same place?
+**Mechanised: `tools/check-refs.py`.** Fails on a dead reference, and reports
+disambiguation landings, odd redirects and `(Classic)` candidates as leads. It
+needs the network and is not in CI.
 
-Both halves fail in practice. Two titles shipped that did not exist, because the
-validator checks only that a reference produces a valid address. And a title can
-exist and be wrong: there is an article called Eastwind Shore and it is a
-coastal strip in the Grizzly Hills, while the Riverglades has its own Eastwind
-Shore. A name match is not a place match.
+Every `readMore` title: does it exist, and is it about the same thing?
+
+Both halves fail in practice. The validator checks only that a reference
+produces a valid address. Six dead links shipped: four of them Forever entries
+pointing at pages the wiki has not written, and two simply mistitled,
+`Zzarc' Vul` for `Zzarc'Vul` and `Wasteland (quest)` for `Wasteland`.
+
+A title can also exist and be wrong, in three ways the first run found:
+
+- **A different place of the same name.** There is an article called Eastwind
+  Shore and it is in the Grizzly Hills, while the Riverglades has its own.
+- **A disambiguation page**, which hands the reader a menu instead of an
+  article. Five shipped, including `Margoz`, where the right target is
+  `Margoz (orc)` and the other option is a novel character.
+- **The wrong kind of thing under the right name.** We cited `The Venture Co.`
+  meaning the company; the bare page is a retail quest and the company is at
+  `Venture Company`.
+
+**Do not apply the (Classic) rule mechanically here.** It is the most reliable
+tell in `era-audit.md` for prose, and for `readMore` it is right only sometimes.
+The first run found 71 bare titles with a real `(Classic)` article and only 16
+were switches. Classify the `(Classic)` page before touching anything:
+
+| The (Classic) page is | Do |
+|---|---|
+| a quest | switch. The vanilla quest has different objectives, levels and text |
+| a zone | leave. `Stranglethorn Vale (Classic)` sends you to the bare title "for lore and history", which is what this addon is |
+| an instance | leave, same reasoning |
+| a character | leave. `Kel'Thuzad (Classic)` is the raid encounter at 14k; the bare page is the character at 73k |
+
+And five of the 21 quest-shaped hits were NPC or faction names where the
+`(Classic)` page is a coincidentally-named quest. Check what the citing entry
+meant before switching even those.
+
+One limitation with nothing to fix: three vanilla names redirect to pages
+titled for a later era and no vanilla-specific page exists. The reader lands on
+the right subject under the wrong era's name: The People's Militia to
+Westfall Brigade, Sandfury to Farraki tribe, Zandalar tribe to Zandalari
+Empire.
 
 ### P6. Do the unread fields agree with the client?
 

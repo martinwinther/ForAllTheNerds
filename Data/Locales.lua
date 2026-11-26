@@ -263,7 +263,7 @@ SubsOf("Stranglethorn Vale", {
 			"These ruins are held rather than empty. Bloodscalp shamans and axe throwers work the stones with warriors behind them, and tigers and raptors take the ground between the ruins. A book has been left lying open among the stonework.",
 			"The Gurubashi broke apart after their own priests summoned Hakkar the Soulflayer and the empire had to fight a war to contain him. What stands here was raised before that and the trolls living in it are the descendants of the people who raised it.",
 		},
-		readMore = { "Wowpedia: Bal'lal Ruins", "Wowpedia: Bloodscalp tribe", "Wowpedia: Gurubashi" },
+		readMore = { "Wowpedia: Bal'lal Ruins", "Wowpedia: Bloodscalp tribe", "Wowpedia: Gurubashi Empire" },
 	},
 	{
 		name = "Balia'mah Ruins", faction = "Hostile",

@@ -316,7 +316,7 @@ SubsOf("Riverglades", {
 			"The orcs who have been in the Riverglades longest are not Thrall's. They are what the Second War left: Stormreaver remnants, Twilight's Hammer allies, and whoever retreated to Krol'dok Stronghold when the Siege of Farholde failed.",
 			"A town of the modern Horde standing in that company is a complicated thing, and the ogres of Bolder'ok changing sides is part of the same shift.",
 		},
-		readMore = { "Wowpedia: Rog'mar" },
+		readMore = { "Wowpedia: Riverglades" },
 	},
 	{
 		name = "Ashwood's Fall", parent = "Riverglades", faction = "Hostile",
@@ -523,7 +523,7 @@ SubsOf("Zephras Isle", {
 			"It is also where the refugees are arriving. Anvilas and Siroccas are the other Skyborne islands, and both have been breaking up since contact was lost, so their people have been coming here.",
 			"High Elder Talaanis Shadowsong leads the Skyborne, and before her the isle answered to the Shal'nan.",
 		},
-		readMore = { "Wowpedia: Valanaar", "Wowpedia: Zephras Isle" },
+		readMore = { "Wowpedia: Valanaar Port Authority", "Wowpedia: Zephras Isle" },
 	},
 	{
 		name = "Valanaar Skydocks", parent = "Zephras Isle", faction = "Neutral",
@@ -534,7 +534,7 @@ SubsOf("Zephras Isle", {
 			"Which berth a Skyborne takes decides a great deal, since one lands in Alliance country and the other in Horde country. The airships run both ways, so the isle can be returned to.",
 			"A people whose island is coming apart under them, with two gangways off it and a choice at the end of each. That is the position the zone puts you in.",
 		},
-		readMore = { "Wowpedia: Valanaar Skydocks", "Wowpedia: Zephras Isle" },
+		readMore = { "Wowpedia: Valanaar Port Authority", "Wowpedia: Zephras Isle" },
 	},
 	{
 		name = "East Pylon Watchtower", parent = "Zephras Isle", faction = "Neutral",
@@ -567,7 +567,7 @@ SubsOf("Zephras Isle", {
 			"Skywall reshaped the animals the exiles brought with them. Creatures that had been earthbound grew beaks, talons and feathers over the millennia, and some of them learned to fly outright. A stable here holds the results.",
 			"\"Fairweather\" is a dry joke for a plane made of weather, and for a people whose weather has recently stopped behaving.",
 		},
-		readMore = { "Wowpedia: Skyborne", "Wowpedia: Galestrider" },
+		readMore = { "Wowpedia: Skyborne", "Wowpedia: Zephras Isle" },
 	},
 	{
 		name = "Shadowgale Forest", parent = "Zephras Isle", faction = "Neutral",
