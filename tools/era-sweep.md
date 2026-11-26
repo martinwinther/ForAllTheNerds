@@ -9160,3 +9160,75 @@ P5's brief says releases are Martin's call, and 1.2.21 already carries run 37.
 
 The sweep is over. Nothing is scheduled, nothing is pending, and the next person
 to touch an entry should read `tools/era-audit.md` and not this log.
+
+### 2026-11-26, audit P1: does the client have this name at all?
+
+The first run of `tools/audit-prompt.md`. P1 is now mechanised as
+`tools/check-names.py`, which takes both AreaTables and is not in CI, because it
+needs a download.
+
+**What it found: seven duplicate pairs the sweep never looked for.** In each
+case we carry two entries for one place, one under the name the client reports
+and one under a name it does not. The client-named entry answers when the player
+stands there; the other is reachable only by looking it up.
+
+| Our name, which the client does not use | What the client reports, and the entry that answers |
+|---|---|
+| Andorhal | Ruins of Andorhal, area 193 |
+| Crusader's Outpost | Crusader Outpost, area 167 |
+| Mor'shan Rampart | The Mor'shan Rampart, area 1703 |
+| Oracle Glade | The Oracle Glade, area 264 |
+| Ruins of Ordil'Aran | The Ruins of Ordil'Aran, area 412 |
+| The Dream Bough | Dream Bough, area 1111 |
+| The High Wilderness | High Wilderness, area 1136 |
+
+Five of the seven differ by a leading "The" and one by an apostrophe. `U.Key`
+lowercases and normalises whitespace and quote characters and does nothing else.
+To the resolver none of those is a near miss.
+
+The sweep found and resolved six duplicate pairs over 37 runs and missed all
+seven of these, because its question was always "is this entry's prose true".
+Nothing in it ever asked whether a second entry already covered the same ground
+under a different name.
+
+**Two leads that are not duplicates.** `Shok'Thokar` in Desolace has no
+AreaTable row in either client and appears nowhere in 1.12 game text; the entry
+was reviewed by the sweep, so the prose may be sound while the name is not
+something the client will ever report. `Nordrassil` is tagged `forever` and has
+no area in Forever's own AreaTable either, although the wiki's Mount Hyjal
+article lists it as a subregion. Both need their own verification.
+
+**How wrong the probe was before it was right. This is the part worth keeping.**
+It reported 64 names on its first pass. Then 26, once instances and city
+interiors were excluded. Then 15, once Forever entries were matched against
+Forever's AreaTable instead of our 68-row new-zone worklist, a mistake that had
+been reporting twelve places as missing when none of them was. Then 9, once
+the places named in quest text but carrying no area row were listed with the
+quest that names each. Reporting the 64 would have buried the finding in noise
+of my own making.
+
+And the interpretation was wrong twice after that. The raw list looked like
+entries that could never fire. Reading `U.Key` suggested they were dead. Feeding
+the client's own strings through `ns.FindSubIn` showed all seven resolving
+perfectly well, to a different entry. Only the real resolver settled it. The script now tells its next reader to do
+that before writing anything up.
+
+Two smaller things found on the way. `wow_classic_era`'s AreaTable carries no
+city district or quarter rows at all, and Stormwind City has exactly one child
+area, the Valley of Heroes. That puts 43 of our city entries beyond this test,
+and whether `GetSubZoneText` ever returns their names is a separate question for
+the game. Separately, `mock_wow` replaces the global `print` with WoW's chat
+version, so a probe script that prints its results writes an empty file and
+exits 0. Use `io.write`, as `tools/dump-prose.lua` does.
+
+**Nothing was fixed this run and that is deliberate.** Resolving seven duplicate
+pairs means seven decisions about which entry survives and what the other has
+that is worth keeping, and the gate that would stop an eighth appearing has to
+land with them, because a gate added before the merges fails the build on all
+seven. That is the next chunk, and it is a chunk rather than a note: run 32
+recorded a structural problem and left it, and a player found it eleven releases
+later.
+
+Next: merge the seven pairs, keeping the client's name in each case and the
+other as an alias, then gate the shape. After that, verify Shok'Thokar and
+Nordrassil. Then P5, which is the readMore probe and the cheapest of the rest.

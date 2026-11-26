@@ -48,18 +48,36 @@ does not mean.
 
 ### P1. Does the client have this name at all?
 
-Take every entry name and every alias, normalise, and match against the target
-client's `AreaTable`. Report the ones with no match.
+**Mechanised: `tools/check-names.py`.** It takes both AreaTables, excludes the
+categories the test cannot apply to, and prints what is left. Not in CI, because
+it needs a download.
+
+Every entry name and alias, matched against the AreaTable of the client that
+entry belongs to. A miss means the client would never report that string, so the
+entry can only be reached by looking it up by name.
 
 A hit may be: a name imported from a later client, which is the Dalaran case; a
-name the client spells differently, as with our `Andorhal` against the client's
-`Ruins of Andorhal`; or a name nothing in the game uses.
+name the client spells differently, as with `Andorhal` against the client's
+`Ruins of Andorhal`; a second entry sitting beside a correctly named one; or a
+name nothing in the game uses.
 
-A hit is **not** automatically a bug. Instances are not areas. City districts are
+Three categories the test cannot apply to, and the reason each is a category
+rather than a hit. **Instances** are not subzone areas. **City interiors** are
 not areas either: `wow_classic_era`'s `AreaTable` has no row containing the word
 district or quarter anywhere in it, and Stormwind City has exactly one child
-area, the Valley of Heroes. Establish which categories the test cannot apply to
-**before** reading the list, or most of what you report will be noise.
+area, the Valley of Heroes. **Quest-named landmarks** are real places the client
+never registers as areas, like the Un'Goro pylons and the Lion's Pride Inn; the
+script lists them with the quest that names each, because an exclusion without a
+reason rots into a place to hide a failure.
+
+Match each entry against its **own** client. A `forever` entry lives in a client
+that carries the vanilla areas plus Forever's, so testing it against our 68-row
+new-zone worklist reports twelve places that are not missing at all.
+
+The numbers from the first run are the argument for all of the above: 64 names
+before the exclusions, 26 with the wrong Forever table, 15 with the right one,
+9 once the quest-named landmarks were listed. Only then was any of it worth
+reading.
 
 ### P2. Does the name claim more than the prose proves?
 
