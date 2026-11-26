@@ -381,12 +381,14 @@ SubsOf("Thunder Bluff", {
 	},
 	{
 		name = "Pools of Vision", faction = "Horde",
-		hook = "The Forsaken enclave beneath Spirit Rise in Thunder Bluff.",
+		aliases = { "The Pools of Vision" },
+		hook = "A tunnel under Spirit Rise, and the Forsaken's base of operations in Thunder Bluff.",
 		lore = {
-			"The Pools of Vision lie in caves beneath Spirit Rise. Forsaken mage and priest trainers work here, alongside Apothecary Zamah.",
-			"Zamah receives alchemical samples from her colleagues beyond Thunder Bluff. Couriers must find the concealed path into the caves before their mixtures lose potency.",
+			"The Pools of Vision are a tunnel system just below the cap of Spirit Rise. Its entrance is off the bridge up from Lower Rise and is well hidden, which matters to the couriers who bring Apothecary Zamah her alchemical samples and have to find it before the mixtures lose potency. Tauren shaman training is kept down here beside the Hall of Spirits, and the Forsaken work out of the same cave: mage and priest trainers, and Zamah, an emissary of the Royal Apothecary Society, as their scholar here.",
+			"That arrangement is worth sitting with. The tauren read the land as the Earth Mother, and the allies they house in this cave are walking corpses raised by the Scourge.",
+			"Not every tauren is easy about it. One of them writes that the Forsaken have a history wrought with deceit and that the pact was made too hastily. Zamah is aware of the distance: her heart beats no longer, and she says she still feels sorrow for the spirits of Stonetalon.",
 		},
-		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah (quest)" },
+		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah", "Wowpedia: Forsaken" },
 	},
 })
 

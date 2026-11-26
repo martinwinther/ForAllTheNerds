@@ -54,6 +54,11 @@ ALLOWED = {
     "Gates of Uldum":   "named in quest 2946",
     "Lion's Pride Inn": "named in quest 69",
     "Stormwind Gates":  "named in quest 1861",
+    # A second Scarlet tower, inside the Scarlet Palisade in western Tirisfal.
+    # The wiki carries it at its own title and distinguishes it from Crusader
+    # Outpost, Captain Vachon's tower in the east. Neither the palisade nor this
+    # tower has an AreaTable row. P1's first run nearly merged the two.
+    "Crusader's Outpost": "warcraft.wiki.gg, distinguished from Crusader Outpost",
 }
 
 

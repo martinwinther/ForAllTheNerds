@@ -311,6 +311,64 @@ out("Spoiler gating: hides " .. spoilerCount .. " entries off, reveals them on")
 -- couple of uses is voice and twenty is a tic.
 -- ---------------------------------------------------------------------------
 
+-- Two entries for one place, an article apart
+--
+-- Separate from the alias check below, and found the same way: by asking what
+-- the client calls a place rather than what we call it. Audit probe P1 turned
+-- up six pairs where we carried two entries for one piece of ground, one named
+-- the way the client names it and one not. The Oracle Glade against Oracle
+-- Glade, The Mor'shan Rampart against Mor'shan Rampart, Dream Bough against
+-- The Dream Bough, and so on. U.Key lowercases and tidies whitespace and quote
+-- characters and nothing else, so to the resolver those are unrelated strings
+-- and both entries sat in the build for months.
+--
+-- The test is a harder normalisation than U.Key: drop a leading article and
+-- every non-alphanumeric character. Two entries under the same parent that
+-- collide on THAT are the same place written up twice.
+--
+-- Deliberately narrow. Crusader Outpost and Crusader's Outpost are two real
+-- Scarlet towers at opposite ends of Tirisfal, and this check must not fire on
+-- them, which is why an apostrophe-s is not stripped. The wider shape, a name
+-- the client has no area for at all, is tools/check-names.py, which needs a
+-- download and cannot live in CI.
+do
+	local function hardKey(s)
+		s = string.lower(s or "")
+		s = string.gsub(s, "^the ", "")
+		s = string.gsub(s, "[^%w]", "")
+		return s
+	end
+	local byPlace = {}
+	ns.EachEntry(function(e)
+		local k = hardKey(e.name) .. "|" .. hardKey(e.parent or "")
+		byPlace[k] = byPlace[k] or {}
+		table.insert(byPlace[k], e.name)
+	end)
+	local dupes = 0
+	for _, k in ipairs(ns.U.Keys(byPlace, true)) do
+		local names = byPlace[k]
+		if #names > 1 then
+			-- Same name AND same parent is already a failure above; this is for
+			-- the ones that differ only by an article or by punctuation.
+			local distinct = {}
+			for i = 1, #names do distinct[names[i]] = true end
+			local n = 0
+			for _ in pairs(distinct) do n = n + 1 end
+			if n > 1 then
+				dupes = dupes + 1
+				local list = {}
+				for name in pairs(distinct) do list[#list + 1] = string.format("%q", name) end
+				table.sort(list)
+				fail("two entries for one place, an article or a punctuation mark apart: %s",
+					table.concat(list, " and "))
+			end
+		end
+	end
+	if dupes == 0 then
+		out("no two entries differ only by a leading article")
+	end
+end
+
 -- Two entries claiming one name
 --
 -- Duplicate entry NAMES are legitimate and the corpus has several: the client

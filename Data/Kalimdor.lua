@@ -304,15 +304,6 @@ SubsOf("Teldrassil", {
 		readMore = { "Wowpedia: Pools of Arlithrien", "Wowpedia: Crown of the Earth (4)" },
 	},
 	{
-		name = "Oracle Glade", parent = "Teldrassil", faction = "Contested",
-		hook = "The glade in Teldrassil's north-west, with the first moonwell under the Oracle Tree.",
-		lore = {
-			"The oracle here is a tree. The Oracle Tree stands in the north-west of Teldrassil and the first and most powerful of the world tree's moonwells lies under its boughs, which is why a young druid is sent to this glade to fill a phial at the last of the wells.",
-			"The tree has watched Teldrassil grow alongside the druids, and it reports by shedding a piece of its bark for somebody to carry to Fandral Staghelm in Darnassus. That line of communication has been cut more than once: Bloodfeather harpies have nested all round the glade, one of them killed a runner carrying a report, and Sentinel Arynia Cloudsbreak was sent out with a small detachment to push them back a nest at a time.",
-			"What the reports say is not reassuring, and the fault is not the tree's. Staghelm asked the dragons to bless Teldrassil as they once blessed Nordrassil, and Nozdormu refused him for his arrogance and Alexstrasza refused with him. Without that blessing the tree's growth has been flawed and unpredictable, and the night elves' immortality has not come back.",
-		},
-	},
-	{
 		name = "Rut'theran Village", parent = "Teldrassil", faction = "Alliance",
 		hook = "The harbour at the tree's base, and the only way in or out by sea.",
 		lore = {
@@ -538,14 +529,6 @@ SubsOf("The Barrens", {
 			"Goblin business being what it is, the fen's other distinction is being robbed by other goblins. Sputtervalve, of the Tinkers' Union in Ratchet, has Director Riddlevox pressing him for results on shredder development, decided that stealing the Venture Company's design was faster than beating it, and sent Wizzlecrank to drive one out of the fen. Wizzlecrank climbed into a shredder without first obtaining the key, and had to be dug out and escorted home with the company in pursuit.",
 		},
 		readMore = { "Wowpedia: Sludge Fen", "Wowpedia: Supervisor Lugwizzle", "Wowpedia: The Escape" },
-	},
-	{
-		name = "Mor'shan Rampart", parent = "The Barrens", faction = "Horde",
-		hook = "The Horde's wall on the Ashenvale border, facing the night elves across it.",
-		lore = {
-			"The rampart holds the northern pass between the Barrens and Ashenvale. On the far side are the night elves, and the Horde's logging operations in their forest are the central grievance between the two.",
-			"This border has been contested since the Horde arrived in Kalimdor and it has never been settled.",
-		},
 	},
 	{
 		name = "The Forgotten Pools", parent = "The Barrens", faction = "Contested",
@@ -1295,15 +1278,6 @@ SubsOf("Feralas", {
 			"An altar and four magical flames remain among the ruins. They are part of a mystery surrounding an ancient staff found in Feralas.",
 		},
 		readMore = { "Wowpedia: Ruins of Ravenwind", "Wowpedia: The Stave of Equinex" },
-	},
-	{
-		name = "The Dream Bough", parent = "Feralas", faction = "Hostile",
-		hook = "A great tree on an island in Jademir Lake, with a Dream portal under it.",
-		lore = {
-			"The Dream Bough is a great tree standing on a small island in the middle of Jademir Lake, in northern Feralas, the largest tree in the zone. One of the four portals into the Emerald Dream is at the foot of it, with Seradane, Bough Shadow and Twilight Grove holding the other three.",
-			"The green dragonflight keeps it, and keeps it closed. Lethlas patrols the island with Jademir boughguards, a tree warder and an oracle, all of them a good deal more than a lake island would normally carry. Whatever is wrong inside the Dream is being answered the same way at all four gates.",
-		},
-		readMore = { "Wowpedia: Dream Bough", "Wowpedia: Lethlas", "Wowpedia: Jademir Lake" },
 	},
 	{
 		name = "Woodpaw Hills", parent = "Feralas", faction = "Hostile",
@@ -2160,11 +2134,13 @@ SubsOf("Tanaris", {
 SubsOf("Feralas", {
 	{
 		name = "Dream Bough", parent = "Feralas", faction = "Neutral",
-		hook = "An Emerald Dream portal guarded by green dragons in northern Feralas.",
+		aliases = { "The Dream Bough" },
+		hook = "A great tree on an island in Jademir Lake, with a Dream portal under it.",
 		lore = {
-			"Dream Bough stands on a small island in Jademir Lake. A great tree shelters one of the portals to the Emerald Dream, and the green dragonflight guards the site.",
+			"The Dream Bough is a great tree standing on a small island in the middle of Jademir Lake, in northern Feralas, the largest tree in the zone. One of the four portals into the Emerald Dream is at the foot of it, with Seradane, Bough Shadow and Twilight Grove holding the other three.",
+			"The green dragonflight keeps it, and keeps it closed. Lethlas patrols the island with Jademir boughguards, a tree warder and an oracle, all of them a good deal more than a lake island would normally carry. Whatever is wrong inside the Dream is being answered the same way at all four gates.",
 		},
-		readMore = { "Wowpedia: Dream Bough" },
+		readMore = { "Wowpedia: Dream Bough", "Wowpedia: Lethlas", "Wowpedia: Jademir Lake" },
 	},
 	{
 		name = "The Maul", parent = "Feralas", faction = "Hostile",
@@ -2325,12 +2301,14 @@ SubsOf("Ashenvale", {
 	},
 	{
 		name = "The Ruins of Ordil'Aran", parent = "Ashenvale", faction = "Hostile",
+		aliases = { "Ruins of Ordil'Aran" },
 		hook = "An old city in the north-west, fought over by a cult and then by furbolgs.",
 		lore = {
 			"Very little of Ordil'Aran is left. It was a night elf city once, north of Maestra's Post, and what survives is enough stonework to shelter in.",
 			"The Cult of the Dark Strand made a base of it. They are Shadow Council work: night elves and others turned to the service of things that should not be served, operating inside Darnassus's own territory, and the Tower of Althalaxx further up the coast is the other end of the same problem.",
 			"The Thistlefur furbolgs have since pushed them out and taken the ruins for themselves. The dead cultists are still lying about, and they give a reasonable idea of how that went.",
-			"The heartswood tree stands in the ruins, and its core is what a summoning circle in the crypt below needs to open a portal and bring a succubus through. That is the Althalaxx business reaching this far down the coast.",
+			"The heartswood tree stands in the ruins, and its core is what a summoning circle in the crypt below needs to open a portal and bring a succubus through. That is the Althalaxx business reaching this far down the coast, and Delgren the Purifier is the one working against it from Maestra's Post.",
+			"The tree has a story on it that nobody can source. Warlocks tell of two lovers who fell together in the War of the Ancients, and of the heartswood growing where they died.",
 		},
 		readMore = { "Wowpedia: Ruins of Ordil'Aran", "Wowpedia: Heartswood", "Wowpedia: Thistlefur" },
 	},
@@ -2470,6 +2448,9 @@ SubsOf("Tirisfal Glades", {
 	},
 	{
 		name = "Crusader Outpost", parent = "Tirisfal Glades", faction = "Hostile",
+		-- Not the same place as Crusader's Outpost, with the apostrophe, which is
+		-- a second Scarlet tower inside the Scarlet Palisade in the west of the
+		-- zone. The client has an area for this one, 167, and none for that one.
 		hook = "A Scarlet Crusade watchtower over the glades road, covering the Monastery's flank.",
 		lore = {
 			"The tower stands on the hills of eastern Tirisfal, and Captain Vachon has it. From up there the Crusade watches the main road through the glades south of the hills and can come down on the flank of anyone moving against the Scarlet Monastery. Friars and zealots hold the ground under him, with darkhounds and duskbats through the scrub around it.",
@@ -2609,6 +2590,7 @@ SubsOf("Durotar", {
 SubsOf("The Barrens", {
 	{
 		name = "The Mor'shan Rampart", parent = "The Barrens", faction = "Horde",
+		aliases = { "Mor'shan Rampart" },
 		hook = "The Horde's wall at the top of the Gold Road, facing Ashenvale.",
 		lore = {
 			"The rampart sits at the northern end of the Gold Road, where the Barrens runs into Ashenvale, and it was thrown up to stop the Alliance coming south. It is makeshift and it is meant to be.",
@@ -2729,11 +2711,13 @@ SubsOf("Teldrassil", {
 	},
 	{
 		name = "The Oracle Glade", parent = "Teldrassil", faction = "Alliance",
+		aliases = { "Oracle Glade" },
 		hook = "Teldrassil's first and strongest moonwell, under a tree shaped like an eagle on a bear.",
 		lore = {
-			"The Oracle Glade is in Teldrassil's north-west, and the moonwell here is the first and the most powerful on the tree. Moonwells are drawn from the Well of Eternity's remaining waters, so every one of them is a fragment of the thing whose destruction broke the world.",
-			"The Oracle Tree stands over it, with a wide trunk and boughs grown into the shape of a great eagle perched on a bear. It is said to have been raised by nature magic rather than planted, and it has watched Teldrassil grow alongside the druids.",
-			"Bloodfeather harpies have nested nearby and are a threat to the tree. Sentinel Arynia Cloudsbreak has a small party out here to push them back, and a satyr hides on a branch at the outskirts of the glade.",
+			"The Oracle Glade is in Teldrassil's north-west, and the moonwell here is the first and the most powerful on the tree. Moonwells are drawn from the Well of Eternity's remaining waters, so every one of them is a fragment of the thing whose destruction broke the world. A young druid is sent out here to fill a phial at the last of them.",
+			"The oracle the glade is named for is a tree. The Oracle Tree stands over the well, with a wide trunk and boughs grown into the shape of a great eagle perched on a bear, said to have been raised by nature magic rather than planted, and it has watched Teldrassil grow alongside the druids. It reports by shedding a piece of its bark for somebody to carry to Fandral Staghelm in Darnassus.",
+			"That line has been cut more than once. Bloodfeather harpies have nested all round the glade, one of them killed a runner carrying a report, and Sentinel Arynia Cloudsbreak is out here with a small detachment pushing them back a nest at a time. A satyr hides on a branch at the outskirts.",
+			"What the reports say is not reassuring, and the fault is not the tree's. Staghelm asked the dragons to bless Teldrassil as they once blessed Nordrassil, and Nozdormu refused him for his arrogance and Alexstrasza refused with him. Without that blessing the tree's growth has been flawed, and the night elves' immortality has not come back.",
 		},
 		readMore = { "Wowpedia: Oracle Glade", "Wowpedia: Moonwell", "Wowpedia: Crown of the Earth" },
 	},
@@ -2809,16 +2793,6 @@ SubsOf("Stonetalon Mountains", {
 })
 
 SubsOf("Thunder Bluff", {
-	{
-		name = "The Pools of Vision", parent = "Thunder Bluff", faction = "Horde",
-		hook = "A tunnel under Spirit Rise, and the Forsaken's base of operations in Thunder Bluff.",
-		lore = {
-			"The Pools of Vision are a tunnel system just below the cap of Spirit Rise. Its entrance is off the bridge up from Lower Rise and is well hidden. The tauren keep shaman training down here beside the Hall of Spirits, and the Forsaken work out of the same cave: mage and priest trainers, and Apothecary Zamah, an emissary of the Royal Apothecary Society, as their scholar here.",
-			"That arrangement is worth sitting with. The tauren read the land as the Earth Mother, and the allies they house in this cave are walking corpses raised by the Scourge.",
-			"Not every tauren is easy about it. One of them writes that the Forsaken have a history wrought with deceit and that the pact was made too hastily. Zamah is aware of the distance: her heart beats no longer, and she says she still feels sorrow for the spirits of Stonetalon.",
-		},
-		readMore = { "Wowpedia: Pools of Vision", "Wowpedia: Apothecary Zamah", "Wowpedia: Forsaken" },
-	},
 })
 
 SubsOf("Silithus", {
@@ -3065,10 +3039,11 @@ SubsOf("Dustwallow Marsh", {
 SubsOf("Feralas", {
 	{
 		name = "High Wilderness", parent = "Feralas", faction = "Neutral",
+		aliases = { "The High Wilderness" },
 		hook = "The great forest of western Feralas, from the coast to the Verdantis.",
 		lore = {
-			"The High Wilderness is the forest itself, running from the Forgotten Coast across to the Verdantis River. It is the largest single thing in Feralas.",
-			"What lives in it covers most of the zone: bears, wolves, yetis, treants, hippogryphs and ogres, all in the same woods. The groddoc apes are here too, which they will not be for ever.",
+			"The High Wilderness is the forest itself, running from the Forgotten Coast across to the Verdantis River. It is the largest single thing in Feralas. Abandoned and ruined structures stand among the trees on ground the night elves held once, and the Gordunni ogres have taken that ground over.",
+			"What lives in it covers most of the zone: ironfur bears, wolves, feral scar yetis, treants, frayfeather hippogryphs and ogres, all in the same woods, with hippogryph eggs in nests on the ground and Old Grizzlegut and Antilus the Soarer somewhere in the trees. The groddoc apes are here too, which they will not be for ever.",
 			"Feralas is the wettest, greenest, least ruined part of Kalimdor, and the night elves held all of it once. The wilderness is what the zone looks like where nobody has arrived to argue about it yet.",
 		},
 		readMore = { "Wowpedia: High Wilderness", "Wowpedia: Feralas" },

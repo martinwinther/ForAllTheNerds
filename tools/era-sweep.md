@@ -9232,3 +9232,82 @@ later.
 Next: merge the seven pairs, keeping the client's name in each case and the
 other as an alias, then gate the shape. After that, verify Shok'Thokar and
 Nordrassil. Then P5, which is the readMore probe and the cheapest of the rest.
+
+### 2026-11-26, audit P1 part two: the merges, and a gate that found an eighth pair
+
+Seven pairs merged, one pair found not to be a pair at all, and an eighth found
+by the gate that P1 could not have reached.
+
+**The six article-and-spelling merges.** In each case the entry carrying the
+client's own name survives, takes anything the other had that was worth keeping,
+and holds the dropped name as an alias so that looking it up still works.
+
+| Survives | Deleted | What the deleted entry gave it |
+|---|---|---|
+| Ruins of Andorhal | Andorhal | the plague cauldrons answering to Araj, and the Scarlet patrols coming down from Hearthglen |
+| The Mor'shan Rampart | Mor'shan Rampart | nothing it did not already have |
+| The Oracle Glade | Oracle Glade | the tree reporting by shedding bark to Fandral Staghelm, the runner killed carrying one, and the dragons' refused blessing |
+| The Ruins of Ordil'Aran | Ruins of Ordil'Aran | Delgren the Purifier, and the warlocks' story of two lovers who fell in the War of the Ancients |
+| Dream Bough | The Dream Bough | all of it. The surviving entry was two sentences and the deleted one had the four Dream gates, Lethlas and the boughguards |
+| High Wilderness | The High Wilderness | the Gordunni holding the ruined night elf ground, Old Grizzlegut and Antilus the Soarer |
+
+Two of those are worth noting as a pattern: at the Oracle Glade and the Dream
+Bough the better write-up was the one with the wrong name. A merge that simply
+deleted the odd-named entry would have thrown away the best material in both.
+
+**One pair was not a pair, and nearly got merged anyway.** `Crusader Outpost`
+and `Crusader's Outpost` are two real Scarlet Crusade scout towers at opposite
+ends of Tirisfal. The wiki carries both and distinguishes them explicitly. The
+first is Captain Vachon's, in the east at 80,56, watching the glades road and
+flanking the Scarlet Monastery, and it has AreaTable row 167. The second sits
+inside the Scarlet Palisade in the west by the Solliden Farmstead, is the
+Crusade's westernmost holding in Lordaeron, and has no area row at all. Both our
+entries were right. Both now carry a comment saying they are not each other, and
+the apostrophe form is in `check-names.py`'s allowed list with its source.
+
+This is the probe's own discipline earning its place. The list said duplicate;
+the sources said otherwise.
+
+**The gate, and the eighth pair.** `tools/validate.lua` now fails when two
+entries under one parent collide after a harder normalisation than `U.Key`
+does: drop a leading article and every non-alphanumeric character. It is
+deliberately narrower than it could be, because stripping an apostrophe-s would
+fire on the two Crusader towers, which are a real pair of places.
+
+It failed on first run, naming `Pools of Vision` and `The Pools of Vision`.
+**P1 could not have found that one**, because the Pools are inside Thunder Bluff
+and P1 excludes city interiors: `wow_classic_era` has no AreaTable row for any
+of them, so the test has nothing to match against. The gate does not care about
+the AreaTable, which is exactly why it reaches where P1 cannot. Two checks of
+the same family, with different blind spots, and it took both to clear the
+corpus.
+
+Resolving that eighth pair needed a different tiebreak, since the client names
+neither form. The wiki's article is at `Pools of Vision` with `The Pools of
+Vision` as a redirect, so the canonical title won; the richer of the two
+write-ups survived under it, and it now lives in `Data/Cities.lua`, which is
+where a city interior belongs. Broke the gate deliberately by restoring a
+`The Dream Bough` entry beside `Dream Bough`, confirmed it failed naming both,
+and restored.
+
+**Where this leaves P1.** Nine leads down to two. `Nordrassil` is tagged
+`forever` and has no area in Forever's own AreaTable, although the wiki lists it
+as a Mount Hyjal subregion. `Shok'Thokar` in Desolace has no area row in either
+client and appears nowhere in 1.12 game text. Neither is a duplicate and both
+need their own verification.
+
+One lead chased to nothing, recorded so nobody chases it again: the Balnir
+Farmstead entry has Captain Vachon raiding from a tower just along from the
+farm, which looked wrong once the Crusader towers were untangled. Balnir is at
+76,60 and Vachon's tower is at 80,56. It is correct.
+
+One tidiness observation, not acted on: entries do not always live in the file
+their zone suggests. `Crusader Outpost` is a Tirisfal entry in
+`Data/Kalimdor.lua`, and the Pools of Vision were a Thunder Bluff interior in
+the same file until this run moved them. The resolver reads `parent` and does
+not care, so this is housekeeping rather than a defect.
+
+The corpus is 900 vanilla entries and 79 Forever ones, down from 907 vanilla.
+Seven records left it, all of them a second write-up of ground already covered.
+
+Next: verify Nordrassil and Shok'Thokar, then P5, the readMore probe.

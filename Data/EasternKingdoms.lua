@@ -2065,14 +2065,6 @@ Zone{
 
 SubsOf("Western Plaguelands", {
 	{
-		name = "Andorhal", parent = "Western Plaguelands", faction = "Hostile",
-		hook = "The town where the plague was distributed, and the Scourge's hold on the Western Plaguelands.",
-		lore = {
-			"Andorhal was Lordaeron's main granary town, and the Cult of the Damned chose it for exactly that reason. The plagued grain went out from these warehouses to the whole region.",
-			"The town is the lich Araj the Summoner's headquarters, and the plague cauldrons standing around the zone answer to him. Scarlet Crusade patrols work the roads north out of it, sent down from Hearthglen.",
-		},
-	},
-	{
 		name = "Hearthglen", parent = "Western Plaguelands", faction = "Hostile",
 		hook = "A northern town held by the Scarlet Crusade, under a commander with a complicated father.",
 		lore = {
@@ -2715,11 +2707,12 @@ SubsOf("Tirisfal Glades", {
 SubsOf("Western Plaguelands", {
 	{
 		name = "Ruins of Andorhal", parent = "Western Plaguelands", faction = "Hostile",
+		aliases = { "Andorhal" },
 		hook = "The town where the plague was handed out, held now by the lich who kept it.",
 		lore = {
 			"Andorhal was a working Lordaeron town and the kingdom's granary for this region. That is why it was chosen. Kel'Thuzad's Cult of the Damned seeded the grain stored here with the plague of undeath and let Lordaeron's own distribution network carry it to every village that bought bread.",
 			"It worked perfectly. By the time anybody understood what the grain was doing, the north was already dying, and Arthas was riding from town to town finding the dead getting up.",
-			"Araj the Summoner holds the ruins now, with ghouls, banshees and abominations around him. The town that poisoned a kingdom is a Scourge garrison and has been since.",
+			"Araj the Summoner holds the ruins now, with ghouls, banshees and abominations around him, and the plague cauldrons standing out in the zone's fields answer to him. The town that poisoned a kingdom is a Scourge garrison and has been since. Scarlet Crusade patrols work the roads north out of it, sent down from Hearthglen.",
 		},
 		didYouKnow = "Andorhal is the single most consequential building site in recent history. Everything that follows, Arthas taking Frostmourne, Lordaeron's fall, the Forsaken, the Plaguelands themselves, runs back through a grain store.",
 		readMore = { "Wowpedia: Andorhal", "Wowpedia: Kel'Thuzad", "Wowpedia: Cult of the Damned", "Wowpedia: Plague of Undeath" },
