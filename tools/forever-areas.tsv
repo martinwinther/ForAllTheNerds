@@ -19,6 +19,13 @@
 # corpus with aliases included. The earlier figures in this header, 19 to go
 # here and 35 further down, were both left behind by later runs.
 #
+# AreaTable re-fetched 2026-11-27, product wowf: 1,173 named areas, identical to
+# the 2026-11-26 fetch, so Forever has not patched in new ground. Each of the
+# eight places still unwritten has a row and will be reported to a player
+# standing in it; what is missing is a source that describes them. Three pages
+# that DO have wiki articles have no row at all and must not become entries:
+# Calmbreeze Inn, Hall of Arms and Valanaar Port Authority.
+#
 # RE-CHECKED 2026-11-09, five days after the patch. The wiki has grown a
 # Category:Riverglades subzones with ten pages in it, three of which were new:
 # Ashwood's Fall, Terral's Watch and Wheeler's Grange. All three are now

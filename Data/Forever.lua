@@ -40,6 +40,26 @@ local addonName, ns = ...
 -- claim at all, and two, Hyjal Crater and Twilight Hollow, are not mentioned
 -- anywhere on the wiki. Those eight need the game.
 --
+-- RE-CHECKED AGAIN 2026-11-27. No change in two days: the wiki's Forever
+-- subzone categories hold the same 15, 10, 1 and 4 pages, and the full-text
+-- search returns the same results. Worth re-running monthly rather than weekly.
+--
+-- What that re-check did settle is the shape of the problem, which was stated
+-- loosely before. All eight of these places DO have rows in Forever's own
+-- AreaTable: Eastwind Shore 16728, Elbrim's Farm 16734, Southern Watch 16744,
+-- Forlorn Pit 17809 and Twilight Hollow 17847 under Riverglades, Forlorn
+-- Gardens 16742 under Shen'dralas, Nightclaw Cavern 16720 under Zephras Isle,
+-- and Hyjal Crater 17852 as a top-level area of its own, which is why it is
+-- absent from Mount Hyjal's subregion list. The client will report every one of
+-- those names to a player standing in it. They are blocked on a source that
+-- describes them, not on the client knowing they exist.
+--
+-- And the other way round, which closes a question left open on 2026-11-25:
+-- Calmbreeze Inn, Hall of Arms and Valanaar Port Authority have wiki articles
+-- and NO AreaTable row, checked against a table fetched 2026-11-27. The client
+-- would never report those names, so an entry for any of them would be dead
+-- weight. Do not write them.
+--
 -- One trap found while doing it, recorded so nobody repeats it. There is an
 -- article called Eastwind Shore, and it is a coastal strip in the Grizzly
 -- Hills. The Riverglades has its own Eastwind Shore and links it as
