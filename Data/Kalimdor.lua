@@ -75,7 +75,7 @@ SubsOf("Durotar", {
 			"The Dustwind harpies have it. They have taken to banditry, stopping the caravans that supply the orcs here and hoarding the sacks on their cliffs, and the most powerful of them stand over the nests. Orcs lived in the ravine before them and a river still feeds it.",
 			"Burning Blade cultists work the same ground, neophytes and thugs among them. Margoz is camped between the ravine and the coast, and the Horde thinks his counsel worth hearing before anyone goes after the cult.",
 		},
-		readMore = { "Wowpedia: Drygulch Ravine", "Wowpedia: Winds in the Desert", "Wowpedia: Margoz" },
+		readMore = { "Wowpedia: Drygulch Ravine", "Wowpedia: Winds in the Desert", "Wowpedia: Margoz (orc)" },
 	},
 	{
 		name = "Thunder Ridge", parent = "Durotar", faction = "Contested",
@@ -198,7 +198,7 @@ SubsOf("Mulgore", {
 			"Stonebull Lake wraps around Bloodhoof Village on three sides in central Mulgore. A bridge crosses it at the narrowest point, carrying the road between the village and Thunder Bluff, and the fishing in it is good enough that a lot of hours go into it.",
 			"The northern shore is where the Venture Company's caravan died. Tauren found it travelling under guard, attacked it and burned the wagons, and the company's salvagers turned up afterwards to pick over whatever the torches had missed. The crates are stamped by its Mining Division, and the papers inside set out how the company meant to drive the tauren off their own land.",
 		},
-		readMore = { "Wowpedia: Stonebull Lake", "Wowpedia: The Ravaged Caravan", "Wowpedia: Bloodhoof Village" },
+		readMore = { "Wowpedia: Stonebull Lake", "Wowpedia: The Ravaged Caravan (Horde) (1)", "Wowpedia: Bloodhoof Village" },
 	},
 	{
 		name = "Windfury Ridge", parent = "Mulgore", faction = "Contested",
@@ -217,7 +217,7 @@ SubsOf("Mulgore", {
 			"The papers the tauren pulled out of the wrecked caravan on Stonebull Lake are what give the scale of the plan away. Mogul Razdunk and the advisory board were pressing the supervisor to take the operation into lumber as well, and were sending him their newest shredders and the materials for a mill.",
 			"Venture Co. is the goblin cartel that works without any pretence of neutrality or restraint. They are doing the same thing in the Barrens, Stranglethorn and Stonetalon.",
 		},
-		readMore = { "Wowpedia: Venture Co. Mine", "Wowpedia: Supervisor Fizsprocket", "Wowpedia: The Venture Co." },
+		readMore = { "Wowpedia: Venture Co. Mine", "Wowpedia: Supervisor Fizsprocket", "Wowpedia: Venture Company" },
 	},
 })
 
@@ -246,7 +246,7 @@ SubsOf("Teldrassil", {
 			"Conservator Ilthalaine's work here is the balance of nature, and this year that means culling. The spring rains were heavy, the nightsabers and thistle boars bred past what the glade can feed, and thinning them is what he calls a necessary evil for the good of all who share the land.",
 			"The grells and grellkin are a separate problem and not a natural one. They are tainted by fel moss, and the furbolgs who used to live in these hills have deserted their homes, taken the name Gnarlpine and gathered under the same corruption.",
 		},
-		readMore = { "Wowpedia: Shadowglen", "Wowpedia: Aldrassil", "Wowpedia: The Woodland Protector" },
+		readMore = { "Wowpedia: Shadowglen", "Wowpedia: Aldrassil", "Wowpedia: The Woodland Protector (Classic)" },
 	},
 	{
 		name = "Dolanaar", faction = "Alliance", levels = "5-12",
@@ -318,7 +318,7 @@ SubsOf("Teldrassil", {
 			"Lake Al'Ameth lies south of Dolanaar in Teldrassil. Timberlings inhabit its shores, and their growing anger troubles Denalan.",
 			"He suspects the soil is involved and asks for timberling seeds to test his methods of nurturing plants. He also wants dangerous new sprouts cleared from around the water.",
 		},
-		readMore = { "Wowpedia: Lake Al'Ameth", "Wowpedia: Timberling Seeds", "Wowpedia: Timberling Sprouts" },
+		readMore = { "Wowpedia: Lake Al'Ameth", "Wowpedia: Timberling Seeds (Classic)", "Wowpedia: Timberling Sprouts" },
 	},
 })
 
@@ -528,7 +528,7 @@ SubsOf("The Barrens", {
 			"The Sludge Fen was a pool of clear blue water until the Venture Company put an oil rig on top of it and turned it into a mire of industrial waste. Supervisor Lugwizzle runs the operation. The company has the north-east corner of the Barrens fairly well sewn up: a tower above the fen, a research facility to the south-west and the Boulder Lode Mine beyond it.",
 			"Goblin business being what it is, the fen's other distinction is being robbed by other goblins. Sputtervalve, of the Tinkers' Union in Ratchet, has Director Riddlevox pressing him for results on shredder development, decided that stealing the Venture Company's design was faster than beating it, and sent Wizzlecrank to drive one out of the fen. Wizzlecrank climbed into a shredder without first obtaining the key, and had to be dug out and escorted home with the company in pursuit.",
 		},
-		readMore = { "Wowpedia: Sludge Fen", "Wowpedia: Supervisor Lugwizzle", "Wowpedia: The Escape" },
+		readMore = { "Wowpedia: Sludge Fen", "Wowpedia: Supervisor Lugwizzle", "Wowpedia: The Escape (Classic)" },
 	},
 	{
 		name = "The Forgotten Pools", parent = "The Barrens", faction = "Contested",
@@ -843,7 +843,7 @@ SubsOf("Ashenvale", {
 			"The Ruins of Stardust sit on an island in a lake south of Astranaar, west of the Talondeep Path, and they were a holy place. The lake has taken the demonic rot coming down out of Felwood, as Iris Lake has, and the whole site is tinted a sickly yellow-green. Large bog beasts roam the stones, corrupted by the water. The shaman who send people here for a sample of the fountain at the lake's centre pass on the tale that the ruins are protected by creatures of nature that do not care for visitors, and allow that it might only be a story told to frighten off the night elves' enemies.",
 			"The stardust itself is the exception. It is a frosted dust lying among the ruins, on bushes the taint has not touched, and it brings a fever down. Pelturas Whitemoon in Astranaar sends for handfuls of it to make a poultice for his daughter Relara Whitemoon, whose nightmares a tear of Elune has already eased and whose fever it has not.",
 		},
-		readMore = { "Wowpedia: Ruins of Stardust", "Wowpedia: The Ruins of Stardust", "Wowpedia: Call of Water" },
+		readMore = { "Wowpedia: Ruins of Stardust", "Wowpedia: The Ruins of Stardust (quest)", "Wowpedia: Islen Waterseer" },
 	},
 	{
 		name = "Raynewood Retreat", parent = "Ashenvale", faction = "Alliance",
@@ -1030,11 +1030,12 @@ SubsOf("Desolace", {
 	},
 	{
 		name = "Magram Village", parent = "Desolace", faction = "Hostile",
-		hook = "One of the two warring centaur clans' villages.",
+		hook = "One of the two warring centaur clans' villages, in the south-east of the zone.",
 		lore = {
-			"The Magram hold the eastern plains and are at war with the Gelkis in the hills. The feud goes back to Zaetar's sons.",
-			"The tauren and the Alliance have both tried playing the clans against each other, with some success and no lasting benefit.",
+			"The Magram hold the eastern plains and are at war with the Gelkis in the hills. The feud goes back to Zaetar's sons. Warug speaks for the clan and sits on the outskirts of the village rather than in it, which is as close to a diplomatic channel as the centaur offer.",
+			"The tauren and the Alliance have both tried playing the clans against each other, with some success and no lasting benefit. The method is always the same: pick a clan, kill its enemies, and trade on the standing that earns.",
 		},
+		readMore = { "Wowpedia: Magram Village", "Wowpedia: Magram clan", "Wowpedia: Warug" },
 	},
 	{
 		name = "Gelkis Village", parent = "Desolace", faction = "Hostile",
@@ -1735,7 +1736,7 @@ SubsOf("Un'Goro Crater", {
 			"Marshal Expeditions tried to work it. They were sent to dig there for dead stegodons and diemetradons, and Spark Nilminer's account is that there were a great many live ones as well and the party was nearly eaten whole while setting up camp. He now takes bones off whichever animal provides them and would rather nobody asked which.",
 			"The one thing Terror Run has that nowhere else does is red power crystals. On a pylon table they combine with the other colours: green for protection, blue to weaken a defence, yellow to make an explosion.",
 		},
-		readMore = { "Wowpedia: Terror Run", "Wowpedia: Roll the Bones", "Wowpedia: Un'Goro Crater" },
+		readMore = { "Wowpedia: Terror Run", "Wowpedia: Roll the Bones (Classic)", "Wowpedia: Un'Goro Crater" },
 	},
 	{
 		name = "Northern Pylon", parent = "Un'Goro Crater", faction = "Contested",
@@ -1892,7 +1893,7 @@ SubsOf("Silithus", {
 			"The hold also investigates the Twilight's Hammer. Geologist Larksbane seeks fragments of a tablet from a ruined cultist camp to the northwest.",
 			"Commander Mar'alith's soldiers are spread thin. Alongside his duties at the outpost, he is searching for his missing wife, Natalia.",
 		},
-		readMore = { "Wowpedia: Cenarion Hold", "Wowpedia: Taking Back Silithus (Alliance)", "Wowpedia: Taking Back Silithus (Horde)", "Wowpedia: The Twilight Mystery", "Wowpedia: Dearest Natalia" },
+		readMore = { "Wowpedia: Cenarion Hold", "Wowpedia: Taking Back Silithus (Alliance)", "Wowpedia: Taking Back Silithus (Horde)", "Wowpedia: The Twilight Mystery", "Wowpedia: Dearest Natalia (Classic)" },
 	},
 	{
 		name = "Ahn'Qiraj", parent = "Silithus", faction = "Hostile", levels = "60",
@@ -1965,7 +1966,7 @@ SubsOf("Silithus", {
 			"The Cenarion Circle keeps people here. Layo Starstrike is one of their agents in Silithus and will not take a stranger on trust without a letter, which is a reasonable way to behave in this zone.",
 			"An ancient war was fought in these wastes between the night elves and a malign, alien power, and the evil was sealed rather than killed. The Circle's worry is that something is now working to stir it.",
 		},
-		readMore = { "Wowpedia: Valor's Rest", "Wowpedia: Wasteland (quest)", "Wowpedia: Cenarion Circle" },
+		readMore = { "Wowpedia: Valor's Rest", "Wowpedia: Wasteland", "Wowpedia: Cenarion Circle" },
 	},
 	{
 		name = "Bronzebeard Encampment", parent = "Silithus", faction = "Neutral",
@@ -1975,7 +1976,7 @@ SubsOf("Silithus", {
 			"Rutgar needs rubbings of the glyphs on crystals inside the three silithid hives. Frankal is gathering material for an elixir he hopes will help decipher the language.",
 			"The researchers also have information about the missing Natalia. Commander Mar'alith sends adventurers from Cenarion Hold to question them.",
 		},
-		readMore = { "Wowpedia: Bronzebeard Encampment", "Wowpedia: Glyph Chasing", "Wowpedia: Breaking the Code", "Wowpedia: Dearest Natalia" },
+		readMore = { "Wowpedia: Bronzebeard Encampment", "Wowpedia: Glyph Chasing (Classic)", "Wowpedia: Breaking the Code (Classic)", "Wowpedia: Dearest Natalia (Classic)" },
 	},
 	{
 		name = "The Crystal Vale", parent = "Silithus", faction = "Contested",
@@ -2208,7 +2209,7 @@ SubsOf("Ashenvale", {
 			"The Dor'Danil Barrow Den lies south of Splintertree Post. Forsaken agents occupy the passages alongside the restless spirits of night elf druids.",
 			"Kayneth Stillwind describes a vision of the druids poisoned by the undead, their spirits severed from their bodies and driven mad. He seeks help putting the den's former leaders to rest.",
 		},
-		readMore = { "Wowpedia: The Dor'Danil Barrow Den", "Wowpedia: Insane Druids" },
+		readMore = { "Wowpedia: The Dor'Danil Barrow Den", "Wowpedia: Insane Druids (Classic)" },
 	},
 })
 

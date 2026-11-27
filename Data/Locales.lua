@@ -97,7 +97,7 @@ SubsOf("Hillsbrad Foothills", {
 		hook = "High ground south-west of Tarren Mill, with yeti in the rock under it.",
 		lore = {
 			"Darrow Hill rises south-west of Tarren Mill, and nobody is holding it. Starving mountain lions and vicious gray bears work the slopes, cave yeti and ferocious yeti come up out of the Foothill Caverns underneath, and the signpost at the foot of it points four ways: Durnholde Keep, Hillsbrad, Tarren Mill and Southshore. Alterac granite comes out of this ground.",
-			"The name belongs to the same Lordaeron family as Darrowmere Lake and the village of Darrowshire off in the Plaguelands. Very little that the Darrow name was attached to is still standing.",
+			"The Darrow name is all over this part of Lordaeron: Darrowmere Lake, the village of Darrowshire out in the Plaguelands, and Caer Darrow on its island in the lake. Nothing in this period says where the name came from, or which of them carried it first.",
 		},
 	},
 	{
@@ -263,7 +263,7 @@ SubsOf("Stranglethorn Vale", {
 			"These ruins are held rather than empty. Bloodscalp shamans and axe throwers work the stones with warriors behind them, and tigers and raptors take the ground between the ruins. A book has been left lying open among the stonework.",
 			"The Gurubashi broke apart after their own priests summoned Hakkar the Soulflayer and the empire had to fight a war to contain him. What stands here was raised before that and the trolls living in it are the descendants of the people who raised it.",
 		},
-		readMore = { "Wowpedia: Bal'lal Ruins", "Wowpedia: Bloodscalp tribe", "Wowpedia: Gurubashi" },
+		readMore = { "Wowpedia: Bal'lal Ruins", "Wowpedia: Bloodscalp tribe", "Wowpedia: Gurubashi Empire" },
 	},
 	{
 		name = "Balia'mah Ruins", faction = "Hostile",
@@ -1819,14 +1819,6 @@ SubsOf("Thousand Needles", {
 })
 
 SubsOf("Desolace", {
-	{
-		name = "Shok'Thokar", faction = "Hostile",
-		hook = "A Burning Blade site in the southern waste.",
-		lore = {
-			"The Burning Blade are better organised in Desolace than almost anywhere, with Thunder Axe Fortress and sites like this one across the zone.",
-			"Having the Mannoroc Coven nearby helps them. Demons left over from the Third War have held that ground since, and the cult has something to organise around.",
-		},
-	},
 	{
 		name = "Bolgan's Hole", faction = "Hostile",
 		hook = "A cave in Gelkis Village, where the Gelkis keep their khan.",

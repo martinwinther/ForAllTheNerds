@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.2.24
+
+A place that does not exist yet, and twenty-five further-reading links that went
+nowhere or somewhere wrong.
+
+**Fixed**
+
+- Shok'Thokar in Desolace is not in this period. It is the name that area is
+  given much later, after the Burning Blade take the village and the centaur
+  clans unite against them, and the wiki dates the change exactly. In this period
+  the place is Magram Village, which already had its own write-up, so the
+  duplicate is gone and Magram Village gains Warug, the clan's spokesman, who
+  sits on the outskirts rather than inside and is the closest thing to a
+  diplomatic channel the centaur offer.
+- Twenty-five of the "if you want to go deeper" links were wrong. Six went to
+  pages that do not exist at all, including four in Forever's zones where the wiki
+  has not written the article yet. Five landed on a disambiguation page, handing
+  you a menu instead of an article, among them Margoz, where there are two
+  characters of that name and the addon meant the one in Durotar. Two pointed at
+  the wrong kind of thing under the right name: the Venture Co. link went to a
+  quest rather than to the company. And sixteen went to the current version of a
+  quest when the version this addon describes has its own page.
+- Darrow Hill no longer claims that Darrowmere Lake, Darrowshire and the hill are
+  named for one Lordaeron family. Nothing says there was such a family. The three
+  names really do run together across this part of the world, which is all the
+  entry claims now, and it says plainly that nothing in this period records where
+  the name started.
+
 ## 1.2.23
 
 Seven places had two write-ups each. Now they have one, and in two cases the one

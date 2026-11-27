@@ -9311,3 +9311,211 @@ The corpus is 900 vanilla entries and 79 Forever ones, down from 907 vanilla.
 Seven records left it, all of them a second write-up of ground already covered.
 
 Next: verify Nordrassil and Shok'Thokar, then P5, the readMore probe.
+
+### 2026-11-26, audit P1 part three: the last two leads, and P1 closes clean
+
+Both verified. One was the Dalaran error again, under a different name, in an
+entry the sweep had reviewed and passed. `tools/check-names.py` now exits 0:
+every testable entry matches an area its own client knows.
+
+**Shok'Thokar was a Cataclysm area all along.** Its own wiki page settles it in
+one line, in the patch-changes section: `Patch 4.0.3a, Replaced Magram Village`.
+The place in this period is **Magram Village**, AreaTable 604, parent Desolace,
+and we already had an entry for it. 1.12 quest text has Warug the Magram
+spokesman sitting on the outskirts of that village in south-east Desolace,
+across quests 1367, 1369 and 1371.
+
+Our entry had it as "a Burning Blade site in the southern waste" with the
+Mannoroc Coven for company. The Burning Blade do take the village, with a pit
+lord called Agogridon and a tower built to watch the area, and the three centaur
+khans then unite in it. All of that is 4.0.3a. The infobox reads centaur as the
+current race and demons as the former, which is retail's current, and the whole
+arrangement postdates this addon's period by an expansion.
+
+Deleted, and the term filed `out-of-era` with `ci` matching, the way Whisperwind
+Grove and The Red Reaches were, so it cannot be written back in any casing.
+Magram Village keeps the ground and gains Warug, who is the closest thing to a
+diplomatic channel the centaur offer. Nothing from the deleted entry was worth
+absorbing: its two paragraphs were about the Burning Blade in Desolace generally
+rather than about this village. That vagueness is its own tell.
+
+That is the third instance of the class `tools/era-audit.md` now leads on: an
+entry named for an area that exists, under a name a later client gave it, whose
+prose then describes the later state. Dalaran Crater, the five entries that
+followed it, and now this. The entry name is the carrier every time.
+
+**Nordrassil is a tree, not a subzone, and the entry is right.** Neither client
+registers an area for it. The wiki's article is the tree itself, and the only
+subzone of that name belongs to the Burning Crusade's Hyjal Summit instance and
+is out of era. The Mount Hyjal (Forever) article's own subregion list has
+nine entries and Nordrassil is not among them, though the article's history
+prose names it seven times. So the client will never report it, `/ftn nordrassil`
+is how anyone reaches it, and that is fine for the most consequential tree in the
+setting. Added to the probe's allowed list with that reasoning, alongside the
+Un'Goro pylons and the Lion's Pride Inn.
+
+**P1 is finished.** 978 entries, 72 of them outside what this probe can test:
+22 instances, 42 city interiors and 8 quest-named or landmark exceptions, each
+of the 8 carrying its source in the script. The remaining 906 all match. The
+probe's full arc, worth keeping for the next one: 64 raw hits, 26 after the
+category exclusions, 15 once each era was matched against its own client, 9 once
+the landmarks were listed, 2 after the duplicate merges, 0 now. Six of those
+stages were the probe being wrong rather than the corpus.
+
+Two deliberate breaks, both confirmed and restored: removing the `Warug` row
+failed the build naming Magram Village, and writing `Shok'Thokar` back into that
+entry's prose failed on the new out-of-era row, which is the row doing the job
+it was filed for.
+
+The corpus is 899 vanilla entries and 79 Forever ones.
+
+Next: P5, the readMore probe, which is the cheapest of the remaining ones and
+has already produced two findings by accident this month.
+
+### 2026-11-26, audit P5: the readMore references
+
+1,517 references across 1,072 distinct titles, all checked against the wiki.
+Twenty-five were wrong and are fixed. `tools/check-refs.py` mechanises the run
+and now exits 0.
+
+**Six were dead links.** The validator only asserts that a reference produces a
+valid https address, so a reference to a page nobody ever wrote passes the build
+and ships. Four were Forever entries pointing at pages the wiki has not written:
+`Galestrider` from Fairweather Stables, `Rog'mar`, `Valanaar` and
+`Valanaar Skydocks`. Each now points at the page that does cover the ground,
+`Zephras Isle`, `Riverglades` or `Valanaar Port Authority`. The other two were
+mistitled: `Zzarc' Vul` for the wiki's `Zzarc'Vul`, a stray space, and
+`Wasteland (quest)` for `Wasteland`, which is the right page and carries a
+`Classic only` tag.
+
+That makes nine Forever references to nonexistent pages found this month, after
+the eight unwritable subzones. Forever's wiki coverage is thinner than our
+Forever entries assumed when they were given further reading.
+
+**Five were disambiguation pages.** Each hands the reader a menu instead of an
+article. `Amani` from the Hinterlands wanted the `Amani Empire`; `Gurubashi`
+from Bal'lal Ruins wanted the `Gurubashi Empire`; `The Ravaged Caravan` from
+Stonebull Lake wanted the Mulgore Horde quest rather than a Nagrand one; `The
+Restless Souls` from Terrordale wanted the first of its two parts; and `Margoz`
+from Drygulch Ravine wanted `Margoz (orc)`, the Durotar quest giver, rather than
+the human from a novel.
+
+**Two were the wrong kind of thing under the right name.** We cited
+`The Venture Co.` from the Venture Co. Mine meaning the company; the bare page
+is a retail quest, and the company is at `Venture Company`. And the Ruins of
+Stardust cited both `Ruins of Stardust` and `The Ruins of Stardust`, which looked
+like a duplicate and was not: the first is the place and the second was reaching
+for the quest, and the quest lives at `The Ruins of Stardust (quest)`.
+
+**The (Classic) trap does not transfer to readMore, and that is the finding
+worth keeping.** It is the most reliable tell in `tools/era-audit.md` for prose.
+Probing all 992 bare titles turned up **71 with a real `(Classic)` article**, and
+switching all 71 would have been wrong for most of them.
+
+| The (Classic) page is | Count | Verdict |
+|---|---:|---|
+| a quest | 21 | switch, for 16 of them |
+| a zone | 37 | leave: the bare title is the lore and history page, which is what this addon is |
+| an instance | 9 | leave, same reasoning |
+| a character | 2 | leave emphatically |
+| other | 2 | leave |
+
+`Stranglethorn Vale (Classic)` settles the zone case in its own hatnote: it
+sends the reader to the bare title "for lore and history" and keeps itself for
+the pre-Cataclysm zone snapshot. And `Kel'Thuzad (Classic)` is the raid
+encounter at 14k while the bare page is the character at 73k, so switching that
+one would have replaced a lore article with a tactics page.
+
+Five of the 21 quest-shaped hits were NPC or faction names where the `(Classic)`
+page is a coincidentally-named quest: `Southsea Freebooters`,
+`Supervisor Fizsprocket`, `Zaeldarr the Outcast`, `Margoz` and
+`The Venture Co.`. For the first three the bare page is the NPC or faction and is
+correct. So 16 switched, 55 were left, and the rule had to be applied by type
+rather than by its own tell.
+
+**One limitation with nothing to fix,** recorded so it is not rediscovered.
+Three vanilla names redirect to pages titled for a later era and no
+vanilla-specific page exists: The People's Militia to Westfall Brigade, Sandfury
+to Farraki tribe, and Zandalar tribe to Zandalari Empire. The reader lands on
+the right subject under the wrong era's name.
+
+Nine more redirects land on an apparently different title and were each checked
+and left: Eldre'Thalas really is Dire Maul, Sunken Temple really is the Temple
+of Atal'Hakkar, the Kingdom of Azeroth really did become Stormwind, Neltharion
+really is Deathwing, and so on. The script still prints them, because the next
+reader should check rather than trust that someone did.
+
+**One thing P5 confirmed rather than found.** The Ruins of Stardust entry says
+shaman send people to the fountain at the lake's centre for a water sample. That
+is quest 1534, almost word for word: a waterskin, Ashenvale beyond Lake Mystral,
+a holy place, a small fountain at the centre of the lake, and a return to Islen.
+The reference now points at Islen Waterseer.
+
+No entry prose changed in this run, only references. Next: P2, the probe that
+asks whether an entry's name claims more than its prose proves. That is the
+Dalaran catch, and the only one of the eight that cannot be mechanised at all.
+
+### 2026-11-26, audit P2: does the name claim more than the prose proves?
+
+One finding in 978 entries, and a corrected idea of what this probe is for.
+
+**The first filter was the wrong filter.** The obvious way to narrow P2 is to
+find names that assert a state: Ruins of, Crater, Abandoned, Lost, Sunken,
+Burning, Fallen. That produced 59 candidates, of which three had a state in the
+name the prose never mentions, and all three were the filter catching a word
+that is simply part of a real place name. Forlorn Rowe is called that. So is the
+Forgotten Coast. Ashwood's Fall turned out to be the opposite of a problem: its
+last sentence already says the identification "stays an inference rather than a
+fact", which is the discipline this whole audit is asking for.
+
+Checked the strongest of the 56 that do agree with their names, since agreement
+between name and prose is the dangerous case rather than the safe one: both
+craters, both drowned places, both broken, both tainted, both dead. Un'Goro has
+a crater, Weazel has a crater, the Drowned Reef has wrecks and submerged ruins,
+the Broken Pillar "stands, or rather lies". All sound.
+
+**What actually produces name errors is an entry explaining its own name.**
+Every one this project has had was an etymology: Staghelm Point, Gavin's Naze,
+Twilight Vale, Vul'Gol, the Headland. So the probe was re-aimed at the claim
+rather than at the name, grepping the prose for "named for", "takes its name",
+"the name is" and the like. That returns **109 entries making 143 naming
+claims**, which is the right reading list, and the re-aimed grep is now in
+`tools/audit-prompt.md` under P2.
+
+Reassuring in passing: the sweep's own naming corrections are visible in that
+list in their fixed form. Twilight's Run says nobody is sure which Staghelm the
+point is named for. Twilight Vale says named for the dusk and not for the cult.
+Whispering Gardens and Witch Hill both say nothing in this period explains the
+name. Gavin's Naze says a naze is a headland, so two of the four are named for
+what all four are.
+
+**The one finding: Darrow Hill.** It said "the name belongs to the same
+Lordaeron family as Darrowmere Lake and the village of Darrowshire", and there
+is no Darrow family. No page on the wiki mentions one, there is no `Darrow
+(family)` article, the Darrow Hill article says nothing about it, and 1.12 text
+names Darrow Hill, Darrowshire, Darrowmere and Caer Darrow without ever
+connecting them to a house. It is the Gavin's Naze shape exactly: a paragraph
+built on an observed naming pattern. The shared name is a fact and stays; the
+family is gone, and the entry now says that nothing in this period says where
+the name came from or which place carried it first.
+
+**Three etymologies checked and clean, recorded so nobody rechecks them.** Bear's
+Head is named after the Timbermaw furbolg villages dotted across it, which is
+what the place article says. Saltspray Glen is named for the ease with which the
+ocean throws seawater inland, in almost our own words. And Rethban ore really is
+named after the man who first found it: quest 347 says "Rethban Ore is named
+after the man who first found it, Bart Rethban" in those words. That last one
+was briefly a lead because a truncated grep of the dump hid the sentence, which
+is worth admitting: the probe's output is only as good as the reading behind it,
+and a `head -4` is not a reading.
+
+**No gate came out of this one, and none can.** Darrow Hill's claim was built
+entirely from terms the ledger carries and verdicts as vanilla, because every
+one of them is: Darrow, Darrow Hill, Darrowmere Lake, Darrowshire. The sentence
+was false and every word in it was proven. That is the whole argument for P2
+existing, and for it being read rather than run.
+
+Next: the remaining probes are P3, whether a claim reused across entries was
+verified more than once, P4, whether an entry's only source is another of our
+entries, P6, the unread fields, and P7, what the sources say that we do not. P7
+is the one that finds missing sentences and is the largest.

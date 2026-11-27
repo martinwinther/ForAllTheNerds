@@ -88,8 +88,25 @@ This is the Dalaran catch stated generally, and no script will do it. `Dalaran
 Crater` asserts a crater. The prose never proved one, and nobody noticed,
 because the name had already settled the question before the first sentence.
 
-Names that assert a state are the ones to read twice: Ruins of, Crater,
-Abandoned, Lost, Sunken, Burning, Fallen. Each is a claim about when you are.
+**Narrow it by naming claims, not by state words.** The obvious filter is names
+containing a state: Ruins of, Crater, Abandoned, Lost, Sunken, Burning, Fallen.
+That was tried first and produced 59 candidates and nothing at all. Three looked
+like hits and all three were the filter catching a word that is simply part of a
+real place name, as at Forlorn Rowe and the Forgotten Coast. A state word in a
+name is usually just the name.
+
+What produced every name error this project has actually had is an entry
+**explaining its own name**. Staghelm Point, Gavin's Naze, Twilight Vale,
+Vul'Gol and the Headland were all etymologies. So grep the prose for the claim
+rather than the name for the word:
+
+    lua tools/dump-prose.lua | grep -nEi \
+      "named (for|after)|takes its name|gets its name|the name (is|comes|belongs)|is named"
+
+That returns about 110 entries and 140 claims, which is a reading list for one
+run. Work it in bands and record where you stopped. Most will be sound, and the
+sound ones are worth seeing too: an entry that says "nothing in this period
+explains the name" is doing exactly what it should.
 
 ### P3. Who else says this, and was it checked there too?
 
@@ -112,13 +129,49 @@ not, and nothing in the build can see it.
 
 ### P5. Does the linked article describe this place?
 
-Every `readMore` title: does it exist, and is it about the same place?
+**Mechanised: `tools/check-refs.py`.** Fails on a dead reference, and reports
+disambiguation landings, odd redirects and `(Classic)` candidates as leads. It
+needs the network and is not in CI.
 
-Both halves fail in practice. Two titles shipped that did not exist, because the
-validator checks only that a reference produces a valid address. And a title can
-exist and be wrong: there is an article called Eastwind Shore and it is a
-coastal strip in the Grizzly Hills, while the Riverglades has its own Eastwind
-Shore. A name match is not a place match.
+Every `readMore` title: does it exist, and is it about the same thing?
+
+Both halves fail in practice. The validator checks only that a reference
+produces a valid address. Six dead links shipped: four of them Forever entries
+pointing at pages the wiki has not written, and two simply mistitled,
+`Zzarc' Vul` for `Zzarc'Vul` and `Wasteland (quest)` for `Wasteland`.
+
+A title can also exist and be wrong, in three ways the first run found:
+
+- **A different place of the same name.** There is an article called Eastwind
+  Shore and it is in the Grizzly Hills, while the Riverglades has its own.
+- **A disambiguation page**, which hands the reader a menu instead of an
+  article. Five shipped, including `Margoz`, where the right target is
+  `Margoz (orc)` and the other option is a novel character.
+- **The wrong kind of thing under the right name.** We cited `The Venture Co.`
+  meaning the company; the bare page is a retail quest and the company is at
+  `Venture Company`.
+
+**Do not apply the (Classic) rule mechanically here.** It is the most reliable
+tell in `era-audit.md` for prose, and for `readMore` it is right only sometimes.
+The first run found 71 bare titles with a real `(Classic)` article and only 16
+were switches. Classify the `(Classic)` page before touching anything:
+
+| The (Classic) page is | Do |
+|---|---|
+| a quest | switch. The vanilla quest has different objectives, levels and text |
+| a zone | leave. `Stranglethorn Vale (Classic)` sends you to the bare title "for lore and history", which is what this addon is |
+| an instance | leave, same reasoning |
+| a character | leave. `Kel'Thuzad (Classic)` is the raid encounter at 14k; the bare page is the character at 73k |
+
+And five of the 21 quest-shaped hits were NPC or faction names where the
+`(Classic)` page is a coincidentally-named quest. Check what the citing entry
+meant before switching even those.
+
+One limitation with nothing to fix: three vanilla names redirect to pages
+titled for a later era and no vanilla-specific page exists. The reader lands on
+the right subject under the wrong era's name: The People's Militia to
+Westfall Brigade, Sandfury to Farraki tribe, Zandalar tribe to Zandalari
+Empire.
 
 ### P6. Do the unread fields agree with the client?
 
