@@ -9519,3 +9519,125 @@ Next: the remaining probes are P3, whether a claim reused across entries was
 verified more than once, P4, whether an entry's only source is another of our
 entries, P6, the unread fields, and P7, what the sources say that we do not. P7
 is the one that finds missing sentences and is the largest.
+
+### 2026-11-28, audit: the gap files agreed with each other and both were wrong
+
+This came out of a question about something else. Martin asked whether the two
+lighthouse entries could simply both stay. Checking that meant reading
+`tools/places.tsv`, and the row above the lighthouse row pointed at
+`tools/area-gaps.tsv`, and that file turned out to be a snapshot from
+2026-11-09 with 165 of its 202 data rows already written. The header said to
+treat the count as an upper bound, which was true and far too mild.
+
+**The real finding was next to it.** `tools/coverage.md` listed four places as
+empty that the addon already has entries for: O'Breen's Camp in Arathi
+Highlands, Turner's Logging Camp in Riverglades, and Dae'gun and Elderwild in
+Mount Hyjal. All four also had a row in `tools/no-source.md` explaining why
+they were still gaps. Three of those rows sat under the heading "Forever areas
+that exist only as a name in a list", above a paragraph stating that a name in
+a list is not a source: no description, no NPC placed there, no quest that
+mentions it. Turner's Logging Camp has Tan'jani and the quest `Fetch 'n'
+Fletch`. Elderwild has Ortak Lomgok, a boy called Mirt, and two quests.
+Dae'gun has Azgalor's ashes and Jereman sending people through it. The entries
+were written later and nobody came back to the file.
+
+**`check-gaps.py` passed throughout, and the reason matters more than the four
+rows.** It compared `coverage.md` against `no-source.md` and against nothing
+else. Both files had gone stale in the same direction at the same time, so they
+agreed, and agreement was all the check tested. The CI step was labelled "this
+fails if a place has been written up and its reason was left behind". It could
+not. Neither of its inputs knew what the addon contained.
+
+**The gate.** `tools/addon_entries.py` now loads the addon through
+`mock_wow.lua` and hands back every entry with its aliases, and `check-gaps.py`
+uses it for a third comparison: an open gap that an entry already answers to,
+in the same zone, is now a failure. The zone has to match, because a few
+subzone names sit in two zones and the resolver matches a subzone against its
+declared parent, so a name-only test would call those written when they are
+not. Broken deliberately both ways before committing: restoring Turner's
+Logging Camp to both files gives `ALREADY WRITTEN` and exit 1 while the two
+older comparisons stay silent, and listing the same name under Mulgore instead
+reports nothing, which is the false positive the parent requirement exists to
+prevent. The loader also replaced a regular expression that had matched 61 of
+978 entries and reported a clean result.
+
+**One real caveat recorded, not fixed.** O'Breen's Camp has AreaTable row 323,
+but `no-source.md` recorded on 2026-11-09 that the wiki carries it as a planned
+subzone that was removed, so the client may never report the string even though
+the camp and O'Breen are both on the sand at Faldir's Cove. P1 passes it,
+because P1 only asks whether the client's table carries the name. That limit is
+now written into `check-names.py` beside the other things it cannot test.
+
+**The lighthouse question itself is unanswered and is Martin's.** Both areas are
+real, 26 and 115, both parented to Westfall, so neither entry is dead and
+leaving both costs nothing but a repeated set of facts. Settled while checking:
+no other zone has a bare `Lighthouse` area, so moving that name onto an alias
+cannot steal it from anywhere, and the only cost of merging is one orphaned
+`seen` key, because `ns.MarkSeen` is keyed on `U.Key(entry.name)`.
+
+Next: P3, P4, P6 and P7 remain. The lesson from this one generalises past the
+probes. Every check here should be asked what it compares, and whether either
+side of the comparison knows anything we did not write ourselves.
+
+### 2026-11-28, the Westfall lighthouse merge
+
+Martin's call, taken after the check above turned the naming question into a
+question with an answer. There were two entries for one building: `Lighthouse`,
+area 26, and `Westfall Lighthouse`, area 115, both parented to Westfall. Both
+names are real and both resolved, and the two write-ups told the same story
+about the same dead man in different words, so a player walking the point was
+told it twice and counted as discovering two places.
+
+**What survived and why.** `Westfall Lighthouse` keeps the entry, because the
+entry name is what appears in chat and in a lookup list, where `Lighthouse`
+alone says nothing about where it is. `Lighthouse` and `The Lighthouse` are
+aliases on it. That is safe to do: no other zone in the AreaTable has a bare
+`Lighthouse` area, so the alias takes the name from nowhere. The merged lore
+keeps every sourced claim from both: the Longshore and the wrecks, Grayson dead
+on the rocks below and lucid about it, the keeper's family frightened off and
+then killed on Old Murk-Eye's second raid, the oil from the harvest golems, and
+the tidehunters and oracles still on the shore. The one line that went is the
+second telling of each.
+
+**Checked through the real resolver, not the validator.** `Lighthouse`, `The
+Lighthouse` and `Westfall Lighthouse` all return the one entry from
+`ns.FindSubIn`, with the single key `westfall lighthouse`, which is what makes
+`onlyFirstVisit` and `repeatCooldown` behave. P1's lesson applies here too: a
+validator pass says the data is well formed, and only the resolver says a
+string lands. 977 entries now, down one. `check-refs.py` exits clean at 1515
+references, so the fourth readMore title the merged entry picked up is real.
+
+**One cost, accepted.** Players who already visited the place under the old
+`Lighthouse` entry keep an orphaned `seen` key, because `ns.MarkSeen` is keyed
+on `U.Key(entry.name)`. Nothing reads it and nothing breaks. `ns.PruneCollected`
+is the precedent for tidying that sort of thing if it ever accumulates.
+
+Next: a release will need a CHANGELOG line, written at release prep as usual,
+saying the lighthouse is one place again. The remaining probes are still P3, P4,
+P6 and P7.
+
+### 2026-11-28, release 1.2.25
+
+Martin called it after the merge. Both version strings read 1.2.25.
+
+**What shipped, in the sense of what a player will notice: the lighthouse, and
+nothing else.** The Westfall lighthouse is one entry instead of two. That is
+the whole of the player-visible change, and the CHANGELOG section says so in
+those terms, because the other three commits on dev do not reach the game.
+
+**What rode along without shipping.** The Forever re-check of 2026-11-27 added
+only comments to `Data/Forever.lua`, recording that all eight unwritten
+subzones do have AreaTable rows and that Calmbreeze Inn, Hall of Arms and
+Valanaar Port Authority have none and must never become entries. The gap
+registry fix touched `tools/coverage.md`, `tools/no-source.md`,
+`tools/area-gaps.tsv` and `tools/check-gaps.py`, plus the new
+`tools/addon_entries.py`, none of which is in the zip. The CI change is a
+workflow file. `git diff --stat` against the 1.2.24 tag, restricted to shipped
+files, is the lighthouse plus comment lines in two data files.
+
+**The release note is deliberately narrow.** A player reading it should see one
+sentence about one place, not an account of our bookkeeping. The bookkeeping is
+written up above, where the next audit run will look for it.
+
+Next: P3, P4, P6 and P7. P7 remains the largest and the only one that finds a
+sentence we never wrote.

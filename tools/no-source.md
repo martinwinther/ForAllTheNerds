@@ -8,12 +8,16 @@ delete this table every time it ran, which is why the two are separate files.
 
 **Last verified 2026-11-09**, every row, against warcraft.wiki.gg through its
 API. The method is at the bottom of this file. Each row says what the check
-actually returned rather than what it was assumed to be. Forty-three rows, all
-forty-three checked individually this time instead of inherited.
+actually returned rather than what it was assumed to be. Thirty-nine rows, all
+checked individually that day instead of inherited.
+
+Four rows left on 2026-11-28, because the places had been written in the
+meantime and nobody came back here to say so. `tools/check-gaps.py` now loads
+the addon and fails on exactly that, so a row cannot outlive its gap again.
 
 ## Never left the World of Warcraft beta
 
-Twenty areas. Each has an article on the wiki saying in as many words that it
+Nineteen areas. Each has an article on the wiki saying in as many words that it
 was a planned subzone removed before release. Nobody has ever stood in one of
 them. These will never change.
 
@@ -23,7 +27,6 @@ them. These will never change.
 | The Whipple Estate | Duskwood | 244 | A house owned by the Whipples, a family who would have turned worgen at night. Never implemented |
 | Shell Beach | Stranglethorn Vale | 303 | Planned beach in northern Stranglethorn, removed |
 | Blackwater Shipwrecks | Arathi Highlands | 322 | Planned subzone around Faldir's Cove, removed |
-| O'Breen's Camp | Arathi Highlands | 323 | Planned subzone around Faldir's Cove, removed |
 | Skyline Ridge | Mulgore | 399 | Planned subzone, removed |
 | Valley of the Bloodfuries | Stonetalon Mountains | 466 | Planned subzone, removed. The Charred Vale article suggests this was its earlier name |
 | Brave Wind Mesa | Mulgore | 471 | Planned subzone, removed |
@@ -82,19 +85,21 @@ zone's areas and does not include it at all.
 
 ## Forever areas that exist only as a name in a list
 
-Eight areas. Each is named on its zone's article, in the list of subregions,
+Five areas. Each is named on its zone's article, in the list of subregions,
 and nowhere else. A name in a list is not a source: no description, no NPC
 placed there, no quest that mentions it.
+
+This section had eight rows until 2026-11-28. Three of them, Turner's Logging
+Camp, Elderwild and Dae'gun, turned out to have quest text behind them after
+all, and all three are now written. A name in a list is still not a source;
+the lesson is that the list was where to start looking, not where to stop.
 
 | Place | Zone | Area id | Everything that exists |
 |---|---|---|---|
 | Nightclaw Cavern | Zephras Isle | 16720 | The Zephras Isle subregion list. See the near miss below |
 | Eastwind Shore | Riverglades | 16728 | The Riverglades subregion list |
 | Elbrim's Farm | Riverglades | 16734 | The Riverglades subregion list |
-| Turner's Logging Camp | Riverglades | 16736 | The Riverglades subregion list |
 | Southern Watch | Riverglades | 16744 | The Riverglades subregion list |
-| Elderwild | Mount Hyjal | 16848 | The Mount Hyjal list, plus two leatherworking patterns named after it |
-| Dae'gun | Mount Hyjal | 16866 | The Mount Hyjal list, one line calling it the area's ruins, and one noting Forever puts it where retail's Verdant Thicket is |
 | Forlorn Pit | Riverglades | 17809 | The Riverglades subregion list |
 
 ## Forever areas whose name belongs to other-era content

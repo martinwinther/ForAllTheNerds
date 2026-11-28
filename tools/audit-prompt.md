@@ -41,6 +41,25 @@ Everything in this list is therefore unverified by construction:
 
 That table is the audit. Each row below is a probe for one of them.
 
+### The same idea, applied to the checks themselves
+
+A check that compares two of our own files to each other reads neither the
+world nor the addon. Both files can go stale in the same direction at the same
+time, and then they agree, and the check passes, and the passing check is what
+stops anyone looking.
+
+That is not hypothetical. `tools/check-gaps.py` held `tools/coverage.md` and
+`tools/no-source.md` against each other for weeks while four places sat in both
+as empty with nothing to write from. All four had been written. Three had full
+lore from Forever quest text, and one of those three had a row in `no-source.md`
+saying in as many words that no quest mentioned it. The CI step was even
+labelled as catching this. It could not, because it never asked the addon what
+it had.
+
+So when a check passes, ask what it compared. If both sides are ours, it has
+told you we are self-consistent, which is not the same as being right. Give it
+a third input that neither side controls: the addon, the client, or a source.
+
 ## The probes
 
 Run one probe per run. Each says what a hit means and, as importantly, what it

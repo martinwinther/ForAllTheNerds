@@ -12,9 +12,9 @@ without inventing lore. Those are listed in `tools/no-source.md`, along with
 three near misses that were written from adjacent sources instead. The
 checklist will not reach zero.
 
-**940 written, 43 empty, 95% covered.** 25 zones have gaps; 38 are complete.
+**944 written, 39 empty, 96% covered.** 24 zones have gaps; 39 are complete.
 
-43 checklist lines below, 43 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
+39 checklist lines below, 39 distinct names: a few sit in two zones, and each needs its own entry, because the resolver matches a subzone against its declared parent.
 
 How this relates to the other two files. `tools/area-gaps.tsv` is the machine
 list of vanilla subzones only. This file is the superset: it adds Forever's
@@ -32,17 +32,16 @@ the client's, but the matching is this file's rather than the addon's own.
 
 | Zone | Written | Empty | Covered |
 |---|---:|---:|---:|
-| Riverglades | 14 | 6 | 70% |
+| Riverglades | 15 | 5 | 75% |
 | Mulgore | 22 | 4 | 84% |
 | Dustwallow Marsh | 24 | 3 | 88% |
 | Thousand Needles | 20 | 3 | 86% |
-| Arathi Highlands | 22 | 2 | 91% |
 | Duskwood | 19 | 2 | 90% |
-| Mount Hyjal | 9 | 2 | 81% |
 | Stranglethorn Vale | 43 | 2 | 95% |
 | Tanaris | 23 | 2 | 92% |
 | Un'Goro Crater | 11 | 2 | 84% |
 | Alterac Mountains | 22 | 1 | 95% |
+| Arathi Highlands | 23 | 1 | 95% |
 | Azshara | 29 | 1 | 96% |
 | Burning Steppes | 13 | 1 | 92% |
 | Desolace | 20 | 1 | 95% |
@@ -76,6 +75,7 @@ the client's, but the matching is this file's rather than the addon's own.
 | Loch Modan | 17 | 0 | 100% |
 | Lordamere Lake | 1 | 0 | 100% |
 | Moonglade | 6 | 0 | 100% |
+| Mount Hyjal | 11 | 0 | 100% |
 | Onyxia's Lair | 1 | 0 | 100% |
 | Orgrimmar | 1 | 0 | 100% |
 | Redridge Mountains | 17 | 0 | 100% |
@@ -101,13 +101,12 @@ the client's, but the matching is this file's rather than the addon's own.
 Tick as they go in. Ordered by how many a zone needs, so the top of the list
 is where the most ground is gained per sitting.
 
-### Riverglades — 6 empty of 20
+### Riverglades — 5 empty of 20
 
 - [ ] Eastwind Shore
 - [ ] Elbrim's Farm
 - [ ] Forlorn Pit
 - [ ] Southern Watch
-- [ ] Turner's Logging Camp
 - [ ] Twilight Hollow
 
 ### Mulgore — 4 empty of 26
@@ -129,20 +128,10 @@ is where the most ground is gained per sitting.
 - [ ] Scalding Ridge
 - [ ] Zane's Eye Crater
 
-### Arathi Highlands — 2 empty of 24
-
-- [ ] Blackwater Shipwrecks
-- [ ] O'Breen's Camp
-
 ### Duskwood — 2 empty of 21
 
 - [ ] The Whipple Estate
 - [ ] The World Tree
-
-### Mount Hyjal — 2 empty of 11
-
-- [ ] Dae'gun
-- [ ] Elderwild
 
 ### Stranglethorn Vale — 2 empty of 45
 
@@ -162,6 +151,10 @@ is where the most ground is gained per sitting.
 ### Alterac Mountains — 1 empty of 23
 
 - [ ] The Eventide
+
+### Arathi Highlands — 1 empty of 24
+
+- [ ] Blackwater Shipwrecks
 
 ### Azshara — 1 empty of 30
 

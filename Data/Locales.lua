@@ -1398,6 +1398,11 @@ SubsOf("Alterac Mountains", {
 SubsOf("Arathi Highlands", {
 	{
 		name = "O'Breen's Camp", faction = "Contested",
+		-- AreaTable has row 323 for this name, but tools/no-source.md recorded
+		-- on 2026-11-09 that the wiki carries it as a planned subzone that was
+		-- removed, so the client may never report the string. The camp itself
+		-- is on the sand at Faldir's Cove with O'Breen standing in it, and
+		-- everything below is from the quest text rather than the area name.
 		aliases = { "O'Breen's Encampment" },
 		hook = "What is left of the treasure expedition, camped on the sand at Faldir's Cove.",
 		lore = {
