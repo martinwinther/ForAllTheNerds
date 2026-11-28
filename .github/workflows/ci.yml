@@ -51,8 +51,13 @@ jobs:
       - name: Check out
         uses: actions/checkout@v7
 
+      # Drop the third-party apt sources the runner image carries and this job
+      # does not need. On 2026-11-27 packages.microsoft.com answered 403 and
+      # apt called the repository "no longer signed", which failed the whole
+      # job at release 1.2.24 with nothing wrong in the addon.
       - name: Install Lua
         run: |
+          sudo rm -f /etc/apt/sources.list.d/*microsoft*
           sudo apt-get update -qq
           sudo apt-get install -y -qq lua5.4
 
@@ -68,9 +73,11 @@ jobs:
 
       # The check loads the addon, so it needs a Lua interpreter. Ubuntu
       # installs it as lua5.4 and provides no plain `lua`; tools/addon_entries.py
-      # tries both names.
+      # tries both names. The rm is there for the same reason as in the other
+      # job: a third-party apt source answering 403 should not fail this.
       - name: Install Lua
         run: |
+          sudo rm -f /etc/apt/sources.list.d/*microsoft*
           sudo apt-get update -qq
           sudo apt-get install -y -qq lua5.4
 
