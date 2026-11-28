@@ -545,12 +545,19 @@ SubsOf("Westfall", {
 	},
 	{
 		name = "Westfall Lighthouse", parent = "Westfall", faction = "Contested",
+		-- The client has two areas for this one building, 26 named Lighthouse
+		-- and 115 named Westfall Lighthouse, both parented to Westfall. There
+		-- were two entries to match until 2026-11-28, telling one story twice.
+		-- No other zone has a bare Lighthouse area, so holding both names here
+		-- takes nothing from anywhere else.
+		aliases = { "Lighthouse", "The Lighthouse" },
 		hook = "A lighthouse kept by the ghost of a man who died on the rocks below it.",
 		lore = {
-			"The coast here is a hazard and the wrecks along it say so. Sailors out on the Great Sea come in close to these rocks, which is the whole reason the flame matters. Captain Grayson stands outside the lighthouse and he is dead. His life ended on this shore, and his account of why he has not moved on is that his afterlife's work is seeing nobody else goes the way he did.",
-			"He was never the keeper. The keeper's family was frightened off the first time Old Murk-Eye brought the murlocs up the beach; they came back and relit the flame, and the second raid killed them in front of him. With nobody left to watch it, the job fell to him, and what he needs to do it is oil out of the harvest golems inland. Old Murk-Eye is still on the sand, with tidehunters and oracles all along the shore.",
+			"The lighthouse stands at the southern end of the Longshore, on a coast the wrecks along it describe better than anything else could. Sailors out on the Great Sea come in close to these rocks, and that is the whole reason the flame matters. Captain Grayson is outside it and he is dead. His life ended on this shore, and his account of why he has not moved on is that his afterlife's work is seeing nobody else goes the way he did.",
+			"He was never the keeper. The keeper's family was frightened off the first time Old Murk-Eye brought the murlocs up the beach; they came back and relit the flame, and Old Murk-Eye talked the weaker-minded of them into coming a second time. That raid killed the family in front of him. With nobody left to watch the flame, the job fell to him, and what he needs to do it is oil out of the harvest golems inland.",
+			"Old Murk-Eye is still on the sand, with tidehunters and oracles all along the shore. Westfall is a kingdom's abandoned breadbasket, and at the far end of it a dead man is keeping the light on by himself.",
 		},
-		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Captain Grayson", "Wowpedia: Keeper of the Flame (Classic)" },
+		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Captain Grayson", "Wowpedia: Keeper of the Flame (Classic)", "Wowpedia: Old Murk-Eye" },
 	},
 	{
 		name = "The Dagger Hills", parent = "Westfall", faction = "Hostile",
@@ -3359,23 +3366,5 @@ SubsOf("Silverpine Forest", {
 			"South Tide's Run is the southwestern coast of Silverpine Forest. It forms the southern counterpart to North Tide's Run along the Great Sea.",
 		},
 		readMore = { "Wowpedia: South Tide's Run" },
-	},
-})
-
-SubsOf("Westfall", {
-	{
-		name = "Lighthouse", parent = "Westfall", faction = "Contested",
-		-- Not aliasing "Westfall Lighthouse": the client has both as separate
-		-- areas, 26 and 115, both parented to Westfall, and each entry answers
-		-- to its own. The two write-ups cover one physical lighthouse between
-		-- them and are worth merging; see tools/places.tsv.
-		aliases = { "The Lighthouse" },
-		hook = "A lighthouse on the southern coast, kept now by its own keeper's ghost.",
-		lore = {
-			"The lighthouse stands on Westfall's far southern shore, at the end of the Longshore. Humans staffed it once, until Old Murk-Eye frightened the keeper's family away from it.",
-			"They came back and relit the flame. Old Murk-Eye talked the weaker-minded murlocs into raiding the lighthouse with him a second time, and that was the end of the family.",
-			"Captain Grayson is still outside it. His own life ended on the rocks below, he is entirely lucid about all of it, and with nobody left to watch the flame he has taken the job himself: oil carried up from the harvest golems inland, and the murlocs along this coast dealt with by anyone willing. Westfall is a kingdom's abandoned breadbasket, and this is the far end of the abandonment.",
-		},
-		readMore = { "Wowpedia: Westfall Lighthouse", "Wowpedia: Old Murk-Eye", "Wowpedia: Westfall" },
 	},
 })

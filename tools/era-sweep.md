@@ -9578,3 +9578,40 @@ cannot steal it from anywhere, and the only cost of merging is one orphaned
 Next: P3, P4, P6 and P7 remain. The lesson from this one generalises past the
 probes. Every check here should be asked what it compares, and whether either
 side of the comparison knows anything we did not write ourselves.
+
+### 2026-11-28, the Westfall lighthouse merge
+
+Martin's call, taken after the check above turned the naming question into a
+question with an answer. There were two entries for one building: `Lighthouse`,
+area 26, and `Westfall Lighthouse`, area 115, both parented to Westfall. Both
+names are real and both resolved, and the two write-ups told the same story
+about the same dead man in different words, so a player walking the point was
+told it twice and counted as discovering two places.
+
+**What survived and why.** `Westfall Lighthouse` keeps the entry, because the
+entry name is what appears in chat and in a lookup list, where `Lighthouse`
+alone says nothing about where it is. `Lighthouse` and `The Lighthouse` are
+aliases on it. That is safe to do: no other zone in the AreaTable has a bare
+`Lighthouse` area, so the alias takes the name from nowhere. The merged lore
+keeps every sourced claim from both: the Longshore and the wrecks, Grayson dead
+on the rocks below and lucid about it, the keeper's family frightened off and
+then killed on Old Murk-Eye's second raid, the oil from the harvest golems, and
+the tidehunters and oracles still on the shore. The one line that went is the
+second telling of each.
+
+**Checked through the real resolver, not the validator.** `Lighthouse`, `The
+Lighthouse` and `Westfall Lighthouse` all return the one entry from
+`ns.FindSubIn`, with the single key `westfall lighthouse`, which is what makes
+`onlyFirstVisit` and `repeatCooldown` behave. P1's lesson applies here too: a
+validator pass says the data is well formed, and only the resolver says a
+string lands. 977 entries now, down one. `check-refs.py` exits clean at 1515
+references, so the fourth readMore title the merged entry picked up is real.
+
+**One cost, accepted.** Players who already visited the place under the old
+`Lighthouse` entry keep an orphaned `seen` key, because `ns.MarkSeen` is keyed
+on `U.Key(entry.name)`. Nothing reads it and nothing breaks. `ns.PruneCollected`
+is the precedent for tidying that sort of thing if it ever accumulates.
+
+Next: a release will need a CHANGELOG line, written at release prep as usual,
+saying the lighthouse is one place again. The remaining probes are still P3, P4,
+P6 and P7.
