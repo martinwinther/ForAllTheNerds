@@ -247,6 +247,17 @@ more specific in one entry can turn a common word into a proper noun corpus
 wide and fail entries nobody touched. That happened in five consecutive runs.
 Adding a row is always safe; deleting or re-verdicting one is not.
 
+A third limit turned up on 2026-11-28 and it is a different shape from the
+other two, because it was in a check rather than in the prose. `check-gaps.py`
+compared `coverage.md` and `no-source.md` to each other and to nothing else.
+Four places had been written up and both files still listed them as empty, so
+the two agreed and the check passed. Three of the four had lore drawn straight
+from Forever quest text, and one of those carried a `no-source.md` row stating
+that no quest mentioned it. A check whose inputs are both ours can only report
+that we are consistent with ourselves. It now loads the addon as well, and the
+same question is worth asking of every other check here: what does it compare,
+and does either side know anything we did not write?
+
 ## What was checked and came back clean
 
 - Every capitalised phrase used twice or more across all vanilla entries,

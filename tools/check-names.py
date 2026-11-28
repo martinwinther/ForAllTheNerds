@@ -27,6 +27,10 @@ Reporting the 64 would have buried the real finding in its own noise.
   city interiors wow_classic_era's AreaTable has no row containing "district"
                  or "quarter" anywhere in it, and Stormwind City has exactly
                  one child area, the Valley of Heroes
+  removed areas  a match proves the client's AreaTable carries the name, not
+                 that the client will ever report it. Row 323, O'Breen's Camp,
+                 is a planned Arathi subzone the wiki records as removed. This
+                 probe passes it and a player may never see the string.
   quest-named    a place can be named in quest text without being an area:
    landmarks     the Un'Goro pylons, the Gates of Uldum, the Lion's Pride Inn.
                  Those are listed in ALLOWED below with the quest that names

@@ -10,6 +10,13 @@
 # Gilneas, and the Wrath death-knight content sitting inside Eastern
 # Plaguelands. What is left is the vanilla overworld on both continents.
 #
+# READ THIS BEFORE USING THE FILE AS A WORKLIST. It is a snapshot of the state
+# on 2026-11-09 and it has not been regenerated since. Checked on 2026-11-28:
+# of its 202 data rows, 165 now have an entry answering to the name or an
+# alias and only 37 do not. The live list is tools/coverage.md, which is now
+# checked against the addon itself by tools/check-gaps.py. What this file is
+# still good for is the area ids, which coverage.md does not carry.
+#
 # Some of these will be spelling variants of entries that already exist --
 # "The Cemetary" against Raven Hill Cemetery, say -- so treat the count as an
 # upper bound until each is checked. There used to be a second check, /ftn areas

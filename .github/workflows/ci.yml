@@ -66,8 +66,19 @@ jobs:
       - name: Check out
         uses: actions/checkout@v7
 
+      # The check loads the addon, so it needs a Lua interpreter. Ubuntu
+      # installs it as lua5.4 and provides no plain `lua`; tools/addon_entries.py
+      # tries both names.
+      - name: Install Lua
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lua5.4
+
       # tools/coverage.md is generated and tools/no-source.md is written by
-      # hand. This fails if a place has been written up and its reason was
-      # left behind, or if a gap has no reason at all.
-      - name: Check the gap docs against each other
+      # hand. This fails if a gap has no reason at all, if a reason outlived
+      # its gap, or if a place listed as empty turns out to have an entry
+      # already. That last one is why the check reads the addon and not just
+      # the two files: on 2026-11-28 both of them were stale in the same
+      # direction and agreed with each other anyway.
+      - name: Check the gap docs against each other and against the addon
         run: python3 -I tools/check-gaps.py
