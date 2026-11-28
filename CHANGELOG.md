@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.25
+
+One lighthouse, described twice, now described once.
+
+**Fixed**
+
+- The Westfall lighthouse was two entries. The client names that point twice,
+  as Lighthouse and as Westfall Lighthouse, and the addon had a separate
+  write-up behind each name, so walking out to the end of the Longshore told
+  you about Captain Grayson and the keeper's family twice in different words
+  and counted as two places discovered. It is one entry now, under Westfall
+  Lighthouse, answering to both names and keeping every claim either write-up
+  had a source for.
+
 ## 1.2.24
 
 A place that does not exist yet, and twenty-five further-reading links that went

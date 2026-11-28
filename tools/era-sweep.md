@@ -9615,3 +9615,29 @@ is the precedent for tidying that sort of thing if it ever accumulates.
 Next: a release will need a CHANGELOG line, written at release prep as usual,
 saying the lighthouse is one place again. The remaining probes are still P3, P4,
 P6 and P7.
+
+### 2026-11-28, release 1.2.25
+
+Martin called it after the merge. Both version strings read 1.2.25.
+
+**What shipped, in the sense of what a player will notice: the lighthouse, and
+nothing else.** The Westfall lighthouse is one entry instead of two. That is
+the whole of the player-visible change, and the CHANGELOG section says so in
+those terms, because the other three commits on dev do not reach the game.
+
+**What rode along without shipping.** The Forever re-check of 2026-11-27 added
+only comments to `Data/Forever.lua`, recording that all eight unwritten
+subzones do have AreaTable rows and that Calmbreeze Inn, Hall of Arms and
+Valanaar Port Authority have none and must never become entries. The gap
+registry fix touched `tools/coverage.md`, `tools/no-source.md`,
+`tools/area-gaps.tsv` and `tools/check-gaps.py`, plus the new
+`tools/addon_entries.py`, none of which is in the zip. The CI change is a
+workflow file. `git diff --stat` against the 1.2.24 tag, restricted to shipped
+files, is the lighthouse plus comment lines in two data files.
+
+**The release note is deliberately narrow.** A player reading it should see one
+sentence about one place, not an account of our bookkeeping. The bookkeeping is
+written up above, where the next audit run will look for it.
+
+Next: P3, P4, P6 and P7. P7 remains the largest and the only one that finds a
+sentence we never wrote.
